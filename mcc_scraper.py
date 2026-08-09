@@ -16,27 +16,44 @@ HEADERS = {
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
         " (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
     ),
-    "Content-Type": "application/x-www-form-urlencoded",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+    "Accept-Language": "he-IL,he;q=0.9,en-US;q=0.8,en;q=0.7",
+    "Cache-Control": "max-age=0",
+    "Connection": "keep-alive",
+    "Upgrade-Insecure-Requests": "1",
+    "Sec-Ch-Ua": '"Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"',
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": '"Windows"',
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-User": "?1",
 }
 
 
 def scrape_mcc():
     print("--- Starting MCC Scraper ---")
+    session = None
     try:
         session = requests.Session(impersonate="chrome120")
     except Exception:
         session = requests.Session()
 
-    try:
-        response = session.get(MCC_URL, headers=HEADERS, timeout=20)
-        if response.status_code != 200:
-            print(
-                f"[MCC ERROR] Main page request failed with status"
-                f" {response.status_code}"
-            )
-            return []
-    except Exception as e:
-        print(f"[MCC ERROR] Failed to connect to MCC main page: {e}")
+    response = None
+    for attempt in range(1, 4):
+        try:
+            response = session.get(MCC_URL, headers=HEADERS, timeout=20)
+            if response.status_code == 200:
+                break
+            print(f"[MCC Warning] Main page attempt {attempt} returned status {response.status_code}")
+            time.sleep(2 * attempt)
+        except Exception as e:
+            print(f"[MCC Warning] Main page attempt {attempt} failed: {e}")
+            time.sleep(2 * attempt)
+
+    if not response or response.status_code != 200:
+        status_code = response.status_code if response else "No Response"
+        print(f"[MCC ERROR] Main page request failed with status {status_code}")
         return []
 
     soup = BeautifulSoup(response.text, "html.parser")
@@ -91,9 +108,14 @@ def scrape_mcc():
             "region2": "0",
         }
 
+        post_headers = HEADERS.copy()
+        post_headers["Content-Type"] = "application/x-www-form-urlencoded"
+        post_headers["Sec-Fetch-Mode"] = "cors"
+        post_headers["Sec-Fetch-Site"] = "same-origin"
+
         try:
             res = session.post(
-                MCC_URL, data=payload, headers=HEADERS, timeout=15
+                MCC_URL, data=payload, headers=post_headers, timeout=15
             )
             if res.status_code != 200:
                 print(f"[MCC Warning] Subcategory {cat['sub_id']} returned {res.status_code}")
