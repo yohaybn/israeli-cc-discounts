@@ -78,7 +78,13 @@ def scrape_htzone(page_id=62, batch_size=50):
                 continue
             seen_ids.add(item_id)
 
-            title = (a_tag.get("item_name") or "").strip()
+            # Extract title: prefer div.item_text if available because single quotes in item_name HTML attribute (e.g. item_name='ג' פניקה ') can break HTML parsing of item_name
+            text_div = a_tag.find("div", class_="item_text")
+            if text_div and text_div.text.strip():
+                title = text_div.text.strip().split('\n')[0]
+            else:
+                title = (a_tag.get("item_name") or "").strip()
+
             price = a_tag.get("item_price") or ""
             link = a_tag.get("href") or ""
 
