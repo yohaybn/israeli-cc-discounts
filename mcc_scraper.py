@@ -2,7 +2,11 @@ import json
 import re
 import time
 from bs4 import BeautifulSoup
-import requests
+
+try:
+    from curl_cffi import requests
+except ImportError:
+    import requests
 
 MCC_URL = "https://www.mcc.co.il/st_reshet_public.aspx"
 BASE_DISCOUNT_URL = "https://www.mcc.co.il/site/pg/st_reshet_out&p1="
@@ -18,8 +22,23 @@ HEADERS = {
 
 def scrape_mcc():
     print("--- Starting MCC Scraper ---")
-    session = requests.Session()
-    response = session.get(MCC_URL, headers=HEADERS)
+    try:
+        session = requests.Session(impersonate="chrome120")
+    except Exception:
+        session = requests.Session()
+
+    try:
+        response = session.get(MCC_URL, headers=HEADERS, timeout=20)
+        if response.status_code != 200:
+            print(
+                f"[MCC ERROR] Main page request failed with status"
+                f" {response.status_code}"
+            )
+            return []
+    except Exception as e:
+        print(f"[MCC ERROR] Failed to connect to MCC main page: {e}")
+        return []
+
     soup = BeautifulSoup(response.text, "html.parser")
 
     # Map Main Categories
@@ -44,6 +63,13 @@ def scrape_mcc():
         for main_id, sub_id, _ in raw_tuples:
             sub_categories.append({"main_id": main_id, "sub_id": sub_id})
 
+    if not sub_categories:
+        page_title = soup.title.string if soup.title else "No Title"
+        print(f"[MCC ERROR] Could not parse subcategories. Title: '{page_title}'. Status: {response.status_code}")
+        if len(response.text) < 500:
+            print(f"[MCC ERROR] Response body: {response.text}")
+        return []
+
     results = []
     seen_combinations = set()
 
@@ -66,15 +92,19 @@ def scrape_mcc():
         }
 
         try:
-            res = session.post(MCC_URL, data=payload, headers=HEADERS)
+            res = session.post(
+                MCC_URL, data=payload, headers=HEADERS, timeout=15
+            )
+            if res.status_code != 200:
+                print(f"[MCC Warning] Subcategory {cat['sub_id']} returned {res.status_code}")
+                continue
+
             page_soup = BeautifulSoup(res.text, "html.parser")
             rows = page_soup.select("#object_table tbody tr")
 
             for row in rows:
                 title_elem = row.select_one(".title")
                 discount_elem = row.select_one("h2")
-                img_elem = row.select_one("img.logo")
-
                 if not title_elem:
                     continue
 
@@ -83,7 +113,6 @@ def scrape_mcc():
                     discount_elem.get_text(strip=True) if discount_elem else ""
                 )
 
-                # Deduplicate identical business + discount entries across categories
                 dedup_key = f"{business_name}_{discount}"
                 if dedup_key in seen_combinations:
                     continue
@@ -97,28 +126,20 @@ def scrape_mcc():
                     else ""
                 )
 
-                logo = ""
-                if img_elem:
-                    logo_src = img_elem.get("data-src") or img_elem.get("src")
-                    if logo_src and not logo_src.startswith("http"):
-                        logo = f"https://www.mcc.co.il/{logo_src.lstrip('/')}"
-                    else:
-                        logo = logo_src or ""
-
                 results.append({
                     "club": "MCC",
                     "business_name": business_name,
                     "discount": discount,
-                    "logo_url": logo,
                     "discount_url": discount_url,
                 })
 
-            print(
-                f"[MCC {idx}/{len(sub_categories)}] Extracting... Total items"
-                f" so far: {len(results)}"
-            )
+            if idx % 10 == 0 or idx == len(sub_categories):
+                print(
+                    f"[MCC {idx}/{len(sub_categories)}] Extracting... Total items"
+                    f" so far: {len(results)}"
+                )
         except Exception as e:
-            print(f"MCC Error: {e}")
+            print(f"[MCC Error] Subcategory {cat['sub_id']}: {e}")
 
         time.sleep(0.2)
 
@@ -131,6 +152,9 @@ if __name__ == "__main__":
     out_dir = os.path.join(os.path.dirname(__file__), "data")
     os.makedirs(out_dir, exist_ok=True)
     out_path = os.path.join(out_dir, "mcc_discounts.json")
-    with open(out_path, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=4)
-    print(f"Saved {len(data)} normalized items to {out_path}")
+    if data:
+        with open(out_path, "w", encoding="utf-8") as f:
+            json.dump(data, f, ensure_ascii=False, indent=4)
+        print(f"Saved {len(data)} normalized items to {out_path}")
+    else:
+        print("[ERROR] 0 items scraped for MCC.")

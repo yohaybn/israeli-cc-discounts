@@ -1,14 +1,18 @@
 import json
 import time
-import requests
+
+try:
+    from curl_cffi import requests
+except ImportError:
+    import requests
 
 HOT_API_URL = "https://api.hot.co.il/api/website/2.0/getCategoryBenefits/?benefitType=100"
 
 HEADERS = {
     "accept": "application/json, text/plain, */*",
     "accept-language": "he-IL,he;q=0.9,en-US;q=0.8,en;q=0.7",
+    "content-type": "application/json",
     "origin": "https://www.hot.co.il",
-    "priority": "u=1, i",
     "referrer": "https://www.hot.co.il/",
     "sec-ch-ua": '"Not;A=Brand";v="8", "Chromium";v="150", "Google Chrome";v="150"',
     "sec-ch-ua-mobile": "?0",
@@ -22,7 +26,7 @@ HEADERS = {
     ),
 }
 
-PAGE_SIZE = 100  # Pull 100 records per page to prevent HTTP 429 rate limits
+PAGE_SIZE = 100  # Pull 100 records per page to prevent rate limits
 
 
 def parse_hot_discount(item):
@@ -48,7 +52,11 @@ def scrape_hot():
     print("--- Starting HOT Club Scraper ---")
     results = []
     page = 1
-    session = requests.Session()
+
+    try:
+        session = requests.Session(impersonate="chrome120")
+    except Exception:
+        session = requests.Session()
 
     while True:
         payload = {
@@ -59,12 +67,13 @@ def scrape_hot():
             "sessionToken": "null",
         }
 
-        # Handling rate limits (HTTP 429) gracefully
         retry_count = 0
         res = None
         while retry_count <= 3:
             try:
-                res = session.post(HOT_API_URL, headers=HEADERS, data=payload)
+                res = session.post(
+                    HOT_API_URL, headers=HEADERS, json=payload, timeout=15
+                )
                 if res.status_code == 429:
                     retry_count += 1
                     sleep_sec = retry_count * 5
@@ -76,18 +85,21 @@ def scrape_hot():
                     continue
                 break
             except Exception as e:
-                print(f"[HOT] Exception on page {page}: {e}")
-                break
+                print(f"[HOT] Exception on page {page} (attempt {retry_count+1}): {e}")
+                retry_count += 1
+                time.sleep(3)
 
         if not res or res.status_code != 200:
-            print(
-                f"[HOT] Stopping. Response status: {res.status_code if res else 'None'}"
-            )
+            status_str = res.status_code if res else "No Response"
+            print(f"[HOT] Stopping at page {page}. Response status: {status_str}")
+            if res and hasattr(res, "text") and res.text:
+                print(f"[HOT] Response snippet: {res.text[:200]}")
             break
 
         try:
             data = res.json()
-        except Exception:
+        except Exception as e:
+            print(f"[HOT] JSON decode error on page {page}: {e}")
             break
 
         records = (
@@ -97,9 +109,7 @@ def scrape_hot():
         )
 
         if not records:
-            print(
-                f"[HOT] Reached end of benefits list at page {page}."
-            )
+            print(f"[HOT] Reached end of benefits list at page {page}.")
             break
 
         for item in records:
@@ -107,21 +117,12 @@ def scrape_hot():
                 continue
 
             b_id = item.get("id") or ""
-            image_path = item.get("imagePath") or ""
-
-            logo = (
-                f"https://www.hot.co.il{image_path}"
-                if image_path and not image_path.startswith("http")
-                else image_path
-            )
-
             results.append({
                 "club": "HOT",
                 "business_name": (
                     item.get("clean_title") or item.get("title") or ""
                 ).strip(),
                 "discount": parse_hot_discount(item),
-                "logo_url": logo,
                 "discount_url": f"https://www.hot.co.il/benefit/{b_id}"
                 if b_id
                 else "",
@@ -132,7 +133,7 @@ def scrape_hot():
             f" {len(results)}"
         )
         page += 1
-        time.sleep(0.8)
+        time.sleep(0.5)
 
     return results
 
@@ -143,6 +144,9 @@ if __name__ == "__main__":
     out_dir = os.path.join(os.path.dirname(__file__), "data")
     os.makedirs(out_dir, exist_ok=True)
     out_path = os.path.join(out_dir, "hot_discounts.json")
-    with open(out_path, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=4)
-    print(f"Saved {len(data)} normalized items to {out_path}")
+    if data:
+        with open(out_path, "w", encoding="utf-8") as f:
+            json.dump(data, f, ensure_ascii=False, indent=4)
+        print(f"Saved {len(data)} normalized items to {out_path}")
+    else:
+        print("[ERROR] 0 items scraped for HOT.")
