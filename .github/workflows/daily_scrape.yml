@@ -27,8 +27,19 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Connect Tailscale VPN (Israeli Exit Node)
+        uses: tailscale/github-action@v2
+        if: ${{ secrets.TAILSCALE_AUTHKEY != '' }}
+        with:
+          oauth-client-id: ${{ secrets.TS_OAUTH_CLIENT_ID }}
+          oauth-secret: ${{ secrets.TS_OAUTH_SECRET }}
+          tags: tag:ci
+          args: --exit-node=${{ secrets.TAILSCALE_EXIT_NODE }}
+
       - name: Run Scraper
         run: python main.py
+        env:
+          PROXY_URL: ${{ secrets.PROXY_URL }}
 
       - name: Commit and push updated JSON results
         uses: stefanzweifel/git-auto-commit-action@v5
