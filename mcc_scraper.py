@@ -1,5 +1,4 @@
 import json
-import os
 import re
 import time
 from bs4 import BeautifulSoup
@@ -40,39 +39,21 @@ def scrape_mcc():
     except Exception:
         session = requests.Session()
 
-    # Support optional proxy passed via environment variables
-    proxy = os.environ.get("PROXY_URL") or os.environ.get("HTTPS_PROXY") or os.environ.get("HTTP_PROXY")
-    if proxy:
-        print(f"[MCC] Routing traffic through configured proxy...")
-        session.proxies = {"http": proxy, "https": proxy}
-
     response = None
     for attempt in range(1, 4):
         try:
-            response = session.get(MCC_URL, headers=HEADERS, timeout=25)
+            response = session.get(MCC_URL, headers=HEADERS, timeout=20)
             if response.status_code == 200:
                 break
             print(f"[MCC Warning] Main page attempt {attempt} returned status {response.status_code}")
-            time.sleep(3 * attempt)
+            time.sleep(2 * attempt)
         except Exception as e:
             print(f"[MCC Warning] Main page attempt {attempt} failed: {e}")
-            time.sleep(3 * attempt)
+            time.sleep(2 * attempt)
 
     if not response or response.status_code != 200:
         status_code = response.status_code if response else "No Response"
         print(f"[MCC ERROR] Main page request failed with status {status_code}")
-
-        # Fallback to existing cached file to prevent pipeline loss
-        out_path = os.path.join(os.path.dirname(__file__), "data", "mcc_discounts.json")
-        if os.path.exists(out_path):
-            try:
-                with open(out_path, "r", encoding="utf-8") as f:
-                    cached_data = json.load(f)
-                print(f"[MCC Fallback] Loaded {len(cached_data)} cached records from {out_path}")
-                return cached_data
-            except Exception as e:
-                print(f"[MCC Fallback Error] Failed to load cache: {e}")
-
         return []
 
     soup = BeautifulSoup(response.text, "html.parser")

@@ -817,6 +817,12 @@
     },
     {
         "club": "MCC",
+        "business_name": "אאוטליין – הבית של המותגים לאנשים שעובדים הכי קשה",
+        "discount": "5%",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=6170"
+    },
+    {
+        "club": "MCC",
         "business_name": "מיננה (Minene)",
         "discount": "5%",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5403"
@@ -1294,6 +1300,12 @@
         "business_name": "פרי השכרת רכבים",
         "discount": "5%",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5682"
+    },
+    {
+        "club": "MCC",
+        "business_name": "AI BOOKING TRAVEL – השכרת רכב בחו\"ל",
+        "discount": "5%",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=6169"
     },
     {
         "club": "MCC",
@@ -2203,6 +2215,12 @@
     },
     {
         "club": "MCC",
+        "business_name": "סוכות נחלים",
+        "discount": "5%",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=6171"
+    },
+    {
+        "club": "MCC",
         "business_name": "פריחת הסחלב",
         "discount": "5%",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5939"
@@ -2560,6 +2578,12 @@
         "business_name": "גולן ווסט ליין בע\"מ",
         "discount": "5%",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=2681"
+    },
+    {
+        "club": "MCC",
+        "business_name": "ניופאן שופ",
+        "discount": "5%",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=6168"
     },
     {
         "club": "MCC",
@@ -2959,6 +2983,12 @@
     },
     {
         "club": "MCC",
+        "business_name": "מלון אלמרה",
+        "discount": "10%",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=6173"
+    },
+    {
+        "club": "MCC",
         "business_name": "מלון אמריקן קולוני ירושלים",
         "discount": "10%",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=6166"
@@ -3322,6 +3352,12 @@
         "business_name": "פיצה דומינו",
         "discount": "5%",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=2039"
+    },
+    {
+        "club": "MCC",
+        "business_name": "רשת מסעדות MOON - קפיצה קטנה ליפן",
+        "discount": "5%",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=6172"
     },
     {
         "club": "MCC",
