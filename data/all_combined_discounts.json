@@ -787,6 +787,12 @@
     },
     {
         "club": "MCC",
+        "business_name": "מותג   SEBOCALM   סבוקלם",
+        "discount": "6%",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=6174"
+    },
+    {
+        "club": "MCC",
         "business_name": "DAFNI    דפני",
         "discount": "5%",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5845"
@@ -8002,12 +8008,6 @@
         "business_name": "סופרמרקט סנטר נאס",
         "discount": "2% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/benefit/43691"
-    },
-    {
-        "club": "HOT",
-        "business_name": "Playstore - פלייסטור",
-        "discount": "2% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/43685"
     },
     {
         "club": "HOT",
@@ -18769,15 +18769,15 @@
     },
     {
         "club": "HOT",
-        "business_name": "אשה יפה- הלבשה תחתונה לנשים",
-        "discount": "6% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/8679"
-    },
-    {
-        "club": "HOT",
         "business_name": "מאור השומרון - יאיר- מוצרי חשמל",
         "discount": "3.5% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/benefit/8674"
+    },
+    {
+        "club": "HOT",
+        "business_name": "אשה יפה- הלבשה תחתונה לנשים",
+        "discount": "6% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/8679"
     },
     {
         "club": "HOT",
@@ -18979,12 +18979,6 @@
     },
     {
         "club": "HOT",
-        "business_name": "דנון תכשיטים ומתנות",
-        "discount": "5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/29070"
-    },
-    {
-        "club": "HOT",
         "business_name": "סוויט קידס",
         "discount": "4% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/benefit/28861"
@@ -19000,6 +18994,12 @@
         "business_name": "אדר ציוד וחומרי בניין",
         "discount": "5% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/benefit/28966"
+    },
+    {
+        "club": "HOT",
+        "business_name": "דנון תכשיטים ומתנות",
+        "discount": "5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/29070"
     },
     {
         "club": "HOT",

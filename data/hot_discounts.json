@@ -3307,12 +3307,6 @@
     },
     {
         "club": "HOT",
-        "business_name": "Playstore - פלייסטור",
-        "discount": "2% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/43685"
-    },
-    {
-        "club": "HOT",
         "business_name": "Aseel accessories",
         "discount": "5% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/benefit/43626"
@@ -14071,15 +14065,15 @@
     },
     {
         "club": "HOT",
-        "business_name": "אשה יפה- הלבשה תחתונה לנשים",
-        "discount": "6% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/8679"
-    },
-    {
-        "club": "HOT",
         "business_name": "מאור השומרון - יאיר- מוצרי חשמל",
         "discount": "3.5% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/benefit/8674"
+    },
+    {
+        "club": "HOT",
+        "business_name": "אשה יפה- הלבשה תחתונה לנשים",
+        "discount": "6% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/8679"
     },
     {
         "club": "HOT",
@@ -14281,12 +14275,6 @@
     },
     {
         "club": "HOT",
-        "business_name": "דנון תכשיטים ומתנות",
-        "discount": "5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/29070"
-    },
-    {
-        "club": "HOT",
         "business_name": "סוויט קידס",
         "discount": "4% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/benefit/28861"
@@ -14302,6 +14290,12 @@
         "business_name": "אדר ציוד וחומרי בניין",
         "discount": "5% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/benefit/28966"
+    },
+    {
+        "club": "HOT",
+        "business_name": "דנון תכשיטים ומתנות",
+        "discount": "5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/29070"
     },
     {
         "club": "HOT",

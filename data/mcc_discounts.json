@@ -787,6 +787,12 @@
     },
     {
         "club": "MCC",
+        "business_name": "מותג   SEBOCALM   סבוקלם",
+        "discount": "6%",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=6174"
+    },
+    {
+        "club": "MCC",
         "business_name": "DAFNI    דפני",
         "discount": "5%",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5845"
