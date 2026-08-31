@@ -4837,15 +4837,15 @@
     },
     {
         "club": "HOT",
-        "business_name": "פרחי המשק- פרחים",
-        "discount": "3% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/38872"
-    },
-    {
-        "club": "HOT",
         "business_name": "La fruta",
         "discount": "4% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/benefit/38871"
+    },
+    {
+        "club": "HOT",
+        "business_name": "פרחי המשק- פרחים",
+        "discount": "3% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/38872"
     },
     {
         "club": "HOT",
@@ -5359,15 +5359,15 @@
     },
     {
         "club": "HOT",
-        "business_name": "Liat shoes- הנעלה לכל המשפחה",
-        "discount": "3.5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/37706"
-    },
-    {
-        "club": "HOT",
         "business_name": "ליידי די- תכשיטים",
         "discount": "3.5% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/benefit/37705"
+    },
+    {
+        "club": "HOT",
+        "business_name": "Liat shoes- הנעלה לכל המשפחה",
+        "discount": "3.5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/37706"
     },
     {
         "club": "HOT",
@@ -6133,15 +6133,15 @@
     },
     {
         "club": "HOT",
-        "business_name": "Bradshaw shoes art- נעליים מעוצבות",
-        "discount": "6% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/35964"
-    },
-    {
-        "club": "HOT",
         "business_name": "hairstyle- מספרה",
         "discount": "3.5% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/benefit/35963"
+    },
+    {
+        "club": "HOT",
+        "business_name": "Bradshaw shoes art- נעליים מעוצבות",
+        "discount": "6% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/35964"
     },
     {
         "club": "HOT",
@@ -8485,12 +8485,6 @@
     },
     {
         "club": "HOT",
-        "business_name": "אמברלי הום בוטיק",
-        "discount": "4% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/58830"
-    },
-    {
-        "club": "HOT",
         "business_name": "עצי הגוש",
         "discount": "8.5% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/benefit/58829"
@@ -9577,12 +9571,6 @@
     },
     {
         "club": "HOT",
-        "business_name": "מטפחות הכל בראש",
-        "discount": "3% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/56566"
-    },
-    {
-        "club": "HOT",
         "business_name": "מר אופניים",
         "discount": "3.5% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/benefit/56565"
@@ -10519,15 +10507,15 @@
     },
     {
         "club": "HOT",
-        "business_name": "מיוחד פעמי- כלים חד פעמיים",
-        "discount": "3% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/28559"
-    },
-    {
-        "club": "HOT",
         "business_name": "מינימרקט הפינה",
         "discount": "2% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/benefit/28558"
+    },
+    {
+        "club": "HOT",
+        "business_name": "מיוחד פעמי- כלים חד פעמיים",
+        "discount": "3% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/28559"
     },
     {
         "club": "HOT",
@@ -10567,15 +10555,15 @@
     },
     {
         "club": "HOT",
-        "business_name": "NEOVISION",
-        "discount": "4% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/28359"
-    },
-    {
-        "club": "HOT",
         "business_name": "אלדעאמין שיווק בשר",
         "discount": "3.5% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/benefit/28358"
+    },
+    {
+        "club": "HOT",
+        "business_name": "NEOVISION",
+        "discount": "4% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/28359"
     },
     {
         "club": "HOT",
@@ -10693,15 +10681,15 @@
     },
     {
         "club": "HOT",
-        "business_name": "Yaki Golbary Kids- מספרה לילדים",
-        "discount": "5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/28049"
-    },
-    {
-        "club": "HOT",
         "business_name": "Yaki Golbary",
         "discount": "5% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/benefit/28048"
+    },
+    {
+        "club": "HOT",
+        "business_name": "Yaki Golbary Kids- מספרה לילדים",
+        "discount": "5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/28049"
     },
     {
         "club": "HOT",
@@ -11335,15 +11323,15 @@
     },
     {
         "club": "HOT",
-        "business_name": "חנות לעיצוב הבית - קסטרו טמרה",
-        "discount": "5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/24720"
-    },
-    {
-        "club": "HOT",
         "business_name": "תמיר אלקטרוניק- מוצרי אלקטרוניקה",
         "discount": "3% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/benefit/24719"
+    },
+    {
+        "club": "HOT",
+        "business_name": "חנות לעיצוב הבית - קסטרו טמרה",
+        "discount": "5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/24720"
     },
     {
         "club": "HOT",
@@ -11671,15 +11659,15 @@
     },
     {
         "club": "HOT",
-        "business_name": "ברנדי - BRANDEE",
-        "discount": "5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/23776"
-    },
-    {
-        "club": "HOT",
         "business_name": "מזוודות CALPAKS",
         "discount": "5% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/benefit/23775"
+    },
+    {
+        "club": "HOT",
+        "business_name": "ברנדי - BRANDEE",
+        "discount": "5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/23776"
     },
     {
         "club": "HOT",
@@ -12217,15 +12205,15 @@
     },
     {
         "club": "HOT",
-        "business_name": "STRETCH עיצובים",
-        "discount": "5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/21599"
-    },
-    {
-        "club": "HOT",
         "business_name": "הסוד של האופנה TLV",
         "discount": "5% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/benefit/21598"
+    },
+    {
+        "club": "HOT",
+        "business_name": "STRETCH עיצובים",
+        "discount": "5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/21599"
     },
     {
         "club": "HOT",
@@ -12259,15 +12247,15 @@
     },
     {
         "club": "HOT",
-        "business_name": "סופר חיסכון",
-        "discount": "2% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/21418"
-    },
-    {
-        "club": "HOT",
         "business_name": "טרנד אביזרי אופנה",
         "discount": "5% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/benefit/21416"
+    },
+    {
+        "club": "HOT",
+        "business_name": "סופר חיסכון",
+        "discount": "2% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/21418"
     },
     {
         "club": "HOT",
@@ -12307,15 +12295,15 @@
     },
     {
         "club": "HOT",
-        "business_name": "ממתקי נצרת",
-        "discount": "5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/21296"
-    },
-    {
-        "club": "HOT",
         "business_name": "Isawe tec- מכשירים סלולריים",
         "discount": "3% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/benefit/21295"
+    },
+    {
+        "club": "HOT",
+        "business_name": "ממתקי נצרת",
+        "discount": "5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/21296"
     },
     {
         "club": "HOT",
@@ -12373,15 +12361,15 @@
     },
     {
         "club": "HOT",
-        "business_name": "ילדים - בגדי תינוקות ילדים ונוער",
-        "discount": "5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/21056"
-    },
-    {
-        "club": "HOT",
         "business_name": "עיצוב שיער רחל",
         "discount": "5% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/benefit/21051"
+    },
+    {
+        "club": "HOT",
+        "business_name": "ילדים - בגדי תינוקות ילדים ונוער",
+        "discount": "5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/21056"
     },
     {
         "club": "HOT",
@@ -12685,15 +12673,15 @@
     },
     {
         "club": "HOT",
-        "business_name": "BGLOBAL -סים לחו\"ל",
-        "discount": "10% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/19133"
-    },
-    {
-        "club": "HOT",
         "business_name": "Y.B.SOUL תכשיטים",
         "discount": "5% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/benefit/19132"
+    },
+    {
+        "club": "HOT",
+        "business_name": "BGLOBAL -סים לחו\"ל",
+        "discount": "10% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/19133"
     },
     {
         "club": "HOT",
@@ -13279,15 +13267,15 @@
     },
     {
         "club": "HOT",
-        "business_name": "קונדיטוריה קרמל",
-        "discount": "4% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/15623"
-    },
-    {
-        "club": "HOT",
         "business_name": "מרקברייט- חומרי בניין",
         "discount": "3% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/benefit/15622"
+    },
+    {
+        "club": "HOT",
+        "business_name": "קונדיטוריה קרמל",
+        "discount": "4% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/15623"
     },
     {
         "club": "HOT",
@@ -13531,15 +13519,15 @@
     },
     {
         "club": "HOT",
-        "business_name": "א. ענק החשמל- מוצרי חשמל",
-        "discount": "5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/13982"
-    },
-    {
-        "club": "HOT",
         "business_name": "BELT SHOP- חגורות עור",
         "discount": "3.5% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/benefit/13981"
+    },
+    {
+        "club": "HOT",
+        "business_name": "א. ענק החשמל- מוצרי חשמל",
+        "discount": "5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/13982"
     },
     {
         "club": "HOT",
@@ -13681,15 +13669,15 @@
     },
     {
         "club": "HOT",
-        "business_name": "עולם הילד והנוער",
-        "discount": "5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/9979"
-    },
-    {
-        "club": "HOT",
         "business_name": "הלבשת אחים נזיה עואודה",
         "discount": "5% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/benefit/9972"
+    },
+    {
+        "club": "HOT",
+        "business_name": "עולם הילד והנוער",
+        "discount": "5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/9979"
     },
     {
         "club": "HOT",
@@ -13705,15 +13693,15 @@
     },
     {
         "club": "HOT",
-        "business_name": "חיים עיצוב שיער",
-        "discount": "5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/9806"
-    },
-    {
-        "club": "HOT",
         "business_name": "וילי מטהרי מים",
         "discount": "4% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/benefit/9798"
+    },
+    {
+        "club": "HOT",
+        "business_name": "חיים עיצוב שיער",
+        "discount": "5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/9806"
     },
     {
         "club": "HOT",
@@ -13819,21 +13807,21 @@
     },
     {
         "club": "HOT",
-        "business_name": "שעוני בלפור",
-        "discount": "5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/9016"
-    },
-    {
-        "club": "HOT",
         "business_name": "אמביאנס - דניאל- עיצוב שיער",
         "discount": "4% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/benefit/9010"
     },
     {
         "club": "HOT",
-        "business_name": "רוני אופניים",
-        "discount": "3.5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/9026"
+        "business_name": "שעוני בלפור",
+        "discount": "5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/9016"
+    },
+    {
+        "club": "HOT",
+        "business_name": "סופר ניקוי יבש דוניני",
+        "discount": "4% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/9006"
     },
     {
         "club": "HOT",
@@ -13843,9 +13831,9 @@
     },
     {
         "club": "HOT",
-        "business_name": "סופר ניקוי יבש דוניני",
-        "discount": "4% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/9006"
+        "business_name": "רוני אופניים",
+        "discount": "3.5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/9026"
     },
     {
         "club": "HOT",
@@ -13861,15 +13849,15 @@
     },
     {
         "club": "HOT",
-        "business_name": "הסמטה - גלריית תכשיטים",
-        "discount": "5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/8962"
-    },
-    {
-        "club": "HOT",
         "business_name": "סטודיו לאמנות",
         "discount": "5% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/benefit/8958"
+    },
+    {
+        "club": "HOT",
+        "business_name": "הסמטה - גלריית תכשיטים",
+        "discount": "5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/8962"
     },
     {
         "club": "HOT",
@@ -13879,9 +13867,9 @@
     },
     {
         "club": "HOT",
-        "business_name": "סלון שוורצקופ- מספרה",
-        "discount": "10% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/8913"
+        "business_name": "קלין שופ",
+        "discount": "4% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/8894"
     },
     {
         "club": "HOT",
@@ -13891,21 +13879,9 @@
     },
     {
         "club": "HOT",
-        "business_name": "קלין שופ",
-        "discount": "4% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/8894"
-    },
-    {
-        "club": "HOT",
-        "business_name": "תמי עיצוב שיער",
-        "discount": "3.5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/8912"
-    },
-    {
-        "club": "HOT",
-        "business_name": "אזולאי בית משה- חומרי בנייה",
-        "discount": "5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/8908"
+        "business_name": "סלון שוורצקופ- מספרה",
+        "discount": "10% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/8913"
     },
     {
         "club": "HOT",
@@ -13915,15 +13891,27 @@
     },
     {
         "club": "HOT",
+        "business_name": "אזולאי בית משה- חומרי בנייה",
+        "discount": "5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/8908"
+    },
+    {
+        "club": "HOT",
+        "business_name": "תמי עיצוב שיער",
+        "discount": "3.5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/8912"
+    },
+    {
+        "club": "HOT",
         "business_name": "אורגד חשמל",
         "discount": "5% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/benefit/8873"
     },
     {
         "club": "HOT",
-        "business_name": "ליאת מירב- עיצוב אופנה",
-        "discount": "10% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/8850"
+        "business_name": "rendez - vous",
+        "discount": "5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/8828"
     },
     {
         "club": "HOT",
@@ -13933,9 +13921,9 @@
     },
     {
         "club": "HOT",
-        "business_name": "rendez - vous",
-        "discount": "5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/8828"
+        "business_name": "ליאת מירב- עיצוב אופנה",
+        "discount": "10% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/8850"
     },
     {
         "club": "HOT",
@@ -13951,9 +13939,9 @@
     },
     {
         "club": "HOT",
-        "business_name": "מכבסת יהוד",
-        "discount": "4% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/8789"
+        "business_name": "סופר קלין",
+        "discount": "3.5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/8772"
     },
     {
         "club": "HOT",
@@ -13963,27 +13951,9 @@
     },
     {
         "club": "HOT",
-        "business_name": "סופר קלין",
-        "discount": "3.5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/8772"
-    },
-    {
-        "club": "HOT",
-        "business_name": "אלי-אור",
-        "discount": "5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/8764"
-    },
-    {
-        "club": "HOT",
-        "business_name": "הרמוניה-טקסטיל",
-        "discount": "6% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/8756"
-    },
-    {
-        "club": "HOT",
-        "business_name": "שירותי אריאל- תיקוני שעונים ותיקוני בגדים",
-        "discount": "5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/8741"
+        "business_name": "מכבסת יהוד",
+        "discount": "4% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/8789"
     },
     {
         "club": "HOT",
@@ -13993,21 +13963,21 @@
     },
     {
         "club": "HOT",
-        "business_name": "בוטיק נלי- תכשיטים",
+        "business_name": "שירותי אריאל- תיקוני שעונים ותיקוני בגדים",
         "discount": "5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/8728"
+        "discount_url": "https://www.hot.co.il/benefit/8741"
     },
     {
         "club": "HOT",
-        "business_name": "סרביאן הרצל- ייבוא ושיווק שטיחים",
-        "discount": "5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/8720"
+        "business_name": "הרמוניה-טקסטיל",
+        "discount": "6% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/8756"
     },
     {
         "club": "HOT",
-        "business_name": "אילן סנטר -מוצרי חשמל",
-        "discount": "4% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/8718"
+        "business_name": "אלי-אור",
+        "discount": "5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/8764"
     },
     {
         "club": "HOT",
@@ -14017,27 +13987,27 @@
     },
     {
         "club": "HOT",
+        "business_name": "אילן סנטר -מוצרי חשמל",
+        "discount": "4% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/8718"
+    },
+    {
+        "club": "HOT",
+        "business_name": "סרביאן הרצל- ייבוא ושיווק שטיחים",
+        "discount": "5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/8720"
+    },
+    {
+        "club": "HOT",
+        "business_name": "בוטיק נלי- תכשיטים",
+        "discount": "5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/8728"
+    },
+    {
+        "club": "HOT",
         "business_name": "עינת פומרנץ- שמלות כלה וערב",
         "discount": "8.5% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/benefit/8707"
-    },
-    {
-        "club": "HOT",
-        "business_name": "החנות של בטי- בגדי נשים אופנתיים",
-        "discount": "5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/8706"
-    },
-    {
-        "club": "HOT",
-        "business_name": "Y.Y דיוטי פרי- מתנות",
-        "discount": "8.5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/8705"
-    },
-    {
-        "club": "HOT",
-        "business_name": "מסגרות",
-        "discount": "4% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/8696"
     },
     {
         "club": "HOT",
@@ -14047,9 +14017,21 @@
     },
     {
         "club": "HOT",
-        "business_name": "בלה קאסה- חנות לכלי בית",
-        "discount": "10% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/8681"
+        "business_name": "מסגרות",
+        "discount": "4% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/8696"
+    },
+    {
+        "club": "HOT",
+        "business_name": "Y.Y דיוטי פרי- מתנות",
+        "discount": "8.5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/8705"
+    },
+    {
+        "club": "HOT",
+        "business_name": "החנות של בטי- בגדי נשים אופנתיים",
+        "discount": "5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/8706"
     },
     {
         "club": "HOT",
@@ -14059,15 +14041,21 @@
     },
     {
         "club": "HOT",
-        "business_name": "אשה יפה- הלבשה תחתונה לנשים",
-        "discount": "6% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/8679"
+        "business_name": "בלה קאסה- חנות לכלי בית",
+        "discount": "10% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/8681"
     },
     {
         "club": "HOT",
         "business_name": "מאור השומרון - יאיר- מוצרי חשמל",
         "discount": "3.5% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/benefit/8674"
+    },
+    {
+        "club": "HOT",
+        "business_name": "אשה יפה- הלבשה תחתונה לנשים",
+        "discount": "6% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/8679"
     },
     {
         "club": "HOT",
@@ -14083,15 +14071,15 @@
     },
     {
         "club": "HOT",
-        "business_name": "הפינה דברי מאפה",
-        "discount": "5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/8630"
-    },
-    {
-        "club": "HOT",
         "business_name": "בית העור - בנצי הרצען",
         "discount": "4% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/benefit/8615"
+    },
+    {
+        "club": "HOT",
+        "business_name": "הפינה דברי מאפה",
+        "discount": "5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/8630"
     },
     {
         "club": "HOT",
@@ -14101,15 +14089,15 @@
     },
     {
         "club": "HOT",
-        "business_name": "RUBIN- הלבשה תחתונה",
-        "discount": "5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/8597"
-    },
-    {
-        "club": "HOT",
         "business_name": "בשבילך- אופנת נשים",
         "discount": "8% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/benefit/8591"
+    },
+    {
+        "club": "HOT",
+        "business_name": "RUBIN- הלבשה תחתונה",
+        "discount": "5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/8597"
     },
     {
         "club": "HOT",
@@ -14221,15 +14209,15 @@
     },
     {
         "club": "HOT",
-        "business_name": "נעלי שלומי לי",
-        "discount": "5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/8109"
-    },
-    {
-        "club": "HOT",
         "business_name": "אבי סטייל- אופנה לצעירים",
         "discount": "5% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/benefit/8108"
+    },
+    {
+        "club": "HOT",
+        "business_name": "נעלי שלומי לי",
+        "discount": "5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/8109"
     },
     {
         "club": "HOT",
@@ -14269,93 +14257,9 @@
     },
     {
         "club": "HOT",
-        "business_name": "Compuland- מחשבים,מדפסות",
-        "discount": "2% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/29857"
-    },
-    {
-        "club": "HOT",
-        "business_name": "רמי לגזיאל- מספרה",
-        "discount": "5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/29840"
-    },
-    {
-        "club": "HOT",
-        "business_name": "Cesare Gold - תכשיטים",
-        "discount": "4% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/29784"
-    },
-    {
-        "club": "HOT",
-        "business_name": "תבליני הצמח",
-        "discount": "4% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/29779"
-    },
-    {
-        "club": "HOT",
-        "business_name": "הכי מתוק שיש",
-        "discount": "3.5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/29745"
-    },
-    {
-        "club": "HOT",
-        "business_name": "הכל לבית אזולאי - מוצרי חשמל",
-        "discount": "2% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/29733"
-    },
-    {
-        "club": "HOT",
-        "business_name": "דולפין- כלי בית",
-        "discount": "4% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/29661"
-    },
-    {
-        "club": "HOT",
-        "business_name": "סיגליות- קוסמטיקה",
-        "discount": "3.5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/29659"
-    },
-    {
-        "club": "HOT",
-        "business_name": "קיטשן אנד מור",
-        "discount": "4% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/29567"
-    },
-    {
-        "club": "HOT",
-        "business_name": "ממתקי השוק   אבו כנאפה",
-        "discount": "3.5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/29554"
-    },
-    {
-        "club": "HOT",
-        "business_name": "אלכסנדר",
-        "discount": "3.5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/29475"
-    },
-    {
-        "club": "HOT",
-        "business_name": "House - האוס",
-        "discount": "5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/29154"
-    },
-    {
-        "club": "HOT",
         "business_name": "דנון תכשיטים ומתנות",
         "discount": "5% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/benefit/29070"
-    },
-    {
-        "club": "HOT",
-        "business_name": "אדר ציוד וחומרי בניין",
-        "discount": "5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/28966"
-    },
-    {
-        "club": "HOT",
-        "business_name": "לבבות",
-        "discount": "3.5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/28883"
     },
     {
         "club": "HOT",
@@ -14365,27 +14269,87 @@
     },
     {
         "club": "HOT",
-        "business_name": "אטליז חד וחלק",
-        "discount": "2% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/29825"
-    },
-    {
-        "club": "HOT",
-        "business_name": "YONI - HAIR DESIGN",
+        "business_name": "לבבות",
         "discount": "3.5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/29618"
+        "discount_url": "https://www.hot.co.il/benefit/28883"
     },
     {
         "club": "HOT",
-        "business_name": "Baby Home",
+        "business_name": "אדר ציוד וחומרי בניין",
+        "discount": "5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/28966"
+    },
+    {
+        "club": "HOT",
+        "business_name": "House - האוס",
+        "discount": "5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/29154"
+    },
+    {
+        "club": "HOT",
+        "business_name": "אלכסנדר",
         "discount": "3.5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/29614"
+        "discount_url": "https://www.hot.co.il/benefit/29475"
     },
     {
         "club": "HOT",
-        "business_name": "מפגש יוסף",
+        "business_name": "ממתקי השוק   אבו כנאפה",
+        "discount": "3.5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/29554"
+    },
+    {
+        "club": "HOT",
+        "business_name": "קיטשן אנד מור",
+        "discount": "4% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/29567"
+    },
+    {
+        "club": "HOT",
+        "business_name": "סיגליות- קוסמטיקה",
+        "discount": "3.5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/29659"
+    },
+    {
+        "club": "HOT",
+        "business_name": "דולפין- כלי בית",
+        "discount": "4% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/29661"
+    },
+    {
+        "club": "HOT",
+        "business_name": "הכל לבית אזולאי - מוצרי חשמל",
         "discount": "2% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/28944"
+        "discount_url": "https://www.hot.co.il/benefit/29733"
+    },
+    {
+        "club": "HOT",
+        "business_name": "תבליני הצמח",
+        "discount": "4% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/29779"
+    },
+    {
+        "club": "HOT",
+        "business_name": "Cesare Gold - תכשיטים",
+        "discount": "4% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/29784"
+    },
+    {
+        "club": "HOT",
+        "business_name": "רמי לגזיאל- מספרה",
+        "discount": "5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/29840"
+    },
+    {
+        "club": "HOT",
+        "business_name": "Compuland- מחשבים,מדפסות",
+        "discount": "2% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/29857"
+    },
+    {
+        "club": "HOT",
+        "business_name": "מעדנייה סופר מיני",
+        "discount": "2% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/28941"
     },
     {
         "club": "HOT",
@@ -14395,8 +14359,26 @@
     },
     {
         "club": "HOT",
-        "business_name": "מעדנייה סופר מיני",
+        "business_name": "מפגש יוסף",
         "discount": "2% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/benefit/28941"
+        "discount_url": "https://www.hot.co.il/benefit/28944"
+    },
+    {
+        "club": "HOT",
+        "business_name": "Baby Home",
+        "discount": "3.5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/29614"
+    },
+    {
+        "club": "HOT",
+        "business_name": "YONI - HAIR DESIGN",
+        "discount": "3.5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/29618"
+    },
+    {
+        "club": "HOT",
+        "business_name": "אטליז חד וחלק",
+        "discount": "2% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/benefit/29825"
     }
 ]
