@@ -117,13 +117,15 @@ def scrape_hot():
                 continue
 
             b_id = item.get("id") or ""
+            title = (
+                item.get("clean_title") or item.get("title") or ""
+            ).strip()
+            slug = title.replace(" ", "-")
             results.append({
                 "club": "HOT",
-                "business_name": (
-                    item.get("clean_title") or item.get("title") or ""
-                ).strip(),
+                "business_name": title,
                 "discount": parse_hot_discount(item),
-                "discount_url": f"https://www.hot.co.il/benefit/{b_id}"
+                "discount_url": f"https://www.hot.co.il/הטבה/{b_id}/{slug}"
                 if b_id
                 else "",
             })

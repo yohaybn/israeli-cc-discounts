@@ -149,7 +149,7 @@ def scrape_mcc():
                 )
 
                 results.append({
-                    "club": "MCC",
+                    "club": "חבר",
                     "business_name": business_name,
                     "discount": discount,
                     "discount_url": discount_url,
