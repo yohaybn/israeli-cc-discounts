@@ -1003,12 +1003,6 @@
     },
     {
         "club": "MCC",
-        "business_name": "KITAN FACTORY STORE - כיתן",
-        "discount": "7%",
-        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=2331"
-    },
-    {
-        "club": "MCC",
         "business_name": "ZER4U",
         "discount": "4.5%",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=1802"
@@ -1492,6 +1486,12 @@
         "business_name": "רשת מצעית",
         "discount": "10%",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=6109"
+    },
+    {
+        "club": "MCC",
+        "business_name": "KITAN FACTORY STORE - כיתן",
+        "discount": "7%",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=2331"
     },
     {
         "club": "MCC",
@@ -3340,12 +3340,6 @@
         "business_name": "סי אספרסו - Si  Espresso",
         "discount": "5%",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=157"
-    },
-    {
-        "club": "MCC",
-        "business_name": "פיצה אחד פלוס אחד",
-        "discount": "5%",
-        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=4456"
     },
     {
         "club": "MCC",

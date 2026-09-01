@@ -1,18 +1,18 @@
 {
     "htzone": {
-        "last_successful_scrape": "2026-08-31T06:00:02Z",
+        "last_successful_scrape": "2026-09-01T06:00:01Z",
         "count": 83
     },
     "all_combined": {
-        "last_updated": "2026-08-31T06:00:02Z",
-        "total_count": 3263
+        "last_updated": "2026-09-01T06:00:01Z",
+        "total_count": 3259
     },
     "mcc": {
-        "last_successful_scrape": "2026-08-31T06:00:02Z",
-        "count": 783
+        "last_successful_scrape": "2026-09-01T06:00:01Z",
+        "count": 782
     },
     "hot": {
-        "last_successful_scrape": "2026-08-31T06:00:02Z",
-        "count": 2397
+        "last_successful_scrape": "2026-09-01T06:00:01Z",
+        "count": 2394
     }
 }
