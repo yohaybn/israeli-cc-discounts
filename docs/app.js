@@ -2,21 +2,24 @@
  * Israeli Credit Card Discount Finder - Frontend App
  * Features:
  * - Instant typing search with Hebrew normalization & fuzzy match
- * - Multi-club filtering (MCC, HOT, HTzone, ALL)
+ * - Multi-word tag and query matching
+ * - Multi-club filter selection (חבר, HOT, HTzone)
  * - Multi-discount store option cards
- * - Direct navigation on click
- * - Responsive pagination / load more
+ * - Direct navigation to official discount pages
+ * - Fully responsive & mobile-optimized
  */
 
 (function () {
     'use strict';
+
+    const ALL_CLUBS = ['MCC', 'HOT', 'HTzone'];
 
     // State
     const state = {
         allBusinesses: [],
         filteredBusinesses: [],
         searchQuery: '',
-        selectedClub: 'ALL',
+        selectedClubs: new Set(ALL_CLUBS), // Multi-select Set
         sortBy: 'discount_desc',
         fuzzyThreshold: 0.72, // 0.50 to 1.00
         pageSize: 48,
@@ -55,6 +58,7 @@
         countMCC: document.getElementById('countMCC'),
         countHOT: document.getElementById('countHOT'),
         countHTzone: document.getElementById('countHTzone'),
+        backToTopBtn: document.getElementById('backToTopBtn'),
     };
 
     // Hebrew text normalization for fast & accurate instant search
@@ -98,37 +102,63 @@
         return 1 - dist / Math.max(l1, l2);
     }
 
-    // Check if query matches a business name
+    // Check if query matches a business name (supports multi-word exact & fuzzy)
     function matchesQuery(business, normalizedQuery) {
         if (!normalizedQuery) return true;
 
         const normalizedName = business._normalizedName;
         if (normalizedName.includes(normalizedQuery)) return true;
 
-        const queryWords = normalizedQuery.split(' ');
-        if (queryWords.length > 1 && queryWords.every((w) => normalizedName.includes(w))) {
+        const queryWords = normalizedQuery.split(' ').filter((w) => w.length > 0);
+        if (queryWords.length === 0) return true;
+
+        // Check if all query words appear in the business name
+        if (queryWords.every((qw) => normalizedName.includes(qw))) {
             return true;
         }
 
         // If threshold is set to 100% (1.0), only exact substring match
         if (state.fuzzyThreshold >= 0.99) return false;
 
-        // Fuzzy match on words
-        if (normalizedQuery.length >= 2) {
-            const nameWords = normalizedName.split(' ');
-            for (const qw of queryWords) {
-                if (qw.length < 2) continue;
-                for (const nw of nameWords) {
-                    if (similarity(qw, nw) >= state.fuzzyThreshold) return true;
-                }
-            }
-        }
+        // Fuzzy match across words
+        const nameWords = normalizedName.split(' ').filter((w) => w.length > 0);
+        const allWordsMatched = queryWords.every((qw) => {
+            if (qw.length < 2) return normalizedName.includes(qw);
+            return nameWords.some((nw) => similarity(qw, nw) >= state.fuzzyThreshold);
+        });
 
-        return false;
+        return allWordsMatched;
+    }
+
+    // Club name formatting helpers
+    function getClubFullName(club) {
+        switch (club) {
+            case 'MCC':
+                return 'חבר (משרתי הקבע והגמלאים)';
+            case 'HOT':
+                return 'מועדון הוט';
+            case 'HTzone':
+                return 'הייטק זון';
+            default:
+                return club;
+        }
+    }
+
+    function getClubShortName(club) {
+        switch (club) {
+            case 'MCC':
+                return 'חבר';
+            case 'HOT':
+                return 'HOT';
+            case 'HTzone':
+                return 'HTzone';
+            default:
+                return club;
+        }
     }
 
     // Process raw array of discount items into grouped business records
-    function processRawDiscounts(dataList, metadata) {
+    function processRawDiscounts(dataList) {
         const names = new Map();
         const clubCounts = { ALL: 0, MCC: 0, HOT: 0, HTzone: 0 };
 
@@ -191,13 +221,15 @@
     // Fetch initial dataset from local API or raw GitHub JSON (GitHub Pages mode)
     async function loadData() {
         const DATA_SOURCES = [
-            // 1. If running under GitHub Pages / static hosting with local data folder
-            './data/all_combined_discounts.json',
-            'data/all_combined_discounts.json',
-            // 2. If running under local API server
+            // 1. Local API businesses endpoint
             '/businesses',
-            // 3. Raw GitHub fallback for 100% serverless GitHub Pages
+            // 2. Relative paths to shared /data folder
+            '../data/all_combined_discounts.json',
+            'data/all_combined_discounts.json',
+            './data/all_combined_discounts.json',
+            // 3. Raw GitHub fallbacks for GitHub Pages
             'https://raw.githubusercontent.com/yohaybn/israeli-cc-discounts/refs/heads/main/data/all_combined_discounts.json',
+            'https://raw.githubusercontent.com/yohaybn/israeli-cc-discounts/main/data/all_combined_discounts.json',
         ];
 
         let loaded = false;
@@ -264,18 +296,37 @@
         elements.loadingSkeleton.classList.add('hidden');
         elements.cardsGrid.classList.remove('hidden');
 
+        updateFilterChipsUI();
         applyFiltersAndSort();
+    }
+
+    // Update filter chips visual selection state
+    function updateFilterChipsUI() {
+        const isAllSelected = state.selectedClubs.size === ALL_CLUBS.length;
+
+        elements.filterChips.forEach((chip) => {
+            const club = chip.getAttribute('data-club');
+            if (club === 'ALL') {
+                chip.classList.toggle('active', isAllSelected);
+                chip.setAttribute('aria-pressed', isAllSelected ? 'true' : 'false');
+            } else {
+                const isSelected = state.selectedClubs.has(club);
+                chip.classList.toggle('active', isSelected);
+                chip.setAttribute('aria-pressed', isSelected ? 'true' : 'false');
+            }
+        });
     }
 
     // Filter and sort businesses based on current state
     function applyFiltersAndSort() {
         const query = normalizeHebrew(state.searchQuery);
-        const club = state.selectedClub;
+        const isAllSelected = state.selectedClubs.size === ALL_CLUBS.length;
 
         let results = state.allBusinesses.filter((biz) => {
-            // Club filter
-            if (club !== 'ALL' && !biz.clubs.includes(club)) {
-                return false;
+            // Club multi-filter: business must belong to at least one selected club
+            if (!isAllSelected) {
+                const hasSelectedClub = biz.clubs.some((c) => state.selectedClubs.has(c));
+                if (!hasSelectedClub) return false;
             }
             // Search query filter
             return matchesQuery(biz, query);
@@ -305,7 +356,13 @@
             elements.cardsGrid.classList.add('hidden');
             elements.loadMoreContainer.classList.add('hidden');
             elements.emptyState.classList.remove('hidden');
-            elements.emptyQuery.textContent = state.searchQuery || (state.selectedClub !== 'ALL' ? state.selectedClub : '');
+
+            const isAllSelected = state.selectedClubs.size === ALL_CLUBS.length;
+            let filterNames = '';
+            if (!isAllSelected) {
+                filterNames = Array.from(state.selectedClubs).map(getClubShortName).join(', ');
+            }
+            elements.emptyQuery.textContent = state.searchQuery || filterNames || '';
             return;
         }
 
@@ -335,8 +392,19 @@
         const card = document.createElement('div');
         card.className = 'business-card';
 
-        const hasMultiple = biz.discounts && biz.discounts.length > 1;
-        const discountCount = biz.discounts ? biz.discounts.length : 0;
+        const isAllSelected = state.selectedClubs.size === ALL_CLUBS.length;
+        // Filter discounts list based on active club selection
+        let discountsToShow = (biz.discounts || []).filter((d) => {
+            if (isAllSelected) return true;
+            return state.selectedClubs.has(d.club);
+        });
+
+        if (discountsToShow.length === 0) {
+            discountsToShow = biz.discounts || [];
+        }
+
+        const discountCount = discountsToShow.length;
+        const hasMultiple = discountCount > 1;
 
         // Card Header
         const header = document.createElement('div');
@@ -376,17 +444,6 @@
         const list = document.createElement('div');
         list.className = 'discounts-list';
 
-        // Filter discounts if a specific club is selected
-        let discountsToShow = biz.discounts || [];
-        if (state.selectedClub !== 'ALL') {
-            // Put selected club discounts first
-            discountsToShow = [...biz.discounts].sort((a, b) => {
-                if (a.club === state.selectedClub && b.club !== state.selectedClub) return -1;
-                if (b.club === state.selectedClub && a.club !== state.selectedClub) return 1;
-                return 0;
-            });
-        }
-
         discountsToShow.forEach((disc) => {
             const clubLower = disc.club.toLowerCase();
             const optionLink = document.createElement('a');
@@ -394,13 +451,14 @@
             optionLink.href = disc.discount_url || '#';
             optionLink.target = '_blank';
             optionLink.rel = 'noopener noreferrer';
-            optionLink.title = `מעבר להטבה במועדון ${disc.club}`;
 
+            const clubShort = getClubShortName(disc.club);
             const clubFullName = getClubFullName(disc.club);
+            optionLink.title = `מעבר להטבה במועדון ${clubFullName}`;
 
             optionLink.innerHTML = `
                 <div class="option-left-content">
-                    <span class="option-club-badge ${clubLower}">${escapeHtml(disc.club)}</span>
+                    <span class="option-club-badge ${clubLower}">${escapeHtml(clubShort)}</span>
                     <div class="option-text-wrap">
                         <span class="option-discount-title">${escapeHtml(disc.discount)}</span>
                         <span class="option-club-name">${escapeHtml(clubFullName)}</span>
@@ -422,19 +480,6 @@
         return card;
     }
 
-    function getClubFullName(club) {
-        switch (club) {
-            case 'MCC':
-                return 'מועדון מורות וגננות';
-            case 'HOT':
-                return 'מועדון הוט';
-            case 'HTzone':
-                return 'הייטק זון';
-            default:
-                return club;
-        }
-    }
-
     function escapeHtml(text) {
         if (!text) return '';
         const div = document.createElement('div');
@@ -446,19 +491,41 @@
     function updateResultsMeta() {
         const total = state.filteredBusinesses.length;
         let countDiscounts = 0;
+        const isAllSelected = state.selectedClubs.size === ALL_CLUBS.length;
+
         state.filteredBusinesses.forEach((b) => {
-            countDiscounts += b.discounts ? b.discounts.length : 0;
+            if (isAllSelected) {
+                countDiscounts += b.discounts ? b.discounts.length : 0;
+            } else {
+                (b.discounts || []).forEach((d) => {
+                    if (state.selectedClubs.has(d.club)) countDiscounts += 1;
+                });
+            }
         });
 
-        if (state.searchQuery || state.selectedClub !== 'ALL') {
+        if (state.searchQuery || !isAllSelected) {
             elements.resultsCountText.innerHTML = `נמצאו <strong>${total.toLocaleString()}</strong> עסקים עם <strong>${countDiscounts.toLocaleString()}</strong> הטבות מתאימות`;
         } else {
             elements.resultsCountText.innerHTML = `מציג <strong>${total.toLocaleString()}</strong> עסקים ורשתות (סה״כ ${countDiscounts.toLocaleString()} הטבות)`;
         }
 
-        if (state.selectedClub !== 'ALL') {
-            elements.activeFilterBadge.textContent = `מסונן לפי: ${getClubFullName(state.selectedClub)}`;
+        if (!isAllSelected) {
+            const clubNames = Array.from(state.selectedClubs).map(getClubShortName).join(', ');
+            elements.activeFilterBadge.innerHTML = `
+                <span>מסונן לפי: <strong>${escapeHtml(clubNames)}</strong></span>
+                <button id="clearClubFilterBtn" class="clear-club-filter-btn" title="בטל סינון מועדונים" aria-label="בטל סינון מועדונים">✕</button>
+            `;
             elements.activeFilterBadge.classList.remove('hidden');
+
+            const clearFilterBtn = document.getElementById('clearClubFilterBtn');
+            if (clearFilterBtn) {
+                clearFilterBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    state.selectedClubs = new Set(ALL_CLUBS);
+                    updateFilterChipsUI();
+                    applyFiltersAndSort();
+                });
+            }
         } else {
             elements.activeFilterBadge.classList.add('hidden');
         }
@@ -500,12 +567,12 @@
             applyFiltersAndSort();
         });
 
-        // Quick tags
+        // Quick tags (multi-word chips)
         if (elements.quickTags) {
             elements.quickTags.addEventListener('click', (e) => {
                 const tag = e.target.closest('.quick-tag');
                 if (!tag) return;
-                const query = tag.getAttribute('data-query');
+                const query = tag.getAttribute('data-query') || tag.textContent.trim();
                 elements.searchInput.value = query;
                 elements.clearSearchBtn.classList.remove('hidden');
                 state.searchQuery = query;
@@ -514,16 +581,34 @@
             });
         }
 
-        // Club filter chips
+        // Multi-select Club filter chips
         elements.filterChips.forEach((chip) => {
             chip.addEventListener('click', () => {
-                elements.filterChips.forEach((c) => {
-                    c.classList.remove('active');
-                    c.setAttribute('aria-selected', 'false');
-                });
-                chip.classList.add('active');
-                chip.setAttribute('aria-selected', 'true');
-                state.selectedClub = chip.getAttribute('data-club');
+                const clickedClub = chip.getAttribute('data-club');
+
+                if (clickedClub === 'ALL') {
+                    // Clicking ALL resets to selecting all clubs
+                    state.selectedClubs = new Set(ALL_CLUBS);
+                } else {
+                    const isAllSelected = state.selectedClubs.size === ALL_CLUBS.length;
+
+                    if (isAllSelected) {
+                        // If all were active, clicking one club narrows down to ONLY that club
+                        state.selectedClubs = new Set([clickedClub]);
+                    } else if (state.selectedClubs.has(clickedClub)) {
+                        // Deselect this club
+                        state.selectedClubs.delete(clickedClub);
+                        // If none left, revert to ALL
+                        if (state.selectedClubs.size === 0) {
+                            state.selectedClubs = new Set(ALL_CLUBS);
+                        }
+                    } else {
+                        // Add this club to active selection
+                        state.selectedClubs.add(clickedClub);
+                    }
+                }
+
+                updateFilterChipsUI();
                 applyFiltersAndSort();
             });
         });
@@ -565,15 +650,26 @@
             elements.searchInput.value = '';
             elements.clearSearchBtn.classList.add('hidden');
             state.searchQuery = '';
-            state.selectedClub = 'ALL';
-            elements.filterChips.forEach((c) => {
-                const isAll = c.getAttribute('data-club') === 'ALL';
-                c.classList.toggle('active', isAll);
-                c.setAttribute('aria-selected', isAll ? 'true' : 'false');
-            });
+            state.selectedClubs = new Set(ALL_CLUBS);
+            updateFilterChipsUI();
             applyFiltersAndSort();
             elements.searchInput.focus();
         });
+
+        // Floating Back to Top Button
+        if (elements.backToTopBtn) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 400) {
+                    elements.backToTopBtn.classList.remove('hidden');
+                } else {
+                    elements.backToTopBtn.classList.add('hidden');
+                }
+            }, { passive: true });
+
+            elements.backToTopBtn.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
 
         // Keyboard Shortcuts: '/' to focus search, 'Escape' to clear
         document.addEventListener('keydown', (e) => {

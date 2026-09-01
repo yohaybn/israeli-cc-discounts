@@ -2,9 +2,10 @@
 <html lang="he" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>מאתר הנחות והטבות אשראי | MCC, HOT, HTzone</title>
-    <meta name="description" content="חיפוש מיידי של כל ההנחות וההטבות בכרטיסי מועדון: מועדון הוט (HOT), מועדון מורות וגננות (MCC), ו-HTzone. השוואת הנחות ומעבר ישיר להטבה.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>מאתר הנחות והטבות אשראי | חבר (משרתי הקבע והגמלאים), HOT, HTzone</title>
+    <meta name="description" content="חיפוש מיידי של כל ההנחות וההטבות בכרטיסי מועדון: חבר (משרתי הקבע והגמלאים), מועדון הוט (HOT), ו-HTzone. השוואת הנחות ומעבר ישיר להטבה.">
+    <meta name="theme-color" content="#0b0f19">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -60,7 +61,7 @@
         <section class="hero-section">
             <div class="hero-text-wrapper">
                 <h2 class="hero-headline">איפה הכי משתלם לקנות היום?</h2>
-                <p class="hero-description">חפשו שם עסק, רשת או קטגוריה וגלו את כל ההנחות וההטבות בכרטיסי <strong class="badge-mcc-text">MCC</strong>, <strong class="badge-hot-text">HOT</strong> ו-<strong class="badge-htzone-text">HTzone</strong></p>
+                <p class="hero-description">חפשו שם עסק, רשת או קטגוריה וגלו את כל ההנחות וההטבות בכרטיסי <strong class="badge-mcc-text">חבר</strong>, <strong class="badge-hot-text">HOT</strong> ו-<strong class="badge-htzone-text">HTzone</strong></p>
             </div>
 
             <!-- Search Box Wrapper -->
@@ -81,7 +82,7 @@
                         autofocus
                         aria-label="חיפוש עסקים והטבות"
                     >
-                    <button id="clearSearchBtn" class="clear-btn hidden" title="נקה חיפוש" aria-label="נקה חיפוש">
+                    <button id="clearSearchBtn" class="clear-btn hidden" title="נקה חיפוש" aria-label="נקה חיפוש" type="button">
                         <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                             <line x1="18" y1="6" x2="6" y2="18"></line>
                             <line x1="6" y1="6" x2="18" y2="18"></line>
@@ -94,41 +95,47 @@
                 <div class="quick-tags-container">
                     <span class="quick-tags-label">חיפושים פופולריים:</span>
                     <div class="quick-tags" id="quickTags">
-                        <button class="quick-tag" data-query="סטימצקי">סטימצקי</button>
-                        <button class="quick-tag" data-query="אפריל">אפריל</button>
-                        <button class="quick-tag" data-query="יאנגו">יאנגו דלי</button>
-                        <button class="quick-tag" data-query="ספרים">צומת ספרים</button>
-                        <button class="quick-tag" data-query="נייקי">נייקי</button>
-                        <button class="quick-tag" data-query="דלק">דלק / רכב</button>
-                        <button class="quick-tag" data-query="יקב">יקבים ויין</button>
+                        <button class="quick-tag" type="button" data-query="סטימצקי">סטימצקי</button>
+                        <button class="quick-tag" type="button" data-query="אפריל">אפריל</button>
+                        <button class="quick-tag" type="button" data-query="יאנגו דלי">יאנגו דלי</button>
+                        <button class="quick-tag" type="button" data-query="צומת ספרים">צומת ספרים</button>
+                        <button class="quick-tag" type="button" data-query="נייקי">נייקי</button>
+                        <button class="quick-tag" type="button" data-query="דלק / רכב">דלק / רכב</button>
+                        <button class="quick-tag" type="button" data-query="יקבים ויין">יקבים ויין</button>
                     </div>
                 </div>
             </div>
 
             <!-- Filter & Controls Toolbar -->
             <div class="toolbar-section">
-                <!-- Club Filter Chips -->
-                <div class="club-filters-group" role="tablist" aria-label="סינון לפי מועדון">
-                    <button class="filter-chip active" data-club="ALL" role="tab" aria-selected="true" id="filterAll">
-                        <span class="chip-dot"></span>
-                        <span class="chip-name">כל המועדונים</span>
-                        <span class="chip-count" id="countAll">--</span>
-                    </button>
-                    <button class="filter-chip chip-mcc" data-club="MCC" role="tab" aria-selected="false" id="filterMCC">
-                        <span class="club-logo-tag mcc-tag">MCC</span>
-                        <span class="chip-name">מועדון מורות וגננות</span>
-                        <span class="chip-count" id="countMCC">--</span>
-                    </button>
-                    <button class="filter-chip chip-hot" data-club="HOT" role="tab" aria-selected="false" id="filterHOT">
-                        <span class="club-logo-tag hot-tag">HOT</span>
-                        <span class="chip-name">מועדון הוט</span>
-                        <span class="chip-count" id="countHOT">--</span>
-                    </button>
-                    <button class="filter-chip chip-htzone" data-club="HTzone" role="tab" aria-selected="false" id="filterHTzone">
-                        <span class="club-logo-tag htzone-tag">HTzone</span>
-                        <span class="chip-name">הייטק זון</span>
-                        <span class="chip-count" id="countHTzone">--</span>
-                    </button>
+                <!-- Club Filter Chips (Multi-select) -->
+                <div class="club-filters-container">
+                    <span class="filters-group-label">סינון לפי מועדונים (ניתן לבחור מספר מועדונים):</span>
+                    <div class="club-filters-group" role="group" aria-label="סינון לפי מועדונים">
+                        <button class="filter-chip active" data-club="ALL" type="button" aria-pressed="true" id="filterAll">
+                            <span class="chip-checkbox">✓</span>
+                            <span class="chip-name">כל המועדונים</span>
+                            <span class="chip-count" id="countAll">--</span>
+                        </button>
+                        <button class="filter-chip chip-mcc" data-club="MCC" type="button" aria-pressed="false" id="filterMCC">
+                            <span class="chip-checkbox">✓</span>
+                            <span class="club-logo-tag mcc-tag">חבר</span>
+                            <span class="chip-name">חבר (משרתי הקבע והגמלאים)</span>
+                            <span class="chip-count" id="countMCC">--</span>
+                        </button>
+                        <button class="filter-chip chip-hot" data-club="HOT" type="button" aria-pressed="false" id="filterHOT">
+                            <span class="chip-checkbox">✓</span>
+                            <span class="club-logo-tag hot-tag">HOT</span>
+                            <span class="chip-name">מועדון הוט</span>
+                            <span class="chip-count" id="countHOT">--</span>
+                        </button>
+                        <button class="filter-chip chip-htzone" data-club="HTzone" type="button" aria-pressed="false" id="filterHTzone">
+                            <span class="chip-checkbox">✓</span>
+                            <span class="club-logo-tag htzone-tag">HTzone</span>
+                            <span class="chip-name">הייטק זון</span>
+                            <span class="chip-count" id="countHTzone">--</span>
+                        </button>
+                    </div>
                 </div>
 
                 <!-- Sort and Fuzzy Sensitivity Controls -->
@@ -189,7 +196,7 @@
 
             <!-- Load More Button (if many results) -->
             <div id="loadMoreContainer" class="load-more-container hidden">
-                <button id="loadMoreBtn" class="load-more-btn">
+                <button id="loadMoreBtn" class="load-more-btn" type="button">
                     <span>הצג עוד תוצאות</span>
                     <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <polyline points="6 9 12 15 18 9"></polyline>
@@ -208,7 +215,7 @@
                 </div>
                 <h3 class="empty-title">לא נמצאו תוצאות מתאימות</h3>
                 <p class="empty-subtitle">לא מצאנו הטבות התואמות לחיפוש "<span id="emptyQuery"></span>". נסו לחפש בשם אחר או אפסו את הסינון.</p>
-                <button id="resetSearchBtn" class="reset-search-btn">
+                <button id="resetSearchBtn" class="reset-search-btn" type="button">
                     <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
                         <path d="M3 3v5h5"></path>
@@ -219,12 +226,19 @@
         </section>
     </main>
 
+    <!-- Floating Back to Top Button -->
+    <button id="backToTopBtn" class="back-to-top-btn hidden" title="חזרה לראש העמוד" aria-label="חזרה לראש העמוד" type="button">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
     <!-- Footer -->
     <footer class="site-footer">
         <div class="container footer-content">
             <div class="footer-left">
                 <p>מערכת איתור והשוואת הנחות אשראי &copy; 2026</p>
-                <p class="footer-note">הנתונים נאספים ממועדוני האשראי הרשמיים (MCC, HOT, HTzone) ומתעדכנים מדי יום.</p>
+                <p class="footer-note">הנתונים נאספים ממועדוני האשראי הרשמיים (חבר, HOT, HTzone) ומתעדכנים מדי יום.</p>
             </div>
             <div class="footer-links">
                 <a href="/docs" target="_blank" class="footer-link">תיעוד API (Swagger)</a>
