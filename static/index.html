@@ -61,7 +61,7 @@
         <section class="hero-section">
             <div class="hero-text-wrapper">
                 <h2 class="hero-headline">איפה הכי משתלם לקנות היום?</h2>
-                <p class="hero-description">חפשו שם עסק, רשת או קטגוריה וגלו את כל ההנחות וההטבות בכרטיסי <strong class="badge-mcc-text">חבר</strong>, <strong class="badge-hot-text">HOT</strong> ו-<strong class="badge-htzone-text">HTzone</strong></p>
+                <p class="hero-description">חפשו שם עסק, רשת או קטגוריה וגלו את כל ההנחות וההטבות בכרטיסי <strong class="badge-mcc-text">חבר</strong>, <strong class="badge-hot-text">HOT</strong>, <strong class="badge-htzone-text">HTzone</strong> ו-<strong class="badge-buyme-text">BUYME</strong></p>
             </div>
 
             <!-- Search Box Wrapper -->
@@ -135,6 +135,12 @@
                             <span class="chip-name">הייטק זון</span>
                             <span class="chip-count" id="countHTzone">--</span>
                         </button>
+                        <button class="filter-chip chip-buyme" data-club="BUYME" type="button" aria-pressed="false" id="filterBUYME">
+                            <span class="chip-checkbox">✓</span>
+                            <span class="club-logo-tag buyme-tag">BUYME</span>
+                            <span class="chip-name">Buyme</span>
+                            <span class="chip-count" id="countBUYME">--</span>
+                        </button>
                     </div>
                 </div>
 
@@ -164,6 +170,19 @@
                                 <option value="discount_desc" selected>הנחה הגבוהה ביותר ⚡</option>
                                 <option value="name_asc">שם עסק (א - ת)</option>
                                 <option value="deals_desc">מספר הטבות לעסק (הכי הרבה)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="type-filter-control">
+                        <label for="discountTypeSelect" class="control-label">סוג ההטבה:</label>
+                        <div class="custom-select-wrapper">
+                            <select id="discountTypeSelect" class="custom-select">
+                                <option value="">כל הסוגים</option>
+                                <option value="billing_discount">חיוב (ברירת מחדל)</option>
+                                <option value="rechargeable_card">Rechargeable Card</option>
+                                <option value="voucher">Voucher</option>
+                                <option value="gift_card">Gift Card</option>
+                                <option value="club_card">Club Card</option>
                             </select>
                         </div>
                     </div>
@@ -238,7 +257,7 @@
         <div class="container footer-content">
             <div class="footer-left">
                 <p>מערכת איתור והשוואת הנחות אשראי &copy; 2026</p>
-                <p class="footer-note">הנתונים נאספים ממועדוני האשראי הרשמיים (חבר, HOT, HTzone) ומתעדכנים מדי יום.</p>
+                <p class="footer-note">הנתונים נאספים ממועדוני האשראי הרשמיים (חבר, HOT, HTzone) וגם מ-BUYME ומתעדכנים מדי יום.</p>
             </div>
             <div class="footer-links">
                 <a href="/docs" target="_blank" class="footer-link">תיעוד API (Swagger)</a>

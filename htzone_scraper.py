@@ -97,11 +97,28 @@ def scrape_htzone(page_id=62, batch_size=50):
 
             discount_str = discount_text or (f"{price} ₪" if price else "הנחה לחברי מועדון")
 
+            # Simple classification: default to billing_discount and extract percent when present
+            discount_type = "billing_discount"
+            discount_value = None
+            pct_match = None
+            try:
+                pct_match = __import__('re').search(r"(\d+(?:\.\d+)?)\s*%", discount_str)
+            except Exception:
+                pct_match = None
+
+            if pct_match:
+                try:
+                    discount_value = float(pct_match.group(1))
+                except Exception:
+                    discount_value = None
+
             results.append({
                 "club": "HTzone",
                 "business_name": title,
                 "discount": discount_str,
                 "discount_url": f"https://www.htzone.co.il{link}" if link and not link.startswith("http") else link,
+                "discount_type": discount_type,
+                "discount_value": discount_value,
             })
             new_count += 1
 

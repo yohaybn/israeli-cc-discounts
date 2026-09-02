@@ -52,6 +52,7 @@ def scrape_hot():
     print("--- Starting HOT Club Scraper ---")
     results = []
     page = 1
+    import re as _re
 
     try:
         session = requests.Session(impersonate="chrome120")
@@ -121,13 +122,25 @@ def scrape_hot():
                 item.get("clean_title") or item.get("title") or ""
             ).strip()
             slug = title.replace(" ", "-")
+            discount_str = parse_hot_discount(item)
+
+            # Simple classification: default to billing_discount and extract percent when present
+            discount_type = "billing_discount"
+            discount_value = None
+            pct_match = _re.search(r"(\d+(?:\.\d+)?)\s*%", discount_str)
+            if pct_match:
+                try:
+                    discount_value = float(pct_match.group(1))
+                except Exception:
+                    discount_value = None
+
             results.append({
                 "club": "HOT",
                 "business_name": title,
-                "discount": parse_hot_discount(item),
-                "discount_url": f"https://www.hot.co.il/הטבה/{b_id}/{slug}"
-                if b_id
-                else "",
+                "discount": discount_str,
+                "discount_url": f"https://www.hot.co.il/הטבה/{b_id}/{slug}" if b_id else "",
+                "discount_type": discount_type,
+                "discount_value": discount_value,
             })
 
         print(

@@ -148,11 +148,23 @@ def scrape_mcc():
                     else ""
                 )
 
+                # Simple classification: default legacy items to billing_discount
+                discount_type = "billing_discount"
+                discount_value = None
+                pct_match = re.search(r"(\d+(?:\.\d+)?)\s*%", discount)
+                if pct_match:
+                    try:
+                        discount_value = float(pct_match.group(1))
+                    except Exception:
+                        discount_value = None
+
                 results.append({
                     "club": "חבר",
                     "business_name": business_name,
                     "discount": discount,
                     "discount_url": discount_url,
+                    "discount_type": discount_type,
+                    "discount_value": discount_value,
                 })
 
             if idx % 10 == 0 or idx == len(sub_categories):

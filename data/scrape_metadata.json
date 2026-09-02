@@ -1,18 +1,50 @@
 {
     "htzone": {
-        "last_successful_scrape": "2026-09-02T06:00:01Z",
+        "last_successful_scrape": "2026-09-02T13:25:58Z",
         "count": 83
     },
     "all_combined": {
-        "last_updated": "2026-09-02T06:00:01Z",
-        "total_count": 3260
+        "last_updated": "2026-09-02T13:25:58Z",
+        "total_count": 6510
     },
     "mcc": {
-        "last_successful_scrape": "2026-09-02T06:00:01Z",
-        "count": 783
+        "last_successful_scrape": "2026-09-02T13:25:58Z",
+        "count": 784
     },
     "hot": {
-        "last_successful_scrape": "2026-09-02T06:00:01Z",
-        "count": 2394
+        "last_successful_scrape": "2026-09-02T13:25:58Z",
+        "count": 2393
+    },
+    "discount_type_counts": {
+        "billing_discount": 3260,
+        "rechargeable_card": 1938,
+        "voucher": 1312
+    },
+    "buyme": {
+        "last_successful_scrape": "2026-09-02T13:25:58Z",
+        "supplier_counts": {
+            "13438757": 1304,
+            "9018727": 981,
+            "752649": 83,
+            "17573505": 175,
+            "17573460": 372,
+            "20620": 315,
+            "15490363": 126,
+            "17573615": 59,
+            "17573670": 728,
+            "15579925": 428,
+            "17574524": 34,
+            "15925581": 250,
+            "17574048": 25,
+            "4299680": 42,
+            "17573995": 50
+        },
+        "total_stores": 1312,
+        "output_file": "data/buyme_discounts.json"
+    },
+    "hvr_rechargeable_cards": {
+        "last_successful_scrape": "2026-09-02T13:25:58Z",
+        "count": 1938,
+        "output_file": "data/hvr_rechargeable_cards.json"
     }
 }

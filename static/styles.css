@@ -991,6 +991,40 @@ body {
     color: #fff;
 }
 
+/* BUYME badge */
+.option-club-badge.buyme {
+    background: linear-gradient(135deg, #ff7ab6, #ff4d6d);
+    color: #fff;
+}
+
+/* Voucher pill in card header */
+.voucher-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.06), rgba(244, 63, 94, 0.04));
+    border: 1px dashed rgba(255, 255, 255, 0.06);
+    padding: 0.35rem 0.6rem;
+    border-radius: var(--radius-md);
+    color: var(--text-secondary);
+    font-weight: 800;
+    flex-shrink: 0;
+}
+
+.voucher-icon {
+    font-size: 1rem;
+}
+
+.voucher-label {
+    font-size: 0.85rem;
+    color: var(--text-primary);
+}
+
+.voucher-count {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+}
+
 .option-text-wrap {
     display: flex;
     flex-direction: column;
