@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nearby Businesses Map</title>
+
+  <!-- Leaflet CSS -->
+  <link 
+    rel="stylesheet" 
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  />
+
+  <style>
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+    #header {
+      padding: 12px 20px;
+      background: #f8f9fa;
+      border-bottom: 1px solid #ddd;
+      z-index: 1000;
+    }
+    #status {
+      font-weight: 600;
+      color: #333;
+    }
+    #map {
+      flex: 1;
+      width: 100%;
+    }
+    /* RTL adjustments for Leaflet popups */
+    .leaflet-popup-content {
+      direction: rtl;
+      text-align: right;
+      font-family: inherit;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="header">
+    <div id="status">Obtaining your location...</div>
+  </div>
+
+  <!-- Map Container -->
+  <div id="map"></div>
+
+  <!-- Leaflet JS -->
+  <script 
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nXC0jk30DxWE126853VcL1F9LD734pullpaWTh5uxU="
+    crossorigin=""
+  ></script>
+
+  <script>
+    // Global map and marker layer group references
+    let map = null;
+    let businessLayerGroup = L.layerGroup();
+
+    const REGION_BOUNDS = [
+      { threshold: 30.0, file: 'businesses_eilat_arava.json' },
+      { threshold: 31.3, file: 'businesses_south.json' },
+      { threshold: 32.5, file: 'businesses_center.json' },
+      { threshold: Infinity, file: 'businesses_north.json' }
+    ];
+
+    function getRegionFileForLat(lat) {
+      for (const bound of REGION_BOUNDS) {
+        if (lat < bound.threshold) return bound.file;
+      }
+      return 'businesses_north.json';
+    }
+
+    function getRequiredRegionFiles(minLat, maxLat) {
+      const fileMin = getRegionFileForLat(minLat);
+      const fileMax = getRegionFileForLat(maxLat);
+      return Array.from(new Set([fileMin, fileMax]));
+    }
+
+    function haversineDistance(lat1, lon1, lat2, lon2) {
+      const R = 6371;
+      const dLat = (lat2 - lat1) * Math.PI / 180;
+      const dLon = (lon2 - lon1) * Math.PI / 180;
+      const a = 
+        Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+        Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) * 
+        Math.sin(dLon / 2) * Math.sin(dLon / 2);
+      const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+      return R * c;
+    }
+
+    // Initialize Map centered at user's location
+    function initMap(userLat, userLon, maxRadiusKm) {
+      // Create map instance
+      map = L.map('map').setView([userLat, userLon], 15);
+
+      // Add OpenStreetMap tiles
+      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      }).addTo(map);
+
+      // Add user position marker (Red Circle)
+      L.circleMarker([userLat, userLon], {
+        radius: 8,
+        fillColor: '#e74c3c',
+        color: '#ffffff',
+        weight: 2,
+        opacity: 1,
+        fillOpacity: 0.9
+      }).addTo(map).bindPopup('<b>המיקום שלך</b>');
+
+      // Draw 1 km radius circle around user
+      L.circle([userLat, userLon], {
+        radius: maxRadiusKm * 1000,
+        color: '#3498db',
+        fillColor: '#3498db',
+        fillOpacity: 0.1,
+        weight: 1.5,
+        dashArray: '5, 5'
+      }).addTo(map);
+
+      // Add business markers layer group to map
+      businessLayerGroup.addTo(map);
+    }
+
+    async function findAndDisplayBusinesses(userLat, userLon, maxRadiusKm = 1.0) {
+      const statusDiv = document.getElementById('status');
+
+      // 1. Initialize map
+      initMap(userLat, userLon, maxRadiusKm);
+
+      // 2. Calculate Bounding Box
+      const latDelta = maxRadiusKm / 111.0;
+      const lonDelta = maxRadiusKm / (111.0 * Math.cos(userLat * Math.PI / 180));
+
+      const minLat = userLat - latDelta;
+      const maxLat = userLat + latDelta;
+      const minLon = userLon - lonDelta;
+      const maxLon = userLon + lonDelta;
+
+      // 3. Determine required region files
+      const regionFiles = getRequiredRegionFiles(minLat, maxLat);
+      statusDiv.innerText = `טוען נתונים אזוריים (${regionFiles.join(', ')})...`;
+
+      try {
+        // Fetch files in parallel
+        const fetchPromises = regionFiles.map(file =>
+          fetch(`data/businesses/${file}`).then(res => {
+            if (!res.ok) throw new Error(`Failed to load ${file}`);
+            return res.json();
+          })
+        );
+
+        const regionDatasets = await Promise.all(fetchPromises);
+
+        // Deduplicate businesses
+        const businessMap = new Map();
+        for (const dataset of regionDatasets) {
+          for (const item of dataset) {
+            businessMap.set(item.id, item);
+          }
+        }
+
+        // Filter businesses within radius
+        const nearby = [];
+        for (const b of businessMap.values()) {
+          if (b.lat >= minLat && b.lat <= maxLat && b.lon >= minLon && b.lon <= maxLon) {
+            const dist = haversineDistance(userLat, userLon, b.lat, b.lon);
+            if (dist <= maxRadiusKm) {
+              nearby.push({ ...b, distance: dist });
+            }
+          }
+        }
+
+        // 4. Render markers on map
+        businessLayerGroup.clearLayers();
+
+        nearby.forEach(b => {
+          const distanceMeters = Math.round(b.distance * 1000);
+          
+          // Create marker for business
+          const marker = L.marker([b.lat, b.lon]);
+
+          // Popup HTML content with Google Maps directions link
+          const popupContent = `
+            <div style="min-width: 150px;">
+              <h3 style="margin: 0 0 5px 0; font-size: 16px;">${b.name}</h3>
+              <p style="margin: 0 0 5px 0; color: #666;">סוג: <b>${b.type}</b></p>
+              <p style="margin: 0 0 10px 0; color: #27ae60; font-weight: bold;">
+                מרחק: ${distanceMeters} מטרים
+              </p>
+              <a 
+                href="https://www.google.com/maps/dir/?api=1&destination=${b.lat},${b.lon}" 
+                target="_blank" 
+                style="display: inline-block; background: #3498db; color: #fff; text-decoration: none; padding: 4px 8px; border-radius: 4px; font-size: 12px;"
+              >
+                ניווט ב-Google Maps
+              </a>
+            </div>
+          `;
+
+          marker.bindPopup(popupContent);
+          businessLayerGroup.addLayer(marker);
+        });
+
+        statusDiv.innerText = `נמצאו ${nearby.length} עסקים ברדיוס ${maxRadiusKm} ק"מ:`;
+
+      } catch (err) {
+        statusDiv.innerText = 'שגיאה בטעינת הנתונים: ' + err.message;
+      }
+    }
+
+    // Request User Location on Load
+    if ('geolocation' in navigator) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          const userLat = position.coords.latitude;
+          const userLon = position.coords.longitude;
+          findAndDisplayBusinesses(userLat, userLon, 1.0);
+        },
+        (error) => {
+          document.getElementById('status').innerText = 'יש לאשר הרשאת מיקום כדי להציג עסקים בסביבתך.';
+        }
+      );
+    } else {
+      document.getElementById('status').innerText = 'הדפדפן אינו תומך ב-Geolocation.';
+    }
+  </script>
+</body>
+</html>

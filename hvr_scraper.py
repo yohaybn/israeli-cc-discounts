@@ -64,10 +64,7 @@ def normalize_hvr_rechargeable_card_item(item, source_name="giftcard"):
 
     discount_bits = []
     discount_bits.append("כרטיס חבר")
-    if city:
-        discount_bits.append(city)
-    if address:
-        discount_bits.append(address)
+
     if limitations and str(limitations).strip():
         discount_bits.append(str(limitations).strip())
     if description_parts:
