@@ -13,8 +13,6 @@
   crossorigin=""
 />
 
-
-
   <style>
     body {
       font-family: system-ui, -apple-system, sans-serif;
@@ -23,6 +21,7 @@
       display: flex;
       flex-direction: column;
       height: 100vh;
+      overflow: hidden; /* Prevent body scroll, use inner scroll */
     }
     #header {
       padding: 12px 20px;
@@ -30,15 +29,22 @@
       border-bottom: 1px solid #ddd;
       z-index: 1000;
       display: flex;
+      flex-direction: column; /* Allow controls to stack */
+      gap: 10px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    #controls-top, #controls-radius {
+      display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 10px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      width: 100%;
     }
     #status {
       font-weight: 600;
       color: #333;
       font-size: 14px;
+      flex-grow: 1;
     }
     .btn {
       background-color: #3498db;
@@ -58,27 +64,112 @@
     .btn.active {
       background-color: #e67e22;
     }
-    #map {
+    #radius-slider-container {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      flex-grow: 1;
+    }
+    #radius-slider {
+      flex-grow: 1;
+    }
+    #map-container {
+      display: flex;
+      flex-direction: column;
       flex: 1;
+      overflow: hidden; /* Critical for inner scrolling */
+    }
+    #map {
+      height: 40vh; /* Fixed height for map */
       width: 100%;
     }
-    /* RTL adjustments for Leaflet popups */
+    #business-list-container {
+      flex: 1;
+      overflow-y: auto; /* Enable scrolling for the list */
+      background-color: #f9f9f9;
+      border-top: 1px solid #ddd;
+    }
+    #business-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .business-item {
+      padding: 15px 20px;
+      border-bottom: 1px solid #eee;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+    }
+    .business-item:last-child {
+      border-bottom: none;
+    }
+    .business-info h3 {
+      margin: 0 0 5px 0;
+      font-size: 16px;
+      color: #333;
+    }
+    .business-info p {
+      margin: 0;
+      font-size: 14px;
+      color: #666;
+    }
+    .distance {
+      font-weight: bold;
+      color: #27ae60;
+    }
     .leaflet-popup-content {
       direction: rtl;
       text-align: right;
       font-family: inherit;
+    }
+    .map-btn, .list-btn {
+      display: inline-block;
+      background: #3498db;
+      color: #fff;
+      text-decoration: none;
+      padding: 6px 10px;
+      border-radius: 4px;
+      font-size: 13px;
+      margin-top: 8px; /* For popup */
+      border: none;
+      cursor: pointer;
+    }
+    .list-btn {
+        margin-top: 0;
+        margin-right: auto; /* Push to the left in list item */
     }
   </style>
 </head>
 <body>
 
   <div id="header">
-    <div id="status">טוען את המפה...</div>
-    <button id="pin-btn" class="btn" onclick="togglePinMode()">📍 בחר מיקום על המפה</button>
+    <div id="controls-top">
+      <div id="status">טוען את המפה...</div>
+      <button id="pin-btn" class="btn" onclick="togglePinMode()">📍 בחר מיקום על המפה</button>
+    </div>
+    <div id="controls-radius">
+        <label for="radius-slider">רדיוס חיפוש (ק"מ):</label>
+        <div id="radius-slider-container">
+            <input type="range" id="radius-slider" min="0.5" max="5" step="0.1" value="1.0" oninput="updateRadiusFromSlider(this.value)">
+            <span id="radius-value">1.0</span>
+        </div>
+    </div>
   </div>
 
-  <!-- Map Container -->
-  <div id="map"></div>
+  <!-- Map and List Container -->
+  <div id="map-container">
+    <!-- Map -->
+    <div id="map"></div>
+    
+    <!-- Business List -->
+    <div id="business-list-container">
+      <ul id="business-list">
+          <!-- List items will be inserted here -->
+      </ul>
+    </div>
+  </div>
 
 <!-- Official Leaflet 1.9.4 JavaScript -->
 <script 
@@ -97,7 +188,7 @@
     let isPinMode = false;
     let currentUserLat = 32.0853; // Default Tel Aviv center fallback
     let currentUserLon = 34.7818;
-    const searchRadiusKm = 1.0;
+    let currentSearchRadiusKm = 1.0; // Updated from const to let
 
     const REGION_BOUNDS = [
       { threshold: 30.0, file: 'businesses_eilat_arava.json' },
@@ -176,6 +267,18 @@
       }
     }
 
+    // Update Radius from Slider
+    function updateRadiusFromSlider(value) {
+        currentSearchRadiusKm = parseFloat(value);
+        document.getElementById('radius-value').innerText = currentSearchRadiusKm.toFixed(1);
+        
+        // Only update map elements if they exist (app already initialized)
+        if (radiusCircle) {
+            radiusCircle.setRadius(currentSearchRadiusKm * 1000);
+            updateUserLocation(currentUserLat, currentUserLon); // Re-fetch and re-filter
+        }
+    }
+
     // Updates User Marker, Circle Radius, and Fetches Businesses
     async function updateUserLocation(lat, lon) {
       currentUserLat = lat;
@@ -198,12 +301,13 @@
         });
       }
 
-      // Update or create 1km radius circle
+      // Update or create radius circle
       if (radiusCircle) {
         radiusCircle.setLatLng([lat, lon]);
+        radiusCircle.setRadius(currentSearchRadiusKm * 1000); // Ensure radius is correct
       } else {
         radiusCircle = L.circle([lat, lon], {
-          radius: searchRadiusKm * 1000,
+          radius: currentSearchRadiusKm * 1000,
           color: '#e67e22',
           fillColor: '#e67e22',
           fillOpacity: 0.1,
@@ -214,9 +318,9 @@
 
       map.panTo([lat, lon]);
 
-      // Calculate Bounding Box
-      const latDelta = searchRadiusKm / 111.0;
-      const lonDelta = searchRadiusKm / (111.0 * Math.cos(lat * Math.PI / 180));
+      // Calculate Bounding Box based on current radius
+      const latDelta = currentSearchRadiusKm / 111.0;
+      const lonDelta = currentSearchRadiusKm / (111.0 * Math.cos(lat * Math.PI / 180));
 
       const minLat = lat - latDelta;
       const maxLat = lat + latDelta;
@@ -225,8 +329,11 @@
 
       const regionFiles = getRequiredRegionFiles(minLat, maxLat);
       const statusDiv = document.getElementById('status');
+      const listContainer = document.getElementById('business-list');
+
       statusDiv.innerText = `טוען נתונים עבור (${regionFiles.join(', ')})...`;
-      
+      listContainer.innerHTML = ''; // Clear previous list
+
       try {
         async function fetchRegionFile(file) {
           const path = `/data/businesses/${file}`; // canonical path used by GitHub Pages and API server
@@ -249,47 +356,65 @@
           }
         }
 
-        const nearby = [];
+        let nearby = [];
         for (const b of businessMap.values()) {
           if (b.lat >= minLat && b.lat <= maxLat && b.lon >= minLon && b.lon <= maxLon) {
             const dist = haversineDistance(lat, lon, b.lat, b.lon);
-            if (dist <= searchRadiusKm) {
+            if (dist <= currentSearchRadiusKm) {
               nearby.push({ ...b, distance: dist });
             }
           }
         }
 
+        // Sort by distance (closest first)
+        nearby.sort((a, b) => a.distance - b.distance);
+
         businessLayerGroup.clearLayers();
 
-        nearby.forEach(b => {
-          const distanceMeters = Math.round(b.distance * 1000);
-          const marker = L.marker([b.lat, b.lon]);
+        if (nearby.length === 0) {
+            statusDiv.innerText = `לא נמצאו עסקים ברדיוס ${currentSearchRadiusKm.toFixed(1)} ק"מ.`;
+            listContainer.innerHTML = '<li class="business-item"><p>אין עסקים להצגה באזור זה.</p></li>';
+        } else {
+            statusDiv.innerText = `נמצאו ${nearby.length} עסקים ברדיוס ${currentSearchRadiusKm.toFixed(1)} ק"מ:`;
+            
+            nearby.forEach(b => {
+                const distanceMeters = Math.round(b.distance * 1000);
+                const marker = L.marker([b.lat, b.lon]);
+                
+                const gmapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${b.lat},${b.lon}`;
 
-          const popupContent = `
-            <div style="min-width: 150px;">
-              <h3 style="margin: 0 0 5px 0; font-size: 15px;">${b.name}</h3>
-              <p style="margin: 0 0 5px 0; color: #666;">סוג: <b>${b.type}</b></p>
-              <p style="margin: 0 0 10px 0; color: #27ae60; font-weight: bold;">
-                מרחק: ${distanceMeters} מטרים
-              </p>
-              <a 
-                href="https://www.google.com/maps/dir/?api=1&destination=${b.lat},${b.lon}" 
-                target="_blank" 
-                style="display: inline-block; background: #3498db; color: #fff; text-decoration: none; padding: 4px 8px; border-radius: 4px; font-size: 12px;"
-              >
-                ניווט ב-Google Maps
-              </a>
-            </div>
-          `;
+                // --- Map Popup Content ---
+                const popupContent = `
+                    <div style="min-width: 150px;">
+                        <h3 style="margin: 0 0 5px 0; font-size: 15px;">${b.name}</h3>
+                        <p style="margin: 0 0 5px 0; color: #666;">סוג: <b>${b.type}</b></p>
+                        <p style="margin: 0 0 10px 0; color: #27ae60; font-weight: bold;">
+                        מרחק: ${distanceMeters} מטרים
+                        </p>
+                        <a href="${gmapsUrl}" target="_blank" class="map-btn">ניווט ב-Google Maps</a>
+                    </div>
+                `;
+                marker.bindPopup(popupContent);
+                businessLayerGroup.addLayer(marker);
 
-          marker.bindPopup(popupContent);
-          businessLayerGroup.addLayer(marker);
-        });
-
-        statusDiv.innerText = `נמצאו ${nearby.length} עסקים ברדיוס ${searchRadiusKm} ק"מ:`;
+                // --- List Item Content ---
+                const listItem = document.createElement('li');
+                listItem.className = 'business-item';
+                listItem.innerHTML = `
+                    <div class="business-info">
+                        <h3>${b.name}</h3>
+                        <p>סוג: ${b.type}</p>
+                        <p class="distance">${distanceMeters} מטרים</p>
+                    </div>
+                    <a href="${gmapsUrl}" target="_blank" class="list-btn">ניווט</a>
+                `;
+                listContainer.appendChild(listItem);
+            });
+        }
 
       } catch (err) {
         statusDiv.innerText = 'שגיאה בטעינת נתונים: ' + err.message;
+        listContainer.innerHTML = `<li class="business-item"><p style="color: red;">שגיאה: ${err.message}</p></li>`;
       }
     }
 

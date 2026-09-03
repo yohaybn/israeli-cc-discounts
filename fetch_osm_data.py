@@ -19,35 +19,47 @@ def fetch_and_split_israel_businesses():
     output_dir = os.path.join("docs", "data", "businesses")
     os.makedirs(output_dir, exist_ok=True)
 
+    # שאילתת Overpass מתוקנת ומסודרת
     overpass_query = """
-    [out:json][timeout:240];
+    [out:json][timeout:180];
     area["ISO3166-1"="IL"][admin_level=2]->.searchArea;
     (
       node["shop"](area.searchArea);
+      node["amenity"~"restaurant|cafe|fast_food|pub|bar"](area.searchArea);
+      
       way["shop"](area.searchArea);
+      way["amenity"~"restaurant|cafe|fast_food|pub|bar"](area.searchArea);
       
-      node["amenity"~"restaurant|cafe|fast_food|pub|bar|food_court|ice_cream|pharmacy|bank|atm|fuel"](area.searchArea);
-      way["amenity"~"restaurant|cafe|fast_food|pub|bar|food_court|ice_cream|pharmacy|bank|atm|fuel"](area.searchArea);
-      
-      node["craft"](area.searchArea);
-      way["craft"](area.searchArea);
+      relation["shop"](area.searchArea);
+      relation["amenity"~"restaurant|cafe|fast_food|pub|bar"](area.searchArea);
     );
     out center;
     """
     
     url = "https://overpass-api.de/api/interpreter"
-    data = urllib.parse.urlencode({'data': overpass_query}).encode('utf-8')
+    
+    # קידוד השאילתה בפורמט UTF-8
+    encoded_data = urllib.parse.urlencode({'data': overpass_query}).encode('utf-8')
     
     req = urllib.request.Request(
         url, 
-        data=data, 
-        headers={'User-Agent': 'IsraelBusinessFetcher/2.0 (GitHubActions)'}
+        data=encoded_data, 
+        headers={
+            'User-Agent': 'IsraelBusinessFetcher/2.0 (GitHubActions)',
+            'Content-Type': 'application/x-www-form-urlencoded'
+        }
     )
     
     print("Fetching data from Overpass API...")
     try:
         with urllib.request.urlopen(req) as response:
             result = json.loads(response.read().decode('utf-8'))
+    except urllib.error.HTTPError as e:
+        print(f"HTTP Error: {e.code} - {e.reason}")
+        # הדפסת התשובה מהשרת עוזרת לאבחן בעיות syntax
+        error_body = e.read().decode('utf-8', errors='ignore')
+        print(f"Server response details:\n{error_body[:500]}")
+        return
     except Exception as e:
         print(f"Error downloading data: {e}")
         return
