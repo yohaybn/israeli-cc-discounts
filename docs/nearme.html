@@ -6,12 +6,14 @@
   <title>Nearby Businesses Map</title>
 
   <!-- Leaflet CSS -->
-  <link 
-    rel="stylesheet" 
-    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-    crossorigin=""
-  />
+<link 
+  rel="stylesheet" 
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""
+/>
+
+
 
   <style>
     body {
@@ -24,13 +26,37 @@
     }
     #header {
       padding: 12px 20px;
-      background: #f8f9fa;
+      background: #ffffff;
       border-bottom: 1px solid #ddd;
       z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     }
     #status {
       font-weight: 600;
       color: #333;
+      font-size: 14px;
+    }
+    .btn {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 13px;
+      transition: background-color 0.2s;
+      white-space: nowrap;
+    }
+    .btn:hover {
+      background-color: #2980b9;
+    }
+    .btn.active {
+      background-color: #e67e22;
     }
     #map {
       flex: 1;
@@ -47,23 +73,31 @@
 <body>
 
   <div id="header">
-    <div id="status">Obtaining your location...</div>
+    <div id="status">טוען את המפה...</div>
+    <button id="pin-btn" class="btn" onclick="togglePinMode()">📍 בחר מיקום על המפה</button>
   </div>
 
   <!-- Map Container -->
   <div id="map"></div>
 
-  <!-- Leaflet JS -->
-  <script 
-    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    integrity="sha256-20nXC0jk30DxWE126853VcL1F9LD734pullpaWTh5uxU="
-    crossorigin=""
-  ></script>
+<!-- Official Leaflet 1.9.4 JavaScript -->
+<script 
+  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""
+></script>
 
   <script>
-    // Global map and marker layer group references
+    // Global State
     let map = null;
+    let userMarker = null;
+    let radiusCircle = null;
     let businessLayerGroup = L.layerGroup();
+    
+    let isPinMode = false;
+    let currentUserLat = 32.0853; // Default Tel Aviv center fallback
+    let currentUserLon = 34.7818;
+    const searchRadiusKm = 1.0;
 
     const REGION_BOUNDS = [
       { threshold: 30.0, file: 'businesses_eilat_arava.json' },
@@ -97,72 +131,117 @@
       return R * c;
     }
 
-    // Initialize Map centered at user's location
-    function initMap(userLat, userLon, maxRadiusKm) {
-      // Create map instance
-      map = L.map('map').setView([userLat, userLon], 15);
+    // Initialize Map Instance
+    function initMap(initialLat, initialLon) {
+      if (map) return; // Prevent double init
 
-      // Add OpenStreetMap tiles
+      map = L.map('map').setView([initialLat, initialLon], 14);
+
       L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       }).addTo(map);
 
-      // Add user position marker (Red Circle)
-      L.circleMarker([userLat, userLon], {
-        radius: 8,
-        fillColor: '#e74c3c',
-        color: '#ffffff',
-        weight: 2,
-        opacity: 1,
-        fillOpacity: 0.9
-      }).addTo(map).bindPopup('<b>המיקום שלך</b>');
-
-      // Draw 1 km radius circle around user
-      L.circle([userLat, userLon], {
-        radius: maxRadiusKm * 1000,
-        color: '#3498db',
-        fillColor: '#3498db',
-        fillOpacity: 0.1,
-        weight: 1.5,
-        dashArray: '5, 5'
-      }).addTo(map);
-
-      // Add business markers layer group to map
       businessLayerGroup.addTo(map);
+
+      // Handle Map Clicks when "Pin Mode" is active
+      map.on('click', (e) => {
+        if (isPinMode) {
+          updateUserLocation(e.latlng.lat, e.latlng.lng);
+          togglePinMode(false); // Exit pin mode after setting
+        }
+      });
     }
 
-    async function findAndDisplayBusinesses(userLat, userLon, maxRadiusKm = 1.0) {
+    // Toggle Pin Mode Button State
+    function togglePinMode(forceState) {
+      if (typeof forceState === 'boolean') {
+        isPinMode = forceState;
+      } else {
+        isPinMode = !isPinMode;
+      }
+
+      const btn = document.getElementById('pin-btn');
       const statusDiv = document.getElementById('status');
 
-      // 1. Initialize map
-      initMap(userLat, userLon, maxRadiusKm);
+      if (isPinMode) {
+        btn.classList.add('active');
+        btn.innerText = '❌ ביטול בחירה';
+        statusDiv.innerText = 'לחץ על מקום כלשהו במפה כדי לקבוע את המיקום שלך...';
+        document.getElementById('map').style.cursor = 'crosshair';
+      } else {
+        btn.classList.remove('active');
+        btn.innerText = '📍 בחר מיקום על המפה';
+        document.getElementById('map').style.cursor = '';
+      }
+    }
 
-      // 2. Calculate Bounding Box
-      const latDelta = maxRadiusKm / 111.0;
-      const lonDelta = maxRadiusKm / (111.0 * Math.cos(userLat * Math.PI / 180));
+    // Updates User Marker, Circle Radius, and Fetches Businesses
+    async function updateUserLocation(lat, lon) {
+      currentUserLat = lat;
+      currentUserLon = lon;
 
-      const minLat = userLat - latDelta;
-      const maxLat = userLat + latDelta;
-      const minLon = userLon - lonDelta;
-      const maxLon = userLon + lonDelta;
+      initMap(lat, lon);
 
-      // 3. Determine required region files
+      // Update or create Draggable User Marker
+      if (userMarker) {
+        userMarker.setLatLng([lat, lon]);
+      } else {
+        userMarker = L.marker([lat, lon], {
+          draggable: true,
+          title: 'גרור כדי לשנות מיקום'
+        }).addTo(map).bindPopup('<b>המיקום שלך</b><br>ניתן לגרור אותי במפה!');
+
+        userMarker.on('dragend', (e) => {
+          const newPos = e.target.getLatLng();
+          updateUserLocation(newPos.lat, newPos.lng);
+        });
+      }
+
+      // Update or create 1km radius circle
+      if (radiusCircle) {
+        radiusCircle.setLatLng([lat, lon]);
+      } else {
+        radiusCircle = L.circle([lat, lon], {
+          radius: searchRadiusKm * 1000,
+          color: '#e67e22',
+          fillColor: '#e67e22',
+          fillOpacity: 0.1,
+          weight: 2,
+          dashArray: '6, 6'
+        }).addTo(map);
+      }
+
+      map.panTo([lat, lon]);
+
+      // Calculate Bounding Box
+      const latDelta = searchRadiusKm / 111.0;
+      const lonDelta = searchRadiusKm / (111.0 * Math.cos(lat * Math.PI / 180));
+
+      const minLat = lat - latDelta;
+      const maxLat = lat + latDelta;
+      const minLon = lon - lonDelta;
+      const maxLon = lon + lonDelta;
+
       const regionFiles = getRequiredRegionFiles(minLat, maxLat);
-      statusDiv.innerText = `טוען נתונים אזוריים (${regionFiles.join(', ')})...`;
-
+      const statusDiv = document.getElementById('status');
+      statusDiv.innerText = `טוען נתונים עבור (${regionFiles.join(', ')})...`;
+      
       try {
-        // Fetch files in parallel
-        const fetchPromises = regionFiles.map(file =>
-          fetch(`data/businesses/${file}`).then(res => {
-            if (!res.ok) throw new Error(`Failed to load ${file}`);
+        async function fetchRegionFile(file) {
+          const path = `/data/businesses/${file}`; // canonical path used by GitHub Pages and API server
+          try {
+            console.debug('Fetching region file', file, 'from', path);
+            const res = await fetch(path);
+            if (!res.ok) throw new Error(`HTTP ${res.status} when loading ${path}`);
             return res.json();
-          })
-        );
+          } catch (err) {
+            throw new Error(`Could not load ${file} from ${path}: ${err.message}`);
+          }
+        }
 
-        const regionDatasets = await Promise.all(fetchPromises);
+        const regionDatasets = await Promise.all(regionFiles.map(f => fetchRegionFile(f)));
 
-        // Deduplicate businesses
         const businessMap = new Map();
         for (const dataset of regionDatasets) {
           for (const item of dataset) {
@@ -170,30 +249,25 @@
           }
         }
 
-        // Filter businesses within radius
         const nearby = [];
         for (const b of businessMap.values()) {
           if (b.lat >= minLat && b.lat <= maxLat && b.lon >= minLon && b.lon <= maxLon) {
-            const dist = haversineDistance(userLat, userLon, b.lat, b.lon);
-            if (dist <= maxRadiusKm) {
+            const dist = haversineDistance(lat, lon, b.lat, b.lon);
+            if (dist <= searchRadiusKm) {
               nearby.push({ ...b, distance: dist });
             }
           }
         }
 
-        // 4. Render markers on map
         businessLayerGroup.clearLayers();
 
         nearby.forEach(b => {
           const distanceMeters = Math.round(b.distance * 1000);
-          
-          // Create marker for business
           const marker = L.marker([b.lat, b.lon]);
 
-          // Popup HTML content with Google Maps directions link
           const popupContent = `
             <div style="min-width: 150px;">
-              <h3 style="margin: 0 0 5px 0; font-size: 16px;">${b.name}</h3>
+              <h3 style="margin: 0 0 5px 0; font-size: 15px;">${b.name}</h3>
               <p style="margin: 0 0 5px 0; color: #666;">סוג: <b>${b.type}</b></p>
               <p style="margin: 0 0 10px 0; color: #27ae60; font-weight: bold;">
                 מרחק: ${distanceMeters} מטרים
@@ -212,28 +286,41 @@
           businessLayerGroup.addLayer(marker);
         });
 
-        statusDiv.innerText = `נמצאו ${nearby.length} עסקים ברדיוס ${maxRadiusKm} ק"מ:`;
+        statusDiv.innerText = `נמצאו ${nearby.length} עסקים ברדיוס ${searchRadiusKm} ק"מ:`;
 
       } catch (err) {
-        statusDiv.innerText = 'שגיאה בטעינת הנתונים: ' + err.message;
+        statusDiv.innerText = 'שגיאה בטעינת נתונים: ' + err.message;
       }
     }
 
-    // Request User Location on Load
-    if ('geolocation' in navigator) {
-      navigator.geolocation.getCurrentPosition(
-        (position) => {
-          const userLat = position.coords.latitude;
-          const userLon = position.coords.longitude;
-          findAndDisplayBusinesses(userLat, userLon, 1.0);
-        },
-        (error) => {
-          document.getElementById('status').innerText = 'יש לאשר הרשאת מיקום כדי להציג עסקים בסביבתך.';
-        }
-      );
-    } else {
-      document.getElementById('status').innerText = 'הדפדפן אינו תומך ב-Geolocation.';
+    // App Initialization with GPS Fallback
+    function initApp() {
+      const statusDiv = document.getElementById('status');
+      statusDiv.innerText = 'מבקש הרשאת מיקום...';
+
+      // Instantly load map at default fallback location (Tel Aviv) so the user never sees a blank screen
+      initMap(currentUserLat, currentUserLon);
+
+      if ('geolocation' in navigator) {
+        // Timeout GPS after 5 seconds if browser hangs
+        navigator.geolocation.getCurrentPosition(
+          (position) => {
+            updateUserLocation(position.coords.latitude, position.coords.longitude);
+          },
+          (error) => {
+            statusDiv.innerText = 'לא התקבל מיקום GPS. ניתן ללחוץ על "בחר מיקום על המפה".';
+            updateUserLocation(currentUserLat, currentUserLon); // Load default view
+          },
+          { timeout: 5000, enableHighAccuracy: true }
+        );
+      } else {
+        statusDiv.innerText = 'הדפדפן אינו תומך ב-GPS. השתמש בלחצן לבחירת מיקום.';
+        updateUserLocation(currentUserLat, currentUserLon);
+      }
     }
+
+    // Run on startup
+    window.addEventListener('DOMContentLoaded', initApp);
   </script>
 </body>
 </html>

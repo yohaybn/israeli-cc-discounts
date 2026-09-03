@@ -8,7 +8,7 @@ from mcc_scraper import scrape_mcc
 from hvr_scraper import scrape_hvr_rechargeable_cards
 from buyme_scraper import scrape_buyme_suppliers, stores_to_discounts
 
-DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
+DATA_DIR = os.path.join(os.path.dirname(__file__), "docs", "data")
 
 
 def load_existing_json(filepath):

@@ -264,14 +264,15 @@
     // Fetch initial dataset from local API or raw GitHub JSON (GitHub Pages mode)
     async function loadData() {
         const DATA_SOURCES = [
-            // 1. Local API businesses endpoint
+            // 1. Published site static data (GitHub Pages or server /data mount)
+            '/data/all_combined_discounts.json',
+            // 2. Local API businesses endpoint
             '/businesses',
-            // 2. Relative paths to shared /data folder
+            // 3. Relative legacy fallbacks
             '../data/all_combined_discounts.json',
             'data/all_combined_discounts.json',
             './data/all_combined_discounts.json',
-            // 3. Raw GitHub fallbacks for GitHub Pages
-            'https://raw.githubusercontent.com/yohaybn/israeli-cc-discounts/refs/heads/main/data/all_combined_discounts.json',
+            // 4. Raw GitHub fallback (least preferred)
             'https://raw.githubusercontent.com/yohaybn/israeli-cc-discounts/main/data/all_combined_discounts.json',
         ];
 

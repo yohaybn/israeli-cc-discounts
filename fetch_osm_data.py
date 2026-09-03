@@ -15,8 +15,8 @@ def get_region(lat, lon):
         return "north"
 
 def fetch_and_split_israel_businesses():
-    # Output directory
-    output_dir = os.path.join("data", "businesses")
+    # Output directory (docs/data for GitHub Pages site root)
+    output_dir = os.path.join("docs", "data", "businesses")
     os.makedirs(output_dir, exist_ok=True)
 
     overpass_query = """
@@ -87,7 +87,7 @@ def fetch_and_split_israel_businesses():
 
     print(f"Processed {processed_count} businesses in total.")
 
-    # Save to data/businesses/
+    # Save to docs/data/businesses/
     for region_name, businesses in regions_data.items():
         filepath = os.path.join(output_dir, f"businesses_{region_name}.json")
         with open(filepath, 'w', encoding='utf-8') as f:

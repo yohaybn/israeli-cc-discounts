@@ -1,10 +1,12 @@
 Discount Finder
 
-This project scrapes discount offers from Israeli club sites (`חבר`, `HOT`, `HTzone`), normalizes them and provides a small web UI and API.
+This project scrapes discount offers from Israeli club sites (`חבר`, `HOT`, `HTzone`,`Buyme`), normalizes them and provides a small web UI and API.
 
 New fields added (2026-09-02):
 - `discount_type`: enum indicating the discount mechanism. Known values: `billing_discount` (legacy/default), `rechargeable_card`, `voucher`, `gift_card`, `club_card`.
 - `discount_value`: optional numeric percent when the discount is a percent and can be parsed.
+
+you can see the  [data here](https://yohaybn.github.io/israeli-cc-discounts/)
 
 Quickstart
 
@@ -21,7 +23,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-3. Run the scraper to regenerate `data/all_combined_discounts.json` (this backfills `discount_type` = `billing_discount` when missing):
+3. Run the scraper to regenerate `docs/data/all_combined_discounts.json` (this backfills `discount_type` = `billing_discount` when missing):
 
 ```bash
 .venv/bin/python main.py

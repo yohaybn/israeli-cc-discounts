@@ -5,7 +5,7 @@
 set -u
 
 REPO_DIR="/home/ubuntu/discount-finder"
-LOG_FILE="$REPO_DIR/data/scraper_cron.log"
+LOG_FILE="$REPO_DIR/docs/data/scraper_cron.log"
 BRANCH="main"
 
 cd "$REPO_DIR" || exit 1
@@ -21,7 +21,7 @@ if [ $EXIT_CODE -ne 0 ]; then
 fi
 
 # Commit and push only if data files changed
-git add data/*.json
+git add docs/data/*.json
 if git diff --cached --quiet; then
     echo "[CRON] No data changes to commit." >> "$LOG_FILE"
 else
