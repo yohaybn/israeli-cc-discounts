@@ -2041,14 +2041,6 @@
     },
     {
         "club": "HOT",
-        "business_name": "citydeli - סיטידלי",
-        "discount": "3.5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/הטבה/47917/citydeli---סיטידלי",
-        "discount_type": "billing_discount",
-        "discount_value": 3.5
-    },
-    {
-        "club": "HOT",
         "business_name": "בוטיק מילה",
         "discount": "3.5% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/הטבה/47914/בוטיק-מילה",
@@ -3206,14 +3198,6 @@
         "discount_url": "https://www.hot.co.il/הטבה/45851/זיו-היופי-בית-ספר",
         "discount_type": "billing_discount",
         "discount_value": 5.0
-    },
-    {
-        "club": "HOT",
-        "business_name": "גודסון מרקט",
-        "discount": "2% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/הטבה/45838/גודסון-מרקט",
-        "discount_type": "billing_discount",
-        "discount_value": 2.0
     },
     {
         "club": "HOT",
@@ -6860,14 +6844,6 @@
         "business_name": "א.ר ברקוביץ' מרכז החשמל",
         "discount": "3.5% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/הטבה/38306/א.ר-ברקוביץ'-מרכז-החשמל",
-        "discount_type": "billing_discount",
-        "discount_value": 3.5
-    },
-    {
-        "club": "HOT",
-        "business_name": "פנסיון לוסי- מזון לבעלי חיים",
-        "discount": "3.5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/הטבה/38278/פנסיון-לוסי--מזון-לבעלי-חיים",
         "discount_type": "billing_discount",
         "discount_value": 3.5
     },
@@ -12953,14 +12929,6 @@
     },
     {
         "club": "HOT",
-        "business_name": "נאמן למקורות מוצרים טבעיים",
-        "discount": "3% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/הטבה/56189/נאמן-למקורות-מוצרים-טבעיים",
-        "discount_type": "billing_discount",
-        "discount_value": 3.0
-    },
-    {
-        "club": "HOT",
         "business_name": "מרכז הנדוניה",
         "discount": "5% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/הטבה/56184/מרכז-הנדוניה",
@@ -16473,14 +16441,6 @@
     },
     {
         "club": "HOT",
-        "business_name": "מספרה קסומה",
-        "discount": "5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/הטבה/20882/מספרה-קסומה",
-        "discount_type": "billing_discount",
-        "discount_value": 5.0
-    },
-    {
-        "club": "HOT",
         "business_name": "אוצר המלך -צורפות",
         "discount": "4% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/הטבה/20853/אוצר-המלך--צורפות",
@@ -16636,14 +16596,6 @@
         "business_name": "רונן עיצוב שיער",
         "discount": "5% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/הטבה/20350/רונן-עיצוב-שיער",
-        "discount_type": "billing_discount",
-        "discount_value": 5.0
-    },
-    {
-        "club": "HOT",
-        "business_name": "מוניטין- כלי עבודה",
-        "discount": "5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/הטבה/20326/מוניטין--כלי-עבודה",
         "discount_type": "billing_discount",
         "discount_value": 5.0
     },

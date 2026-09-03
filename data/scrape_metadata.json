@@ -1,27 +1,27 @@
 {
     "htzone": {
-        "last_successful_scrape": "2026-09-02T13:25:58Z",
+        "last_successful_scrape": "2026-09-03T06:00:01Z",
         "count": 83
     },
     "all_combined": {
-        "last_updated": "2026-09-02T13:25:58Z",
-        "total_count": 6510
+        "last_updated": "2026-09-03T06:00:01Z",
+        "total_count": 6504
     },
     "mcc": {
-        "last_successful_scrape": "2026-09-02T13:25:58Z",
+        "last_successful_scrape": "2026-09-03T06:00:01Z",
         "count": 784
     },
     "hot": {
-        "last_successful_scrape": "2026-09-02T13:25:58Z",
-        "count": 2393
+        "last_successful_scrape": "2026-09-03T06:00:01Z",
+        "count": 2387
     },
     "discount_type_counts": {
-        "billing_discount": 3260,
+        "billing_discount": 3254,
         "rechargeable_card": 1938,
         "voucher": 1312
     },
     "buyme": {
-        "last_successful_scrape": "2026-09-02T13:25:58Z",
+        "last_successful_scrape": "2026-09-03T06:00:01Z",
         "supplier_counts": {
             "13438757": 1304,
             "9018727": 981,
@@ -43,7 +43,7 @@
         "output_file": "data/buyme_discounts.json"
     },
     "hvr_rechargeable_cards": {
-        "last_successful_scrape": "2026-09-02T13:25:58Z",
+        "last_successful_scrape": "2026-09-03T06:00:01Z",
         "count": 1938,
         "output_file": "data/hvr_rechargeable_cards.json"
     }
