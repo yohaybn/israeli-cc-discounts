@@ -5,7 +5,8 @@
         "discount": "4% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/655/יאגנו-דלי/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 4.0
+        "discount_value": 4.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -13,7 +14,8 @@
         "discount": "5% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/700/מא-פאו-Ma-Pau-|-פיתה-לוינסקי-|-גוניפר/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 5.0
+        "discount_value": 5.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -21,7 +23,8 @@
         "discount": "9% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/708/נייקי-|-NIKE/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 9.0
+        "discount_value": 9.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -29,7 +32,8 @@
         "discount": "13% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/684/NOAM-LIVING/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 13.0
+        "discount_value": 13.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -37,7 +41,8 @@
         "discount": "4% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/654/יהלומי-הבורסה/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 4.0
+        "discount_value": 4.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -45,7 +50,8 @@
         "discount": "15% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/551/מתמטיקס/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 15.0
+        "discount_value": 15.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -53,7 +59,8 @@
         "discount": "5% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/703/מאמאל׳ה/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 5.0
+        "discount_value": 5.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -61,7 +68,8 @@
         "discount": "5% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/666/רשת-Bגוד/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 5.0
+        "discount_value": 5.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -69,7 +77,8 @@
         "discount": "7% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/688/צימיגג/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 7.0
+        "discount_value": 7.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -77,7 +86,8 @@
         "discount": "3% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/638/שוק-העיר/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 3.0
+        "discount_value": 3.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -85,7 +95,8 @@
         "discount": "4% הנחה במשלוחים",
         "discount_url": "https://www.htzone.co.il/benefit/336/גפניקה/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 4.0
+        "discount_value": 4.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -93,7 +104,8 @@
         "discount": "5% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/607/עגליס/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 5.0
+        "discount_value": 5.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -101,7 +113,8 @@
         "discount": "5% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/566/תכנית-הכשרה-וליווי-לבניית-תיק-השקעות/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 5.0
+        "discount_value": 5.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -109,7 +122,8 @@
         "discount": "5% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/699/True-Story-/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 5.0
+        "discount_value": 5.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -117,7 +131,8 @@
         "discount": "3% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/88/רשת-סטופמרקט/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 3.0
+        "discount_value": 3.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -125,7 +140,8 @@
         "discount": "3% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/79/רשת-Columbia/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 3.0
+        "discount_value": 3.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -133,7 +149,8 @@
         "discount": "5% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/573/מרכז-הלימוד-אינטראקטיב-ישראל/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 5.0
+        "discount_value": 5.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -141,7 +158,8 @@
         "discount": "5% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/681/ארדו-משאבות-חלב-ישראל-ARDO-Breast/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 5.0
+        "discount_value": 5.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -149,7 +167,8 @@
         "discount": "5% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/552/BOARDER-LINE/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 5.0
+        "discount_value": 5.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -157,7 +176,8 @@
         "discount": "3% הנחה ברכישה מעל 300 ₪",
         "discount_url": "https://www.htzone.co.il/benefit/691/רשת-סופרטל/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 3.0
+        "discount_value": 3.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -165,7 +185,8 @@
         "discount": "5% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/686/מילאנו-בייקרי-Milano-Bakery-/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 5.0
+        "discount_value": 5.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -173,7 +194,8 @@
         "discount": "5% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/610/Cottonclub/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 5.0
+        "discount_value": 5.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -181,7 +203,8 @@
         "discount": "7% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/665/NS-חוויה-קולינרית/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 7.0
+        "discount_value": 7.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -189,7 +212,8 @@
         "discount": "10% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/697/פלפוט-|-palaphot/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 10.0
+        "discount_value": 10.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -197,7 +221,8 @@
         "discount": "5% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/641/ביוגנוסטיקה/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 5.0
+        "discount_value": 5.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -205,7 +230,8 @@
         "discount": "6.5% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/683/מזקקת-גין-וודקה-Thinkers-Distillery/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 6.5
+        "discount_value": 6.5,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -213,7 +239,8 @@
         "discount": "8% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/663/סהרה-|-SAHARA/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 8.0
+        "discount_value": 8.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -221,7 +248,8 @@
         "discount": "5% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/606/PALMERS/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 5.0
+        "discount_value": 5.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -229,7 +257,8 @@
         "discount": "10% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/605/Bird/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 10.0
+        "discount_value": 10.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -237,7 +266,8 @@
         "discount": "5% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/682/La-Maison-du-Savon-by-Tom-Weiss/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 5.0
+        "discount_value": 5.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -245,7 +275,8 @@
         "discount": "8.5% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/664/טלוש/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 8.5
+        "discount_value": 8.5,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -253,7 +284,8 @@
         "discount": "5% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/588/SmoothSkin-PURE/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 5.0
+        "discount_value": 5.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -261,7 +293,8 @@
         "discount": "5% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/690/יקב-Vineyards-Five-Stones/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 5.0
+        "discount_value": 5.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -269,7 +302,8 @@
         "discount": "5% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/689/ZMRM-משוברים-לחופשה/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 5.0
+        "discount_value": 5.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -277,7 +311,8 @@
         "discount": "5% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/564/מדיקסקייר---Medics-care/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 5.0
+        "discount_value": 5.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -285,7 +320,8 @@
         "discount": "5% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/595/Peteat/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 5.0
+        "discount_value": 5.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -293,7 +329,8 @@
         "discount": "8% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/557/לידור-אופטיק/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 8.0
+        "discount_value": 8.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -301,7 +338,8 @@
         "discount": "4% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/611/אינדיבוק/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 4.0
+        "discount_value": 4.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -309,7 +347,8 @@
         "discount": "10% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/540/SATARA/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 10.0
+        "discount_value": 10.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -317,7 +356,8 @@
         "discount": "8% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/562/דלי-ריי/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 8.0
+        "discount_value": 8.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -325,7 +365,8 @@
         "discount": "5% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/539/New-Feet/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 5.0
+        "discount_value": 5.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -333,7 +374,8 @@
         "discount": "5% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/612/Rent-a-Phone---רנט-א-פון/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 5.0
+        "discount_value": 5.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -341,7 +383,8 @@
         "discount": "5% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/556/מרכז-נא-לגעת/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 5.0
+        "discount_value": 5.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -349,7 +392,8 @@
         "discount": "10% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/527/מיידלע/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 10.0
+        "discount_value": 10.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -357,7 +401,8 @@
         "discount": "10% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/550/מסעדת-אוונטוס/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 10.0
+        "discount_value": 10.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -365,7 +410,8 @@
         "discount": "8.5% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/661/-Mi-Alma-מי-אלמה-תכשיטים/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 8.5
+        "discount_value": 8.5,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -373,7 +419,8 @@
         "discount": "5% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/569/BUY-CARPET/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 5.0
+        "discount_value": 5.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -381,7 +428,8 @@
         "discount": "10% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/496/פרפקט-פלור/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 10.0
+        "discount_value": 10.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -389,7 +437,8 @@
         "discount": "4% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/533/מלונות-VERT-מבית-AFI-HOTELS-/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 4.0
+        "discount_value": 4.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -397,7 +446,8 @@
         "discount": "8.5% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/670/SILVER-BELL/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 8.5
+        "discount_value": 8.5,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -405,7 +455,8 @@
         "discount": "5% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/671/LUSSO/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 5.0
+        "discount_value": 5.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -413,7 +464,8 @@
         "discount": "10% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/677/נעלי-פאולה/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 10.0
+        "discount_value": 10.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -421,7 +473,8 @@
         "discount": "5% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/579/Liati-Jewelry-Design/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 5.0
+        "discount_value": 5.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -429,7 +482,8 @@
         "discount": "5% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/679/7winds-מועדון-הרחיפה/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 5.0
+        "discount_value": 5.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -437,7 +491,8 @@
         "discount": "8.5% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/657/LooPump-משאבות-הנקה/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 8.5
+        "discount_value": 8.5,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -445,7 +500,8 @@
         "discount": "8.5% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/660/צרלי-בננה-ישראל/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 8.5
+        "discount_value": 8.5,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -453,7 +509,8 @@
         "discount": "9% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/668/417/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 9.0
+        "discount_value": 9.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -461,7 +518,8 @@
         "discount": "5% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/706/CAPRICE/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 5.0
+        "discount_value": 5.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -469,7 +527,8 @@
         "discount": "10% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/673/Daphne-Skin/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 10.0
+        "discount_value": 10.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -477,7 +536,8 @@
         "discount": "10% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/707/DANON/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 10.0
+        "discount_value": 10.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -485,7 +545,8 @@
         "discount": "10% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/702/rooted-wisdom---רוקחות-טבעית/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 10.0
+        "discount_value": 10.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -493,7 +554,8 @@
         "discount": "5% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/687/צעדים-ראשונים/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 5.0
+        "discount_value": 5.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -501,7 +563,8 @@
         "discount": "10% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/434/אושי-אושי---רעות/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 10.0
+        "discount_value": 10.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -509,7 +572,8 @@
         "discount": "10% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/414/אושי-אושי---כפר-סבא/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 10.0
+        "discount_value": 10.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -517,7 +581,8 @@
         "discount": "8% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/704/Olea-–-מתחם-אירוח-|-ראש-פינה/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 8.0
+        "discount_value": 8.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -525,7 +590,8 @@
         "discount": "5% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/585/אמישראגז/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 5.0
+        "discount_value": 5.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -533,7 +599,8 @@
         "discount": "5% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/616/Viaggio-Espresso/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 5.0
+        "discount_value": 5.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -541,7 +608,8 @@
         "discount": "5% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/674/LILYA-HOME-PERFUME/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 5.0
+        "discount_value": 5.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -549,7 +617,8 @@
         "discount": "5% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/678/NINNOA/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 5.0
+        "discount_value": 5.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -557,7 +626,8 @@
         "discount": "8.5% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/656/יקב-גוש-עציון/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 8.5
+        "discount_value": 8.5,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -565,7 +635,8 @@
         "discount": "5% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/658/American-Dolce/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 5.0
+        "discount_value": 5.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -573,7 +644,8 @@
         "discount": "8.5% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/659/מוזה-קוקטיילים-Muza-Cocktails/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 8.5
+        "discount_value": 8.5,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -581,7 +653,8 @@
         "discount": "8.5% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/669/The-Whisky-Embassy/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 8.5
+        "discount_value": 8.5,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -589,7 +662,8 @@
         "discount": "5% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/672/יקב-אלבר/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 5.0
+        "discount_value": 5.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -597,7 +671,8 @@
         "discount": "5% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/675/מעדניית-זסט-פקטורי/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 5.0
+        "discount_value": 5.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -605,7 +680,8 @@
         "discount": "5% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/676/‏Belago-איטלקית-באגם/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 5.0
+        "discount_value": 5.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -613,7 +689,8 @@
         "discount": "5% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/680/מבשלת-בירה-אלכסנדר/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 5.0
+        "discount_value": 5.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -621,7 +698,8 @@
         "discount": "8.5% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/693/יקב-תל-שיפון/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 8.5
+        "discount_value": 8.5,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -629,7 +707,8 @@
         "discount": "8% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/694/יקב-סקוריה/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 8.0
+        "discount_value": 8.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -637,7 +716,8 @@
         "discount": "5% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/696/מגזינו-MAGAZZINO/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 5.0
+        "discount_value": 5.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -645,7 +725,8 @@
         "discount": "5% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/692/סלון-יווני-זכרון-יעקב/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 5.0
+        "discount_value": 5.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -653,7 +734,8 @@
         "discount": "8% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/698/יקב-תל-אפק/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 8.0
+        "discount_value": 8.0,
+        "has_physical_store": true
     },
     {
         "club": "HTzone",
@@ -661,6 +743,7 @@
         "discount": "6% הנחה",
         "discount_url": "https://www.htzone.co.il/benefit/705/קפה-נדנדה/?sale_id=62",
         "discount_type": "billing_discount",
-        "discount_value": 6.0
+        "discount_value": 6.0,
+        "has_physical_store": true
     }
 ]
