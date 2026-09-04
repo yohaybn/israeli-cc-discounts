@@ -19,6 +19,7 @@ Run:
 import json
 import os
 import re
+import math
 from typing import Optional
 
 from fastapi import FastAPI, HTTPException, Query
@@ -31,6 +32,37 @@ BASE_DIR = os.path.dirname(__file__)
 DATA_FILE = os.path.join(BASE_DIR, "docs", "data", "all_combined_discounts.json")
 METADATA_FILE = os.path.join(BASE_DIR, "docs", "data", "scrape_metadata.json")
 STATIC_DIR = os.path.join(BASE_DIR, "docs")
+BUSINESSES_WITH_DISCOUNTS = os.path.join(BASE_DIR, "docs", "data", "businesses_with_discounts.json")
+
+# in-memory cache for businesses_with_discounts
+_BUSINESSES_CACHE: list[dict] | None = None
+
+
+def haversine_km(a_lat: float, a_lon: float, b_lat: float, b_lon: float) -> float:
+    R = 6371.0088
+    phi1 = math.radians(a_lat)
+    phi2 = math.radians(b_lat)
+    dphi = math.radians(b_lat - a_lat)
+    dlambda = math.radians(b_lon - a_lon)
+    x = math.sin(dphi / 2) ** 2 + math.cos(phi1) * math.cos(phi2) * math.sin(dlambda / 2) ** 2
+    return 2 * R * math.asin(math.sqrt(x))
+
+
+def load_businesses_with_discounts(reload: bool = False) -> list[dict]:
+    """Load and cache the precomputed `businesses_with_discounts.json` file.
+
+    If missing, return an empty list.
+    """
+    global _BUSINESSES_CACHE
+    if _BUSINESSES_CACHE is not None and not reload:
+        return _BUSINESSES_CACHE
+    try:
+        with open(BUSINESSES_WITH_DISCOUNTS, encoding="utf-8") as f:
+            _BUSINESSES_CACHE = json.load(f)
+            return _BUSINESSES_CACHE
+    except Exception:
+        _BUSINESSES_CACHE = []
+        return _BUSINESSES_CACHE
 
 # Fuzzy matching: minimum similarity (0-100) for a business name to match a query.
 FUZZY_MATCH_THRESHOLD = 72
@@ -324,3 +356,45 @@ def list_businesses(
     # Default sort by best discount descending, then business name
     results.sort(key=lambda r: (-r["best_discount_value"], r["business_name"]))
     return {"total": len(results), "results": results}
+
+
+@app.get("/nearby")
+def nearby(
+    lat: float = Query(..., description="Latitude of the search center"),
+    lon: float = Query(..., description="Longitude of the search center"),
+    radius_km: float = Query(2.0, description="Search radius in kilometers"),
+    limit: int = Query(50, ge=1, le=1000),
+    reload: bool = Query(False, description="Reload the businesses_with_discounts.json from disk"),
+):
+    """Return businesses_with_discounts within `radius_km` of the provided lat/lon.
+
+    The endpoint expects `docs/data/businesses_with_discounts.json` to exist (created by
+    `scripts/join_businesses.py`). Results include `distance_km` and the branch's discounts.
+    """
+    businesses = load_businesses_with_discounts(reload=reload)
+    if not businesses:
+        raise HTTPException(status_code=503, detail="businesses_with_discounts.json not found or empty. Run scripts/join_businesses.py first.")
+
+    hits = []
+    for b in businesses:
+        try:
+            b_lat = float(b.get("lat") or b.get("lng") or b.get("latitude"))
+            b_lon = float(b.get("lng") or b.get("lon") or b.get("longitude"))
+        except Exception:
+            continue
+        dist_km = haversine_km(lat, lon, b_lat, b_lon)
+        if dist_km <= float(radius_km):
+            hit = {
+                "branch_id": b.get("branch_id") or b.get("id") or b.get("name"),
+                "name": b.get("name"),
+                "lat": b_lat,
+                "lng": b_lon,
+                "distance_km": round(dist_km, 4),
+                "best_discount_value": b.get("best_discount_value", 0),
+                "discounts": b.get("discounts", []),
+            }
+            hits.append(hit)
+
+    # sort by distance then best_discount_value desc
+    hits.sort(key=lambda h: (h["distance_km"], -float(h.get("best_discount_value") or 0)))
+    return {"total": len(hits), "limit": limit, "results": hits[:limit]}

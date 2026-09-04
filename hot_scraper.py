@@ -141,6 +141,8 @@ def scrape_hot():
                 "discount_url": f"https://www.hot.co.il/הטבה/{b_id}/{slug}" if b_id else "",
                 "discount_type": discount_type,
                 "discount_value": discount_value,
+                # HOT: if `is_app_only` is true, treat as app-only (no physical store).
+                "has_physical_store": not bool(item.get("is_app_only", False)),
             })
 
         print(

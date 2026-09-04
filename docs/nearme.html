@@ -169,6 +169,11 @@
           <!-- List items will be inserted here -->
       </ul>
     </div>
+    <!-- Details Pane -->
+    <div id="details-pane" style="display:none; position: absolute; right: 12px; top: 80px; width: 320px; max-height: 60vh; overflow:auto; background:#fff; border:1px solid #ddd; border-radius:8px; box-shadow:0 6px 18px rgba(0,0,0,0.12); z-index:2000; padding:12px;">
+      <button id="details-close" style="float:left;background:#e74c3c;color:#fff;border:none;padding:6px 10px;border-radius:6px;cursor:pointer;margin-bottom:8px;">סגור</button>
+      <div id="details-content"></div>
+    </div>
   </div>
 
 <!-- Official Leaflet 1.9.4 JavaScript -->
@@ -327,41 +332,30 @@
       const minLon = lon - lonDelta;
       const maxLon = lon + lonDelta;
 
-      const regionFiles = getRequiredRegionFiles(minLat, maxLat);
       const statusDiv = document.getElementById('status');
       const listContainer = document.getElementById('business-list');
 
-      statusDiv.innerText = `טוען נתונים עבור (${regionFiles.join(', ')})...`;
+      statusDiv.innerText = `טוען רשימת עסקים עם מבצעים (client-side)...`;
       listContainer.innerHTML = ''; // Clear previous list
 
       try {
-        async function fetchRegionFile(file) {
-          const path = `/data/businesses/${file}`; // canonical path used by GitHub Pages and API server
-          try {
-            console.debug('Fetching region file', file, 'from', path);
-            const res = await fetch(path);
-            if (!res.ok) throw new Error(`HTTP ${res.status} when loading ${path}`);
-            return res.json();
-          } catch (err) {
-            throw new Error(`Could not load ${file} from ${path}: ${err.message}`);
-          }
-        }
-
-        const regionDatasets = await Promise.all(regionFiles.map(f => fetchRegionFile(f)));
-
-        const businessMap = new Map();
-        for (const dataset of regionDatasets) {
-          for (const item of dataset) {
-            businessMap.set(item.id, item);
-          }
-        }
+        // Load the precomputed businesses_with_discounts.json produced by the join script
+        const path = '/data/businesses_with_discounts.json';
+        console.debug('Fetching businesses with discounts from', path);
+        const res = await fetch(path);
+        if (!res.ok) throw new Error(`HTTP ${res.status} when loading ${path}`);
+        const allBusinesses = await res.json();
 
         let nearby = [];
-        for (const b of businessMap.values()) {
-          if (b.lat >= minLat && b.lat <= maxLat && b.lon >= minLon && b.lon <= maxLon) {
-            const dist = haversineDistance(lat, lon, b.lat, b.lon);
+        for (const b of allBusinesses) {
+          const bLat = b.lat || b.latitude || b.location?.lat;
+          const bLon = b.lng || b.lon || b.location?.lng;
+          if (bLat == null || bLon == null) continue;
+          // quick bbox check
+          if (bLat >= minLat && bLat <= maxLat && bLon >= minLon && bLon <= maxLon) {
+            const dist = haversineDistance(lat, lon, bLat, bLon);
             if (dist <= currentSearchRadiusKm) {
-              nearby.push({ ...b, distance: dist });
+              nearby.push({ ...b, distance: dist, lat: bLat, lon: bLon });
             }
           }
         }
@@ -384,15 +378,23 @@
                 const gmapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${b.lat},${b.lon}`;
 
                 // --- Map Popup Content ---
+                // Build discount HTML (up to 3 items)
+                const discountsHtml = (b.discounts || []).slice(0,3).map(d => {
+                  const club = d.club || '';
+                  const text = d.discount || d.discount_text || '';
+                  const url = d.discount_url || d.url || '';
+                  const urlHtml = url ? `<a href="${url}" target="_blank" class="map-btn" style="margin-left:6px;">הצג</a>` : '';
+                  return `<div style="margin-bottom:6px;"><b>${club}</b>: ${text} ${urlHtml}</div>`;
+                }).join('');
+
                 const popupContent = `
-                    <div style="min-width: 150px;">
-                        <h3 style="margin: 0 0 5px 0; font-size: 15px;">${b.name}</h3>
-                        <p style="margin: 0 0 5px 0; color: #666;">סוג: <b>${b.type}</b></p>
-                        <p style="margin: 0 0 10px 0; color: #27ae60; font-weight: bold;">
-                        מרחק: ${distanceMeters} מטרים
-                        </p>
-                        <a href="${gmapsUrl}" target="_blank" class="map-btn">ניווט ב-Google Maps</a>
-                    </div>
+                  <div style="min-width: 180px;">
+                    <h3 style="margin: 0 0 5px 0; font-size: 15px;">${b.name}</h3>
+                    <p style="margin: 0 0 5px 0; color: #666;">סוג: <b>${b.type || ''}</b></p>
+                    <p style="margin: 0 0 8px 0; color: #27ae60; font-weight: bold;">מרחק: ${distanceMeters} מטרים</p>
+                    ${discountsHtml || '<div style="color:#666;">אין מבצעים משויכים</div>'}
+                    <div style="margin-top:6px;"><a href="${gmapsUrl}" target="_blank" class="map-btn">ניווט ב-Google Maps</a></div>
+                  </div>
                 `;
                 marker.bindPopup(popupContent);
                 businessLayerGroup.addLayer(marker);
@@ -400,14 +402,29 @@
                 // --- List Item Content ---
                 const listItem = document.createElement('li');
                 listItem.className = 'business-item';
+                // Build discounts snippet for list (up to 2)
+                const listDiscounts = (b.discounts || []).slice(0,2).map(d => {
+                  const club = d.club || '';
+                  const text = d.discount || d.discount_text || '';
+                  const url = d.discount_url || d.url || '';
+                  const link = url ? ` <a href="${url}" target="_blank">[קישור]</a>` : '';
+                  return `<div style="font-size:13px;color:#444;margin-top:4px;"><b>${club}</b>: ${text}${link}</div>`;
+                }).join('');
+
                 listItem.innerHTML = `
-                    <div class="business-info">
-                        <h3>${b.name}</h3>
-                        <p>סוג: ${b.type}</p>
-                        <p class="distance">${distanceMeters} מטרים</p>
-                    </div>
-                    <a href="${gmapsUrl}" target="_blank" class="list-btn">ניווט</a>
+                  <div class="business-info">
+                    <h3>${b.name}</h3>
+                    <p>סוג: ${b.type || ''}</p>
+                    <p class="distance">${distanceMeters} מטרים</p>
+                    ${listDiscounts}
+                  </div>
+                  <a href="${gmapsUrl}" target="_blank" class="list-btn">ניווט</a>
                 `;
+                // show details pane on click
+                listItem.addEventListener('click', (e) => {
+                  e.preventDefault();
+                  showDetailsPane(b);
+                });
                 listContainer.appendChild(listItem);
             });
         }
@@ -446,6 +463,57 @@
 
     // Run on startup
     window.addEventListener('DOMContentLoaded', initApp);
+
+    // Details pane functions
+    function showDetailsPane(business) {
+      const pane = document.getElementById('details-pane');
+      const content = document.getElementById('details-content');
+      const closeBtn = document.getElementById('details-close');
+      content.innerHTML = '';
+      const title = document.createElement('h3');
+      title.style.marginTop = '0';
+      title.textContent = business.name || 'פרטי עסק';
+      content.appendChild(title);
+
+      const meta = document.createElement('div');
+      meta.style.color = '#666';
+      meta.innerHTML = `<div>מרחק: <b>${Math.round(business.distance*1000)} מטר</b></div>`;
+      content.appendChild(meta);
+
+      const discounts = business.discounts || [];
+      if (discounts.length === 0) {
+        const p = document.createElement('p');
+        p.textContent = 'אין מבצעים משויכים לעסק זה.';
+        content.appendChild(p);
+      } else {
+        const list = document.createElement('div');
+        list.style.marginTop = '8px';
+        discounts.forEach(d => {
+          const item = document.createElement('div');
+          item.style.padding = '8px';
+          item.style.borderBottom = '1px solid #eee';
+          const club = d.club || '';
+          const text = d.discount || d.discount_text || '';
+          const url = d.discount_url || d.url || '';
+          item.innerHTML = `<div style="font-weight:600">${club}</div><div style="margin-top:6px;">${text}</div>`;
+          if (url) {
+            const a = document.createElement('a');
+            a.href = url;
+            a.textContent = 'לינק להצעה';
+            a.target = '_blank';
+            a.style.display = 'inline-block';
+            a.style.marginTop = '6px';
+            a.className = 'map-btn';
+            item.appendChild(a);
+          }
+          list.appendChild(item);
+        });
+        content.appendChild(list);
+      }
+
+      pane.style.display = 'block';
+      closeBtn.onclick = () => { pane.style.display = 'none'; };
+    }
   </script>
 </body>
 </html>

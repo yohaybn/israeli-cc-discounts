@@ -200,6 +200,17 @@ def stores_to_discounts(stores: List[Dict[str, Any]], supplier_name: str = None,
             "discount_type": "voucher",
             "discount_value": dv,
             "supplier_name": supplier_field,
+            # Determine physical store presence: if supplier_regions contains only
+            # the Hebrew marker for online redemption, treat as online-only.
+            # Accept either a list of dicts (raw) or a list of names (parsed).
+            "has_physical_store": (lambda regs: not (
+                isinstance(regs, list)
+                and len(regs) == 1
+                and (
+                    (isinstance(regs[0], dict) and str(regs[0].get("name","")).strip() == "מימוש אונליין")
+                    or (not isinstance(regs[0], dict) and str(regs[0]).strip() == "מימוש אונליין")
+                )
+            ))(s.get("supplier_regions")),
         }
         out.append(item)
     return out

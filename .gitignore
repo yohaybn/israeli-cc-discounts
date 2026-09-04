@@ -3,3 +3,6 @@ __pycache__/
 *.pyc
 .DS_Store
 docs/data/scraper_cron.log
+get_stores_google.py
+/data/*
+places_cache.json

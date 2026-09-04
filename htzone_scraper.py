@@ -119,6 +119,8 @@ def scrape_htzone(page_id=62, batch_size=50):
                 "discount_url": f"https://www.htzone.co.il{link}" if link and not link.startswith("http") else link,
                 "discount_type": discount_type,
                 "discount_value": discount_value,
+                # HTzone: assume physical store by default
+                "has_physical_store": True,
             })
             new_count += 1
 

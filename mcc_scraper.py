@@ -165,6 +165,8 @@ def scrape_mcc():
                     "discount_url": discount_url,
                     "discount_type": discount_type,
                     "discount_value": discount_value,
+                    # MCC: assume physical store unless source indicates otherwise
+                    "has_physical_store": True,
                 })
 
             if idx % 10 == 0 or idx == len(sub_categories):

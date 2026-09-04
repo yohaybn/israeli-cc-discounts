@@ -88,6 +88,19 @@ def normalize_hvr_rechargeable_card_item(item, source_name="giftcard"):
         "discount_url": website,
         "discount_type": "rechargeable_card",
         "discount_value": discount_value,
+        # HVR: determine physical-store presence. For `giftcard` items the payload
+        # may include `is_online` == "N"/"Y" ("N" -> has physical store).
+        # For `teamimcard_branches` assume physical stores exist. Otherwise default
+        # to True (assume physical store when unknown).
+        "has_physical_store": (
+            True
+            if source_name == "teamimcard_branches"
+            else (
+                False
+                if str(item.get("is_online")).upper() == "Y"
+                else True
+            )
+        ),
     }
 
 
