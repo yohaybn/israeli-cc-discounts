@@ -265,7 +265,7 @@
     async function loadData() {
         const DATA_SOURCES = [
             // 1. Published site static data (GitHub Pages or server /data mount)
-            '/data/all_combined_discounts.json',
+            'data/all_combined_discounts.json',
             // 2. Local API businesses endpoint
             '/businesses',
             // 3. Relative legacy fallbacks

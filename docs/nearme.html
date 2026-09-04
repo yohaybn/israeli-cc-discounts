@@ -13,139 +13,725 @@
   crossorigin=""
 />
 
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&family=Rubik:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
   <style>
+    :root {
+      --bg-main: #0b0f19;
+      --bg-card: rgba(15, 23, 42, 0.78);
+      --bg-card-strong: rgba(17, 24, 39, 0.96);
+      --bg-hover: rgba(30, 41, 59, 0.96);
+      --bg-glass: rgba(15, 23, 42, 0.7);
+      --bg-surface: rgba(148, 163, 184, 0.08);
+      --bg-input: rgba(15, 23, 42, 0.9);
+      --text-primary: #f8fafc;
+      --text-secondary: #cbd5e1;
+      --text-muted: #94a3b8;
+      --text-accent: #38bdf8;
+      --border-subtle: rgba(148, 163, 184, 0.18);
+      --border-strong: rgba(148, 163, 184, 0.28);
+      --shadow-soft: 0 10px 30px rgba(2, 6, 23, 0.38);
+      --primary-gradient: linear-gradient(135deg, #38bdf8, #2563eb 50%, #818cf8);
+      --accent-gradient: linear-gradient(135deg, #f59e0b, #f97316);
+      --success: #34d399;
+      --danger: #f87171;
+      --map-ring: #f59e0b;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--bg-main);
+      color: var(--text-primary);
+      font-family: 'Heebo', 'Rubik', sans-serif;
+      direction: rtl;
+      text-align: right;
+    }
+
     body {
-      font-family: system-ui, -apple-system, sans-serif;
       margin: 0;
-      padding: 0;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
-      height: 100vh;
-      overflow: hidden; /* Prevent body scroll, use inner scroll */
+      background:
+        radial-gradient(circle at top right, rgba(56, 189, 248, 0.16), transparent 20%),
+        radial-gradient(circle at bottom left, rgba(249, 115, 22, 0.14), transparent 25%),
+        var(--bg-main);
+      color: var(--text-primary);
+      overflow-x: hidden;
     }
+
+    .app-background {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+    }
+
+    .glow-orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(120px);
+      opacity: 0.18;
+      animation: orbFloat 20s infinite alternate ease-in-out;
+    }
+
+    .orb-1 {
+      top: -10%;
+      right: 12%;
+      width: 520px;
+      height: 520px;
+      background: radial-gradient(circle, #38bdf8, #2563eb);
+    }
+
+    .orb-2 {
+      top: 22%;
+      left: -8%;
+      width: 560px;
+      height: 560px;
+      background: radial-gradient(circle, #f43f5e, #7c2d12);
+      animation-delay: -5s;
+    }
+
+    .orb-3 {
+      bottom: -15%;
+      right: 30%;
+      width: 540px;
+      height: 540px;
+      background: radial-gradient(circle, #f59e0b, #b45309);
+      animation-delay: -10s;
+    }
+
+    @keyframes orbFloat {
+      0% { transform: translate(0, 0) scale(1); }
+      50% { transform: translate(28px, -20px) scale(1.08); }
+      100% { transform: translate(-18px, 28px) scale(0.95); }
+    }
+
     #header {
-      padding: 12px 20px;
-      background: #ffffff;
-      border-bottom: 1px solid #ddd;
+      position: sticky;
+      top: 0;
       z-index: 1000;
       display: flex;
-      flex-direction: column; /* Allow controls to stack */
-      gap: 10px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      justify-content: center;
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      background: rgba(8, 12, 20, 0.64);
+      border-bottom: 1px solid var(--border-subtle);
+      box-shadow: 0 8px 24px rgba(2, 6, 23, 0.2);
+      padding: 14px 20px;
     }
+
     #controls-top, #controls-radius {
+      width: min(1280px, 100%);
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 10px;
-      width: 100%;
+      gap: 14px;
+      margin: 0 auto;
     }
+
+    #controls-top {
+      margin-bottom: 8px;
+    }
+
+    #controls-radius {
+      justify-content: flex-start;
+      background: rgba(148, 163, 184, 0.04);
+      border: 1px solid var(--border-subtle);
+      border-radius: 16px;
+      padding: 10px 16px;
+    }
+
     #status {
-      font-weight: 600;
-      color: #333;
-      font-size: 14px;
-      flex-grow: 1;
+      flex: 1;
+      min-height: 18px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--text-primary);
+      letter-spacing: 0.01em;
     }
-    .btn {
-      background-color: #3498db;
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-left: auto;
+      padding: 0.2rem 0.5rem;
+    }
+
+    .brand-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      background: var(--primary-gradient);
       color: white;
-      border: none;
-      padding: 8px 14px;
-      border-radius: 6px;
+      box-shadow: 0 12px 28px rgba(37, 99, 235, 0.35);
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .brand-title {
+      font-family: 'Rubik', 'Heebo', sans-serif;
+      font-size: 1.25rem;
+      line-height: 1.1;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: #f8fafc;
+      margin: 0;
+    }
+
+    .brand-accent {
+      background: linear-gradient(135deg, #38bdf8, #818cf8);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      display: inline-block;
+    }
+
+    .brand-subtitle {
+      margin: 0;
+      font-size: 0.73rem;
+      color: var(--text-muted);
+      letter-spacing: 0.01em;
+    }
+
+    .btn {
+      appearance: none;
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      background: var(--primary-gradient);
+      color: white;
+      padding: 10px 16px;
+      border-radius: 12px;
       cursor: pointer;
-      font-weight: 600;
-      font-size: 13px;
-      transition: background-color 0.2s;
+      font-weight: 700;
+      font-size: 0.83rem;
+      line-height: 1;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+      box-shadow: 0 12px 24px rgba(37, 99, 235, 0.2);
       white-space: nowrap;
     }
+
     .btn:hover {
-      background-color: #2980b9;
+      transform: translateY(-1px);
+      filter: brightness(1.04);
     }
+
     .btn.active {
-      background-color: #e67e22;
+      background: linear-gradient(135deg, #f59e0b, #f97316);
+      border-color: rgba(249, 115, 22, 0.45);
+      box-shadow: 0 12px 24px rgba(249, 115, 22, 0.2);
     }
+
+    #controls-radius label {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      font-weight: 600;
+      flex-shrink: 0;
+    }
+
     #radius-slider-container {
       display: flex;
       align-items: center;
-      gap: 5px;
-      flex-grow: 1;
+      gap: 10px;
+      flex: 1;
+      min-width: 200px;
     }
+
     #radius-slider {
-      flex-grow: 1;
+      flex: 1;
+      accent-color: #38bdf8;
+      cursor: pointer;
     }
+
+    #radius-value {
+      min-width: 40px;
+      text-align: center;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(56, 189, 248, 0.1);
+      border: 1px solid rgba(56, 189, 248, 0.25);
+      color: var(--text-primary);
+      font-weight: 700;
+      font-size: 0.82rem;
+    }
+
     #map-container {
-      display: flex;
-      flex-direction: column;
-      flex: 1;
-      overflow: hidden; /* Critical for inner scrolling */
+      position: relative;
+      width: min(1280px, calc(100% - 28px));
+      margin: 18px auto 22px;
+      border: 1px solid var(--border-subtle);
+      border-radius: 24px;
+      overflow: hidden;
+      background: rgba(15, 23, 42, 0.72);
+      box-shadow: var(--shadow-soft);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      z-index: 1;
     }
+
     #map {
-      height: 40vh; /* Fixed height for map */
+      height: 42vh;
       width: 100%;
+      min-height: 320px;
+      background: #0f172a;
     }
+
+    #filter-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      width: min(1280px, calc(100% - 28px));
+      margin: 14px auto 0;
+      padding: 10px 14px;
+      background: rgba(15, 23, 42, 0.7);
+      border: 1px solid var(--border-subtle);
+      border-radius: 18px;
+      box-shadow: 0 8px 20px rgba(2, 6, 23, 0.12);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+
+    .filter-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(148, 163, 184, 0.05);
+      border: 1px solid rgba(148, 163, 184, 0.18);
+      color: var(--text-secondary);
+      font-size: 0.8rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.2s ease;
+      user-select: none;
+    }
+
+    .filter-chip:hover {
+      background: rgba(148, 163, 184, 0.1);
+      border-color: rgba(148, 163, 184, 0.3);
+    }
+
+    .filter-chip.active {
+      background: rgba(56, 189, 248, 0.15);
+      border-color: rgba(56, 189, 248, 0.38);
+      color: #f8fafc;
+    }
+
+    .filter-chip[data-club="MCC"].active {
+      background: rgba(245, 158, 11, 0.12);
+      border-color: rgba(245, 158, 11, 0.4);
+    }
+    .filter-chip[data-club="HOT"].active {
+      background: rgba(244, 63, 94, 0.12);
+      border-color: rgba(244, 63, 94, 0.4);
+    }
+    .filter-chip[data-club="HTzone"].active {
+      background: rgba(6, 182, 212, 0.12);
+      border-color: rgba(6, 182, 212, 0.4);
+    }
+    .filter-chip[data-club="BUYME"].active {
+      background: rgba(59, 130, 246, 0.12);
+      border-color: rgba(59, 130, 246, 0.4);
+    }
+
+    .chip-checkbox {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 18px;
+      height: 18px;
+      border-radius: 6px;
+      background: rgba(255,255,255,0.08);
+      color: transparent;
+      font-size: 0.7rem;
+      font-weight: 900;
+      line-height: 1;
+    }
+
+    .filter-chip.active .chip-checkbox {
+      background: #f8fafc;
+      color: #0b0f19;
+    }
+
+    .club-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 46px;
+      padding: 5px 8px;
+      border-radius: 8px;
+      color: white;
+      font-size: 0.72rem;
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    .club-badge.mcc { background: linear-gradient(135deg, #f59e0b, #d97706); color: #1f2937; }
+    .club-badge.hot { background: linear-gradient(135deg, #f43f5e, #e11d48); }
+    .club-badge.htzone { background: linear-gradient(135deg, #06b6d4, #2563eb); }
+    .club-badge.buyme { background: linear-gradient(135deg, #60a5fa, #2563eb); }
+
     #business-list-container {
-      flex: 1;
-      overflow-y: auto; /* Enable scrolling for the list */
-      background-color: #f9f9f9;
-      border-top: 1px solid #ddd;
+      max-height: 34vh;
+      overflow-y: auto;
+      background: rgba(15, 23, 42, 0.8);
+      border-top: 1px solid var(--border-subtle);
+      scrollbar-width: thin;
+      scrollbar-color: rgba(148, 163, 184, 0.5) transparent;
+      padding: 12px 14px 18px;
     }
+
     #business-list {
       list-style: none;
       padding: 0;
       margin: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 12px;
     }
+
     .business-item {
-      padding: 15px 20px;
-      border-bottom: 1px solid #eee;
       display: flex;
+      flex-direction: column;
       justify-content: space-between;
-      align-items: center;
-      gap: 10px;
+      gap: 12px;
+      padding: 16px 16px 12px;
+      border-radius: 18px;
+      border: 1px solid rgba(148, 163, 184, 0.18);
+      background: rgba(15, 23, 42, 0.8);
+      box-shadow: 0 8px 22px rgba(2, 6, 23, 0.14);
+      transition: border-color 0.2s ease, transform 0.2s ease, background 0.2s ease;
+      cursor: pointer;
+      min-height: 190px;
     }
+
+    .business-item:hover {
+      background: rgba(30, 41, 59, 0.56);
+      border-color: rgba(56, 189, 248, 0.26);
+      transform: translateY(-2px);
+    }
+
     .business-item:last-child {
       border-bottom: none;
     }
+
+    .business-info {
+      min-width: 0;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
     .business-info h3 {
-      margin: 0 0 5px 0;
-      font-size: 16px;
-      color: #333;
-    }
-    .business-info p {
       margin: 0;
-      font-size: 14px;
-      color: #666;
+      font-size: 1.04rem;
+      line-height: 1.35;
+      font-weight: 700;
+      color: var(--text-primary);
+      word-break: break-word;
     }
+
+    .business-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+    }
+
+    .discount-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-top: 2px;
+    }
+
+    .discount-line {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      gap: 8px;
+      width: 100%;
+      padding: 7px 9px;
+      border-radius: 10px;
+      background: rgba(148, 163, 184, 0.05);
+      border: 1px solid rgba(148, 163, 184, 0.12);
+    }
+
+    .discount-line strong {
+      color: var(--text-primary);
+      font-size: 0.76rem;
+      font-weight: 700;
+      word-break: break-word;
+    }
+
+    .discount-line a {
+      color: #7dd3fc;
+      text-decoration: none;
+      font-size: 0.72rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .business-item-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-top: auto;
+    }
+
     .distance {
-      font-weight: bold;
-      color: #27ae60;
+      font-weight: 800;
+      color: #34d399;
+      letter-spacing: 0.01em;
+      font-size: 0.82rem;
     }
+
+    .list-btn, .map-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #38bdf8, #2563eb);
+      border: 1px solid rgba(56, 189, 248, 0.35);
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      padding: 8px 12px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      transition: transform 0.2s ease, filter 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .list-btn {
+      margin-right: auto;
+      margin-left: 0;
+      flex-shrink: 0;
+    }
+
+    .map-btn:hover, .list-btn:hover {
+      transform: translateY(-1px);
+      filter: brightness(1.04);
+    }
+
+    .leaflet-container {
+      font-family: 'Heebo', sans-serif;
+      background: #0f172a;
+    }
+
+    .leaflet-popup-content-wrapper,
+    .leaflet-popup-tip {
+      background: rgba(15, 23, 42, 0.96);
+      color: var(--text-primary);
+      border: 1px solid var(--border-subtle);
+      box-shadow: 0 12px 30px rgba(2, 6, 23, 0.28);
+    }
+
     .leaflet-popup-content {
       direction: rtl;
       text-align: right;
-      font-family: inherit;
+      font-family: 'Heebo', sans-serif;
+      margin: 12px 14px;
+      color: var(--text-primary);
     }
-    .map-btn, .list-btn {
-      display: inline-block;
-      background: #3498db;
-      color: #fff;
-      text-decoration: none;
-      padding: 6px 10px;
-      border-radius: 4px;
-      font-size: 13px;
-      margin-top: 8px; /* For popup */
+
+    .leaflet-control-zoom a {
+      background: rgba(15, 23, 42, 0.9);
+      color: var(--text-primary);
+      border-color: var(--border-subtle);
+    }
+
+    .leaflet-control-attribution {
+      background: rgba(15, 23, 42, 0.7);
+      color: var(--text-secondary);
+    }
+
+    .club-pin {
+      width: 18px;
+      height: 18px;
+      border-radius: 50% 50% 50% 0;
+      background: var(--pin-color);
+      border: 2px solid rgba(255, 255, 255, 0.9);
+      box-shadow: 0 6px 18px rgba(2, 6, 23, 0.35);
+      transform: rotate(-45deg);
+      position: relative;
+      display: block;
+    }
+
+    .club-pin::after {
+      content: "";
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.9);
+      top: 5px;
+      left: 5px;
+    }
+
+    .user-pin {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #f8fafc, #cbd5e1);
+      border: 2px solid rgba(15, 23, 42, 0.9);
+      box-shadow: 0 8px 20px rgba(2, 6, 23, 0.35);
+      display: grid;
+      place-items: center;
+      font-size: 16px;
+      line-height: 1;
+      transform: translateY(-1px);
+    }
+
+    #details-pane {
+      display: none;
+      position: absolute;
+      right: 16px;
+      top: 18px;
+      width: min(320px, calc(100% - 32px));
+      max-height: 60vh;
+      overflow: auto;
+      background: rgba(15, 23, 42, 0.96);
+      border: 1px solid var(--border-subtle);
+      border-radius: 18px;
+      box-shadow: 0 18px 44px rgba(2, 6, 23, 0.38);
+      z-index: 2000;
+      padding: 14px;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+
+    #details-close {
+      float: left;
+      background: linear-gradient(135deg, #f87171, #ef4444);
+      color: white;
       border: none;
+      padding: 7px 12px;
+      border-radius: 10px;
       cursor: pointer;
+      font-weight: 700;
+      margin-bottom: 8px;
     }
-    .list-btn {
-        margin-top: 0;
-        margin-right: auto; /* Push to the left in list item */
+
+    #details-content {
+      clear: both;
+      color: var(--text-primary);
+    }
+
+    #details-content h3 {
+      margin: 0 0 10px;
+      font-size: 1.08rem;
+      line-height: 1.45;
+    }
+
+    #details-content .meta {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+    }
+
+    #details-content .deal-item {
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    #details-content .deal-item:last-child {
+      border-bottom: none;
+    }
+
+    @media (max-width: 720px) {
+      #header {
+        padding: 12px 12px 10px;
+      }
+
+      #controls-top, #controls-radius {
+        width: 100%;
+        flex-wrap: wrap;
+      }
+
+      #controls-top {
+        align-items: flex-start;
+      }
+
+      #status {
+        width: 100%;
+        order: 1;
+      }
+
+      .btn {
+        width: 100%;
+        justify-content: center;
+      }
+
+      #controls-radius {
+        padding: 10px 12px;
+      }
+
+      #map-container {
+        width: calc(100% - 16px);
+        border-radius: 18px;
+      }
+
+      .business-item {
+        padding: 14px 12px;
+        align-items: flex-start;
+      }
+
+      .business-info h3 {
+        font-size: 0.98rem;
+      }
+
+      .business-info p {
+        font-size: 0.8rem;
+      }
+
+      .list-btn {
+        padding: 8px 10px;
+        font-size: 0.75rem;
+      }
     }
   </style>
 </head>
 <body>
+  <div class="app-background">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+  </div>
 
   <div id="header">
     <div id="controls-top">
+      <div class="brand" aria-label="Discount Finder brand">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="5" width="20" height="14" rx="2"></rect>
+            <line x1="2" y1="10" x2="22" y2="10"></line>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <h1 class="brand-title">Discount<span class="brand-accent">Finder</span></h1>
+          <p class="brand-subtitle">חיפוש עסקים קרובים</p>
+        </div>
+      </div>
       <div id="status">טוען את המפה...</div>
       <button id="pin-btn" class="btn" onclick="togglePinMode()">📍 בחר מיקום על המפה</button>
     </div>
@@ -156,6 +742,14 @@
             <span id="radius-value">1.0</span>
         </div>
     </div>
+  </div>
+
+  <div id="filter-row" aria-label="סינון לפי מועדון">
+    <button class="filter-chip active" data-club="ALL" type="button"><span class="chip-checkbox">✓</span>הכל</button>
+    <button class="filter-chip" data-club="MCC" type="button"><span class="chip-checkbox">✓</span><span class="club-badge mcc">חבר</span></button>
+    <button class="filter-chip" data-club="HOT" type="button"><span class="chip-checkbox">✓</span><span class="club-badge hot">HOT</span></button>
+    <button class="filter-chip" data-club="HTzone" type="button"><span class="chip-checkbox">✓</span><span class="club-badge htzone">HTzone</span></button>
+    <button class="filter-chip" data-club="BUYME" type="button"><span class="chip-checkbox">✓</span><span class="club-badge buyme">BUYME</span></button>
   </div>
 
   <!-- Map and List Container -->
@@ -170,7 +764,7 @@
       </ul>
     </div>
     <!-- Details Pane -->
-    <div id="details-pane" style="display:none; position: absolute; right: 12px; top: 80px; width: 320px; max-height: 60vh; overflow:auto; background:#fff; border:1px solid #ddd; border-radius:8px; box-shadow:0 6px 18px rgba(0,0,0,0.12); z-index:2000; padding:12px;">
+    <div id="details-pane" style="display:none;">
       <button id="details-close" style="float:left;background:#e74c3c;color:#fff;border:none;padding:6px 10px;border-radius:6px;cursor:pointer;margin-bottom:8px;">סגור</button>
       <div id="details-content"></div>
     </div>
@@ -189,6 +783,8 @@
     let userMarker = null;
     let radiusCircle = null;
     let businessLayerGroup = L.layerGroup();
+    const CLUB_KEYS = ['MCC', 'HOT', 'HTzone', 'BUYME'];
+    let selectedClubs = new Set(CLUB_KEYS);
     
     let isPinMode = false;
     let currentUserLat = 32.0853; // Default Tel Aviv center fallback
@@ -225,6 +821,35 @@
         Math.sin(dLon / 2) * Math.sin(dLon / 2);
       const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
       return R * c;
+    }
+
+    const CLUB_PIN_COLORS = {
+      MCC: '#f59e0b',
+      HOT: '#f43f5e',
+      HTzone: '#06b6d4',
+      BUYME: '#60a5fa',
+      default: '#38bdf8'
+    };
+
+    function createClubPinIcon(club) {
+      const color = CLUB_PIN_COLORS[club] || CLUB_PIN_COLORS.default;
+      return L.divIcon({
+        className: 'club-pin-wrapper',
+        html: `<span class="club-pin" style="--pin-color: ${color};"></span>`,
+        iconSize: [18, 18],
+        iconAnchor: [9, 18],
+        popupAnchor: [0, -16]
+      });
+    }
+
+    function createUserPinIcon() {
+      return L.divIcon({
+        className: 'user-pin-wrapper',
+        html: '<span class="user-pin">👤</span>',
+        iconSize: [28, 28],
+        iconAnchor: [14, 28],
+        popupAnchor: [0, -20]
+      });
     }
 
     // Initialize Map Instance
@@ -272,6 +897,85 @@
       }
     }
 
+    function getSelectedClubDiscounts(business) {
+      const discounts = Array.isArray(business.discounts) ? business.discounts : [];
+      const activeSet = selectedClubs;
+      return discounts.filter((d) => {
+        const club = d.club || d.club_name || '';
+        return activeSet.has(club) || (activeSet.size === CLUB_KEYS.length && club);
+      });
+    }
+
+    function updateClubFiltersUI() {
+      document.querySelectorAll('.filter-chip').forEach((chip) => {
+        const club = chip.getAttribute('data-club');
+        const active = club === 'ALL' ? selectedClubs.size === CLUB_KEYS.length : selectedClubs.has(club);
+        chip.classList.toggle('active', active);
+      });
+    }
+
+    function attachClubFilterHandlers() {
+      document.querySelectorAll('.filter-chip').forEach((chip) => {
+        chip.addEventListener('click', () => {
+          const clickedClub = chip.getAttribute('data-club');
+          if (clickedClub === 'ALL') {
+            selectedClubs = new Set(CLUB_KEYS);
+          } else {
+            const isAllSelected = selectedClubs.size === CLUB_KEYS.length;
+            if (isAllSelected) {
+              selectedClubs = new Set([clickedClub]);
+            } else if (selectedClubs.has(clickedClub)) {
+              selectedClubs.delete(clickedClub);
+              if (selectedClubs.size === 0) {
+                selectedClubs = new Set(CLUB_KEYS);
+              }
+            } else {
+              selectedClubs.add(clickedClub);
+            }
+          }
+          updateClubFiltersUI();
+          if (radiusCircle) {
+            updateUserLocation(currentUserLat, currentUserLon);
+          }
+        });
+      });
+    }
+
+    function updateClubFiltersUI() {
+      document.querySelectorAll('.filter-chip').forEach((chip) => {
+        const club = chip.getAttribute('data-club');
+        const active = club === 'ALL' ? selectedClubs.size === CLUB_KEYS.length : selectedClubs.has(club);
+        chip.classList.toggle('active', active);
+      });
+    }
+
+    function attachClubFilterHandlers() {
+      document.querySelectorAll('.filter-chip').forEach((chip) => {
+        chip.addEventListener('click', () => {
+          const clickedClub = chip.getAttribute('data-club');
+          if (clickedClub === 'ALL') {
+            selectedClubs = new Set(CLUB_KEYS);
+          } else {
+            const isAllSelected = selectedClubs.size === CLUB_KEYS.length;
+            if (isAllSelected) {
+              selectedClubs = new Set([clickedClub]);
+            } else if (selectedClubs.has(clickedClub)) {
+              selectedClubs.delete(clickedClub);
+              if (selectedClubs.size === 0) {
+                selectedClubs = new Set(CLUB_KEYS);
+              }
+            } else {
+              selectedClubs.add(clickedClub);
+            }
+          }
+          updateClubFiltersUI();
+          if (radiusCircle) {
+            updateUserLocation(currentUserLat, currentUserLon);
+          }
+        });
+      });
+    }
+
     // Update Radius from Slider
     function updateRadiusFromSlider(value) {
         currentSearchRadiusKm = parseFloat(value);
@@ -282,6 +986,64 @@
             radiusCircle.setRadius(currentSearchRadiusKm * 1000);
             updateUserLocation(currentUserLat, currentUserLon); // Re-fetch and re-filter
         }
+    }
+
+    function renderBusinessCards(nearby) {
+      const listContainer = document.getElementById('business-list');
+      listContainer.innerHTML = '';
+
+      if (!nearby.length) {
+        listContainer.innerHTML = '<li class="business-item"><div class="business-info"><h3>אין עסקים להצגה</h3><p>נסו להוריד את רדיוס החיפוש או לבחור מועדון אחר.</p></div></li>';
+        return;
+      }
+
+      nearby.forEach((b) => {
+        const relatedDiscounts = getSelectedClubDiscounts(b);
+        if (!relatedDiscounts.length) return;
+
+        const listItem = document.createElement('li');
+        listItem.className = 'business-item';
+
+        const discountLines = relatedDiscounts.slice(0, 3).map((d) => {
+          const club = d.club || 'MCC';
+          const text = d.discount || d.discount_text || 'הטבה';
+          const url = d.discount_url || d.url || '#';
+          const badgeClass = (club || '').toLowerCase();
+          const label = club === 'HTzone' ? 'HTzone' : club === 'BUYME' ? 'BUYME' : club;
+          return `
+            <div class="discount-line">
+              <span class="club-badge ${badgeClass === 'htzone' ? 'htzone' : badgeClass === 'buyme' ? 'buyme' : badgeClass === 'hot' ? 'hot' : 'mcc'}">${label}</span>
+              <strong>${text}</strong>
+              <a href="${url}" target="_blank" rel="noopener noreferrer">לינק</a>
+            </div>
+          `;
+        }).join('');
+
+        const title = b.name || b.business_name || 'עסק';
+        const gmapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${b.lat},${b.lon}`;
+        const bestDiscount = relatedDiscounts.find((d) => (d.discount || '').toString().match(/\d+\s*%|\d+\s*אחוז/i)) || relatedDiscounts[0];
+
+        listItem.innerHTML = `
+          <div class="business-info">
+            <h3>${title}</h3>
+            <div class="business-meta">
+              <span>${b.type || 'עסק'}</span>
+              <span class="distance">${Math.round(b.distance * 1000)} מ'</span>
+            </div>
+            <div class="discount-list">${discountLines}</div>
+          </div>
+          <div class="business-item-footer">
+            <span class="club-badge ${((bestDiscount.club || 'MCC').toLowerCase() === 'htzone' ? 'htzone' : (bestDiscount.club || 'MCC').toLowerCase() === 'buyme' ? 'buyme' : (bestDiscount.club || 'MCC').toLowerCase() === 'hot' ? 'hot' : 'mcc')}">${(bestDiscount.club || 'MCC') === 'HTzone' ? 'HTzone' : (bestDiscount.club || 'MCC') === 'BUYME' ? 'BUYME' : (bestDiscount.club || 'MCC') === 'HOT' ? 'HOT' : 'חבר'}</span>
+            <a href="${gmapsUrl}" target="_blank" class="list-btn">ניווט</a>
+          </div>
+        `;
+
+        listItem.addEventListener('click', (e) => {
+          if (e.target.closest('a')) return;
+          showDetailsPane(b);
+        });
+        listContainer.appendChild(listItem);
+      });
     }
 
     // Updates User Marker, Circle Radius, and Fetches Businesses
@@ -297,7 +1059,8 @@
       } else {
         userMarker = L.marker([lat, lon], {
           draggable: true,
-          title: 'גרור כדי לשנות מיקום'
+          title: 'גרור כדי לשנות מיקום',
+          icon: createUserPinIcon()
         }).addTo(map).bindPopup('<b>המיקום שלך</b><br>ניתן לגרור אותי במפה!');
 
         userMarker.on('dragend', (e) => {
@@ -340,7 +1103,7 @@
 
       try {
         // Load the precomputed businesses_with_discounts.json produced by the join script
-        const path = '/data/businesses_with_discounts.json';
+        const path = 'data/businesses_with_discounts.json';
         console.debug('Fetching businesses with discounts from', path);
         const res = await fetch(path);
         if (!res.ok) throw new Error(`HTTP ${res.status} when loading ${path}`);
@@ -360,26 +1123,31 @@
           }
         }
 
+        const filteredNearby = nearby.filter((b) => {
+          const matchingDiscounts = getSelectedClubDiscounts(b);
+          return matchingDiscounts.length > 0;
+        });
+
         // Sort by distance (closest first)
-        nearby.sort((a, b) => a.distance - b.distance);
+        filteredNearby.sort((a, b) => a.distance - b.distance);
 
         businessLayerGroup.clearLayers();
 
-        if (nearby.length === 0) {
+        if (filteredNearby.length === 0) {
             statusDiv.innerText = `לא נמצאו עסקים ברדיוס ${currentSearchRadiusKm.toFixed(1)} ק"מ.`;
-            listContainer.innerHTML = '<li class="business-item"><p>אין עסקים להצגה באזור זה.</p></li>';
+            listContainer.innerHTML = '<li class="business-item"><div class="business-info"><h3>אין עסקים להצגה</h3><p>נסו להוריד את רדיוס החיפוש או לבחור מועדון אחר.</p></div></li>';
         } else {
-            statusDiv.innerText = `נמצאו ${nearby.length} עסקים ברדיוס ${currentSearchRadiusKm.toFixed(1)} ק"מ:`;
+            statusDiv.innerText = `נמצאו ${filteredNearby.length} עסקים ברדיוס ${currentSearchRadiusKm.toFixed(1)} ק"מ:`;
             
-            nearby.forEach(b => {
+            filteredNearby.forEach(b => {
                 const distanceMeters = Math.round(b.distance * 1000);
-                const marker = L.marker([b.lat, b.lon]);
+                const matchingDiscounts = getSelectedClubDiscounts(b);
+                const businessClub = matchingDiscounts[0]?.club || 'MCC';
+                const marker = L.marker([b.lat, b.lon], { icon: createClubPinIcon(businessClub) });
                 
                 const gmapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${b.lat},${b.lon}`;
 
-                // --- Map Popup Content ---
-                // Build discount HTML (up to 3 items)
-                const discountsHtml = (b.discounts || []).slice(0,3).map(d => {
+                const discountsHtml = matchingDiscounts.slice(0,3).map(d => {
                   const club = d.club || '';
                   const text = d.discount || d.discount_text || '';
                   const url = d.discount_url || d.url || '';
@@ -390,43 +1158,17 @@
                 const popupContent = `
                   <div style="min-width: 180px;">
                     <h3 style="margin: 0 0 5px 0; font-size: 15px;">${b.name}</h3>
-                    <p style="margin: 0 0 5px 0; color: #666;">סוג: <b>${b.type || ''}</b></p>
-                    <p style="margin: 0 0 8px 0; color: #27ae60; font-weight: bold;">מרחק: ${distanceMeters} מטרים</p>
-                    ${discountsHtml || '<div style="color:#666;">אין מבצעים משויכים</div>'}
+                    <p style="margin: 0 0 5px 0; color: #cbd5e1;">סוג: <b>${b.type || ''}</b></p>
+                    <p style="margin: 0 0 8px 0; color: #34d399; font-weight: bold;">מרחק: ${distanceMeters} מטרים</p>
+                    ${discountsHtml || '<div style="color:#cbd5e1;">אין מבצעים משויכים</div>'}
                     <div style="margin-top:6px;"><a href="${gmapsUrl}" target="_blank" class="map-btn">ניווט ב-Google Maps</a></div>
                   </div>
                 `;
                 marker.bindPopup(popupContent);
                 businessLayerGroup.addLayer(marker);
-
-                // --- List Item Content ---
-                const listItem = document.createElement('li');
-                listItem.className = 'business-item';
-                // Build discounts snippet for list (up to 2)
-                const listDiscounts = (b.discounts || []).slice(0,2).map(d => {
-                  const club = d.club || '';
-                  const text = d.discount || d.discount_text || '';
-                  const url = d.discount_url || d.url || '';
-                  const link = url ? ` <a href="${url}" target="_blank">[קישור]</a>` : '';
-                  return `<div style="font-size:13px;color:#444;margin-top:4px;"><b>${club}</b>: ${text}${link}</div>`;
-                }).join('');
-
-                listItem.innerHTML = `
-                  <div class="business-info">
-                    <h3>${b.name}</h3>
-                    <p>סוג: ${b.type || ''}</p>
-                    <p class="distance">${distanceMeters} מטרים</p>
-                    ${listDiscounts}
-                  </div>
-                  <a href="${gmapsUrl}" target="_blank" class="list-btn">ניווט</a>
-                `;
-                // show details pane on click
-                listItem.addEventListener('click', (e) => {
-                  e.preventDefault();
-                  showDetailsPane(b);
-                });
-                listContainer.appendChild(listItem);
             });
+
+            renderBusinessCards(filteredNearby);
         }
 
       } catch (err) {
@@ -462,7 +1204,11 @@
     }
 
     // Run on startup
-    window.addEventListener('DOMContentLoaded', initApp);
+    window.addEventListener('DOMContentLoaded', () => {
+      updateClubFiltersUI();
+      attachClubFilterHandlers();
+      initApp();
+    });
 
     // Details pane functions
     function showDetailsPane(business) {
