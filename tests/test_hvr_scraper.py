@@ -18,7 +18,8 @@ def test_normalize_giftcard_item():
     assert normalized["business_name"] == "SHASHA GIFTS"
     assert normalized["discount_type"] == "rechargeable_card"
     assert normalized["discount_value"] is None
-    assert "1,000" in normalized["discount"] or "כרטיס" in normalized["discount"]
+    assert "חבר שלי" in normalized["discount"]
+    assert "1,000" in normalized["discount"] or "חבר שלי" in normalized["discount"]
 
 
 def test_normalize_branch_item():
@@ -38,4 +39,5 @@ def test_normalize_branch_item():
     assert normalized["business_name"] == "אנג'לינה פיצה ופסטה"
     assert normalized["discount_type"] == "rechargeable_card"
     assert normalized["discount_value"] is None
-    assert "אילת" in normalized["discount"] or "כרטיס" in normalized["discount"]
+    assert "חבר טעמים" in normalized["discount"]
+    assert "אילת" in normalized["discount"] or "חבר טעמים" in normalized["discount"]

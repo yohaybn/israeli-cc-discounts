@@ -23,7 +23,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-3. Run the scraper to regenerate `docs/data/all_combined_discounts.json` (this backfills `discount_type` = `billing_discount` when missing):
+3. Run the scraper to regenerate the canonical data under `data/` and publish the HTML-facing files under `docs/data/` (this backfills `discount_type` = `billing_discount` when missing):
 
 ```bash
 .venv/bin/python main.py

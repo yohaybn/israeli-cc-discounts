@@ -5,23 +5,30 @@
 set -u
 
 REPO_DIR="/home/ubuntu/discount-finder"
-LOG_FILE="$REPO_DIR/docs/data/scraper_cron.log"
+DATA_DIR="$REPO_DIR/data"
+LOG_FILE="$DATA_DIR/scraper_cron.log"
 BRANCH="main"
 
+mkdir -p "$DATA_DIR"
 cd "$REPO_DIR" || exit 1
+shopt -s globstar nullglob
 
 echo "===== Run started: $(date -Is) =====" >> "$LOG_FILE"
 
-# Run the scraper
+# Run the scraper and refresh the physical-store discount list for the static HTML.
 "$REPO_DIR/.venv/bin/python" "$REPO_DIR/main.py" >> "$LOG_FILE" 2>&1
 EXIT_CODE=$?
+if [ $EXIT_CODE -eq 0 ]; then
+  "$REPO_DIR/.venv/bin/python" "$REPO_DIR/scripts/join_businesses.py" >> "$LOG_FILE" 2>&1
+  EXIT_CODE=$?
+fi
 
 if [ $EXIT_CODE -ne 0 ]; then
     echo "[CRON ERROR] main.py exited with code $EXIT_CODE" >> "$LOG_FILE"
 fi
 
 # Commit and push only if data files changed
-git add docs/data/*.json
+git add data/*.json data/**/*.json docs/data/*.json docs/data/businesses/*.json
 if git diff --cached --quiet; then
     echo "[CRON] No data changes to commit." >> "$LOG_FILE"
 else

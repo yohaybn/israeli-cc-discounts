@@ -3,15 +3,15 @@ import os
 import requests
 import sys
 
-DATA_FILE = "docs/data/all_combined_discounts.json"
-BUYME_FILE = "docs/data/buyme_discounts.json"
-HVR_FILE = "docs/data/hvr_rechargeable_cards.json"
+DATA_FILE = "data/all_combined_discounts.json"
+BUYME_FILE = "data/buyme_discounts.json"
+HVR_FILE = "data/hvr_rechargeable_cards.json"
 API_BASE = "http://127.0.0.1:8000"
 
 
 def check_no_raw_buyme_artifacts():
-    buyme_raw_dir = "docs/data/buyme"
-    buyme_index_file = "docs/data/buyme_all_stores.json"
+    buyme_raw_dir = "data/buyme"
+    buyme_index_file = "data/buyme_all_stores.json"
     if os.path.isdir(buyme_raw_dir):
         print(f"Raw BuyMe directory should not exist: {buyme_raw_dir}", file=sys.stderr)
         return 4

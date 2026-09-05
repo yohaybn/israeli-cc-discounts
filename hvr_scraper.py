@@ -31,6 +31,33 @@ HEADERS = {
 }
 
 
+def _normalize_dedupe_value(value):
+    if value is None:
+        return ""
+    return str(value).strip().lower().replace("\u00a0", " ")
+
+
+def deduplicate_hvr_items(items):
+    seen = set()
+    deduped = []
+    for item in items:
+        if not isinstance(item, dict):
+            continue
+        key = (
+            _normalize_dedupe_value(item.get("club")),
+            _normalize_dedupe_value(item.get("business_name")),
+            _normalize_dedupe_value(item.get("discount")),
+            _normalize_dedupe_value(item.get("discount_url")),
+            _normalize_dedupe_value(item.get("discount_type")),
+            _normalize_dedupe_value(item.get("discount_value")),
+        )
+        if key in seen:
+            continue
+        seen.add(key)
+        deduped.append(item)
+    return deduped
+
+
 def normalize_hvr_rechargeable_card_item(item, source_name="giftcard"):
     """Map HVR gift-card/teamimcard source entries to the repo schema."""
     if not isinstance(item, dict):
@@ -62,8 +89,14 @@ def normalize_hvr_rechargeable_card_item(item, source_name="giftcard"):
     address = item.get("address") or item.get("website") or ""
     limitations = item.get("limitations") or item.get("online_limitations") or ""
 
+    card_name = "כרטיס חבר"
+    if source_name == "giftcard":
+        card_name = "חבר שלי"
+    elif source_name == "teamimcard_branches":
+        card_name = "חבר טעמים"
+
     discount_bits = []
-    discount_bits.append("כרטיס חבר")
+    discount_bits.append(card_name)
 
     if limitations and str(limitations).strip():
         discount_bits.append(str(limitations).strip())
@@ -74,9 +107,14 @@ def normalize_hvr_rechargeable_card_item(item, source_name="giftcard"):
     if not discount:
         discount = "הטבת כרטיס חבר"
 
-    website = item.get("website") or item.get("url") or item.get("site") or ""
-    if website and not website.startswith("http"):
-        website = "https://" + website if "." in website else website
+    #website = item.get("website") or item.get("url") or item.get("site") or ""
+    #if website and not website.startswith("http"):
+    #    website = "https://" + website if "." in website else website
+    # set link to HVR source page for the business, based on source_name
+    if source_name == "giftcard":
+        website = "https://www.hvr.co.il/site/pg/gift_card_company"
+    elif source_name == "teamimcard_branches":
+        website = "https://www.hvr.co.il/site/pg/teamim_card_store"
 
     match = re.search(r"(\d+(?:\.\d+)?)\s*%", discount)
     discount_value = float(match.group(1)) if match else HEVER_DISCOUNT_VALUE
@@ -153,7 +191,7 @@ def scrape_hvr_rechargeable_cards():
 
         print(f"[HVR] {source_name}: {len(items)} raw items -> {len([x for x in items if True])} normalized")
 
-    return results
+    return deduplicate_hvr_items(results)
 
 
 if __name__ == "__main__":

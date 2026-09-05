@@ -44,9 +44,10 @@ except Exception:
 
 
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+DATA_DIR = os.path.join(BASE_DIR, "data")
 DOCS_DATA = os.path.join(BASE_DIR, "docs", "data")
 OUT_FILE = os.path.join(DOCS_DATA, "businesses_with_discounts.json")
-UNMATCHED_FILE = os.path.join(DOCS_DATA, "unmatched_discounts.json")
+UNMATCHED_FILE = os.path.join(DATA_DIR, "unmatched_discounts.json")
 
 
 def load_json(path: str) -> Any:
@@ -68,6 +69,18 @@ def normalize_name(s: str) -> str:
     s = re.sub(r"[\W_]+", " ", s)
     s = re.sub(r"\s+", " ", s).strip()
     return s
+
+
+def get_region(lat: float | None) -> str:
+    if lat is None:
+        return "center"
+    if lat < 30.0:
+        return "eilat_arava"
+    if lat < 31.3:
+        return "south"
+    if lat < 32.5:
+        return "center"
+    return "north"
 
 
 def haversine_km(a_lat: float, a_lon: float, b_lat: float, b_lon: float) -> float:
@@ -194,9 +207,105 @@ def compute_best_discount(branches: List[Dict]) -> None:
         br["best_discount_value"] = best or 0
 
 
+def normalize_lat_lon(value: Any) -> float | None:
+    try:
+        return float(value)
+    except (TypeError, ValueError):
+        return None
+
+
+def build_businesses_with_discounts(stores: List[Dict], discounts: List[Dict], geocoded: List[Dict]) -> List[Dict]:
+    """Attach matching discounts to store records from docs/data/businesses,
+    then append geocoded locations that are not already present by exact lat/lng.
+    """
+    by_location: Dict[tuple[float, float], Dict] = {}
+    businesses_with_discounts: List[Dict] = []
+
+    def add_store_entry(store: Dict, matched_discounts: List[Dict], *, source: str) -> None:
+        lat = normalize_lat_lon(store.get("lat"))
+        lon = normalize_lat_lon(store.get("lon"))
+        if lat is None or lon is None:
+            return
+        key = (round(lat, 6), round(lon, 6))
+        entry = {
+            "id": store.get("id"),
+            "name": store.get("name") or store.get("business_name") or "",
+            "type": store.get("type") or store.get("business_type") or "",
+            "lat": lat,
+            "lon": lon,
+            "discounts": matched_discounts,
+            "source": source,
+        }
+        if key not in by_location:
+            by_location[key] = entry
+            businesses_with_discounts.append(entry)
+        else:
+            existing = by_location[key]
+            existing["discounts"].extend(matched_discounts)
+            existing["name"] = existing["name"] or entry["name"]
+
+    for store in stores:
+        if not isinstance(store, dict):
+            continue
+        lat = normalize_lat_lon(store.get("lat"))
+        lon = normalize_lat_lon(store.get("lon"))
+        if lat is None or lon is None:
+            continue
+
+        matched = []
+        for disc in discounts:
+            if not isinstance(disc, dict):
+                continue
+            disc_name = (disc.get("business_name") or disc.get("business") or disc.get("merchant") or "").strip().lower()
+            store_name = (store.get("name") or "").strip().lower()
+            if not disc_name or not store_name:
+                continue
+            if disc_name == store_name:
+                matched.append(disc)
+
+        add_store_entry(store, matched, source="docs/data/businesses")
+
+    for item in geocoded:
+        if not isinstance(item, dict):
+            continue
+        lat = normalize_lat_lon(item.get("lat"))
+        lon = normalize_lat_lon(item.get("lng") or item.get("lon"))
+        if lat is None or lon is None:
+            continue
+        key = (round(lat, 6), round(lon, 6))
+        if key in by_location:
+            continue
+
+        matched = []
+        for disc in discounts:
+            if not isinstance(disc, dict):
+                continue
+            disc_name = (disc.get("business_name") or disc.get("business") or disc.get("merchant") or "").strip().lower()
+            item_name = (item.get("business_name") or item.get("name") or "").strip().lower()
+            if not disc_name or not item_name:
+                continue
+            if disc_name == item_name:
+                matched.append(disc)
+
+        add_store_entry({
+            "id": item.get("place_id") or item.get("business_name"),
+            "name": item.get("business_name") or item.get("name") or "",
+            "type": item.get("type") or "",
+            "lat": lat,
+            "lon": lon,
+        }, matched, source="data/businesses/processed_physical_stores_geocoded.json")
+
+    return businesses_with_discounts
+
+
 def main():
-    all_disc_path = os.path.join(DOCS_DATA, "all_combined_discounts.json")
-    geocoded_path = os.path.join(DOCS_DATA, "businesses", "processed_physical_stores_geocoded.json")
+    all_disc_path = os.path.join(DATA_DIR, "all_combined_discounts.json")
+    if not os.path.exists(all_disc_path):
+        all_disc_path = os.path.join(DOCS_DATA, "all_combined_discounts.json")
+    geocoded_path = os.path.join(DATA_DIR, "businesses", "processed_physical_stores_geocoded.json")
+    if not os.path.exists(geocoded_path):
+        geocoded_path = os.path.join(DOCS_DATA, "businesses", "processed_physical_stores_geocoded.json")
+    regions_path = os.path.join(DOCS_DATA, "businesses")
 
     print("Loading discounts...", all_disc_path)
     discounts = load_json(all_disc_path)
@@ -206,22 +315,41 @@ def main():
     geocoded = load_json(geocoded_path)
     print(f"Loaded {len(geocoded)} geocoded store records")
 
-    branches = build_branches(geocoded)
-    print(f"Built {len(branches)} branches from geocoded data")
+    print("Loading region stores...", regions_path)
+    region_files = [
+        os.path.join(regions_path, name)
+        for name in sorted(os.listdir(regions_path))
+        if name.endswith(".json") and name.startswith("businesses_")
+    ]
+    stores: List[Dict] = []
+    for path in region_files:
+        try:
+            stores.extend(load_json(path))
+        except Exception:
+            continue
+    print(f"Loaded {len(stores)} region store records")
 
-    unmatched = match_and_join(discounts, branches, max_dist_m=50.0, name_threshold=80)
-    print(f"Matched discounts; unmatched count: {len(unmatched)}")
+    businesses_with_discounts = build_businesses_with_discounts(stores, discounts, geocoded)
+    save_json(OUT_FILE, businesses_with_discounts)
 
-    compute_best_discount(branches)
+    regions: Dict[str, List[Dict]] = {"north": [], "center": [], "south": [], "eilat_arava": []}
+    for business in businesses_with_discounts:
+        lat = business.get("lat")
+        try:
+            lat_float = float(lat)
+        except (TypeError, ValueError):
+            continue
+        region = get_region(lat_float)
+        regions.setdefault(region, []).append(business)
 
-    # filter out branches without discounts
-    branches_with_discounts = [b for b in branches if b["discounts"]]
-    print(f"Branches with discounts: {len(branches_with_discounts)}")
+    for region_name, region_businesses in regions.items():
+        region_path = os.path.join(DOCS_DATA, "businesses", f"businesses_{region_name}.json")
+        save_json(region_path, region_businesses)
+        print(f"Wrote {region_path} with {len(region_businesses)} businesses")
 
-    save_json(OUT_FILE, branches_with_discounts)
-    save_json(UNMATCHED_FILE, unmatched)
+    save_json(UNMATCHED_FILE, [])
 
-    print(f"Wrote {OUT_FILE} and {UNMATCHED_FILE}")
+    print(f"Wrote {OUT_FILE} with {len(businesses_with_discounts)} businesses")
 
 
 if __name__ == "__main__":

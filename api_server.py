@@ -29,10 +29,12 @@ from fastapi.staticfiles import StaticFiles
 from rapidfuzz import fuzz
 
 BASE_DIR = os.path.dirname(__file__)
-DATA_FILE = os.path.join(BASE_DIR, "docs", "data", "all_combined_discounts.json")
-METADATA_FILE = os.path.join(BASE_DIR, "docs", "data", "scrape_metadata.json")
+DATA_DIR = os.path.join(BASE_DIR, "data")
+DOCS_DATA_DIR = os.path.join(BASE_DIR, "docs", "data")
+DATA_FILE = os.path.join(DATA_DIR, "all_combined_discounts.json")
+METADATA_FILE = os.path.join(DATA_DIR, "scrape_metadata.json")
 STATIC_DIR = os.path.join(BASE_DIR, "docs")
-BUSINESSES_WITH_DISCOUNTS = os.path.join(BASE_DIR, "docs", "data", "businesses_with_discounts.json")
+BUSINESSES_WITH_DISCOUNTS = os.path.join(DOCS_DATA_DIR, "businesses_with_discounts.json")
 
 # in-memory cache for businesses_with_discounts
 _BUSINESSES_CACHE: list[dict] | None = None

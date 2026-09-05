@@ -8,7 +8,36 @@ from mcc_scraper import scrape_mcc
 from hvr_scraper import scrape_hvr_rechargeable_cards
 from buyme_scraper import scrape_buyme_suppliers, stores_to_discounts
 
-DATA_DIR = os.path.join(os.path.dirname(__file__), "docs", "data")
+BASE_DIR = os.path.dirname(__file__)
+DATA_DIR = os.path.join(BASE_DIR, "data")
+DOCS_DATA_DIR = os.path.join(BASE_DIR, "docs", "data")
+
+
+def normalize_dedupe_value(value):
+    if value is None:
+        return ""
+    return str(value).strip().lower().replace("\u00a0", " ")
+
+
+def deduplicate_records(items):
+    seen = set()
+    deduped = []
+    for item in items:
+        if not isinstance(item, dict):
+            continue
+        key = (
+            normalize_dedupe_value(item.get("club")),
+            normalize_dedupe_value(item.get("business_name")),
+            normalize_dedupe_value(item.get("discount")),
+            normalize_dedupe_value(item.get("discount_url")),
+            normalize_dedupe_value(item.get("discount_type")),
+            normalize_dedupe_value(item.get("discount_value")),
+        )
+        if key in seen:
+            continue
+        seen.add(key)
+        deduped.append(item)
+    return deduped
 
 
 def load_existing_json(filepath):
@@ -27,6 +56,7 @@ def load_existing_json(filepath):
 
 def main():
     os.makedirs(DATA_DIR, exist_ok=True)
+    os.makedirs(DOCS_DATA_DIR, exist_ok=True)
     print("================ STARTING CARDS COMPARISON SCRAPER ================\n")
 
     mcc_path = os.path.join(DATA_DIR, "mcc_discounts.json")
@@ -35,6 +65,7 @@ def main():
     buyme_path = os.path.join(DATA_DIR, "buyme_discounts.json")
     hvr_path = os.path.join(DATA_DIR, "hvr_rechargeable_cards.json")
     combined_path = os.path.join(DATA_DIR, "all_combined_discounts.json")
+    publish_combined_path = os.path.join(DOCS_DATA_DIR, "all_combined_discounts.json")
     metadata_path = os.path.join(DATA_DIR, "scrape_metadata.json")
 
     # Load existing metadata if available
@@ -141,6 +172,9 @@ def main():
         combined_list = combined_list + buyme_discounts
         print(f"--> Added {len(buyme_discounts)} buyme discounts to combined dataset.")
 
+    combined_list = deduplicate_records(combined_list)
+    print(f"--> Deduplicated combined dataset to {len(combined_list)} unique records.")
+
     # Normalization pass: canonicalize club names and backfill discount_type/discount_value
     club_aliases = {
         "חבר": "חבר",
@@ -176,12 +210,14 @@ def main():
     if combined_list:
         with open(combined_path, "w", encoding="utf-8") as f:
             json.dump(combined_list, f, ensure_ascii=False, indent=4)
+        with open(publish_combined_path, "w", encoding="utf-8") as f:
+            json.dump(combined_list, f, ensure_ascii=False, indent=4)
         metadata["all_combined"] = {
             "last_updated": now_iso,
             "total_count": len(combined_list),
         }
         print(
-            f"--> Updated combined file {combined_path} with"
+            f"--> Updated combined file {combined_path} and published a static copy to {publish_combined_path} with"
             f" {len(combined_list)} total records."
         )
 

@@ -176,22 +176,23 @@ def stores_to_discounts(stores: List[Dict[str, Any]], supplier_name: str = None,
             supplier_field = s_names
 
         # build discount_url: prefer site; otherwise, build buyme search URL using supplier id and store name
-        discount_url = site
+        # discount_url = site  - always prefer searchTerm=
+
+        
+        # try to get a supplier id from store entry
+        s_ids = s.get("supplier_ids") or s.get("supplier_id")
+        if isinstance(s_ids, list) and len(s_ids) > 0:
+            sid_for_url = s_ids[0]
+        elif isinstance(s_ids, int) or (isinstance(s_ids, str) and s_ids.isdigit()):
+            sid_for_url = int(s_ids)
+        else:
+            # fallback to provided supplier_ids_fallback
+            sid_for_url = supplier_ids_fallback[0] if supplier_ids_fallback and len(supplier_ids_fallback) > 0 else None
+        if sid_for_url:
+            term = quote_plus(title)
+            discount_url = f"https://buyme.co.il/brands/{sid_for_url}?searchTerm={term}#"
         if not discount_url:
-            # try to get a supplier id from store entry
-            s_ids = s.get("supplier_ids") or s.get("supplier_id")
-            if isinstance(s_ids, list) and len(s_ids) > 0:
-                sid_for_url = s_ids[0]
-            elif isinstance(s_ids, int) or (isinstance(s_ids, str) and s_ids.isdigit()):
-                sid_for_url = int(s_ids)
-            else:
-                # fallback to provided supplier_ids_fallback
-                sid_for_url = supplier_ids_fallback[0] if supplier_ids_fallback and len(supplier_ids_fallback) > 0 else None
-
-            if sid_for_url:
-                term = quote_plus(title)
-                discount_url = f"https://buyme.co.il/brands/{sid_for_url}?searchTerm={term}#"
-
+            discount_url = site 
         item = {
             "club": "BUYME",
             "business_name": title,
