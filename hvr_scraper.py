@@ -76,10 +76,10 @@ def normalize_hvr_rechargeable_card_item(item, source_name="giftcard"):
     for key in [
         "company_desc",
         "desc",
-        "category",
-        "type",
-        "search_words",
-        "product_types",
+        #  "category",
+        #  "type",
+        #  "search_words",
+        #  "product_types",
     ]:
         value = item.get(key)
         if value and str(value).strip():
@@ -103,7 +103,7 @@ def normalize_hvr_rechargeable_card_item(item, source_name="giftcard"):
     if limitations and str(limitations).strip():
         discount_bits.append(str(limitations).strip())
     if description_parts:
-        discount_bits.append(" | ".join(description_parts[:2]))
+        discount_bits.append(" | ".join(description_parts).strip())
 
     discount = " | ".join(part for part in discount_bits if part).strip()
     if not discount:
@@ -202,7 +202,7 @@ def scrape_hvr_rechargeable_cards():
 
 if __name__ == "__main__":
     data = scrape_hvr_rechargeable_cards()
-    out_dir = os.path.join(os.path.dirname(__file__), "data")
+    out_dir = os.path.join(os.path.dirname(__file__), "data","discounts")
     os.makedirs(out_dir, exist_ok=True)
     out_path = os.path.join(out_dir, "hvr_rechargeable_cards.json")
     if data:

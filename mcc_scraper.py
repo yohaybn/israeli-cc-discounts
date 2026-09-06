@@ -185,9 +185,9 @@ def scrape_mcc():
 if __name__ == "__main__":
     import os
     data = scrape_mcc()
-    out_dir = os.path.join(os.path.dirname(__file__), "data")
-    os.makedirs(out_dir, exist_ok=True)
-    out_path = os.path.join(out_dir, "mcc_discounts.json")
+    OUTPUT_DIR = os.path.join(os.path.dirname(__file__), "data","discounts")
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
+    out_path = os.path.join(OUTPUT_DIR, "mcc_discounts.json")
     if data:
         with open(out_path, "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=4)

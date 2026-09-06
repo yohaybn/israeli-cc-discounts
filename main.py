@@ -10,6 +10,8 @@ from buyme_scraper import scrape_buyme_suppliers, stores_to_discounts
 
 BASE_DIR = os.path.dirname(__file__)
 DATA_DIR = os.path.join(BASE_DIR, "data")
+DISCOUNTS_DIR = os.path.join(DATA_DIR, "discounts")
+
 DOCS_DATA_DIR = os.path.join(BASE_DIR, "docs", "data")
 
 
@@ -59,14 +61,15 @@ def main():
     os.makedirs(DOCS_DATA_DIR, exist_ok=True)
     print("================ STARTING CARDS COMPARISON SCRAPER ================\n")
 
-    mcc_path = os.path.join(DATA_DIR, "mcc_discounts.json")
-    hot_path = os.path.join(DATA_DIR, "hot_discounts.json")
-    htzone_path = os.path.join(DATA_DIR, "htzone_discounts.json")
-    buyme_path = os.path.join(DATA_DIR, "buyme_discounts.json")
-    hvr_path = os.path.join(DATA_DIR, "hvr_rechargeable_cards.json")
-    combined_path = os.path.join(DATA_DIR, "all_combined_discounts.json")
+    mcc_path = os.path.join(DISCOUNTS_DIR, "mcc_discounts.json")
+    hot_path = os.path.join(DISCOUNTS_DIR, "hot_discounts.json")
+    htzone_path = os.path.join(DISCOUNTS_DIR, "htzone_discounts.json")
+    buyme_path = os.path.join(DISCOUNTS_DIR, "buyme_discounts.json")
+    hvr_path = os.path.join(DISCOUNTS_DIR, "hvr_rechargeable_cards.json")
+    combined_path = os.path.join(DISCOUNTS_DIR, "all_combined_discounts.json")
+    metadata_path = os.path.join(DISCOUNTS_DIR, "scrape_metadata.json")
     publish_combined_path = os.path.join(DOCS_DATA_DIR, "all_combined_discounts.json")
-    metadata_path = os.path.join(DATA_DIR, "scrape_metadata.json")
+
 
     # Load existing metadata if available
     metadata = load_existing_json(metadata_path)

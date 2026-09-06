@@ -699,10 +699,16 @@
           const club = d.club || '';
           const text = d.discount || d.discount_text || '';
           const url = d.discount_url || d.url || '';
+          const businessName = d.name || d.business_name || 'עסק';
+          var altName;
+          if(businessName!=business.name){
+            altName = `<span style="font-size:0.85rem;color:var(--text-secondary);margin-bottom:4px;">${escapeHtml(businessName)}</span>`;
+          }
           const { cssClass: badgeClass, label: badgeLabel } = clubBadgeInfo(d.club || '');
           item.innerHTML = `
             <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">
               <span class="club-badge ${badgeClass}">${badgeLabel}</span>
+              ${altName || ''}
             </div>
             <div style="font-size:0.88rem;color:var(--text-primary);margin-bottom:6px;">${escapeHtml(text)}</div>
           `;

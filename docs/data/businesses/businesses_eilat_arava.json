@@ -5,7 +5,17 @@
     "type": "cafe",
     "lat": 29.566581,
     "lon": 34.95982,
-    "discounts": [],
+    "discounts": [
+      {
+        "club": "חבר",
+        "business_name": "אתר הקפסולות של קפה ארומה",
+        "discount": "10%",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=6129",
+        "discount_type": "billing_discount",
+        "discount_value": 10.0,
+        "has_physical_store": true
+      }
+    ],
     "source": "docs/data/businesses"
   },
   {
@@ -14,7 +24,174 @@
     "type": "pub",
     "lat": 29.55087,
     "lon": 34.951945,
-    "discounts": [],
+    "discounts": [
+      {
+        "club": "חבר",
+        "business_name": "Cotton Club    מועדון הכותנה",
+        "discount": "10%",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5729",
+        "discount_type": "billing_discount",
+        "discount_value": 10.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "ORANGE CLUB - אורנג' קלאב",
+        "discount": "3.5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/60405/ORANGE-CLUB---אורנג'-קלאב",
+        "discount_type": "billing_discount",
+        "discount_value": 3.5,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "BERLINER BABY CLUB",
+        "discount": "5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/18425/BERLINER-BABY-CLUB",
+        "discount_type": "billing_discount",
+        "discount_value": 5.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "HTzone",
+        "business_name": "Cottonclub",
+        "discount": "5% הנחה",
+        "discount_url": "https://www.htzone.co.il/benefit/610/Cottonclub/?sale_id=62",
+        "discount_type": "billing_discount",
+        "discount_value": 5.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר שלי",
+        "business_name": "caravan club",
+        "discount": "חבר שלי | עד 1000 ₪ לעסקה",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=355",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר טעמים",
+        "business_name": "A CLUB",
+        "discount": "חבר טעמים | מארזי יין משולבים, מיקבי בוטיק מובילים",
+        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,272600",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר טעמים",
+        "business_name": "GIN CLUB SUPREME",
+        "discount": "חבר טעמים | בר ג'ין",
+        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,405503",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "BUYME",
+        "business_name": "COTTON CLUB",
+        "discount": "ניתן ליהנות מה-BUYME ברכישה אונליין ב אתר בית העסק איך משתמשים ב-BUYME שלך ברכישות אונליין? נכנסים לאתר COTTON CLUB ובוחרים את הפריטים שהכי עושים לך טוב בלב. מוסיפים לעגלה - ועוברים לקופה לשלב התשלום. שימו לב, מימוש ה-BUYME הוא במעמד התשלום, ולא ניתן לממש את המתנה בשלב בחירת הפריטים או בחלונית \"קוד קופון או גיפטקארד\". בעמוד התשלום לוחצים על \"כרטיס אשראי או אמצעי תשלום נוספים\" מזינים את 16 הספרות שמרכיבות את קוד ה-BUYME שלך, לוחצים לביצוע תשלום – ומשלימים את ההזמנה. וזהו, המתנה שבחרת בדרך אלייך! לפרטים נוספים ניתן ליצור קשר עם בית העסק",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=COTTON+CLUB#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME BABY- מגוון מתנות לידה",
+          "BUYME HOME DESIGN - בית ואווירה",
+          "BUYME LOCAL – מתנות מקומיות"
+        ],
+        "has_physical_store": true
+      },
+      {
+        "club": "BUYME",
+        "business_name": "Surf Club א.ד משוטים",
+        "discount": "למימוש יש ליצור קשר עם בית העסק על מנת לתאם הגעה ולציין את קוד ה- Gift Card המופיע על גבי SMS/ מייל/ דף מודפס. לפרטים נוספים: 077-5035024.",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=Surf+Club+%D7%90.%D7%93+%D7%9E%D7%A9%D7%95%D7%98%D7%99%D7%9D#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME BABY- מגוון מתנות לידה",
+          "BUYME MOMENTS - מגוון חוויות"
+        ],
+        "has_physical_store": true
+      },
+      {
+        "club": "BUYME",
+        "business_name": "Surf Club",
+        "discount": "למימוש יש להציג קוד Gift Card באמצעות SMS/ מייל/ דף מודפס. לפרטים נוספים ותיאום: 04-8550183. ניתן לממש את ה- Gift Card הכספי בחנות/מועדון בית העסק.",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=Surf+Club#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME LOCAL – מתנות מקומיות",
+          "BUYME YNG - מתנה מושלמת לבני נוער",
+          "BUYME MOMENTS - מגוון חוויות"
+        ],
+        "has_physical_store": true
+      },
+      {
+        "club": "BUYME",
+        "business_name": "Crown club",
+        "discount": "למימוש יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים:04-6508007.",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=Crown+club#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME VACATION & SPA- מלונות וספא",
+          "BUYME LOCAL – מתנות מקומיות"
+        ],
+        "has_physical_store": true
+      },
+      {
+        "club": "BUYME",
+        "business_name": "CANDLE CLUB",
+        "discount": "איך נהנים מה-BUYME שלך ברכישות אונליין? נכנסים לאתר CANDLE CLUB ובוחרים את הפריטים שהכי עושים לך טוב בלב. מוסיפים לעגלה - ועוברים לקופה לשלב התשלום. שימו לב, מימוש ה-BUYME הוא במעמד התשלום, ולא ניתן לממש את המתנה בשלב בחירת הפריטים או בחלונית \"קוד קופון או גיפטקארד\". בעמוד התשלום לוחצים על תשלום באשראי ואז על מימוש מועדון ביימי מזינים את 16 הספרות שמרכיבות את קוד ה-BUYME שלך, לוחצים לביצוע התשלום – ומשלימים את ההזמנה. וזהו, המתנה שבחרת בדרך אלייך!",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=CANDLE+CLUB#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME BABY- מגוון מתנות לידה",
+          "BUYME HOME DESIGN - בית ואווירה",
+          "BUYME LOCAL – מתנות מקומיות"
+        ],
+        "has_physical_store": true
+      },
+      {
+        "club": "BUYME",
+        "business_name": "WLNS CLUB",
+        "discount": "כדי ליהנות מה-BUYME בבית העסק יש להציג את הקוד למימוש בקופה. לפרטים נוספים ניתן ליצור קשר עם בית העסק",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=WLNS+CLUB#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME BABY- מגוון מתנות לידה",
+          "BUYME LOCAL – מתנות מקומיות",
+          "BUYME MOMENTS - מגוון חוויות"
+        ],
+        "has_physical_store": true
+      },
+      {
+        "club": "BUYME",
+        "business_name": "GIN CLUB",
+        "discount": "למימוש יש להציג את קוד השובר",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=GIN+CLUB#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME BABY- מגוון מתנות לידה",
+          "BUYME LOCAL – מתנות מקומיות",
+          "BUYME CHEERS - חוויות אלכוהליות"
+        ],
+        "has_physical_store": true
+      }
+    ],
     "source": "docs/data/businesses"
   },
   {
@@ -23,7 +200,17 @@
     "type": "restaurant",
     "lat": 29.553485,
     "lon": 34.961353,
-    "discounts": [],
+    "discounts": [
+      {
+        "club": "חבר טעמים",
+        "business_name": "GO",
+        "discount": "חבר טעמים | קנטינה אסיאתית",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": true
+      }
+    ],
     "source": "docs/data/businesses"
   },
   {
@@ -63,10 +250,65 @@
       {
         "club": "חבר שלי",
         "business_name": "גולף",
-        "discount": "חבר שלי | אופנה ואביזרים לנשים ולגברים<br/> | eilat_nitan ,GOLF,south ,north",
+        "discount": "חבר שלי | אופנה ואביזרים לנשים ולגברים<br/>",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=19",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר שלי",
+        "business_name": "גולף קו",
+        "discount": "חבר שלי | רשת עיצוב הבית המציעה פריטי טקסטיל וכלי בית מעוצבים, מתנות ועוד",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=21",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר שלי",
+        "business_name": "גולף-קידס",
+        "discount": "חבר שלי | רשת אופנה ילדים ותינוקות<br/>",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=20",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר טעמים",
+        "business_name": "קפה בגולף",
+        "discount": "חבר טעמים | בוקר בראנץ' אווירה",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "BUYME",
+        "business_name": "ספא גולף קיסריה",
+        "discount": "למימוש השובר יש לתאם הגעה מראש במספר 04-6248608 ולמסור את קוד ה-Gift Card המלא המופיע על גבי SMS/מייל/דף מודפס.",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=%D7%A1%D7%A4%D7%90+%D7%92%D7%95%D7%9C%D7%A3+%D7%A7%D7%99%D7%A1%D7%A8%D7%99%D7%94#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME BABY- מגוון מתנות לידה",
+          "BUYME VACATION & SPA- מלונות וספא",
+          "BUYME LOCAL – מתנות מקומיות"
+        ],
+        "has_physical_store": true
+      },
+      {
+        "club": "BUYME",
+        "business_name": "מועדון הגולף קיסריה",
+        "discount": "למימוש יש לציין את קוד ה- Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים והזמנת מקום במועדון : 6550* שלוחה 1.",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=%D7%9E%D7%95%D7%A2%D7%93%D7%95%D7%9F+%D7%94%D7%92%D7%95%D7%9C%D7%A3+%D7%A7%D7%99%D7%A1%D7%A8%D7%99%D7%94#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME MOMENTS - מגוון חוויות"
+        ],
         "has_physical_store": true
       }
     ],
@@ -87,7 +329,17 @@
     "type": "clothes",
     "lat": 29.5669,
     "lon": 34.960676,
-    "discounts": [],
+    "discounts": [
+      {
+        "club": "HOT",
+        "business_name": "חנות למוצרי דלתא-אופנה לכל המשפחה",
+        "discount": "5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/17673/חנות-למוצרי-דלתא-אופנה-לכל-המשפחה",
+        "discount_type": "billing_discount",
+        "discount_value": 5.0,
+        "has_physical_store": true
+      }
+    ],
     "source": "docs/data/businesses"
   },
   {
@@ -96,7 +348,26 @@
     "type": "clothes",
     "lat": 29.56603,
     "lon": 34.959862,
-    "discounts": [],
+    "discounts": [
+      {
+        "club": "HOT",
+        "business_name": "כובעי פוקס",
+        "discount": "3% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/45564/כובעי-פוקס",
+        "discount_type": "billing_discount",
+        "discount_value": 3.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר שלי",
+        "business_name": "FOX - פוקס",
+        "discount": "חבר שלי | לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת.<br/>אין כפל הטבות לעובדים/בני משפחה<br/> | אופנה ואביזרים לכל המשפחה<br/>",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=10",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": false
+      }
+    ],
     "source": "docs/data/businesses"
   },
   {
@@ -107,13 +378,482 @@
     "lon": 34.960345,
     "discounts": [
       {
+        "club": "חבר",
+        "business_name": "עמותת חוף הגליל - אגודה לטיפול בילד ובמשפחה",
+        "discount": "10%",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=4641",
+        "discount_type": "billing_discount",
+        "discount_value": 10.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר",
+        "business_name": "מורפיקסקול  - לימוד אנגלית מבית מורפיקס",
+        "discount": "15%",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5497",
+        "discount_type": "billing_discount",
+        "discount_value": 15.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר",
+        "business_name": "אינגליש סנטר",
+        "discount": "9%",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5496",
+        "discount_type": "billing_discount",
+        "discount_value": 9.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר",
+        "business_name": "חוות דרך התבלינים - בבית לחם הגלילית",
+        "discount": "5%",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=3030",
+        "discount_type": "billing_discount",
+        "discount_value": 5.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר",
+        "business_name": "מלון בוטיק בת גלים",
+        "discount": "10%",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5594",
+        "discount_type": "billing_discount",
+        "discount_value": 10.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר",
+        "business_name": "מלון כינר גליל בכנרת",
+        "discount": "5%",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=6156",
+        "discount_type": "billing_discount",
+        "discount_value": 5.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר",
+        "business_name": "המטייל - מגלים לכם את אמריקה",
+        "discount": "5%",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5119",
+        "discount_type": "billing_discount",
+        "discount_value": 5.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר",
+        "business_name": "עציון מגלים עולם",
+        "discount": "5%",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5543",
+        "discount_type": "billing_discount",
+        "discount_value": 5.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר",
+        "business_name": "פרחי לב הגליל",
+        "discount": "5%",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=310",
+        "discount_type": "billing_discount",
+        "discount_value": 5.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר",
+        "business_name": "\"סטורנט\" - עולם הגלישה",
+        "discount": "10%",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5747",
+        "discount_type": "billing_discount",
+        "discount_value": 10.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר",
+        "business_name": "מרכז הגלישה והפנאי אילת",
+        "discount": "10%",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5859",
+        "discount_type": "billing_discount",
+        "discount_value": 10.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר",
+        "business_name": "הטחנה - בשר טרי ומשובח מאצבע הגליל",
+        "discount": "5%",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5998",
+        "discount_type": "billing_discount",
+        "discount_value": 5.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "וניליה רשת גלידות בוטיק - VANIGLIA",
+        "discount": "10% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/57645/וניליה-רשת-גלידות-בוטיק---VANIGLIA",
+        "discount_type": "billing_discount",
+        "discount_value": 10.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "עגליס",
+        "discount": "5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/47063/עגליס",
+        "discount_type": "billing_discount",
+        "discount_value": 5.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "איזיל מחסני גלידה",
+        "discount": "2% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/46134/איזיל-מחסני-גלידה",
+        "discount_type": "billing_discount",
+        "discount_value": 2.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "מינימרקט גליאנוס",
+        "discount": "2% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/46020/מינימרקט-גליאנוס",
+        "discount_type": "billing_discount",
+        "discount_value": 2.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "רפאל גליל ציוד טכני",
+        "discount": "2% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/42634/רפאל-גליל-ציוד-טכני",
+        "discount_type": "billing_discount",
+        "discount_value": 2.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "גלילי תכשיטים",
+        "discount": "5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/40278/גלילי-תכשיטים",
+        "discount_type": "billing_discount",
+        "discount_value": 5.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "מחסני גלידות דהן",
+        "discount": "2% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/39379/מחסני-גלידות-דהן",
+        "discount_type": "billing_discount",
+        "discount_value": 2.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "מחסני הגלידה",
+        "discount": "3% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/35815/מחסני-הגלידה",
+        "discount_type": "billing_discount",
+        "discount_value": 3.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "עולם הגלידות",
+        "discount": "2% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/33174/עולם-הגלידות",
+        "discount_type": "billing_discount",
+        "discount_value": 2.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "עולם הגלידה",
+        "discount": "3.5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/58282/עולם-הגלידה",
+        "discount_type": "billing_discount",
+        "discount_value": 3.5,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "ארזים חוויה דו גלגלית",
+        "discount": "5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/58041/ארזים-חוויה-דו-גלגלית",
+        "discount_type": "billing_discount",
+        "discount_value": 5.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "פרולי גלידות ומתוקים",
+        "discount": "3.5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/57110/פרולי-גלידות-ומתוקים",
+        "discount_type": "billing_discount",
+        "discount_value": 3.5,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "צ'ופאפי הבית של הגלידות",
+        "discount": "3.5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/57058/צ'ופאפי-הבית-של-הגלידות",
+        "discount_type": "billing_discount",
+        "discount_value": 3.5,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "גליצקי שוקולד - GALITZKI CHOCOLATE",
+        "discount": "10% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/56640/גליצקי-שוקולד---GALITZKI-CHOCOLATE",
+        "discount_type": "billing_discount",
+        "discount_value": 10.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "דני וגלית אפייה בריאה מדגנים מלאים",
+        "discount": "3.5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/30355/דני-וגלית-אפייה-בריאה-מדגנים-מלאים",
+        "discount_type": "billing_discount",
+        "discount_value": 3.5,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "נעלי גלית",
+        "discount": "3% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/24690/נעלי-גלית",
+        "discount_type": "billing_discount",
+        "discount_value": 3.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "סיגליות- קוסמטיקה",
+        "discount": "3.5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/29659/סיגליות--קוסמטיקה",
+        "discount_type": "billing_discount",
+        "discount_value": 3.5,
+        "has_physical_store": true
+      },
+      {
+        "club": "HTzone",
+        "business_name": "עגליס",
+        "discount": "5% הנחה",
+        "discount_url": "https://www.htzone.co.il/benefit/607/עגליס/?sale_id=62",
+        "discount_type": "billing_discount",
+        "discount_value": 5.0,
+        "has_physical_store": true
+      },
+      {
         "club": "חבר שלי",
         "business_name": "גלי",
-        "discount": "חבר שלי | לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת. | נעלי נשים, גברים וילדים | eilat_nitan GALI, snickers ,south ,north, גלי, נעלים, gil6, Youth_clothing, Children_kinder",
+        "discount": "חבר שלי | לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת. | נעלי נשים, גברים וילדים",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,347881",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": false
+      },
+      {
+        "club": "חבר שלי",
+        "business_name": "עגליס",
+        "discount": "חבר שלי | ניתן לרכוש בנטען עד 3000 ₪ לעסקה | רשת מוצרי תינוקות, עגלות, חבילות לידה, מושבי בטיחות ועוד<br/>",
+        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,329657",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": false
+      },
+      {
+        "club": "חבר טעמים",
+        "business_name": "גלידה סיציליאנית",
+        "discount": "חבר טעמים | גלידה, קפה וקינוחים",
+        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,272233",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר טעמים",
+        "business_name": "גלידריית מולי",
+        "discount": "חבר טעמים | גלידות קינוחים ומתוקים ללא עסקיות",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר טעמים",
+        "business_name": "גלידה GOLDA",
+        "discount": "חבר טעמים | רשת גלידריות וקינוחים",
+        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,334838",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר טעמים",
+        "business_name": "גלידה GOLDA",
+        "discount": "חבר טעמים | רשת גלידריות וקינוחים",
+        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,325696",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר טעמים",
+        "business_name": "גלידה GOLDA",
+        "discount": "חבר טעמים | רשת גלידריות וקינוחים",
+        "discount_url": "https://www.hvr.co.il/site/pg/גולדה, גלידה, גלידרייה, קינוחים, מתוקים",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר טעמים",
+        "business_name": "גלידה GOLDA",
+        "discount": "חבר טעמים | גלידרייה",
+        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,334838",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר טעמים",
+        "business_name": "גלידה באר שבע",
+        "discount": "חבר טעמים | גלידרייה וקינוחים",
+        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,377440",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "BUYME",
+        "business_name": "עגליס",
+        "discount": "ניתן ליהנות מה-BUYME גם ברכישה אונליין ב אתר בית העסק וגם בחנויות. איך נהנים מה-BUYME שלך ברכישות אונליין? נכנסים לאתר עגליס בוחרים את הפריטים שהכי עושים לך טוב בלב. מוסיפים לעגלה - ועוברים לקופה לשלב התשלום. שימו לב, מימוש ה-BUYME הוא במעמד התשלום, ולא ניתן לממש את המתנה בשלב בחירת הפריטים או בחלונית \"קוד קופון או גיפטקארד\". בעמוד התשלום לוחצים על תווי קנייה , בוחרים בBUYME מזינים את 16 הספרות שמרכיבות את קוד ה-BUYME שלך, לוחצים על אפשר להמשיך – ומשלימים את ההזמנה. וזהו, המתנה שבחרת בדרך אלייך! כדי ליהנות מה-BUYME בבית העסק יש להציג את הקוד למימוש בקופה. לפרטים נוספים ניתן ליצור קשר עם בית העסק",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=%D7%A2%D7%92%D7%9C%D7%99%D7%A1#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME BABY- מגוון מתנות לידה"
+        ],
+        "has_physical_store": true
+      },
+      {
+        "club": "BUYME",
+        "business_name": "ספא גלי כנרת",
+        "discount": "למימוש יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים: 04-6707080. החבילות תקפות בימים א'-ד' (כולל). בסופ\"ש (חמישי-שבת כולל), חגים ובחודשים יוני- ספטמבר (כולל אמצ\"ש) ישנה תוספת תשלום מול בית העסק.",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=%D7%A1%D7%A4%D7%90+%D7%92%D7%9C%D7%99+%D7%9B%D7%A0%D7%A8%D7%AA#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME BABY- מגוון מתנות לידה",
+          "BUYME VACATION & SPA- מלונות וספא"
+        ],
+        "has_physical_store": true
+      },
+      {
+        "club": "BUYME",
+        "business_name": "גלידריית פינגוין",
+        "discount": "למימוש יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס או לממש באופן טלפוני במספר 050-7866007. השובר ניתן למימוש בסניף התע\"ש 14, כפר סבא ובסניף אחוזה 120 רעננה בלבד ולא ניתן למימוש בסניף רוטשילד 43, כפר סבא מטעמים טכניים. הסניף כשר למהדרין - חלב ישראל.",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=%D7%92%D7%9C%D7%99%D7%93%D7%A8%D7%99%D7%99%D7%AA+%D7%A4%D7%99%D7%A0%D7%92%D7%95%D7%99%D7%9F#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME BABY- מגוון מתנות לידה",
+          "BUYME FOODY -מתנות קולינריות שוות",
+          "BUYME LOCAL – מתנות מקומיות",
+          "BUYME YNG - מתנה מושלמת לבני נוער"
+        ],
+        "has_physical_store": true
+      },
+      {
+        "club": "BUYME",
+        "business_name": "גלים",
+        "discount": "למימוש יש לציין בעת ההזמנה קוד Gift Card באמצעות SMS/ מייל/ דף מודפס. לפרטים נוספים והזמנות: 03-5175557. ניתן להנות מהפעילויות עד שנה מרגע המימוש הראשון.",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=%D7%92%D7%9C%D7%99%D7%9D#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME BABY- מגוון מתנות לידה",
+          "BUYME YNG - מתנה מושלמת לבני נוער",
+          "BUYME MOMENTS - מגוון חוויות"
+        ],
+        "has_physical_store": true
+      },
+      {
+        "club": "BUYME",
+        "business_name": "גלית ניניו",
+        "discount": "למימוש יש לתאם פגישה בטלפון 054-3332830 ולמסור קוד Gift Card מלא שהתקבל באמצעות SMS/מייל/דף מודפס. לפרטים נוספים 054-3332830.",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=%D7%92%D7%9C%D7%99%D7%AA+%D7%A0%D7%99%D7%A0%D7%99%D7%95#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME LOCAL – מתנות מקומיות"
+        ],
+        "has_physical_store": true
+      },
+      {
+        "club": "BUYME",
+        "business_name": "גליליס",
+        "discount": "למימוש השובר יש להציג מספר שובר באמצעות SMS/ מייל/ שובר מודפס. למשלוח או לפרטים נוספים: 03-7945469.",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=%D7%92%D7%9C%D7%99%D7%9C%D7%99%D7%A1#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME LOCAL – מתנות מקומיות"
+        ],
+        "has_physical_store": true
+      },
+      {
+        "club": "BUYME",
+        "business_name": "ספא דריה נבל דוד גליל ריזורט",
+        "discount": "למימוש יש לתאם מראש מול הספא ולהציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. שעות הפעילות הן בימי ראשון- שבת (כולל) בין השעות 09:00-18:00 זמני ארוחת הבוקר בין השעות - 07:00-10:00. לפרטים נוספים: 052-9707712 החבילות תקפות בימים א'-ד' (כולל). בסופ\"ש (חמישי-שבת כולל), חגים ובחודשים יוני- ספטמבר (כולל אמצ\"ש) ישנה תוספת תשלום מול בית העסק.",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=%D7%A1%D7%A4%D7%90+%D7%93%D7%A8%D7%99%D7%94+%D7%A0%D7%91%D7%9C+%D7%93%D7%95%D7%93+%D7%92%D7%9C%D7%99%D7%9C+%D7%A8%D7%99%D7%96%D7%95%D7%A8%D7%98#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME BABY- מגוון מתנות לידה",
+          "BUYME VACATION & SPA- מלונות וספא"
+        ],
+        "has_physical_store": true
+      },
+      {
+        "club": "BUYME",
+        "business_name": "גליאנו",
+        "discount": "למימוש יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים: 054-4704555. בחנות בלבד.",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=%D7%92%D7%9C%D7%99%D7%90%D7%A0%D7%95#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME BABY- מגוון מתנות לידה",
+          "BUYME FOODY -מתנות קולינריות שוות",
+          "BUYME LOCAL – מתנות מקומיות"
+        ],
+        "has_physical_store": true
+      },
+      {
+        "club": "BUYME",
+        "business_name": "ימה גלילות של שף יובל בן נריה",
+        "discount": "למימוש יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים:077-3034149.",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=%D7%99%D7%9E%D7%94+%D7%92%D7%9C%D7%99%D7%9C%D7%95%D7%AA+%D7%A9%D7%9C+%D7%A9%D7%A3+%D7%99%D7%95%D7%91%D7%9C+%D7%91%D7%9F+%D7%A0%D7%A8%D7%99%D7%94#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME BABY- מגוון מתנות לידה",
+          "BUYME FOODY -מתנות קולינריות שוות"
+        ],
+        "has_physical_store": true
       }
     ],
     "source": "docs/data/businesses"
@@ -133,7 +873,22 @@
     "type": "clothes",
     "lat": 29.549706,
     "lon": 34.953802,
-    "discounts": [],
+    "discounts": [
+      {
+        "club": "BUYME",
+        "business_name": "FOX",
+        "discount": "ניתן למימוש בפוקס ובפוקס הום. שובר פגום/מזוייף לא יכובד. שובר זה אינו כרטיס חיוב כהגדרתו בחוק כרטיסי חיוב התשמ\"ו. המחזיק בשובר מצהיר כי הוא מסכים לאמור. ט.ל.ח.",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=FOX#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME FASHION & BEAUTY",
+          "BUYME YNG - מתנה מושלמת לבני נוער"
+        ],
+        "has_physical_store": true
+      }
+    ],
     "source": "docs/data/businesses"
   },
   {
@@ -155,7 +910,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "מקדונלד'ס",
-        "discount": "חבר טעמים | רשת המבורגרים | מסעדה",
+        "discount": "חבר טעמים | רשת המבורגרים",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,396185",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -197,10 +952,65 @@
       {
         "club": "חבר שלי",
         "business_name": "גולף",
-        "discount": "חבר שלי | אופנה ואביזרים לנשים ולגברים<br/> | eilat_nitan ,GOLF,south ,north",
+        "discount": "חבר שלי | אופנה ואביזרים לנשים ולגברים<br/>",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=19",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר שלי",
+        "business_name": "גולף קו",
+        "discount": "חבר שלי | רשת עיצוב הבית המציעה פריטי טקסטיל וכלי בית מעוצבים, מתנות ועוד",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=21",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר שלי",
+        "business_name": "גולף-קידס",
+        "discount": "חבר שלי | רשת אופנה ילדים ותינוקות<br/>",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=20",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר טעמים",
+        "business_name": "קפה בגולף",
+        "discount": "חבר טעמים | בוקר בראנץ' אווירה",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "BUYME",
+        "business_name": "ספא גולף קיסריה",
+        "discount": "למימוש השובר יש לתאם הגעה מראש במספר 04-6248608 ולמסור את קוד ה-Gift Card המלא המופיע על גבי SMS/מייל/דף מודפס.",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=%D7%A1%D7%A4%D7%90+%D7%92%D7%95%D7%9C%D7%A3+%D7%A7%D7%99%D7%A1%D7%A8%D7%99%D7%94#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME BABY- מגוון מתנות לידה",
+          "BUYME VACATION & SPA- מלונות וספא",
+          "BUYME LOCAL – מתנות מקומיות"
+        ],
+        "has_physical_store": true
+      },
+      {
+        "club": "BUYME",
+        "business_name": "מועדון הגולף קיסריה",
+        "discount": "למימוש יש לציין את קוד ה- Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים והזמנת מקום במועדון : 6550* שלוחה 1.",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=%D7%9E%D7%95%D7%A2%D7%93%D7%95%D7%9F+%D7%94%D7%92%D7%95%D7%9C%D7%A3+%D7%A7%D7%99%D7%A1%D7%A8%D7%99%D7%94#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME MOMENTS - מגוון חוויות"
+        ],
         "has_physical_store": true
       }
     ],
@@ -252,7 +1062,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "ג'ירף",
-        "discount": "חבר טעמים | מסעדה אסייתית | מסעדה",
+        "discount": "חבר טעמים | מסעדה אסייתית",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,319433",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -261,7 +1071,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "ג'ירף",
-        "discount": "חבר טעמים | מסעדה אסייתית | מסעדה",
+        "discount": "חבר טעמים | מסעדה אסייתית",
         "discount_url": "https://www.hvr.co.il/site/pg/www.giraffe.co.il",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -270,7 +1080,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "ג'ירף",
-        "discount": "חבר טעמים | מסעדה אסייתית | מסעדה",
+        "discount": "חבר טעמים | מסעדה אסייתית",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -303,7 +1113,17 @@
     "type": "restaurant",
     "lat": 29.55095,
     "lon": 34.958161,
-    "discounts": [],
+    "discounts": [
+      {
+        "club": "HTzone",
+        "business_name": "נעלי פאולה",
+        "discount": "10% הנחה",
+        "discount_url": "https://www.htzone.co.il/benefit/677/נעלי-פאולה/?sale_id=62",
+        "discount_type": "billing_discount",
+        "discount_value": 10.0,
+        "has_physical_store": true
+      }
+    ],
     "source": "docs/data/businesses"
   },
   {
@@ -325,7 +1145,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "קאזה דו ברזיל",
-        "discount": "חבר טעמים | מסעדת גריל ברזילאית | מסעדה",
+        "discount": "חבר טעמים | מסעדת גריל ברזילאית",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -448,7 +1268,17 @@
     "type": "pub",
     "lat": 29.552417,
     "lon": 34.963372,
-    "discounts": [],
+    "discounts": [
+      {
+        "club": "חבר שלי",
+        "business_name": "PLATIN",
+        "discount": "חבר שלי | לא כולל חברי מועדון | רשת מותגי אופנה המובילים בעולם לגברים ונשים",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=884",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": true
+      }
+    ],
     "source": "docs/data/businesses"
   },
   {
@@ -488,7 +1318,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "KFC",
-        "discount": "חבר טעמים | רשת מסעדות העוף הפופולרית | מסעדה",
+        "discount": "חבר טעמים | רשת מסעדות העוף הפופולרית",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,341980",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -529,9 +1359,18 @@
     "lon": 34.964374,
     "discounts": [
       {
+        "club": "חבר",
+        "business_name": "cafe-cafe קפה קפה",
+        "discount": "5%",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=4045",
+        "discount_type": "billing_discount",
+        "discount_value": 5.0,
+        "has_physical_store": true
+      },
+      {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה | בית קפה",
+        "discount": "חבר טעמים | בית קפה",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -540,7 +1379,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה מסעדה- חלבי | בית קפה",
+        "discount": "חבר טעמים | בית קפה מסעדה- חלבי",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -549,7 +1388,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | חלבי | בית קפה",
+        "discount": "חבר טעמים | חלבי",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -558,7 +1397,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בשרי | בית קפה",
+        "discount": "חבר טעמים | בשרי",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -567,7 +1406,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה מסעדה | בית קפה",
+        "discount": "חבר טעמים | בית קפה מסעדה",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -576,7 +1415,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה-חלבי כשר | בית קפה",
+        "discount": "חבר טעמים | בית קפה-חלבי כשר",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -585,7 +1424,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | מסעדה | בית קפה",
+        "discount": "חבר טעמים | מסעדה",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -594,7 +1433,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה מסעדה חלבי | בית קפה",
+        "discount": "חבר טעמים | בית קפה מסעדה חלבי",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -603,7 +1442,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה מסעדה בשרי | בית קפה",
+        "discount": "חבר טעמים | בית קפה מסעדה בשרי",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -612,7 +1451,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | מסעדה חלבי | בית קפה",
+        "discount": "חבר טעמים | מסעדה חלבי",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -621,7 +1460,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה - בשרי | בית קפה",
+        "discount": "חבר טעמים | בית קפה - בשרי",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -630,28 +1469,26 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה בשרי | בית קפה",
+        "discount": "חבר טעמים | בית קפה בשרי",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
       },
       {
-        "club": "חבר טעמים",
-        "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה מסעדה- חלבי | מסעדה,בית קפה",
-        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר טעמים",
-        "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה מסעדה | מסעדה,בית קפה",
-        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
+        "club": "BUYME",
+        "business_name": "סניפים נבחרים ברשת קפה קפה",
+        "discount": "למימוש יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. השוברים אינם תקפים בסניף קיבוץ יפעת, קריית חיים ו סניפי cafe cafe go",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=%D7%A1%D7%A0%D7%99%D7%A4%D7%99%D7%9D+%D7%A0%D7%91%D7%97%D7%A8%D7%99%D7%9D+%D7%91%D7%A8%D7%A9%D7%AA+%D7%A7%D7%A4%D7%94+%D7%A7%D7%A4%D7%94#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME BABY- מגוון מתנות לידה",
+          "BUYME FOODY -מתנות קולינריות שוות",
+          "BUYME BRUNCH- מגוון ארוחות בוקר",
+          "BUYME YNG - מתנה מושלמת לבני נוער"
+        ],
         "has_physical_store": true
       }
     ],
@@ -665,9 +1502,18 @@
     "lon": 34.953854,
     "discounts": [
       {
+        "club": "חבר",
+        "business_name": "cafe-cafe קפה קפה",
+        "discount": "5%",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=4045",
+        "discount_type": "billing_discount",
+        "discount_value": 5.0,
+        "has_physical_store": true
+      },
+      {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה | בית קפה",
+        "discount": "חבר טעמים | בית קפה",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -676,7 +1522,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה מסעדה- חלבי | בית קפה",
+        "discount": "חבר טעמים | בית קפה מסעדה- חלבי",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -685,7 +1531,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | חלבי | בית קפה",
+        "discount": "חבר טעמים | חלבי",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -694,7 +1540,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בשרי | בית קפה",
+        "discount": "חבר טעמים | בשרי",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -703,7 +1549,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה מסעדה | בית קפה",
+        "discount": "חבר טעמים | בית קפה מסעדה",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -712,7 +1558,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה-חלבי כשר | בית קפה",
+        "discount": "חבר טעמים | בית קפה-חלבי כשר",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -721,7 +1567,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | מסעדה | בית קפה",
+        "discount": "חבר טעמים | מסעדה",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -730,7 +1576,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה מסעדה חלבי | בית קפה",
+        "discount": "חבר טעמים | בית קפה מסעדה חלבי",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -739,7 +1585,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה מסעדה בשרי | בית קפה",
+        "discount": "חבר טעמים | בית קפה מסעדה בשרי",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -748,7 +1594,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | מסעדה חלבי | בית קפה",
+        "discount": "חבר טעמים | מסעדה חלבי",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -757,7 +1603,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה - בשרי | בית קפה",
+        "discount": "חבר טעמים | בית קפה - בשרי",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -766,28 +1612,26 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה בשרי | בית קפה",
+        "discount": "חבר טעמים | בית קפה בשרי",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
       },
       {
-        "club": "חבר טעמים",
-        "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה מסעדה- חלבי | מסעדה,בית קפה",
-        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר טעמים",
-        "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה מסעדה | מסעדה,בית קפה",
-        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
+        "club": "BUYME",
+        "business_name": "סניפים נבחרים ברשת קפה קפה",
+        "discount": "למימוש יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. השוברים אינם תקפים בסניף קיבוץ יפעת, קריית חיים ו סניפי cafe cafe go",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=%D7%A1%D7%A0%D7%99%D7%A4%D7%99%D7%9D+%D7%A0%D7%91%D7%97%D7%A8%D7%99%D7%9D+%D7%91%D7%A8%D7%A9%D7%AA+%D7%A7%D7%A4%D7%94+%D7%A7%D7%A4%D7%94#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME BABY- מגוון מתנות לידה",
+          "BUYME FOODY -מתנות קולינריות שוות",
+          "BUYME BRUNCH- מגוון ארוחות בוקר",
+          "BUYME YNG - מתנה מושלמת לבני נוער"
+        ],
         "has_physical_store": true
       }
     ],
@@ -826,7 +1670,17 @@
     "type": "restaurant",
     "lat": 29.563285,
     "lon": 34.953773,
-    "discounts": [],
+    "discounts": [
+      {
+        "club": "חבר טעמים",
+        "business_name": "SAN PEDRO",
+        "discount": "חבר טעמים | המסעדה מכבדת את הכרטיס הנטען בישיבה במקום | מסעדה מקסיקנית",
+        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,416374",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": true
+      }
+    ],
     "source": "docs/data/businesses"
   },
   {
@@ -853,7 +1707,17 @@
     "type": "jewelry",
     "lat": 29.550348,
     "lon": 34.96101,
-    "discounts": [],
+    "discounts": [
+      {
+        "club": "HOT",
+        "business_name": "מיכל נגרין - Michal Negrin",
+        "discount": "6% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/59230/מיכל-נגרין---Michal-Negrin",
+        "discount_type": "billing_discount",
+        "discount_value": 6.0,
+        "has_physical_store": true
+      }
+    ],
     "source": "docs/data/businesses"
   },
   {
@@ -880,7 +1744,41 @@
     "type": "fast_food",
     "lat": 29.550031,
     "lon": 34.960846,
-    "discounts": [],
+    "discounts": [
+      {
+        "club": "חבר טעמים",
+        "business_name": "Art Pizza",
+        "discount": "חבר טעמים | פיצת שף",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר טעמים",
+        "business_name": "LaPIZZA",
+        "discount": "חבר טעמים | פיצה נאפוליטאנית, דקה, אוורירית, קראנצ'ית בקצוות",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "BUYME",
+        "business_name": "SLEEZY PIZZA",
+        "discount": "למימוש השובר יש להציג מספר שובר לפני ההזמנה באמצעות SMS/ מייל/ שובר מודפס. לפרטים נוספים : 03-744-4022. למימוש אונליין יש להזמין משלוח דרך אתר בית העסק באופן הבא- שימו לב, מימוש המתנה הוא במעמד התשלום בלחיצה על \"הוספת כרטיס\" ו לא ניתן לממש את המתנה בשלב בחירת הפריטים או בחלונית \"יש לך שובר\". במידה ונפתחת חלונית \"יש לך שובר\", יש לסגור אותה ולהמשיך בהזמנה. אז איך נהנים מהמתנה במשלוח? אחרי שבחרתם את הפריטים שהכי עושים לכם טוב בלב, לוחצים על תשלום, ממלאים פרטים ומתקדמים ל-\"המשך לפרטי תשלום\". כשתגיעו לשם תפתח האפשרות ללחוץ על \"הוספת כרטיס\" וזה בדיוק המקום בו מזינים את הקוד של הגיפט קארד. אזורי חלוקת המשלוחים הינם לפי מדיניות המשלוחים של בית העסק.",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=SLEEZY+PIZZA#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME BABY- מגוון מתנות לידה",
+          "BUYME FOODY -מתנות קולינריות שוות",
+          "BUYME YNG - מתנה מושלמת לבני נוער"
+        ],
+        "has_physical_store": true
+      }
+    ],
     "source": "docs/data/businesses"
   },
   {
@@ -979,7 +1877,41 @@
     "type": "fast_food",
     "lat": 29.552034,
     "lon": 34.956355,
-    "discounts": [],
+    "discounts": [
+      {
+        "club": "חבר טעמים",
+        "business_name": "Art Pizza",
+        "discount": "חבר טעמים | פיצת שף",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר טעמים",
+        "business_name": "LaPIZZA",
+        "discount": "חבר טעמים | פיצה נאפוליטאנית, דקה, אוורירית, קראנצ'ית בקצוות",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "BUYME",
+        "business_name": "SLEEZY PIZZA",
+        "discount": "למימוש השובר יש להציג מספר שובר לפני ההזמנה באמצעות SMS/ מייל/ שובר מודפס. לפרטים נוספים : 03-744-4022. למימוש אונליין יש להזמין משלוח דרך אתר בית העסק באופן הבא- שימו לב, מימוש המתנה הוא במעמד התשלום בלחיצה על \"הוספת כרטיס\" ו לא ניתן לממש את המתנה בשלב בחירת הפריטים או בחלונית \"יש לך שובר\". במידה ונפתחת חלונית \"יש לך שובר\", יש לסגור אותה ולהמשיך בהזמנה. אז איך נהנים מהמתנה במשלוח? אחרי שבחרתם את הפריטים שהכי עושים לכם טוב בלב, לוחצים על תשלום, ממלאים פרטים ומתקדמים ל-\"המשך לפרטי תשלום\". כשתגיעו לשם תפתח האפשרות ללחוץ על \"הוספת כרטיס\" וזה בדיוק המקום בו מזינים את הקוד של הגיפט קארד. אזורי חלוקת המשלוחים הינם לפי מדיניות המשלוחים של בית העסק.",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=SLEEZY+PIZZA#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME BABY- מגוון מתנות לידה",
+          "BUYME FOODY -מתנות קולינריות שוות",
+          "BUYME YNG - מתנה מושלמת לבני נוער"
+        ],
+        "has_physical_store": true
+      }
+    ],
     "source": "docs/data/businesses"
   },
   {
@@ -1010,7 +1942,7 @@
       {
         "club": "חבר שלי",
         "business_name": "הום סנטר",
-        "discount": "חבר שלי | לא כולל: קופונים, סוכות, מחסנים גבוהים, תאורה, פנצ'ריה, שטיחים, ריצופים וחיפויי קיר, פרקטים, מזגנים, מוצרי מוטימדיה ומקרנים, טלויזיה, מסכי מחשב, מחשבים, בידוריות, חשמל לבן/חום: מקרר, מקפיא, תנור בילד אין ואפיה, כיריים, מדיח כלים מכונות ומבייש כביסה, מיקרוגל, קולט אדים, טוחן אשפה, שואב אבק נטען, שואב רובוטי מוצרי: one blade, shark, ninja, dyson אופניים ומתגלגלים, מוצרי מזון, שתיה קלה ושתייה חריפה, חומרי ניקוי. עד 1,000 ש\"ח. | רשת שיפוץ ואחזקת הבית: ריהוט, חשמל, מטבח, גינה ועוד<br/> | south ,north, הום סנטר, eilat_nitan",
+        "discount": "חבר שלי | לא כולל: קופונים, סוכות, מחסנים גבוהים, תאורה, פנצ'ריה, שטיחים, ריצופים וחיפויי קיר, פרקטים, מזגנים, מוצרי מוטימדיה ומקרנים, טלויזיה, מסכי מחשב, מחשבים, בידוריות, חשמל לבן/חום: מקרר, מקפיא, תנור בילד אין ואפיה, כיריים, מדיח כלים מכונות ומבייש כביסה, מיקרוגל, קולט אדים, טוחן אשפה, שואב אבק נטען, שואב רובוטי מוצרי: one blade, shark, ninja, dyson אופניים ומתגלגלים, מוצרי מזון, שתיה קלה ושתייה חריפה, חומרי ניקוי. עד 1,000 ש\"ח. | רשת שיפוץ ואחזקת הבית: ריהוט, חשמל, מטבח, גינה ועוד<br/>",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=13",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -1034,7 +1966,17 @@
     "type": "supermarket",
     "lat": 29.565107,
     "lon": 34.956982,
-    "discounts": [],
+    "discounts": [
+      {
+        "club": "HOT",
+        "business_name": "e y fruits",
+        "discount": "5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/46566/e-y-fruits",
+        "discount_type": "billing_discount",
+        "discount_value": 5.0,
+        "has_physical_store": true
+      }
+    ],
     "source": "docs/data/businesses"
   },
   {
@@ -1047,8 +1989,17 @@
       {
         "club": "חבר טעמים",
         "business_name": "לה קוצ'ינה",
-        "discount": "חבר טעמים | מסעדה איטלקית | מסעדה",
+        "discount": "חבר טעמים | מסעדה איטלקית",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,384191",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר טעמים",
+        "business_name": "לה קוצ'ינה קיוסק",
+        "discount": "חבר טעמים | מסעדה איטלקית",
+        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,384195",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -1071,7 +2022,35 @@
     "type": "restaurant",
     "lat": 29.549246,
     "lon": 34.962922,
-    "discounts": [],
+    "discounts": [
+      {
+        "club": "חבר טעמים",
+        "business_name": "ראנץ' האוס",
+        "discount": "חבר טעמים | בשרי",
+        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,384187",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר טעמים",
+        "business_name": "ראנץ' האוס",
+        "discount": "חבר טעמים | מסעדת בשרים",
+        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,384188",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר טעמים",
+        "business_name": "ראנץ' האוס",
+        "discount": "חבר טעמים | מסעדת בשרים",
+        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,384189",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": true
+      }
+    ],
     "source": "docs/data/businesses"
   },
   {
@@ -1107,7 +2086,17 @@
     "type": "restaurant",
     "lat": 29.548012,
     "lon": 34.964906,
-    "discounts": [],
+    "discounts": [
+      {
+        "club": "חבר טעמים",
+        "business_name": "הבוסתן",
+        "discount": "חבר טעמים | גן- קפה ומסעדה",
+        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,269404",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": true
+      }
+    ],
     "source": "docs/data/businesses"
   },
   {
@@ -1125,7 +2114,26 @@
     "type": "restaurant",
     "lat": 29.54812,
     "lon": 34.966313,
-    "discounts": [],
+    "discounts": [
+      {
+        "club": "HOT",
+        "business_name": "לורנס - LORENS",
+        "discount": "20% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/61497/לורנס---LORENS",
+        "discount_type": "billing_discount",
+        "discount_value": 20.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "Lorens paris - לורנס פריז",
+        "discount": "5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/59414/Lorens-paris---לורנס-פריז",
+        "discount_type": "billing_discount",
+        "discount_value": 5.0,
+        "has_physical_store": true
+      }
+    ],
     "source": "docs/data/businesses"
   },
   {
@@ -1170,7 +2178,17 @@
     "type": "restaurant",
     "lat": 29.547287,
     "lon": 34.952785,
-    "discounts": [],
+    "discounts": [
+      {
+        "club": "HOT",
+        "business_name": "retro game center",
+        "discount": "5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/21836/retro-game-center",
+        "discount_type": "billing_discount",
+        "discount_value": 5.0,
+        "has_physical_store": true
+      }
+    ],
     "source": "docs/data/businesses"
   },
   {
@@ -1215,7 +2233,17 @@
     "type": "convenience",
     "lat": 29.560806,
     "lon": 34.957964,
-    "discounts": [],
+    "discounts": [
+      {
+        "club": "חבר טעמים",
+        "business_name": "GO",
+        "discount": "חבר טעמים | קנטינה אסיאתית",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": true
+      }
+    ],
     "source": "docs/data/businesses"
   },
   {
@@ -1233,7 +2261,17 @@
     "type": "convenience",
     "lat": 29.573191,
     "lon": 34.963754,
-    "discounts": [],
+    "discounts": [
+      {
+        "club": "חבר",
+        "business_name": "מנטה הרב   Menta Herb – עולם של בריאות טבעית",
+        "discount": "10%",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=6111",
+        "discount_type": "billing_discount",
+        "discount_value": 10.0,
+        "has_physical_store": true
+      }
+    ],
     "source": "docs/data/businesses"
   },
   {
@@ -1278,7 +2316,169 @@
     "type": "supermarket",
     "lat": 29.559823,
     "lon": 34.950856,
-    "discounts": [],
+    "discounts": [
+      {
+        "club": "חבר",
+        "business_name": "מרפאת דניאל - מרפאה וטרינרית",
+        "discount": "10%",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=2267",
+        "discount_type": "billing_discount",
+        "discount_value": 10.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "שעוני דניאל קליין - DANIEL KLEIN",
+        "discount": "10% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/57795/שעוני-דניאל-קליין---DANIEL-KLEIN",
+        "discount_type": "billing_discount",
+        "discount_value": 10.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "קטיף דניאל",
+        "discount": "3% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/47498/קטיף-דניאל",
+        "discount_type": "billing_discount",
+        "discount_value": 3.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "תבליני דניאל",
+        "discount": "3% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/36109/תבליני-דניאל",
+        "discount_type": "billing_discount",
+        "discount_value": 3.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "מינימרקט דניאל",
+        "discount": "2% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/35327/מינימרקט-דניאל",
+        "discount_type": "billing_discount",
+        "discount_value": 2.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "מעדני דניאל",
+        "discount": "3% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/59299/מעדני-דניאל",
+        "discount_type": "billing_discount",
+        "discount_value": 3.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "רנה ודניאל",
+        "discount": "6% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/58179/רנה-ודניאל",
+        "discount_type": "billing_discount",
+        "discount_value": 6.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "אמביאנס - דניאל- עיצוב שיער",
+        "discount": "4% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/9010/אמביאנס---דניאל--עיצוב-שיער",
+        "discount_type": "billing_discount",
+        "discount_value": 4.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר טעמים",
+        "business_name": "מסעדת דניאל",
+        "discount": "חבר טעמים | מסעדת פועלים, אוכל מוכן לשבת קייטרינג",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר טעמים",
+        "business_name": "קטיף דניאל",
+        "discount": "חבר טעמים | בית קפה, מאפים, פירות, גבינות ועוד",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "BUYME",
+        "business_name": "גוז' ודניאל - ביסטרו בכפר",
+        "discount": "למימוש יש להתקשר למספר הטל': 09-7714122 להזמין מקום, ולציין את קוד ה-Gift Card טרם ההזמנה באמצעות SMS/ מייל/ דף מודפס.",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=%D7%92%D7%95%D7%96%27+%D7%95%D7%93%D7%A0%D7%99%D7%90%D7%9C+-+%D7%91%D7%99%D7%A1%D7%98%D7%A8%D7%95+%D7%91%D7%9B%D7%A4%D7%A8#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME BABY- מגוון מתנות לידה",
+          "BUYME FOODY -מתנות קולינריות שוות"
+        ],
+        "has_physical_store": true
+      },
+      {
+        "club": "BUYME",
+        "business_name": "דניאלה להבי",
+        "discount": "ניתן ליהנות מה-BUYME גם ברכישה אונליין ב אתר בית העסק וגם בחנויות. איך נהנים מה-BUYME שלך ברכישות אונליין? נכנסים לאתר דניאלה להבי ובוחרים את הפריטים שהכי עושים לך טוב בלב. מוסיפים לעגלה - ועוברים לקופה לשלב התשלום. שימו לב, מימוש ה-BUYME הוא במעמד התשלום, ולא ניתן לממש את המתנה בשלב בחירת הפריטים או בחלונית \"קוד הנחה או גיפטקארד\". בעמוד התשלום ממלאים את פרטי המשלוח, באמצעי התשלום מסמנים 'תשלום בכרטיס אשראי' ולוחצים 'לתשלום'. בעמוד הבא מסמנים 'יש לך גיפט קארד?' מזינים את 16 הספרות שמרכיבות את קוד ה-BUYME שלך, לוחצים 'שלם כעת' – ומשלימים את ההזמנה. וזהו, המתנה שבחרת בדרך אלייך! נ.ב, ניתן להוסיף אמצעי תשלום נוספים או/ו שוברים נוספים באותה ההזמנה. כדי ליהנות מה-BUYME בבית העסק יש להציג את הקוד למימוש בקופה. לפרטים נוספים ניתן ליצור קשר עם בית העסק",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=%D7%93%D7%A0%D7%99%D7%90%D7%9C%D7%94+%D7%9C%D7%94%D7%91%D7%99#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME BABY- מגוון מתנות לידה",
+          "BUYME FASHION & BEAUTY",
+          "BUYME YNG - מתנה מושלמת לבני נוער"
+        ],
+        "has_physical_store": true
+      },
+      {
+        "club": "BUYME",
+        "business_name": "מלון משכנות רות דניאל",
+        "discount": "למימוש יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים: 03-5264526 .",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=%D7%9E%D7%9C%D7%95%D7%9F+%D7%9E%D7%A9%D7%9B%D7%A0%D7%95%D7%AA+%D7%A8%D7%95%D7%AA+%D7%93%D7%A0%D7%99%D7%90%D7%9C#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME VACATION & SPA- מלונות וספא",
+          "BUYME LOCAL – מתנות מקומיות"
+        ],
+        "has_physical_store": true
+      },
+      {
+        "club": "BUYME",
+        "business_name": "מלון דניאל וספא שיזן הרצליה",
+        "discount": "כדי ליהנות מה-BUYME בבית העסק יש להציג את הקוד למימוש במספר 5411* מראש דרך מרכז ההזמנות. לפרטים נוספים ניתן ליצור קשר עם בית העסק לצפייה במדיניות הביטולים ושינויים בהזמנה לחץ כאן",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=%D7%9E%D7%9C%D7%95%D7%9F+%D7%93%D7%A0%D7%99%D7%90%D7%9C+%D7%95%D7%A1%D7%A4%D7%90+%D7%A9%D7%99%D7%96%D7%9F+%D7%94%D7%A8%D7%A6%D7%9C%D7%99%D7%94#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME VACATION & SPA- מלונות וספא"
+        ],
+        "has_physical_store": true
+      },
+      {
+        "club": "BUYME",
+        "business_name": "ספא דניאל",
+        "discount": "כדי ליהנות מה-BUYME בבית העסק יש להציג את הקוד למימוש בקופה. לפרטים נוספים ניתן ליצור קשר עם בית העסק",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=%D7%A1%D7%A4%D7%90+%D7%93%D7%A0%D7%99%D7%90%D7%9C#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME BABY- מגוון מתנות לידה",
+          "BUYME VACATION & SPA- מלונות וספא",
+          "BUYME LOCAL – מתנות מקומיות"
+        ],
+        "has_physical_store": true
+      }
+    ],
     "source": "docs/data/businesses"
   },
   {
@@ -1314,7 +2514,23 @@
     "type": "bicycle",
     "lat": 29.563265,
     "lon": 34.959157,
-    "discounts": [],
+    "discounts": [
+      {
+        "club": "BUYME",
+        "business_name": "את",
+        "discount": "למימוש בחנויות יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים: 1-800-200-234. למימוש ב אתר את - הלבשה תחתונה יש לבחור את הפרטים הרצויים, לעבור לסל הקניות, לעבור לסל התשלום ולמלא את הפרטים הנדרשים. לאחר מכן, בחרו באמצעי תשלום BUYME, מלאו את מספר השובר ושלחו את ההזמנה.",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=%D7%90%D7%AA#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME BABY- מגוון מתנות לידה",
+          "BUYME FASHION & BEAUTY",
+          "BUYME YNG - מתנה מושלמת לבני נוער"
+        ],
+        "has_physical_store": true
+      }
+    ],
     "source": "docs/data/businesses"
   },
   {
@@ -1404,7 +2620,17 @@
     "type": "convenience",
     "lat": 29.561699,
     "lon": 34.93818,
-    "discounts": [],
+    "discounts": [
+      {
+        "club": "חבר",
+        "business_name": "מנטה הרב   Menta Herb – עולם של בריאות טבעית",
+        "discount": "10%",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=6111",
+        "discount_type": "billing_discount",
+        "discount_value": 10.0,
+        "has_physical_store": true
+      }
+    ],
     "source": "docs/data/businesses"
   },
   {
@@ -1422,7 +2648,26 @@
     "type": "supermarket",
     "lat": 29.566898,
     "lon": 34.955973,
-    "discounts": [],
+    "discounts": [
+      {
+        "club": "חבר שלי",
+        "business_name": "EGO",
+        "discount": "חבר שלי | לעסקאות מעל 1000 ₪ ניתן לשלם טלפונית | כלי גינון נטענים",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=853",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": false
+      },
+      {
+        "club": "חבר טעמים",
+        "business_name": "GO",
+        "discount": "חבר טעמים | קנטינה אסיאתית",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": true
+      }
+    ],
     "source": "docs/data/businesses"
   },
   {
@@ -1467,7 +2712,17 @@
     "type": "cafe",
     "lat": 29.548943,
     "lon": 34.962318,
-    "discounts": [],
+    "discounts": [
+      {
+        "club": "חבר",
+        "business_name": "אתר הקפסולות של קפה ארומה",
+        "discount": "10%",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=6129",
+        "discount_type": "billing_discount",
+        "discount_value": 10.0,
+        "has_physical_store": true
+      }
+    ],
     "source": "docs/data/businesses"
   },
   {
@@ -1480,7 +2735,7 @@
       {
         "club": "חבר שלי",
         "business_name": "שילב",
-        "discount": "חבר שלי | לא כולל מבצעים והטבות לחברי מועדון. לא ניתן להשתמש לרכישת כרטיס מתנה (גיפט קארד שילב).<br/>אין כפל הטבות לעובדים/בני משפחה | רשת מוצרים, ביגוד ואביזרים לתינוקות<br/> | south ,north, שילב eilat_nitan, gan_dress, gift_for_beby, Children_kinder",
+        "discount": "חבר שלי | לא כולל מבצעים והטבות לחברי מועדון. לא ניתן להשתמש לרכישת כרטיס מתנה (גיפט קארד שילב).<br/>אין כפל הטבות לעובדים/בני משפחה | רשת מוצרים, ביגוד ואביזרים לתינוקות<br/>",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item,272214",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -1513,10 +2768,65 @@
       {
         "club": "חבר שלי",
         "business_name": "גולף",
-        "discount": "חבר שלי | אופנה ואביזרים לנשים ולגברים<br/> | eilat_nitan ,GOLF,south ,north",
+        "discount": "חבר שלי | אופנה ואביזרים לנשים ולגברים<br/>",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=19",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר שלי",
+        "business_name": "גולף קו",
+        "discount": "חבר שלי | רשת עיצוב הבית המציעה פריטי טקסטיל וכלי בית מעוצבים, מתנות ועוד",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=21",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר שלי",
+        "business_name": "גולף-קידס",
+        "discount": "חבר שלי | רשת אופנה ילדים ותינוקות<br/>",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=20",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר טעמים",
+        "business_name": "קפה בגולף",
+        "discount": "חבר טעמים | בוקר בראנץ' אווירה",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "BUYME",
+        "business_name": "ספא גולף קיסריה",
+        "discount": "למימוש השובר יש לתאם הגעה מראש במספר 04-6248608 ולמסור את קוד ה-Gift Card המלא המופיע על גבי SMS/מייל/דף מודפס.",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=%D7%A1%D7%A4%D7%90+%D7%92%D7%95%D7%9C%D7%A3+%D7%A7%D7%99%D7%A1%D7%A8%D7%99%D7%94#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME BABY- מגוון מתנות לידה",
+          "BUYME VACATION & SPA- מלונות וספא",
+          "BUYME LOCAL – מתנות מקומיות"
+        ],
+        "has_physical_store": true
+      },
+      {
+        "club": "BUYME",
+        "business_name": "מועדון הגולף קיסריה",
+        "discount": "למימוש יש לציין את קוד ה- Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים והזמנת מקום במועדון : 6550* שלוחה 1.",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=%D7%9E%D7%95%D7%A2%D7%93%D7%95%D7%9F+%D7%94%D7%92%D7%95%D7%9C%D7%A3+%D7%A7%D7%99%D7%A1%D7%A8%D7%99%D7%94#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME MOMENTS - מגוון חוויות"
+        ],
         "has_physical_store": true
       }
     ],
@@ -1528,7 +2838,22 @@
     "type": "mobile_phone",
     "lat": 29.550098,
     "lon": 34.960806,
-    "discounts": [],
+    "discounts": [
+      {
+        "club": "BUYME",
+        "business_name": "MOBICELL",
+        "discount": "למימוש יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים: 054-9840984.",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=MOBICELL#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME BABY- מגוון מתנות לידה",
+          "BUYME YNG - מתנה מושלמת לבני נוער"
+        ],
+        "has_physical_store": true
+      }
+    ],
     "source": "docs/data/businesses"
   },
   {
@@ -1537,7 +2862,23 @@
     "type": "fast_food",
     "lat": 29.893853,
     "lon": 35.064284,
-    "discounts": [],
+    "discounts": [
+      {
+        "club": "BUYME",
+        "business_name": "ATA",
+        "discount": "ניתן ליהנות מה-BUYME גם ברכישה אונליין ב אתר בית העסק וגם בחנויות. איך נהנים מה-BUYME שלך ברכישות אונליין? נכנסים לאתר ATA ובוחרים את הפריטים שהכי עושים לך טוב בלב. מוסיפים לעגלה - ועוברים לקופה לשלב התשלום. שימו לב, מימוש ה-BUYME הוא במעמד התשלום, ולא ניתן לממש את המתנה בשלב בחירת הפריטים או בחלונית \"קוד קופון או גיפטקארד\". בעמוד התשלום לוחצים על 'אמצעי תשלום נוספים' ולחוצים על 'לתשלום'. בחלונית הבאה יש ללחוץ על אמצעי תשלום 'BUYME'. מזינים את 16 הספרות שמרכיבות את קוד ה-BUYME שלך ומשלימים את ההזמנה. וזהו, המתנה שבחרת בדרך אלייך! נ.ב, ניתן להוסיף אמצעי תשלום נוספים או/ו שוברים נוספים באותה ההזמנה. כדי ליהנות מה-BUYME בבית העסק יש להציג את הקוד למימוש בקופה. לפרטים נוספים ניתן ליצור קשר עם בית העסק",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=ATA#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME BABY- מגוון מתנות לידה",
+          "BUYME FASHION & BEAUTY",
+          "BUYME YNG - מתנה מושלמת לבני נוער"
+        ],
+        "has_physical_store": true
+      }
+    ],
     "source": "docs/data/businesses"
   },
   {
@@ -1582,7 +2923,169 @@
     "type": "deli",
     "lat": 29.559828,
     "lon": 34.95094,
-    "discounts": [],
+    "discounts": [
+      {
+        "club": "חבר",
+        "business_name": "מרפאת דניאל - מרפאה וטרינרית",
+        "discount": "10%",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=2267",
+        "discount_type": "billing_discount",
+        "discount_value": 10.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "שעוני דניאל קליין - DANIEL KLEIN",
+        "discount": "10% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/57795/שעוני-דניאל-קליין---DANIEL-KLEIN",
+        "discount_type": "billing_discount",
+        "discount_value": 10.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "קטיף דניאל",
+        "discount": "3% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/47498/קטיף-דניאל",
+        "discount_type": "billing_discount",
+        "discount_value": 3.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "תבליני דניאל",
+        "discount": "3% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/36109/תבליני-דניאל",
+        "discount_type": "billing_discount",
+        "discount_value": 3.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "מינימרקט דניאל",
+        "discount": "2% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/35327/מינימרקט-דניאל",
+        "discount_type": "billing_discount",
+        "discount_value": 2.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "מעדני דניאל",
+        "discount": "3% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/59299/מעדני-דניאל",
+        "discount_type": "billing_discount",
+        "discount_value": 3.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "רנה ודניאל",
+        "discount": "6% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/58179/רנה-ודניאל",
+        "discount_type": "billing_discount",
+        "discount_value": 6.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "אמביאנס - דניאל- עיצוב שיער",
+        "discount": "4% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/9010/אמביאנס---דניאל--עיצוב-שיער",
+        "discount_type": "billing_discount",
+        "discount_value": 4.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר טעמים",
+        "business_name": "מסעדת דניאל",
+        "discount": "חבר טעמים | מסעדת פועלים, אוכל מוכן לשבת קייטרינג",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר טעמים",
+        "business_name": "קטיף דניאל",
+        "discount": "חבר טעמים | בית קפה, מאפים, פירות, גבינות ועוד",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "BUYME",
+        "business_name": "גוז' ודניאל - ביסטרו בכפר",
+        "discount": "למימוש יש להתקשר למספר הטל': 09-7714122 להזמין מקום, ולציין את קוד ה-Gift Card טרם ההזמנה באמצעות SMS/ מייל/ דף מודפס.",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=%D7%92%D7%95%D7%96%27+%D7%95%D7%93%D7%A0%D7%99%D7%90%D7%9C+-+%D7%91%D7%99%D7%A1%D7%98%D7%A8%D7%95+%D7%91%D7%9B%D7%A4%D7%A8#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME BABY- מגוון מתנות לידה",
+          "BUYME FOODY -מתנות קולינריות שוות"
+        ],
+        "has_physical_store": true
+      },
+      {
+        "club": "BUYME",
+        "business_name": "דניאלה להבי",
+        "discount": "ניתן ליהנות מה-BUYME גם ברכישה אונליין ב אתר בית העסק וגם בחנויות. איך נהנים מה-BUYME שלך ברכישות אונליין? נכנסים לאתר דניאלה להבי ובוחרים את הפריטים שהכי עושים לך טוב בלב. מוסיפים לעגלה - ועוברים לקופה לשלב התשלום. שימו לב, מימוש ה-BUYME הוא במעמד התשלום, ולא ניתן לממש את המתנה בשלב בחירת הפריטים או בחלונית \"קוד הנחה או גיפטקארד\". בעמוד התשלום ממלאים את פרטי המשלוח, באמצעי התשלום מסמנים 'תשלום בכרטיס אשראי' ולוחצים 'לתשלום'. בעמוד הבא מסמנים 'יש לך גיפט קארד?' מזינים את 16 הספרות שמרכיבות את קוד ה-BUYME שלך, לוחצים 'שלם כעת' – ומשלימים את ההזמנה. וזהו, המתנה שבחרת בדרך אלייך! נ.ב, ניתן להוסיף אמצעי תשלום נוספים או/ו שוברים נוספים באותה ההזמנה. כדי ליהנות מה-BUYME בבית העסק יש להציג את הקוד למימוש בקופה. לפרטים נוספים ניתן ליצור קשר עם בית העסק",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=%D7%93%D7%A0%D7%99%D7%90%D7%9C%D7%94+%D7%9C%D7%94%D7%91%D7%99#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME BABY- מגוון מתנות לידה",
+          "BUYME FASHION & BEAUTY",
+          "BUYME YNG - מתנה מושלמת לבני נוער"
+        ],
+        "has_physical_store": true
+      },
+      {
+        "club": "BUYME",
+        "business_name": "מלון משכנות רות דניאל",
+        "discount": "למימוש יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים: 03-5264526 .",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=%D7%9E%D7%9C%D7%95%D7%9F+%D7%9E%D7%A9%D7%9B%D7%A0%D7%95%D7%AA+%D7%A8%D7%95%D7%AA+%D7%93%D7%A0%D7%99%D7%90%D7%9C#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME VACATION & SPA- מלונות וספא",
+          "BUYME LOCAL – מתנות מקומיות"
+        ],
+        "has_physical_store": true
+      },
+      {
+        "club": "BUYME",
+        "business_name": "מלון דניאל וספא שיזן הרצליה",
+        "discount": "כדי ליהנות מה-BUYME בבית העסק יש להציג את הקוד למימוש במספר 5411* מראש דרך מרכז ההזמנות. לפרטים נוספים ניתן ליצור קשר עם בית העסק לצפייה במדיניות הביטולים ושינויים בהזמנה לחץ כאן",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=%D7%9E%D7%9C%D7%95%D7%9F+%D7%93%D7%A0%D7%99%D7%90%D7%9C+%D7%95%D7%A1%D7%A4%D7%90+%D7%A9%D7%99%D7%96%D7%9F+%D7%94%D7%A8%D7%A6%D7%9C%D7%99%D7%94#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME VACATION & SPA- מלונות וספא"
+        ],
+        "has_physical_store": true
+      },
+      {
+        "club": "BUYME",
+        "business_name": "ספא דניאל",
+        "discount": "כדי ליהנות מה-BUYME בבית העסק יש להציג את הקוד למימוש בקופה. לפרטים נוספים ניתן ליצור קשר עם בית העסק",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=%D7%A1%D7%A4%D7%90+%D7%93%D7%A0%D7%99%D7%90%D7%9C#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME BABY- מגוון מתנות לידה",
+          "BUYME VACATION & SPA- מלונות וספא",
+          "BUYME LOCAL – מתנות מקומיות"
+        ],
+        "has_physical_store": true
+      }
+    ],
     "source": "docs/data/businesses"
   },
   {
@@ -1618,7 +3121,22 @@
     "type": "sports",
     "lat": 29.556922,
     "lon": 34.951262,
-    "discounts": [],
+    "discounts": [
+      {
+        "club": "BUYME",
+        "business_name": "adidas",
+        "discount": "למימוש יש להציג את קוד ה-Gift Card באמצעות SMS/ מייל/ דף מודפס. פרטים נוספים: 03-6505321.",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=adidas#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME FASHION & BEAUTY",
+          "BUYME YNG - מתנה מושלמת לבני נוער"
+        ],
+        "has_physical_store": true
+      }
+    ],
     "source": "docs/data/businesses"
   },
   {
@@ -1808,7 +3326,17 @@
     "type": "fast_food",
     "lat": 29.557616,
     "lon": 34.951706,
-    "discounts": [],
+    "discounts": [
+      {
+        "club": "חבר טעמים",
+        "business_name": "GO",
+        "discount": "חבר טעמים | קנטינה אסיאתית",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": true
+      }
+    ],
     "source": "docs/data/businesses"
   },
   {
@@ -1830,7 +3358,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "מקדונלד'ס",
-        "discount": "חבר טעמים | רשת המבורגרים | מסעדה",
+        "discount": "חבר טעמים | רשת המבורגרים",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,396185",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -1859,7 +3387,17 @@
     "type": "cafe",
     "lat": 29.553988,
     "lon": 34.965257,
-    "discounts": [],
+    "discounts": [
+      {
+        "club": "חבר",
+        "business_name": "אתר הקפסולות של קפה ארומה",
+        "discount": "10%",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=6129",
+        "discount_type": "billing_discount",
+        "discount_value": 10.0,
+        "has_physical_store": true
+      }
+    ],
     "source": "docs/data/businesses"
   },
   {
@@ -1877,7 +3415,17 @@
     "type": "restaurant",
     "lat": 29.559231,
     "lon": 34.951268,
-    "discounts": [],
+    "discounts": [
+      {
+        "club": "חבר טעמים",
+        "business_name": "GO",
+        "discount": "חבר טעמים | קנטינה אסיאתית",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": true
+      }
+    ],
     "source": "docs/data/businesses"
   },
   {
@@ -1917,7 +3465,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "מייקס פלייס",
-        "discount": "חבר טעמים | בר מסעדה הופעות חיות וספורט | בר-פאב",
+        "discount": "חבר טעמים | בר מסעדה הופעות חיות וספורט",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -1934,9 +3482,18 @@
     "lon": 34.96607,
     "discounts": [
       {
+        "club": "חבר",
+        "business_name": "cafe-cafe קפה קפה",
+        "discount": "5%",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=4045",
+        "discount_type": "billing_discount",
+        "discount_value": 5.0,
+        "has_physical_store": true
+      },
+      {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה | בית קפה",
+        "discount": "חבר טעמים | בית קפה",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -1945,7 +3502,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה מסעדה- חלבי | בית קפה",
+        "discount": "חבר טעמים | בית קפה מסעדה- חלבי",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -1954,7 +3511,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | חלבי | בית קפה",
+        "discount": "חבר טעמים | חלבי",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -1963,7 +3520,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בשרי | בית קפה",
+        "discount": "חבר טעמים | בשרי",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -1972,7 +3529,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה מסעדה | בית קפה",
+        "discount": "חבר טעמים | בית קפה מסעדה",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -1981,7 +3538,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה-חלבי כשר | בית קפה",
+        "discount": "חבר טעמים | בית קפה-חלבי כשר",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -1990,7 +3547,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | מסעדה | בית קפה",
+        "discount": "חבר טעמים | מסעדה",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -1999,7 +3556,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה מסעדה חלבי | בית קפה",
+        "discount": "חבר טעמים | בית קפה מסעדה חלבי",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -2008,7 +3565,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה מסעדה בשרי | בית קפה",
+        "discount": "חבר טעמים | בית קפה מסעדה בשרי",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -2017,7 +3574,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | מסעדה חלבי | בית קפה",
+        "discount": "חבר טעמים | מסעדה חלבי",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -2026,7 +3583,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה - בשרי | בית קפה",
+        "discount": "חבר טעמים | בית קפה - בשרי",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -2035,28 +3592,26 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה בשרי | בית קפה",
+        "discount": "חבר טעמים | בית קפה בשרי",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
       },
       {
-        "club": "חבר טעמים",
-        "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה מסעדה- חלבי | מסעדה,בית קפה",
-        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר טעמים",
-        "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה מסעדה | מסעדה,בית קפה",
-        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
+        "club": "BUYME",
+        "business_name": "סניפים נבחרים ברשת קפה קפה",
+        "discount": "למימוש יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. השוברים אינם תקפים בסניף קיבוץ יפעת, קריית חיים ו סניפי cafe cafe go",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=%D7%A1%D7%A0%D7%99%D7%A4%D7%99%D7%9D+%D7%A0%D7%91%D7%97%D7%A8%D7%99%D7%9D+%D7%91%D7%A8%D7%A9%D7%AA+%D7%A7%D7%A4%D7%94+%D7%A7%D7%A4%D7%94#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME BABY- מגוון מתנות לידה",
+          "BUYME FOODY -מתנות קולינריות שוות",
+          "BUYME BRUNCH- מגוון ארוחות בוקר",
+          "BUYME YNG - מתנה מושלמת לבני נוער"
+        ],
         "has_physical_store": true
       }
     ],
@@ -2070,9 +3625,18 @@
     "lon": 34.953618,
     "discounts": [
       {
+        "club": "חבר",
+        "business_name": "cafe-cafe קפה קפה",
+        "discount": "5%",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=4045",
+        "discount_type": "billing_discount",
+        "discount_value": 5.0,
+        "has_physical_store": true
+      },
+      {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה | בית קפה",
+        "discount": "חבר טעמים | בית קפה",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -2081,7 +3645,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה מסעדה- חלבי | בית קפה",
+        "discount": "חבר טעמים | בית קפה מסעדה- חלבי",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -2090,7 +3654,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | חלבי | בית קפה",
+        "discount": "חבר טעמים | חלבי",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -2099,7 +3663,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בשרי | בית קפה",
+        "discount": "חבר טעמים | בשרי",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -2108,7 +3672,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה מסעדה | בית קפה",
+        "discount": "חבר טעמים | בית קפה מסעדה",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -2117,7 +3681,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה-חלבי כשר | בית קפה",
+        "discount": "חבר טעמים | בית קפה-חלבי כשר",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -2126,7 +3690,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | מסעדה | בית קפה",
+        "discount": "חבר טעמים | מסעדה",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -2135,7 +3699,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה מסעדה חלבי | בית קפה",
+        "discount": "חבר טעמים | בית קפה מסעדה חלבי",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -2144,7 +3708,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה מסעדה בשרי | בית קפה",
+        "discount": "חבר טעמים | בית קפה מסעדה בשרי",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -2153,7 +3717,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | מסעדה חלבי | בית קפה",
+        "discount": "חבר טעמים | מסעדה חלבי",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -2162,7 +3726,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה - בשרי | בית קפה",
+        "discount": "חבר טעמים | בית קפה - בשרי",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -2171,28 +3735,26 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה בשרי | בית קפה",
+        "discount": "חבר טעמים | בית קפה בשרי",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
       },
       {
-        "club": "חבר טעמים",
-        "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה מסעדה- חלבי | מסעדה,בית קפה",
-        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר טעמים",
-        "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה מסעדה | מסעדה,בית קפה",
-        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
+        "club": "BUYME",
+        "business_name": "סניפים נבחרים ברשת קפה קפה",
+        "discount": "למימוש יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. השוברים אינם תקפים בסניף קיבוץ יפעת, קריית חיים ו סניפי cafe cafe go",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=%D7%A1%D7%A0%D7%99%D7%A4%D7%99%D7%9D+%D7%A0%D7%91%D7%97%D7%A8%D7%99%D7%9D+%D7%91%D7%A8%D7%A9%D7%AA+%D7%A7%D7%A4%D7%94+%D7%A7%D7%A4%D7%94#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME BABY- מגוון מתנות לידה",
+          "BUYME FOODY -מתנות קולינריות שוות",
+          "BUYME BRUNCH- מגוון ארוחות בוקר",
+          "BUYME YNG - מתנה מושלמת לבני נוער"
+        ],
         "has_physical_store": true
       }
     ],
@@ -2206,9 +3768,18 @@
     "lon": 34.963542,
     "discounts": [
       {
+        "club": "חבר",
+        "business_name": "cafe-cafe קפה קפה",
+        "discount": "5%",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=4045",
+        "discount_type": "billing_discount",
+        "discount_value": 5.0,
+        "has_physical_store": true
+      },
+      {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה | בית קפה",
+        "discount": "חבר טעמים | בית קפה",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -2217,7 +3788,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה מסעדה- חלבי | בית קפה",
+        "discount": "חבר טעמים | בית קפה מסעדה- חלבי",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -2226,7 +3797,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | חלבי | בית קפה",
+        "discount": "חבר טעמים | חלבי",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -2235,7 +3806,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בשרי | בית קפה",
+        "discount": "חבר טעמים | בשרי",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -2244,7 +3815,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה מסעדה | בית קפה",
+        "discount": "חבר טעמים | בית קפה מסעדה",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -2253,7 +3824,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה-חלבי כשר | בית קפה",
+        "discount": "חבר טעמים | בית קפה-חלבי כשר",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -2262,7 +3833,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | מסעדה | בית קפה",
+        "discount": "חבר טעמים | מסעדה",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -2271,7 +3842,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה מסעדה חלבי | בית קפה",
+        "discount": "חבר טעמים | בית קפה מסעדה חלבי",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -2280,7 +3851,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה מסעדה בשרי | בית קפה",
+        "discount": "חבר טעמים | בית קפה מסעדה בשרי",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -2289,7 +3860,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | מסעדה חלבי | בית קפה",
+        "discount": "חבר טעמים | מסעדה חלבי",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -2298,7 +3869,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה - בשרי | בית קפה",
+        "discount": "חבר טעמים | בית קפה - בשרי",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -2307,28 +3878,26 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה בשרי | בית קפה",
+        "discount": "חבר טעמים | בית קפה בשרי",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
       },
       {
-        "club": "חבר טעמים",
-        "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה מסעדה- חלבי | מסעדה,בית קפה",
-        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר טעמים",
-        "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה מסעדה | מסעדה,בית קפה",
-        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
+        "club": "BUYME",
+        "business_name": "סניפים נבחרים ברשת קפה קפה",
+        "discount": "למימוש יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. השוברים אינם תקפים בסניף קיבוץ יפעת, קריית חיים ו סניפי cafe cafe go",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=%D7%A1%D7%A0%D7%99%D7%A4%D7%99%D7%9D+%D7%A0%D7%91%D7%97%D7%A8%D7%99%D7%9D+%D7%91%D7%A8%D7%A9%D7%AA+%D7%A7%D7%A4%D7%94+%D7%A7%D7%A4%D7%94#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME BABY- מגוון מתנות לידה",
+          "BUYME FOODY -מתנות קולינריות שוות",
+          "BUYME BRUNCH- מגוון ארוחות בוקר",
+          "BUYME YNG - מתנה מושלמת לבני נוער"
+        ],
         "has_physical_store": true
       }
     ],
@@ -2422,7 +3991,17 @@
     "type": "mobile_phone",
     "lat": 29.55005,
     "lon": 34.95583,
-    "discounts": [],
+    "discounts": [
+      {
+        "club": "חבר טעמים",
+        "business_name": "GO",
+        "discount": "חבר טעמים | קנטינה אסיאתית",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": true
+      }
+    ],
     "source": "docs/data/businesses"
   },
   {
@@ -2487,9 +4066,18 @@
     "lon": 34.965697,
     "discounts": [
       {
+        "club": "HTzone",
+        "business_name": "נייקי | NIKE",
+        "discount": "9% הנחה",
+        "discount_url": "https://www.htzone.co.il/benefit/708/נייקי-|-NIKE/?sale_id=62",
+        "discount_type": "billing_discount",
+        "discount_value": 9.0,
+        "has_physical_store": true
+      },
+      {
         "club": "חבר שלי",
         "business_name": "NIKE",
-        "discount": "חבר שלי | *חל בחנויות NIKE, לא כולל חנויות עודפים. חנויות NIKE בישראל מופעלות ע\"י RETAILORS<br/>*לא כולל מבצעי השקות, הטבות מועדון ותשלום הצטרפות למועדון<br/>*לא תתאפשר צבירת נקודות מועדון<br/>*אין כפל הטבות לעובדים/בני משפחה | מותג הספורט המוביל בעולם | נייק, בגדי ספורט, נעלי ספורט, gil6, gan_dress, snickers, eilat_nitan, Youth_clothing",
+        "discount": "חבר שלי | *חל בחנויות NIKE, לא כולל חנויות עודפים. חנויות NIKE בישראל מופעלות ע\"י RETAILORS<br/>*לא כולל מבצעי השקות, הטבות מועדון ותשלום הצטרפות למועדון<br/>*לא תתאפשר צבירת נקודות מועדון<br/>*אין כפל הטבות לעובדים/בני משפחה | מותג הספורט המוביל בעולם",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,376294",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -2520,10 +4108,55 @@
     "lon": 34.965861,
     "discounts": [
       {
+        "club": "חבר שלי",
+        "business_name": "FOX - פוקס",
+        "discount": "חבר שלי | לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת.<br/>אין כפל הטבות לעובדים/בני משפחה<br/> | אופנה ואביזרים לכל המשפחה<br/>",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=10",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": false
+      },
+      {
+        "club": "חבר שלי",
+        "business_name": "FOX home",
+        "discount": "חבר שלי | לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת.<br/>אין כפל הטבות לעובדים/בני משפחה | כלי מטבח, אירוח ושולחן, טקסטיל, אמבטיה ונוי<br/>",
+        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,270507",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": false
+      },
+      {
+        "club": "BUYME",
+        "business_name": "Fox Home",
+        "discount": "ניתן למימוש בפוקס ובפוקס הום. שובר פגום/מזוייף לא יכובד. שובר זה אינו כרטיס חיוב כהגדרתו בחוק כרטיסי חיוב התשמ\"ו - 1986. המחזיק בשובר מצהיר בעצם ההחזקה כי הוא מסכים לאמור. ט.ל.ח.",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=Fox+Home#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME YNG - מתנה מושלמת לבני נוער"
+        ],
+        "has_physical_store": true
+      },
+      {
         "club": "BUYME",
         "business_name": "FOX",
         "discount": "ניתן למימוש בפוקס ובפוקס הום. שובר פגום/מזוייף לא יכובד. שובר זה אינו כרטיס חיוב כהגדרתו בחוק כרטיסי חיוב התשמ\"ו. המחזיק בשובר מצהיר כי הוא מסכים לאמור. ט.ל.ח.",
         "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=FOX#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME FASHION & BEAUTY",
+          "BUYME YNG - מתנה מושלמת לבני נוער"
+        ],
+        "has_physical_store": true
+      },
+      {
+        "club": "BUYME",
+        "business_name": "מגוון מותגי קבוצת FOX",
+        "discount": "לרשימת הרשתות והסניפים המכבדים לחצו כאן . הכרטיס אינו ניתן להמרה למזומן. גניבה/אובדן/ השחתה באחריות המחזיק בלבד.",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=%D7%9E%D7%92%D7%95%D7%95%D7%9F+%D7%9E%D7%95%D7%AA%D7%92%D7%99+%D7%A7%D7%91%D7%95%D7%A6%D7%AA+FOX#",
         "discount_type": "voucher",
         "discount_value": null,
         "supplier_name": [
@@ -2566,7 +4199,22 @@
     "type": "clothes",
     "lat": 29.55386,
     "lon": 34.96595,
-    "discounts": [],
+    "discounts": [
+      {
+        "club": "BUYME",
+        "business_name": "American Eagle",
+        "discount": "Voucher",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=American+Eagle#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME FASHION & BEAUTY",
+          "BUYME YNG - מתנה מושלמת לבני נוער"
+        ],
+        "has_physical_store": true
+      }
+    ],
     "source": "docs/data/businesses"
   },
   {
@@ -2579,7 +4227,7 @@
       {
         "club": "חבר שלי",
         "business_name": "aerie",
-        "discount": "חבר שלי | לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת. | מותג הלבשה תחתונה, הלבשת בית, פיג'מות ספורט וחוף | אריאה, אמרקן איגל, הלבשה תחתונה",
+        "discount": "חבר שלי | לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת. | מותג הלבשה תחתונה, הלבשת בית, פיג'מות ספורט וחוף",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=872",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -2612,7 +4260,7 @@
       {
         "club": "חבר שלי",
         "business_name": "FOOT LOCKER",
-        "discount": "חבר שלי | לא כולל מבצעי השקות והטבות מועדון ותשלום הצטרפות למועדון, לא תתאפשר צבירת נקודות מועדון, לא כולל סניפי אאוטלט<br/>אין כפל הטבות לעובדים/בני משפחה | eilat_nitan פוט לוקר , snickers , atar_hadash, South, gil6, Youth_clothing | מותגים,נעלי גברים,נעלי נשים,נעלי ילדים,נעלי תינוקות,נעלי ריצה,נעלי ספורט,נעלי הליכה,סניקרס,נעלי כדורגל,נעלי כדורסל,כפכפים,סנדלים,בגדי גברים,בגדי נשים,בגדי ילדים,מכנסיים,חולצות,בגדי ספורט,בגדי ים,סווטשירטים,ג'קטים,מעילים,הלבשה תחתונה,תיקים,כובעים,בקבוקים,אביזרי ספורט,אקססוריז,ציוד ספורט",
+        "discount": "חבר שלי | לא כולל מבצעי השקות והטבות מועדון ותשלום הצטרפות למועדון, לא תתאפשר צבירת נקודות מועדון, לא כולל סניפי אאוטלט<br/>אין כפל הטבות לעובדים/בני משפחה",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=146",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -2650,7 +4298,49 @@
     "type": "electrical",
     "lat": 29.554154,
     "lon": 34.965967,
-    "discounts": [],
+    "discounts": [
+      {
+        "club": "חבר",
+        "business_name": "רדווד       Red  Wood",
+        "discount": "5%",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5434",
+        "discount_type": "billing_discount",
+        "discount_value": 5.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר",
+        "business_name": "Segafredo Zanetti Coffee System  סגפרדו זאנטי קופי סיסטם",
+        "discount": "8%",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5569",
+        "discount_type": "billing_discount",
+        "discount_value": 8.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "B SECURED- מחשוב, סלולר, מיגון ואבטחה",
+        "discount": "2% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/24368/B-SECURED--מחשוב,-סלולר,-מיגון-ואבטחה",
+        "discount_type": "billing_discount",
+        "discount_value": 2.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "BUYME",
+        "business_name": "Redefine Hair",
+        "discount": "ניתן ליהנות מה-BUYME ברכישה אונליין ב אתר בית העסק . איך משתמשים ב-BUYME ברכישות אונליין? נכנסים לאתר Redefine Hair ובוחרים את הפריטים שהכי עושים לך טוב בלב. מוסיפים לעגלה - ועוברים לקופה לשלב התשלום. שימו לב, מימוש ה-BUYME הוא במעמד התשלום, ולא ניתן לממש את המתנה בשלב בחירת הפריטים או בחלונית \"קוד קופון או גיפטקארד\". בעמוד התשלום לוחצים על \"כרטיס אשראי\", \"מימוש במועדון ביימי\", מזינים את 16 הספרות שמרכיבות את קוד ה-BUYME שלך, לוחצים \"הוספה\" ומשלימים את ההזמנה. וזהו, המתנה שבחרת בדרך אלייך!",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=Redefine+Hair#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME BABY- מגוון מתנות לידה",
+          "BUYME FASHION & BEAUTY"
+        ],
+        "has_physical_store": false
+      }
+    ],
     "source": "docs/data/businesses"
   },
   {
@@ -2659,7 +4349,39 @@
     "type": "electronics",
     "lat": 29.554247,
     "lon": 34.965893,
-    "discounts": [],
+    "discounts": [
+      {
+        "club": "חבר",
+        "business_name": "מיקי בוגנים  Miki Buganim COSMETICS",
+        "discount": "7%",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=6144",
+        "discount_type": "billing_discount",
+        "discount_value": 7.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר",
+        "business_name": "באג   BUG",
+        "discount": "3%",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=1639",
+        "discount_type": "billing_discount",
+        "discount_value": 3.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "BUYME",
+        "business_name": "Bugaboo",
+        "discount": "למימוש אונליין יש להיכנס לאתר Bugaboo , בצורת תשלום לסמן MultiPass ולהזין את מספר השובר ללא מקפים. למימוש בחנות יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים:03-5407999.",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=Bugaboo#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME BABY- מגוון מתנות לידה"
+        ],
+        "has_physical_store": false
+      }
+    ],
     "source": "docs/data/businesses"
   },
   {
@@ -2702,6 +4424,19 @@
           "BUYME YNG - מתנה מושלמת לבני נוער"
         ],
         "has_physical_store": true
+      },
+      {
+        "club": "BUYME",
+        "business_name": "CASTRO HOME",
+        "discount": "למימוש יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים: 1-800-266-066. נוח וקל למימוש עם פריסה ארצית רחבה, ומעל ל-450 חנויות ברחבי הארץ. ניתן לממש אונליין באתר קסטרו באמצעות הזנת קוד ה-Gift Card המלא בשדה \"Gift Card/תווי קנייה\". לבחור בלוגו של BUYME - \"לחץ למימוש\". לאחר מכן יש להזין את סכום למימוש ואת מספר השובר המלא וללחוץ על כפתור \"ממש שובר\". תוקף ל-5 שנים כולל מבצעים והנחות.",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=CASTRO+HOME#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME HOME DESIGN - בית ואווירה"
+        ],
+        "has_physical_store": true
       }
     ],
     "source": "docs/data/businesses"
@@ -2734,8 +4469,17 @@
       {
         "club": "חבר שלי",
         "business_name": "MANGO",
-        "discount": "חבר שלי | לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת.<br/>אין כפל הטבות לעובדים/בני משפחה<br/> | אופנת נשים, גברים, ילדים ותינוקות | MANGO מנגו eilat_nitan ,south ,north",
+        "discount": "חבר שלי | לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת.<br/>אין כפל הטבות לעובדים/בני משפחה<br/> | אופנת נשים, גברים, ילדים ותינוקות",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=81",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר טעמים",
+        "business_name": "GO",
+        "discount": "חבר טעמים | קנטינה אסיאתית",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -2817,10 +4561,24 @@
       {
         "club": "חבר שלי",
         "business_name": "RUBY BAY",
-        "discount": "חבר שלי | לא כולל הטבות מועדון לרבות צבירת נקודות ולא יכלול מבצעים לחברי מועדון<br/>אין כפל הטבות לעובדים/בני משפחה<br/> | מותג אופנתי לנערות עם קולקציות צעירות וקלילות<br/>אין כפל הטבות לעובדים/בני משפחה<br/><br/> | רובי ביי, אופנה לצעירות, ביגוד, north, Youth_clothing",
+        "discount": "חבר שלי | לא כולל הטבות מועדון לרבות צבירת נקודות ולא יכלול מבצעים לחברי מועדון<br/>אין כפל הטבות לעובדים/בני משפחה<br/> | מותג אופנתי לנערות עם קולקציות צעירות וקלילות<br/>אין כפל הטבות לעובדים/בני משפחה<br/><br/>",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=645",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "BUYME",
+        "business_name": "Ruby",
+        "discount": "למימוש השובר יש לתאם הגעה מראש במספר 050-7851505 ולמסור את קוד ה-Gift Card המלא.",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=Ruby#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME VACATION & SPA- מלונות וספא",
+          "BUYME LOCAL – מתנות מקומיות"
+        ],
         "has_physical_store": true
       },
       {
@@ -2870,6 +4628,35 @@
           "BUYME YNG - מתנה מושלמת לבני נוער"
         ],
         "has_physical_store": true
+      },
+      {
+        "club": "BUYME",
+        "business_name": "H&M HOME",
+        "discount": "למימוש יש להציג את קוד ה-Gift Card באמצעות SMS/ מייל/ דף מודפס בסניפי הרשת. לפרטים נוספים : 1-800-255-225.",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=H%26M+HOME#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME BABY- מגוון מתנות לידה",
+          "BUYME YNG - מתנה מושלמת לבני נוער"
+        ],
+        "has_physical_store": true
+      },
+      {
+        "club": "BUYME",
+        "business_name": "מגוון מותגי קבוצת H&M",
+        "discount": "למימוש יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים: 052-5909957.",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=%D7%9E%D7%92%D7%95%D7%95%D7%9F+%D7%9E%D7%95%D7%AA%D7%92%D7%99+%D7%A7%D7%91%D7%95%D7%A6%D7%AA+H%26M#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME BABY- מגוון מתנות לידה",
+          "BUYME FASHION & BEAUTY",
+          "BUYME YNG - מתנה מושלמת לבני נוער"
+        ],
+        "has_physical_store": true
       }
     ],
     "source": "docs/data/businesses"
@@ -2884,7 +4671,7 @@
       {
         "club": "חבר שלי",
         "business_name": "sunglass hut",
-        "discount": "חבר שלי | לא כולל הטבות מועדון לרבות צבירת נקודות ולא יכלול מבצעים לחברי מועדון<br/>אין כפל הטבות לעובדים/בני משפחה<br/> | משקפי שמש של מגוון מותגים בינלאומיים | סאן גלאס, משקפי שמש, eilat_nitan",
+        "discount": "חבר שלי | לא כולל הטבות מועדון לרבות צבירת נקודות ולא יכלול מבצעים לחברי מועדון<br/>אין כפל הטבות לעובדים/בני משפחה<br/> | משקפי שמש של מגוון מותגים בינלאומיים",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,321374",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -2915,9 +4702,18 @@
     "lon": 34.965711,
     "discounts": [
       {
+        "club": "HTzone",
+        "business_name": "נייקי | NIKE",
+        "discount": "9% הנחה",
+        "discount_url": "https://www.htzone.co.il/benefit/708/נייקי-|-NIKE/?sale_id=62",
+        "discount_type": "billing_discount",
+        "discount_value": 9.0,
+        "has_physical_store": true
+      },
+      {
         "club": "חבר שלי",
         "business_name": "NIKE",
-        "discount": "חבר שלי | *חל בחנויות NIKE, לא כולל חנויות עודפים. חנויות NIKE בישראל מופעלות ע\"י RETAILORS<br/>*לא כולל מבצעי השקות, הטבות מועדון ותשלום הצטרפות למועדון<br/>*לא תתאפשר צבירת נקודות מועדון<br/>*אין כפל הטבות לעובדים/בני משפחה | מותג הספורט המוביל בעולם | נייק, בגדי ספורט, נעלי ספורט, gil6, gan_dress, snickers, eilat_nitan, Youth_clothing",
+        "discount": "חבר שלי | *חל בחנויות NIKE, לא כולל חנויות עודפים. חנויות NIKE בישראל מופעלות ע\"י RETAILORS<br/>*לא כולל מבצעי השקות, הטבות מועדון ותשלום הצטרפות למועדון<br/>*לא תתאפשר צבירת נקודות מועדון<br/>*אין כפל הטבות לעובדים/בני משפחה | מותג הספורט המוביל בעולם",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,376294",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -3140,7 +4936,198 @@
     "type": "mall",
     "lat": 29.566988,
     "lon": 34.960589,
-    "discounts": [],
+    "discounts": [
+      {
+        "club": "חבר",
+        "business_name": "ביג אלקטריק",
+        "discount": "5%",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5904",
+        "discount_type": "billing_discount",
+        "discount_value": 5.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "ביג זול ללא גלוטן",
+        "discount": "2% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/48080/ביג-זול-ללא-גלוטן",
+        "discount_type": "billing_discount",
+        "discount_value": 2.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "גרעיני עפולה ביגדן",
+        "discount": "5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/45323/גרעיני-עפולה-ביגדן",
+        "discount_type": "billing_discount",
+        "discount_value": 5.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "ביג גרף- בית דפוס",
+        "discount": "5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/37477/ביג-גרף--בית-דפוס",
+        "discount_type": "billing_discount",
+        "discount_value": 5.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "Adama Queen Store- ביגוד לכל המשפחה",
+        "discount": "3.5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/37062/Adama-Queen-Store--ביגוד-לכל-המשפחה",
+        "discount_type": "billing_discount",
+        "discount_value": 3.5,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "הכי זול בעיר- ביגוד למשפחה",
+        "discount": "3.5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/35696/הכי-זול-בעיר--ביגוד-למשפחה",
+        "discount_type": "billing_discount",
+        "discount_value": 3.5,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "באבלס- ביגוד לכל המשפחה",
+        "discount": "3% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/34682/באבלס--ביגוד-לכל-המשפחה",
+        "discount_type": "billing_discount",
+        "discount_value": 3.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "עולם הביגוד והקמפינג",
+        "discount": "5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/61359/עולם-הביגוד-והקמפינג",
+        "discount_type": "billing_discount",
+        "discount_value": 5.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "נאיה פישן- הנעלה וביגוד למשפחה",
+        "discount": "3.5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/25620/נאיה-פישן--הנעלה-וביגוד-למשפחה",
+        "discount_type": "billing_discount",
+        "discount_value": 3.5,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "ש ב א- ביגוד והנעלה לגברים ולילדים",
+        "discount": "4% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/24185/ש-ב-א--ביגוד-והנעלה-לגברים-ולילדים",
+        "discount_type": "billing_discount",
+        "discount_value": 4.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "אנג'לו- ביגוד עבודה",
+        "discount": "4% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/20802/אנג'לו--ביגוד-עבודה",
+        "discount_type": "billing_discount",
+        "discount_value": 4.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "יונידרס - לובשים אופנה-ביגוד מקצועי",
+        "discount": "5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/7999/יונידרס---לובשים-אופנה-ביגוד-מקצועי",
+        "discount_type": "billing_discount",
+        "discount_value": 5.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר שלי",
+        "business_name": "ביג אלקטריק",
+        "discount": "חבר שלי | לא ניתן לשלם באתר הסחר של הרשת | עד 1,000 ₪  לעסקה, לא כולל מסכים עד 43 אינץ, מזגנים עד 1.25 כוח סוס (כולל), לא כולל סלולר וטכנולוגיה.לא ניתן לשלם באתר הסחר של הרשת<br/>",
+        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,354561",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר שלי",
+        "business_name": "ביג גרף",
+        "discount": "חבר שלי | ניתן לשלם עד 1000 ₪ לעסקה | הדפסות על מתנות, קנבס, פוסטרים ועוד <br/>",
+        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,288344",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": false
+      },
+      {
+        "club": "חבר טעמים",
+        "business_name": "ביגה",
+        "discount": "חבר טעמים | בית קפה  מסעדה חלבית - מכובד בישיבה במסעדה בלבד",
+        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,325697",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר טעמים",
+        "business_name": "ביגה",
+        "discount": "חבר טעמים | בית קפה  מסעדה חלבית",
+        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,325697",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר טעמים",
+        "business_name": "ביגה",
+        "discount": "חבר טעמים | בית קפה מסעדה חלבית",
+        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,325697",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר טעמים",
+        "business_name": "ביגה סטריט",
+        "discount": "חבר טעמים | בית קפה מסעדה חלבית",
+        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,392103",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "BUYME",
+        "business_name": "ביג אלקטריק",
+        "discount": "למימוש יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים: 6387*.",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=%D7%91%D7%99%D7%92+%D7%90%D7%9C%D7%A7%D7%98%D7%A8%D7%99%D7%A7#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME HOME DESIGN - בית ואווירה"
+        ],
+        "has_physical_store": true
+      },
+      {
+        "club": "BUYME",
+        "business_name": "ביג גרף",
+        "discount": "למימוש יש ליצור קשר בטלפון: 03-6967066 ולמסור את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. יש לציין את סוג החומר עליו תרצו להדפיס את התמונה, ולשלוח את תמונתכם למייל. ניתן לצרף למתנה כרטיס ברכה עם הקדשה אישית.",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=%D7%91%D7%99%D7%92+%D7%92%D7%A8%D7%A3#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME BABY- מגוון מתנות לידה",
+          "BUYME LOCAL – מתנות מקומיות",
+          "BUYME YNG - מתנה מושלמת לבני נוער"
+        ],
+        "has_physical_store": true
+      }
+    ],
     "source": "docs/data/businesses"
   },
   {
@@ -3149,7 +5136,35 @@
     "type": "mall",
     "lat": 29.565461,
     "lon": 34.960133,
-    "discounts": [],
+    "discounts": [
+      {
+        "club": "HOT",
+        "business_name": "BIG Electric",
+        "discount": "4% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/44204/BIG-Electric",
+        "discount_type": "billing_discount",
+        "discount_value": 4.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "Big emporio- מותגי אופנה",
+        "discount": "3% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/36116/Big-emporio--מותגי-אופנה",
+        "discount_type": "billing_discount",
+        "discount_value": 3.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "Big Side- מחשבים וסלולר",
+        "discount": "3.5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/27870/Big-Side--מחשבים-וסלולר",
+        "discount_type": "billing_discount",
+        "discount_value": 3.5,
+        "has_physical_store": true
+      }
+    ],
     "source": "docs/data/businesses"
   },
   {
@@ -3158,7 +5173,198 @@
     "type": "mall",
     "lat": 29.566407,
     "lon": 34.959795,
-    "discounts": [],
+    "discounts": [
+      {
+        "club": "חבר",
+        "business_name": "ביג אלקטריק",
+        "discount": "5%",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5904",
+        "discount_type": "billing_discount",
+        "discount_value": 5.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "ביג זול ללא גלוטן",
+        "discount": "2% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/48080/ביג-זול-ללא-גלוטן",
+        "discount_type": "billing_discount",
+        "discount_value": 2.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "גרעיני עפולה ביגדן",
+        "discount": "5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/45323/גרעיני-עפולה-ביגדן",
+        "discount_type": "billing_discount",
+        "discount_value": 5.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "ביג גרף- בית דפוס",
+        "discount": "5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/37477/ביג-גרף--בית-דפוס",
+        "discount_type": "billing_discount",
+        "discount_value": 5.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "Adama Queen Store- ביגוד לכל המשפחה",
+        "discount": "3.5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/37062/Adama-Queen-Store--ביגוד-לכל-המשפחה",
+        "discount_type": "billing_discount",
+        "discount_value": 3.5,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "הכי זול בעיר- ביגוד למשפחה",
+        "discount": "3.5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/35696/הכי-זול-בעיר--ביגוד-למשפחה",
+        "discount_type": "billing_discount",
+        "discount_value": 3.5,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "באבלס- ביגוד לכל המשפחה",
+        "discount": "3% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/34682/באבלס--ביגוד-לכל-המשפחה",
+        "discount_type": "billing_discount",
+        "discount_value": 3.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "עולם הביגוד והקמפינג",
+        "discount": "5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/61359/עולם-הביגוד-והקמפינג",
+        "discount_type": "billing_discount",
+        "discount_value": 5.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "נאיה פישן- הנעלה וביגוד למשפחה",
+        "discount": "3.5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/25620/נאיה-פישן--הנעלה-וביגוד-למשפחה",
+        "discount_type": "billing_discount",
+        "discount_value": 3.5,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "ש ב א- ביגוד והנעלה לגברים ולילדים",
+        "discount": "4% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/24185/ש-ב-א--ביגוד-והנעלה-לגברים-ולילדים",
+        "discount_type": "billing_discount",
+        "discount_value": 4.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "אנג'לו- ביגוד עבודה",
+        "discount": "4% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/20802/אנג'לו--ביגוד-עבודה",
+        "discount_type": "billing_discount",
+        "discount_value": 4.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "יונידרס - לובשים אופנה-ביגוד מקצועי",
+        "discount": "5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/7999/יונידרס---לובשים-אופנה-ביגוד-מקצועי",
+        "discount_type": "billing_discount",
+        "discount_value": 5.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר שלי",
+        "business_name": "ביג אלקטריק",
+        "discount": "חבר שלי | לא ניתן לשלם באתר הסחר של הרשת | עד 1,000 ₪  לעסקה, לא כולל מסכים עד 43 אינץ, מזגנים עד 1.25 כוח סוס (כולל), לא כולל סלולר וטכנולוגיה.לא ניתן לשלם באתר הסחר של הרשת<br/>",
+        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,354561",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר שלי",
+        "business_name": "ביג גרף",
+        "discount": "חבר שלי | ניתן לשלם עד 1000 ₪ לעסקה | הדפסות על מתנות, קנבס, פוסטרים ועוד <br/>",
+        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,288344",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": false
+      },
+      {
+        "club": "חבר טעמים",
+        "business_name": "ביגה",
+        "discount": "חבר טעמים | בית קפה  מסעדה חלבית - מכובד בישיבה במסעדה בלבד",
+        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,325697",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר טעמים",
+        "business_name": "ביגה",
+        "discount": "חבר טעמים | בית קפה  מסעדה חלבית",
+        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,325697",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר טעמים",
+        "business_name": "ביגה",
+        "discount": "חבר טעמים | בית קפה מסעדה חלבית",
+        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,325697",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר טעמים",
+        "business_name": "ביגה סטריט",
+        "discount": "חבר טעמים | בית קפה מסעדה חלבית",
+        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,392103",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "BUYME",
+        "business_name": "ביג אלקטריק",
+        "discount": "למימוש יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים: 6387*.",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=%D7%91%D7%99%D7%92+%D7%90%D7%9C%D7%A7%D7%98%D7%A8%D7%99%D7%A7#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME HOME DESIGN - בית ואווירה"
+        ],
+        "has_physical_store": true
+      },
+      {
+        "club": "BUYME",
+        "business_name": "ביג גרף",
+        "discount": "למימוש יש ליצור קשר בטלפון: 03-6967066 ולמסור את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. יש לציין את סוג החומר עליו תרצו להדפיס את התמונה, ולשלוח את תמונתכם למייל. ניתן לצרף למתנה כרטיס ברכה עם הקדשה אישית.",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=%D7%91%D7%99%D7%92+%D7%92%D7%A8%D7%A3#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME BABY- מגוון מתנות לידה",
+          "BUYME LOCAL – מתנות מקומיות",
+          "BUYME YNG - מתנה מושלמת לבני נוער"
+        ],
+        "has_physical_store": true
+      }
+    ],
     "source": "docs/data/businesses"
   },
   {
@@ -3187,7 +5393,7 @@
         "has_physical_store": true
       }
     ],
-    "source": "data/businesses/processed_physical_stores_geocoded.json"
+    "source": "docs/data/businesses"
   },
   {
     "id": "ChIJYw_kyfpxABUR_YM54-SCWcQ",
@@ -3206,7 +5412,7 @@
         "has_physical_store": true
       }
     ],
-    "source": "data/businesses/processed_physical_stores_geocoded.json"
+    "source": "docs/data/businesses"
   },
   {
     "id": "ChIJtwF7SYRzABURNUu-a0kkN08",
@@ -3225,7 +5431,7 @@
         "has_physical_store": true
       }
     ],
-    "source": "data/businesses/processed_physical_stores_geocoded.json"
+    "source": "docs/data/businesses"
   },
   {
     "id": "ChIJOY1t_5ZzABURFd_ELyDiuQc",
@@ -3244,7 +5450,7 @@
         "has_physical_store": true
       }
     ],
-    "source": "data/businesses/processed_physical_stores_geocoded.json"
+    "source": "docs/data/businesses"
   },
   {
     "id": "ChIJ29zmhQRuABUR132kjML6HxY",
@@ -3263,7 +5469,7 @@
         "has_physical_store": true
       }
     ],
-    "source": "data/businesses/processed_physical_stores_geocoded.json"
+    "source": "docs/data/businesses"
   },
   {
     "id": "ChIJJWHOaANuABURI82EAvGxfLU",
@@ -3282,7 +5488,7 @@
         "has_physical_store": true
       }
     ],
-    "source": "data/businesses/processed_physical_stores_geocoded.json"
+    "source": "docs/data/businesses"
   },
   {
     "id": "ChIJcXPzfEpvABURQ8GQgegwBBI",
@@ -3299,9 +5505,35 @@
         "discount_type": "billing_discount",
         "discount_value": 10.0,
         "has_physical_store": true
+      },
+      {
+        "club": "חבר טעמים",
+        "business_name": "איטליאנו",
+        "discount": "חבר טעמים | מזון איכות וטבע",
+        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,324410",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "BUYME",
+        "business_name": "אנו",
+        "discount": "למימוש השובר יש להציג מספר שובר באמצעות SMS/ מייל/ שובר מודפס בקופה. לפרטים נוספים: 03-7457808",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=%D7%90%D7%A0%D7%95#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME BABY- מגוון מתנות לידה",
+          "BUYME LOCAL – מתנות מקומיות",
+          "BUYME YNG - מתנה מושלמת לבני נוער",
+          "BUYME MOMENTS - מגוון חוויות",
+          "BUYME LIVE – מתנות מעולם התרבות"
+        ],
+        "has_physical_store": true
       }
     ],
-    "source": "data/businesses/processed_physical_stores_geocoded.json"
+    "source": "docs/data/businesses"
   },
   {
     "id": "ChIJi6MtBb9zABURVTzN-hSaG30",
@@ -3318,9 +5550,18 @@
         "discount_type": "billing_discount",
         "discount_value": 10.0,
         "has_physical_store": true
+      },
+      {
+        "club": "חבר שלי",
+        "business_name": "גלי",
+        "discount": "חבר שלי | לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת. | נעלי נשים, גברים וילדים",
+        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,347881",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": false
       }
     ],
-    "source": "data/businesses/processed_physical_stores_geocoded.json"
+    "source": "docs/data/businesses"
   },
   {
     "id": "ChIJx6f9sQVuABURtVd_bxMB1t0",
@@ -3339,7 +5580,7 @@
         "has_physical_store": true
       }
     ],
-    "source": "data/businesses/processed_physical_stores_geocoded.json"
+    "source": "docs/data/businesses"
   },
   {
     "id": "ChIJ27JyHfhxABURhnrxrIS-FB8",
@@ -3356,9 +5597,18 @@
         "discount_type": "billing_discount",
         "discount_value": 3.5,
         "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "בלייזר",
+        "discount": "3.5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/55726/בלייזר",
+        "discount_type": "billing_discount",
+        "discount_value": 3.5,
+        "has_physical_store": true
       }
     ],
-    "source": "data/businesses/processed_physical_stores_geocoded.json"
+    "source": "docs/data/businesses"
   },
   {
     "id": "ChIJofkMZv9xABURTb_8hVrt6so",
@@ -3377,7 +5627,7 @@
         "has_physical_store": true
       }
     ],
-    "source": "data/businesses/processed_physical_stores_geocoded.json"
+    "source": "docs/data/businesses"
   },
   {
     "id": "ChIJwRTbFgRuABURWRVPTWf2IUo",
@@ -3396,7 +5646,7 @@
         "has_physical_store": true
       }
     ],
-    "source": "data/businesses/processed_physical_stores_geocoded.json"
+    "source": "docs/data/businesses"
   },
   {
     "id": "ChIJNwuIq_lxABURnBgic7sA758",
@@ -3415,7 +5665,7 @@
         "has_physical_store": true
       }
     ],
-    "source": "data/businesses/processed_physical_stores_geocoded.json"
+    "source": "docs/data/businesses"
   },
   {
     "id": "ChIJC155JONxABUR2_Z3VfiVHf4",
@@ -3434,7 +5684,7 @@
         "has_physical_store": true
       }
     ],
-    "source": "data/businesses/processed_physical_stores_geocoded.json"
+    "source": "docs/data/businesses"
   },
   {
     "id": "ChIJyTiXm6JzABURRnsik2ELq0k",
@@ -3453,7 +5703,7 @@
         "has_physical_store": true
       }
     ],
-    "source": "data/businesses/processed_physical_stores_geocoded.json"
+    "source": "docs/data/businesses"
   },
   {
     "id": "ChIJBRJZuPhxABURwszB8c2iTCY",
@@ -3472,7 +5722,7 @@
         "has_physical_store": true
       }
     ],
-    "source": "data/businesses/processed_physical_stores_geocoded.json"
+    "source": "docs/data/businesses"
   },
   {
     "id": "ChIJH-IPxIZvABURUXW_z2n5CAA",
@@ -3491,7 +5741,7 @@
         "has_physical_store": true
       }
     ],
-    "source": "data/businesses/processed_physical_stores_geocoded.json"
+    "source": "docs/data/businesses"
   },
   {
     "id": "ChIJuaUcuWVzABUR_BdkHUFKp34",
@@ -3508,9 +5758,18 @@
         "discount_type": "billing_discount",
         "discount_value": 3.5,
         "has_physical_store": true
+      },
+      {
+        "club": "חבר שלי",
+        "business_name": "גלי",
+        "discount": "חבר שלי | לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת. | נעלי נשים, גברים וילדים",
+        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,347881",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": false
       }
     ],
-    "source": "data/businesses/processed_physical_stores_geocoded.json"
+    "source": "docs/data/businesses"
   },
   {
     "id": "ChIJQzXcPQBzABURpw-YDIktrMM",
@@ -3527,9 +5786,27 @@
         "discount_type": "billing_discount",
         "discount_value": 3.5,
         "has_physical_store": true
+      },
+      {
+        "club": "חבר שלי",
+        "business_name": "גלי",
+        "discount": "חבר שלי | לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת. | נעלי נשים, גברים וילדים",
+        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,347881",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": false
+      },
+      {
+        "club": "חבר טעמים",
+        "business_name": "פאפי",
+        "discount": "חבר טעמים | מסעדת בשרים",
+        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,398677",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": true
       }
     ],
-    "source": "data/businesses/processed_physical_stores_geocoded.json"
+    "source": "docs/data/businesses"
   },
   {
     "id": "ChIJZbCPlv5xABUR7cDQgB9O2LM",
@@ -3541,14 +5818,14 @@
       {
         "club": "חבר טעמים",
         "business_name": "קאזה דו ברזיל",
-        "discount": "חבר טעמים | מסעדת גריל ברזילאית | מסעדה",
+        "discount": "חבר טעמים | מסעדת גריל ברזילאית",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
       }
     ],
-    "source": "data/businesses/processed_physical_stores_geocoded.json"
+    "source": "docs/data/businesses"
   },
   {
     "id": "ChIJmY5N7e9xABURuSIAsmdOK-I",
@@ -3560,7 +5837,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "ראנץ' האוס",
-        "discount": "חבר טעמים | בשרי | מסעדה",
+        "discount": "חבר טעמים | בשרי",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,384187",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -3569,7 +5846,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "ראנץ' האוס",
-        "discount": "חבר טעמים | מסעדת בשרים | מסעדה",
+        "discount": "חבר טעמים | מסעדת בשרים",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,384188",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -3578,14 +5855,14 @@
       {
         "club": "חבר טעמים",
         "business_name": "ראנץ' האוס",
-        "discount": "חבר טעמים | מסעדת בשרים | מסעדה",
+        "discount": "חבר טעמים | מסעדת בשרים",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,384189",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
       }
     ],
-    "source": "data/businesses/processed_physical_stores_geocoded.json"
+    "source": "docs/data/businesses"
   },
   {
     "id": "ChIJiyc7pO9xABURrR_Uef_LXkg",
@@ -3597,14 +5874,23 @@
       {
         "club": "חבר טעמים",
         "business_name": "לה קוצ'ינה",
-        "discount": "חבר טעמים | מסעדה איטלקית | מסעדה",
+        "discount": "חבר טעמים | מסעדה איטלקית",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,384191",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר טעמים",
+        "business_name": "לה קוצ'ינה קיוסק",
+        "discount": "חבר טעמים | מסעדה איטלקית",
+        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,384195",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
       }
     ],
-    "source": "data/businesses/processed_physical_stores_geocoded.json"
+    "source": "docs/data/businesses"
   },
   {
     "id": "ChIJq6paN_dxABURefa3RMWqrhc",
@@ -3616,7 +5902,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה אופטימי",
-        "discount": "חבר טעמים | בית קפה מסעדה | בית קפה",
+        "discount": "חבר טעמים | בית קפה מסעדה",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -3639,7 +5925,7 @@
         "has_physical_store": true
       }
     ],
-    "source": "data/businesses/processed_physical_stores_geocoded.json"
+    "source": "docs/data/businesses"
   },
   {
     "id": "ChIJ-ZCCzvpxABUR7zbJRqsUZ3A",
@@ -3651,14 +5937,14 @@
       {
         "club": "חבר טעמים",
         "business_name": "מייקס פלייס",
-        "discount": "חבר טעמים | בר מסעדה הופעות חיות וספורט | בר-פאב",
+        "discount": "חבר טעמים | בר מסעדה הופעות חיות וספורט",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
       }
     ],
-    "source": "data/businesses/processed_physical_stores_geocoded.json"
+    "source": "docs/data/businesses"
   },
   {
     "id": "ChIJJxFZuPhxABURsR7_fPAVhdQ",
@@ -3670,14 +5956,14 @@
       {
         "club": "חבר טעמים",
         "business_name": "קפה בולווארד",
-        "discount": "חבר טעמים | בית קפה חלבי | בית קפה",
+        "discount": "חבר טעמים | בית קפה חלבי",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,384193",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
       }
     ],
-    "source": "data/businesses/processed_physical_stores_geocoded.json"
+    "source": "docs/data/businesses"
   },
   {
     "id": "ChIJ9a24gfBxABURnubtvKN_qls",
@@ -3689,14 +5975,23 @@
       {
         "club": "חבר טעמים",
         "business_name": "פיצה עגבניה אילת",
-        "discount": "חבר טעמים | פיצה איטלקית ביתית | מסעדה",
+        "discount": "חבר טעמים | פיצה איטלקית ביתית",
+        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,289326",
+        "discount_type": "rechargeable_card",
+        "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר טעמים",
+        "business_name": "פיצה עגבניה",
+        "discount": "חבר טעמים | פיצה איטלקית ביתית",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,289326",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
       }
     ],
-    "source": "data/businesses/processed_physical_stores_geocoded.json"
+    "source": "docs/data/businesses"
   },
   {
     "id": "ChIJXUO5BVuzAhUROGdGE7LLyWk",
@@ -3708,14 +6003,14 @@
       {
         "club": "חבר טעמים",
         "business_name": "שאטו בר מסעדה",
-        "discount": "חבר טעמים | בר מסעדת שף בשרית | מסעדת שף",
+        "discount": "חבר טעמים | בר מסעדת שף בשרית",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
       }
     ],
-    "source": "data/businesses/processed_physical_stores_geocoded.json"
+    "source": "docs/data/businesses"
   },
   {
     "id": "ChIJP9RD0n5xABURK123cauXQWo",
@@ -3727,14 +6022,14 @@
       {
         "club": "חבר טעמים",
         "business_name": "דוביל'ה",
-        "discount": "חבר טעמים | מסעדת מזון מהיר סנדוויצ'ים | מסעדה",
+        "discount": "חבר טעמים | מסעדת מזון מהיר סנדוויצ'ים",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
       }
     ],
-    "source": "data/businesses/processed_physical_stores_geocoded.json"
+    "source": "docs/data/businesses"
   },
   {
     "id": "ChIJhyWvx3ZxABURCxtvDqpW5Cg",
@@ -3746,14 +6041,14 @@
       {
         "club": "חבר טעמים",
         "business_name": "מסעדת CASA LUNA",
-        "discount": "חבר טעמים | מסעדה איטלקית | מסעדה",
+        "discount": "חבר טעמים | מסעדה איטלקית",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,333723",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
       }
     ],
-    "source": "data/businesses/processed_physical_stores_geocoded.json"
+    "source": "docs/data/businesses"
   },
   {
     "id": "ChIJjxJMFfpxABURUsF1DeYMLI0",
@@ -3765,14 +6060,14 @@
       {
         "club": "חבר טעמים",
         "business_name": "ברביס",
-        "discount": "חבר טעמים | דיינר אמריקאי בשרי | מסעדה",
+        "discount": "חבר טעמים | דיינר אמריקאי בשרי",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,359786",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
       }
     ],
-    "source": "data/businesses/processed_physical_stores_geocoded.json"
+    "source": "docs/data/businesses"
   },
   {
     "id": "ChIJIS0HampuABURhw2EVatKn9Q",
@@ -3784,14 +6079,14 @@
       {
         "club": "חבר טעמים",
         "business_name": "יקב הים האדום",
-        "discount": "חבר טעמים | יקב בוטיק משפחתי | יקבים ומבשלות בירה",
+        "discount": "חבר טעמים | יקב בוטיק משפחתי",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
       }
     ],
-    "source": "data/businesses/processed_physical_stores_geocoded.json"
+    "source": "docs/data/businesses"
   },
   {
     "id": "ChIJ92Y-bdhxABURwk0qSXQDoSE",
@@ -3803,14 +6098,14 @@
       {
         "club": "חבר טעמים",
         "business_name": "CAFE WIFI",
-        "discount": "חבר טעמים | בית קפה חלבי | בית קפה",
+        "discount": "חבר טעמים | בית קפה חלבי",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,364691",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
       }
     ],
-    "source": "data/businesses/processed_physical_stores_geocoded.json"
+    "source": "docs/data/businesses"
   },
   {
     "id": "ChIJm6l9wWJxABURodY07jnAV3g",
@@ -3822,14 +6117,14 @@
       {
         "club": "חבר טעמים",
         "business_name": "ניני קאי",
-        "discount": "חבר טעמים | מסעדה אסייתית, מוקפצים, סושי | מסעדה",
+        "discount": "חבר טעמים | מסעדה אסייתית, מוקפצים, סושי",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,384186",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
       }
     ],
-    "source": "data/businesses/processed_physical_stores_geocoded.json"
+    "source": "docs/data/businesses"
   },
   {
     "id": "ChIJBblgTOVxABUR3F56YbkFrxs",
@@ -3841,14 +6136,14 @@
       {
         "club": "חבר טעמים",
         "business_name": "פאגו Fish&Grill",
-        "discount": "חבר טעמים | מסעדת שף דגים,  בשרים | מסעדה",
+        "discount": "חבר טעמים | מסעדת שף דגים,  בשרים",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,398677",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
       }
     ],
-    "source": "data/businesses/processed_physical_stores_geocoded.json"
+    "source": "docs/data/businesses"
   },
   {
     "id": "ChIJm5z3j7txABUR58p1A6Jk_Os",
@@ -3860,14 +6155,14 @@
       {
         "club": "חבר טעמים",
         "business_name": "גריזלי שווארמה",
-        "discount": "חבר טעמים | שווארמה, שניצל ופלאפל | מסעדה",
+        "discount": "חבר טעמים | שווארמה, שניצל ופלאפל",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
       }
     ],
-    "source": "data/businesses/processed_physical_stores_geocoded.json"
+    "source": "docs/data/businesses"
   },
   {
     "id": "ChIJRc8-hb5zABUREao4Fst4CUQ",
@@ -3891,7 +6186,7 @@
         "has_physical_store": true
       }
     ],
-    "source": "data/businesses/processed_physical_stores_geocoded.json"
+    "source": "docs/data/businesses"
   },
   {
     "id": "ChIJ08HxxeRxABURMEdt5is2Pt0",
@@ -3915,7 +6210,7 @@
         "has_physical_store": true
       }
     ],
-    "source": "data/businesses/processed_physical_stores_geocoded.json"
+    "source": "docs/data/businesses"
   },
   {
     "id": "ChIJRXgsInFxABUR9JrDBbsZC4w",
@@ -3939,7 +6234,7 @@
         "has_physical_store": true
       }
     ],
-    "source": "data/businesses/processed_physical_stores_geocoded.json"
+    "source": "docs/data/businesses"
   },
   {
     "id": "ChIJySXyBL5zABURoyHil4sOtzo",
@@ -3963,7 +6258,7 @@
         "has_physical_store": true
       }
     ],
-    "source": "data/businesses/processed_physical_stores_geocoded.json"
+    "source": "docs/data/businesses"
   },
   {
     "id": "ChIJmavl5PhxABUREvlJ29zG0yc",
@@ -3987,7 +6282,7 @@
         "has_physical_store": true
       }
     ],
-    "source": "data/businesses/processed_physical_stores_geocoded.json"
+    "source": "docs/data/businesses"
   },
   {
     "id": "ChIJNezBi5dxABUR-Un49nVmBC8",
@@ -4012,6 +6307,6 @@
         "has_physical_store": true
       }
     ],
-    "source": "data/businesses/processed_physical_stores_geocoded.json"
+    "source": "docs/data/businesses"
   }
 ]

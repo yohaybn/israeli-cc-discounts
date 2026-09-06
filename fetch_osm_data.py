@@ -16,7 +16,7 @@ def get_region(lat, lon):
 
 def fetch_and_split_israel_businesses():
     # Output directory (docs/data for GitHub Pages site root)
-    output_dir = os.path.join("docs", "data", "businesses")
+    output_dir = os.path.join( "data", "businesses")
     os.makedirs(output_dir, exist_ok=True)
 
     # שאילתת Overpass מתוקנת ומסודרת

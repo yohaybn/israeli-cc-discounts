@@ -16,7 +16,7 @@ import math
 import os
 import re
 from typing import Any, Dict, List
-
+from rapidfuzz import fuzz
 try:
     from rapidfuzz.fuzz import token_set_ratio
 except Exception:
@@ -41,6 +41,50 @@ except Exception:
             sb = sb + " " + " ".join(sorted(tb - common))
         ratio = SequenceMatcher(None, sa, sb).ratio()
         return int(ratio * 100)
+
+
+# Fuzzy matching: minimum similarity (0-100) for a business name to match a query.
+FUZZY_MATCH_THRESHOLD = 72
+
+
+def normalize_hebrew(text: str) -> str:
+    """Normalize text for comparison: lowercase and strip Hebrew niqqud
+    (vowel points) and common punctuation."""
+    text = text.lower()
+    # Remove Hebrew niqqud/vowel points (U+0591-U+05C7) and common punctuation/whitespace
+    text = re.sub(r"[\u0591-\u05c7]", "", text)
+    text = re.sub(r'["״\'׳\-–—_.,/\\|]', " ", text)
+    return " ".join(text.split()).strip()
+
+
+def fuzzy_match(query: str, name: str) -> bool:
+    """Return True if `query` approximately matches `name`.
+
+    Combines substring matching with fuzzy string similarity so that
+    misspelled business names (e.g. 'סטמצקי' for 'סטימצקי') still match.
+    """
+    q = normalize_hebrew(query)
+    n = normalize_hebrew(name)
+
+    if not q:
+        return True
+
+    # Exact substring match after normalization
+    if q in n:
+        return True
+
+    # Check if query words appear in name
+    q_words = q.split()
+    if len(q_words) > 1 and all(w in n for w in q_words):
+        return True
+
+    # Fuzzy match: overall similarity plus token-based similarity
+    score = max(
+        fuzz.ratio(q, n),
+        fuzz.token_set_ratio(q, n),
+        fuzz.partial_ratio(q, n) if len(q) >= 4 else 0,
+    )
+    return score >= FUZZY_MATCH_THRESHOLD
 
 
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
@@ -253,6 +297,7 @@ def build_businesses_with_discounts(stores: List[Dict], discounts: List[Dict], g
             continue
 
         matched = []
+        
         for disc in discounts:
             if not isinstance(disc, dict):
                 continue
@@ -260,7 +305,7 @@ def build_businesses_with_discounts(stores: List[Dict], discounts: List[Dict], g
             store_name = (store.get("name") or "").strip().lower()
             if not disc_name or not store_name:
                 continue
-            if disc_name == store_name:
+            if store_name in disc_name or disc_name in store_name:
                 matched.append(disc)
 
         add_store_entry(store, matched, source="docs/data/businesses")
