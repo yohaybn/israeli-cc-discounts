@@ -3,818 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nearby Businesses Map</title>
+  <title>עסקים קרובים ומפה | DiscountFinder</title>
+  <meta name="description" content="מפת עסקים והטבות קרובות לפי מיקום - חבר, HOT, HTzone ו-BUYME">
+  <meta name="theme-color" content="#0b0f19">
 
   <!-- Leaflet CSS -->
-<link 
-  rel="stylesheet" 
-  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-  crossorigin=""
-/>
+  <link 
+    rel="stylesheet" 
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  />
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&family=Rubik:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <style>
-    :root {
-      --bg-main: #0b0f19;
-      --bg-card: rgba(15, 23, 42, 0.78);
-      --bg-card-strong: rgba(17, 24, 39, 0.96);
-      --bg-hover: rgba(30, 41, 59, 0.96);
-      --bg-glass: rgba(15, 23, 42, 0.7);
-      --bg-surface: rgba(148, 163, 184, 0.08);
-      --bg-input: rgba(15, 23, 42, 0.9);
-      --text-primary: #f8fafc;
-      --text-secondary: #cbd5e1;
-      --text-muted: #94a3b8;
-      --text-accent: #38bdf8;
-      --border-subtle: rgba(148, 163, 184, 0.18);
-      --border-strong: rgba(148, 163, 184, 0.28);
-      --shadow-soft: 0 10px 30px rgba(2, 6, 23, 0.38);
-      --primary-gradient: linear-gradient(135deg, #38bdf8, #2563eb 50%, #818cf8);
-      --accent-gradient: linear-gradient(135deg, #f59e0b, #f97316);
-      --success: #34d399;
-      --danger: #f87171;
-      --map-ring: #f59e0b;
-    }
-
-    * { box-sizing: border-box; }
-
-    html {
-      scroll-behavior: smooth;
-      background: var(--bg-main);
-      color: var(--text-primary);
-      font-family: 'Heebo', 'Rubik', sans-serif;
-      direction: rtl;
-      text-align: right;
-    }
-
-    body {
-      margin: 0;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      background:
-        radial-gradient(circle at top right, rgba(56, 189, 248, 0.16), transparent 20%),
-        radial-gradient(circle at bottom left, rgba(249, 115, 22, 0.14), transparent 25%),
-        var(--bg-main);
-      color: var(--text-primary);
-      overflow-x: hidden;
-    }
-
-    .app-background {
-      position: fixed;
-      inset: 0;
-      pointer-events: none;
-      z-index: 0;
-      overflow: hidden;
-    }
-
-    .glow-orb {
-      position: absolute;
-      border-radius: 50%;
-      filter: blur(120px);
-      opacity: 0.18;
-      animation: orbFloat 20s infinite alternate ease-in-out;
-    }
-
-    .orb-1 {
-      top: -10%;
-      right: 12%;
-      width: 520px;
-      height: 520px;
-      background: radial-gradient(circle, #38bdf8, #2563eb);
-    }
-
-    .orb-2 {
-      top: 22%;
-      left: -8%;
-      width: 560px;
-      height: 560px;
-      background: radial-gradient(circle, #f43f5e, #7c2d12);
-      animation-delay: -5s;
-    }
-
-    .orb-3 {
-      bottom: -15%;
-      right: 30%;
-      width: 540px;
-      height: 540px;
-      background: radial-gradient(circle, #f59e0b, #b45309);
-      animation-delay: -10s;
-    }
-
-    @keyframes orbFloat {
-      0% { transform: translate(0, 0) scale(1); }
-      50% { transform: translate(28px, -20px) scale(1.08); }
-      100% { transform: translate(-18px, 28px) scale(0.95); }
-    }
-
-    #header {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      display: flex;
-      justify-content: center;
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      background: rgba(8, 12, 20, 0.64);
-      border-bottom: 1px solid var(--border-subtle);
-      box-shadow: 0 8px 24px rgba(2, 6, 23, 0.2);
-      padding: 14px 20px;
-    }
-
-    #controls-top, #controls-radius {
-      width: min(1280px, 100%);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 14px;
-      margin: 0 auto;
-    }
-
-    #controls-top {
-      margin-bottom: 8px;
-    }
-
-    .header-nav {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      flex-wrap: wrap;
-    }
-
-    .nav-link {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 9px 14px;
-      border-radius: 999px;
-      border: 1px solid rgba(56, 189, 248, 0.2);
-      background: rgba(15, 23, 42, 0.9);
-      color: var(--text-secondary);
-      font-size: 0.8rem;
-      font-weight: 700;
-      text-decoration: none;
-      transition: 0.2s ease;
-      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
-    }
-
-    .nav-link:hover,
-    .nav-link.active {
-      background: linear-gradient(135deg, rgba(56, 189, 248, 0.18), rgba(37, 99, 235, 0.18));
-      border-color: rgba(56, 189, 248, 0.4);
-      color: #fff;
-    }
-
-    #status {
-      flex: 1;
-      min-height: 18px;
-      font-weight: 700;
-      font-size: 0.95rem;
-      color: var(--text-primary);
-      letter-spacing: 0.01em;
-    }
-
-    .brand {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      margin-left: auto;
-      padding: 0.2rem 0.5rem;
-    }
-
-    .brand-icon {
-      width: 42px;
-      height: 42px;
-      border-radius: 12px;
-      display: grid;
-      place-items: center;
-      background: var(--primary-gradient);
-      color: white;
-      box-shadow: 0 12px 28px rgba(37, 99, 235, 0.35);
-    }
-
-    .brand-text {
-      display: flex;
-      flex-direction: column;
-      gap: 2px;
-    }
-
-    .brand-title {
-      font-family: 'Rubik', 'Heebo', sans-serif;
-      font-size: 1.25rem;
-      line-height: 1.1;
-      font-weight: 800;
-      letter-spacing: -0.03em;
-      color: #f8fafc;
-      margin: 0;
-    }
-
-    .brand-accent {
-      background: linear-gradient(135deg, #38bdf8, #818cf8);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-      display: inline-block;
-    }
-
-    .brand-subtitle {
-      margin: 0;
-      font-size: 0.73rem;
-      color: var(--text-muted);
-      letter-spacing: 0.01em;
-    }
-
-    .btn {
-      appearance: none;
-      border: 1px solid rgba(56, 189, 248, 0.3);
-      background: var(--primary-gradient);
-      color: white;
-      padding: 10px 16px;
-      border-radius: 12px;
-      cursor: pointer;
-      font-weight: 700;
-      font-size: 0.83rem;
-      line-height: 1;
-      transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
-      box-shadow: 0 12px 24px rgba(37, 99, 235, 0.2);
-      white-space: nowrap;
-    }
-
-    .btn:hover {
-      transform: translateY(-1px);
-      filter: brightness(1.04);
-    }
-
-    .btn.active {
-      background: linear-gradient(135deg, #f59e0b, #f97316);
-      border-color: rgba(249, 115, 22, 0.45);
-      box-shadow: 0 12px 24px rgba(249, 115, 22, 0.2);
-    }
-
-    #controls-radius label {
-      color: var(--text-secondary);
-      font-size: 0.9rem;
-      font-weight: 600;
-      flex-shrink: 0;
-    }
-
-    #radius-slider-container {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      flex: 1;
-      min-width: 200px;
-    }
-
-    #radius-slider {
-      flex: 1;
-      accent-color: #38bdf8;
-      cursor: pointer;
-    }
-
-    #radius-value {
-      min-width: 40px;
-      text-align: center;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 6px 10px;
-      border-radius: 999px;
-      background: rgba(56, 189, 248, 0.1);
-      border: 1px solid rgba(56, 189, 248, 0.25);
-      color: var(--text-primary);
-      font-weight: 700;
-      font-size: 0.82rem;
-    }
-
-    #map-container {
-      position: relative;
-      width: min(1280px, calc(100% - 28px));
-      margin: 18px auto 22px;
-      border: 1px solid var(--border-subtle);
-      border-radius: 24px;
-      overflow: hidden;
-      background: rgba(15, 23, 42, 0.72);
-      box-shadow: var(--shadow-soft);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      z-index: 1;
-    }
-
-    #map {
-      height: 42vh;
-      width: 100%;
-      min-height: 320px;
-      background: #0f172a;
-    }
-
-    #filter-row {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      width: min(1280px, calc(100% - 28px));
-      margin: 14px auto 0;
-      padding: 12px 14px;
-      background: rgba(15, 23, 42, 0.7);
-      border: 1px solid var(--border-subtle);
-      border-radius: 18px;
-      box-shadow: 0 8px 20px rgba(2, 6, 23, 0.12);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-    }
-
-    #controls-radius {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      gap: 12px;
-      background: rgba(148, 163, 184, 0.04);
-      border: 1px solid var(--border-subtle);
-      border-radius: 16px;
-      padding: 10px 16px;
-      margin-top: 2px;
-    }
-
-    .club-filters-container {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-
-    .utility-row {
-      display: flex;
-      justify-content: flex-end;
-      width: min(1280px, calc(100% - 28px));
-      margin: 12px auto 0;
-    }
-
-    .utility-row .btn {
-      width: auto;
-      min-width: 180px;
-      justify-content: center;
-    }
-
-    .filters-group-label {
-      color: var(--text-secondary);
-      font-size: 0.78rem;
-      font-weight: 600;
-    }
-
-    .club-filters-group {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      flex-wrap: wrap;
-    }
-
-    .filter-chip {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 0.5rem 0.85rem;
-      border-radius: 999px;
-      background: rgba(148, 163, 184, 0.05);
-      border: 1px solid rgba(148, 163, 184, 0.18);
-      color: var(--text-secondary);
-      font-family: inherit;
-      font-size: 0.88rem;
-      font-weight: 700;
-      cursor: pointer;
-      transition: 0.2s ease;
-      user-select: none;
-      min-height: 40px;
-    }
-
-    .filter-chip:hover {
-      background: rgba(148, 163, 184, 0.1);
-      border-color: rgba(148, 163, 184, 0.3);
-      color: var(--text-primary);
-    }
-
-    .filter-chip.active {
-      background: rgba(56, 189, 248, 0.15);
-      border-color: rgba(56, 189, 248, 0.38);
-      color: #f8fafc;
-      box-shadow: 0 0 16px rgba(56, 189, 248, 0.18);
-    }
-
-    .filter-chip[data-club="MCC"].active {
-      background: rgba(245, 158, 11, 0.12);
-      border-color: rgba(245, 158, 11, 0.4);
-      box-shadow: 0 0 16px rgba(245, 158, 11, 0.18);
-    }
-    .filter-chip[data-club="HOT"].active {
-      background: rgba(244, 63, 94, 0.12);
-      border-color: rgba(244, 63, 94, 0.4);
-      box-shadow: 0 0 16px rgba(244, 63, 94, 0.18);
-    }
-    .filter-chip[data-club="HTzone"].active {
-      background: rgba(6, 182, 212, 0.12);
-      border-color: rgba(6, 182, 212, 0.4);
-      box-shadow: 0 0 16px rgba(6, 182, 212, 0.18);
-    }
-    .filter-chip[data-club="BUYME"].active {
-      background: rgba(59, 130, 246, 0.12);
-      border-color: rgba(59, 130, 246, 0.4);
-      box-shadow: 0 0 16px rgba(59, 130, 246, 0.18);
-    }
-
-    .chip-checkbox {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 18px;
-      height: 18px;
-      border-radius: 6px;
-      background: rgba(255,255,255,0.08);
-      border: 1px solid rgba(255, 255, 255, 0.18);
-      color: transparent;
-      font-size: 0.7rem;
-      font-weight: 900;
-      line-height: 1;
-      flex-shrink: 0;
-    }
-
-    .filter-chip.active .chip-checkbox {
-      background: #f8fafc;
-      border-color: #f8fafc;
-      color: #0b0f19;
-    }
-
-    .chip-name {
-      white-space: nowrap;
-    }
-
-    .club-badge {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-width: 46px;
-      padding: 5px 8px;
-      border-radius: 8px;
-      color: white;
-      font-size: 0.72rem;
-      font-weight: 800;
-      line-height: 1;
-    }
-
-    .club-badge.mcc { background: linear-gradient(135deg, #f59e0b, #d97706); color: #1f2937; }
-    .club-badge.hot { background: linear-gradient(135deg, #f43f5e, #e11d48); }
-    .club-badge.htzone { background: linear-gradient(135deg, #06b6d4, #2563eb); }
-    .club-badge.buyme { background: linear-gradient(135deg, #60a5fa, #2563eb); }
-
-    .club-logo-tag {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-width: 42px;
-      padding: 0.18rem 0.38rem;
-      border-radius: 8px;
-      font-size: 0.72rem;
-      font-weight: 800;
-      line-height: 1.2;
-      font-family: 'Rubik', 'Heebo', sans-serif;
-    }
-
-    .mcc-tag { background: linear-gradient(135deg, #f59e0b, #d97706); color: #1e1b18; }
-    .hot-tag { background: linear-gradient(135deg, #f43f5e, #e11d48); color: #fff; }
-    .htzone-tag { background: linear-gradient(135deg, #06b6d4, #2563eb); color: #fff; }
-    .buyme-tag { background: linear-gradient(135deg, #60a5fa, #2563eb); color: #fff; }
-
-    #business-list-container {
-      max-height: 34vh;
-      overflow-y: auto;
-      background: rgba(15, 23, 42, 0.8);
-      border-top: 1px solid var(--border-subtle);
-      scrollbar-width: thin;
-      scrollbar-color: rgba(148, 163, 184, 0.5) transparent;
-      padding: 12px 14px 18px;
-    }
-
-    #business-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 12px;
-    }
-
-    .business-item {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      gap: 12px;
-      padding: 16px 16px 12px;
-      border-radius: 18px;
-      border: 1px solid rgba(148, 163, 184, 0.18);
-      background: rgba(15, 23, 42, 0.8);
-      box-shadow: 0 8px 22px rgba(2, 6, 23, 0.14);
-      transition: border-color 0.2s ease, transform 0.2s ease, background 0.2s ease;
-      cursor: pointer;
-      min-height: 190px;
-    }
-
-    .business-item:hover {
-      background: rgba(30, 41, 59, 0.56);
-      border-color: rgba(56, 189, 248, 0.26);
-      transform: translateY(-2px);
-    }
-
-    .business-item:last-child {
-      border-bottom: none;
-    }
-
-    .business-info {
-      min-width: 0;
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-
-    .business-info h3 {
-      margin: 0;
-      font-size: 1.04rem;
-      line-height: 1.35;
-      font-weight: 700;
-      color: var(--text-primary);
-      word-break: break-word;
-    }
-
-    .business-meta {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 8px;
-      font-size: 0.82rem;
-      color: var(--text-secondary);
-    }
-
-    .discount-list {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-      margin-top: 2px;
-    }
-
-    .discount-line {
-      display: grid;
-      grid-template-columns: auto 1fr auto;
-      align-items: center;
-      gap: 8px;
-      width: 100%;
-      padding: 7px 9px;
-      border-radius: 10px;
-      background: rgba(148, 163, 184, 0.05);
-      border: 1px solid rgba(148, 163, 184, 0.12);
-    }
-
-    .discount-line strong {
-      color: var(--text-primary);
-      font-size: 0.76rem;
-      font-weight: 700;
-      display: block;
-      max-width: 100%;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      cursor: help;
-      word-break: break-word;
-    }
-
-    .discount-line a {
-      color: #7dd3fc;
-      text-decoration: none;
-      font-size: 0.72rem;
-      font-weight: 700;
-      white-space: nowrap;
-    }
-
-    .business-item-footer {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 10px;
-      margin-top: auto;
-    }
-
-    .distance {
-      font-weight: 800;
-      color: #34d399;
-      letter-spacing: 0.01em;
-      font-size: 0.82rem;
-    }
-
-    .list-btn, .map-btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      background: linear-gradient(135deg, #38bdf8, #2563eb);
-      border: 1px solid rgba(56, 189, 248, 0.35);
-      color: white;
-      text-decoration: none;
-      border-radius: 10px;
-      padding: 8px 12px;
-      font-size: 0.8rem;
-      font-weight: 700;
-      transition: transform 0.2s ease, filter 0.2s ease;
-      white-space: nowrap;
-    }
-
-    .list-btn {
-      margin-right: auto;
-      margin-left: 0;
-      flex-shrink: 0;
-    }
-
-    .map-btn:hover, .list-btn:hover {
-      transform: translateY(-1px);
-      filter: brightness(1.04);
-    }
-
-    .leaflet-container {
-      font-family: 'Heebo', sans-serif;
-      background: #0f172a;
-    }
-
-    .leaflet-popup-content-wrapper,
-    .leaflet-popup-tip {
-      background: rgba(15, 23, 42, 0.96);
-      color: var(--text-primary);
-      border: 1px solid var(--border-subtle);
-      box-shadow: 0 12px 30px rgba(2, 6, 23, 0.28);
-    }
-
-    .leaflet-popup-content {
-      direction: rtl;
-      text-align: right;
-      font-family: 'Heebo', sans-serif;
-      margin: 12px 14px;
-      color: var(--text-primary);
-    }
-
-    .leaflet-control-zoom a {
-      background: rgba(15, 23, 42, 0.9);
-      color: var(--text-primary);
-      border-color: var(--border-subtle);
-    }
-
-    .leaflet-control-attribution {
-      background: rgba(15, 23, 42, 0.7);
-      color: var(--text-secondary);
-    }
-
-    .club-pin {
-      width: 18px;
-      height: 18px;
-      border-radius: 50% 50% 50% 0;
-      background: var(--pin-color);
-      border: 2px solid rgba(255, 255, 255, 0.9);
-      box-shadow: 0 6px 18px rgba(2, 6, 23, 0.35);
-      transform: rotate(-45deg);
-      position: relative;
-      display: block;
-    }
-
-    .club-pin::after {
-      content: "";
-      position: absolute;
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.9);
-      top: 5px;
-      left: 5px;
-    }
-
-    .user-pin {
-      width: 28px;
-      height: 28px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, #f8fafc, #cbd5e1);
-      border: 2px solid rgba(15, 23, 42, 0.9);
-      box-shadow: 0 8px 20px rgba(2, 6, 23, 0.35);
-      display: grid;
-      place-items: center;
-      font-size: 16px;
-      line-height: 1;
-      transform: translateY(-1px);
-    }
-
-    #details-pane {
-      display: none;
-      position: absolute;
-      right: 16px;
-      top: 18px;
-      width: min(320px, calc(100% - 32px));
-      max-height: 60vh;
-      overflow: auto;
-      background: rgba(15, 23, 42, 0.96);
-      border: 1px solid var(--border-subtle);
-      border-radius: 18px;
-      box-shadow: 0 18px 44px rgba(2, 6, 23, 0.38);
-      z-index: 2000;
-      padding: 14px;
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-    }
-
-    #details-close {
-      float: left;
-      background: linear-gradient(135deg, #f87171, #ef4444);
-      color: white;
-      border: none;
-      padding: 7px 12px;
-      border-radius: 10px;
-      cursor: pointer;
-      font-weight: 700;
-      margin-bottom: 8px;
-    }
-
-    #details-content {
-      clear: both;
-      color: var(--text-primary);
-    }
-
-    #details-content h3 {
-      margin: 0 0 10px;
-      font-size: 1.08rem;
-      line-height: 1.45;
-    }
-
-    #details-content .meta {
-      color: var(--text-secondary);
-      font-size: 0.9rem;
-      margin-bottom: 10px;
-    }
-
-    #details-content .deal-item {
-      padding: 10px 0;
-      border-bottom: 1px solid var(--border-subtle);
-    }
-
-    #details-content .deal-item:last-child {
-      border-bottom: none;
-    }
-
-    @media (max-width: 720px) {
-      #header {
-        padding: 12px 12px 10px;
-      }
-
-      #controls-top, #controls-radius {
-        width: 100%;
-        flex-wrap: wrap;
-      }
-
-      #controls-top {
-        align-items: flex-start;
-      }
-
-      #status {
-        width: 100%;
-        order: 1;
-      }
-
-      .btn {
-        width: 100%;
-        justify-content: center;
-      }
-
-      #controls-radius {
-        padding: 10px 12px;
-      }
-
-      #map-container {
-        width: calc(100% - 16px);
-        border-radius: 18px;
-      }
-
-      .business-item {
-        padding: 14px 12px;
-        align-items: flex-start;
-      }
-
-      .business-info h3 {
-        font-size: 0.98rem;
-      }
-
-      .business-info p {
-        font-size: 0.8rem;
-      }
-
-      .list-btn {
-        padding: 8px 10px;
-        font-size: 0.75rem;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   <div class="app-background">
@@ -823,87 +29,101 @@
     <div class="glow-orb orb-3"></div>
   </div>
 
-  <div id="header">
-    <div id="controls-top">
-      <div class="brand" aria-label="Discount Finder brand">
+  <!-- Header Navigation -->
+  <header class="site-header">
+    <div class="container header-content">
+      <div class="brand">
         <div class="brand-icon">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <rect x="2" y="5" width="20" height="14" rx="2"></rect>
             <line x1="2" y1="10" x2="22" y2="10"></line>
           </svg>
         </div>
         <div class="brand-text">
           <h1 class="brand-title">Discount<span class="brand-accent">Finder</span></h1>
-          <p class="brand-subtitle">חיפוש עסקים קרובים</p>
+          <p class="brand-subtitle">חיפוש עסקים והטבות קרובים</p>
         </div>
       </div>
-      <div id="status">טוען את המפה...</div>
+
+      <!-- Stats Bar in Header -->
+      <div class="header-stats" id="headerStats">
+        <div class="stat-pill" id="statTotalDeals">
+          <span class="stat-num" id="totalDealsCount">--</span>
+          <span class="stat-label">הטבות באיזור</span>
+        </div>
+        <div class="stat-pill" id="statTotalStores">
+          <span class="stat-num" id="totalStoresCount">--</span>
+          <span class="stat-label">עסקים באיזור</span>
+        </div>
+        <span id="status" style="font-size:0.85rem; color: var(--text-accent); font-weight: 600;">טוען את המפה...</span>
+      </div>
+
       <nav class="header-nav" aria-label="ניווט בין עמודים">
         <a href="./" class="nav-link">חיפוש הנחות</a>
         <a href="./nearme" class="nav-link active">עסקים קרובים</a>
       </nav>
     </div>
-  </div>
+  </header>
 
-  <div id="filter-row" class="club-filters-container" aria-label="סינון לפי מועדונים">
-    <span class="filters-group-label">סינון לפי מועדונים (ניתן לבחור מספר מועדונים):</span>
-    <div class="club-filters-group">
-      <button class="filter-chip active" data-club="ALL" type="button" aria-pressed="true" id="filterAll">
-        <span class="chip-checkbox">✓</span>
-        <span class="chip-name">כל המועדונים</span>
-      </button>
-      <button class="filter-chip chip-mcc" data-club="MCC" type="button" aria-pressed="false" id="filterMCC">
-        <span class="chip-checkbox">✓</span>
-        <span class="club-logo-tag mcc-tag">חבר</span>
-        <span class="chip-name">חבר (משרתי הקבע והגמלאים)</span>
-      </button>
-      <button class="filter-chip chip-hot" data-club="HOT" type="button" aria-pressed="false" id="filterHOT">
-        <span class="chip-checkbox">✓</span>
-        <span class="club-logo-tag hot-tag">HOT</span>
-        <span class="chip-name">מועדון הוט</span>
-      </button>
-      <button class="filter-chip chip-htzone" data-club="HTzone" type="button" aria-pressed="false" id="filterHTzone">
-        <span class="chip-checkbox">✓</span>
-        <span class="club-logo-tag htzone-tag">HTzone</span>
-        <span class="chip-name">הייטק זון</span>
-      </button>
-      <button class="filter-chip chip-buyme" data-club="BUYME" type="button" aria-pressed="false" id="filterBUYME">
-        <span class="chip-checkbox">✓</span>
-        <span class="club-logo-tag buyme-tag">BUYME</span>
-        <span class="chip-name">Buyme</span>
-      </button>
+  <!-- Main Container -->
+  <main class="container main-content">
+    <div id="filter-row" class="club-filters-container" aria-label="סינון לפי מועדונים">
+      <span class="filters-group-label">סינון לפי מועדונים (ניתן לבחור מספר מועדונים):</span>
+      <div class="club-filters-group">
+        <button class="filter-chip active" data-club="ALL" type="button" aria-pressed="true" id="filterAll">
+          <span class="chip-checkbox">✓</span>
+          <span class="chip-name">כל המועדונים</span>
+        </button>
+        <button class="filter-chip chip-mcc" data-club="MCC" type="button" aria-pressed="false" id="filterMCC">
+          <span class="chip-checkbox">✓</span>
+          <span class="club-logo-tag mcc-tag">חבר</span>
+          <span class="chip-name">חבר (משרתי הקבע והגמלאים)</span>
+        </button>
+        <button class="filter-chip chip-hot" data-club="HOT" type="button" aria-pressed="false" id="filterHOT">
+          <span class="chip-checkbox">✓</span>
+          <span class="club-logo-tag hot-tag">HOT</span>
+          <span class="chip-name">מועדון הוט</span>
+        </button>
+        <button class="filter-chip chip-htzone" data-club="HTzone" type="button" aria-pressed="false" id="filterHTzone">
+          <span class="chip-checkbox">✓</span>
+          <span class="club-logo-tag htzone-tag">HTzone</span>
+          <span class="chip-name">הייטק זון</span>
+        </button>
+        <button class="filter-chip chip-buyme" data-club="BUYME" type="button" aria-pressed="false" id="filterBUYME">
+          <span class="chip-checkbox">✓</span>
+          <span class="club-logo-tag buyme-tag">BUYME</span>
+          <span class="chip-name">Buyme</span>
+        </button>
+      </div>
+
+      <div id="controls-radius">
+          <label for="radius-slider">רדיוס חיפוש (ק"מ):</label>
+          <div id="radius-slider-container">
+              <input type="range" id="radius-slider" min="0.5" max="5" step="0.1" value="1.0" oninput="updateRadiusFromSlider(this.value)">
+              <span id="radius-value">1.0</span>
+          </div>
+      </div>
     </div>
 
-    <div id="controls-radius">
-        <label for="radius-slider">רדיוס חיפוש (ק"מ):</label>
-        <div id="radius-slider-container">
-            <input type="range" id="radius-slider" min="0.5" max="5" step="0.1" value="1.0" oninput="updateRadiusFromSlider(this.value)">
-            <span id="radius-value">1.0</span>
-        </div>
+    <!-- Map and List Container -->
+    <div id="map-container">
+      <!-- Map -->
+      <div id="map"></div>
+      <button id="pin-btn" class="btn" onclick="togglePinMode()">📍 בחר מיקום על המפה</button>
+      
+      <!-- Business List -->
+      <div id="business-list-container">
+        <ul id="business-list">
+            <!-- List items will be inserted here -->
+        </ul>
+      </div>
+      <!-- Details Pane -->
+      <div id="details-pane" style="display:none;">
+        <button id="details-close">סגור</button>
+        <div id="details-content"></div>
+      </div>
     </div>
-  </div>
-
-  <div class="utility-row">
-    <button id="pin-btn" class="btn" onclick="togglePinMode()">📍 בחר מיקום על המפה</button>
-  </div>
-
-  <!-- Map and List Container -->
-  <div id="map-container">
-    <!-- Map -->
-    <div id="map"></div>
-    
-    <!-- Business List -->
-    <div id="business-list-container">
-      <ul id="business-list">
-          <!-- List items will be inserted here -->
-      </ul>
-    </div>
-    <!-- Details Pane -->
-    <div id="details-pane" style="display:none;">
-      <button id="details-close" style="float:left;background:#e74c3c;color:#fff;border:none;padding:6px 10px;border-radius:6px;cursor:pointer;margin-bottom:8px;">סגור</button>
-      <div id="details-content"></div>
-    </div>
-  </div>
+  </main>
 
 <!-- Official Leaflet 1.9.4 JavaScript -->
 <script 
@@ -1285,6 +505,11 @@
       const statusDiv = document.getElementById('status');
       const listContainer = document.getElementById('business-list');
 
+
+
+      const totalDealsCount = document.getElementById('totalDealsCount');
+      const totalStoresCount = document.getElementById('totalStoresCount');
+
       statusDiv.innerText = `טוען רשימת עסקים עם מבצעים (client-side)...`;
       listContainer.innerHTML = ''; // Clear previous list
 
@@ -1319,8 +544,10 @@
             statusDiv.innerText = `לא נמצאו עסקים ברדיוס ${currentSearchRadiusKm.toFixed(1)} ק"מ.`;
             listContainer.innerHTML = '<li class="business-item"><div class="business-info"><h3>אין עסקים להצגה</h3><p>נסו להוריד את רדיוס החיפוש או לבחור מועדון אחר.</p></div></li>';
         } else {
-            statusDiv.innerText = `נמצאו ${filteredNearby.length} עסקים ברדיוס ${currentSearchRadiusKm.toFixed(1)} ק"מ:`;
-            
+            //statusDiv.innerText = `נמצאו ${filteredNearby.length} עסקים ברדיוס ${currentSearchRadiusKm.toFixed(1)} ק"מ:`;
+            statusDiv.innerText ='';
+            totalDealsCount.innerText = ` ${filteredNearby.reduce((sum, b) => sum + getSelectedClubDiscounts(b).length, 0)} הטבות  `;
+            totalStoresCount.innerText = ` ${filteredNearby.length} עסקים  `; 
             filteredNearby.forEach(b => {
                 const distanceMeters = Math.round(b.distance * 1000);
                 const matchingDiscounts = getSelectedClubDiscounts(b);
@@ -1404,8 +631,8 @@
       content.appendChild(title);
 
       const meta = document.createElement('div');
-      meta.style.color = '#666';
-      meta.innerHTML = `<div>מרחק: <b>${Math.round(business.distance*1000)} מטר</b></div>`;
+      meta.className = 'meta';
+      meta.innerHTML = `<div>מרחק: <b class="distance">${Math.round(business.distance*1000)} מטר</b></div>`;
       content.appendChild(meta);
 
       const discounts = business.discounts || [];
@@ -1415,22 +642,28 @@
         content.appendChild(p);
       } else {
         const list = document.createElement('div');
-        list.style.marginTop = '8px';
+        list.className = 'discount-list';
+        list.style.marginTop = '12px';
         discounts.forEach(d => {
           const item = document.createElement('div');
-          item.style.padding = '8px';
-          item.style.borderBottom = '1px solid #eee';
+          item.className = 'deal-item';
           const club = d.club || '';
           const text = d.discount || d.discount_text || '';
           const url = d.discount_url || d.url || '';
-          item.innerHTML = `<div style="font-weight:600">${club}</div><div style="margin-top:6px;">${text}</div>`;
+          const badgeClass = (club || '').toLowerCase();
+          const badgeLabel = club === 'HTzone' ? 'HTzone' : club === 'BUYME' ? 'BUYME' : club;
+          item.innerHTML = `
+            <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">
+              <span class="club-badge ${badgeClass === 'htzone' ? 'htzone' : badgeClass === 'buyme' ? 'buyme' : badgeClass === 'hot' ? 'hot' : 'mcc'}">${badgeLabel}</span>
+            </div>
+            <div style="font-size:0.88rem;color:var(--text-primary);margin-bottom:6px;">${escapeHtml(text)}</div>
+          `;
           if (url) {
             const a = document.createElement('a');
             a.href = url;
             a.textContent = 'לינק להצעה';
             a.target = '_blank';
-            a.style.display = 'inline-block';
-            a.style.marginTop = '6px';
+            a.rel = 'noopener noreferrer';
             a.className = 'map-btn';
             item.appendChild(a);
           }
