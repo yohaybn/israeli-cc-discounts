@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,20 +9,19 @@
   <meta name="theme-color" content="#0b0f19">
 
   <!-- Leaflet CSS -->
-  <link 
-    rel="stylesheet" 
-    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-    crossorigin=""
-  />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&family=Rubik:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&family=Rubik:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
 
   <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
   <div class="app-background">
     <div class="glow-orb orb-1"></div>
@@ -34,7 +34,8 @@
     <div class="container header-content">
       <div class="brand">
         <div class="brand-icon">
-          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
             <rect x="2" y="5" width="20" height="14" rx="2"></rect>
             <line x1="2" y1="10" x2="22" y2="10"></line>
           </svg>
@@ -97,25 +98,27 @@
       </div>
 
       <div id="controls-radius">
-          <label for="radius-slider">רדיוס חיפוש (ק"מ):</label>
-          <div id="radius-slider-container">
-              <input type="range" id="radius-slider" min="0.5" max="5" step="0.1" value="1.0" oninput="updateRadiusFromSlider(this.value)">
-              <span id="radius-value">1.0</span>
-          </div>
+        <label for="radius-slider">רדיוס חיפוש (ק"מ):</label>
+        <div id="radius-slider-container">
+          <input type="range" id="radius-slider" min="0.5" max="5" step="0.1" value="1.0"
+            oninput="updateRadiusFromSlider(this.value)">
+          <span id="radius-value">1.0</span>
+        </div>
       </div>
     </div>
 
     <!-- Map and List Container -->
     <div id="map-container">
       <!-- Map -->
-      <div id="map"></div>
-      <button id="pin-btn" class="btn" onclick="togglePinMode()">📍 בחר מיקום על המפה</button>
-      
+      <div id="map">
+        <button id="pin-btn" class="btn" onclick="togglePinMode()">📍 בחר מיקום על המפה</button>
+      </div>
+
       <!-- Business List -->
       <div id="business-list-container">
-        <ul id="business-list">
-            <!-- List items will be inserted here -->
-        </ul>
+        <div id="business-list" class="cards-grid nearme-cards-grid">
+          <!-- Cards will be inserted here -->
+        </div>
       </div>
       <!-- Details Pane -->
       <div id="details-pane" style="display:none;">
@@ -125,12 +128,9 @@
     </div>
   </main>
 
-<!-- Official Leaflet 1.9.4 JavaScript -->
-<script 
-  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-  crossorigin=""
-></script>
+  <!-- Official Leaflet 1.9.4 JavaScript -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
   <script>
     // Global State
@@ -140,64 +140,29 @@
     let businessLayerGroup = L.layerGroup();
     const CLUB_KEYS = ['MCC', 'HOT', 'HTzone', 'BUYME'];
     let selectedClubs = new Set(CLUB_KEYS);
-    
+
     let isPinMode = false;
     let currentUserLat = 32.0853; // Default Tel Aviv center fallback
     let currentUserLon = 34.7818;
     let currentSearchRadiusKm = 1.0; // Updated from const to let
 
-    const REGION_BOUNDS = [
-      { threshold: 30.0, file: 'businesses_eilat_arava.json' },
-      { threshold: 31.3, file: 'businesses_south.json' },
-      { threshold: 32.5, file: 'businesses_center.json' },
-      { threshold: Infinity, file: 'businesses_north.json' }
-    ];
-
-    function getRegionFileForLat(lat) {
-      for (const bound of REGION_BOUNDS) {
-        if (lat < bound.threshold) return bound.file;
-      }
-      return 'businesses_north.json';
-    }
-
-    function getRequiredRegionFiles(minLat, maxLat) {
-      const fileMin = getRegionFileForLat(minLat);
-      const fileMax = getRegionFileForLat(maxLat);
-      return Array.from(new Set([fileMin, fileMax]));
-    }
+    // Cache for businesses data
+    let _businessesCache = null;
 
     async function loadBusinessesForBounds(minLat, maxLat) {
-      const requiredFiles = getRequiredRegionFiles(minLat, maxLat);
-      const regionResults = [];
-
-      for (const file of requiredFiles) {
-        const path = `data/businesses/${file}`;
-        try {
-          const res = await fetch(path);
-          if (!res.ok) continue;
+      if (_businessesCache) return _businessesCache;
+      try {
+        const res = await fetch('data/businesses_with_discounts.json');
+        if (res.ok) {
           const data = await res.json();
           if (Array.isArray(data)) {
-            regionResults.push(...data);
+            _businessesCache = data;
+            return data;
           }
-        } catch (err) {
-          console.warn('Failed to load region file', path, err);
-        }
-      }
-
-      if (regionResults.length > 0) {
-        return regionResults;
-      }
-
-      try {
-        const fallbackRes = await fetch('data/businesses_with_discounts.json');
-        if (fallbackRes.ok) {
-          const fallbackData = await fallbackRes.json();
-          if (Array.isArray(fallbackData)) return fallbackData;
         }
       } catch (err) {
-        console.warn('Fallback businesses_with_discounts.json unavailable', err);
+        console.warn('Failed to load businesses_with_discounts.json', err);
       }
-
       return [];
     }
 
@@ -205,9 +170,9 @@
       const R = 6371;
       const dLat = (lat2 - lat1) * Math.PI / 180;
       const dLon = (lon2 - lon1) * Math.PI / 180;
-      const a = 
+      const a =
         Math.sin(dLat / 2) * Math.sin(dLat / 2) +
-        Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) * 
+        Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
         Math.sin(dLon / 2) * Math.sin(dLon / 2);
       const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
       return R * c;
@@ -287,11 +252,18 @@
       }
     }
 
+    // Map Hebrew club name aliases to internal keys
+    const CLUB_NAME_MAP = { 'חבר': 'MCC', 'מועדון הוט': 'HOT' };
+
+    function normalizeClub(club) {
+      return CLUB_NAME_MAP[club] || club;
+    }
+
     function getSelectedClubDiscounts(business) {
       const discounts = Array.isArray(business.discounts) ? business.discounts : [];
       const activeSet = selectedClubs;
       return discounts.filter((d) => {
-        const club = d.club || d.club_name || '';
+        const club = normalizeClub(d.club || d.club_name || '');
         return activeSet.has(club) || (activeSet.size === CLUB_KEYS.length && club);
       });
     }
@@ -368,14 +340,14 @@
 
     // Update Radius from Slider
     function updateRadiusFromSlider(value) {
-        currentSearchRadiusKm = parseFloat(value);
-        document.getElementById('radius-value').innerText = currentSearchRadiusKm.toFixed(1);
-        
-        // Only update map elements if they exist (app already initialized)
-        if (radiusCircle) {
-            radiusCircle.setRadius(currentSearchRadiusKm * 1000);
-            updateUserLocation(currentUserLat, currentUserLon); // Re-fetch and re-filter
-        }
+      currentSearchRadiusKm = parseFloat(value);
+      document.getElementById('radius-value').innerText = currentSearchRadiusKm.toFixed(1);
+
+      // Only update map elements if they exist (app already initialized)
+      if (radiusCircle) {
+        radiusCircle.setRadius(currentSearchRadiusKm * 1000);
+        updateUserLocation(currentUserLat, currentUserLon); // Re-fetch and re-filter
+      }
     }
 
     function escapeHtml(value) {
@@ -396,12 +368,23 @@
       return `<strong${titleAttr} aria-label="${safeText}">${visibleText}</strong>`;
     }
 
+    // Returns { cssClass, label } for a club name (raw or normalized)
+    function clubBadgeInfo(rawClub) {
+      const norm = normalizeClub(rawClub || '');
+      const CSS_MAP = { MCC: 'mcc', HOT: 'hot', HTzone: 'htzone', BUYME: 'buyme' };
+      const LABEL_MAP = { MCC: 'חבר', HOT: 'HOT', HTzone: 'HTzone', BUYME: 'BUYME' };
+      return {
+        cssClass: CSS_MAP[norm] || 'mcc',
+        label: LABEL_MAP[norm] || rawClub || 'חבר'
+      };
+    }
+
     function renderBusinessCards(nearby) {
       const listContainer = document.getElementById('business-list');
       listContainer.innerHTML = '';
 
       if (!nearby.length) {
-        listContainer.innerHTML = '<li class="business-item"><div class="business-info"><h3>אין עסקים להצגה</h3><p>נסו להוריד את רדיוס החיפוש או לבחור מועדון אחר.</p></div></li>';
+        listContainer.innerHTML = '<div class="business-card" style="grid-column:1/-1"><div class="card-header"><div class="card-title-area"><h3 class="business-name">אין עסקים להצגה</h3><p style="color:var(--text-secondary);margin:0;font-size:0.9rem;">נסו להגדיל את רדיוס החיפוש או לבחור מועדון אחר.</p></div></div></div>';
         return;
       }
 
@@ -409,49 +392,110 @@
         const relatedDiscounts = getSelectedClubDiscounts(b);
         if (!relatedDiscounts.length) return;
 
-        const listItem = document.createElement('li');
-        listItem.className = 'business-item';
-
-        const discountLines = relatedDiscounts.slice(0, 3).map((d) => {
-          const club = d.club || 'MCC';
-          const text = d.discount || d.discount_text || 'הטבה';
-          const url = d.discount_url || d.url || '#';
-          const badgeClass = (club || '').toLowerCase();
-          const label = club === 'HTzone' ? 'HTzone' : club === 'BUYME' ? 'BUYME' : club;
-          return `
-            <div class="discount-line">
-              <span class="club-badge ${badgeClass === 'htzone' ? 'htzone' : badgeClass === 'buyme' ? 'buyme' : badgeClass === 'hot' ? 'hot' : 'mcc'}">${label}</span>
-              ${renderDiscountText(text)}
-              <a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">לינק</a>
-            </div>
-          `;
-        }).join('');
+        const card = document.createElement('div');
+        card.className = 'business-card';
+        card.style.cursor = 'pointer';
 
         const title = b.name || b.business_name || 'עסק';
+        const distanceM = Math.round(b.distance * 1000);
         const gmapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${b.lat},${b.lon}`;
-        const bestDiscount = relatedDiscounts.find((d) => (d.discount || '').toString().match(/\d+\s*%|\d+\s*אחוז/i)) || relatedDiscounts[0];
 
-        listItem.innerHTML = `
-          <div class="business-info">
-            <h3>${escapeHtml(title)}</h3>
-            <div class="business-meta">
-              <span class="distance">${Math.round(b.distance * 1000)} מ'</span>
+        // Best discount value
+        const percents = relatedDiscounts.flatMap(d => {
+          const m = (d.discount || '').match(/(\d+(?:\.\d+)?)\s*(%|אחוז)/i);
+          return m ? [parseFloat(m[1])] : [];
+        });
+        const bestPct = percents.length ? Math.max(...percents) : null;
+
+        // ── Card Header ──
+        const header = document.createElement('div');
+        header.className = 'card-header';
+
+        const titleArea = document.createElement('div');
+        titleArea.className = 'card-title-area';
+
+        const titleEl = document.createElement('h3');
+        titleEl.className = 'business-name';
+        titleEl.textContent = title;
+        titleArea.appendChild(titleEl);
+
+        // Distance badge
+        const distBadge = document.createElement('span');
+        distBadge.className = 'multi-badge';
+        distBadge.innerHTML = `<a href="${gmapsUrl}" target="_blank" rel="noopener noreferrer" class="nearme-nav-btn">📍 ${distanceM} מ'</a>`;
+        titleArea.appendChild(distBadge);
+
+        if (relatedDiscounts.length > 1) {
+          const multiTag = document.createElement('span');
+          multiTag.className = 'multi-badge';
+          multiTag.innerHTML = `⚡ ${relatedDiscounts.length} הטבות`;
+          titleArea.appendChild(multiTag);
+        }
+
+        header.appendChild(titleArea);
+
+        if (bestPct !== null) {
+          const bestPill = document.createElement('div');
+          bestPill.className = 'best-discount-pill';
+          bestPill.innerHTML = `
+            <span class="best-disc-val">${bestPct}%</span>
+            <span class="best-disc-lbl">הנחה מרבית</span>
+          `;
+          header.appendChild(bestPill);
+        }
+
+        card.appendChild(header);
+
+        // ── Discounts List (index style) ──
+        const list = document.createElement('div');
+        list.className = 'discounts-list';
+
+        relatedDiscounts.slice(0, 4).forEach(d => {
+          const rawClub = d.club || d.club_name || 'MCC';
+          const { cssClass, label } = clubBadgeInfo(rawClub);
+          const text = d.discount || d.discount_text || 'הטבה';
+          const url = d.discount_url || d.url || '#';
+
+          const isVoucher = /שובר|voucher/i.test(text);
+          const truncated = text.length > 55 ? text.slice(0, 55) + '…' : text;
+
+          const optionLink = document.createElement('a');
+          optionLink.className = `discount-option-item club-${cssClass}`;
+          optionLink.href = url;
+          optionLink.target = '_blank';
+          optionLink.rel = 'noopener noreferrer';
+          optionLink.title = text; // full text tooltip
+          optionLink.innerHTML = `
+            <div class="option-left-content">
+              <span class="option-club-badge ${cssClass}">${escapeHtml(label)}</span>
+              <div class="option-text-wrap">
+                <span class="option-discount-title">${escapeHtml(truncated)}</span>
+              </div>
             </div>
-            <div class="discount-list">${discountLines}</div>
-          </div>
-          <div class="business-item-footer">
-            <span class="club-badge ${((bestDiscount.club || 'MCC').toLowerCase() === 'htzone' ? 'htzone' : (bestDiscount.club || 'MCC').toLowerCase() === 'buyme' ? 'buyme' : (bestDiscount.club || 'MCC').toLowerCase() === 'hot' ? 'hot' : 'mcc')}">${(bestDiscount.club || 'MCC') === 'HTzone' ? 'HTzone' : (bestDiscount.club || 'MCC') === 'BUYME' ? 'BUYME' : (bestDiscount.club || 'MCC') === 'HOT' ? 'HOT' : 'חבר'}</span>
-            <a href="${gmapsUrl}" target="_blank" class="list-btn">ניווט</a>
-          </div>
-        `;
+            <span class="option-action-btn">
+              <span>${isVoucher ? 'פרטים' : 'להטבה'}</span>
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </span>
+          `;
+          list.appendChild(optionLink);
+        });
 
-        listItem.addEventListener('click', (e) => {
+        card.appendChild(list);
+
+
+        // Click card body → details pane
+        card.addEventListener('click', (e) => {
           if (e.target.closest('a')) return;
           showDetailsPane(b);
         });
-        listContainer.appendChild(listItem);
+
+        listContainer.appendChild(card);
       });
     }
+
 
     // Updates User Marker, Circle Radius, and Fetches Businesses
     async function updateUserLocation(lat, lon) {
@@ -541,30 +585,30 @@
         businessLayerGroup.clearLayers();
 
         if (filteredNearby.length === 0) {
-            statusDiv.innerText = `לא נמצאו עסקים ברדיוס ${currentSearchRadiusKm.toFixed(1)} ק"מ.`;
-            listContainer.innerHTML = '<li class="business-item"><div class="business-info"><h3>אין עסקים להצגה</h3><p>נסו להוריד את רדיוס החיפוש או לבחור מועדון אחר.</p></div></li>';
+          statusDiv.innerText = `לא נמצאו עסקים ברדיוס ${currentSearchRadiusKm.toFixed(1)} ק"מ.`;
+          listContainer.innerHTML = '<li class="business-item"><div class="business-info"><h3>אין עסקים להצגה</h3><p>נסו להוריד את רדיוס החיפוש או לבחור מועדון אחר.</p></div></li>';
         } else {
-            //statusDiv.innerText = `נמצאו ${filteredNearby.length} עסקים ברדיוס ${currentSearchRadiusKm.toFixed(1)} ק"מ:`;
-            statusDiv.innerText ='';
-            totalDealsCount.innerText = ` ${filteredNearby.reduce((sum, b) => sum + getSelectedClubDiscounts(b).length, 0)} הטבות  `;
-            totalStoresCount.innerText = ` ${filteredNearby.length} עסקים  `; 
-            filteredNearby.forEach(b => {
-                const distanceMeters = Math.round(b.distance * 1000);
-                const matchingDiscounts = getSelectedClubDiscounts(b);
-                const businessClub = matchingDiscounts[0]?.club || 'MCC';
-                const marker = L.marker([b.lat, b.lon], { icon: createClubPinIcon(businessClub) });
-                
-                const gmapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${b.lat},${b.lon}`;
+          //statusDiv.innerText = `נמצאו ${filteredNearby.length} עסקים ברדיוס ${currentSearchRadiusKm.toFixed(1)} ק"מ:`;
+          statusDiv.innerText = '';
+          totalDealsCount.innerText = ` ${filteredNearby.reduce((sum, b) => sum + getSelectedClubDiscounts(b).length, 0)} הטבות  `;
+          totalStoresCount.innerText = ` ${filteredNearby.length} עסקים  `;
+          filteredNearby.forEach(b => {
+            const distanceMeters = Math.round(b.distance * 1000);
+            const matchingDiscounts = getSelectedClubDiscounts(b);
+            const businessClub = matchingDiscounts[0]?.club || 'MCC';
+            const marker = L.marker([b.lat, b.lon], { icon: createClubPinIcon(businessClub) });
 
-                const discountsHtml = matchingDiscounts.slice(0,3).map(d => {
-                  const club = d.club || '';
-                  const text = d.discount || d.discount_text || '';
-                  const url = d.discount_url || d.url || '';
-                  const urlHtml = url ? `<a href="${url}" target="_blank" class="map-btn" style="margin-left:6px;">הצג</a>` : '';
-                  return `<div style="margin-bottom:6px;"><b>${club}</b>: ${text} ${urlHtml}</div>`;
-                }).join('');
+            const gmapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${b.lat},${b.lon}`;
 
-                const popupContent = `
+            const discountsHtml = matchingDiscounts.slice(0, 3).map(d => {
+              const club = d.club || '';
+              const text = d.discount || d.discount_text || '';
+              const url = d.discount_url || d.url || '';
+              const urlHtml = url ? `<a href="${url}" target="_blank" class="map-btn" style="margin-left:6px;">הצג</a>` : '';
+              return `<div style="margin-bottom:6px;"><b>${club}</b>: ${text} ${urlHtml}</div>`;
+            }).join('');
+
+            const popupContent = `
                   <div style="min-width: 180px;">
                     <h3 style="margin: 0 0 5px 0; font-size: 15px;">${b.name}</h3>
                     <p style="margin: 0 0 5px 0; color: #cbd5e1;">סוג: <b>${b.type || ''}</b></p>
@@ -573,11 +617,11 @@
                     <div style="margin-top:6px;"><a href="${gmapsUrl}" target="_blank" class="map-btn">ניווט ב-Google Maps</a></div>
                   </div>
                 `;
-                marker.bindPopup(popupContent);
-                businessLayerGroup.addLayer(marker);
-            });
+            marker.bindPopup(popupContent);
+            businessLayerGroup.addLayer(marker);
+          });
 
-            renderBusinessCards(filteredNearby);
+          renderBusinessCards(filteredNearby);
         }
 
       } catch (err) {
@@ -624,6 +668,8 @@
       const pane = document.getElementById('details-pane');
       const content = document.getElementById('details-content');
       const closeBtn = document.getElementById('details-close');
+      const gmapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${business.lat},${business.lon}`;
+
       content.innerHTML = '';
       const title = document.createElement('h3');
       title.style.marginTop = '0';
@@ -632,7 +678,10 @@
 
       const meta = document.createElement('div');
       meta.className = 'meta';
-      meta.innerHTML = `<div>מרחק: <b class="distance">${Math.round(business.distance*1000)} מטר</b></div>`;
+      meta.innerHTML = `<div>מרחק: <b class="distance">${Math.round(business.distance * 1000)} מטר</b>
+                  
+            <a href="${gmapsUrl}" target="_blank" class="map-btn" id="directions-link">ניווט</a>
+          </div>`;
       content.appendChild(meta);
 
       const discounts = business.discounts || [];
@@ -650,11 +699,10 @@
           const club = d.club || '';
           const text = d.discount || d.discount_text || '';
           const url = d.discount_url || d.url || '';
-          const badgeClass = (club || '').toLowerCase();
-          const badgeLabel = club === 'HTzone' ? 'HTzone' : club === 'BUYME' ? 'BUYME' : club;
+          const { cssClass: badgeClass, label: badgeLabel } = clubBadgeInfo(d.club || '');
           item.innerHTML = `
             <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">
-              <span class="club-badge ${badgeClass === 'htzone' ? 'htzone' : badgeClass === 'buyme' ? 'buyme' : badgeClass === 'hot' ? 'hot' : 'mcc'}">${badgeLabel}</span>
+              <span class="club-badge ${badgeClass}">${badgeLabel}</span>
             </div>
             <div style="font-size:0.88rem;color:var(--text-primary);margin-bottom:6px;">${escapeHtml(text)}</div>
           `;
@@ -677,4 +725,5 @@
     }
   </script>
 </body>
+
 </html>

@@ -71,7 +71,9 @@
    Reset & Global Setup
    ========================================================================== */
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -148,9 +150,17 @@ body {
 }
 
 @keyframes orbFloat {
-    0% { transform: translate(0, 0) scale(1); }
-    50% { transform: translate(30px, -20px) scale(1.08); }
-    100% { transform: translate(-20px, 30px) scale(0.95); }
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    50% {
+        transform: translate(30px, -20px) scale(1.08);
+    }
+
+    100% {
+        transform: translate(-20px, 30px) scale(0.95);
+    }
 }
 
 /* ==========================================================================
@@ -289,8 +299,17 @@ body {
 }
 
 @keyframes pulseLive {
-    0%, 100% { opacity: 1; transform: scale(1); }
-    50% { opacity: 0.4; transform: scale(0.85); }
+
+    0%,
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.4;
+        transform: scale(0.85);
+    }
 }
 
 /* ==========================================================================
@@ -332,10 +351,21 @@ body {
     line-height: 1.6;
 }
 
-.badge-mcc-text { color: var(--mcc-text); }
-.badge-hot-text { color: var(--hot-text); }
-.badge-htzone-text { color: var(--htzone-text); }
-.badge-buyme-text { color: var(--buyme-text); }
+.badge-mcc-text {
+    color: var(--mcc-text);
+}
+
+.badge-hot-text {
+    color: var(--hot-text);
+}
+
+.badge-htzone-text {
+    color: var(--htzone-text);
+}
+
+.badge-buyme-text {
+    color: var(--buyme-text);
+}
 
 /* Search Box Card */
 .search-box-card {
@@ -389,7 +419,8 @@ body {
     background: transparent;
     border: none;
     outline: none;
-    font-size: 1rem; /* 16px to prevent iOS auto-zoom */
+    font-size: 1rem;
+    /* 16px to prevent iOS auto-zoom */
     font-weight: 500;
     color: var(--text-primary);
     font-family: inherit;
@@ -695,8 +726,7 @@ body {
     gap: 0.35rem;
     min-width: 165px;
     background: var(--bg-card);
-    border: 1px solid var(--border-subtle);
-    border-radius: var(--radius-md);
+
     padding: 0.45rem 0.85rem;
     transition: var(--transition-fast);
 }
@@ -792,7 +822,8 @@ body {
     min-height: 40px;
 }
 
-.custom-select:hover, .custom-select:focus {
+.custom-select:hover,
+.custom-select:focus {
     border-color: var(--border-highlight);
     background-color: var(--bg-surface-elevated);
 }
@@ -1220,8 +1251,13 @@ body {
 }
 
 @keyframes skeletonShimmer {
-    0% { background-position: 200% 0; }
-    100% { background-position: -200% 0; }
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
 }
 
 /* Floating Back to Top Button */
@@ -1609,6 +1645,7 @@ body {
 }
 
 #map {
+    position: relative;
     height: 44vh;
     width: 100%;
     min-height: 340px;
@@ -1653,7 +1690,7 @@ body {
 
 #pin-btn {
     position: absolute;
-    bottom: calc(34vh + 16px);
+    bottom: 16px;
     left: 16px;
     z-index: 1000;
     box-shadow: 0 6px 24px rgba(0, 0, 0, 0.5);
@@ -1752,13 +1789,43 @@ body {
 }
 
 #business-list {
-    list-style: none;
     padding: 0;
     margin: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 12px;
 }
+
+/* nearme card grid overrides — slots into the shared cards-grid layout */
+.nearme-cards-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+/* Navigation footer inside nearme cards */
+.nearme-card-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0.75rem;
+    padding-top: 0.65rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.nearme-nav-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #38bdf8;
+    padding: 0.35rem 0.75rem;
+
+    text-decoration: none;
+    transition: var(--transition-fast);
+}
+
+.nearme-nav-btn:hover {
+    background: #38bdf8;
+    color: #0b0f19;
+    border-color: #38bdf8;
+}
+
 
 .business-item {
     display: flex;
@@ -1885,10 +1952,25 @@ body {
     font-family: var(--font-latin), var(--font-hebrew);
 }
 
-.club-badge.mcc { background: var(--mcc-gradient); color: #1e1b18; }
-.club-badge.hot { background: var(--hot-gradient); color: #fff; }
-.club-badge.htzone { background: var(--htzone-gradient); color: #fff; }
-.club-badge.buyme { background: var(--buyme-gradient); color: #fff; }
+.club-badge.mcc {
+    background: var(--mcc-gradient);
+    color: #1e1b18;
+}
+
+.club-badge.hot {
+    background: var(--hot-gradient);
+    color: #fff;
+}
+
+.club-badge.htzone {
+    background: var(--htzone-gradient);
+    color: #fff;
+}
+
+.club-badge.buyme {
+    background: var(--buyme-gradient);
+    color: #fff;
+}
 
 .list-btn,
 .map-btn {
@@ -1937,6 +2019,20 @@ body {
     padding: 1.1rem;
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
+}
+
+#directions-link {
+    float: left;
+    background: linear-gradient(135deg, #397dfa, #445eef);
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 0.78rem;
+    margin-bottom: 10px;
+    transition: var(--transition-fast);
 }
 
 #details-close {
@@ -2002,7 +2098,7 @@ body {
     #pin-btn {
         width: auto;
         left: 10px;
-        bottom: calc(34vh + 10px);
+        bottom: 10px;
         font-size: 0.8rem;
         padding: 0.5rem 0.85rem;
     }

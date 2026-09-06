@@ -113,10 +113,14 @@ def normalize_hvr_rechargeable_card_item(item, source_name="giftcard"):
     #if website and not website.startswith("http"):
     #    website = "https://" + website if "." in website else website
     # set link to HVR source page for the business, based on source_name
-    if source_name == "giftcard":
-        website = "https://www.hvr.co.il/site/pg/gift_card_store?sn=" + sn
-    elif source_name == "teamimcard_branches":
+    if internal_link:
         website = "https://www.hvr.co.il/site/pg/"+internal_link
+    elif source_name == "giftcard":
+        website = "https://www.hvr.co.il/site/pg/gift_card_store?sn=" + str(sn)
+    elif source_name == "teamimcard_branches":
+        website = "https://www.hvr.co.il/site/pg/teamim_card_store"
+ 
+            
 
     match = re.search(r"(\d+(?:\.\d+)?)\s*%", discount)
     discount_value = float(match.group(1)) if match else HEVER_DISCOUNT_VALUE

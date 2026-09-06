@@ -537,7 +537,7 @@
                 <div class="option-left-content">
                     <span class="option-club-badge ${clubLower}">${escapeHtml(clubShort)}</span>
                     <div class="option-text-wrap">
-                        <span class="option-discount-title">${escapeHtml(discountTitle)}</span>
+                        <span class="option-discount-title" title="${escapeHtml(discountTitle)}">${escapeHtml(discountTitle)}</span>
                     </div>
                 </div>
                 <span class="option-action-btn">
