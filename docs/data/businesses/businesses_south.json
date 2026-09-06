@@ -28,7 +28,7 @@
         "club": "חבר",
         "business_name": "מקדונלד'ס",
         "discount": "חבר טעמים | רשת המבורגרים | מסעדה",
-        "discount_url": "https://www.mcdonalds.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -97,7 +97,7 @@
         "club": "חבר",
         "business_name": "מקדונלד'ס",
         "discount": "חבר טעמים | רשת המבורגרים | מסעדה",
-        "discount_url": "https://www.mcdonalds.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -375,7 +375,7 @@
         "club": "חבר",
         "business_name": "בית הפול",
         "discount": "חבר טעמים | מסעדת מזון מהיר | מסעדה",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -618,7 +618,7 @@
         "club": "חבר",
         "business_name": "קרביץ",
         "discount": "חבר שלי | עד 1,000 ש\"ח לעסקה בתשלום עם כרטיס הנטען<br/>כולל כפל מבצעים והנחות<br/>לא ניתן לשלם בעסקה אחת עם עוד שובר ממועדוני לקוחות.<br/>לא כולל מבצעי מתנה<br/>לא כולל מוצרים שעובר דרכם זרם חשמלי, ראשי דיו, דיסק און קי ומוצרי טכנולוגיה | הרשת המובילה בישראל לציוד לימודי, הובי, פנאי, משחקים ויצירה | קרביץ, ציוד לבית הספר, מתנות, הובי, פנאי, משחקים, יצירה, eilat_nitan",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_company",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -637,7 +637,7 @@
         "club": "חבר",
         "business_name": "המשביר לצרכן",
         "discount": "חבר שלי | לא כולל הנחת מועדון. לא ניתן לרכוש מוצרי חשמל ואלקטרוניקה/תרופות מרשם/מזון לתינוקות וחיתולים. | מותגי קוסמטיקה, אופנה, ספורט, נעליים, הלבשה תחתונה, חשמל, בית ומתנות לגברים, נשים, ילדים ונוער | המשביר לצרכן eilat_nitan, ביגוד הנעלה, Children_kinder, gift_for_beby, gius, gil6, Youth_clothing",
-        "discount_url": "https://www.mashbir.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_company",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -674,7 +674,7 @@
         "club": "חבר",
         "business_name": "מקדונלד'ס",
         "discount": "חבר טעמים | רשת המבורגרים | מסעדה",
-        "discount_url": "https://www.mcdonalds.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -734,7 +734,7 @@
         "club": "חבר",
         "business_name": "MANGO",
         "discount": "חבר שלי | לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת.<br/>אין כפל הטבות לעובדים/בני משפחה<br/> | אופנת נשים, גברים, ילדים ותינוקות | MANGO מנגו eilat_nitan ,south ,north",
-        "discount_url": "https://shop.mango.com",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_company",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -767,7 +767,7 @@
         "club": "חבר",
         "business_name": "NIKE",
         "discount": "חבר שלי | *חל בחנויות NIKE, לא כולל חנויות עודפים. חנויות NIKE בישראל מופעלות ע\"י RETAILORS<br/>*לא כולל מבצעי השקות, הטבות מועדון ותשלום הצטרפות למועדון<br/>*לא תתאפשר צבירת נקודות מועדון<br/>*אין כפל הטבות לעובדים/בני משפחה | מותג הספורט המוביל בעולם | נייק, בגדי ספורט, נעלי ספורט, gil6, gan_dress, snickers, eilat_nitan, Youth_clothing",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_company",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -841,7 +841,7 @@
         "club": "חבר",
         "business_name": "סטימצקי",
         "discount": "חבר שלי | הכרטיס תקף לרכישת ספרים ומוצרים בחנויות סטימצקי לרבות מוצרים במבצעים והנחות למעט: ספרי לימוד מוצרים אלקטרוניים ודיגיטליים עיתונים ומגזינים ורכישת כרטיסי מתנה.<br/>לא תקף בחנויות נתב\"ג | רמון| ירידים ואתר האינטרנט.  <br/> | רשת ספרים, משחקים, צעצועים ופנאי, מוזיקה ועוד | eilat_nitan giftsmcc ,south ,north, gil6",
-        "discount_url": "https://www.steimatzky.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_company",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -920,7 +920,7 @@
         "club": "חבר",
         "business_name": "הספריה",
         "discount": "חבר טעמים | בורגר בר - לא כולל חברי מועדון | מסעדה",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -948,7 +948,7 @@
         "club": "חבר",
         "business_name": "בית העגל",
         "discount": "חבר טעמים | גריל ישראלי | מסעדה",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -976,7 +976,7 @@
         "club": "חבר",
         "business_name": "EMPORIUM",
         "discount": "חבר שלי | לא כולל הנחות מועדון ומבצעים בלעדיים לחברי מועדון של הרשת | רשת המתמחה בשיווק מותגי אופנה בינלאומיים ומציעה ביגוד והנעלה לכל המשפחה | אמפוריום",
-        "discount_url": "https://www.emporium.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_company",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": false
@@ -1017,7 +1017,7 @@
         "club": "חבר",
         "business_name": "מגה ספורט",
         "discount": "חבר שלי | לא כולל הנחת מועדון ומועדוני כושר. לא ניתן להשתמש בחנויות עודפים. | south ,north, מגה ספורט eilat_nitan, snickers, gil6, Children_kinder, Youth_clothing | מותגים,הנעלה,ביגוד,נעלי גברים,נעלי נשים,נעלי ילדים,נעלי ריצה,נעלי ספורט,נעלי הליכה,סניקרס,נעלי כדורגל,נעלי כדורסל,נעלי הרים,כפכפים,סנדלים,מכנסיים,חולצות,בגדי ספורט,בגדי ים,אביזרי ספורט,אקססוריז,מכשירי כושר,ציוד ספורט",
-        "discount_url": "https://www.megasport.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_company",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": false
@@ -1110,16 +1110,7 @@
         "club": "חבר",
         "business_name": "קפה קפה",
         "discount": "חבר טעמים | בית קפה | בית קפה",
-        "discount_url": "https://www.cafecafe.co.il/he/home/a/main",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר",
-        "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה | בית קפה",
-        "discount_url": "https://www.cafecafe.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -1128,7 +1119,7 @@
         "club": "חבר",
         "business_name": "קפה קפה",
         "discount": "חבר טעמים | בית קפה מסעדה- חלבי | בית קפה",
-        "discount_url": "https://www.cafecafe.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -1137,7 +1128,7 @@
         "club": "חבר",
         "business_name": "קפה קפה",
         "discount": "חבר טעמים | חלבי | בית קפה",
-        "discount_url": "https://www.cafecafe.co.il/he/home/a/main",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -1146,16 +1137,7 @@
         "club": "חבר",
         "business_name": "קפה קפה",
         "discount": "חבר טעמים | בשרי | בית קפה",
-        "discount_url": "https://www.cafecafe.co.il",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר",
-        "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בשרי | בית קפה",
-        "discount_url": "https://www.cafecafe.co.il/he/home/a/main",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -1164,16 +1146,7 @@
         "club": "חבר",
         "business_name": "קפה קפה",
         "discount": "חבר טעמים | בית קפה מסעדה | בית קפה",
-        "discount_url": "https://www.cafecafe.co.il",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר",
-        "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה | בית קפה",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -1182,7 +1155,7 @@
         "club": "חבר",
         "business_name": "קפה קפה",
         "discount": "חבר טעמים | בית קפה-חלבי כשר | בית קפה",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -1191,7 +1164,7 @@
         "club": "חבר",
         "business_name": "קפה קפה",
         "discount": "חבר טעמים | מסעדה | בית קפה",
-        "discount_url": "https://www.cafecafe.co.il/he/home/a/main/",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -1200,16 +1173,7 @@
         "club": "חבר",
         "business_name": "קפה קפה",
         "discount": "חבר טעמים | בית קפה מסעדה חלבי | בית קפה",
-        "discount_url": "https://www.cafecafe.co.il/he/home/a/main/",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר",
-        "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה מסעדה | בית קפה",
-        "discount_url": "https://www.cafecafe.co.il/he/home/a/main/",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -1218,7 +1182,7 @@
         "club": "חבר",
         "business_name": "קפה קפה",
         "discount": "חבר טעמים | בית קפה מסעדה בשרי | בית קפה",
-        "discount_url": "https://www.cafecafe.co.il/he/home/a/main/",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -1227,7 +1191,7 @@
         "club": "חבר",
         "business_name": "קפה קפה",
         "discount": "חבר טעמים | מסעדה חלבי | בית קפה",
-        "discount_url": "https://cafecafeeilat.rest.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -1236,25 +1200,7 @@
         "club": "חבר",
         "business_name": "קפה קפה",
         "discount": "חבר טעמים | בית קפה - בשרי | בית קפה",
-        "discount_url": "https://www.cafecafe.co.il/he/home/a/main",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר",
-        "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה מסעדה | בית קפה",
-        "discount_url": "https://cafecafeeilat.rest.co.il",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר",
-        "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה מסעדה | בית קפה",
-        "discount_url": "https://www.cafecafe.co.il/he/home/a/main",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -1263,7 +1209,7 @@
         "club": "חבר",
         "business_name": "קפה קפה",
         "discount": "חבר טעמים | בית קפה בשרי | בית קפה",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -1272,7 +1218,7 @@
         "club": "חבר",
         "business_name": "קפה קפה",
         "discount": "חבר טעמים | בית קפה מסעדה- חלבי | מסעדה,בית קפה",
-        "discount_url": "https://www.cafecafe.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -1281,16 +1227,7 @@
         "club": "חבר",
         "business_name": "קפה קפה",
         "discount": "חבר טעמים | בית קפה מסעדה | מסעדה,בית קפה",
-        "discount_url": "https://www.cafecafe.co.il/he/home/a/main",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר",
-        "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה מסעדה | מסעדה,בית קפה",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -1378,7 +1315,7 @@
         "club": "חבר",
         "business_name": "אופטיקנה",
         "discount": "חבר שלי | לא כולל מחלקת שמיעה, ניתן לרכוש עד 1,000 ₪ לעסקה , הכרטיס לא מכובד באתר אינטרנט, לא כולל הטבות מועדונים | משקפי שמש, משקפי ראייה, עדשות מגע | אופטיקנה, eilat_nitan summer ,south ,north",
-        "discount_url": "https://www.opticana.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_company",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -1503,7 +1440,7 @@
         "club": "חבר",
         "business_name": "BODY SHOP",
         "discount": "חבר שלי | לא כולל הנחות מועדון ומבצעים בלעדיים לחברי מועדון הרשת | רשת מוצרי טיפוח טבעיים לגבר ולאישה | eilat_nitan בודי שופ tipuah ,south ,north, gift_for_beby",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_company",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -1540,7 +1477,7 @@
         "club": "חבר",
         "business_name": "סבון של פעם",
         "discount": "חבר שלי | לא כולל הנחת מועדון ומבצעים בלעדיים לחברי המועדון של הרשת | רשת מוצרי טיפוח לגוף ולנפש | tipuah eilat_nitan SABON ,south ,north",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_company",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -1595,25 +1532,7 @@
         "club": "חבר",
         "business_name": "אצה",
         "discount": "חבר טעמים | סושי בר אסייתי. מכובד בישיבה במסעדה בלבד | מסעדה",
-        "discount_url": "mcc_item_new,333315",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר",
-        "business_name": "אצה",
-        "discount": "חבר טעמים | סושי בר אסייתי. מכובד בישיבה במסעדה בלבד | מסעדה",
-        "discount_url": "https://atza.co.il",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר",
-        "business_name": "אצה",
-        "discount": "חבר טעמים | סושי בר אסייתי. מכובד בישיבה במסעדה בלבד | מסעדה",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -1622,7 +1541,7 @@
         "club": "חבר",
         "business_name": "אצה",
         "discount": "חבר טעמים | מסעדה אסייתית,אוכל יפני,סושי,רול סושי,אגרול,גיוזה,באן,פוקי,קומבינציה,ניגירי,נודלס,פאד תאי,שתיה קלה,קינוחים | סושי בר אסייתי. מכובד בישיבה במסעדה בלבד | מסעדה",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -1668,7 +1587,7 @@
         "club": "חבר",
         "business_name": "א.ל.מ",
         "discount": "חבר שלי | לא כולל מוצרי: טכנולוגיה גאדג'טים מחשוב וסלולר, מסכים עד 43 אינץ' כולל ומזגנים עד 1.25 כח סוס כולל. לא כולל מוצרים מתצוגה. עד 1,000 ₪ לעסקה | רשת מוצרי חשמל <br/> | א.ל.מ eilat_nitan ,south ,north",
-        "discount_url": "https://www.alm.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_company",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -1741,7 +1660,7 @@
         "club": "חבר",
         "business_name": "סטימצקי",
         "discount": "חבר שלי | הכרטיס תקף לרכישת ספרים ומוצרים בחנויות סטימצקי לרבות מוצרים במבצעים והנחות למעט: ספרי לימוד מוצרים אלקטרוניים ודיגיטליים עיתונים ומגזינים ורכישת כרטיסי מתנה.<br/>לא תקף בחנויות נתב\"ג | רמון| ירידים ואתר האינטרנט.  <br/> | רשת ספרים, משחקים, צעצועים ופנאי, מוזיקה ועוד | eilat_nitan giftsmcc ,south ,north, gil6",
-        "discount_url": "https://www.steimatzky.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_company",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -1769,7 +1688,7 @@
         "club": "חבר",
         "business_name": "גלי",
         "discount": "חבר שלי | לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת. | נעלי נשים, גברים וילדים | eilat_nitan GALI, snickers ,south ,north, גלי, נעלים, gil6, Youth_clothing, Children_kinder",
-        "discount_url": "https://www.gali.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_company",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": false
@@ -1788,7 +1707,7 @@
         "club": "חבר",
         "business_name": "FOX home",
         "discount": "חבר שלי | לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת.<br/>אין כפל הטבות לעובדים/בני משפחה | כלי מטבח, אירוח ושולחן, טקסטיל, אמבטיה ונוי<br/> | eilat_nitan פוקס הום, South",
-        "discount_url": "https://www.foxhome.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_company",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": false
@@ -1875,7 +1794,7 @@
         "club": "חבר",
         "business_name": "ביתילי",
         "discount": "חבר שלי | ניתן לשלם בכרטיס הנטען עד 1000 ₪. לא תקף באתר האונליין ובחנויות העודפים: בית חרות ובחנויות הזכיין: ביתילי איילת. לא ניתן לשלם בכרטיס הנטען במחלקות תאורה שטיחים וחיפויים | רשת ריהוט ועיצוב הבית<br/> | ביתילי, ריהוט, אביזר נוי, south ,north",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_company",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -1921,7 +1840,7 @@
         "club": "חבר",
         "business_name": "לחם ארז",
         "discount": "חבר טעמים | בית קפה מסעדה | מסעדה,בית קפה",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -1930,7 +1849,7 @@
         "club": "חבר",
         "business_name": "לחם ארז",
         "discount": "חבר טעמים | בית קפה מסעדה | מעדניה,בית קפה",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -2012,7 +1931,7 @@
         "club": "חבר",
         "business_name": "ד\"ר גב",
         "discount": "חבר שלי | לא תקף לרכישה בחנויות עודפים <br/>ניתן לרכוש עד 1000 ₪ עם כרטיס הנטען והיתרה ב-5% הנחה בכרטיס אשראי \"חבר\" <br/> | ד\"ר גב, מוצרים אורתופדים, מזרנים, כורסאות, south ,north | מיטות,מזרנים,כריות שינה,מצעים,פיג'מות,שמיכות,כורסאות,סלון,שולחנות,כיסאות,עיסוי גב,עיסוי ראש,עיסוי רגליים,עיסוי,מכשירי מתיחות,מוצרי ספא,מוצרי טיפוח,מבשם אוויר,אמבטיית עיסוי,פראפין",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_company",
         "discount_type": "rechargeable_card",
         "discount_value": 5.0,
         "has_physical_store": true
@@ -2045,7 +1964,7 @@
         "club": "חבר",
         "business_name": "פולגת",
         "discount": "חבר שלי | אופנת גברים מחוייטת לצד פריטי קזו'אל מוקפדים<br/> | eilat_nitan POLGAT ,man_wear ,south ,north",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_company",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -2083,7 +2002,7 @@
         "club": "חבר",
         "business_name": "שילב",
         "discount": "חבר שלי | לא כולל מבצעים והטבות לחברי מועדון. לא ניתן להשתמש לרכישת כרטיס מתנה (גיפט קארד שילב).<br/>אין כפל הטבות לעובדים/בני משפחה | רשת מוצרים, ביגוד ואביזרים לתינוקות<br/> | south ,north, שילב eilat_nitan, gan_dress, gift_for_beby, Children_kinder",
-        "discount_url": "https://www.shilav.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_company",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": false
@@ -2188,7 +2107,7 @@
         "club": "חבר",
         "business_name": "מקדונלד'ס",
         "discount": "חבר טעמים | רשת המבורגרים | מסעדה",
-        "discount_url": "https://www.mcdonalds.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -2335,7 +2254,7 @@
         "club": "חבר",
         "business_name": "אווזי",
         "discount": "חבר טעמים | בשרים, שיפודים, סלטים | מסעדה",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -2441,16 +2360,7 @@
         "club": "חבר",
         "business_name": "קפה קפה",
         "discount": "חבר טעמים | בית קפה | בית קפה",
-        "discount_url": "https://www.cafecafe.co.il/he/home/a/main",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר",
-        "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה | בית קפה",
-        "discount_url": "https://www.cafecafe.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -2459,7 +2369,7 @@
         "club": "חבר",
         "business_name": "קפה קפה",
         "discount": "חבר טעמים | בית קפה מסעדה- חלבי | בית קפה",
-        "discount_url": "https://www.cafecafe.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -2468,7 +2378,7 @@
         "club": "חבר",
         "business_name": "קפה קפה",
         "discount": "חבר טעמים | חלבי | בית קפה",
-        "discount_url": "https://www.cafecafe.co.il/he/home/a/main",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -2477,16 +2387,7 @@
         "club": "חבר",
         "business_name": "קפה קפה",
         "discount": "חבר טעמים | בשרי | בית קפה",
-        "discount_url": "https://www.cafecafe.co.il",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר",
-        "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בשרי | בית קפה",
-        "discount_url": "https://www.cafecafe.co.il/he/home/a/main",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -2495,16 +2396,7 @@
         "club": "חבר",
         "business_name": "קפה קפה",
         "discount": "חבר טעמים | בית קפה מסעדה | בית קפה",
-        "discount_url": "https://www.cafecafe.co.il",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר",
-        "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה | בית קפה",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -2513,7 +2405,7 @@
         "club": "חבר",
         "business_name": "קפה קפה",
         "discount": "חבר טעמים | בית קפה-חלבי כשר | בית קפה",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -2522,7 +2414,7 @@
         "club": "חבר",
         "business_name": "קפה קפה",
         "discount": "חבר טעמים | מסעדה | בית קפה",
-        "discount_url": "https://www.cafecafe.co.il/he/home/a/main/",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -2531,16 +2423,7 @@
         "club": "חבר",
         "business_name": "קפה קפה",
         "discount": "חבר טעמים | בית קפה מסעדה חלבי | בית קפה",
-        "discount_url": "https://www.cafecafe.co.il/he/home/a/main/",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר",
-        "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה מסעדה | בית קפה",
-        "discount_url": "https://www.cafecafe.co.il/he/home/a/main/",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -2549,7 +2432,7 @@
         "club": "חבר",
         "business_name": "קפה קפה",
         "discount": "חבר טעמים | בית קפה מסעדה בשרי | בית קפה",
-        "discount_url": "https://www.cafecafe.co.il/he/home/a/main/",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -2558,7 +2441,7 @@
         "club": "חבר",
         "business_name": "קפה קפה",
         "discount": "חבר טעמים | מסעדה חלבי | בית קפה",
-        "discount_url": "https://cafecafeeilat.rest.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -2567,25 +2450,7 @@
         "club": "חבר",
         "business_name": "קפה קפה",
         "discount": "חבר טעמים | בית קפה - בשרי | בית קפה",
-        "discount_url": "https://www.cafecafe.co.il/he/home/a/main",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר",
-        "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה מסעדה | בית קפה",
-        "discount_url": "https://cafecafeeilat.rest.co.il",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר",
-        "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה מסעדה | בית קפה",
-        "discount_url": "https://www.cafecafe.co.il/he/home/a/main",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -2594,7 +2459,7 @@
         "club": "חבר",
         "business_name": "קפה קפה",
         "discount": "חבר טעמים | בית קפה בשרי | בית קפה",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -2603,7 +2468,7 @@
         "club": "חבר",
         "business_name": "קפה קפה",
         "discount": "חבר טעמים | בית קפה מסעדה- חלבי | מסעדה,בית קפה",
-        "discount_url": "https://www.cafecafe.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -2612,16 +2477,7 @@
         "club": "חבר",
         "business_name": "קפה קפה",
         "discount": "חבר טעמים | בית קפה מסעדה | מסעדה,בית קפה",
-        "discount_url": "https://www.cafecafe.co.il/he/home/a/main",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר",
-        "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה מסעדה | מסעדה,בית קפה",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -2847,7 +2703,7 @@
         "club": "חבר",
         "business_name": "קרנף",
         "discount": "חבר טעמים | אוכל בשרי מהיר, טרי, טעים ובריא | מסעדה",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -2866,7 +2722,7 @@
         "club": "חבר",
         "business_name": "קרנף",
         "discount": "חבר טעמים | אוכל בשרי מהיר, טרי, טעים ובריא | מסעדה",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -2894,7 +2750,7 @@
         "club": "חבר",
         "business_name": "הום סנטר",
         "discount": "חבר שלי | לא כולל: קופונים, סוכות, מחסנים גבוהים, תאורה, פנצ'ריה, שטיחים, ריצופים וחיפויי קיר, פרקטים, מזגנים, מוצרי מוטימדיה ומקרנים, טלויזיה, מסכי מחשב, מחשבים, בידוריות, חשמל לבן/חום: מקרר, מקפיא, תנור בילד אין ואפיה, כיריים, מדיח כלים מכונות ומבייש כביסה, מיקרוגל, קולט אדים, טוחן אשפה, שואב אבק נטען, שואב רובוטי מוצרי: one blade, shark, ninja, dyson אופניים ומתגלגלים, מוצרי מזון, שתיה קלה ושתייה חריפה, חומרי ניקוי. עד 1,000 ש\"ח. | רשת שיפוץ ואחזקת הבית: ריהוט, חשמל, מטבח, גינה ועוד<br/> | south ,north, הום סנטר, eilat_nitan",
-        "discount_url": "https://www.homecenter.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_company",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -3075,7 +2931,7 @@
         "club": "חבר",
         "business_name": "מוצצים",
         "discount": "חבר שלי | הכרטיס מכובד כולל כפל מועדון חברי הרשת <br/>הכרטיס מכובד עד לסכום של 3,000 ₪ <br/>בעסקאות הגדולות מ-3000 ₪, יתרת התשלום תתבצע באמצעות כרטיס אשראי \"חבר\" <br/> | מוצרים אביזרים ביגוד ועוד לתינוקות ופעוטות | מוצצים, מוצרים לתינוקות פעוטות, eilat_nitan",
-        "discount_url": "https://motsesim.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_company",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": false
@@ -3117,7 +2973,7 @@
         "club": "חבר",
         "business_name": "צומת ספרים",
         "discount": "חבר שלי | תקף על ספרים בעברית ובלועזית בלבד. לא ניתן לרכוש באמצעות הכרטיס ספרי לימוד|עיתונים|אנציקלופדיות|תוי שי|DVD. לא כולל מבצעי מועדון | רשת ספרים, משחקים ופנאי, פאזלים, הגדות לפסח ועוד<br/> | south ,north, peiloyot eilat_nitan, gil6",
-        "discount_url": "https://www.booknet.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_company",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": false
@@ -3366,7 +3222,7 @@
         "club": "חבר",
         "business_name": "מקדונלד'ס",
         "discount": "חבר טעמים | רשת המבורגרים | מסעדה",
-        "discount_url": "https://www.mcdonalds.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -3453,7 +3309,7 @@
         "club": "חבר",
         "business_name": "סטימצקי",
         "discount": "חבר שלי | הכרטיס תקף לרכישת ספרים ומוצרים בחנויות סטימצקי לרבות מוצרים במבצעים והנחות למעט: ספרי לימוד מוצרים אלקטרוניים ודיגיטליים עיתונים ומגזינים ורכישת כרטיסי מתנה.<br/>לא תקף בחנויות נתב\"ג | רמון| ירידים ואתר האינטרנט.  <br/> | רשת ספרים, משחקים, צעצועים ופנאי, מוזיקה ועוד | eilat_nitan giftsmcc ,south ,north, gil6",
-        "discount_url": "https://www.steimatzky.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_company",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -3508,7 +3364,7 @@
         "club": "חבר",
         "business_name": "כיתן",
         "discount": "חבר שלי | כיתן kitan ,south ,north | חדר שינה,מצעים,שמיכות,כריות,מגני מזרן,סדינים,חדר אמבטיה,מגבות,חלוקים,שטיחי אמבטיה,טקסטיל למטבח",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_company",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -3679,7 +3535,7 @@
         "club": "חבר",
         "business_name": "הום סנטר",
         "discount": "חבר שלי | לא כולל: קופונים, סוכות, מחסנים גבוהים, תאורה, פנצ'ריה, שטיחים, ריצופים וחיפויי קיר, פרקטים, מזגנים, מוצרי מוטימדיה ומקרנים, טלויזיה, מסכי מחשב, מחשבים, בידוריות, חשמל לבן/חום: מקרר, מקפיא, תנור בילד אין ואפיה, כיריים, מדיח כלים מכונות ומבייש כביסה, מיקרוגל, קולט אדים, טוחן אשפה, שואב אבק נטען, שואב רובוטי מוצרי: one blade, shark, ninja, dyson אופניים ומתגלגלים, מוצרי מזון, שתיה קלה ושתייה חריפה, חומרי ניקוי. עד 1,000 ש\"ח. | רשת שיפוץ ואחזקת הבית: ריהוט, חשמל, מטבח, גינה ועוד<br/> | south ,north, הום סנטר, eilat_nitan",
-        "discount_url": "https://www.homecenter.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_company",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -4199,7 +4055,7 @@
         "club": "חבר",
         "business_name": "GO",
         "discount": "חבר טעמים | קנטינה אסיאתית | מסעדה",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -4290,7 +4146,7 @@
         "club": "חבר",
         "business_name": "FOX home",
         "discount": "חבר שלי | לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת.<br/>אין כפל הטבות לעובדים/בני משפחה | כלי מטבח, אירוח ושולחן, טקסטיל, אמבטיה ונוי<br/> | eilat_nitan פוקס הום, South",
-        "discount_url": "https://www.foxhome.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_company",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": false
@@ -4322,7 +4178,7 @@
         "club": "חבר",
         "business_name": "INTIMA",
         "discount": "חבר שלי | רשת הלבשה תחתונה לנשים | eilat_nitan summer garment ,south ,north",
-        "discount_url": "https://www.intima-il.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_company",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -4535,7 +4391,7 @@
         "club": "חבר",
         "business_name": "ICE CUBE",
         "discount": "חבר שלי | לא כולל מוצרי פיינל סייל, לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת | חנות בוטיק לבגדי נשים <br/> | ICE CUBE אייס קיוב eilat_nitan ,south ,north",
-        "discount_url": "https://ice-cube.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_company",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -4620,7 +4476,7 @@
         "club": "חבר",
         "business_name": "NIKE",
         "discount": "חבר שלי | *חל בחנויות NIKE, לא כולל חנויות עודפים. חנויות NIKE בישראל מופעלות ע\"י RETAILORS<br/>*לא כולל מבצעי השקות, הטבות מועדון ותשלום הצטרפות למועדון<br/>*לא תתאפשר צבירת נקודות מועדון<br/>*אין כפל הטבות לעובדים/בני משפחה | מותג הספורט המוביל בעולם | נייק, בגדי ספורט, נעלי ספורט, gil6, gan_dress, snickers, eilat_nitan, Youth_clothing",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_company",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -4662,7 +4518,7 @@
         "club": "חבר",
         "business_name": "BOGART",
         "discount": "חבר שלי | אופנה עדכנית, טרנדי ואופנתי, קולקציית ערב, אלגנט ופריטים לשעות הפנאי. | בוגראט, אופנה לגברים, חליפות, BOGART",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_company",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -4849,7 +4705,7 @@
         "club": "חבר",
         "business_name": "ALDO",
         "discount": "חבר שלי | עד 1,000 ש\"ח לעסקה, לא כולל חנויות עודפים | רשת הנעלה ואקססוריז | אלדו, aldo, נעלים, סנדלים",
-        "discount_url": "https://www.aldoshoes.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_company",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": false
@@ -4891,7 +4747,7 @@
         "club": "חבר",
         "business_name": "SKECHERS",
         "discount": "חבר שלי | לא כולל סניפי עודפים וחנות אינטרנט | נעלי ספורט, ביגוד ואופנה לכל המשפחה | SKECHERS סקצ'רס, south ,north",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_company",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -4910,7 +4766,7 @@
         "club": "חבר",
         "business_name": "ERROCA",
         "discount": "חבר שלי | יתן  לרכוש עד 1,000 ₪ לעסקה. לא כולל: סניפי עודפים, אתר אינטרנט, מחלקות אירוקה בסניפי סופר פארם, לא כולל כפל הנחות מועדון LIFE STYLE | רשת אופטיקה | אירוקה, משקפי שמש, משקפיים, משקפי ראייה, ERROCA",
-        "discount_url": "https://erroca.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_company",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -5009,7 +4865,7 @@
         "club": "חבר",
         "business_name": "BODY SHOP",
         "discount": "חבר שלי | לא כולל הנחות מועדון ומבצעים בלעדיים לחברי מועדון הרשת | רשת מוצרי טיפוח טבעיים לגבר ולאישה | eilat_nitan בודי שופ tipuah ,south ,north, gift_for_beby",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_company",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -5028,7 +4884,7 @@
         "club": "חבר",
         "business_name": "STEVE MADDEN",
         "discount": "חבר שלי | לא ניתן להשתמש בכרטיס בחנויות עודפים<br/>לא כולל הנחות מועדון ומבצעים בלעדיים לחברי מועדון הרשת<br/> | מותג המציע הנעלה, תיקים ואביזרים <br/> | eilat_nitan סטיב מאדן, south ,north, Children_kinder, Youth_clothing",
-        "discount_url": "https://stevemadden.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_company",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -5296,7 +5152,7 @@
         "club": "חבר",
         "business_name": "NAUTICA",
         "discount": "חבר שלי | לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת. לא כולל חנויות עודפים | אופנת נשים, גברים, ילדים ואקססוריז | eilat_nitanנאוטיקה, south ,north",
-        "discount_url": "https://www.nautica.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_company",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": false
@@ -5373,7 +5229,7 @@
         "club": "חבר",
         "business_name": "סטימצקי",
         "discount": "חבר שלי | הכרטיס תקף לרכישת ספרים ומוצרים בחנויות סטימצקי לרבות מוצרים במבצעים והנחות למעט: ספרי לימוד מוצרים אלקטרוניים ודיגיטליים עיתונים ומגזינים ורכישת כרטיסי מתנה.<br/>לא תקף בחנויות נתב\"ג | רמון| ירידים ואתר האינטרנט.  <br/> | רשת ספרים, משחקים, צעצועים ופנאי, מוזיקה ועוד | eilat_nitan giftsmcc ,south ,north, gil6",
-        "discount_url": "https://www.steimatzky.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_company",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -5401,7 +5257,7 @@
         "club": "חבר",
         "business_name": "IL MAKIAGE",
         "discount": "חבר שלי | עד 1000 ₪.לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת.החזר בגין ביטול עסקה -על פי תקנון הרשת.לא ניתן לממש עם הנטען הטבות יום הולדת<br/> | רשת מוצרי איפור, קורסים לאיפור מקצועי | איל מקיאג, eilat_nitan, IL MAKIAGE, il makiage ,south ,north",
-        "discount_url": "https://www.ilmakiage.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_company",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -5513,7 +5369,7 @@
         "club": "חבר",
         "business_name": "צומת ספרים",
         "discount": "חבר שלי | תקף על ספרים בעברית ובלועזית בלבד. לא ניתן לרכוש באמצעות הכרטיס ספרי לימוד|עיתונים|אנציקלופדיות|תוי שי|DVD. לא כולל מבצעי מועדון | רשת ספרים, משחקים ופנאי, פאזלים, הגדות לפסח ועוד<br/> | south ,north, peiloyot eilat_nitan, gil6",
-        "discount_url": "https://www.booknet.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_company",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": false
@@ -5703,16 +5559,7 @@
         "club": "חבר",
         "business_name": "freshop",
         "discount": "חבר טעמים | רשת משקאות ופינוקי בריאות טריים | מיצים ופירות",
-        "discount_url": "https://sahoot.co.il/",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר",
-        "business_name": "freshop",
-        "discount": "חבר טעמים | רשת משקאות ופינוקי בריאות טריים | מיצים ופירות",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -5721,7 +5568,7 @@
         "club": "חבר",
         "business_name": "freshop",
         "discount": "חבר טעמים | רשת משקאות ופינוקי בריאות טריים | גלידריה מתוקים וקינוחים",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -5785,7 +5632,7 @@
         "club": "חבר",
         "business_name": "aerie",
         "discount": "חבר שלי | לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת. | מותג הלבשה תחתונה, הלבשת בית, פיג'מות ספורט וחוף | אריאה, אמרקן איגל, הלבשה תחתונה",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_company",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -6223,7 +6070,7 @@
         "club": "חבר",
         "business_name": "MANGO",
         "discount": "חבר שלי | לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת.<br/>אין כפל הטבות לעובדים/בני משפחה<br/> | אופנת נשים, גברים, ילדים ותינוקות | MANGO מנגו eilat_nitan ,south ,north",
-        "discount_url": "https://shop.mango.com",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_company",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -6265,7 +6112,7 @@
         "club": "חבר",
         "business_name": "מקדונלד'ס",
         "discount": "חבר טעמים | רשת המבורגרים | מסעדה",
-        "discount_url": "https://www.mcdonalds.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -6307,7 +6154,7 @@
         "club": "חבר",
         "business_name": "ROY CHOCOLATE",
         "discount": "חבר טעמים | מפעל בוטיק לייצור שוקולד | גלידריה מתוקים וקינוחים,מארזים במשלוח",
-        "discount_url": "https://www.roychocolate.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -6386,7 +6233,7 @@
         "club": "חבר",
         "business_name": "חומוס אליהו",
         "discount": "חבר טעמים | חומוס, פלאפל, סלט ירקות | מסעדה",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -6395,7 +6242,7 @@
         "club": "חבר",
         "business_name": "חומוס אליהו",
         "discount": "חבר טעמים | חומוס אליהו, מסעדה מזרחית, חומוס<br/> | חומוס, פלאפל, סלט ירקות | מסעדה",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -6531,7 +6378,7 @@
         "club": "חבר",
         "business_name": "ללין",
         "discount": "חבר שלי | לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת.<br/>אין כפל הטבות לעובדים/בני משפחה<br/> | רשת מוצרי טיפוח הגוף, הפנים ולייפסטייל<br/><br/> | eilat_nitan ללין LALINE, south ,north",
-        "discount_url": "https://www.laline.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_company",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": false
@@ -6550,7 +6397,7 @@
         "club": "חבר",
         "business_name": "מקדונלד'ס",
         "discount": "חבר טעמים | רשת המבורגרים | מסעדה",
-        "discount_url": "https://www.mcdonalds.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -7034,16 +6881,7 @@
         "club": "חבר",
         "business_name": "קפה קפה",
         "discount": "חבר טעמים | בית קפה | בית קפה",
-        "discount_url": "https://www.cafecafe.co.il/he/home/a/main",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר",
-        "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה | בית קפה",
-        "discount_url": "https://www.cafecafe.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -7052,7 +6890,7 @@
         "club": "חבר",
         "business_name": "קפה קפה",
         "discount": "חבר טעמים | בית קפה מסעדה- חלבי | בית קפה",
-        "discount_url": "https://www.cafecafe.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -7061,7 +6899,7 @@
         "club": "חבר",
         "business_name": "קפה קפה",
         "discount": "חבר טעמים | חלבי | בית קפה",
-        "discount_url": "https://www.cafecafe.co.il/he/home/a/main",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -7070,16 +6908,7 @@
         "club": "חבר",
         "business_name": "קפה קפה",
         "discount": "חבר טעמים | בשרי | בית קפה",
-        "discount_url": "https://www.cafecafe.co.il",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר",
-        "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בשרי | בית קפה",
-        "discount_url": "https://www.cafecafe.co.il/he/home/a/main",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -7088,16 +6917,7 @@
         "club": "חבר",
         "business_name": "קפה קפה",
         "discount": "חבר טעמים | בית קפה מסעדה | בית קפה",
-        "discount_url": "https://www.cafecafe.co.il",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר",
-        "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה | בית קפה",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -7106,7 +6926,7 @@
         "club": "חבר",
         "business_name": "קפה קפה",
         "discount": "חבר טעמים | בית קפה-חלבי כשר | בית קפה",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -7115,7 +6935,7 @@
         "club": "חבר",
         "business_name": "קפה קפה",
         "discount": "חבר טעמים | מסעדה | בית קפה",
-        "discount_url": "https://www.cafecafe.co.il/he/home/a/main/",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -7124,16 +6944,7 @@
         "club": "חבר",
         "business_name": "קפה קפה",
         "discount": "חבר טעמים | בית קפה מסעדה חלבי | בית קפה",
-        "discount_url": "https://www.cafecafe.co.il/he/home/a/main/",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר",
-        "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה מסעדה | בית קפה",
-        "discount_url": "https://www.cafecafe.co.il/he/home/a/main/",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -7142,7 +6953,7 @@
         "club": "חבר",
         "business_name": "קפה קפה",
         "discount": "חבר טעמים | בית קפה מסעדה בשרי | בית קפה",
-        "discount_url": "https://www.cafecafe.co.il/he/home/a/main/",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -7151,7 +6962,7 @@
         "club": "חבר",
         "business_name": "קפה קפה",
         "discount": "חבר טעמים | מסעדה חלבי | בית קפה",
-        "discount_url": "https://cafecafeeilat.rest.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -7160,25 +6971,7 @@
         "club": "חבר",
         "business_name": "קפה קפה",
         "discount": "חבר טעמים | בית קפה - בשרי | בית קפה",
-        "discount_url": "https://www.cafecafe.co.il/he/home/a/main",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר",
-        "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה מסעדה | בית קפה",
-        "discount_url": "https://cafecafeeilat.rest.co.il",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר",
-        "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה מסעדה | בית קפה",
-        "discount_url": "https://www.cafecafe.co.il/he/home/a/main",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -7187,7 +6980,7 @@
         "club": "חבר",
         "business_name": "קפה קפה",
         "discount": "חבר טעמים | בית קפה בשרי | בית קפה",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -7196,7 +6989,7 @@
         "club": "חבר",
         "business_name": "קפה קפה",
         "discount": "חבר טעמים | בית קפה מסעדה- חלבי | מסעדה,בית קפה",
-        "discount_url": "https://www.cafecafe.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -7205,16 +6998,7 @@
         "club": "חבר",
         "business_name": "קפה קפה",
         "discount": "חבר טעמים | בית קפה מסעדה | מסעדה,בית קפה",
-        "discount_url": "https://www.cafecafe.co.il/he/home/a/main",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר",
-        "business_name": "קפה קפה",
-        "discount": "חבר טעמים | בית קפה מסעדה | מסעדה,בית קפה",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -7305,7 +7089,7 @@
         "club": "חבר",
         "business_name": "Roasters",
         "discount": "חבר טעמים | בר קפה | בית קפה",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -7423,7 +7207,7 @@
         "club": "חבר",
         "business_name": "ג'וני קריספי",
         "discount": "חבר טעמים | סנדוויץ בר/סלטים | מסעדה",
-        "discount_url": "https://www.johnnycrispy.com",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -7686,7 +7470,7 @@
         "club": "חבר",
         "business_name": "בית הפול",
         "discount": "חבר טעמים | מסעדת מזון מהיר | מסעדה",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -8149,7 +7933,7 @@
         "club": "חבר",
         "business_name": "מקדונלד'ס",
         "discount": "חבר טעמים | רשת המבורגרים | מסעדה",
-        "discount_url": "https://www.mcdonalds.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -8182,7 +7966,7 @@
         "club": "חבר",
         "business_name": "JAPAN JAPAN",
         "discount": "חבר טעמים | מסעדה אסייתית | מסעדה",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -8291,7 +8075,7 @@
         "club": "חבר",
         "business_name": "עוז קרמיקה",
         "discount": "חבר שלי | עד 1000 ₪  לעסקה | רשת קרמיקה המציעה מוצרי ריצוף, חיפוי וכלים סניטריים טרנדיים <br/> | עוז קרמיקה, South",
-        "discount_url": "https://oz-ceramica.co.il/",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_company",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -8815,7 +8599,7 @@
         "club": "חבר",
         "business_name": "סטימצקי",
         "discount": "חבר שלי | הכרטיס תקף לרכישת ספרים ומוצרים בחנויות סטימצקי לרבות מוצרים במבצעים והנחות למעט: ספרי לימוד מוצרים אלקטרוניים ודיגיטליים עיתונים ומגזינים ורכישת כרטיסי מתנה.<br/>לא תקף בחנויות נתב\"ג | רמון| ירידים ואתר האינטרנט.  <br/> | רשת ספרים, משחקים, צעצועים ופנאי, מוזיקה ועוד | eilat_nitan giftsmcc ,south ,north, gil6",
-        "discount_url": "https://www.steimatzky.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_company",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -8843,7 +8627,7 @@
         "club": "חבר",
         "business_name": "תיק התיקים",
         "discount": "חבר שלי | תיקים, ארנקים, מזוודות, תיקי בית ספר, תיקים למחשבים ניידים | תיק התיקים, ארנקים, מזוודות, תיקי בית הספר, לפטופ, Youth_clothing",
-        "discount_url": "https://tikhatikim.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_company",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": false
@@ -8929,7 +8713,7 @@
         "club": "חבר",
         "business_name": "רוזן ומינץ",
         "discount": "חבר שלי | לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת, לא כולל תיקוני אופניים | eilat_nitan ROSEN & MEENTS ,south ,north | אופניים,יד שניה,אופניים חשמליים,קורקינט,סקייטבורד,ציוד לאופניים,קסדות,גלישה,קיאקים",
-        "discount_url": "https://www.rosen-meents.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_company",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -8957,7 +8741,7 @@
         "club": "חבר",
         "business_name": "מגה ספורט",
         "discount": "חבר שלי | לא כולל הנחת מועדון ומועדוני כושר. לא ניתן להשתמש בחנויות עודפים. | south ,north, מגה ספורט eilat_nitan, snickers, gil6, Children_kinder, Youth_clothing | מותגים,הנעלה,ביגוד,נעלי גברים,נעלי נשים,נעלי ילדים,נעלי ריצה,נעלי ספורט,נעלי הליכה,סניקרס,נעלי כדורגל,נעלי כדורסל,נעלי הרים,כפכפים,סנדלים,מכנסיים,חולצות,בגדי ספורט,בגדי ים,אביזרי ספורט,אקססוריז,מכשירי כושר,ציוד ספורט",
-        "discount_url": "https://www.megasport.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_company",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": false
@@ -9020,7 +8804,7 @@
         "club": "חבר",
         "business_name": "ד\"ר גב",
         "discount": "חבר שלי | לא תקף לרכישה בחנויות עודפים <br/>ניתן לרכוש עד 1000 ₪ עם כרטיס הנטען והיתרה ב-5% הנחה בכרטיס אשראי \"חבר\" <br/> | ד\"ר גב, מוצרים אורתופדים, מזרנים, כורסאות, south ,north | מיטות,מזרנים,כריות שינה,מצעים,פיג'מות,שמיכות,כורסאות,סלון,שולחנות,כיסאות,עיסוי גב,עיסוי ראש,עיסוי רגליים,עיסוי,מכשירי מתיחות,מוצרי ספא,מוצרי טיפוח,מבשם אוויר,אמבטיית עיסוי,פראפין",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_company",
         "discount_type": "rechargeable_card",
         "discount_value": 5.0,
         "has_physical_store": true
@@ -9081,7 +8865,7 @@
         "club": "חבר",
         "business_name": "תכשיטי צבאן",
         "discount": "חבר שלי | עד 1000 ₪ לעסקה | תכשיטי זהב ויהלומים טבעיים/מעבדה ואבני חן | תכשיטי צבאן, תכשיטים, יהלומים, אבני חן, צבאן, zabzn",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_company",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -9109,7 +8893,7 @@
         "club": "חבר",
         "business_name": "ריקושט",
         "discount": "חבר שלי | לא ניתן להשתמש בחנויות עודפים. לא כולל כפל חברי מועדון הרשת, לא כולל סניפי זכיינים<br/>לא כולל תשלום עבור תיקונים מכל סוג | רשת ציוד תרמילאות, נסיעות ומוצרים לחיילים | ריקושט, south ,north mahanaut, gius",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_company",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -9150,7 +8934,7 @@
         "club": "חבר",
         "business_name": "סולתם רדד",
         "discount": "חבר שלי | כולל כפל חברי מועדון הרשת | כלי מטבח, בישול ואפייה, סירים, מחבתות וסכינים | סולתם רדד soltam ,south ,north",
-        "discount_url": "https://www.soltam.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_company",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -9216,7 +9000,7 @@
         "club": "חבר",
         "business_name": "איטלסופה",
         "discount": "חבר שלי | לא תקף לרכישה בחנויות עודפים<br/>ניתן לרכוש עד 1000 ₪ עם כרטיס הנטען | ריהוט איטלקי יוקרתי<br/> | south ,north, איטלסופה, מערכות ישיבה, ספות, סלונים, ITALSOFA",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_company",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -9358,7 +9142,7 @@
         "club": "חבר",
         "business_name": "א.ל.מ",
         "discount": "חבר שלי | לא כולל מוצרי: טכנולוגיה גאדג'טים מחשוב וסלולר, מסכים עד 43 אינץ' כולל ומזגנים עד 1.25 כח סוס כולל. לא כולל מוצרים מתצוגה. עד 1,000 ₪ לעסקה | רשת מוצרי חשמל <br/> | א.ל.מ eilat_nitan ,south ,north",
-        "discount_url": "https://www.alm.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_company",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -9655,7 +9439,7 @@
         "club": "חבר",
         "business_name": "גרעיני עפולה",
         "discount": "חבר טעמים | קטניות, דגנים, פיצוחים ועוד | תבלינים ופיצוחים",
-        "discount_url": "https://www.garineiafula.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -9664,16 +9448,7 @@
         "club": "חבר",
         "business_name": "גרעיני עפולה",
         "discount": "חבר טעמים | גרעינים, תבלינים, דגנים ועוד | תבלינים ופיצוחים",
-        "discount_url": "https://www.garineiafula.co.il",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר",
-        "business_name": "גרעיני עפולה",
-        "discount": "חבר טעמים | גרעינים, תבלינים, דגנים ועוד | תבלינים ופיצוחים",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -10332,7 +10107,7 @@
         "club": "חבר",
         "business_name": "Absolute Teamsport",
         "discount": "חבר שלי | חנויות כדורגל וספורט | Absolute Teamsport, חנות ספורט,  Youth_clothing",
-        "discount_url": "https://absolute-teamsport.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_company",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -10351,7 +10126,7 @@
         "club": "חבר",
         "business_name": "בוצ'רי",
         "discount": "חבר טעמים | אחוזת בשר | מסעדה",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -10370,7 +10145,7 @@
         "club": "חבר",
         "business_name": "שלמה אלוף הפיצוחים",
         "discount": "חבר טעמים | פיצוחים, טבעיים, קלויים, פירות יבשים ועוד | תבלינים ופיצוחים",
-        "discount_url": "https://www.aluforiginal.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -10389,7 +10164,7 @@
         "club": "חבר",
         "business_name": "ג'סיקה",
         "discount": "חבר טעמים | מטבח ישראלי ים תיכוני | מסעדה",
-        "discount_url": "https://jessica-restro-bar.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -10408,7 +10183,7 @@
         "club": "חבר",
         "business_name": "מסעדת רוקפור",
         "discount": "חבר טעמים | מסעדה חלבית ואסייתית | מסעדה",
-        "discount_url": "https://rokfor.rest.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -10427,7 +10202,7 @@
         "club": "חבר",
         "business_name": "בובו המבורגר",
         "discount": "חבר טעמים | מסעדת המבורגרים | מסעדה",
-        "discount_url": "https://boboburgers.co.il",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -10446,7 +10221,7 @@
         "club": "חבר",
         "business_name": "בית הפול",
         "discount": "חבר טעמים | מסעדת מזון מהיר | מסעדה",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -10465,7 +10240,7 @@
         "club": "חבר",
         "business_name": "גלידה באר שבע",
         "discount": "חבר טעמים | גלידרייה וקינוחים | גלידריה מתוקים וקינוחים",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -10484,7 +10259,7 @@
         "club": "חבר",
         "business_name": "בית רמונא",
         "discount": "חבר טעמים | מסעדת בשרים | מסעדה",
-        "discount_url": "https://www.beit-ramona.com",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -10503,7 +10278,7 @@
         "club": "חבר",
         "business_name": "הספריה",
         "discount": "חבר טעמים | בורגר בר - לא כולל חברי מועדון | מסעדה",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -10522,7 +10297,7 @@
         "club": "חבר",
         "business_name": "קפאסה",
         "discount": "חבר טעמים | מסעדה ים תיכונית - לא כולל חברי מועדון | מסעדה",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -10555,7 +10330,7 @@
         "club": "חבר",
         "business_name": "kampai street wok",
         "discount": "חבר טעמים | מסעדה אסייתית, מוקפצים, סושי | מסעדה",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -10574,7 +10349,7 @@
         "club": "חבר",
         "business_name": "KOH THAI",
         "discount": "חבר טעמים | מטבח אסייתי | מסעדה",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -10593,7 +10368,7 @@
         "club": "חבר",
         "business_name": "CHI CHI",
         "discount": "חבר טעמים | מרפסת בר | מסעדה,בר-פאב",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -10612,7 +10387,7 @@
         "club": "חבר",
         "business_name": "לה פיצה",
         "discount": "חבר טעמים | פיצה נאפוליטאנית, דקה, אוורירית, קראנצ'ית בקצוות | מסעדה",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -10631,7 +10406,7 @@
         "club": "חבר",
         "business_name": "השניצל של תומר",
         "discount": "חבר טעמים | מסעדה בשרית ואוכל ביתי | מסעדה",
-        "discount_url": "",
+        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -10650,7 +10425,7 @@
         "club": "חבר",
         "business_name": "Food appeal",
         "discount": "חבר שלי | כלי בישול ואפייה, כלי אירוח והגשה, אביזרי מטבח | פוד אפיל, כלי מטבח, South",
-        "discount_url": "https://www.foodappeal-online.com",
+        "discount_url": "https://www.hvr.co.il/site/pg/gift_card_company",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": false
