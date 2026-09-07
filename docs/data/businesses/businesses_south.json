@@ -5336,20 +5336,20 @@
       },
       {
         "club": "HOT",
-        "business_name": "אדר ציוד וחומרי בניין",
-        "discount": "5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/הטבה/28966/אדר-ציוד-וחומרי-בניין",
-        "discount_type": "billing_discount",
-        "discount_value": 5.0,
-        "has_physical_store": true
-      },
-      {
-        "club": "HOT",
         "business_name": "סיגליות- קוסמטיקה",
         "discount": "3.5% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/הטבה/29659/סיגליות--קוסמטיקה",
         "discount_type": "billing_discount",
         "discount_value": 3.5,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "אדר ציוד וחומרי בניין",
+        "discount": "5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/28966/אדר-ציוד-וחומרי-בניין",
+        "discount_type": "billing_discount",
+        "discount_value": 5.0,
         "has_physical_store": true
       },
       {
@@ -9805,18 +9805,18 @@
       },
       {
         "club": "HOT",
-        "business_name": "Yaki Golbary",
+        "business_name": "Yaki Golbary Kids- מספרה לילדים",
         "discount": "5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/הטבה/28048/Yaki-Golbary",
+        "discount_url": "https://www.hot.co.il/הטבה/28049/Yaki-Golbary-Kids--מספרה-לילדים",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
         "has_physical_store": true
       },
       {
         "club": "HOT",
-        "business_name": "Yaki Golbary Kids- מספרה לילדים",
+        "business_name": "Yaki Golbary",
         "discount": "5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/הטבה/28049/Yaki-Golbary-Kids--מספרה-לילדים",
+        "discount_url": "https://www.hot.co.il/הטבה/28048/Yaki-Golbary",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
         "has_physical_store": true
@@ -15257,7 +15257,7 @@
       {
         "club": "BUYME",
         "business_name": "We Love Plants",
-        "discount": "לפרטים נוספים: 0546828355. למימוש אונליין יש להזמין משלוח דרך אתר בית העסק באופן הבא- אז איך נהנים מהמתנה במשלוח? אחרי שבחרתם את הפריטים שהכי עושים לכם טוב בלב, לוחצים על \"מעבר לתשלום מאובטח\" ממלאים פרטים ומתקדמים ל-\"שלם עכשיו\". לאחר מכן יפתח לכם חלון לתשלום, לשם תפתח האפשרות ללחוץ על הטאב של ביימי תחת השם BUYME וזה בדיוק המקום בו מזינים את הקוד של הגיפט קארד. אזורי חלוקת המשלוחים הינם לפי מדיניות המשלוחים של בית העסק.",
+        "discount": "איך משתמשים ב-BUYME שלך ברכישות אונליין? נכנסים לאתר We Love Plants ובוחרים את הפריטים שהכי עושים לך טוב בלב. מוסיפים לעגלה - ועוברים לקופה לשלב התשלום. שימו לב, מימוש ה-BUYME הוא במעמד התשלום, ולא ניתן לממש את המתנה בשלב בחירת הפריטים או בחלונית \"קוד הנחה או גיפט קארד\". בעמוד התשלום ממלאים את פרטי המשלוח, בצורת התשלום מסמנים 'כרטיס אשראי או אמצעי תשלום אחרים' ולוחצים 'שלם עכשיו' בעמוד הבא לוחצים על כפתור 'BUYME' מזינים את 16 הספרות שמרכיבות את קוד ה-BUYME שלך, לוחצים 'לתשלום עכשיו' – ומשלימים את ההזמנה. וזהו, המתנה שבחרת בדרך אלייך!",
         "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=We+Love+Plants#",
         "discount_type": "voucher",
         "discount_value": null,
@@ -16194,7 +16194,7 @@
       {
         "club": "BUYME",
         "business_name": "White Space",
-        "discount": "למימוש שובר חבילה סגורה יש ליצור קשר עם בית העסק במספר 03-5224559 ולמסור את קוד השובר המלא. למימוש שובר כספי באתר WHITE SPACE : שימו לב מימוש המתנה הוא במעמד התשלום לאחר שכל הפרטים נבחרו. עליכם לבחור את המוצרים שתרצו להזמין ולהמשיך לתשלום, לאחר מכן למלא את כל הפרטים הרלוונטיים עד שמגיעים לשלב ביצוע התשלום. כאשר נפתח חלון התשלום, יש לבחור בתשלום באמצעות שוברי BUYME ולהזין את השובר וללחוץ על הוספת שובר- לאחר שהמערכת זיהתה את השובר עליהם להזין את הסכום לחיוב שתרצו שירד מהשובר ולחצו על 'ניצול שובר ומעבר לתשלום' כדי להשלים את הרכישה.",
+        "discount": "למימוש שובר חבילה סגורה יש ליצור קשר עם בית העסק במספר 03-5224559 ולמסור את קוד השובר המלא. איך משתמשים ב-BUYME שלך ברכישות אונליין? נכנסים לאתר White Space ובוחרים את הפריטים שהכי עושים לך טוב בלב. מוסיפים לעגלה - ועוברים לקופה לשלב התשלום. שימו לב, מימוש ה-BUYME הוא במעמד התשלום, ולא ניתן לממש את המתנה בשלב בחירת הפריטים או בחלונית \"גיפט קארד או קוד קופון\". בעמוד התשלום ממלאים את פרטי האספקה ולוחצים על כפתור 'לתשלום מהיר' בעמוד הבא לוחצים על כפתור 'BUYME' מזינים את 16 הספרות שמרכיבות את קוד ה-BUYME שלך, לוחצים 'לביצוע התשלום' – ומשלימים את ההזמנה. וזהו, המתנה שבחרת בדרך אלייך! נ.ב, ניתן להוסיף עוד אמצעי תשלום או/ו שוברים נוספים לפרטים נוספים ניתן ליצור קשר עם בית העסק",
         "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=White+Space#",
         "discount_type": "voucher",
         "discount_value": null,
@@ -22544,20 +22544,20 @@
       },
       {
         "club": "HOT",
-        "business_name": "אדר ציוד וחומרי בניין",
-        "discount": "5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/הטבה/28966/אדר-ציוד-וחומרי-בניין",
-        "discount_type": "billing_discount",
-        "discount_value": 5.0,
-        "has_physical_store": true
-      },
-      {
-        "club": "HOT",
         "business_name": "סיגליות- קוסמטיקה",
         "discount": "3.5% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/הטבה/29659/סיגליות--קוסמטיקה",
         "discount_type": "billing_discount",
         "discount_value": 3.5,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "אדר ציוד וחומרי בניין",
+        "discount": "5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/28966/אדר-ציוד-וחומרי-בניין",
+        "discount_type": "billing_discount",
+        "discount_value": 5.0,
         "has_physical_store": true
       },
       {
