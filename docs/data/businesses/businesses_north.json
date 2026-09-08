@@ -1980,15 +1980,6 @@
         "has_physical_store": true
       },
       {
-        "club": "חבר טעמים",
-        "business_name": "לנדוור",
-        "discount": "חבר טעמים | בית קפה מסעדה",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,400119",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
         "club": "BUYME",
         "business_name": "רשת לנדוור",
         "discount": "למימוש בסניפים יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים: 03-731-1311.",
@@ -8494,15 +8485,6 @@
         "has_physical_store": true
       },
       {
-        "club": "חבר טעמים",
-        "business_name": "לנדוור",
-        "discount": "חבר טעמים | בית קפה מסעדה",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,400119",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
         "club": "BUYME",
         "business_name": "רשת לנדוור",
         "discount": "למימוש בסניפים יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים: 03-731-1311.",
@@ -8874,15 +8856,6 @@
         "business_name": "לנדוור",
         "discount": "חבר טעמים | בית קפה מסעדה",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר טעמים",
-        "business_name": "לנדוור",
-        "discount": "חבר טעמים | בית קפה מסעדה",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,400119",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -14461,15 +14434,6 @@
         "has_physical_store": true
       },
       {
-        "club": "חבר טעמים",
-        "business_name": "לנדוור",
-        "discount": "חבר טעמים | בית קפה מסעדה",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,400119",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
         "club": "BUYME",
         "business_name": "רשת לנדוור",
         "discount": "למימוש בסניפים יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים: 03-731-1311.",
@@ -14601,15 +14565,6 @@
         "business_name": "לנדוור",
         "discount": "חבר טעמים | בית קפה מסעדה",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר טעמים",
-        "business_name": "לנדוור",
-        "discount": "חבר טעמים | בית קפה מסעדה",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,400119",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -18831,15 +18786,6 @@
         "discount_type": "billing_discount",
         "discount_value": 3.5,
         "has_physical_store": true
-      },
-      {
-        "club": "חבר טעמים",
-        "business_name": "אמירי",
-        "discount": "חבר טעמים | ביסטרו כשר",
-        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
       }
     ],
     "source": "docs/data/businesses"
@@ -20699,7 +20645,7 @@
       {
         "club": "BUYME",
         "business_name": "PALMERS",
-        "discount": "ניתן ליהנות מה-BUYME ברכישה אונליין ב PALMERS איך משתמשים ב-BUYME שלך ברכישות אונליין? נכנסים לאתר PALMERS בוחרים את הפריטים שהכי עושים לך טוב בלב. מוסיפים לעגלה - ועוברים לקופה לשלב התשלום. שימו לב, מימוש ה-BUYME הוא במעמד התשלום, ולא ניתן לממש את המתנה בשלב בחירת הפריטים או בחלונית \"קוד קופון או גיפטקארד\". בעמוד התשלום לוחצים על מעבר לתשלום, בוחרים באופציה- שובר כספי. מזינים את 16 הספרות שמרכיבות את קוד ה-BUYME שלך, לוחצים שליחת הזמנה – ומשלימים את ההזמנה. וזהו, המתנה שבחרת בדרך אלייך!",
+        "discount": "ניתן ליהנות מה-BUYME ברכישה אונליין ב אתר בית העסק איך משתמשים ב-BUYME שלך ברכישות אונליין? נכנסים לאתר PALMERS בוחרים את הפריטים שהכי עושים לך טוב בלב. מוסיפים לעגלה - ועוברים לקופה לשלב התשלום. שימו לב, מימוש ה-BUYME הוא במעמד התשלום, ולא ניתן לממש את המתנה בשלב בחירת הפריטים או בחלונית \"קוד קופון או גיפטקארד\". בעמוד התשלום לוחצים על מעבר לתשלום, בוחרים באופציה- שובר כספי. מזינים את 16 הספרות שמרכיבות את קוד ה-BUYME שלך, לוחצים שליחת הזמנה – ומשלימים את ההזמנה. וזהו, המתנה שבחרת בדרך אלייך!",
         "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=PALMERS#",
         "discount_type": "voucher",
         "discount_value": null,
@@ -21138,6 +21084,15 @@
     "discounts": [
       {
         "club": "HOT",
+        "business_name": "המעדניה של אבא",
+        "discount": "3.5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/61588/המעדניה-של-אבא",
+        "discount_type": "billing_discount",
+        "discount_value": 3.5,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
         "business_name": "המעדניה מבית איפרן",
         "discount": "3.5% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/הטבה/58620/המעדניה-מבית-איפרן",
@@ -21472,15 +21427,6 @@
         "business_name": "לנדוור",
         "discount": "חבר טעמים | בית קפה מסעדה",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר טעמים",
-        "business_name": "לנדוור",
-        "discount": "חבר טעמים | בית קפה מסעדה",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,400119",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -25185,15 +25131,6 @@
         "has_physical_store": true
       },
       {
-        "club": "חבר טעמים",
-        "business_name": "לנדוור",
-        "discount": "חבר טעמים | בית קפה מסעדה",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,400119",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
         "club": "BUYME",
         "business_name": "רשת לנדוור",
         "discount": "למימוש בסניפים יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים: 03-731-1311.",
@@ -26740,15 +26677,6 @@
         "business_name": "לנדוור",
         "discount": "חבר טעמים | בית קפה מסעדה",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר טעמים",
-        "business_name": "לנדוור",
-        "discount": "חבר טעמים | בית קפה מסעדה",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,400119",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -29399,15 +29327,6 @@
         "has_physical_store": true
       },
       {
-        "club": "חבר טעמים",
-        "business_name": "לנדוור",
-        "discount": "חבר טעמים | בית קפה מסעדה",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,400119",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
         "club": "BUYME",
         "business_name": "רשת לנדוור",
         "discount": "למימוש בסניפים יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים: 03-731-1311.",
@@ -30874,7 +30793,7 @@
       {
         "club": "BUYME",
         "business_name": "Don't tell Mama",
-        "discount": "למימוש באתר Don't tell mama , יש לבחור מוצרים בחנות האונליין ולהשלים את תהליך הרכישה, לאחר מילוי הפרטים האישיים יש ללחוץ על \"שלמי עכשיו\". בשלב פרטי תשלום יש לבחור במימוש שובר BUYME ולהזין את קוד השובר. לפרטים נוספים ותמיכה: 058-7560008.",
+        "discount": "איך משתמשים ב-BUYME שלך ברכישות אונליין? נכנסים לאתר Don't tell Mama ובוחרים את הפריטים שהכי עושים לך טוב בלב. מוסיפים לעגלה - ועוברים לקופה לשלב התשלום. שימו לב, מימוש ה-BUYME הוא במעמד התשלום, ולא ניתן לממש את המתנה בשלב בחירת הפריטים או בחלונית \"הנחה או כרטיס מתנה\". בעמוד התשלום לוחצים על כרטיס אשראי או אמצעי תשלום נוספים ולוחצים על 'שלמי עכשיו'. בעמוד הבא מסמנים 'שוברי BUYME, הייטקזון, STYLE' מזינים את 16 הספרות שמרכיבות את קוד ה-BUYME שלך, לוחצים 'לתשלום' – ומשלימים את ההזמנה. וזהו, המתנה שבחרת בדרך אלייך! נ.ב, ניתן להוסיף עוד אמצעי תשלום או/ו שוברים נוספים לפרטים נוספים ניתן ליצור קשר עם בית העסק",
         "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=Don%27t+tell+Mama#",
         "discount_type": "voucher",
         "discount_value": null,
@@ -37366,15 +37285,6 @@
         "has_physical_store": true
       },
       {
-        "club": "חבר טעמים",
-        "business_name": "לנדוור",
-        "discount": "חבר טעמים | בית קפה מסעדה",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,400119",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
         "club": "BUYME",
         "business_name": "רשת לנדוור",
         "discount": "למימוש בסניפים יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים: 03-731-1311.",
@@ -37911,15 +37821,6 @@
         "business_name": "לנדוור",
         "discount": "חבר טעמים | בית קפה מסעדה",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר טעמים",
-        "business_name": "לנדוור",
-        "discount": "חבר טעמים | בית קפה מסעדה",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,400119",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -54814,17 +54715,7 @@
     "type": "",
     "lat": 32.937351,
     "lon": 35.45036500000001,
-    "discounts": [
-      {
-        "club": "חבר טעמים",
-        "business_name": "אמירי",
-        "discount": "חבר טעמים | ביסטרו כשר",
-        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      }
-    ],
+    "discounts": [],
     "source": "docs/data/businesses"
   },
   {

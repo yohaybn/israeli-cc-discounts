@@ -8179,7 +8179,7 @@
       {
         "club": "BUYME",
         "business_name": "פאנקי פיש מתנות חוויתיות",
-        "discount": "למימוש באתר פאנקי פיש, יש לבחור מוצרים בחנות האונליין של פאנקי פיש ו להקליד את קוד הGift Card בשורת \"תשלום באמצעות שוברי BUYME\" במעמד התשלום. למימוש יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים: 054-8987543.",
+        "discount": "איך משתמשים ב-BUYME שלך ברכישות אונליין? נכנסים לאתר פאנקי פיש ובוחרים את הפריטים שהכי עושים לך טוב בלב. מוסיפים לעגלה - ועוברים לקופה לשלב התשלום. שימו לב, מימוש ה-BUYME הוא במעמד התשלום, ולא ניתן לממש את המתנה בשלב בחירת הפריטים או בחלונית \"גיפטקארד או קוד הנחה\". בעמוד התשלום ממלאים את פרטי המשלוח ולוחצים 'שלם עכשיו' בעמוד הבא לוחצים על כפתור 'BUYME' מזינים את 16 הספרות שמרכיבות את קוד ה-BUYME שלך, לוחצים 'לתשלום' – ומשלימים את ההזמנה. וזהו, המתנה שבחרת בדרך אלייך! נ.ב, ניתן להוסיף עוד אמצעי תשלום או/ו שוברים נוספים לפרטים נוספים ניתן ליצור קשר עם בית העסק",
         "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=%D7%A4%D7%90%D7%A0%D7%A7%D7%99+%D7%A4%D7%99%D7%A9+%D7%9E%D7%AA%D7%A0%D7%95%D7%AA+%D7%97%D7%95%D7%95%D7%99%D7%AA%D7%99%D7%95%D7%AA#",
         "discount_type": "voucher",
         "discount_value": null,
@@ -8316,7 +8316,7 @@
       {
         "club": "BUYME",
         "business_name": "סטודיו עדי ניסני",
-        "discount": "למימוש השובר יש להיכנס לאתר סטודיו עדי ניסני לבחור את המוצרים ולהשלים את התהליך הרכישה, במעמד התשלום יש לבחור באמצעי תשלום אשראי, ולבחור ב\"תשלום באמצעות שוברי BUYME למימוש יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים: 054-7986107.",
+        "discount": "איך משתמשים ב-BUYME שלך ברכישות אונליין? נכנסים לאתר סטודיו עדי ניסני ובוחרים את הפריטים שהכי עושים לך טוב בלב. מוסיפים לעגלה - ועוברים לקופה לשלב התשלום. שימו לב, מימוש ה-BUYME הוא במעמד התשלום, ולא ניתן לממש את המתנה בשלב בחירת הפריטים או בחלונית \"הנחה או כרטיס מתנה\". בעמוד התשלום לוחצים על כרטיס אשראי או אמצעי תשלום נוספים ולוחצים על 'שלמי עכשיו'. בעמוד הבא בורים ב'BUYME' מזינים את 16 הספרות שמרכיבות את קוד ה-BUYME שלך, לוחצים 'לתשלום' – ומשלימים את ההזמנה. וזהו, המתנה שבחרת בדרך אלייך! נ.ב, ניתן להוסיף עוד אמצעי תשלום או/ו שוברים נוספים לפרטים נוספים ניתן ליצור קשר עם בית העסק",
         "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=%D7%A1%D7%98%D7%95%D7%93%D7%99%D7%95+%D7%A2%D7%93%D7%99+%D7%A0%D7%99%D7%A1%D7%A0%D7%99#",
         "discount_type": "voucher",
         "discount_value": null,
@@ -9579,15 +9579,6 @@
         "has_physical_store": true
       },
       {
-        "club": "חבר טעמים",
-        "business_name": "לנדוור",
-        "discount": "חבר טעמים | בית קפה מסעדה",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,400119",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
         "club": "BUYME",
         "business_name": "רשת לנדוור",
         "discount": "למימוש בסניפים יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים: 03-731-1311.",
@@ -9915,15 +9906,6 @@
         "business_name": "לנדוור",
         "discount": "חבר טעמים | בית קפה מסעדה",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר טעמים",
-        "business_name": "לנדוור",
-        "discount": "חבר טעמים | בית קפה מסעדה",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,400119",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -19599,6 +19581,21 @@
           "BUYME MOMENTS - מגוון חוויות"
         ],
         "has_physical_store": true
+      },
+      {
+        "club": "BUYME",
+        "business_name": "מלון מטרו הרצליה",
+        "discount": "למימוש, הזינו את קוד השובר.",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=%D7%9E%D7%9C%D7%95%D7%9F+%D7%9E%D7%98%D7%A8%D7%95+%D7%94%D7%A8%D7%A6%D7%9C%D7%99%D7%94#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME BABY- מגוון מתנות לידה",
+          "BUYME VACATION & SPA- מלונות וספא",
+          "BUYME LOCAL – מתנות מקומיות"
+        ],
+        "has_physical_store": true
       }
     ],
     "source": "docs/data/businesses"
@@ -21256,15 +21253,6 @@
         "has_physical_store": true
       },
       {
-        "club": "חבר טעמים",
-        "business_name": "לנדוור",
-        "discount": "חבר טעמים | בית קפה מסעדה",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,400119",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
         "club": "BUYME",
         "business_name": "רשת לנדוור",
         "discount": "למימוש בסניפים יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים: 03-731-1311.",
@@ -21350,15 +21338,6 @@
         "business_name": "לנדוור",
         "discount": "חבר טעמים | בית קפה מסעדה",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר טעמים",
-        "business_name": "לנדוור",
-        "discount": "חבר טעמים | בית קפה מסעדה",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,400119",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -28477,17 +28456,7 @@
     "type": "pub",
     "lat": 32.08822,
     "lon": 34.853805,
-    "discounts": [
-      {
-        "club": "חבר טעמים",
-        "business_name": "ג'מס קיסריה",
-        "discount": "חבר טעמים | בר מסעדה",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,266639",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      }
-    ],
+    "discounts": [],
     "source": "docs/data/businesses"
   },
   {
@@ -30062,15 +30031,6 @@
         "business_name": "לנדוור",
         "discount": "חבר טעמים | בית קפה מסעדה",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר טעמים",
-        "business_name": "לנדוור",
-        "discount": "חבר טעמים | בית קפה מסעדה",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,400119",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -36149,15 +36109,6 @@
         "has_physical_store": true
       },
       {
-        "club": "חבר טעמים",
-        "business_name": "לנדוור",
-        "discount": "חבר טעמים | בית קפה מסעדה",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,400119",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
         "club": "BUYME",
         "business_name": "רשת לנדוור",
         "discount": "למימוש בסניפים יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים: 03-731-1311.",
@@ -41894,15 +41845,6 @@
         "has_physical_store": true
       },
       {
-        "club": "חבר טעמים",
-        "business_name": "לנדוור",
-        "discount": "חבר טעמים | בית קפה מסעדה",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,400119",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
         "club": "BUYME",
         "business_name": "רשת לנדוור",
         "discount": "למימוש בסניפים יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים: 03-731-1311.",
@@ -46724,15 +46666,6 @@
         "has_physical_store": true
       },
       {
-        "club": "חבר טעמים",
-        "business_name": "לנדוור",
-        "discount": "חבר טעמים | בית קפה מסעדה",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,400119",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
         "club": "BUYME",
         "business_name": "רשת לנדוור",
         "discount": "למימוש בסניפים יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים: 03-731-1311.",
@@ -47627,7 +47560,7 @@
       {
         "club": "BUYME",
         "business_name": "Danielle Gerber",
-        "discount": "ניתן ליהנות מה-BUYME גם ברכישה אונליין ב אתר בית העסק וגם בחנויות איך נהנים מה-BUYME שלך ברכישות אונליין? נכנסים לאתר Danielle Gerber ובוחרים את הפריטים שהכי עושים לך טוב בלב. מוסיפים לעגלה - ועוברים לקופה לשלב התשלום. שימו לב, מימוש ה-BUYME הוא במעמד התשלום, ולא ניתן לממש את המתנה בשלב בחירת הפריטים או בחלונית \"קוד קופון או גיפטקארד\". בעמוד התשלום ל וחצים על Cards and vouchers to redeem בוחרים בBUYME מזינים את 16 הספרות שמרכיבות את קוד ה-BUYME שלך, לוחצים אישור – ומשלימים את ההזמנה. וזהו, המתנה שבחרת בדרך אלייך!",
+        "discount": "ניתן ליהנות מה-BUYME גם ברכישה אונליין ב אתר בית העסק וגם בחנויות איך נהנים מה-BUYME שלך ברכישות אונליין? נכנסים לאתר Danielle Gerber ובוחרים את הפריטים שהכי עושים לך טוב בלב. מוסיפים לעגלה - ועוברים לקופה לשלב התשלום. שימו לב, מימוש ה-BUYME הוא במעמד התשלום, ולא ניתן לממש את המתנה בשלב בחירת הפריטים או בחלונית \"קוד קופון או גיפטקארד\". בעמוד התשלום ל וחצים על Cards and vouchers to redeem בוחרים ב'BUYME' מזינים את 16 הספרות שמרכיבות את קוד ה-BUYME שלך, לוחצים אישור – ומשלימים את ההזמנה. וזהו, המתנה שבחרת בדרך אלייך!",
         "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=Danielle+Gerber#",
         "discount_type": "voucher",
         "discount_value": null,
@@ -49271,15 +49204,6 @@
         "has_physical_store": true
       },
       {
-        "club": "חבר טעמים",
-        "business_name": "לנדוור",
-        "discount": "חבר טעמים | בית קפה מסעדה",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,400119",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
         "club": "BUYME",
         "business_name": "רשת לנדוור",
         "discount": "למימוש בסניפים יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים: 03-731-1311.",
@@ -50862,15 +50786,6 @@
         "has_physical_store": true
       },
       {
-        "club": "חבר טעמים",
-        "business_name": "לנדוור",
-        "discount": "חבר טעמים | בית קפה מסעדה",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,400119",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
         "club": "BUYME",
         "business_name": "רשת לנדוור",
         "discount": "למימוש בסניפים יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים: 03-731-1311.",
@@ -51717,15 +51632,6 @@
         "has_physical_store": true
       },
       {
-        "club": "חבר טעמים",
-        "business_name": "לנדוור",
-        "discount": "חבר טעמים | בית קפה מסעדה",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,400119",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
         "club": "BUYME",
         "business_name": "רשת לנדוור",
         "discount": "למימוש בסניפים יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים: 03-731-1311.",
@@ -52327,15 +52233,6 @@
         "business_name": "לנדוור",
         "discount": "חבר טעמים | בית קפה מסעדה",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר טעמים",
-        "business_name": "לנדוור",
-        "discount": "חבר טעמים | בית קפה מסעדה",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,400119",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -56962,7 +56859,7 @@
       {
         "club": "BUYME",
         "business_name": "Danielle Gerber",
-        "discount": "ניתן ליהנות מה-BUYME גם ברכישה אונליין ב אתר בית העסק וגם בחנויות איך נהנים מה-BUYME שלך ברכישות אונליין? נכנסים לאתר Danielle Gerber ובוחרים את הפריטים שהכי עושים לך טוב בלב. מוסיפים לעגלה - ועוברים לקופה לשלב התשלום. שימו לב, מימוש ה-BUYME הוא במעמד התשלום, ולא ניתן לממש את המתנה בשלב בחירת הפריטים או בחלונית \"קוד קופון או גיפטקארד\". בעמוד התשלום ל וחצים על Cards and vouchers to redeem בוחרים בBUYME מזינים את 16 הספרות שמרכיבות את קוד ה-BUYME שלך, לוחצים אישור – ומשלימים את ההזמנה. וזהו, המתנה שבחרת בדרך אלייך!",
+        "discount": "ניתן ליהנות מה-BUYME גם ברכישה אונליין ב אתר בית העסק וגם בחנויות איך נהנים מה-BUYME שלך ברכישות אונליין? נכנסים לאתר Danielle Gerber ובוחרים את הפריטים שהכי עושים לך טוב בלב. מוסיפים לעגלה - ועוברים לקופה לשלב התשלום. שימו לב, מימוש ה-BUYME הוא במעמד התשלום, ולא ניתן לממש את המתנה בשלב בחירת הפריטים או בחלונית \"קוד קופון או גיפטקארד\". בעמוד התשלום ל וחצים על Cards and vouchers to redeem בוחרים ב'BUYME' מזינים את 16 הספרות שמרכיבות את קוד ה-BUYME שלך, לוחצים אישור – ומשלימים את ההזמנה. וזהו, המתנה שבחרת בדרך אלייך!",
         "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=Danielle+Gerber#",
         "discount_type": "voucher",
         "discount_value": null,
@@ -57738,6 +57635,15 @@
     "lat": 32.08813,
     "lon": 34.883614,
     "discounts": [
+      {
+        "club": "HOT",
+        "business_name": "המעדניה של אבא",
+        "discount": "3.5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/61588/המעדניה-של-אבא",
+        "discount_type": "billing_discount",
+        "discount_value": 3.5,
+        "has_physical_store": true
+      },
       {
         "club": "HOT",
         "business_name": "המעדניה מבית איפרן",
@@ -72995,15 +72901,6 @@
         "has_physical_store": true
       },
       {
-        "club": "חבר טעמים",
-        "business_name": "לנדוור",
-        "discount": "חבר טעמים | בית קפה מסעדה",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,400119",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
         "club": "BUYME",
         "business_name": "רשת לנדוור",
         "discount": "למימוש בסניפים יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים: 03-731-1311.",
@@ -73935,15 +73832,6 @@
         "business_name": "לנדוור",
         "discount": "חבר טעמים | בית קפה מסעדה",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר טעמים",
-        "business_name": "לנדוור",
-        "discount": "חבר טעמים | בית קפה מסעדה",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,400119",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -83381,15 +83269,6 @@
         "discount_type": "billing_discount",
         "discount_value": 3.5,
         "has_physical_store": true
-      },
-      {
-        "club": "חבר טעמים",
-        "business_name": "אמירי",
-        "discount": "חבר טעמים | ביסטרו כשר",
-        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
       }
     ],
     "source": "docs/data/businesses"
@@ -87874,15 +87753,6 @@
         "has_physical_store": true
       },
       {
-        "club": "חבר טעמים",
-        "business_name": "לנדוור",
-        "discount": "חבר טעמים | בית קפה מסעדה",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,400119",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
         "club": "BUYME",
         "business_name": "רשת לנדוור",
         "discount": "למימוש בסניפים יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים: 03-731-1311.",
@@ -88327,15 +88197,6 @@
         "business_name": "לנדוור",
         "discount": "חבר טעמים | בית קפה מסעדה",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר טעמים",
-        "business_name": "לנדוור",
-        "discount": "חבר טעמים | בית קפה מסעדה",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,400119",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -88873,15 +88734,6 @@
         "business_name": "לנדוור",
         "discount": "חבר טעמים | בית קפה מסעדה",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר טעמים",
-        "business_name": "לנדוור",
-        "discount": "חבר טעמים | בית קפה מסעדה",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,400119",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -98220,7 +98072,7 @@
       {
         "club": "BUYME",
         "business_name": "Danielle Gerber",
-        "discount": "ניתן ליהנות מה-BUYME גם ברכישה אונליין ב אתר בית העסק וגם בחנויות איך נהנים מה-BUYME שלך ברכישות אונליין? נכנסים לאתר Danielle Gerber ובוחרים את הפריטים שהכי עושים לך טוב בלב. מוסיפים לעגלה - ועוברים לקופה לשלב התשלום. שימו לב, מימוש ה-BUYME הוא במעמד התשלום, ולא ניתן לממש את המתנה בשלב בחירת הפריטים או בחלונית \"קוד קופון או גיפטקארד\". בעמוד התשלום ל וחצים על Cards and vouchers to redeem בוחרים בBUYME מזינים את 16 הספרות שמרכיבות את קוד ה-BUYME שלך, לוחצים אישור – ומשלימים את ההזמנה. וזהו, המתנה שבחרת בדרך אלייך!",
+        "discount": "ניתן ליהנות מה-BUYME גם ברכישה אונליין ב אתר בית העסק וגם בחנויות איך נהנים מה-BUYME שלך ברכישות אונליין? נכנסים לאתר Danielle Gerber ובוחרים את הפריטים שהכי עושים לך טוב בלב. מוסיפים לעגלה - ועוברים לקופה לשלב התשלום. שימו לב, מימוש ה-BUYME הוא במעמד התשלום, ולא ניתן לממש את המתנה בשלב בחירת הפריטים או בחלונית \"קוד קופון או גיפטקארד\". בעמוד התשלום ל וחצים על Cards and vouchers to redeem בוחרים ב'BUYME' מזינים את 16 הספרות שמרכיבות את קוד ה-BUYME שלך, לוחצים אישור – ומשלימים את ההזמנה. וזהו, המתנה שבחרת בדרך אלייך!",
         "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=Danielle+Gerber#",
         "discount_type": "voucher",
         "discount_value": null,
@@ -102632,7 +102484,7 @@
       {
         "club": "BUYME",
         "business_name": "סטודיו עדי ניסני",
-        "discount": "למימוש השובר יש להיכנס לאתר סטודיו עדי ניסני לבחור את המוצרים ולהשלים את התהליך הרכישה, במעמד התשלום יש לבחור באמצעי תשלום אשראי, ולבחור ב\"תשלום באמצעות שוברי BUYME למימוש יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים: 054-7986107.",
+        "discount": "איך משתמשים ב-BUYME שלך ברכישות אונליין? נכנסים לאתר סטודיו עדי ניסני ובוחרים את הפריטים שהכי עושים לך טוב בלב. מוסיפים לעגלה - ועוברים לקופה לשלב התשלום. שימו לב, מימוש ה-BUYME הוא במעמד התשלום, ולא ניתן לממש את המתנה בשלב בחירת הפריטים או בחלונית \"הנחה או כרטיס מתנה\". בעמוד התשלום לוחצים על כרטיס אשראי או אמצעי תשלום נוספים ולוחצים על 'שלמי עכשיו'. בעמוד הבא בורים ב'BUYME' מזינים את 16 הספרות שמרכיבות את קוד ה-BUYME שלך, לוחצים 'לתשלום' – ומשלימים את ההזמנה. וזהו, המתנה שבחרת בדרך אלייך! נ.ב, ניתן להוסיף עוד אמצעי תשלום או/ו שוברים נוספים לפרטים נוספים ניתן ליצור קשר עם בית העסק",
         "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=%D7%A1%D7%98%D7%95%D7%93%D7%99%D7%95+%D7%A2%D7%93%D7%99+%D7%A0%D7%99%D7%A1%D7%A0%D7%99#",
         "discount_type": "voucher",
         "discount_value": null,
@@ -105314,15 +105166,6 @@
         "has_physical_store": true
       },
       {
-        "club": "חבר טעמים",
-        "business_name": "לנדוור",
-        "discount": "חבר טעמים | בית קפה מסעדה",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,400119",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
         "club": "BUYME",
         "business_name": "רשת לנדוור",
         "discount": "למימוש בסניפים יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים: 03-731-1311.",
@@ -105614,15 +105457,6 @@
         "business_name": "לנדוור",
         "discount": "חבר טעמים | בית קפה מסעדה",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר טעמים",
-        "business_name": "לנדוור",
-        "discount": "חבר טעמים | בית קפה מסעדה",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,400119",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -107283,15 +107117,6 @@
         "has_physical_store": true
       },
       {
-        "club": "חבר טעמים",
-        "business_name": "לנדוור",
-        "discount": "חבר טעמים | בית קפה מסעדה",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,400119",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
         "club": "BUYME",
         "business_name": "רשת לנדוור",
         "discount": "למימוש בסניפים יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים: 03-731-1311.",
@@ -107358,15 +107183,6 @@
         "business_name": "לנדוור",
         "discount": "חבר טעמים | בית קפה מסעדה",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר טעמים",
-        "business_name": "לנדוור",
-        "discount": "חבר טעמים | בית קפה מסעדה",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,400119",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -108459,17 +108275,7 @@
     "type": "restaurant",
     "lat": 32.088865,
     "lon": 34.858219,
-    "discounts": [
-      {
-        "club": "חבר טעמים",
-        "business_name": "ג'מס קיסריה",
-        "discount": "חבר טעמים | בר מסעדה",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,266639",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      }
-    ],
+    "discounts": [],
     "source": "docs/data/businesses"
   },
   {
@@ -117752,15 +117558,6 @@
         "has_physical_store": true
       },
       {
-        "club": "חבר טעמים",
-        "business_name": "לנדוור",
-        "discount": "חבר טעמים | בית קפה מסעדה",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,400119",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
         "club": "BUYME",
         "business_name": "רשת לנדוור",
         "discount": "למימוש בסניפים יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים: 03-731-1311.",
@@ -119466,7 +119263,17 @@
     "type": "convenience",
     "lat": 32.018001,
     "lon": 34.747911,
-    "discounts": [],
+    "discounts": [
+      {
+        "club": "HOT",
+        "business_name": "קצביית שפע ברכת השם",
+        "discount": "2% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/61592/קצביית-שפע-ברכת-השם",
+        "discount_type": "billing_discount",
+        "discount_value": 2.0,
+        "has_physical_store": true
+      }
+    ],
     "source": "docs/data/businesses"
   },
   {
@@ -121689,6 +121496,15 @@
       },
       {
         "club": "HOT",
+        "business_name": "המעדניה של אבא",
+        "discount": "3.5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/61588/המעדניה-של-אבא",
+        "discount_type": "billing_discount",
+        "discount_value": 3.5,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
         "business_name": "המעדנייה",
         "discount": "3.5% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/הטבה/61228/המעדנייה",
@@ -123859,15 +123675,6 @@
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
-      },
-      {
-        "club": "חבר טעמים",
-        "business_name": "לנדוור",
-        "discount": "חבר טעמים | בית קפה מסעדה",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,400119",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
       }
     ],
     "source": "docs/data/businesses"
@@ -125857,7 +125664,7 @@
       {
         "club": "BUYME",
         "business_name": "Danielle Gerber",
-        "discount": "ניתן ליהנות מה-BUYME גם ברכישה אונליין ב אתר בית העסק וגם בחנויות איך נהנים מה-BUYME שלך ברכישות אונליין? נכנסים לאתר Danielle Gerber ובוחרים את הפריטים שהכי עושים לך טוב בלב. מוסיפים לעגלה - ועוברים לקופה לשלב התשלום. שימו לב, מימוש ה-BUYME הוא במעמד התשלום, ולא ניתן לממש את המתנה בשלב בחירת הפריטים או בחלונית \"קוד קופון או גיפטקארד\". בעמוד התשלום ל וחצים על Cards and vouchers to redeem בוחרים בBUYME מזינים את 16 הספרות שמרכיבות את קוד ה-BUYME שלך, לוחצים אישור – ומשלימים את ההזמנה. וזהו, המתנה שבחרת בדרך אלייך!",
+        "discount": "ניתן ליהנות מה-BUYME גם ברכישה אונליין ב אתר בית העסק וגם בחנויות איך נהנים מה-BUYME שלך ברכישות אונליין? נכנסים לאתר Danielle Gerber ובוחרים את הפריטים שהכי עושים לך טוב בלב. מוסיפים לעגלה - ועוברים לקופה לשלב התשלום. שימו לב, מימוש ה-BUYME הוא במעמד התשלום, ולא ניתן לממש את המתנה בשלב בחירת הפריטים או בחלונית \"קוד קופון או גיפטקארד\". בעמוד התשלום ל וחצים על Cards and vouchers to redeem בוחרים ב'BUYME' מזינים את 16 הספרות שמרכיבות את קוד ה-BUYME שלך, לוחצים אישור – ומשלימים את ההזמנה. וזהו, המתנה שבחרת בדרך אלייך!",
         "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=Danielle+Gerber#",
         "discount_type": "voucher",
         "discount_value": null,
@@ -126855,15 +126662,6 @@
         "business_name": "לנדוור",
         "discount": "חבר טעמים | בית קפה מסעדה",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר טעמים",
-        "business_name": "לנדוור",
-        "discount": "חבר טעמים | בית קפה מסעדה",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,400119",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -129855,15 +129653,6 @@
         "has_physical_store": true
       },
       {
-        "club": "חבר טעמים",
-        "business_name": "לנדוור",
-        "discount": "חבר טעמים | בית קפה מסעדה",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,400119",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
         "club": "BUYME",
         "business_name": "רשת לנדוור",
         "discount": "למימוש בסניפים יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים: 03-731-1311.",
@@ -131959,7 +131748,7 @@
       {
         "club": "BUYME",
         "business_name": "Danielle Gerber",
-        "discount": "ניתן ליהנות מה-BUYME גם ברכישה אונליין ב אתר בית העסק וגם בחנויות איך נהנים מה-BUYME שלך ברכישות אונליין? נכנסים לאתר Danielle Gerber ובוחרים את הפריטים שהכי עושים לך טוב בלב. מוסיפים לעגלה - ועוברים לקופה לשלב התשלום. שימו לב, מימוש ה-BUYME הוא במעמד התשלום, ולא ניתן לממש את המתנה בשלב בחירת הפריטים או בחלונית \"קוד קופון או גיפטקארד\". בעמוד התשלום ל וחצים על Cards and vouchers to redeem בוחרים בBUYME מזינים את 16 הספרות שמרכיבות את קוד ה-BUYME שלך, לוחצים אישור – ומשלימים את ההזמנה. וזהו, המתנה שבחרת בדרך אלייך!",
+        "discount": "ניתן ליהנות מה-BUYME גם ברכישה אונליין ב אתר בית העסק וגם בחנויות איך נהנים מה-BUYME שלך ברכישות אונליין? נכנסים לאתר Danielle Gerber ובוחרים את הפריטים שהכי עושים לך טוב בלב. מוסיפים לעגלה - ועוברים לקופה לשלב התשלום. שימו לב, מימוש ה-BUYME הוא במעמד התשלום, ולא ניתן לממש את המתנה בשלב בחירת הפריטים או בחלונית \"קוד קופון או גיפטקארד\". בעמוד התשלום ל וחצים על Cards and vouchers to redeem בוחרים ב'BUYME' מזינים את 16 הספרות שמרכיבות את קוד ה-BUYME שלך, לוחצים אישור – ומשלימים את ההזמנה. וזהו, המתנה שבחרת בדרך אלייך!",
         "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=Danielle+Gerber#",
         "discount_type": "voucher",
         "discount_value": null,
@@ -137182,17 +136971,7 @@
     "type": "clothes",
     "lat": 32.09251,
     "lon": 34.865629,
-    "discounts": [
-      {
-        "club": "HOT",
-        "business_name": "Razili - רזילי",
-        "discount": "10% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/הטבה/44417/Razili---רזילי",
-        "discount_type": "billing_discount",
-        "discount_value": 10.0,
-        "has_physical_store": true
-      }
-    ],
+    "discounts": [],
     "source": "docs/data/businesses"
   },
   {
@@ -139248,6 +139027,15 @@
     "lat": 32.195745,
     "lon": 34.882248,
     "discounts": [
+      {
+        "club": "HOT",
+        "business_name": "המעדניה של אבא",
+        "discount": "3.5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/61588/המעדניה-של-אבא",
+        "discount_type": "billing_discount",
+        "discount_value": 3.5,
+        "has_physical_store": true
+      },
       {
         "club": "HOT",
         "business_name": "המעדניה מבית איפרן",
@@ -145314,15 +145102,6 @@
     "discounts": [
       {
         "club": "HOT",
-        "business_name": "Razili - רזילי",
-        "discount": "10% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/הטבה/44417/Razili---רזילי",
-        "discount_type": "billing_discount",
-        "discount_value": 10.0,
-        "has_physical_store": true
-      },
-      {
-        "club": "HOT",
         "business_name": "קרייזי ליין - Crazyline",
         "discount": "5% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/הטבה/60828/קרייזי-ליין---Crazyline",
@@ -145921,7 +145700,7 @@
       {
         "club": "BUYME",
         "business_name": "Don't tell Mama",
-        "discount": "למימוש באתר Don't tell mama , יש לבחור מוצרים בחנות האונליין ולהשלים את תהליך הרכישה, לאחר מילוי הפרטים האישיים יש ללחוץ על \"שלמי עכשיו\". בשלב פרטי תשלום יש לבחור במימוש שובר BUYME ולהזין את קוד השובר. לפרטים נוספים ותמיכה: 058-7560008.",
+        "discount": "איך משתמשים ב-BUYME שלך ברכישות אונליין? נכנסים לאתר Don't tell Mama ובוחרים את הפריטים שהכי עושים לך טוב בלב. מוסיפים לעגלה - ועוברים לקופה לשלב התשלום. שימו לב, מימוש ה-BUYME הוא במעמד התשלום, ולא ניתן לממש את המתנה בשלב בחירת הפריטים או בחלונית \"הנחה או כרטיס מתנה\". בעמוד התשלום לוחצים על כרטיס אשראי או אמצעי תשלום נוספים ולוחצים על 'שלמי עכשיו'. בעמוד הבא מסמנים 'שוברי BUYME, הייטקזון, STYLE' מזינים את 16 הספרות שמרכיבות את קוד ה-BUYME שלך, לוחצים 'לתשלום' – ומשלימים את ההזמנה. וזהו, המתנה שבחרת בדרך אלייך! נ.ב, ניתן להוסיף עוד אמצעי תשלום או/ו שוברים נוספים לפרטים נוספים ניתן ליצור קשר עם בית העסק",
         "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=Don%27t+tell+Mama#",
         "discount_type": "voucher",
         "discount_value": null,
@@ -146977,15 +146756,6 @@
         "business_name": "לנדוור",
         "discount": "חבר טעמים | בית קפה מסעדה",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר טעמים",
-        "business_name": "לנדוור",
-        "discount": "חבר טעמים | בית קפה מסעדה",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,400119",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -160466,7 +160236,7 @@
       {
         "club": "BUYME",
         "business_name": "Danielle Gerber",
-        "discount": "ניתן ליהנות מה-BUYME גם ברכישה אונליין ב אתר בית העסק וגם בחנויות איך נהנים מה-BUYME שלך ברכישות אונליין? נכנסים לאתר Danielle Gerber ובוחרים את הפריטים שהכי עושים לך טוב בלב. מוסיפים לעגלה - ועוברים לקופה לשלב התשלום. שימו לב, מימוש ה-BUYME הוא במעמד התשלום, ולא ניתן לממש את המתנה בשלב בחירת הפריטים או בחלונית \"קוד קופון או גיפטקארד\". בעמוד התשלום ל וחצים על Cards and vouchers to redeem בוחרים בBUYME מזינים את 16 הספרות שמרכיבות את קוד ה-BUYME שלך, לוחצים אישור – ומשלימים את ההזמנה. וזהו, המתנה שבחרת בדרך אלייך!",
+        "discount": "ניתן ליהנות מה-BUYME גם ברכישה אונליין ב אתר בית העסק וגם בחנויות איך נהנים מה-BUYME שלך ברכישות אונליין? נכנסים לאתר Danielle Gerber ובוחרים את הפריטים שהכי עושים לך טוב בלב. מוסיפים לעגלה - ועוברים לקופה לשלב התשלום. שימו לב, מימוש ה-BUYME הוא במעמד התשלום, ולא ניתן לממש את המתנה בשלב בחירת הפריטים או בחלונית \"קוד קופון או גיפטקארד\". בעמוד התשלום ל וחצים על Cards and vouchers to redeem בוחרים ב'BUYME' מזינים את 16 הספרות שמרכיבות את קוד ה-BUYME שלך, לוחצים אישור – ומשלימים את ההזמנה. וזהו, המתנה שבחרת בדרך אלייך!",
         "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=Danielle+Gerber#",
         "discount_type": "voucher",
         "discount_value": null,
@@ -160575,15 +160345,6 @@
         "business_name": "לנדוור",
         "discount": "חבר טעמים | בית קפה מסעדה",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר טעמים",
-        "business_name": "לנדוור",
-        "discount": "חבר טעמים | בית קפה מסעדה",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,400119",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -169673,7 +169434,7 @@
       {
         "club": "BUYME",
         "business_name": "NORI KIDS",
-        "discount": "למימוש השובר באונליין יש להיכנס לאתר MISS NORI לבחור את המוצרים ולהשלים את התהליך הרכישה, במעמד התשלום יש לבחור באמצעי תשלום אשראי, ולבחור ב\"תשלום באמצעות שוברי BUYME\". למימוש בחנות יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים: 03-5410000.",
+        "discount": "איך משתמשים ב-BUYME שלך ברכישות אונליין? נכנסים לאתר NORI KIDS ובוחרים את הפריטים שהכי עושים לך טוב בלב. מוסיפים לעגלה - ועוברים לקופה לשלב התשלום. שימו לב, מימוש ה-BUYME הוא במעמד התשלום, ולא ניתן לממש את המתנה בשלב בחירת הפריטים או בחלונית \"גיפט קארד או קוד הנחה\". בעמוד התשלום ממלאים את פרטי המשלוח ולוחצים על 'שלמי עכשיו'. בעמוד הבא בוחרים ב'BUYME' מזינים את 16 הספרות שמרכיבות את קוד ה-BUYME שלך, לוחצים 'לתשלום' – ומשלימים את ההזמנה. וזהו, המתנה שבחרת בדרך אלייך! נ.ב, ניתן להוסיף עוד אמצעי תשלום או/ו שוברים נוספים לפרטים נוספים ניתן ליצור קשר עם בית העסק",
         "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=NORI+KIDS#",
         "discount_type": "voucher",
         "discount_value": null,
@@ -177299,17 +177060,7 @@
     "type": "",
     "lat": 32.1119787,
     "lon": 34.7949695,
-    "discounts": [
-      {
-        "club": "HOT",
-        "business_name": "Razili - רזילי",
-        "discount": "10% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/הטבה/44417/Razili---רזילי",
-        "discount_type": "billing_discount",
-        "discount_value": 10.0,
-        "has_physical_store": true
-      }
-    ],
+    "discounts": [],
     "source": "docs/data/businesses"
   },
   {
@@ -193350,17 +193101,7 @@
     "type": "",
     "lat": 32.4867914,
     "lon": 34.9105556,
-    "discounts": [
-      {
-        "club": "חבר טעמים",
-        "business_name": "ג'מס קיסריה",
-        "discount": "חבר טעמים | בר מסעדה",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,266639",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      }
-    ],
+    "discounts": [],
     "source": "docs/data/businesses"
   },
   {
@@ -198043,6 +197784,21 @@
         "supplier_name": [
           "BUYME ALL - מגוון אדיר במתנה אחת",
           "BUYME VACATION & SPA- מלונות וספא"
+        ],
+        "has_physical_store": true
+      },
+      {
+        "club": "BUYME",
+        "business_name": "מלון מטרו הרצליה",
+        "discount": "למימוש, הזינו את קוד השובר.",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=%D7%9E%D7%9C%D7%95%D7%9F+%D7%9E%D7%98%D7%A8%D7%95+%D7%94%D7%A8%D7%A6%D7%9C%D7%99%D7%94#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME BABY- מגוון מתנות לידה",
+          "BUYME VACATION & SPA- מלונות וספא",
+          "BUYME LOCAL – מתנות מקומיות"
         ],
         "has_physical_store": true
       }
@@ -204925,7 +204681,7 @@
       {
         "club": "BUYME",
         "business_name": "בועז שטיין",
-        "discount": "למימוש יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים: 054-3152525. למימוש אונליין יש להזמין משלוח דרך אתר בית העסק באופן הבא- שימו לב, מימוש המתנה הוא במעמד התשלום ו לא ניתן לממש את המתנה בשלב בחירת הפריטים או בחלונית 'יש לך קופון?'. אז איך נהנים מהמתנה במשלוח? אחרי שבחרתם את הפריטים שהכי עושים לכם טוב בלב, לוחצים על 'תשלום', ממלאים פרטים ובסיום תחת 'פרטי ההזמנה' יש לבחור ב'MultiPass BUYME' וזה בדיוק המקום בו מזינים את הקוד של הגיפט קארד ובסיום לוחצים על 'שליחה'. אזורי חלוקת המשלוחים הינם לפי מדיניות המשלוחים של בית העסק.",
+        "discount": "איך משתמשים ב-BUYME שלך ברכישות אונליין? נכנסים לאתר בועז שטיין ובוחרים את הפריטים שהכי עושים לך טוב בלב. מוסיפים לעגלה - ועוברים לקופה לשלב התשלום. שימו לב, מימוש ה-BUYME הוא במעמד התשלום, ולא ניתן לממש את המתנה בשלב בחירת הפריטים או בחלונית \"יש לך קופון?\". בעמוד התשלום ממלאים פרטי חיוב, ומסמנים תשלום באמצעות 'Multipass' מזינים את 16 הספרות שמרכיבות את קוד ה-BUYME שלך, לוחצים 'שליחת ההזמנה' – ומשלימים את ההזמנה. וזהו, המתנה שבחרת בדרך אלייך! נ.ב, ניתן להוסיף עוד אמצעי תשלום או/ו שוברים נוספים לפרטים נוספים ניתן ליצור קשר עם בית העסק",
         "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=%D7%91%D7%95%D7%A2%D7%96+%D7%A9%D7%98%D7%99%D7%99%D7%9F#",
         "discount_type": "voucher",
         "discount_value": null,
@@ -216209,15 +215965,6 @@
         "has_physical_store": true
       },
       {
-        "club": "חבר טעמים",
-        "business_name": "לנדוור",
-        "discount": "חבר טעמים | בית קפה מסעדה",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,400119",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
         "club": "BUYME",
         "business_name": "רשת לנדוור",
         "discount": "למימוש בסניפים יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים: 03-731-1311.",
@@ -222723,15 +222470,6 @@
         "has_physical_store": true
       },
       {
-        "club": "חבר טעמים",
-        "business_name": "לנדוור",
-        "discount": "חבר טעמים | בית קפה מסעדה",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,400119",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
         "club": "BUYME",
         "business_name": "רשת לנדוור",
         "discount": "למימוש בסניפים יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים: 03-731-1311.",
@@ -223103,15 +222841,6 @@
         "business_name": "לנדוור",
         "discount": "חבר טעמים | בית קפה מסעדה",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר טעמים",
-        "business_name": "לנדוור",
-        "discount": "חבר טעמים | בית קפה מסעדה",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,400119",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -228690,15 +228419,6 @@
         "has_physical_store": true
       },
       {
-        "club": "חבר טעמים",
-        "business_name": "לנדוור",
-        "discount": "חבר טעמים | בית קפה מסעדה",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,400119",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
         "club": "BUYME",
         "business_name": "רשת לנדוור",
         "discount": "למימוש בסניפים יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים: 03-731-1311.",
@@ -228830,15 +228550,6 @@
         "business_name": "לנדוור",
         "discount": "חבר טעמים | בית קפה מסעדה",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר טעמים",
-        "business_name": "לנדוור",
-        "discount": "חבר טעמים | בית קפה מסעדה",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,400119",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -233060,15 +232771,6 @@
         "discount_type": "billing_discount",
         "discount_value": 3.5,
         "has_physical_store": true
-      },
-      {
-        "club": "חבר טעמים",
-        "business_name": "אמירי",
-        "discount": "חבר טעמים | ביסטרו כשר",
-        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
       }
     ],
     "source": "docs/data/businesses"
@@ -234928,7 +234630,7 @@
       {
         "club": "BUYME",
         "business_name": "PALMERS",
-        "discount": "ניתן ליהנות מה-BUYME ברכישה אונליין ב PALMERS איך משתמשים ב-BUYME שלך ברכישות אונליין? נכנסים לאתר PALMERS בוחרים את הפריטים שהכי עושים לך טוב בלב. מוסיפים לעגלה - ועוברים לקופה לשלב התשלום. שימו לב, מימוש ה-BUYME הוא במעמד התשלום, ולא ניתן לממש את המתנה בשלב בחירת הפריטים או בחלונית \"קוד קופון או גיפטקארד\". בעמוד התשלום לוחצים על מעבר לתשלום, בוחרים באופציה- שובר כספי. מזינים את 16 הספרות שמרכיבות את קוד ה-BUYME שלך, לוחצים שליחת הזמנה – ומשלימים את ההזמנה. וזהו, המתנה שבחרת בדרך אלייך!",
+        "discount": "ניתן ליהנות מה-BUYME ברכישה אונליין ב אתר בית העסק איך משתמשים ב-BUYME שלך ברכישות אונליין? נכנסים לאתר PALMERS בוחרים את הפריטים שהכי עושים לך טוב בלב. מוסיפים לעגלה - ועוברים לקופה לשלב התשלום. שימו לב, מימוש ה-BUYME הוא במעמד התשלום, ולא ניתן לממש את המתנה בשלב בחירת הפריטים או בחלונית \"קוד קופון או גיפטקארד\". בעמוד התשלום לוחצים על מעבר לתשלום, בוחרים באופציה- שובר כספי. מזינים את 16 הספרות שמרכיבות את קוד ה-BUYME שלך, לוחצים שליחת הזמנה – ומשלימים את ההזמנה. וזהו, המתנה שבחרת בדרך אלייך!",
         "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=PALMERS#",
         "discount_type": "voucher",
         "discount_value": null,
@@ -235367,6 +235069,15 @@
     "discounts": [
       {
         "club": "HOT",
+        "business_name": "המעדניה של אבא",
+        "discount": "3.5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/61588/המעדניה-של-אבא",
+        "discount_type": "billing_discount",
+        "discount_value": 3.5,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
         "business_name": "המעדניה מבית איפרן",
         "discount": "3.5% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/הטבה/58620/המעדניה-מבית-איפרן",
@@ -235701,15 +235412,6 @@
         "business_name": "לנדוור",
         "discount": "חבר טעמים | בית קפה מסעדה",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר טעמים",
-        "business_name": "לנדוור",
-        "discount": "חבר טעמים | בית קפה מסעדה",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,400119",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -239414,15 +239116,6 @@
         "has_physical_store": true
       },
       {
-        "club": "חבר טעמים",
-        "business_name": "לנדוור",
-        "discount": "חבר טעמים | בית קפה מסעדה",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,400119",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
         "club": "BUYME",
         "business_name": "רשת לנדוור",
         "discount": "למימוש בסניפים יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים: 03-731-1311.",
@@ -240969,15 +240662,6 @@
         "business_name": "לנדוור",
         "discount": "חבר טעמים | בית קפה מסעדה",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר טעמים",
-        "business_name": "לנדוור",
-        "discount": "חבר טעמים | בית קפה מסעדה",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,400119",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -243628,15 +243312,6 @@
         "has_physical_store": true
       },
       {
-        "club": "חבר טעמים",
-        "business_name": "לנדוור",
-        "discount": "חבר טעמים | בית קפה מסעדה",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,400119",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
         "club": "BUYME",
         "business_name": "רשת לנדוור",
         "discount": "למימוש בסניפים יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים: 03-731-1311.",
@@ -245103,7 +244778,7 @@
       {
         "club": "BUYME",
         "business_name": "Don't tell Mama",
-        "discount": "למימוש באתר Don't tell mama , יש לבחור מוצרים בחנות האונליין ולהשלים את תהליך הרכישה, לאחר מילוי הפרטים האישיים יש ללחוץ על \"שלמי עכשיו\". בשלב פרטי תשלום יש לבחור במימוש שובר BUYME ולהזין את קוד השובר. לפרטים נוספים ותמיכה: 058-7560008.",
+        "discount": "איך משתמשים ב-BUYME שלך ברכישות אונליין? נכנסים לאתר Don't tell Mama ובוחרים את הפריטים שהכי עושים לך טוב בלב. מוסיפים לעגלה - ועוברים לקופה לשלב התשלום. שימו לב, מימוש ה-BUYME הוא במעמד התשלום, ולא ניתן לממש את המתנה בשלב בחירת הפריטים או בחלונית \"הנחה או כרטיס מתנה\". בעמוד התשלום לוחצים על כרטיס אשראי או אמצעי תשלום נוספים ולוחצים על 'שלמי עכשיו'. בעמוד הבא מסמנים 'שוברי BUYME, הייטקזון, STYLE' מזינים את 16 הספרות שמרכיבות את קוד ה-BUYME שלך, לוחצים 'לתשלום' – ומשלימים את ההזמנה. וזהו, המתנה שבחרת בדרך אלייך! נ.ב, ניתן להוסיף עוד אמצעי תשלום או/ו שוברים נוספים לפרטים נוספים ניתן ליצור קשר עם בית העסק",
         "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=Don%27t+tell+Mama#",
         "discount_type": "voucher",
         "discount_value": null,
@@ -251595,15 +251270,6 @@
         "has_physical_store": true
       },
       {
-        "club": "חבר טעמים",
-        "business_name": "לנדוור",
-        "discount": "חבר טעמים | בית קפה מסעדה",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,400119",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
         "club": "BUYME",
         "business_name": "רשת לנדוור",
         "discount": "למימוש בסניפים יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים: 03-731-1311.",
@@ -252140,15 +251806,6 @@
         "business_name": "לנדוור",
         "discount": "חבר טעמים | בית קפה מסעדה",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר טעמים",
-        "business_name": "לנדוור",
-        "discount": "חבר טעמים | בית קפה מסעדה",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,400119",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -269043,17 +268700,7 @@
     "type": "",
     "lat": 32.937351,
     "lon": 35.45036500000001,
-    "discounts": [
-      {
-        "club": "חבר טעמים",
-        "business_name": "אמירי",
-        "discount": "חבר טעמים | ביסטרו כשר",
-        "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      }
-    ],
+    "discounts": [],
     "source": "docs/data/businesses"
   },
   {
@@ -278470,7 +278117,7 @@
       {
         "club": "BUYME",
         "business_name": "פאנקי פיש מתנות חוויתיות",
-        "discount": "למימוש באתר פאנקי פיש, יש לבחור מוצרים בחנות האונליין של פאנקי פיש ו להקליד את קוד הGift Card בשורת \"תשלום באמצעות שוברי BUYME\" במעמד התשלום. למימוש יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים: 054-8987543.",
+        "discount": "איך משתמשים ב-BUYME שלך ברכישות אונליין? נכנסים לאתר פאנקי פיש ובוחרים את הפריטים שהכי עושים לך טוב בלב. מוסיפים לעגלה - ועוברים לקופה לשלב התשלום. שימו לב, מימוש ה-BUYME הוא במעמד התשלום, ולא ניתן לממש את המתנה בשלב בחירת הפריטים או בחלונית \"גיפטקארד או קוד הנחה\". בעמוד התשלום ממלאים את פרטי המשלוח ולוחצים 'שלם עכשיו' בעמוד הבא לוחצים על כפתור 'BUYME' מזינים את 16 הספרות שמרכיבות את קוד ה-BUYME שלך, לוחצים 'לתשלום' – ומשלימים את ההזמנה. וזהו, המתנה שבחרת בדרך אלייך! נ.ב, ניתן להוסיף עוד אמצעי תשלום או/ו שוברים נוספים לפרטים נוספים ניתן ליצור קשר עם בית העסק",
         "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=%D7%A4%D7%90%D7%A0%D7%A7%D7%99+%D7%A4%D7%99%D7%A9+%D7%9E%D7%AA%D7%A0%D7%95%D7%AA+%D7%97%D7%95%D7%95%D7%99%D7%AA%D7%99%D7%95%D7%AA#",
         "discount_type": "voucher",
         "discount_value": null,
@@ -278607,7 +278254,7 @@
       {
         "club": "BUYME",
         "business_name": "סטודיו עדי ניסני",
-        "discount": "למימוש השובר יש להיכנס לאתר סטודיו עדי ניסני לבחור את המוצרים ולהשלים את התהליך הרכישה, במעמד התשלום יש לבחור באמצעי תשלום אשראי, ולבחור ב\"תשלום באמצעות שוברי BUYME למימוש יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים: 054-7986107.",
+        "discount": "איך משתמשים ב-BUYME שלך ברכישות אונליין? נכנסים לאתר סטודיו עדי ניסני ובוחרים את הפריטים שהכי עושים לך טוב בלב. מוסיפים לעגלה - ועוברים לקופה לשלב התשלום. שימו לב, מימוש ה-BUYME הוא במעמד התשלום, ולא ניתן לממש את המתנה בשלב בחירת הפריטים או בחלונית \"הנחה או כרטיס מתנה\". בעמוד התשלום לוחצים על כרטיס אשראי או אמצעי תשלום נוספים ולוחצים על 'שלמי עכשיו'. בעמוד הבא בורים ב'BUYME' מזינים את 16 הספרות שמרכיבות את קוד ה-BUYME שלך, לוחצים 'לתשלום' – ומשלימים את ההזמנה. וזהו, המתנה שבחרת בדרך אלייך! נ.ב, ניתן להוסיף עוד אמצעי תשלום או/ו שוברים נוספים לפרטים נוספים ניתן ליצור קשר עם בית העסק",
         "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=%D7%A1%D7%98%D7%95%D7%93%D7%99%D7%95+%D7%A2%D7%93%D7%99+%D7%A0%D7%99%D7%A1%D7%A0%D7%99#",
         "discount_type": "voucher",
         "discount_value": null,
@@ -288817,7 +288464,7 @@
       {
         "club": "BUYME",
         "business_name": "C. baby group",
-        "discount": "למימוש השובר יש להיכנס לאתר C. baby group , לבחור את המוצרים ולהשלים את תהליך הרכישה. במעמד התשלום יש להזין מספר שובר. לפרטים נוספים: 055-5028581.",
+        "discount": "איך משתמשים ב-BUYME שלך ברכישות אונליין? נכנסים לאתר C. baby group ובוחרים את הפריטים שהכי עושים לך טוב בלב. מוסיפים לעגלה - ועוברים לקופה לשלב התשלום. שימו לב, מימוש ה-BUYME הוא במעמד התשלום, ולא ניתן לממש את המתנה בשלב בחירת הפריטים או בחלונית \"קוד קופון\". בעמוד התשלום ממלאים פרטים אישיים למשלוח ומסמנים 'תשלום באמצעות BUYME'. מזינים את 16 הספרות שמרכיבות את קוד ה-BUYME שלך, לוחצים 'לשליחת ההזמנה' – ומשלימים את ההזמנה. וזהו, המתנה שבחרת בדרך אלייך! נ.ב, ניתן להוסיף עוד אמצעי תשלום או/ו שוברים נוספים לפרטים נוספים ניתן ליצור קשר עם בית העסק",
         "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=C.+baby+group#",
         "discount_type": "voucher",
         "discount_value": null,
@@ -289126,7 +288773,7 @@
       {
         "club": "BUYME",
         "business_name": "The Nest Shop",
-        "discount": "למימוש יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים: 055-9595899. למימוש אונליין יש להזמין משלוח דרך אתר בית העסק באופן הבא- שימו לב, מימוש המתנה הוא במעמד התשלום בלחיצה על \"הוספת כרטיס\" ו לא ניתן לממש את המתנה בשלב בחירת הפריטים או בחלונית \"קוד קופון\". אז איך נהנים מהמתנה במשלוח? אחרי שבחרתם את הפריטים שהכי עושים לכם טוב בלב, לוחצים על לתשלום, ממלאים פרטים ומתקדמים ל-\"שלם עכשיו\". כשתגיעו לשם תפתח האפשרות ללחוץ על \"מימוש שוברים BUYME\" וזה בדיוק המקום בו מזינים את הקוד של הגיפט קארד. אזורי חלוקת המשלוחים הינם לפי מדיניות המשלוחים של בית העסק.",
+        "discount": "איך משתמשים ב-BUYME שלך ברכישות אונליין? נכנסים לאתר The Nest Shop ובוחרים את הפריטים שהכי עושים לך טוב בלב. מוסיפים לעגלה - ועוברים לקופה לשלב התשלום. שימו לב, מימוש ה-BUYME הוא במעמד התשלום, ולא ניתן לממש את המתנה בשלב בחירת הפריטים או בחלונית \"קוד קופון\". בעמוד התשלום ממלאים את פרטי המשלוח ולוחצים 'שלמי כעת' בעמוד הבא לוחצים על כפתור 'BUYME' מזינים את 16 הספרות שמרכיבות את קוד ה-BUYME שלך, לוחצים 'לביצוע התשלום' – ומשלימים את ההזמנה. וזהו, המתנה שבחרת בדרך אלייך! נ.ב, ניתן להוסיף עוד אמצעי תשלום או/ו שוברים נוספים לפרטים נוספים ניתן ליצור קשר עם בית העסק אזורי חלוקת המשלוחים הינם לפי מדיניות המשלוחים של בית העסק.",
         "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=The+Nest+Shop#",
         "discount_type": "voucher",
         "discount_value": null,
@@ -289383,7 +289030,7 @@
       {
         "club": "BUYME",
         "business_name": "PALMERS",
-        "discount": "ניתן ליהנות מה-BUYME ברכישה אונליין ב PALMERS איך משתמשים ב-BUYME שלך ברכישות אונליין? נכנסים לאתר PALMERS בוחרים את הפריטים שהכי עושים לך טוב בלב. מוסיפים לעגלה - ועוברים לקופה לשלב התשלום. שימו לב, מימוש ה-BUYME הוא במעמד התשלום, ולא ניתן לממש את המתנה בשלב בחירת הפריטים או בחלונית \"קוד קופון או גיפטקארד\". בעמוד התשלום לוחצים על מעבר לתשלום, בוחרים באופציה- שובר כספי. מזינים את 16 הספרות שמרכיבות את קוד ה-BUYME שלך, לוחצים שליחת הזמנה – ומשלימים את ההזמנה. וזהו, המתנה שבחרת בדרך אלייך!",
+        "discount": "ניתן ליהנות מה-BUYME ברכישה אונליין ב אתר בית העסק איך משתמשים ב-BUYME שלך ברכישות אונליין? נכנסים לאתר PALMERS בוחרים את הפריטים שהכי עושים לך טוב בלב. מוסיפים לעגלה - ועוברים לקופה לשלב התשלום. שימו לב, מימוש ה-BUYME הוא במעמד התשלום, ולא ניתן לממש את המתנה בשלב בחירת הפריטים או בחלונית \"קוד קופון או גיפטקארד\". בעמוד התשלום לוחצים על מעבר לתשלום, בוחרים באופציה- שובר כספי. מזינים את 16 הספרות שמרכיבות את קוד ה-BUYME שלך, לוחצים שליחת הזמנה – ומשלימים את ההזמנה. וזהו, המתנה שבחרת בדרך אלייך!",
         "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=PALMERS#",
         "discount_type": "voucher",
         "discount_value": null,
@@ -295678,7 +295325,7 @@
       {
         "club": "BUYME",
         "business_name": "פאנקי פיש מתנות חוויתיות",
-        "discount": "למימוש באתר פאנקי פיש, יש לבחור מוצרים בחנות האונליין של פאנקי פיש ו להקליד את קוד הGift Card בשורת \"תשלום באמצעות שוברי BUYME\" במעמד התשלום. למימוש יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים: 054-8987543.",
+        "discount": "איך משתמשים ב-BUYME שלך ברכישות אונליין? נכנסים לאתר פאנקי פיש ובוחרים את הפריטים שהכי עושים לך טוב בלב. מוסיפים לעגלה - ועוברים לקופה לשלב התשלום. שימו לב, מימוש ה-BUYME הוא במעמד התשלום, ולא ניתן לממש את המתנה בשלב בחירת הפריטים או בחלונית \"גיפטקארד או קוד הנחה\". בעמוד התשלום ממלאים את פרטי המשלוח ולוחצים 'שלם עכשיו' בעמוד הבא לוחצים על כפתור 'BUYME' מזינים את 16 הספרות שמרכיבות את קוד ה-BUYME שלך, לוחצים 'לתשלום' – ומשלימים את ההזמנה. וזהו, המתנה שבחרת בדרך אלייך! נ.ב, ניתן להוסיף עוד אמצעי תשלום או/ו שוברים נוספים לפרטים נוספים ניתן ליצור קשר עם בית העסק",
         "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=%D7%A4%D7%90%D7%A0%D7%A7%D7%99+%D7%A4%D7%99%D7%A9+%D7%9E%D7%AA%D7%A0%D7%95%D7%AA+%D7%97%D7%95%D7%95%D7%99%D7%AA%D7%99%D7%95%D7%AA#",
         "discount_type": "voucher",
         "discount_value": null,
@@ -295815,7 +295462,7 @@
       {
         "club": "BUYME",
         "business_name": "סטודיו עדי ניסני",
-        "discount": "למימוש השובר יש להיכנס לאתר סטודיו עדי ניסני לבחור את המוצרים ולהשלים את התהליך הרכישה, במעמד התשלום יש לבחור באמצעי תשלום אשראי, ולבחור ב\"תשלום באמצעות שוברי BUYME למימוש יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים: 054-7986107.",
+        "discount": "איך משתמשים ב-BUYME שלך ברכישות אונליין? נכנסים לאתר סטודיו עדי ניסני ובוחרים את הפריטים שהכי עושים לך טוב בלב. מוסיפים לעגלה - ועוברים לקופה לשלב התשלום. שימו לב, מימוש ה-BUYME הוא במעמד התשלום, ולא ניתן לממש את המתנה בשלב בחירת הפריטים או בחלונית \"הנחה או כרטיס מתנה\". בעמוד התשלום לוחצים על כרטיס אשראי או אמצעי תשלום נוספים ולוחצים על 'שלמי עכשיו'. בעמוד הבא בורים ב'BUYME' מזינים את 16 הספרות שמרכיבות את קוד ה-BUYME שלך, לוחצים 'לתשלום' – ומשלימים את ההזמנה. וזהו, המתנה שבחרת בדרך אלייך! נ.ב, ניתן להוסיף עוד אמצעי תשלום או/ו שוברים נוספים לפרטים נוספים ניתן ליצור קשר עם בית העסק",
         "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=%D7%A1%D7%98%D7%95%D7%93%D7%99%D7%95+%D7%A2%D7%93%D7%99+%D7%A0%D7%99%D7%A1%D7%A0%D7%99#",
         "discount_type": "voucher",
         "discount_value": null,
