@@ -6,6 +6,7 @@ from hot_scraper import scrape_hot
 from htzone_scraper import scrape_htzone
 from mcc_scraper import scrape_mcc
 from hvr_scraper import scrape_hvr_rechargeable_cards
+from max_giftcard_scraper import scrape_max
 from buyme_scraper import scrape_buyme_suppliers, stores_to_discounts
 
 BASE_DIR = os.path.dirname(__file__)
@@ -147,6 +148,21 @@ def main():
         print("[WARNING] HVR rechargeable-card scraper returned 0 items.\n")
         hvr_data = load_existing_json(hvr_path) or []
 
+    # 4.5 Scrape MAX gift cards
+    max_path = os.path.join(DISCOUNTS_DIR, "max_discounts.json")
+    max_data = scrape_max()
+    if max_data and len(max_data) > 0:
+        with open(max_path, "w", encoding="utf-8") as f:
+            json.dump(max_data, f, ensure_ascii=False, indent=4)
+        metadata["max"] = {
+            "last_successful_scrape": now_iso,
+            "count": len(max_data),
+        }
+        print(f"--> Saved {len(max_data)} normalized MAX items to {max_path}.\n")
+    else:
+        print(f"[WARNING] MAX Scraper returned 0 items. Retaining previous data from {max_path}.\n")
+        max_data = load_existing_json(max_path) or []
+
     # 5. Scrape BUYME (voucher-type suppliers)
     buyme_result = scrape_buyme_suppliers(out_dir=DATA_DIR)
     buyme_stores = buyme_result.get("stores", [])
@@ -168,7 +184,7 @@ def main():
     print(f"--> Normalized {len(buyme_stores)} BuyMe store entries for the combined dataset.")
 
     # 6. Create Combined Card Comparison File
-    combined_list = mcc_data + hot_data + htzone_data + hvr_data
+    combined_list = mcc_data + hot_data + htzone_data + hvr_data + max_data
 
     # Append Buyme discounts (normalized) to combined list
     if buyme_discounts:

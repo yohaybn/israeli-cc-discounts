@@ -34,6 +34,15 @@
         "has_physical_store": true
       },
       {
+        "club": "GiftCard max",
+        "business_name": "מוזה קוקטיילים - MUZA cocktails",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
         "club": "BUYME",
         "business_name": "לה מוזה פטיסרי",
         "discount": "כדי ליהנות מה-BUYME בבית העסק יש להציג את הקוד למימוש בקופה. לפרטים נוספים ניתן ליצור קשר עם בית העסק",
@@ -179,7 +188,17 @@
     "type": "cafe",
     "lat": 31.197828,
     "lon": 35.363246,
-    "discounts": [],
+    "discounts": [
+      {
+        "club": "GiftCard max",
+        "business_name": "אלדו - ALDO",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      }
+    ],
     "source": "docs/data/businesses"
   },
   {
@@ -761,6 +780,24 @@
     "lon": 34.812039,
     "discounts": [
       {
+        "club": "Super GiftCard max",
+        "business_name": "castro",
+        "discount": "Super GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "Super GiftCard max",
+        "business_name": "קסטרו הום - Castro home",
+        "discount": "Super GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
         "club": "BUYME",
         "business_name": "CASTRO",
         "discount": "למימוש יש להציג את קוד ה-Gift Card באמצעות SMS/ מייל/ שובר מודפס בסניפי הרשת. לפרטים נוספים: 1-800-266-066 ניתן לממש אונליין באתר קסטרו באמצעות הזנת קוד ה-Gift Card המלא בשדה \"Gift Card/תווי קנייה\". לבחור בלוגו של BUYME - \"לחץ למימוש\". לאחר מכן יש להזין את סכום למימוש ואת מספר השובר המלא וללחוץ על כפתור \"ממש שובר\"",
@@ -944,6 +981,15 @@
         "has_physical_store": true
       },
       {
+        "club": "GiftCard max",
+        "business_name": "מנגו - MANGO",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
         "club": "BUYME",
         "business_name": "MANGO",
         "discount": "למימוש השובר יש להציג מספר שובר באמצעות SMS/ מייל/ שובר מודפס. לפרטים נוספים : 0000.",
@@ -1058,6 +1104,15 @@
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "סטימצקי",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
       }
     ],
     "source": "docs/data/businesses"
@@ -1097,6 +1152,15 @@
     "lon": 34.812603,
     "discounts": [
       {
+        "club": "GiftCard max",
+        "business_name": "בילבונג - Billabong",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
         "club": "BUYME",
         "business_name": "Billabong",
         "discount": "Voucher",
@@ -1119,7 +1183,17 @@
     "type": "clothes",
     "lat": 31.246624,
     "lon": 34.811202,
-    "discounts": [],
+    "discounts": [
+      {
+        "club": "GiftCard max",
+        "business_name": "פקטורי 54 - Factory 54",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      }
+    ],
     "source": "docs/data/businesses"
   },
   {
@@ -1208,6 +1282,15 @@
         "has_physical_store": false
       },
       {
+        "club": "GiftCard max",
+        "business_name": "אימפוריום - emporium",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
         "club": "BUYME",
         "business_name": "EMPORIUM",
         "discount": "ניתן ליהנות מה-BUYME גם ברכישה אונליין באתר בית העסק וגם בחנויות. איך נהנים מה-BUYME שלך ברכישות אונליין? נכנסים לאתר Emporium ובוחרים את הפריטים שהכי עושים לך טוב בלב. מוסיפים לעגלה - ועוברים לקופה לשלב התשלום. שימו לב, מימוש ה-BUYME הוא במעמד התשלום, ולא ניתן לממש את המתנה בשלב בחירת הפריטים או בחלונית \"קוד קופון או גיפטקארד\". בעמוד התשלום לוחצים על \"לשובר מתנה\". מזינים את 16 הספרות שמרכיבות את קוד ה-BUYME שלך, לוחצים \"אישור/לתשלום\" ומשלימים את ההזמנה. וזהו, המתנה שבחרת בדרך אלייך! כדי ליהנות מה-BUYME בבית העסק יש להציג את הקוד למימוש בקופה. לפרטים נוספים ניתן ליצור קשר עם בית העסק :077-9577-083.",
@@ -1247,6 +1330,24 @@
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": false
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "מגה ספורט - Mega Sport",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "מגה ספורט קידס - Mega Sport Kids",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
       },
       {
         "club": "BUYME",
@@ -1291,6 +1392,24 @@
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": false
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "פוקס הום - Fox Home",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "פוקס - Fox",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
       },
       {
         "club": "BUYME",
@@ -1343,6 +1462,15 @@
     "lat": 31.247339,
     "lon": 34.812606,
     "discounts": [
+      {
+        "club": "GiftCard max",
+        "business_name": "ורדינון - Vardinon",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
       {
         "club": "BUYME",
         "business_name": "VARDINON",
@@ -1570,6 +1698,15 @@
         "discount_type": "billing_discount",
         "discount_value": 4.5,
         "has_physical_store": true
+      },
+      {
+        "club": "Super GiftCard max",
+        "business_name": "נמרוד - Nimrod & more",
+        "discount": "Super GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": false
       }
     ],
     "source": "docs/data/businesses"
@@ -1600,6 +1737,15 @@
     "lat": 31.247115,
     "lon": 34.812602,
     "discounts": [
+      {
+        "club": "GiftCard max",
+        "business_name": "ללין - Laline",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
       {
         "club": "BUYME",
         "business_name": "Laline",
@@ -1640,6 +1786,15 @@
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=32",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "Super GiftCard max",
+        "business_name": "אופטיקנה - Opticana",
+        "discount": "Super GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
         "has_physical_store": true
       },
       {
@@ -2068,6 +2223,15 @@
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "א.ל.מ - Alam",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
       }
     ],
     "source": "docs/data/businesses"
@@ -2086,6 +2250,33 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "גולף אנד קו - Golf & Co",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "גולף - Golf",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "גולף קידס - Golf Kids",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
         "has_physical_store": true
       },
       {
@@ -2170,6 +2361,15 @@
         "discount_type": "billing_discount",
         "discount_value": 3.5,
         "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "גאמפ עונות - Jump & ONOT",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
       }
     ],
     "source": "docs/data/businesses"
@@ -2207,6 +2407,15 @@
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "סטימצקי",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
       }
     ],
     "source": "docs/data/businesses"
@@ -2217,7 +2426,17 @@
     "type": "clothes",
     "lat": 31.242194,
     "lon": 34.812174,
-    "discounts": [],
+    "discounts": [
+      {
+        "club": "GiftCard max",
+        "business_name": "פומה - Puma",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      }
+    ],
     "source": "docs/data/businesses"
   },
   {
@@ -2579,6 +2798,24 @@
         "has_physical_store": true
       },
       {
+        "club": "GiftCard max",
+        "business_name": "עגליס - agalis",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "גלי - Gali",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
         "club": "BUYME",
         "business_name": "עגליס",
         "discount": "ניתן ליהנות מה-BUYME גם ברכישה אונליין ב אתר בית העסק וגם בחנויות. איך נהנים מה-BUYME שלך ברכישות אונליין? נכנסים לאתר עגליס בוחרים את הפריטים שהכי עושים לך טוב בלב. מוסיפים לעגלה - ועוברים לקופה לשלב התשלום. שימו לב, מימוש ה-BUYME הוא במעמד התשלום, ולא ניתן לממש את המתנה בשלב בחירת הפריטים או בחלונית \"קוד קופון או גיפטקארד\". בעמוד התשלום לוחצים על תווי קנייה , בוחרים בBUYME מזינים את 16 הספרות שמרכיבות את קוד ה-BUYME שלך, לוחצים על אפשר להמשיך – ומשלימים את ההזמנה. וזהו, המתנה שבחרת בדרך אלייך! כדי ליהנות מה-BUYME בבית העסק יש להציג את הקוד למימוש בקופה. לפרטים נוספים ניתן ליצור קשר עם בית העסק",
@@ -2725,6 +2962,15 @@
         "has_physical_store": false
       },
       {
+        "club": "GiftCard max",
+        "business_name": "פוקס הום - Fox Home",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
         "club": "BUYME",
         "business_name": "Fox Home",
         "discount": "ניתן למימוש בפוקס ובפוקס הום. שובר פגום/מזוייף לא יכובד. שובר זה אינו כרטיס חיוב כהגדרתו בחוק כרטיסי חיוב התשמ\"ו - 1986. המחזיק בשובר מצהיר בעצם ההחזקה כי הוא מסכים לאמור. ט.ל.ח.",
@@ -2796,6 +3042,15 @@
         "discount_type": "billing_discount",
         "discount_value": 5.0,
         "has_physical_store": true
+      },
+      {
+        "club": "Super GiftCard max",
+        "business_name": "אפריל - APRIL",
+        "discount": "Super GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
       }
     ],
     "source": "docs/data/businesses"
@@ -2823,6 +3078,15 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,320100",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "Super GiftCard max",
+        "business_name": "ביתילי - beitili",
+        "discount": "Super GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
         "has_physical_store": true
       }
     ],
@@ -2955,6 +3219,15 @@
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "גולף אנד קו - Golf & Co",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
       }
     ],
     "source": "docs/data/businesses"
@@ -3066,6 +3339,15 @@
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "פולגת - POLGAT",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
       }
     ],
     "source": "docs/data/businesses"
@@ -3104,6 +3386,15 @@
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": false
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "שילב - Shilav",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
       },
       {
         "club": "BUYME",
@@ -5318,20 +5609,20 @@
       },
       {
         "club": "HOT",
-        "business_name": "סיגליות- קוסמטיקה",
-        "discount": "3.5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/הטבה/29659/סיגליות--קוסמטיקה",
-        "discount_type": "billing_discount",
-        "discount_value": 3.5,
-        "has_physical_store": true
-      },
-      {
-        "club": "HOT",
         "business_name": "אדר ציוד וחומרי בניין",
         "discount": "5% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/הטבה/28966/אדר-ציוד-וחומרי-בניין",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "סיגליות- קוסמטיקה",
+        "discount": "3.5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/29659/סיגליות--קוסמטיקה",
+        "discount_type": "billing_discount",
+        "discount_value": 3.5,
         "has_physical_store": true
       },
       {
@@ -5674,6 +5965,96 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,415299",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "אימפוריום - emporium",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "יוז - YOOZ",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": false
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "אינטר ג'ינס ניו - NYOU INTER JEANS",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "ליוויס - Levi's",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "אייס קיוב - Ice Cube",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "Super GiftCard max",
+        "business_name": "סופר יודה - Super Yuda",
+        "discount": "Super GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "Super GiftCard max",
+        "business_name": "סלון יווני - Greek Salon",
+        "discount": "Super GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "Super GiftCard max",
+        "business_name": "פט איי די חיות בדיגיטל - Pet ID",
+        "discount": "Super GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": false
+      },
+      {
+        "club": "Giftcard Food",
+        "business_name": "סופר יודה - Super Yuda",
+        "discount": "Giftcard Food |  gift_card",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "gift_card",
+        "discount_value": 0.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "Giftcard Food",
+        "business_name": "סלון יווני - Greek Salon",
+        "discount": "Giftcard Food |  gift_card",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "gift_card",
+        "discount_value": 0.0,
         "has_physical_store": true
       },
       {
@@ -6530,6 +6911,15 @@
         "discount_type": "billing_discount",
         "discount_value": 10.0,
         "has_physical_store": true
+      },
+      {
+        "club": "Super GiftCard max",
+        "business_name": "אירוקה - Erroca",
+        "discount": "Super GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
       }
     ],
     "source": "docs/data/businesses"
@@ -6559,6 +6949,15 @@
     "lat": 31.241843,
     "lon": 34.810642,
     "discounts": [
+      {
+        "club": "GiftCard max",
+        "business_name": "אייץ' אנד או - H&O",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
       {
         "club": "BUYME",
         "business_name": "H&O",
@@ -6799,6 +7198,15 @@
     "lat": 31.243392,
     "lon": 34.811846,
     "discounts": [
+      {
+        "club": "כרטיס הטבות executive",
+        "business_name": "אדידס יאנג אטלטס - Adidas Young Athletes",
+        "discount": "כרטיס הטבות executive | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
       {
         "club": "BUYME",
         "business_name": "adidas",
@@ -7348,6 +7756,15 @@
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "הום סנטר - Home Center",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
       }
     ],
     "source": "docs/data/businesses"
@@ -7695,6 +8112,15 @@
         "has_physical_store": false
       },
       {
+        "club": "GiftCard max",
+        "business_name": "מוצצים - Motzezim",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
         "club": "BUYME",
         "business_name": "מוצצים",
         "discount": "ניתן ליהנות מה-BUYME גם ברכישה אונליין באתר בית העסק וגם בחנויות . איך נהנים מה-BUYME שלך ברכישות אונליין? נכנסים לאתר מוצצים ובוחרים את הפריטים שהכי עושים לך טוב בלב. מוסיפים לעגלה - ועוברים לקופה לשלב התשלום. שימו לב, מימוש ה-BUYME הוא במעמד התשלום, ולא ניתן לממש את המתנה בשלב בחירת הפריטים או בחלונית \"קוד קופון או גיפטקארד\". בעמוד התשלום לוחצים על \"BUYME\", מזינים את 16 הספרות שמרכיבות את קוד ה-BUYME שלך, לוחצים \"אישור\" ומשלימים את ההזמנה. וזהו, המתנה שבחרת בדרך אלייך! כדי ליהנות מה-BUYME בבית העסק יש להציג את הקוד למימוש בקופה.",
@@ -7737,6 +8163,15 @@
         "has_physical_store": false
       },
       {
+        "club": "Super GiftCard max",
+        "business_name": "צומת ספרים - Tzomet Sfarim",
+        "discount": "Super GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
         "club": "BUYME",
         "business_name": "רשת צומת ספרים",
         "discount": "למימוש יש להציג מספר Gift Card מלא באמצעות SMS/ מייל/ דף מודפס. לפרטים נוספים: 08-9236565. מימוש ה- Gift Card לא יתאפשר באתר האינטרנט של צומת ספרים. רשימת הסניפים",
@@ -7771,6 +8206,15 @@
     "lat": 31.243101,
     "lon": 34.809794,
     "discounts": [
+      {
+        "club": "GiftCard max",
+        "business_name": "ניין ווסט - NINE WEST",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
       {
         "club": "BUYME",
         "business_name": "NINE WEST",
@@ -8156,6 +8600,15 @@
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "סטימצקי",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
       }
     ],
     "source": "docs/data/businesses"
@@ -8266,6 +8719,15 @@
         "has_physical_store": true
       },
       {
+        "club": "GiftCard max",
+        "business_name": "כיתן - Kitan",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
         "club": "BUYME",
         "business_name": "כיתן",
         "discount": "למימוש השובר יש להציג מספר שובר באמצעות SMS/ מייל/ שובר מודפס בקופות סניפי הרשתות. רשתות מכבדות: גולף, פולגת, אינטימה, גולף קידס אנד בייבי, אנד קו וכיתן. לחצו לרשימת הרשתות והסניפים . ניתן למימוש בכפל מבצעים והנחות. לפרטים נוספים ניתן לפנות 03-6451515. למימוש בסניפי הרשת.",
@@ -8304,6 +8766,15 @@
         "discount_url": "https://www.hot.co.il/הטבה/7989/טרקלין-חשמל",
         "discount_type": "billing_discount",
         "discount_value": 4.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "Super GiftCard max",
+        "business_name": "טרקלין חשמל - Traklin Electric",
+        "discount": "Super GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
         "has_physical_store": true
       },
       {
@@ -8383,6 +8854,24 @@
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": false
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "פוקס הום - Fox Home",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "פוקס - Fox",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
       },
       {
         "club": "BUYME",
@@ -8503,6 +8992,15 @@
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=13",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "הום סנטר - Home Center",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
         "has_physical_store": true
       }
     ],
@@ -8740,6 +9238,24 @@
         "has_physical_store": true
       },
       {
+        "club": "Super GiftCard max",
+        "business_name": "יאנגו דלי - Yango Deli",
+        "discount": "Super GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "Super GiftCard max",
+        "business_name": "אירו הנדלינג - AERO VIP",
+        "discount": "Super GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
         "club": "BUYME",
         "business_name": "סנדלי שורש",
         "discount": "ניתן ליהנות מה-BUYME גם ברכישה אונליין ב אתר בית העסק וגם בחנויות. איך נהנים מה-BUYME שלך ברכישות אונליין? נכנסים לאתר סנדלי שורש ובוחרים את הפריטים שהכי עושים לך טוב בלב. מוסיפים לעגלה - ועוברים לקופה לשלב התשלום. שימו לב, מימוש ה-BUYME הוא במעמד התשלום, ולא ניתן לממש את המתנה בשלב בחירת הפריטים או בחלונית 'קוד קופון או גיפטקארד'. אחרי שבחרתם את הפריטים שהכי עושים לכם טוב בלב, לוחצים על 'מעבר לתשלום'. בעמוד הבא שנפתח ממלאים פרטים, ותחת סיכום הזמנה יש לבחור בשיטת תשלום 'תשלום באמצעות שובר BUYME', לאשר את תנאי השימוש ובסיום ללחוץ על 'מעבר לתשלום' . מזינים את 16 הספרות שמרכיבות את קוד ה-BUYME שלך, לוחצים 'אפשר להמשיך' – ומשלימים את ההזמנה. וזהו, המתנה שבחרת בדרך אלייך! כדי ליהנות מה-BUYME בבית העסק יש להציג את הקוד למימוש בקופה. לפרטים נוספים ניתן ליצור קשר עם בית העסק אזורי חלוקת המשלוחים הינם לפי מדיניות המשלוחים של בית העסק.",
@@ -8830,6 +9346,15 @@
         "discount_url": "https://www.hot.co.il/הטבה/23650/דונה-ויקטוריה",
         "discount_type": "billing_discount",
         "discount_value": 8.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "Super GiftCard max",
+        "business_name": "ויקטורי - Victory",
+        "discount": "Super GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
         "has_physical_store": true
       }
     ],
@@ -8988,6 +9513,15 @@
         "discount_url": "https://www.hot.co.il/הטבה/7989/טרקלין-חשמל",
         "discount_type": "billing_discount",
         "discount_value": 4.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "Super GiftCard max",
+        "business_name": "טרקלין חשמל - Traklin Electric",
+        "discount": "Super GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
         "has_physical_store": true
       },
       {
@@ -9400,6 +9934,15 @@
         "has_physical_store": false
       },
       {
+        "club": "Super GiftCard max",
+        "business_name": "וואן פרוג'קט - ONE PROJECT",
+        "discount": "Super GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": false
+      },
+      {
         "club": "BUYME",
         "business_name": "JO MALONE LONDON",
         "discount": "למימוש יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים:03-7770888",
@@ -9787,18 +10330,18 @@
       },
       {
         "club": "HOT",
-        "business_name": "Yaki Golbary Kids- מספרה לילדים",
+        "business_name": "Yaki Golbary",
         "discount": "5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/הטבה/28049/Yaki-Golbary-Kids--מספרה-לילדים",
+        "discount_url": "https://www.hot.co.il/הטבה/28048/Yaki-Golbary",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
         "has_physical_store": true
       },
       {
         "club": "HOT",
-        "business_name": "Yaki Golbary",
+        "business_name": "Yaki Golbary Kids- מספרה לילדים",
         "discount": "5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/הטבה/28048/Yaki-Golbary",
+        "discount_url": "https://www.hot.co.il/הטבה/28049/Yaki-Golbary-Kids--מספרה-לילדים",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
         "has_physical_store": true
@@ -9954,6 +10497,69 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,412849",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "גולף אנד קו - Golf & Co",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "גוד נייט - Good Night",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "גולף - Golf",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "מנגו - MANGO",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "גולף קידס - Golf Kids",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "Super GiftCard max",
+        "business_name": "יאנגו דלי - Yango Deli",
+        "discount": "Super GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "Super GiftCard max",
+        "business_name": "גולברי - golbary",
+        "discount": "Super GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
         "has_physical_store": true
       },
       {
@@ -10334,6 +10940,15 @@
         "has_physical_store": false
       },
       {
+        "club": "GiftCard max",
+        "business_name": "פוקס הום - Fox Home",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
         "club": "BUYME",
         "business_name": "Fox Home",
         "discount": "ניתן למימוש בפוקס ובפוקס הום. שובר פגום/מזוייף לא יכובד. שובר זה אינו כרטיס חיוב כהגדרתו בחוק כרטיסי חיוב התשמ\"ו - 1986. המחזיק בשובר מצהיר בעצם ההחזקה כי הוא מסכים לאמור. ט.ל.ח.",
@@ -10377,6 +10992,15 @@
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=23",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "אינטימה - Intima",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
         "has_physical_store": true
       }
     ],
@@ -10461,6 +11085,15 @@
     "lon": 34.770998,
     "discounts": [
       {
+        "club": "GiftCard max",
+        "business_name": "פולגת - POLGAT",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
         "club": "BUYME",
         "business_name": "POLGAT",
         "discount": "למימוש השובר יש להציג מספר שובר באמצעות SMS/ מייל/ שובר מודפס בקופות סניפי הרשתות. רשתות מכבדות: גולף, פולגת, אינטימה, גולף קידס אנד בייבי, אנד קו וכיתן. לחצו לרשימת הרשתות והסניפים . ניתן למימוש בכפל מבצעים והנחות. לפרטים נוספים ניתן לפנות 03-6451515. למימוש בסניפי הרשת.",
@@ -10526,6 +11159,24 @@
         "has_physical_store": false
       },
       {
+        "club": "GiftCard max",
+        "business_name": "לי קופר - Lee Cooper",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "Super GiftCard max",
+        "business_name": "לי קופר קידס - Lee Cooper Kids",
+        "discount": "Super GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
         "club": "BUYME",
         "business_name": "Lee Cooper",
         "discount": "למימוש השובר יש להציג מספר שובר באחד מסניפי לי קופר. לחצו לרשימת הסניפים לפרטים נוספים - 03-9590512",
@@ -10577,6 +11228,24 @@
     "lat": 31.250392,
     "lon": 34.772053,
     "discounts": [
+      {
+        "club": "Super GiftCard max",
+        "business_name": "castro",
+        "discount": "Super GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "Super GiftCard max",
+        "business_name": "קסטרו הום - Castro home",
+        "discount": "Super GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
       {
         "club": "BUYME",
         "business_name": "CASTRO",
@@ -10641,6 +11310,15 @@
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=112",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "אייס קיוב - Ice Cube",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
         "has_physical_store": true
       },
       {
@@ -10850,6 +11528,15 @@
         "has_physical_store": true
       },
       {
+        "club": "GiftCard max",
+        "business_name": "בוגארט - BOGART",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
         "club": "BUYME",
         "business_name": "BOGART",
         "discount": "למימוש יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים: 1-700-55-66-85.",
@@ -10892,6 +11579,15 @@
     "lat": 31.250297,
     "lon": 34.771303,
     "discounts": [
+      {
+        "club": "GiftCard max",
+        "business_name": "בילבונג - Billabong",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
       {
         "club": "BUYME",
         "business_name": "Billabong",
@@ -10966,6 +11662,15 @@
         "discount_type": "billing_discount",
         "discount_value": 3.0,
         "has_physical_store": true
+      },
+      {
+        "club": "Super GiftCard max",
+        "business_name": "קולומביה - Columbia",
+        "discount": "Super GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
       }
     ],
     "source": "docs/data/businesses"
@@ -10977,6 +11682,15 @@
     "lat": 31.249926,
     "lon": 34.772206,
     "discounts": [
+      {
+        "club": "GiftCard max",
+        "business_name": "סולוג - Solog",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
       {
         "club": "BUYME",
         "business_name": "Solog",
@@ -11107,6 +11821,15 @@
         "has_physical_store": false
       },
       {
+        "club": "GiftCard max",
+        "business_name": "אלדו - ALDO",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
         "club": "BUYME",
         "business_name": "ALDO",
         "discount": "שובר המתנה יכובד ברשתות ALDO ( לרשימת סניפים ) בישראל בלבד. השובר מזכה את המחזיק בו עד לגובה הסכום שטעון בו כדין. במקרה של אובדן / גניבה לא יוחלף שובר המתנה ולא תינתן כל תמורה או פיצוי בגינו. כרטיס פגום/ מזוייף לא יכובד. לפרטים נוספים: 02-5350701",
@@ -11165,6 +11888,15 @@
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "סקצ'רס - Skechers",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
       }
     ],
     "source": "docs/data/businesses"
@@ -11201,6 +11933,15 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,353311",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "Super GiftCard max",
+        "business_name": "אירוקה - Erroca",
+        "discount": "Super GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
         "has_physical_store": true
       },
       {
@@ -11316,6 +12057,15 @@
         "has_physical_store": true
       },
       {
+        "club": "GiftCard max",
+        "business_name": "גולף קידס - Golf Kids",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
         "club": "BUYME",
         "business_name": "Golf Kids",
         "discount": "למימוש השובר יש להציג מספר שובר באמצעות SMS/ מייל/ שובר מודפס בקופות סניפי הרשתות. רשתות מכבדות: גולף, פולגת, אינטימה, גולף קידס אנד בייבי, אנד קו וכיתן. לחצו לרשימת הרשתות והסניפים . ניתן למימוש בכפל מבצעים והנחות. לפרטים נוספים ניתן לפנות 03-6451515. למימוש בסניפי הרשת.",
@@ -11352,6 +12102,24 @@
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": false
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "פוקס הום - Fox Home",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "פוקס - Fox",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
       },
       {
         "club": "BUYME",
@@ -11451,6 +12219,15 @@
         "has_physical_store": true
       },
       {
+        "club": "GiftCard max",
+        "business_name": "סטיב מאדן - Steve Madden",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
         "club": "BUYME",
         "business_name": "STEVE MADDEN",
         "discount": "ניתן ליהנות מה-BUYME גם ברכישה אונליין ב אתר בית העסק וגם בחנויות. איך נהנים מה-BUYME שלך ברכישות אונליין? נכנסים לאתר STEVE MADDEN ובוחרים את הפריטים שהכי עושים לך טוב בלב. מוסיפים לעגלה - ועוברים לקופה לשלב התשלום. שימו לב, מימוש ה-BUYME הוא במעמד התשלום, ולא ניתן לממש את המתנה בשלב בחירת הפריטים או בחלונית \"קוד קופון או קיפט קארד\". בעמוד התשלום ממלאים את פרטי המשלוח ולוחצים על 'לתשלום' בעמוד הבא בוחרים ב'BUYME', מזינים את 16 הספרות שמרכיבות את קוד ה-BUYME שלך, לוחצים 'אפשר להמשיך' – ומשלימים את ההזמנה. וזהו, המתנה שבחרת בדרך אלייך! נ.ב, ניתן להוסיף אמצעי תשלום נוספים או/ו שוברים נוספים באותה ההזמנה. כדי ליהנות מה-BUYME בבית העסק יש להציג את הקוד למימוש בקופה. לפרטים נוספים ניתן ליצור קשר עם בית העסק",
@@ -11485,6 +12262,15 @@
         "has_physical_store": true
       },
       {
+        "club": "Super GiftCard max",
+        "business_name": "אפריל - APRIL",
+        "discount": "Super GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
         "club": "BUYME",
         "business_name": "APRIL",
         "discount": "למימוש יש להגיע לאחד מסניפי הרשת ולהציג מספר Gift Card מלא באמצעות SMS / מייל/ דף מודפס. לחצו כאן: לתקנון ה- Gift Card של רשת אפריל - April",
@@ -11516,7 +12302,17 @@
     "type": "gift",
     "lat": 31.250762,
     "lon": 34.771691,
-    "discounts": [],
+    "discounts": [
+      {
+        "club": "GiftCard max",
+        "business_name": "בוניטה דה מאס - Bonita De Mas",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      }
+    ],
     "source": "docs/data/businesses"
   },
   {
@@ -11533,6 +12329,33 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "גולף אנד קו - Golf & Co",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "גולף - Golf",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "גולף קידס - Golf Kids",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
         "has_physical_store": true
       },
       {
@@ -11644,6 +12467,15 @@
     "lon": 34.771056,
     "discounts": [
       {
+        "club": "GiftCard max",
+        "business_name": "ללין - Laline",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
         "club": "BUYME",
         "business_name": "Laline",
         "discount": "שובר פגום/מזוייף לא יכובד. שובר זה אינו כרטיס חיוב כהגדרתו בחוק כרטיסי החיוב התשמ\"ו - 1986. כל אדם המחזיק בשובר מצהיר בעצם ההחזקה כי הוא מסכים לאמור לעיל. ט.ל.ח.",
@@ -11711,6 +12543,15 @@
         "has_physical_store": true
       },
       {
+        "club": "GiftCard max",
+        "business_name": "סבון - SABON",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
         "club": "BUYME",
         "business_name": "SABON",
         "discount": "למימוש בסניפים, השובר יש להציג את מספר השובר באחד מסניפי הרשת, באמצעות SMS/ מייל/ שובר מודפס. לחצו לרשימת הסניפים . כולל כפל מבצעים והנחות. למימוש השובר באתר SABON בסל הרכישה או בהמשך תהליך התשלום יש לבחור ב- GIFT CARD / תווי קניה ולהזין את קוד השובר ברצף ללא מקפים וללחוץ על כפתור \"ממש שובר\".לאחר הזנת הקוד, סכום השובר יופיע כקרדיט באתר, וניתן יהיה לבחור בו כשיטת התשלום. לפרטים נוספים: 03-3766663.",
@@ -11756,6 +12597,15 @@
     "lat": 31.249966,
     "lon": 34.771732,
     "discounts": [
+      {
+        "club": "כרטיס הטבות executive",
+        "business_name": "אדידס יאנג אטלטס - Adidas Young Athletes",
+        "discount": "כרטיס הטבות executive | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
       {
         "club": "BUYME",
         "business_name": "adidas",
@@ -11830,6 +12680,15 @@
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": false
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "נאוטיקה - NAUTICA",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
       },
       {
         "club": "BUYME",
@@ -11917,6 +12776,15 @@
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "סטימצקי",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
       }
     ],
     "source": "docs/data/businesses"
@@ -11953,6 +12821,15 @@
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=439",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "איל מקיאג' - IL MAKIAGE",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
         "has_physical_store": true
       },
       {
@@ -12106,6 +12983,15 @@
         "has_physical_store": false
       },
       {
+        "club": "Super GiftCard max",
+        "business_name": "צומת ספרים - Tzomet Sfarim",
+        "discount": "Super GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
         "club": "BUYME",
         "business_name": "רשת צומת ספרים",
         "discount": "למימוש יש להציג מספר Gift Card מלא באמצעות SMS/ מייל/ דף מודפס. לפרטים נוספים: 08-9236565. מימוש ה- Gift Card לא יתאפשר באתר האינטרנט של צומת ספרים. רשימת הסניפים",
@@ -12130,7 +13016,17 @@
     "type": "shoes",
     "lat": 31.250645,
     "lon": 34.771969,
-    "discounts": [],
+    "discounts": [
+      {
+        "club": "Super GiftCard max",
+        "business_name": "נמרוד - Nimrod & more",
+        "discount": "Super GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": false
+      }
+    ],
     "source": "docs/data/businesses"
   },
   {
@@ -12289,7 +13185,17 @@
     "type": "shoes",
     "lat": 31.250284,
     "lon": 34.771147,
-    "discounts": [],
+    "discounts": [
+      {
+        "club": "GiftCard max",
+        "business_name": "ליידי קומפורט - Lady Comfort",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      }
+    ],
     "source": "docs/data/businesses"
   },
   {
@@ -12468,6 +13374,42 @@
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=569",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "פוקס הום - Fox Home",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "הום סנטר - Home Center",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "HomeStyle",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "Super GiftCard max",
+        "business_name": "קסטרו הום - Castro home",
+        "discount": "Super GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
         "has_physical_store": true
       },
       {
@@ -12691,6 +13633,15 @@
         "has_physical_store": true
       },
       {
+        "club": "GiftCard max",
+        "business_name": "ארי - aerie",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
         "club": "BUYME",
         "business_name": "Aerie",
         "discount": "Voucher",
@@ -12714,6 +13665,15 @@
     "lat": 31.250057,
     "lon": 34.771701,
     "discounts": [
+      {
+        "club": "GiftCard max",
+        "business_name": "ניין ווסט - NINE WEST",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
       {
         "club": "BUYME",
         "business_name": "NINE WEST",
@@ -12836,6 +13796,24 @@
         "has_physical_store": true
       },
       {
+        "club": "GiftCard max",
+        "business_name": "עגליס - agalis",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "גלי - Gali",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
         "club": "BUYME",
         "business_name": "Gali",
         "discount": "ניתן ליהנות מה-BUYME גם ברכישה אונליין ב אתר בית העסק וגם בחנויות. איך נהנים מה-BUYME שלך ברכישות אונליין? נכנסים לאתר GALI ובוחרים את הפריטים שהכי עושים לך טוב בלב. מוסיפים לעגלה - ועוברים לקופה לשלב התשלום. בעמוד התשלום לוחצים על \"קוד קופון\" , מזינים את 16 הספרות שמרכיבות את קוד ה-BUYME שלך, לוחצים \"החל\" ומשלימים את ההזמנה. וזהו, המתנה שבחרת בדרך אלייך! כדי ליהנות מה-BUYME בבית העסק יש להציג את הקוד למימוש בקופה. לפרטים נוספים ניתן ליצור קשר עם בית העסק",
@@ -12867,6 +13845,15 @@
     "lat": 31.250355,
     "lon": 34.772352,
     "discounts": [
+      {
+        "club": "GiftCard max",
+        "business_name": "ורדינון - Vardinon",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
       {
         "club": "BUYME",
         "business_name": "VARDINON",
@@ -15185,6 +16172,429 @@
         "has_physical_store": true
       },
       {
+        "club": "GiftCard max",
+        "business_name": "מגה ספורט - Mega Sport",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "רייבן ספורט - raven Sport",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "אימפוריום - emporium",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "במפרס - Bumpers",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": false
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "פולאיז - pulliez",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "טיפטופי - Tiptopi",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "איי ג'אמפ - ijump",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "ג'אמפ אפ - jump up",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "טרקלין אספייר - Aspire",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "אוטו דיפו - Auto Depot",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "פליינג טייגר - flying tiger Copenhagen",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "פוד אפיל - food appeal",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "נייט סליפ - Night Sleep",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "פומה - Puma",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "פולגת - POLGAT",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "דפנה לוינסון - Daphna Levinson",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "לי קופר - Lee Cooper",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "פרד פרי - Fred Perry",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "פול אנד שארק - Paul & Shark",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "לונג צ'אמפ - Longchamp",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "סופרדריי - Superdry",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "קונספט סטור - Concept Store",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "ריפליי - REPLAY",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "ספידו - speedo",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "גאמפ עונות - Jump & ONOT",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "דה צ'ינלדרנס פלייס - The Children's Place",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "פטיט בטאו - Petit Bateau",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "מגה ספורט קידס - Mega Sport Kids",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "פרסונל טריינרס - Personal Trainers",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "כרטיס הטבות executive",
+        "business_name": "איזי ספיריט - Easy Spirit",
+        "discount": "כרטיס הטבות executive | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "Super GiftCard max",
+        "business_name": "סופר יודה - Super Yuda",
+        "discount": "Super GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "Super GiftCard max",
+        "business_name": "סופר ספיר - Super Sapir",
+        "discount": "Super GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "Super GiftCard max",
+        "business_name": "סופר דוש - Super Dush",
+        "discount": "Super GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "Super GiftCard max",
+        "business_name": "טיפ טוב - TIP TOV",
+        "discount": "Super GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "Super GiftCard max",
+        "business_name": "היפר דודו - hiper dudu",
+        "discount": "Super GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "Super GiftCard max",
+        "business_name": "אירו הנדלינג - AERO VIP",
+        "discount": "Super GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "Super GiftCard max",
+        "business_name": "וואן פרוג'קט - ONE PROJECT",
+        "discount": "Super GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": false
+      },
+      {
+        "club": "Super GiftCard max",
+        "business_name": "פט איי די חיות בדיגיטל - Pet ID",
+        "discount": "Super GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": false
+      },
+      {
+        "club": "Super GiftCard max",
+        "business_name": "אפריל - APRIL",
+        "discount": "Super GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "Super GiftCard max",
+        "business_name": "אופטיקנה - Opticana",
+        "discount": "Super GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "Super GiftCard max",
+        "business_name": "צק אפ - Check-Up",
+        "discount": "Super GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "Super GiftCard max",
+        "business_name": "ספרינג - Spring",
+        "discount": "Super GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "Super GiftCard max",
+        "business_name": "לי קופר קידס - Lee Cooper Kids",
+        "discount": "Super GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "Giftcard Food",
+        "business_name": "סופר יודה - Super Yuda",
+        "discount": "Giftcard Food |  gift_card",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "gift_card",
+        "discount_value": 0.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "Giftcard Food",
+        "business_name": "סופר דוש - Super Dush",
+        "discount": "Giftcard Food |  gift_card",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "gift_card",
+        "discount_value": 0.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "Giftcard Food",
+        "business_name": "היפר דודו - hiper dudu",
+        "discount": "Giftcard Food |  gift_card",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "gift_card",
+        "discount_value": 0.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "Giftcard Food",
+        "business_name": "טיפ טוב - TIP TOV",
+        "discount": "Giftcard Food |  gift_card",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "gift_card",
+        "discount_value": 0.0,
+        "has_physical_store": true
+      },
+      {
         "club": "BUYME",
         "business_name": "Jrpole",
         "discount": "למימוש יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים: 0532836537 .",
@@ -17423,6 +18833,15 @@
     "lon": 34.772438,
     "discounts": [
       {
+        "club": "GiftCard max",
+        "business_name": "נעמן - Naaman",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
         "club": "BUYME",
         "business_name": "NAAMAN",
         "discount": "ניתן ליהנות מה-BUYME גם ברכישה אונליין ב אתר בית העסק וגם בחנויות. איך נהנים מה-BUYME שלך ברכישות אונליין? נכנסים לאתר NAAMAN ובוחרים את הפריטים שהכי עושים לך טוב בלב. מוסיפים לעגלה - ועוברים לקופה לשלב התשלום. שימו לב, מימוש ה-BUYME הוא במעמד התשלום, ולא ניתן לממש את המתנה בשלב בחירת הפריטים או בחלונית \"קוד קופון\". בעמוד התשלום ממלאים פרטי שילוח וולחצים על חלונית 'תשלום בגיפט קארד| כרטיס נטען\" זיכוי\" לוחצים על לוגו 'BUYME' מזינים את 16 הספרות שמרכיבות את קוד ה-BUYME שלך, לוחצים 'לתשלום' – ומשלימים את ההזמנה. וזהו, המתנה שבחרת בדרך אלייך! נ.ב, ניתן להוסיף אמצעי תשלום נוספים או/ו שוברים נוספים באותה ההזמנה. כדי ליהנות מה-BUYME בבית העסק יש להציג את הקוד למימוש בקופה. לפרטים נוספים ניתן ליצור קשר עם בית העסק",
@@ -17510,6 +18929,15 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "מנגו - MANGO",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
         "has_physical_store": true
       },
       {
@@ -17691,6 +19119,15 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,320720",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "מלונות אסטרל - Astral Hotels",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
         "has_physical_store": true
       },
       {
@@ -18132,6 +19569,15 @@
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": false
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "ללין - Laline",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
       }
     ],
     "source": "docs/data/businesses"
@@ -19276,7 +20722,26 @@
     "type": "supermarket",
     "lat": 31.223015,
     "lon": 34.80286,
-    "discounts": [],
+    "discounts": [
+      {
+        "club": "Super GiftCard max",
+        "business_name": "קשת טעמים - keshet teamim",
+        "discount": "Super GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "Giftcard Food",
+        "business_name": "קשת טעמים - keshet teamim",
+        "discount": "Giftcard Food |  gift_card",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "gift_card",
+        "discount_value": 0.0,
+        "has_physical_store": true
+      }
+    ],
     "source": "docs/data/businesses"
   },
   {
@@ -19659,6 +21124,15 @@
         "discount_type": "billing_discount",
         "discount_value": 4.0,
         "has_physical_store": true
+      },
+      {
+        "club": "Super GiftCard max",
+        "business_name": "סופר ספיר - Super Sapir",
+        "discount": "Super GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
       }
     ],
     "source": "docs/data/businesses"
@@ -20025,6 +21499,15 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,405591",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "Super GiftCard max",
+        "business_name": "שבילים - Shvilim",
+        "discount": "Super GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
         "has_physical_store": true
       },
       {
@@ -22515,20 +23998,20 @@
       },
       {
         "club": "HOT",
-        "business_name": "סיגליות- קוסמטיקה",
-        "discount": "3.5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/הטבה/29659/סיגליות--קוסמטיקה",
-        "discount_type": "billing_discount",
-        "discount_value": 3.5,
-        "has_physical_store": true
-      },
-      {
-        "club": "HOT",
         "business_name": "אדר ציוד וחומרי בניין",
         "discount": "5% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/הטבה/28966/אדר-ציוד-וחומרי-בניין",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "סיגליות- קוסמטיקה",
+        "discount": "3.5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/29659/סיגליות--קוסמטיקה",
+        "discount_type": "billing_discount",
+        "discount_value": 3.5,
         "has_physical_store": true
       },
       {
@@ -22871,6 +24354,96 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,415299",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "אימפוריום - emporium",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "יוז - YOOZ",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": false
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "אינטר ג'ינס ניו - NYOU INTER JEANS",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "ליוויס - Levi's",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "אייס קיוב - Ice Cube",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "Super GiftCard max",
+        "business_name": "סופר יודה - Super Yuda",
+        "discount": "Super GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "Super GiftCard max",
+        "business_name": "סלון יווני - Greek Salon",
+        "discount": "Super GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "Super GiftCard max",
+        "business_name": "פט איי די חיות בדיגיטל - Pet ID",
+        "discount": "Super GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": false
+      },
+      {
+        "club": "Giftcard Food",
+        "business_name": "סופר יודה - Super Yuda",
+        "discount": "Giftcard Food |  gift_card",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "gift_card",
+        "discount_value": 0.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "Giftcard Food",
+        "business_name": "סלון יווני - Greek Salon",
+        "discount": "Giftcard Food |  gift_card",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "gift_card",
+        "discount_value": 0.0,
         "has_physical_store": true
       },
       {
@@ -23845,7 +25418,26 @@
     "type": "supermarket",
     "lat": 31.241504,
     "lon": 34.809508,
-    "discounts": [],
+    "discounts": [
+      {
+        "club": "Super GiftCard max",
+        "business_name": "טיב טעם - Tiv Taam",
+        "discount": "Super GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "Giftcard Food",
+        "business_name": "טיב טעם - Tiv Taam",
+        "discount": "Giftcard Food |  gift_card",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "gift_card",
+        "discount_value": 0.0,
+        "has_physical_store": true
+      }
+    ],
     "source": "docs/data/businesses"
   },
   {
@@ -23899,7 +25491,17 @@
     "type": "supermarket",
     "lat": 31.061478,
     "lon": 35.024075,
-    "discounts": [],
+    "discounts": [
+      {
+        "club": "Super GiftCard max",
+        "business_name": "ויקטורי - Victory",
+        "discount": "Super GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      }
+    ],
     "source": "docs/data/businesses"
   },
   {
@@ -24308,6 +25910,15 @@
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "סטימצקי",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
       }
     ],
     "source": "docs/data/businesses"
@@ -24336,6 +25947,15 @@
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": false
+      },
+      {
+        "club": "Super GiftCard max",
+        "business_name": "תיק התיקים - Tik HaTikim",
+        "discount": "Super GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
       },
       {
         "club": "BUYME",
@@ -24431,6 +26051,15 @@
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "רוזן ומינץ - ROSEN & MEENTS",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
       }
     ],
     "source": "docs/data/businesses"
@@ -24459,6 +26088,24 @@
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": false
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "מגה ספורט - Mega Sport",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "מגה ספורט קידס - Mega Sport Kids",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
       },
       {
         "club": "BUYME",
@@ -24949,6 +26596,15 @@
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "א.ל.מ - Alam",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
       }
     ],
     "source": "docs/data/businesses"
@@ -25122,6 +26778,24 @@
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=6047",
         "discount_type": "billing_discount",
         "discount_value": 6.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "Super GiftCard max",
+        "business_name": "מחסני להב - Lahav Warehouses",
+        "discount": "Super GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "Giftcard Food",
+        "business_name": "מחסני להב - Lahav Warehouses",
+        "discount": "Giftcard Food |  gift_card",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "gift_card",
+        "discount_value": 0.0,
         "has_physical_store": true
       }
     ],
@@ -25419,6 +27093,15 @@
         "discount_url": "https://www.hot.co.il/הטבה/7989/טרקלין-חשמל",
         "discount_type": "billing_discount",
         "discount_value": 4.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "Super GiftCard max",
+        "business_name": "טרקלין חשמל - Traklin Electric",
+        "discount": "Super GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
         "has_physical_store": true
       },
       {
@@ -26483,6 +28166,15 @@
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": false
+      },
+      {
+        "club": "GiftCard max",
+        "business_name": "פוד אפיל - food appeal",
+        "discount": "GiftCard max | 16%",
+        "discount_url": "https://www.max.co.il/gift-card-network",
+        "discount_type": "rechargeable_card",
+        "discount_value": 16.0,
+        "has_physical_store": true
       },
       {
         "club": "BUYME",

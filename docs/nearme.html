@@ -95,6 +95,11 @@
           <span class="club-logo-tag buyme-tag">BUYME</span>
           <span class="chip-name">Buyme</span>
         </button>
+        <button class="filter-chip chip-max" data-club="MAX" type="button" aria-pressed="false" id="filterMAX">
+          <span class="chip-checkbox">✓</span>
+          <span class="club-logo-tag max-tag">MAX</span>
+          <span class="chip-name">MAX</span>
+        </button>
       </div>
 
       <div id="controls-radius">
@@ -138,7 +143,7 @@
     let userMarker = null;
     let radiusCircle = null;
     let businessLayerGroup = L.layerGroup();
-    const CLUB_KEYS = ['MCC', 'HOT', 'HTzone', 'BUYME'];
+    const CLUB_KEYS = ['MCC', 'HOT', 'HTzone', 'BUYME', 'MAX'];
     let selectedClubs = new Set(CLUB_KEYS);
 
     let isPinMode = false;
@@ -283,51 +288,17 @@
           if (clickedClub === 'ALL') {
             selectedClubs = new Set(CLUB_KEYS);
           } else {
-            const isAllSelected = selectedClubs.size === CLUB_KEYS.length;
-            if (isAllSelected) {
-              selectedClubs = new Set([clickedClub]);
-            } else if (selectedClubs.has(clickedClub)) {
+            if (selectedClubs.has(clickedClub)) {
               selectedClubs.delete(clickedClub);
               if (selectedClubs.size === 0) {
                 selectedClubs = new Set(CLUB_KEYS);
               }
             } else {
-              selectedClubs.add(clickedClub);
-            }
-          }
-          updateClubFiltersUI();
-          if (radiusCircle) {
-            updateUserLocation(currentUserLat, currentUserLon);
-          }
-        });
-      });
-    }
-
-    function updateClubFiltersUI() {
-      document.querySelectorAll('.filter-chip').forEach((chip) => {
-        const club = chip.getAttribute('data-club');
-        const active = club === 'ALL' ? selectedClubs.size === CLUB_KEYS.length : selectedClubs.has(club);
-        chip.classList.toggle('active', active);
-      });
-    }
-
-    function attachClubFilterHandlers() {
-      document.querySelectorAll('.filter-chip').forEach((chip) => {
-        chip.addEventListener('click', () => {
-          const clickedClub = chip.getAttribute('data-club');
-          if (clickedClub === 'ALL') {
-            selectedClubs = new Set(CLUB_KEYS);
-          } else {
-            const isAllSelected = selectedClubs.size === CLUB_KEYS.length;
-            if (isAllSelected) {
-              selectedClubs = new Set([clickedClub]);
-            } else if (selectedClubs.has(clickedClub)) {
-              selectedClubs.delete(clickedClub);
-              if (selectedClubs.size === 0) {
-                selectedClubs = new Set(CLUB_KEYS);
+              if (selectedClubs.size === CLUB_KEYS.length) {
+                selectedClubs = new Set([clickedClub]);
+              } else {
+                selectedClubs.add(clickedClub);
               }
-            } else {
-              selectedClubs.add(clickedClub);
             }
           }
           updateClubFiltersUI();

@@ -12,7 +12,28 @@
 (function () {
     'use strict';
 
-    const CLUB_KEYS = ['MCC', 'HOT', 'HTzone', 'BUYME'];
+    const CLUB_KEYS = ['MCC', 'HOT', 'HTzone', 'BUYME', 'MAX'];
+    const COOKIE_NAME = 'df_filter_selection';
+
+    function saveFilterCookie() {
+        const clubs = Array.from(state.selectedClubs);
+        document.cookie = COOKIE_NAME + '=' + encodeURIComponent(JSON.stringify({
+            clubs: clubs,
+            discountType: state.selectedDiscountType || '',
+            sortBy: state.sortBy || 'discount_desc',
+            fuzzyThreshold: state.fuzzyThreshold || 0.72,
+        })) + ';path=/;max-age=' + (60 * 60 * 24 * 30) + ';SameSite=Lax';
+    }
+
+    function loadFilterCookie() {
+        const match = document.cookie.split(';').map(c => c.trim()).find(c => c.startsWith(COOKIE_NAME + '='));
+        if (!match) return null;
+        try {
+            return JSON.parse(decodeURIComponent(match.slice(COOKIE_NAME.length + 1)));
+        } catch (e) {
+            return null;
+        }
+    }
 
     // State
     const state = {
@@ -32,6 +53,7 @@
             HOT: 0,
             HTzone: 0,
             BUYME: 0,
+            MAX: 0,
         },
         totalDiscounts: 0,
     };
@@ -40,10 +62,11 @@
     function canonicalClub(raw) {
         if (!raw) return raw;
         const s = raw.toString();
-        if (s === 'חבר' || s === 'MCC' || s.toLowerCase() === 'mcc') return 'MCC';
+        if (s === 'חבר' || s === 'חבר שלי' || s === 'חבר טעמים' || s === 'MCC' || s.toLowerCase() === 'mcc') return 'MCC';
         if (s === 'HOT' || s.toLowerCase() === 'hot') return 'HOT';
         if (s === 'HTzone' || s.toLowerCase() === 'htzone') return 'HTzone';
         if (s.toUpperCase().includes('BUYME')) return 'BUYME';
+        if (s.toString().includes('GiftCard max') || s.toString().includes('Super GiftCard max') || s.toString().includes('כרטיס הטבות executive') || s.toString().includes('Giftcard Food')) return 'MAX';
         return s;
     }
 
@@ -72,6 +95,7 @@
         countHOT: document.getElementById('countHOT'),
         countHTzone: document.getElementById('countHTzone'),
         countBUYME: document.getElementById('countBUYME'),
+        countMAX: document.getElementById('countMAX'),
         backToTopBtn: document.getElementById('backToTopBtn'),
     };
 
@@ -155,6 +179,8 @@
                 return 'הייטק זון';
             case 'BUYME':
                 return 'BUYME';
+            case 'MAX':
+                return 'MAX';
             default:
                 return club;
         }
@@ -170,6 +196,8 @@
                 return 'HTzone';
             case 'BUYME':
                 return 'BUYME';
+            case 'MAX':
+                return 'MAX';
             default:
                 return club;
         }
@@ -178,15 +206,16 @@
     // Process raw array of discount items into grouped business records
     function processRawDiscounts(dataList) {
         const names = new Map();
-        const clubCounts = { ALL: 0, MCC: 0, HOT: 0, HTzone: 0, BUYME: 0 };
+        const clubCounts = { ALL: 0, MCC: 0, HOT: 0, HTzone: 0, BUYME: 0, MAX: 0 };
 
         function mapClub(raw) {
             if (!raw) return raw;
             const s = raw.toString();
-            if (s === 'חבר' || s === 'MCC' || s.toLowerCase() === 'mcc') return 'MCC';
+            if (s === 'חבר' || s === 'חבר שלי' || s === 'חבר טעמים' || s === 'MCC' || s.toLowerCase() === 'mcc') return 'MCC';
             if (s === 'HOT' || s.toLowerCase() === 'hot') return 'HOT';
             if (s === 'HTzone' || s.toLowerCase() === 'htzone') return 'HTzone';
             if (s.toUpperCase().includes('BUYME')) return 'BUYME';
+            if (s.includes('GiftCard max') || s.includes('Super GiftCard max') || s.includes('כרטיס הטבות executive') || s.includes('Giftcard Food')) return 'MAX';
             return s;
         }
 
@@ -315,6 +344,7 @@
                             HOT: clubCountsMap['HOT'] || 0,
                             HTzone: clubCountsMap['HTzone'] || 0,
                             BUYME: clubCountsMap['BUYME'] || 0,
+                            MAX: clubCountsMap['MAX'] || 0,
                         };
                     } catch (e) {
                         // ignore API clubs error
@@ -348,6 +378,9 @@
         elements.countHOT.textContent = state.clubCounts.HOT.toLocaleString();
         elements.countHTzone.textContent = state.clubCounts.HTzone.toLocaleString();
         if (elements.countBUYME) elements.countBUYME.textContent = (state.clubCounts.BUYME || 0).toLocaleString();
+        const countMaxEl = document.getElementById('countMAX');
+        if (countMaxEl) countMaxEl.textContent = (state.clubCounts.MAX || 0).toLocaleString();
+        if (elements.countMAX) elements.countMAX.textContent = (state.clubCounts.MAX || 0).toLocaleString();
 
         state.isLoading = false;
         elements.loadingSkeleton.classList.add('hidden');
@@ -489,16 +522,32 @@
 
         header.appendChild(titleArea);
 
-        // Best discount / Voucher pill
-        const hasPercentBest = (biz.best_discount_value != null) && (biz.best_discount_value > 0);
-        const voucherCount = (biz.discounts || []).filter((d) => ((d.discount_type || '').toLowerCase() === 'voucher' || /שובר|voucher/i.test(d.discount || ''))).length;
+        // Best discount / Voucher pill — computed from currently filtered discounts
+        const filteredPercents = [];
+        discountsToShow.forEach((disc) => {
+            const text = disc.discount || '';
+            const isVoucher = ((disc.discount_type || '').toLowerCase() === 'voucher') || /שובר|voucher/i.test(text);
+            if (isVoucher) return;
+            if (disc.discount_value != null) {
+                filteredPercents.push(Number(disc.discount_value));
+                return;
+            }
+            const match = text.match(/(\d+(?:\.\d+)?)\s*(%|אחוז(?:ים)?|percent)/i);
+            if (match) {
+                filteredPercents.push(parseFloat(match[1]));
+            }
+        });
+        const bestFilteredValue = filteredPercents.length > 0 ? Math.max(...filteredPercents) : 0;
+        const bestFilteredText = bestFilteredValue > 0 ? `${bestFilteredValue}%` : null;
+        const hasPercentBest = bestFilteredValue > 0;
+        const voucherCount = discountsToShow.filter((d) => ((d.discount_type || '').toLowerCase() === 'voucher' || /שובר|voucher/i.test(d.discount || ''))).length;
         const hasVoucher = voucherCount > 0;
 
         if (hasPercentBest) {
             const bestPill = document.createElement('div');
             bestPill.className = 'best-discount-pill';
             bestPill.innerHTML = `
-                <span class="best-disc-val">${escapeHtml(biz.best_discount)}</span>
+                <span class="best-disc-val">${escapeHtml(bestFilteredText)}</span>
                 <span class="best-disc-lbl">הנחה מרבית</span>
             `;
             header.appendChild(bestPill);
@@ -663,15 +712,10 @@
                 const clickedClub = chip.getAttribute('data-club');
 
                 if (clickedClub === 'ALL') {
-                    // Clicking ALL resets to selecting all clubs
+                    // Clicking ALL selects all clubs
                     state.selectedClubs = new Set(CLUB_KEYS);
                 } else {
-                    const isAllSelected = state.selectedClubs.size === CLUB_KEYS.length;
-
-                    if (isAllSelected) {
-                        // If all were active, clicking one club narrows down to ONLY that club
-                        state.selectedClubs = new Set([clickedClub]);
-                    } else if (state.selectedClubs.has(clickedClub)) {
+                    if (state.selectedClubs.has(clickedClub)) {
                         // Deselect this club
                         state.selectedClubs.delete(clickedClub);
                         // If none left, revert to ALL
@@ -679,8 +723,12 @@
                             state.selectedClubs = new Set(CLUB_KEYS);
                         }
                     } else {
-                        // Add this club to active selection
-                        state.selectedClubs.add(clickedClub);
+                        // Add this club; if ALL was selected, replace with just this club
+                        if (state.selectedClubs.size === CLUB_KEYS.length) {
+                            state.selectedClubs = new Set([clickedClub]);
+                        } else {
+                            state.selectedClubs.add(clickedClub);
+                        }
                     }
                 }
 
