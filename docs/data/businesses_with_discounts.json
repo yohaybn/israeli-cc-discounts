@@ -7647,20 +7647,20 @@
       },
       {
         "club": "HOT",
-        "business_name": "אדר ציוד וחומרי בניין",
-        "discount": "5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/הטבה/28966/אדר-ציוד-וחומרי-בניין",
-        "discount_type": "billing_discount",
-        "discount_value": 5.0,
-        "has_physical_store": true
-      },
-      {
-        "club": "HOT",
         "business_name": "סיגליות- קוסמטיקה",
         "discount": "3.5% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/הטבה/29659/סיגליות--קוסמטיקה",
         "discount_type": "billing_discount",
         "discount_value": 3.5,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "אדר ציוד וחומרי בניין",
+        "discount": "5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/28966/אדר-ציוד-וחומרי-בניין",
+        "discount_type": "billing_discount",
+        "discount_value": 5.0,
         "has_physical_store": true
       },
       {
@@ -44291,15 +44291,6 @@
     "lon": 34.976857,
     "discounts": [
       {
-        "club": "HOT",
-        "business_name": "אסאדלי",
-        "discount": "5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/הטבה/59488/אסאדלי",
-        "discount_type": "billing_discount",
-        "discount_value": 5.0,
-        "has_physical_store": true
-      },
-      {
         "club": "חבר טעמים",
         "business_name": "מחנה אסאדה",
         "discount": "חבר טעמים | בשר ואסאדו",
@@ -59375,18 +59366,18 @@
       },
       {
         "club": "HOT",
-        "business_name": "Yaki Golbary",
+        "business_name": "Yaki Golbary Kids- מספרה לילדים",
         "discount": "5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/הטבה/28048/Yaki-Golbary",
+        "discount_url": "https://www.hot.co.il/הטבה/28049/Yaki-Golbary-Kids--מספרה-לילדים",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
         "has_physical_store": true
       },
       {
         "club": "HOT",
-        "business_name": "Yaki Golbary Kids- מספרה לילדים",
+        "business_name": "Yaki Golbary",
         "discount": "5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/הטבה/28049/Yaki-Golbary-Kids--מספרה-לילדים",
+        "discount_url": "https://www.hot.co.il/הטבה/28048/Yaki-Golbary",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
         "has_physical_store": true
@@ -73579,20 +73570,20 @@
       },
       {
         "club": "HOT",
-        "business_name": "דולפין- כלי בית",
-        "discount": "4% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/הטבה/29661/דולפין--כלי-בית",
-        "discount_type": "billing_discount",
-        "discount_value": 4.0,
-        "has_physical_store": true
-      },
-      {
-        "club": "HOT",
         "business_name": "הכל לבית אזולאי - מוצרי חשמל",
         "discount": "2% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/הטבה/29733/הכל-לבית-אזולאי---מוצרי-חשמל",
         "discount_type": "billing_discount",
         "discount_value": 2.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "דולפין- כלי בית",
+        "discount": "4% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/29661/דולפין--כלי-בית",
+        "discount_type": "billing_discount",
+        "discount_value": 4.0,
         "has_physical_store": true
       },
       {
@@ -92977,18 +92968,18 @@
       },
       {
         "club": "HOT",
-        "business_name": "Yaki Golbary",
+        "business_name": "Yaki Golbary Kids- מספרה לילדים",
         "discount": "5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/הטבה/28048/Yaki-Golbary",
+        "discount_url": "https://www.hot.co.il/הטבה/28049/Yaki-Golbary-Kids--מספרה-לילדים",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
         "has_physical_store": true
       },
       {
         "club": "HOT",
-        "business_name": "Yaki Golbary Kids- מספרה לילדים",
+        "business_name": "Yaki Golbary",
         "discount": "5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/הטבה/28049/Yaki-Golbary-Kids--מספרה-לילדים",
+        "discount_url": "https://www.hot.co.il/הטבה/28048/Yaki-Golbary",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
         "has_physical_store": true
@@ -119316,18 +119307,18 @@
       },
       {
         "club": "HOT",
-        "business_name": "Yaki Golbary",
+        "business_name": "Yaki Golbary Kids- מספרה לילדים",
         "discount": "5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/הטבה/28048/Yaki-Golbary",
+        "discount_url": "https://www.hot.co.il/הטבה/28049/Yaki-Golbary-Kids--מספרה-לילדים",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
         "has_physical_store": true
       },
       {
         "club": "HOT",
-        "business_name": "Yaki Golbary Kids- מספרה לילדים",
+        "business_name": "Yaki Golbary",
         "discount": "5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/הטבה/28049/Yaki-Golbary-Kids--מספרה-לילדים",
+        "discount_url": "https://www.hot.co.il/הטבה/28048/Yaki-Golbary",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
         "has_physical_store": true
@@ -129589,18 +129580,18 @@
       },
       {
         "club": "HOT",
-        "business_name": "Yaki Golbary",
+        "business_name": "Yaki Golbary Kids- מספרה לילדים",
         "discount": "5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/הטבה/28048/Yaki-Golbary",
+        "discount_url": "https://www.hot.co.il/הטבה/28049/Yaki-Golbary-Kids--מספרה-לילדים",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
         "has_physical_store": true
       },
       {
         "club": "HOT",
-        "business_name": "Yaki Golbary Kids- מספרה לילדים",
+        "business_name": "Yaki Golbary",
         "discount": "5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/הטבה/28049/Yaki-Golbary-Kids--מספרה-לילדים",
+        "discount_url": "https://www.hot.co.il/הטבה/28048/Yaki-Golbary",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
         "has_physical_store": true
@@ -142648,18 +142639,18 @@
       },
       {
         "club": "HOT",
-        "business_name": "Yaki Golbary",
+        "business_name": "Yaki Golbary Kids- מספרה לילדים",
         "discount": "5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/הטבה/28048/Yaki-Golbary",
+        "discount_url": "https://www.hot.co.il/הטבה/28049/Yaki-Golbary-Kids--מספרה-לילדים",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
         "has_physical_store": true
       },
       {
         "club": "HOT",
-        "business_name": "Yaki Golbary Kids- מספרה לילדים",
+        "business_name": "Yaki Golbary",
         "discount": "5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/הטבה/28049/Yaki-Golbary-Kids--מספרה-לילדים",
+        "discount_url": "https://www.hot.co.il/הטבה/28048/Yaki-Golbary",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
         "has_physical_store": true
@@ -193906,18 +193897,18 @@
       },
       {
         "club": "HOT",
-        "business_name": "Yaki Golbary",
+        "business_name": "Yaki Golbary Kids- מספרה לילדים",
         "discount": "5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/הטבה/28048/Yaki-Golbary",
+        "discount_url": "https://www.hot.co.il/הטבה/28049/Yaki-Golbary-Kids--מספרה-לילדים",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
         "has_physical_store": true
       },
       {
         "club": "HOT",
-        "business_name": "Yaki Golbary Kids- מספרה לילדים",
+        "business_name": "Yaki Golbary",
         "discount": "5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/הטבה/28049/Yaki-Golbary-Kids--מספרה-לילדים",
+        "discount_url": "https://www.hot.co.il/הטבה/28048/Yaki-Golbary",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
         "has_physical_store": true
@@ -214670,7 +214661,7 @@
       {
         "club": "BUYME",
         "business_name": "JLY",
-        "discount": "למימוש יש להציג את קוד השובר",
+        "discount": "ניתן ליהנות מה-BUYME גם ברכישה אונליין ב אתר בית העסק וגם בחנויות איך נהנים מה-BUYME שלך ברכישות אונליין? נכנסים לאתר JLY ובוחרים את הפריטים שהכי עושים לך טוב בלב. מוסיפים לעגלה - ועוברים לקופה לשלב התשלום. שימו לב, מימוש ה-BUYME הוא במעמד התשלום, ולא ניתן לממש את המתנה בשלב בחירת הפריטים או בחלונית \"קוד קופון או גיפטקארד\". בעמוד התשלום לוחצים על תווי קנייה ואז על BUYME מזינים את 16 הספרות שמרכיבות את קוד ה-BUYME שלך, לוחצים על אפשר להמשיך – ומשלימים את ההזמנה. וזהו, המתנה שבחרת בדרך אלייך!",
         "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=JLY#",
         "discount_type": "voucher",
         "discount_value": null,
@@ -217256,6 +217247,21 @@
         "discount_url": "https://www.hot.co.il/הטבה/21836/retro-game-center",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "BUYME",
+        "business_name": "Gambino retro X",
+        "discount": "ניתן ליהנות מה-BUYME ברכישה אונליין ב אתר בית העסק איך משתמשים ב-BUYME שלך ברכישות אונליין? נכנסים לאתר Gambino retro X ובוחרים את הפריטים שהכי עושים לך טוב בלב. מוסיפים לעגלה - ועוברים לקופה לשלב התשלום. שימו לב, מימוש ה-BUYME הוא במעמד התשלום, ולא ניתן לממש את המתנה בשלב בחירת הפריטים או בחלונית \"קוד קופון או גיפטקארד\". בעמוד התשלום לוחצים על כרטיס אשראי או אמצעי תשלום נוספים לוחצים על מימוש מועדון BUYME מזינים את 16 הספרות שמרכיבות את קוד ה-BUYME שלך, לוחצים על הוספת שובר – ומשלימים את ההזמנה. וזהו, המתנה שבחרת בדרך אלייך!",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=Gambino+retro+X#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME BABY- מגוון מתנות לידה",
+          "BUYME FASHION & BEAUTY",
+          "BUYME YNG - מתנה מושלמת לבני נוער"
+        ],
         "has_physical_store": true
       }
     ],
@@ -248570,18 +248576,18 @@
       },
       {
         "club": "HOT",
-        "business_name": "Yaki Golbary",
+        "business_name": "Yaki Golbary Kids- מספרה לילדים",
         "discount": "5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/הטבה/28048/Yaki-Golbary",
+        "discount_url": "https://www.hot.co.il/הטבה/28049/Yaki-Golbary-Kids--מספרה-לילדים",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
         "has_physical_store": true
       },
       {
         "club": "HOT",
-        "business_name": "Yaki Golbary Kids- מספרה לילדים",
+        "business_name": "Yaki Golbary",
         "discount": "5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/הטבה/28049/Yaki-Golbary-Kids--מספרה-לילדים",
+        "discount_url": "https://www.hot.co.il/הטבה/28048/Yaki-Golbary",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
         "has_physical_store": true
@@ -287487,20 +287493,20 @@
       },
       {
         "club": "HOT",
-        "business_name": "אדר ציוד וחומרי בניין",
-        "discount": "5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/הטבה/28966/אדר-ציוד-וחומרי-בניין",
-        "discount_type": "billing_discount",
-        "discount_value": 5.0,
-        "has_physical_store": true
-      },
-      {
-        "club": "HOT",
         "business_name": "סיגליות- קוסמטיקה",
         "discount": "3.5% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/הטבה/29659/סיגליות--קוסמטיקה",
         "discount_type": "billing_discount",
         "discount_value": 3.5,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "אדר ציוד וחומרי בניין",
+        "discount": "5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/28966/אדר-ציוד-וחומרי-בניין",
+        "discount_type": "billing_discount",
+        "discount_value": 5.0,
         "has_physical_store": true
       },
       {
@@ -291063,15 +291069,6 @@
       },
       {
         "club": "HOT",
-        "business_name": "אסאדלי",
-        "discount": "5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/הטבה/59488/אסאדלי",
-        "discount_type": "billing_discount",
-        "discount_value": 5.0,
-        "has_physical_store": true
-      },
-      {
-        "club": "HOT",
         "business_name": "המקום של דליה- אפנה לכל המשפחה",
         "discount": "3% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/הטבה/15589/המקום-של-דליה--אפנה-לכל-המשפחה",
@@ -292208,18 +292205,18 @@
       },
       {
         "club": "HOT",
-        "business_name": "Yaki Golbary",
+        "business_name": "Yaki Golbary Kids- מספרה לילדים",
         "discount": "5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/הטבה/28048/Yaki-Golbary",
+        "discount_url": "https://www.hot.co.il/הטבה/28049/Yaki-Golbary-Kids--מספרה-לילדים",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
         "has_physical_store": true
       },
       {
         "club": "HOT",
-        "business_name": "Yaki Golbary Kids- מספרה לילדים",
+        "business_name": "Yaki Golbary",
         "discount": "5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/הטבה/28049/Yaki-Golbary-Kids--מספרה-לילדים",
+        "discount_url": "https://www.hot.co.il/הטבה/28048/Yaki-Golbary",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
         "has_physical_store": true
@@ -300354,6 +300351,21 @@
       },
       {
         "club": "BUYME",
+        "business_name": "HOUSE OF JOY SPA",
+        "discount": "למימוש יש להציג את קוד השובר",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=HOUSE+OF+JOY+SPA#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME BABY- מגוון מתנות לידה",
+          "BUYME VACATION & SPA- מלונות וספא",
+          "BUYME LOCAL – מתנות מקומיות"
+        ],
+        "has_physical_store": true
+      },
+      {
+        "club": "BUYME",
         "business_name": "POP & POPE",
         "discount": "למימוש יש להציג את קוד השובר. לפרטים נוספים: (03-6043239).",
         "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=POP+%26+POPE#",
@@ -300364,6 +300376,7 @@
           "BUYME BABY- מגוון מתנות לידה",
           "BUYME CHEF - מגוון מסעדות שף",
           "BUYME FOODY -מתנות קולינריות שוות",
+          "BUYME LOCAL – מתנות מקומיות",
           "BUYME CHEERS - חוויות אלכוהליות"
         ],
         "has_physical_store": true
@@ -305876,20 +305889,20 @@
       },
       {
         "club": "HOT",
-        "business_name": "אדר ציוד וחומרי בניין",
-        "discount": "5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/הטבה/28966/אדר-ציוד-וחומרי-בניין",
-        "discount_type": "billing_discount",
-        "discount_value": 5.0,
-        "has_physical_store": true
-      },
-      {
-        "club": "HOT",
         "business_name": "סיגליות- קוסמטיקה",
         "discount": "3.5% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/הטבה/29659/סיגליות--קוסמטיקה",
         "discount_type": "billing_discount",
         "discount_value": 3.5,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "אדר ציוד וחומרי בניין",
+        "discount": "5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/28966/אדר-ציוד-וחומרי-בניין",
+        "discount_type": "billing_discount",
+        "discount_value": 5.0,
         "has_physical_store": true
       },
       {

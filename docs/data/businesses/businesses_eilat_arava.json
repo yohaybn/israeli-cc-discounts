@@ -2305,6 +2305,21 @@
         "discount_type": "billing_discount",
         "discount_value": 5.0,
         "has_physical_store": true
+      },
+      {
+        "club": "BUYME",
+        "business_name": "Gambino retro X",
+        "discount": "ניתן ליהנות מה-BUYME ברכישה אונליין ב אתר בית העסק איך משתמשים ב-BUYME שלך ברכישות אונליין? נכנסים לאתר Gambino retro X ובוחרים את הפריטים שהכי עושים לך טוב בלב. מוסיפים לעגלה - ועוברים לקופה לשלב התשלום. שימו לב, מימוש ה-BUYME הוא במעמד התשלום, ולא ניתן לממש את המתנה בשלב בחירת הפריטים או בחלונית \"קוד קופון או גיפטקארד\". בעמוד התשלום לוחצים על כרטיס אשראי או אמצעי תשלום נוספים לוחצים על מימוש מועדון BUYME מזינים את 16 הספרות שמרכיבות את קוד ה-BUYME שלך, לוחצים על הוספת שובר – ומשלימים את ההזמנה. וזהו, המתנה שבחרת בדרך אלייך!",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=Gambino+retro+X#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": [
+          "BUYME ALL - מגוון אדיר במתנה אחת",
+          "BUYME BABY- מגוון מתנות לידה",
+          "BUYME FASHION & BEAUTY",
+          "BUYME YNG - מתנה מושלמת לבני נוער"
+        ],
+        "has_physical_store": true
       }
     ],
     "source": "docs/data/businesses"
