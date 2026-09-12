@@ -27856,20 +27856,20 @@
     },
     {
         "club": "HOT",
-        "business_name": "בלה קאסה- חנות לכלי בית",
-        "discount": "10% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/הטבה/8681/בלה-קאסה--חנות-לכלי-בית",
-        "discount_type": "billing_discount",
-        "discount_value": 10.0,
-        "has_physical_store": true
-    },
-    {
-        "club": "HOT",
         "business_name": "נעלי רוני",
         "discount": "6% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/הטבה/8672/נעלי-רוני",
         "discount_type": "billing_discount",
         "discount_value": 6.0,
+        "has_physical_store": true
+    },
+    {
+        "club": "HOT",
+        "business_name": "בלה קאסה- חנות לכלי בית",
+        "discount": "10% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/8681/בלה-קאסה--חנות-לכלי-בית",
+        "discount_type": "billing_discount",
+        "discount_value": 10.0,
         "has_physical_store": true
     },
     {
@@ -55214,7 +55214,8 @@
             "BUYME ALL - מגוון אדיר במתנה אחת",
             "BUYME BABY- מגוון מתנות לידה",
             "BUYME CHEF - מגוון מסעדות שף",
-            "BUYME FOODY -מתנות קולינריות שוות"
+            "BUYME FOODY -מתנות קולינריות שוות",
+            "BUYME BRUNCH- מגוון ארוחות בוקר"
         ],
         "has_physical_store": true
     },
@@ -58893,6 +58894,7 @@
         "supplier_name": [
             "BUYME ALL - מגוון אדיר במתנה אחת",
             "BUYME HOME DESIGN - בית ואווירה",
+            "BUYME LOCAL – מתנות מקומיות",
             "BUYME YNG - מתנה מושלמת לבני נוער"
         ],
         "has_physical_store": true
