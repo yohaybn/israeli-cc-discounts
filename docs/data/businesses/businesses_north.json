@@ -873,6 +873,15 @@
       },
       {
         "club": "HOT",
+        "business_name": "ליאונרד יד שניה",
+        "discount": "3.5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/61639/ליאונרד-יד-שניה",
+        "discount_type": "billing_discount",
+        "discount_value": 3.5,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
         "business_name": "מותגים בשנייה",
         "discount": "3.5% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/הטבה/17043/מותגים-בשנייה",

@@ -16867,6 +16867,87 @@
     },
     {
         "club": "HOT",
+        "business_name": "אקספרס של חצות",
+        "discount": "2% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/61646/אקספרס-של-חצות",
+        "discount_type": "billing_discount",
+        "discount_value": 2.0,
+        "has_physical_store": true
+    },
+    {
+        "club": "HOT",
+        "business_name": "איילנדה הום אקססוריז לבית Aylanda hom",
+        "discount": "5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/61642/איילנדה-הום-אקססוריז-לבית-Aylanda-hom",
+        "discount_type": "billing_discount",
+        "discount_value": 5.0,
+        "has_physical_store": true
+    },
+    {
+        "club": "HOT",
+        "business_name": "פיצוחי לוז",
+        "discount": "3.5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/61640/פיצוחי-לוז",
+        "discount_type": "billing_discount",
+        "discount_value": 3.5,
+        "has_physical_store": true
+    },
+    {
+        "club": "HOT",
+        "business_name": "ליאונרד יד שניה",
+        "discount": "3.5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/61639/ליאונרד-יד-שניה",
+        "discount_type": "billing_discount",
+        "discount_value": 3.5,
+        "has_physical_store": true
+    },
+    {
+        "club": "HOT",
+        "business_name": "נעלי העיר",
+        "discount": "3.5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/61638/נעלי-העיר",
+        "discount_type": "billing_discount",
+        "discount_value": 3.5,
+        "has_physical_store": true
+    },
+    {
+        "club": "HOT",
+        "business_name": "שופ אלקטריק",
+        "discount": "2% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/61637/שופ-אלקטריק",
+        "discount_type": "billing_discount",
+        "discount_value": 2.0,
+        "has_physical_store": true
+    },
+    {
+        "club": "HOT",
+        "business_name": "זרמון ארונות בהתאמה אישית - ZARMON",
+        "discount": "3.5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/61634/זרמון-ארונות-בהתאמה-אישית---ZARMON",
+        "discount_type": "billing_discount",
+        "discount_value": 3.5,
+        "has_physical_store": true
+    },
+    {
+        "club": "HOT",
+        "business_name": "ברו מרקט אחמד BRO",
+        "discount": "2% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/61631/ברו-מרקט-אחמד-BRO",
+        "discount_type": "billing_discount",
+        "discount_value": 2.0,
+        "has_physical_store": true
+    },
+    {
+        "club": "HOT",
+        "business_name": "פיצוצית סומבול",
+        "discount": "2% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/61630/פיצוצית-סומבול",
+        "discount_type": "billing_discount",
+        "discount_value": 2.0,
+        "has_physical_store": true
+    },
+    {
+        "club": "HOT",
         "business_name": "קצביית שפע ברכת השם",
         "discount": "2% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/הטבה/61592/קצביית-שפע-ברכת-השם",
@@ -27613,18 +27694,18 @@
     },
     {
         "club": "HOT",
-        "business_name": "יקב בזלת הגולן",
+        "business_name": "קלין שופ",
         "discount": "4% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/הטבה/8902/יקב-בזלת-הגולן",
+        "discount_url": "https://www.hot.co.il/הטבה/8894/קלין-שופ",
         "discount_type": "billing_discount",
         "discount_value": 4.0,
         "has_physical_store": true
     },
     {
         "club": "HOT",
-        "business_name": "קלין שופ",
+        "business_name": "יקב בזלת הגולן",
         "discount": "4% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/הטבה/8894/קלין-שופ",
+        "discount_url": "https://www.hot.co.il/הטבה/8902/יקב-בזלת-הגולן",
         "discount_type": "billing_discount",
         "discount_value": 4.0,
         "has_physical_store": true
@@ -27856,20 +27937,20 @@
     },
     {
         "club": "HOT",
-        "business_name": "נעלי רוני",
-        "discount": "6% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/הטבה/8672/נעלי-רוני",
-        "discount_type": "billing_discount",
-        "discount_value": 6.0,
-        "has_physical_store": true
-    },
-    {
-        "club": "HOT",
         "business_name": "בלה קאסה- חנות לכלי בית",
         "discount": "10% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/הטבה/8681/בלה-קאסה--חנות-לכלי-בית",
         "discount_type": "billing_discount",
         "discount_value": 10.0,
+        "has_physical_store": true
+    },
+    {
+        "club": "HOT",
+        "business_name": "נעלי רוני",
+        "discount": "6% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/8672/נעלי-רוני",
+        "discount_type": "billing_discount",
+        "discount_value": 6.0,
         "has_physical_store": true
     },
     {

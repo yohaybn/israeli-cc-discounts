@@ -25870,6 +25870,15 @@
       },
       {
         "club": "HOT",
+        "business_name": "ברו מרקט אחמד BRO",
+        "discount": "2% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/61631/ברו-מרקט-אחמד-BRO",
+        "discount_type": "billing_discount",
+        "discount_value": 2.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
         "business_name": "מרקט בית קליה אבו עלי ובניו",
         "discount": "2% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/הטבה/61434/מרקט-בית-קליה-אבו-עלי-ובניו",
@@ -57551,6 +57560,15 @@
       },
       {
         "club": "HOT",
+        "business_name": "איילנדה הום אקססוריז לבית Aylanda hom",
+        "discount": "5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/61642/איילנדה-הום-אקססוריז-לבית-Aylanda-hom",
+        "discount_type": "billing_discount",
+        "discount_value": 5.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
         "business_name": "אליאס אקססוריז",
         "discount": "3.5% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/הטבה/59349/אליאס-אקססוריז",
@@ -73026,6 +73044,15 @@
         "discount_url": "https://www.hot.co.il/הטבה/34369/בדק-בית-טמבוריה",
         "discount_type": "billing_discount",
         "discount_value": 2.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "איילנדה הום אקססוריז לבית Aylanda hom",
+        "discount": "5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/61642/איילנדה-הום-אקססוריז-לבית-Aylanda-hom",
+        "discount_type": "billing_discount",
+        "discount_value": 5.0,
         "has_physical_store": true
       },
       {
@@ -111681,7 +111708,17 @@
     "type": "restaurant",
     "lat": 31.904395,
     "lon": 35.006926,
-    "discounts": [],
+    "discounts": [
+      {
+        "club": "HOT",
+        "business_name": "אקספרס של חצות",
+        "discount": "2% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/61646/אקספרס-של-חצות",
+        "discount_type": "billing_discount",
+        "discount_value": 2.0,
+        "has_physical_store": true
+      }
+    ],
     "source": "docs/data/businesses"
   },
   {
@@ -222390,6 +222427,15 @@
         "business_name": "שניצל מדינה",
         "discount": "3.5% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/הטבה/42666/שניצל-מדינה",
+        "discount_type": "billing_discount",
+        "discount_value": 3.5,
+        "has_physical_store": true
+      },
+      {
+        "club": "HOT",
+        "business_name": "ליאונרד יד שניה",
+        "discount": "3.5% הנחה במעמד החיוב",
+        "discount_url": "https://www.hot.co.il/הטבה/61639/ליאונרד-יד-שניה",
         "discount_type": "billing_discount",
         "discount_value": 3.5,
         "has_physical_store": true
