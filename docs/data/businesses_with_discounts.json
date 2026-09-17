@@ -13209,7 +13209,7 @@
     "discounts": [
       {
         "club": "חבר",
-        "business_name": "קרפור סיטי  Carrefour city",
+        "business_name": "Carrefour city  קרפור סיטי בתוכנית \"מהכיס לכרטיס\"",
         "discount": "10% החזר כספי לנטען",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5923",
         "discount_type": "billing_discount",
@@ -13322,7 +13322,16 @@
     "discounts": [
       {
         "club": "חבר",
-        "business_name": "קרפור היפר  Carrefour hyper",
+        "business_name": "Carrefour city  קרפור סיטי בתוכנית \"מהכיס לכרטיס\"",
+        "discount": "10% החזר כספי לנטען",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5923",
+        "discount_type": "billing_discount",
+        "discount_value": 10.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר",
+        "business_name": "Carrefour hyper  קרפור היפר בתוכנית \"מהכיס לכרטיס\"",
         "discount": "10% החזר כספי לנטען",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=6096",
         "discount_type": "billing_discount",
@@ -13331,18 +13340,9 @@
       },
       {
         "club": "חבר",
-        "business_name": "קרפור מרקט   Carrefour market",
+        "business_name": "Carrefour market  קרפור מרקט בתוכנית \"מהכיס לכרטיס\"",
         "discount": "10% החזר כספי לנטען",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5839",
-        "discount_type": "billing_discount",
-        "discount_value": 10.0,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר",
-        "business_name": "קרפור סיטי  Carrefour city",
-        "discount": "10% החזר כספי לנטען",
-        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5923",
         "discount_type": "billing_discount",
         "discount_value": 10.0,
         "has_physical_store": true
@@ -13858,7 +13858,16 @@
     "discounts": [
       {
         "club": "חבר",
-        "business_name": "קרפור היפר  Carrefour hyper",
+        "business_name": "Carrefour city  קרפור סיטי בתוכנית \"מהכיס לכרטיס\"",
+        "discount": "10% החזר כספי לנטען",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5923",
+        "discount_type": "billing_discount",
+        "discount_value": 10.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר",
+        "business_name": "Carrefour hyper  קרפור היפר בתוכנית \"מהכיס לכרטיס\"",
         "discount": "10% החזר כספי לנטען",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=6096",
         "discount_type": "billing_discount",
@@ -13867,18 +13876,9 @@
       },
       {
         "club": "חבר",
-        "business_name": "קרפור מרקט   Carrefour market",
+        "business_name": "Carrefour market  קרפור מרקט בתוכנית \"מהכיס לכרטיס\"",
         "discount": "10% החזר כספי לנטען",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5839",
-        "discount_type": "billing_discount",
-        "discount_value": 10.0,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר",
-        "business_name": "קרפור סיטי  Carrefour city",
-        "discount": "10% החזר כספי לנטען",
-        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5923",
         "discount_type": "billing_discount",
         "discount_value": 10.0,
         "has_physical_store": true
@@ -23708,15 +23708,6 @@
       },
       {
         "club": "HOT",
-        "business_name": "קובי פרפרים",
-        "discount": "3.5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/הטבה/42386/קובי-פרפרים",
-        "discount_type": "billing_discount",
-        "discount_value": 3.5,
-        "has_physical_store": true
-      },
-      {
-        "club": "HOT",
         "business_name": "פרי bar",
         "discount": "3.5% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/הטבה/42269/פרי-bar",
@@ -25546,20 +25537,20 @@
       },
       {
         "club": "חבר",
+        "business_name": "Carrefour market  קרפור מרקט בתוכנית \"מהכיס לכרטיס\"",
+        "discount": "10% החזר כספי לנטען",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5839",
+        "discount_type": "billing_discount",
+        "discount_value": 10.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר",
         "business_name": "פרשמרקט",
         "discount": "8% באפליקציית yellow",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=6052",
         "discount_type": "billing_discount",
         "discount_value": 8.0,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר",
-        "business_name": "קרפור מרקט   Carrefour market",
-        "discount": "10% החזר כספי לנטען",
-        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5839",
-        "discount_type": "billing_discount",
-        "discount_value": 10.0,
         "has_physical_store": true
       },
       {
@@ -29978,7 +29969,7 @@
     "discounts": [
       {
         "club": "חבר",
-        "business_name": "קרפור מרקט   Carrefour market",
+        "business_name": "Carrefour market  קרפור מרקט בתוכנית \"מהכיס לכרטיס\"",
         "discount": "10% החזר כספי לנטען",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5839",
         "discount_type": "billing_discount",
@@ -32854,7 +32845,16 @@
     "discounts": [
       {
         "club": "חבר",
-        "business_name": "קרפור היפר  Carrefour hyper",
+        "business_name": "Carrefour city  קרפור סיטי בתוכנית \"מהכיס לכרטיס\"",
+        "discount": "10% החזר כספי לנטען",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5923",
+        "discount_type": "billing_discount",
+        "discount_value": 10.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר",
+        "business_name": "Carrefour hyper  קרפור היפר בתוכנית \"מהכיס לכרטיס\"",
         "discount": "10% החזר כספי לנטען",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=6096",
         "discount_type": "billing_discount",
@@ -32863,18 +32863,9 @@
       },
       {
         "club": "חבר",
-        "business_name": "קרפור מרקט   Carrefour market",
+        "business_name": "Carrefour market  קרפור מרקט בתוכנית \"מהכיס לכרטיס\"",
         "discount": "10% החזר כספי לנטען",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5839",
-        "discount_type": "billing_discount",
-        "discount_value": 10.0,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר",
-        "business_name": "קרפור סיטי  Carrefour city",
-        "discount": "10% החזר כספי לנטען",
-        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5923",
         "discount_type": "billing_discount",
         "discount_value": 10.0,
         "has_physical_store": true
@@ -36095,7 +36086,16 @@
     "discounts": [
       {
         "club": "חבר",
-        "business_name": "קרפור היפר  Carrefour hyper",
+        "business_name": "Carrefour city  קרפור סיטי בתוכנית \"מהכיס לכרטיס\"",
+        "discount": "10% החזר כספי לנטען",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5923",
+        "discount_type": "billing_discount",
+        "discount_value": 10.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר",
+        "business_name": "Carrefour hyper  קרפור היפר בתוכנית \"מהכיס לכרטיס\"",
         "discount": "10% החזר כספי לנטען",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=6096",
         "discount_type": "billing_discount",
@@ -36104,18 +36104,9 @@
       },
       {
         "club": "חבר",
-        "business_name": "קרפור מרקט   Carrefour market",
+        "business_name": "Carrefour market  קרפור מרקט בתוכנית \"מהכיס לכרטיס\"",
         "discount": "10% החזר כספי לנטען",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5839",
-        "discount_type": "billing_discount",
-        "discount_value": 10.0,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר",
-        "business_name": "קרפור סיטי  Carrefour city",
-        "discount": "10% החזר כספי לנטען",
-        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5923",
         "discount_type": "billing_discount",
         "discount_value": 10.0,
         "has_physical_store": true
@@ -48082,7 +48073,16 @@
     "discounts": [
       {
         "club": "חבר",
-        "business_name": "קרפור היפר  Carrefour hyper",
+        "business_name": "Carrefour city  קרפור סיטי בתוכנית \"מהכיס לכרטיס\"",
+        "discount": "10% החזר כספי לנטען",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5923",
+        "discount_type": "billing_discount",
+        "discount_value": 10.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר",
+        "business_name": "Carrefour hyper  קרפור היפר בתוכנית \"מהכיס לכרטיס\"",
         "discount": "10% החזר כספי לנטען",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=6096",
         "discount_type": "billing_discount",
@@ -48091,18 +48091,9 @@
       },
       {
         "club": "חבר",
-        "business_name": "קרפור מרקט   Carrefour market",
+        "business_name": "Carrefour market  קרפור מרקט בתוכנית \"מהכיס לכרטיס\"",
         "discount": "10% החזר כספי לנטען",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5839",
-        "discount_type": "billing_discount",
-        "discount_value": 10.0,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר",
-        "business_name": "קרפור סיטי  Carrefour city",
-        "discount": "10% החזר כספי לנטען",
-        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5923",
         "discount_type": "billing_discount",
         "discount_value": 10.0,
         "has_physical_store": true
@@ -77004,7 +76995,16 @@
     "discounts": [
       {
         "club": "חבר",
-        "business_name": "קרפור היפר  Carrefour hyper",
+        "business_name": "Carrefour city  קרפור סיטי בתוכנית \"מהכיס לכרטיס\"",
+        "discount": "10% החזר כספי לנטען",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5923",
+        "discount_type": "billing_discount",
+        "discount_value": 10.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר",
+        "business_name": "Carrefour hyper  קרפור היפר בתוכנית \"מהכיס לכרטיס\"",
         "discount": "10% החזר כספי לנטען",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=6096",
         "discount_type": "billing_discount",
@@ -77013,18 +77013,9 @@
       },
       {
         "club": "חבר",
-        "business_name": "קרפור מרקט   Carrefour market",
+        "business_name": "Carrefour market  קרפור מרקט בתוכנית \"מהכיס לכרטיס\"",
         "discount": "10% החזר כספי לנטען",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5839",
-        "discount_type": "billing_discount",
-        "discount_value": 10.0,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר",
-        "business_name": "קרפור סיטי  Carrefour city",
-        "discount": "10% החזר כספי לנטען",
-        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5923",
         "discount_type": "billing_discount",
         "discount_value": 10.0,
         "has_physical_store": true
@@ -93752,15 +93743,6 @@
       },
       {
         "club": "HOT",
-        "business_name": "קובי פרפרים",
-        "discount": "3.5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/הטבה/42386/קובי-פרפרים",
-        "discount_type": "billing_discount",
-        "discount_value": 3.5,
-        "has_physical_store": true
-      },
-      {
-        "club": "HOT",
         "business_name": "א.ר ברקוביץ' מרכז החשמל",
         "discount": "3.5% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/הטבה/38306/א.ר-ברקוביץ'-מרכז-החשמל",
@@ -95719,7 +95701,16 @@
     "discounts": [
       {
         "club": "חבר",
-        "business_name": "קרפור היפר  Carrefour hyper",
+        "business_name": "Carrefour city  קרפור סיטי בתוכנית \"מהכיס לכרטיס\"",
+        "discount": "10% החזר כספי לנטען",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5923",
+        "discount_type": "billing_discount",
+        "discount_value": 10.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר",
+        "business_name": "Carrefour hyper  קרפור היפר בתוכנית \"מהכיס לכרטיס\"",
         "discount": "10% החזר כספי לנטען",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=6096",
         "discount_type": "billing_discount",
@@ -95728,18 +95719,9 @@
       },
       {
         "club": "חבר",
-        "business_name": "קרפור מרקט   Carrefour market",
+        "business_name": "Carrefour market  קרפור מרקט בתוכנית \"מהכיס לכרטיס\"",
         "discount": "10% החזר כספי לנטען",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5839",
-        "discount_type": "billing_discount",
-        "discount_value": 10.0,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר",
-        "business_name": "קרפור סיטי  Carrefour city",
-        "discount": "10% החזר כספי לנטען",
-        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5923",
         "discount_type": "billing_discount",
         "discount_value": 10.0,
         "has_physical_store": true
@@ -112225,7 +112207,16 @@
     "discounts": [
       {
         "club": "חבר",
-        "business_name": "קרפור היפר  Carrefour hyper",
+        "business_name": "Carrefour city  קרפור סיטי בתוכנית \"מהכיס לכרטיס\"",
+        "discount": "10% החזר כספי לנטען",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5923",
+        "discount_type": "billing_discount",
+        "discount_value": 10.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר",
+        "business_name": "Carrefour hyper  קרפור היפר בתוכנית \"מהכיס לכרטיס\"",
         "discount": "10% החזר כספי לנטען",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=6096",
         "discount_type": "billing_discount",
@@ -112234,18 +112225,9 @@
       },
       {
         "club": "חבר",
-        "business_name": "קרפור מרקט   Carrefour market",
+        "business_name": "Carrefour market  קרפור מרקט בתוכנית \"מהכיס לכרטיס\"",
         "discount": "10% החזר כספי לנטען",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5839",
-        "discount_type": "billing_discount",
-        "discount_value": 10.0,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר",
-        "business_name": "קרפור סיטי  Carrefour city",
-        "discount": "10% החזר כספי לנטען",
-        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5923",
         "discount_type": "billing_discount",
         "discount_value": 10.0,
         "has_physical_store": true
@@ -119374,7 +119356,7 @@
     "discounts": [
       {
         "club": "חבר",
-        "business_name": "קרפור מרקט   Carrefour market",
+        "business_name": "Carrefour market  קרפור מרקט בתוכנית \"מהכיס לכרטיס\"",
         "discount": "10% החזר כספי לנטען",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5839",
         "discount_type": "billing_discount",
@@ -122000,7 +121982,7 @@
     "discounts": [
       {
         "club": "חבר",
-        "business_name": "קרפור מרקט   Carrefour market",
+        "business_name": "Carrefour market  קרפור מרקט בתוכנית \"מהכיס לכרטיס\"",
         "discount": "10% החזר כספי לנטען",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5839",
         "discount_type": "billing_discount",
@@ -125280,7 +125262,16 @@
     "discounts": [
       {
         "club": "חבר",
-        "business_name": "קרפור היפר  Carrefour hyper",
+        "business_name": "Carrefour city  קרפור סיטי בתוכנית \"מהכיס לכרטיס\"",
+        "discount": "10% החזר כספי לנטען",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5923",
+        "discount_type": "billing_discount",
+        "discount_value": 10.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר",
+        "business_name": "Carrefour hyper  קרפור היפר בתוכנית \"מהכיס לכרטיס\"",
         "discount": "10% החזר כספי לנטען",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=6096",
         "discount_type": "billing_discount",
@@ -125289,18 +125280,9 @@
       },
       {
         "club": "חבר",
-        "business_name": "קרפור מרקט   Carrefour market",
+        "business_name": "Carrefour market  קרפור מרקט בתוכנית \"מהכיס לכרטיס\"",
         "discount": "10% החזר כספי לנטען",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5839",
-        "discount_type": "billing_discount",
-        "discount_value": 10.0,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר",
-        "business_name": "קרפור סיטי  Carrefour city",
-        "discount": "10% החזר כספי לנטען",
-        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5923",
         "discount_type": "billing_discount",
         "discount_value": 10.0,
         "has_physical_store": true
@@ -126495,7 +126477,16 @@
     "discounts": [
       {
         "club": "חבר",
-        "business_name": "קרפור היפר  Carrefour hyper",
+        "business_name": "Carrefour city  קרפור סיטי בתוכנית \"מהכיס לכרטיס\"",
+        "discount": "10% החזר כספי לנטען",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5923",
+        "discount_type": "billing_discount",
+        "discount_value": 10.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר",
+        "business_name": "Carrefour hyper  קרפור היפר בתוכנית \"מהכיס לכרטיס\"",
         "discount": "10% החזר כספי לנטען",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=6096",
         "discount_type": "billing_discount",
@@ -126504,18 +126495,9 @@
       },
       {
         "club": "חבר",
-        "business_name": "קרפור מרקט   Carrefour market",
+        "business_name": "Carrefour market  קרפור מרקט בתוכנית \"מהכיס לכרטיס\"",
         "discount": "10% החזר כספי לנטען",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5839",
-        "discount_type": "billing_discount",
-        "discount_value": 10.0,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר",
-        "business_name": "קרפור סיטי  Carrefour city",
-        "discount": "10% החזר כספי לנטען",
-        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5923",
         "discount_type": "billing_discount",
         "discount_value": 10.0,
         "has_physical_store": true
@@ -126748,7 +126730,16 @@
     "discounts": [
       {
         "club": "חבר",
-        "business_name": "קרפור היפר  Carrefour hyper",
+        "business_name": "Carrefour city  קרפור סיטי בתוכנית \"מהכיס לכרטיס\"",
+        "discount": "10% החזר כספי לנטען",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5923",
+        "discount_type": "billing_discount",
+        "discount_value": 10.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר",
+        "business_name": "Carrefour hyper  קרפור היפר בתוכנית \"מהכיס לכרטיס\"",
         "discount": "10% החזר כספי לנטען",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=6096",
         "discount_type": "billing_discount",
@@ -126757,18 +126748,9 @@
       },
       {
         "club": "חבר",
-        "business_name": "קרפור מרקט   Carrefour market",
+        "business_name": "Carrefour market  קרפור מרקט בתוכנית \"מהכיס לכרטיס\"",
         "discount": "10% החזר כספי לנטען",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5839",
-        "discount_type": "billing_discount",
-        "discount_value": 10.0,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר",
-        "business_name": "קרפור סיטי  Carrefour city",
-        "discount": "10% החזר כספי לנטען",
-        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5923",
         "discount_type": "billing_discount",
         "discount_value": 10.0,
         "has_physical_store": true
@@ -127691,7 +127673,16 @@
     "discounts": [
       {
         "club": "חבר",
-        "business_name": "קרפור היפר  Carrefour hyper",
+        "business_name": "Carrefour city  קרפור סיטי בתוכנית \"מהכיס לכרטיס\"",
+        "discount": "10% החזר כספי לנטען",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5923",
+        "discount_type": "billing_discount",
+        "discount_value": 10.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר",
+        "business_name": "Carrefour hyper  קרפור היפר בתוכנית \"מהכיס לכרטיס\"",
         "discount": "10% החזר כספי לנטען",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=6096",
         "discount_type": "billing_discount",
@@ -127700,18 +127691,9 @@
       },
       {
         "club": "חבר",
-        "business_name": "קרפור מרקט   Carrefour market",
+        "business_name": "Carrefour market  קרפור מרקט בתוכנית \"מהכיס לכרטיס\"",
         "discount": "10% החזר כספי לנטען",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5839",
-        "discount_type": "billing_discount",
-        "discount_value": 10.0,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר",
-        "business_name": "קרפור סיטי  Carrefour city",
-        "discount": "10% החזר כספי לנטען",
-        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5923",
         "discount_type": "billing_discount",
         "discount_value": 10.0,
         "has_physical_store": true
@@ -144715,7 +144697,7 @@
     "discounts": [
       {
         "club": "חבר",
-        "business_name": "קרפור סיטי  Carrefour city",
+        "business_name": "Carrefour city  קרפור סיטי בתוכנית \"מהכיס לכרטיס\"",
         "discount": "10% החזר כספי לנטען",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5923",
         "discount_type": "billing_discount",
@@ -147816,7 +147798,16 @@
     "discounts": [
       {
         "club": "חבר",
-        "business_name": "קרפור היפר  Carrefour hyper",
+        "business_name": "Carrefour city  קרפור סיטי בתוכנית \"מהכיס לכרטיס\"",
+        "discount": "10% החזר כספי לנטען",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5923",
+        "discount_type": "billing_discount",
+        "discount_value": 10.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר",
+        "business_name": "Carrefour hyper  קרפור היפר בתוכנית \"מהכיס לכרטיס\"",
         "discount": "10% החזר כספי לנטען",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=6096",
         "discount_type": "billing_discount",
@@ -147825,18 +147816,9 @@
       },
       {
         "club": "חבר",
-        "business_name": "קרפור מרקט   Carrefour market",
+        "business_name": "Carrefour market  קרפור מרקט בתוכנית \"מהכיס לכרטיס\"",
         "discount": "10% החזר כספי לנטען",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5839",
-        "discount_type": "billing_discount",
-        "discount_value": 10.0,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר",
-        "business_name": "קרפור סיטי  Carrefour city",
-        "discount": "10% החזר כספי לנטען",
-        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5923",
         "discount_type": "billing_discount",
         "discount_value": 10.0,
         "has_physical_store": true
@@ -149255,7 +149237,7 @@
     "discounts": [
       {
         "club": "חבר",
-        "business_name": "קרפור מרקט   Carrefour market",
+        "business_name": "Carrefour market  קרפור מרקט בתוכנית \"מהכיס לכרטיס\"",
         "discount": "10% החזר כספי לנטען",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5839",
         "discount_type": "billing_discount",
@@ -150229,7 +150211,16 @@
     "discounts": [
       {
         "club": "חבר",
-        "business_name": "קרפור היפר  Carrefour hyper",
+        "business_name": "Carrefour city  קרפור סיטי בתוכנית \"מהכיס לכרטיס\"",
+        "discount": "10% החזר כספי לנטען",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5923",
+        "discount_type": "billing_discount",
+        "discount_value": 10.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר",
+        "business_name": "Carrefour hyper  קרפור היפר בתוכנית \"מהכיס לכרטיס\"",
         "discount": "10% החזר כספי לנטען",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=6096",
         "discount_type": "billing_discount",
@@ -150238,18 +150229,9 @@
       },
       {
         "club": "חבר",
-        "business_name": "קרפור מרקט   Carrefour market",
+        "business_name": "Carrefour market  קרפור מרקט בתוכנית \"מהכיס לכרטיס\"",
         "discount": "10% החזר כספי לנטען",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5839",
-        "discount_type": "billing_discount",
-        "discount_value": 10.0,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר",
-        "business_name": "קרפור סיטי  Carrefour city",
-        "discount": "10% החזר כספי לנטען",
-        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5923",
         "discount_type": "billing_discount",
         "discount_value": 10.0,
         "has_physical_store": true
@@ -158232,7 +158214,16 @@
     "discounts": [
       {
         "club": "חבר",
-        "business_name": "קרפור היפר  Carrefour hyper",
+        "business_name": "Carrefour city  קרפור סיטי בתוכנית \"מהכיס לכרטיס\"",
+        "discount": "10% החזר כספי לנטען",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5923",
+        "discount_type": "billing_discount",
+        "discount_value": 10.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר",
+        "business_name": "Carrefour hyper  קרפור היפר בתוכנית \"מהכיס לכרטיס\"",
         "discount": "10% החזר כספי לנטען",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=6096",
         "discount_type": "billing_discount",
@@ -158241,18 +158232,9 @@
       },
       {
         "club": "חבר",
-        "business_name": "קרפור מרקט   Carrefour market",
+        "business_name": "Carrefour market  קרפור מרקט בתוכנית \"מהכיס לכרטיס\"",
         "discount": "10% החזר כספי לנטען",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5839",
-        "discount_type": "billing_discount",
-        "discount_value": 10.0,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר",
-        "business_name": "קרפור סיטי  Carrefour city",
-        "discount": "10% החזר כספי לנטען",
-        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5923",
         "discount_type": "billing_discount",
         "discount_value": 10.0,
         "has_physical_store": true
@@ -160195,7 +160177,16 @@
     "discounts": [
       {
         "club": "חבר",
-        "business_name": "קרפור היפר  Carrefour hyper",
+        "business_name": "Carrefour city  קרפור סיטי בתוכנית \"מהכיס לכרטיס\"",
+        "discount": "10% החזר כספי לנטען",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5923",
+        "discount_type": "billing_discount",
+        "discount_value": 10.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר",
+        "business_name": "Carrefour hyper  קרפור היפר בתוכנית \"מהכיס לכרטיס\"",
         "discount": "10% החזר כספי לנטען",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=6096",
         "discount_type": "billing_discount",
@@ -160204,18 +160195,9 @@
       },
       {
         "club": "חבר",
-        "business_name": "קרפור מרקט   Carrefour market",
+        "business_name": "Carrefour market  קרפור מרקט בתוכנית \"מהכיס לכרטיס\"",
         "discount": "10% החזר כספי לנטען",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5839",
-        "discount_type": "billing_discount",
-        "discount_value": 10.0,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר",
-        "business_name": "קרפור סיטי  Carrefour city",
-        "discount": "10% החזר כספי לנטען",
-        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5923",
         "discount_type": "billing_discount",
         "discount_value": 10.0,
         "has_physical_store": true
@@ -162531,7 +162513,16 @@
     "discounts": [
       {
         "club": "חבר",
-        "business_name": "קרפור היפר  Carrefour hyper",
+        "business_name": "Carrefour city  קרפור סיטי בתוכנית \"מהכיס לכרטיס\"",
+        "discount": "10% החזר כספי לנטען",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5923",
+        "discount_type": "billing_discount",
+        "discount_value": 10.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר",
+        "business_name": "Carrefour hyper  קרפור היפר בתוכנית \"מהכיס לכרטיס\"",
         "discount": "10% החזר כספי לנטען",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=6096",
         "discount_type": "billing_discount",
@@ -162540,18 +162531,9 @@
       },
       {
         "club": "חבר",
-        "business_name": "קרפור מרקט   Carrefour market",
+        "business_name": "Carrefour market  קרפור מרקט בתוכנית \"מהכיס לכרטיס\"",
         "discount": "10% החזר כספי לנטען",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5839",
-        "discount_type": "billing_discount",
-        "discount_value": 10.0,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר",
-        "business_name": "קרפור סיטי  Carrefour city",
-        "discount": "10% החזר כספי לנטען",
-        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5923",
         "discount_type": "billing_discount",
         "discount_value": 10.0,
         "has_physical_store": true
@@ -163588,7 +163570,16 @@
     "discounts": [
       {
         "club": "חבר",
-        "business_name": "קרפור היפר  Carrefour hyper",
+        "business_name": "Carrefour city  קרפור סיטי בתוכנית \"מהכיס לכרטיס\"",
+        "discount": "10% החזר כספי לנטען",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5923",
+        "discount_type": "billing_discount",
+        "discount_value": 10.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר",
+        "business_name": "Carrefour hyper  קרפור היפר בתוכנית \"מהכיס לכרטיס\"",
         "discount": "10% החזר כספי לנטען",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=6096",
         "discount_type": "billing_discount",
@@ -163597,18 +163588,9 @@
       },
       {
         "club": "חבר",
-        "business_name": "קרפור מרקט   Carrefour market",
+        "business_name": "Carrefour market  קרפור מרקט בתוכנית \"מהכיס לכרטיס\"",
         "discount": "10% החזר כספי לנטען",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5839",
-        "discount_type": "billing_discount",
-        "discount_value": 10.0,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר",
-        "business_name": "קרפור סיטי  Carrefour city",
-        "discount": "10% החזר כספי לנטען",
-        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5923",
         "discount_type": "billing_discount",
         "discount_value": 10.0,
         "has_physical_store": true
@@ -163661,7 +163643,16 @@
     "discounts": [
       {
         "club": "חבר",
-        "business_name": "קרפור היפר  Carrefour hyper",
+        "business_name": "Carrefour city  קרפור סיטי בתוכנית \"מהכיס לכרטיס\"",
+        "discount": "10% החזר כספי לנטען",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5923",
+        "discount_type": "billing_discount",
+        "discount_value": 10.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר",
+        "business_name": "Carrefour hyper  קרפור היפר בתוכנית \"מהכיס לכרטיס\"",
         "discount": "10% החזר כספי לנטען",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=6096",
         "discount_type": "billing_discount",
@@ -163670,18 +163661,9 @@
       },
       {
         "club": "חבר",
-        "business_name": "קרפור מרקט   Carrefour market",
+        "business_name": "Carrefour market  קרפור מרקט בתוכנית \"מהכיס לכרטיס\"",
         "discount": "10% החזר כספי לנטען",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5839",
-        "discount_type": "billing_discount",
-        "discount_value": 10.0,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר",
-        "business_name": "קרפור סיטי  Carrefour city",
-        "discount": "10% החזר כספי לנטען",
-        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5923",
         "discount_type": "billing_discount",
         "discount_value": 10.0,
         "has_physical_store": true
@@ -165569,7 +165551,7 @@
     "discounts": [
       {
         "club": "חבר",
-        "business_name": "קרפור סיטי  Carrefour city",
+        "business_name": "Carrefour city  קרפור סיטי בתוכנית \"מהכיס לכרטיס\"",
         "discount": "10% החזר כספי לנטען",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5923",
         "discount_type": "billing_discount",
@@ -177667,17 +177649,7 @@
     "type": "",
     "lat": 32.1958481,
     "lon": 34.88363940000001,
-    "discounts": [
-      {
-        "club": "חבר",
-        "business_name": "קרפור היפר  Carrefour hyper",
-        "discount": "10% החזר כספי לנטען",
-        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=6096",
-        "discount_type": "billing_discount",
-        "discount_value": 10.0,
-        "has_physical_store": true
-      }
-    ],
+    "discounts": [],
     "source": "docs/data/businesses"
   },
   {
@@ -177687,15 +177659,6 @@
     "lat": 32.034572,
     "lon": 34.8499206,
     "discounts": [
-      {
-        "club": "חבר",
-        "business_name": "קרפור מרקט   Carrefour market",
-        "discount": "10% החזר כספי לנטען",
-        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5839",
-        "discount_type": "billing_discount",
-        "discount_value": 10.0,
-        "has_physical_store": true
-      },
       {
         "club": "HOT",
         "business_name": "Carrefour market",
@@ -177715,15 +177678,6 @@
     "lat": 32.1862357,
     "lon": 34.9044103,
     "discounts": [
-      {
-        "club": "חבר",
-        "business_name": "קרפור סיטי  Carrefour city",
-        "discount": "10% החזר כספי לנטען",
-        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5923",
-        "discount_type": "billing_discount",
-        "discount_value": 10.0,
-        "has_physical_store": true
-      },
       {
         "club": "HOT",
         "business_name": "Carrefour city",
@@ -177799,17 +177753,7 @@
     "type": "",
     "lat": 31.78976639999999,
     "lon": 35.1966813,
-    "discounts": [
-      {
-        "club": "חבר",
-        "business_name": "קרפור  Online",
-        "discount": "10% החזר כספי לנטען",
-        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5965",
-        "discount_type": "billing_discount",
-        "discount_value": 10.0,
-        "has_physical_store": true
-      }
-    ],
+    "discounts": [],
     "source": "docs/data/businesses"
   },
   {
@@ -180704,7 +180648,7 @@
     "discounts": [
       {
         "club": "חבר",
-        "business_name": "קרפור סיטי  Carrefour city",
+        "business_name": "Carrefour city  קרפור סיטי בתוכנית \"מהכיס לכרטיס\"",
         "discount": "10% החזר כספי לנטען",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5923",
         "discount_type": "billing_discount",
@@ -183637,15 +183581,6 @@
         "discount_type": "billing_discount",
         "discount_value": 3.5,
         "has_physical_store": true
-      },
-      {
-        "club": "חבר שלי",
-        "business_name": "Play Game",
-        "discount": "חבר שלי | משחקיות פליי גיים מתאימות לילדים מגיל 5 ומותאמות לבעלי צרכים מיוחדים | משחקיית לילדים Play Game",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,355762",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
       }
     ],
     "source": "docs/data/businesses"
@@ -185509,17 +185444,7 @@
     "type": "",
     "lat": 32.0925446,
     "lon": 34.8179574,
-    "discounts": [
-      {
-        "club": "HOT",
-        "business_name": "קובי פרפרים",
-        "discount": "3.5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/הטבה/42386/קובי-פרפרים",
-        "discount_type": "billing_discount",
-        "discount_value": 3.5,
-        "has_physical_store": true
-      }
-    ],
+    "discounts": [],
     "source": "docs/data/businesses"
   },
   {
@@ -185940,15 +185865,6 @@
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=6040",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר",
-        "business_name": "סאמר סקול - קמפוס לימודים",
-        "discount": "7%",
-        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=3081",
-        "discount_type": "billing_discount",
-        "discount_value": 7.0,
         "has_physical_store": true
       },
       {
@@ -203470,17 +203386,7 @@
     "type": "",
     "lat": 32.0636296,
     "lon": 34.7794111,
-    "discounts": [
-      {
-        "club": "חבר טעמים",
-        "business_name": "קפה טאיזו",
-        "discount": "חבר טעמים | המסעדה מכבדת את הכרטיס הנטען בישיבה בלבד | בית קפה מסעדה בסגנון אסייתי",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,389901",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      }
-    ],
+    "discounts": [],
     "source": "docs/data/businesses"
   },
   {
@@ -259914,7 +259820,7 @@
     "discounts": [
       {
         "club": "חבר",
-        "business_name": "קרפור מרקט   Carrefour market",
+        "business_name": "Carrefour market  קרפור מרקט בתוכנית \"מהכיס לכרטיס\"",
         "discount": "10% החזר כספי לנטען",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5839",
         "discount_type": "billing_discount",
@@ -260872,7 +260778,16 @@
     "discounts": [
       {
         "club": "חבר",
-        "business_name": "קרפור היפר  Carrefour hyper",
+        "business_name": "Carrefour city  קרפור סיטי בתוכנית \"מהכיס לכרטיס\"",
+        "discount": "10% החזר כספי לנטען",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5923",
+        "discount_type": "billing_discount",
+        "discount_value": 10.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר",
+        "business_name": "Carrefour hyper  קרפור היפר בתוכנית \"מהכיס לכרטיס\"",
         "discount": "10% החזר כספי לנטען",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=6096",
         "discount_type": "billing_discount",
@@ -260881,18 +260796,9 @@
       },
       {
         "club": "חבר",
-        "business_name": "קרפור מרקט   Carrefour market",
+        "business_name": "Carrefour market  קרפור מרקט בתוכנית \"מהכיס לכרטיס\"",
         "discount": "10% החזר כספי לנטען",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5839",
-        "discount_type": "billing_discount",
-        "discount_value": 10.0,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר",
-        "business_name": "קרפור סיטי  Carrefour city",
-        "discount": "10% החזר כספי לנטען",
-        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5923",
         "discount_type": "billing_discount",
         "discount_value": 10.0,
         "has_physical_store": true
@@ -262629,25 +262535,7 @@
     "discounts": [
       {
         "club": "חבר",
-        "business_name": "קרפור היפר  Carrefour hyper",
-        "discount": "10% החזר כספי לנטען",
-        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=6096",
-        "discount_type": "billing_discount",
-        "discount_value": 10.0,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר",
-        "business_name": "קרפור מרקט   Carrefour market",
-        "discount": "10% החזר כספי לנטען",
-        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5839",
-        "discount_type": "billing_discount",
-        "discount_value": 10.0,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר",
-        "business_name": "קרפור סיטי  Carrefour city",
+        "business_name": "Carrefour city  קרפור סיטי בתוכנית \"מהכיס לכרטיס\"",
         "discount": "10% החזר כספי לנטען",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5923",
         "discount_type": "billing_discount",
@@ -262656,7 +262544,25 @@
       },
       {
         "club": "חבר",
-        "business_name": "קרפור  Online",
+        "business_name": "Carrefour hyper  קרפור היפר בתוכנית \"מהכיס לכרטיס\"",
+        "discount": "10% החזר כספי לנטען",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=6096",
+        "discount_type": "billing_discount",
+        "discount_value": 10.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר",
+        "business_name": "Carrefour market  קרפור מרקט בתוכנית \"מהכיס לכרטיס\"",
+        "discount": "10% החזר כספי לנטען",
+        "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5839",
+        "discount_type": "billing_discount",
+        "discount_value": 10.0,
+        "has_physical_store": true
+      },
+      {
+        "club": "חבר",
+        "business_name": "קרפור Online בתוכנית \"מהכיס לכרטיס\"",
         "discount": "10% החזר כספי לנטען",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5965",
         "discount_type": "billing_discount",
@@ -278200,7 +278106,7 @@
       {
         "club": "חבר טעמים",
         "business_name": "קימל בגילבוע",
-        "discount": "חבר טעמים | בשרי/שף צרפתי",
+        "discount": "חבר טעמים | לא תקף על פופ אפ מאפים בימי שישי | בשרי/שף צרפתי",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -296585,7 +296491,7 @@
       },
       {
         "club": "חבר",
-        "business_name": "קרפור היפר  Carrefour hyper",
+        "business_name": "Carrefour hyper  קרפור היפר בתוכנית \"מהכיס לכרטיס\"",
         "discount": "10% החזר כספי לנטען",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=6096",
         "discount_type": "billing_discount",
@@ -297992,24 +297898,6 @@
         "business_name": "PLATIN",
         "discount": "חבר שלי | לא כולל חברי מועדון | רשת מותגי אופנה המובילים בעולם לגברים ונשים",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=884",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר שלי",
-        "business_name": "Play Game",
-        "discount": "חבר שלי | משחקיות פליי גיים מתאימות לילדים מגיל 5 ומותאמות לבעלי צרכים מיוחדים | משחקיית לילדים Play Game",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,355762",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר שלי",
-        "business_name": "PLAY GAME PANDA",
-        "discount": "חבר שלי | מתחם הגיימינג",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,393963",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true

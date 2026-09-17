@@ -14418,7 +14418,7 @@
       },
       {
         "club": "חבר",
-        "business_name": "קרפור היפר  Carrefour hyper",
+        "business_name": "Carrefour hyper  קרפור היפר בתוכנית \"מהכיס לכרטיס\"",
         "discount": "10% החזר כספי לנטען",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=6096",
         "discount_type": "billing_discount",
@@ -15825,24 +15825,6 @@
         "business_name": "PLATIN",
         "discount": "חבר שלי | לא כולל חברי מועדון | רשת מותגי אופנה המובילים בעולם לגברים ונשים",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=884",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר שלי",
-        "business_name": "Play Game",
-        "discount": "חבר שלי | משחקיות פליי גיים מתאימות לילדים מגיל 5 ומותאמות לבעלי צרכים מיוחדים | משחקיית לילדים Play Game",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,355762",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-      },
-      {
-        "club": "חבר שלי",
-        "business_name": "PLAY GAME PANDA",
-        "discount": "חבר שלי | מתחם הגיימינג",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,393963",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
