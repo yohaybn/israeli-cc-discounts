@@ -6500,10 +6500,10 @@
     {
         "club": "חבר",
         "business_name": "Fly Money",
-        "discount": "0.5%",
+        "discount": "0.7%",
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5972",
         "discount_type": "billing_discount",
-        "discount_value": 0.5,
+        "discount_value": 0.7,
         "has_physical_store": true
     },
     {
@@ -12763,15 +12763,6 @@
     },
     {
         "club": "HOT",
-        "business_name": "Marco polo",
-        "discount": "4% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/הטבה/41860/Marco-polo",
-        "discount_type": "billing_discount",
-        "discount_value": 4.0,
-        "has_physical_store": true
-    },
-    {
-        "club": "HOT",
         "business_name": "Zahi Jeries Farah ג'ריס עיצובים",
         "discount": "4% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/הטבה/41854/Zahi-Jeries-Farah-ג'ריס-עיצובים",
@@ -13632,15 +13623,6 @@
         "discount_url": "https://www.hot.co.il/הטבה/40034/איזי-לייף",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
-        "has_physical_store": true
-    },
-    {
-        "club": "HOT",
-        "business_name": "Molecule Perfume",
-        "discount": "3% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/הטבה/40031/Molecule-Perfume",
-        "discount_type": "billing_discount",
-        "discount_value": 3.0,
         "has_physical_store": true
     },
     {
@@ -28063,15 +28045,6 @@
     },
     {
         "club": "HOT",
-        "business_name": "חבוש אחזקה- כלי עבודה",
-        "discount": "5% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/הטבה/8362/חבוש-אחזקה--כלי-עבודה",
-        "discount_type": "billing_discount",
-        "discount_value": 5.0,
-        "has_physical_store": true
-    },
-    {
-        "club": "HOT",
         "business_name": "דני אספקה ושיווק",
         "discount": "8% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/הטבה/8345/דני-אספקה-ושיווק",
@@ -29198,7 +29171,7 @@
     {
         "club": "חבר שלי",
         "business_name": "4chef",
-        "discount": "חבר שלי | לא כולל כפל  הנחות מועדון הרשת, רכישה בכרטיס הנטען עד 1,000 ₪ <br/> | ציוד ואביזרים למטבח",
+        "discount": "חבר שלי | לא כולל כפל הנחות מועדון הרשת, רכישה בכרטיס הנטען עד 1,000 ₪ | ציוד ואביזרים למטבח",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=890",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -29207,7 +29180,7 @@
     {
         "club": "חבר שלי",
         "business_name": "99 דרכים",
-        "discount": "חבר שלי | משחקי קלפים לזוגות, לחברים ולמשפחה<br/>",
+        "discount": "חבר שלי | משחקי קלפים לזוגות, לחברים ולמשפחה",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,329271",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -29225,7 +29198,7 @@
     {
         "club": "חבר שלי",
         "business_name": "ACE",
-        "discount": "חבר שלי | מגבלות השימוש בכרטיס מפורטות בלחיצה על ל\"הסברים ופרטים נוספים\" | רשת לעיצוב ותחזוקת הביתר: ריהוט, מוצרי אמבטיה, חשמל, כלי עבודה ועוד <br/>",
+        "discount": "חבר שלי | מגבלות השימוש בכרטיס מפורטות בלחיצה על ל\"הסברים ופרטים נוספים\" | רשת לעיצוב ותחזוקת הביתר: ריהוט, מוצרי אמבטיה, חשמל, כלי עבודה ועוד",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,310431",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -29270,7 +29243,7 @@
     {
         "club": "חבר שלי",
         "business_name": "AMOR",
-        "discount": "חבר שלי | לא כולל מבצעים והטבות לחברי מועדון ולקוחות רשומים, קרי ללא כפל הנחות.<br/>לא כולל חנויות אאוטלט וחנויות הדיוטי פרי.<br/> | רשת מותגי אופנה בינלאומי",
+        "discount": "חבר שלי | לא כולל מבצעים והטבות לחברי מועדון ולקוחות רשומים, קרי ללא כפל הנחות. לא כולל חנויות אאוטלט וחנויות הדיוטי פרי. | רשת מותגי אופנה בינלאומי",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=883",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -29306,7 +29279,7 @@
     {
         "club": "חבר שלי",
         "business_name": "Baby Jogger",
-        "discount": "חבר שלי | ניתן לרכוש בעד 3000 ₪ בכרטיס נטען בעסקה מעל 1000 ₪ יש לבצע עסקה טלפונית 04-9966333 | מותג עגלות מוביל, כיסאות בטיחות ועוד<br/>",
+        "discount": "חבר שלי | ניתן לרכוש בעד 3000 ₪ בכרטיס נטען בעסקה מעל 1000 ₪ יש לבצע עסקה טלפונית 04-9966333 | מותג עגלות מוביל, כיסאות בטיחות ועוד",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,321857",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -29315,7 +29288,7 @@
     {
         "club": "חבר שלי",
         "business_name": "babybeep",
-        "discount": "חבר שלי | עד 1000 ₪  לעסקה | מערכת כרית חכמה למושב בטיחות ומאפליקציית Baby beep ייעודית <br/>",
+        "discount": "חבר שלי | עד 1000 ₪ לעסקה | מערכת כרית חכמה למושב בטיחות ומאפליקציית Baby beep ייעודית",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,280204",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -29351,7 +29324,7 @@
     {
         "club": "חבר שלי",
         "business_name": "B-CURE LASER",
-        "discount": "חבר שלי | ניתן לשלם עד 1000 ₪ לעסקה בכרטיס הנטען עסקאות מעל 1000 ₪ ניתן לבצע דרך הזמנה טלפונית בלבד <br/>",
+        "discount": "חבר שלי | ניתן לשלם עד 1000 ₪ לעסקה בכרטיס הנטען עסקאות מעל 1000 ₪ ניתן לבצע דרך הזמנה טלפונית בלבד",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,284843",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -29369,7 +29342,7 @@
     {
         "club": "חבר שלי",
         "business_name": "Beeny",
-        "discount": "חבר שלי | אתר צעצועים, בובות, גלגליות, קורקינטים ואביזרי הגנה<br/>",
+        "discount": "חבר שלי | אתר צעצועים, בובות, גלגליות, קורקינטים ואביזרי הגנה",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,269484",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -29378,7 +29351,7 @@
     {
         "club": "חבר שלי",
         "business_name": "BETONI",
-        "discount": "חבר שלי | רכישה בכרטיס הנטען עד 1000 ₪ | פריטים מיוחדים מבטון בעבודת יד<br/>",
+        "discount": "חבר שלי | רכישה בכרטיס הנטען עד 1000 ₪ | פריטים מיוחדים מבטון בעבודת יד",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,338603",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -29387,7 +29360,7 @@
     {
         "club": "חבר שלי",
         "business_name": "biamba",
-        "discount": "חבר שלי | ניתן לשלם עד 2000 ₪ בכרטיס הנטען והיתרה ב5% הנחה במעמד חיוב כרטיס אשראי \"חבר\" <br/> | מוצרי הנקה",
+        "discount": "חבר שלי | ניתן לשלם עד 2000 ₪ בכרטיס הנטען והיתרה ב5% הנחה במעמד חיוב כרטיס אשראי \"חבר\" | מוצרי הנקה",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,344928",
         "discount_type": "rechargeable_card",
         "discount_value": 5.0,
@@ -29432,7 +29405,7 @@
     {
         "club": "חבר שלי",
         "business_name": "BOSS",
-        "discount": "חבר שלי | לא תקף לעסקאות של חברי מועדון. לא כולל חנויות דיוטי פרי וחנויות אאוטלט. | ביגוד, הנעלה ואקססוריז של המעצב הוגו בוס<br/>",
+        "discount": "חבר שלי | לא תקף לעסקאות של חברי מועדון. לא כולל חנויות דיוטי פרי וחנויות אאוטלט. | ביגוד, הנעלה ואקססוריז של המעצב הוגו בוס",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=673",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -29459,7 +29432,7 @@
     {
         "club": "חבר שלי",
         "business_name": "Buycarpet.co.il",
-        "discount": "חבר שלי | עד 1000 ₪ לעסקה | שטיחים לבית, ריהוט משלים ואקססוריז<br/>",
+        "discount": "חבר שלי | עד 1000 ₪ לעסקה | שטיחים לבית, ריהוט משלים ואקססוריז",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,290615",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -29495,7 +29468,7 @@
     {
         "club": "חבר שלי",
         "business_name": "carter's",
-        "discount": "חבר שלי | רשת אופנת ילדים ותינוקות<br/>",
+        "discount": "חבר שלי | רשת אופנת ילדים ותינוקות",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=235",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -29504,7 +29477,7 @@
     {
         "club": "חבר שלי",
         "business_name": "Casa Bella",
-        "discount": "חבר שלי | עד 1000 ₪ לעסקה, לא כולל כפל מבצעים | מפות שולחן, מפיות, אקססוריז, כלים, מארזים ועוד<br/>",
+        "discount": "חבר שלי | עד 1000 ₪ לעסקה, לא כולל כפל מבצעים | מפות שולחן, מפיות, אקססוריז, כלים, מארזים ועוד",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,339440",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -29513,7 +29486,7 @@
     {
         "club": "חבר שלי",
         "business_name": "Chicco",
-        "discount": "חבר שלי | ניתן לרכוש עד 3000 ₪ בכרטיס נטען בעסקה מעל 1000 ₪ יש לבצע עסקה טלפונית 04-9966333<br/> | מותג עגלות, כיסאות בטיחות, עריסות, מוצרי האכלה והנקה ועוד<br/>",
+        "discount": "חבר שלי | ניתן לרכוש עד 3000 ₪ בכרטיס נטען בעסקה מעל 1000 ₪ יש לבצע עסקה טלפונית 04-9966333 | מותג עגלות, כיסאות בטיחות, עריסות, מוצרי האכלה והנקה ועוד",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,321865",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -29549,7 +29522,7 @@
     {
         "club": "חבר שלי",
         "business_name": "CONVERSE",
-        "discount": "חבר שלי | אין כפל הטבות לעובדים/בני משפחה<br/> | מותג סניקרס טרנדי לנשים, גברים וילדים",
+        "discount": "חבר שלי | אין כפל הטבות לעובדים/בני משפחה | מותג סניקרס טרנדי לנשים, גברים וילדים",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,333154",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -29567,7 +29540,7 @@
     {
         "club": "חבר שלי",
         "business_name": "DAFNI",
-        "discount": "חבר שלי | מברשת ייחודית להחלקת שיער  <br/>",
+        "discount": "חבר שלי | מברשת ייחודית להחלקת שיער",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,332766",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -29594,7 +29567,7 @@
     {
         "club": "חבר שלי",
         "business_name": "dolls",
-        "discount": "חבר שלי | ניתן לשלם עד 1000 ₪ לעסקה | ביגוד לתינוק ולתינוקת, מארזים ומתנות, תיקי החתלה ואקססוריז <br/>",
+        "discount": "חבר שלי | ניתן לשלם עד 1000 ₪ לעסקה | ביגוד לתינוק ולתינוקת, מארזים ומתנות, תיקי החתלה ואקססוריז",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,291013",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -29603,7 +29576,7 @@
     {
         "club": "חבר שלי",
         "business_name": "dollybox",
-        "discount": "חבר שלי | ניתן לשלם בכרטיס הנטען עד 1000 ₪<br/> | צנצנות, מארזי חג, מתנות, כלים למטבח ולבית, מוצרים בהתאמה אישית, מוצרים לארגון הבית",
+        "discount": "חבר שלי | ניתן לשלם בכרטיס הנטען עד 1000 ₪ | צנצנות, מארזי חג, מתנות, כלים למטבח ולבית, מוצרים בהתאמה אישית, מוצרים לארגון הבית",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,320724",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -29612,7 +29585,7 @@
     {
         "club": "חבר שלי",
         "business_name": "ECOSALL",
-        "discount": "חבר שלי | עד 1000 ₪ לעסקה | כלי מטבח מעץ מלא מוצרי עץ ומארזי מתנות מקוריים במשלוח<br/>",
+        "discount": "חבר שלי | עד 1000 ₪ לעסקה | כלי מטבח מעץ מלא מוצרי עץ ומארזי מתנות מקוריים במשלוח",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,326277",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -29657,7 +29630,7 @@
     {
         "club": "חבר שלי",
         "business_name": "ERGOTOP",
-        "discount": "חבר שלי | עד 1000 ₪ לעסקה אין כפל מבצעים עם חברי מועדון | ריהוט וציוד ארגונומי<br/>",
+        "discount": "חבר שלי | עד 1000 ₪ לעסקה אין כפל מבצעים עם חברי מועדון | ריהוט וציוד ארגונומי",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,272932",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -29666,7 +29639,7 @@
     {
         "club": "חבר שלי",
         "business_name": "ERROCA",
-        "discount": "חבר שלי | יתן  לרכוש עד 1,000 ₪ לעסקה. לא כולל: סניפי עודפים, אתר אינטרנט, מחלקות אירוקה בסניפי סופר פארם, לא כולל כפל הנחות מועדון LIFE STYLE | רשת אופטיקה",
+        "discount": "חבר שלי | יתן לרכוש עד 1,000 ₪ לעסקה. לא כולל: סניפי עודפים, אתר אינטרנט, מחלקות אירוקה בסניפי סופר פארם, לא כולל כפל הנחות מועדון LIFE STYLE | רשת אופטיקה",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,353311",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -29675,7 +29648,7 @@
     {
         "club": "חבר שלי",
         "business_name": "EVA METAL",
-        "discount": "חבר שלי | חדש בכרטיס הנטען עד 1000 ₪ | אמנות ממתכת בחיתוך לייזר<br/>",
+        "discount": "חבר שלי | חדש בכרטיס הנטען עד 1000 ₪ | אמנות ממתכת בחיתוך לייזר",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,308125",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -29702,7 +29675,7 @@
     {
         "club": "חבר שלי",
         "business_name": "Fizzio",
-        "discount": "חבר שלי | ניתן לשלם עד 1000 ₪ לעסקה בכרטיס הנטען | כסאות למחשב וכסאות משרדיים אורטופדיים<br/>",
+        "discount": "חבר שלי | ניתן לשלם עד 1000 ₪ לעסקה בכרטיס הנטען | כסאות למחשב וכסאות משרדיים אורטופדיים",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,325445",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -29729,7 +29702,7 @@
     {
         "club": "חבר שלי",
         "business_name": "flying tiger",
-        "discount": "חבר שלי | לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת. לא כולל פריטי last chance שקיות הפתעה ומזון<br/>אין כפל הטבות לעובדים/בני משפחה<br/> | רשת לייף סטייל דנית לאביזרים מעוצבים לבית ולמשרד<br/>אין כפל הטבות לעובדים/בני משפחה<br/>",
+        "discount": "חבר שלי | לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת. לא כולל פריטי last chance שקיות הפתעה ומזון אין כפל הטבות לעובדים/בני משפחה | רשת לייף סטייל דנית לאביזרים מעוצבים לבית ולמשרד אין כפל הטבות לעובדים/בני משפחה",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item,303554",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -29747,7 +29720,7 @@
     {
         "club": "חבר שלי",
         "business_name": "FOOT LOCKER",
-        "discount": "חבר שלי | לא כולל מבצעי השקות והטבות מועדון ותשלום הצטרפות למועדון, לא תתאפשר צבירת נקודות מועדון, לא כולל סניפי אאוטלט<br/>אין כפל הטבות לעובדים/בני משפחה",
+        "discount": "חבר שלי | לא כולל מבצעי השקות והטבות מועדון ותשלום הצטרפות למועדון, לא תתאפשר צבירת נקודות מועדון, לא כולל סניפי אאוטלט אין כפל הטבות לעובדים/בני משפחה",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=146",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -29756,7 +29729,7 @@
     {
         "club": "חבר שלי",
         "business_name": "FOX - פוקס",
-        "discount": "חבר שלי | לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת.<br/>אין כפל הטבות לעובדים/בני משפחה<br/> | אופנה ואביזרים לכל המשפחה<br/>",
+        "discount": "חבר שלי | לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת. אין כפל הטבות לעובדים/בני משפחה | אופנה ואביזרים לכל המשפחה",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=10",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -29765,7 +29738,7 @@
     {
         "club": "חבר שלי",
         "business_name": "FOX home",
-        "discount": "חבר שלי | לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת.<br/>אין כפל הטבות לעובדים/בני משפחה | כלי מטבח, אירוח ושולחן, טקסטיל, אמבטיה ונוי<br/>",
+        "discount": "חבר שלי | לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת. אין כפל הטבות לעובדים/בני משפחה | כלי מטבח, אירוח ושולחן, טקסטיל, אמבטיה ונוי",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,270507",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -29792,7 +29765,7 @@
     {
         "club": "חבר שלי",
         "business_name": "GONATURE",
-        "discount": "חבר שלי | ניתן לשם עד 1000 ₪ לעסקה בכרטיס הנטען עסקאות מעל 1000 ₪ בהזמנות טלפוניות בלבד<br/><br/>",
+        "discount": "חבר שלי | ניתן לשם עד 1000 ₪ לעסקה בכרטיס הנטען עסקאות מעל 1000 ₪ בהזמנות טלפוניות בלבד",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,332759",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -29837,7 +29810,7 @@
     {
         "club": "חבר שלי",
         "business_name": "HOME DECOR",
-        "discount": "חבר שלי | ניתן לרכוש עד 1000 ₪ בכרטיס הנטען | רשת ריהוט לבית ולגן<br/>",
+        "discount": "חבר שלי | ניתן לרכוש עד 1000 ₪ בכרטיס הנטען | רשת ריהוט לבית ולגן",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=569",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -29846,7 +29819,7 @@
     {
         "club": "חבר שלי",
         "business_name": "HONEY CAN DO",
-        "discount": "חבר שלי | אתר פתרונות אחסון לבית ולמשרד<br/>",
+        "discount": "חבר שלי | אתר פתרונות אחסון לבית ולמשרד",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,271187",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -29864,7 +29837,7 @@
     {
         "club": "חבר שלי",
         "business_name": "ICE CUBE",
-        "discount": "חבר שלי | לא כולל מוצרי פיינל סייל, לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת | חנות בוטיק לבגדי נשים <br/>",
+        "discount": "חבר שלי | לא כולל מוצרי פיינל סייל, לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת | חנות בוטיק לבגדי נשים",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=112",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -29873,7 +29846,7 @@
     {
         "club": "חבר שלי",
         "business_name": "IL MAKIAGE",
-        "discount": "חבר שלי | עד 1000 ₪.לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת.החזר בגין ביטול עסקה -על פי תקנון הרשת.לא ניתן לממש עם הנטען הטבות יום הולדת<br/> | רשת מוצרי איפור, קורסים לאיפור מקצועי",
+        "discount": "חבר שלי | עד 1000 ₪.לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת.החזר בגין ביטול עסקה -על פי תקנון הרשת.לא ניתן לממש עם הנטען הטבות יום הולדת | רשת מוצרי איפור, קורסים לאיפור מקצועי",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=439",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -29882,7 +29855,7 @@
     {
         "club": "חבר שלי",
         "business_name": "IMAHOT",
-        "discount": "חבר שלי | בגדי הריון והנקה מותאמים לאימהות ולאימהות שבדרך<br/>",
+        "discount": "חבר שלי | בגדי הריון והנקה מותאמים לאימהות ולאימהות שבדרך",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,273239",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -29900,7 +29873,7 @@
     {
         "club": "חבר שלי",
         "business_name": "JUMP & ONOT",
-        "discount": "חבר שלי | עד 1000 שח לעסקה | אופנה לנשים בכל המידות במגוון עיצובים וגזרות מחמיאות<br/>",
+        "discount": "חבר שלי | עד 1000 שח לעסקה | אופנה לנשים בכל המידות במגוון עיצובים וגזרות מחמיאות",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,319347",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -29927,7 +29900,7 @@
     {
         "club": "חבר שלי",
         "business_name": "KUKA",
-        "discount": "חבר שלי | ניתן לרכוש עד 1,000 ₪ עם כרטיס הנטען <br/>לא תקף לרכישה בחנויות עודפים | ייצור ושיווק מוצרי בית לסלון ולחדר השינה",
+        "discount": "חבר שלי | ניתן לרכוש עד 1,000 ₪ עם כרטיס הנטען לא תקף לרכישה בחנויות עודפים | ייצור ושיווק מוצרי בית לסלון ולחדר השינה",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=889",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -29936,7 +29909,7 @@
     {
         "club": "חבר שלי",
         "business_name": "LACOSTE",
-        "discount": "חבר שלי | לא תקף לעסקאות של חברי המועדון | מותג צרפתי המציע פרטי לבוש אופנתיים בעיצוב מודרני לנשים ולגברים<br/>",
+        "discount": "חבר שלי | לא תקף לעסקאות של חברי המועדון | מותג צרפתי המציע פרטי לבוש אופנתיים בעיצוב מודרני לנשים ולגברים",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=237",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -29954,7 +29927,7 @@
     {
         "club": "חבר שלי",
         "business_name": "Lavido",
-        "discount": "חבר שלי | ניתן לשלם עד 1000 ₪ לעסקה בכרטיס הנטען | חברה ישראלית המתמחה בקוסמטיקה לטיפוח הפנים והגוף המבוססת על מרכיבים טבעיים<br/>",
+        "discount": "חבר שלי | ניתן לשלם עד 1000 ₪ לעסקה בכרטיס הנטען | חברה ישראלית המתמחה בקוסמטיקה לטיפוח הפנים והגוף המבוססת על מרכיבים טבעיים",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,324002",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -29963,7 +29936,7 @@
     {
         "club": "חבר שלי",
         "business_name": "Lee",
-        "discount": "חבר שלי | מותג דנים אמריקאי בסטייל אורבני - ג'ינסים, חולצות ועוד<br/>",
+        "discount": "חבר שלי | מותג דנים אמריקאי בסטייל אורבני - ג'ינסים, חולצות ועוד",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,319264",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -29972,7 +29945,7 @@
     {
         "club": "חבר שלי",
         "business_name": "leifheit",
-        "discount": "חבר שלי | אתר מוצרי ניקיון, כביסה וגיהוץ, גאדג'טים למטבח ופתרונות אחסון<br/>",
+        "discount": "חבר שלי | אתר מוצרי ניקיון, כביסה וגיהוץ, גאדג'טים למטבח ופתרונות אחסון",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,271920",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -29990,7 +29963,7 @@
     {
         "club": "חבר שלי",
         "business_name": "LivinGreen",
-        "discount": "חבר שלי | מערכות וציוד הידרופוניות לצמחים - שיטת גידול ללא אדמה<br/>",
+        "discount": "חבר שלי | מערכות וציוד הידרופוניות לצמחים - שיטת גידול ללא אדמה",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,272061",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -30044,7 +30017,7 @@
     {
         "club": "חבר שלי",
         "business_name": "MANGO",
-        "discount": "חבר שלי | לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת.<br/>אין כפל הטבות לעובדים/בני משפחה<br/> | אופנת נשים, גברים, ילדים ותינוקות",
+        "discount": "חבר שלי | לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת. אין כפל הטבות לעובדים/בני משפחה | אופנת נשים, גברים, ילדים ותינוקות",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=81",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -30062,7 +30035,7 @@
     {
         "club": "חבר שלי",
         "business_name": "MAX MORETTI",
-        "discount": "חבר שלי | פריטי לבוש קלאסיים לסביבת עבודה עסקית ולאירועי ערב לגברים ולנשים<br/>",
+        "discount": "חבר שלי | פריטי לבוש קלאסיים לסביבת עבודה עסקית ולאירועי ערב לגברים ולנשים",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=24",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -30098,7 +30071,7 @@
     {
         "club": "חבר שלי",
         "business_name": "MOY",
-        "discount": "חבר שלי | עד 1000 ₪ לעסקה | אתר בגדי תינוקות אורגניים, מתנות ליולדת, מארזי מתנה לתינוק ועוד<br/>",
+        "discount": "חבר שלי | עד 1000 ₪ לעסקה | אתר בגדי תינוקות אורגניים, מתנות ליולדת, מארזי מתנה לתינוק ועוד",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,318858",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -30107,7 +30080,7 @@
     {
         "club": "חבר שלי",
         "business_name": "MY FLY",
-        "discount": "חבר שלי | ניתן לשלם בכרטיס הנטען עד 1,000 ₪ לעסקה והיתרה ב-10% הנחה במעמד חיוב כרטיס אשראי \"חבר\". בהזמנת מקום לאירועי יום הולדת כרטיס נטען יכובד בהזמנה מראש.<br/><br/> | מתחמי כדורסל עם משטחים מיוחדים<br/>בהזמנת מקום לאירועי יום הולדת כרטיס נטען יכובד בהזמנה מראש.<br/><br/>",
+        "discount": "חבר שלי | ניתן לשלם בכרטיס הנטען עד 1,000 ₪ לעסקה והיתרה ב-10% הנחה במעמד חיוב כרטיס אשראי \"חבר\". בהזמנת מקום לאירועי יום הולדת כרטיס נטען יכובד בהזמנה מראש. | מתחמי כדורסל עם משטחים מיוחדים בהזמנת מקום לאירועי יום הולדת כרטיס נטען יכובד בהזמנה מראש.",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,372374",
         "discount_type": "rechargeable_card",
         "discount_value": 10.0,
@@ -30116,7 +30089,7 @@
     {
         "club": "חבר שלי",
         "business_name": "NAPO",
-        "discount": "חבר שלי | ניתן לרכוש עד 1000 ₪ עם כרטיס הנטען | מוצרים לחדר השינה ולסלון<br/>",
+        "discount": "חבר שלי | ניתן לרכוש עד 1000 ₪ עם כרטיס הנטען | מוצרים לחדר השינה ולסלון",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,329660",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -30161,7 +30134,7 @@
     {
         "club": "חבר שלי",
         "business_name": "NIKE",
-        "discount": "חבר שלי | *חל בחנויות NIKE, לא כולל חנויות עודפים. חנויות NIKE בישראל מופעלות ע\"י RETAILORS<br/>*לא כולל מבצעי השקות, הטבות מועדון ותשלום הצטרפות למועדון<br/>*לא תתאפשר צבירת נקודות מועדון<br/>*אין כפל הטבות לעובדים/בני משפחה | מותג הספורט המוביל בעולם",
+        "discount": "חבר שלי | *חל בחנויות NIKE, לא כולל חנויות עודפים. חנויות NIKE בישראל מופעלות ע\"י RETAILORS *לא כולל מבצעי השקות, הטבות מועדון ותשלום הצטרפות למועדון *לא תתאפשר צבירת נקודות מועדון *אין כפל הטבות לעובדים/בני משפחה | מותג הספורט המוביל בעולם",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,376294",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -30170,7 +30143,7 @@
     {
         "club": "חבר שלי",
         "business_name": "Noam Living",
-        "discount": "חבר שלי | עד 1000  ₪ לעסקה",
+        "discount": "חבר שלי | עד 1000 ₪ לעסקה",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,314700",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -30179,7 +30152,7 @@
     {
         "club": "חבר שלי",
         "business_name": "NYOU אינטר ג'ינס",
-        "discount": "חבר שלי | לא ניתן להשתמש בכרטיס בחנויות עודפים<br/>לא כולל הנחות מועדון ומבצעים בלעדיים לחברי מועדון הרשת<br/> | רשת חנויות מותגים: לה קוסט, ריבוק, אדידס, סטיב מאדן, פפה ג'ינס, ריפליי, GUESS ועוד",
+        "discount": "חבר שלי | לא ניתן להשתמש בכרטיס בחנויות עודפים לא כולל הנחות מועדון ומבצעים בלעדיים לחברי מועדון הרשת | רשת חנויות מותגים: לה קוסט, ריבוק, אדידס, סטיב מאדן, פפה ג'ינס, ריפליי, GUESS ועוד",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=95",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -30206,7 +30179,7 @@
     {
         "club": "חבר שלי",
         "business_name": "Outsiders מחנאות",
-        "discount": "חבר שלי | לא ניתן להשתמש בחנויות עודפים.<br/>לא כולל השכרת ציוד סקי | רשת ביגוד, הנעלה וציוד לטיולים <br/>לא כולל השכרת ציוד סקי",
+        "discount": "חבר שלי | לא ניתן להשתמש בחנויות עודפים. לא כולל השכרת ציוד סקי | רשת ביגוד, הנעלה וציוד לטיולים לא כולל השכרת ציוד סקי",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,405591",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -30233,7 +30206,7 @@
     {
         "club": "חבר שלי",
         "business_name": "PETIT BATEAU",
-        "discount": "חבר שלי | לא תקף לעסקאות של חברי המועדון | כרית בלוטות' למושב הבטיחות למניעת שכחה של ילדים ברכב  <br/>",
+        "discount": "חבר שלי | לא תקף לעסקאות של חברי המועדון | כרית בלוטות' למושב הבטיחות למניעת שכחה של ילדים ברכב",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=238",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -30269,7 +30242,7 @@
     {
         "club": "חבר שלי",
         "business_name": "pulliez",
-        "discount": "חבר שלי | גרבים מעוצבים ידידותיים לסביבה לכל המשפחה  <br/>",
+        "discount": "חבר שלי | גרבים מעוצבים ידידותיים לסביבה לכל המשפחה",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,270824",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -30278,7 +30251,7 @@
     {
         "club": "חבר שלי",
         "business_name": "PUMA",
-        "discount": "חבר שלי | לא תקף לעסקאות של חברי המועדון | מותג אופנה בסגנון ספורטיבי המציע ביגוד, הנעלה ואקססוריז<br/>",
+        "discount": "חבר שלי | לא תקף לעסקאות של חברי המועדון | מותג אופנה בסגנון ספורטיבי המציע ביגוד, הנעלה ואקססוריז",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=236",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -30323,7 +30296,7 @@
     {
         "club": "חבר שלי",
         "business_name": "RUBY BAY",
-        "discount": "חבר שלי | לא כולל הטבות מועדון לרבות צבירת נקודות ולא יכלול מבצעים לחברי מועדון<br/>אין כפל הטבות לעובדים/בני משפחה<br/> | מותג אופנתי לנערות עם קולקציות צעירות וקלילות<br/>אין כפל הטבות לעובדים/בני משפחה<br/><br/>",
+        "discount": "חבר שלי | לא כולל הטבות מועדון לרבות צבירת נקודות ולא יכלול מבצעים לחברי מועדון אין כפל הטבות לעובדים/בני משפחה | מותג אופנתי לנערות עם קולקציות צעירות וקלילות אין כפל הטבות לעובדים/בני משפחה",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=645",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -30368,7 +30341,7 @@
     {
         "club": "חבר שלי",
         "business_name": "Scotch & Soda",
-        "discount": "חבר שלי | מותג אופנה הולנדי לנשים, גברים וילדים<br/>",
+        "discount": "חבר שלי | מותג אופנה הולנדי לנשים, גברים וילדים",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,318780",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -30395,7 +30368,7 @@
     {
         "club": "חבר שלי",
         "business_name": "SHANI PALATCHI",
-        "discount": "חבר שלי | ניתן לשלם עד 1000 ₪ לעסקה | אופנת וינטג' ובגדי יד שנייה של מותגים מובילים<br/>",
+        "discount": "חבר שלי | ניתן לשלם עד 1000 ₪ לעסקה | אופנת וינטג' ובגדי יד שנייה של מותגים מובילים",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,300132",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -30449,7 +30422,7 @@
     {
         "club": "חבר שלי",
         "business_name": "star shop",
-        "discount": "חבר שלי | אתר לריהוט משלים ופתרונות אחסון לבית ולגן<br/>",
+        "discount": "חבר שלי | אתר לריהוט משלים ופתרונות אחסון לבית ולגן",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,275224",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -30467,7 +30440,7 @@
     {
         "club": "חבר שלי",
         "business_name": "STEVE MADDEN",
-        "discount": "חבר שלי | לא ניתן להשתמש בכרטיס בחנויות עודפים<br/>לא כולל הנחות מועדון ומבצעים בלעדיים לחברי מועדון הרשת<br/> | מותג המציע הנעלה, תיקים ואביזרים <br/>",
+        "discount": "חבר שלי | לא ניתן להשתמש בכרטיס בחנויות עודפים לא כולל הנחות מועדון ומבצעים בלעדיים לחברי מועדון הרשת | מותג המציע הנעלה, תיקים ואביזרים",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=142",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -30476,7 +30449,7 @@
     {
         "club": "חבר שלי",
         "business_name": "STORY",
-        "discount": "חבר שלי | רשת מותגי אופנה ולייף סטייל מרחבי העולם שנבחרו בקפידה<br/>",
+        "discount": "חבר שלי | רשת מותגי אופנה ולייף סטייל מרחבי העולם שנבחרו בקפידה",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,318778",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -30485,7 +30458,7 @@
     {
         "club": "חבר שלי",
         "business_name": "sunglass hut",
-        "discount": "חבר שלי | לא כולל הטבות מועדון לרבות צבירת נקודות ולא יכלול מבצעים לחברי מועדון<br/>אין כפל הטבות לעובדים/בני משפחה<br/> | משקפי שמש של מגוון מותגים בינלאומיים",
+        "discount": "חבר שלי | לא כולל הטבות מועדון לרבות צבירת נקודות ולא יכלול מבצעים לחברי מועדון אין כפל הטבות לעובדים/בני משפחה | משקפי שמש של מגוון מותגים בינלאומיים",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,321374",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -30494,7 +30467,7 @@
     {
         "club": "חבר שלי",
         "business_name": "SUNSHINE",
-        "discount": "חבר שלי | סקולנטים, עציצים ומארזי מתנה<br/>",
+        "discount": "חבר שלי | סקולנטים, עציצים ומארזי מתנה",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,334633",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -30503,7 +30476,7 @@
     {
         "club": "חבר שלי",
         "business_name": "SUPERDRY",
-        "discount": "חבר שלי | עד 1000 שח לעסקה | מותג הלייף סטייל בריטי עם גרפיקה יפנית וסטייל ייחודי <br/>",
+        "discount": "חבר שלי | עד 1000 שח לעסקה | מותג הלייף סטייל בריטי עם גרפיקה יפנית וסטייל ייחודי",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,339085",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -30530,7 +30503,7 @@
     {
         "club": "חבר שלי",
         "business_name": "Talking",
-        "discount": "חבר שלי | ניתן לשלם עד 1000 ₪ לעסקה | קורסי אנגלית מדוברת בשיטת אחד-על-אחד באונליין<br/>",
+        "discount": "חבר שלי | ניתן לשלם עד 1000 ₪ לעסקה | קורסי אנגלית מדוברת בשיטת אחד-על-אחד באונליין",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,295676",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -30548,7 +30521,7 @@
     {
         "club": "חבר שלי",
         "business_name": "TERMINAL X",
-        "discount": "חבר שלי | אין כפל הטבות לעובדים/בני משפחה | אתר אופנה ולייף סטייל המציע יותר מ-200 מותגים לנשים, גברים וילדים במשלוח<br/>",
+        "discount": "חבר שלי | אין כפל הטבות לעובדים/בני משפחה | אתר אופנה ולייף סטייל המציע יותר מ-200 מותגים לנשים, גברים וילדים במשלוח",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,272356",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -30566,7 +30539,7 @@
     {
         "club": "חבר שלי",
         "business_name": "TIMBERLAND",
-        "discount": "חבר שלי | לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת. לא כולל חנויות עודפים. | מותג הנעהל וביגוד לנשים, גברים וילדים<br/>",
+        "discount": "חבר שלי | לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת. לא כולל חנויות עודפים. | מותג הנעהל וביגוד לנשים, גברים וילדים",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,267652",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -30584,7 +30557,7 @@
     {
         "club": "חבר שלי",
         "business_name": "TOY STORE",
-        "discount": "חבר שלי | תקף ברכישות באתר בלבד. עד 1000 ש\"ח לעסקה | אתר צעצועים לכל הגילאים<br/>",
+        "discount": "חבר שלי | תקף ברכישות באתר בלבד. עד 1000 ש\"ח לעסקה | אתר צעצועים לכל הגילאים",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,267956",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -30593,7 +30566,7 @@
     {
         "club": "חבר שלי",
         "business_name": "Trek Market",
-        "discount": "חבר שלי | לא כולל הנחות ומבצעים בלעדיים לחברי מועדון. <br/>לא ניתן להשתמש בכרטיס בחנות האינטרנטית<br/>עד 1,000 ₪ לעסקה<br/> | מותגים איכותיים לקמפינג, נסיעות וציוד לחיילים",
+        "discount": "חבר שלי | לא כולל הנחות ומבצעים בלעדיים לחברי מועדון. לא ניתן להשתמש בכרטיס בחנות האינטרנטית עד 1,000 ₪ לעסקה | מותגים איכותיים לקמפינג, נסיעות וציוד לחיילים",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,359785",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -30620,7 +30593,7 @@
     {
         "club": "חבר שלי",
         "business_name": "Twigy",
-        "discount": "חבר שלי | ניתן לרכוש עד 3000 ₪ בכרטיס נטען בעסקה מעל 1000 ₪ יש לבצע עסקה טלפונית 04-9966333 | עגלות וטיולונים, כיסאות בטיחות, מנשאים ועוד<br/>",
+        "discount": "חבר שלי | ניתן לרכוש עד 3000 ₪ בכרטיס נטען בעסקה מעל 1000 ₪ יש לבצע עסקה טלפונית 04-9966333 | עגלות וטיולונים, כיסאות בטיחות, מנשאים ועוד",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,321859",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -30638,7 +30611,7 @@
     {
         "club": "חבר שלי",
         "business_name": "URBAN",
-        "discount": "חבר שלי | ניתן לשלם בכרטיס הנטען עד 1000 ₪. לא תקף באתר האונליין ובחנויות העודפים: בית חרות ובחנויות הזכיין: אורבן איילת אורבן נתניה אורבן ראשל\"צ אורבן פ\"ת<br/>לא ניתן לשלם בכרטיס הנטען במחלקות תאורה שטיחים וחיפויים | רשת ריהוט מעוצב לבית<br/>",
+        "discount": "חבר שלי | ניתן לשלם בכרטיס הנטען עד 1000 ₪. לא תקף באתר האונליין ובחנויות העודפים: בית חרות ובחנויות הזכיין: אורבן איילת אורבן נתניה אורבן ראשל\"צ אורבן פ\"ת לא ניתן לשלם בכרטיס הנטען במחלקות תאורה שטיחים וחיפויים | רשת ריהוט מעוצב לבית",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,320098",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -30656,7 +30629,7 @@
     {
         "club": "חבר שלי",
         "business_name": "VENTA",
-        "discount": "חבר שלי | עד 1,000 ₪ לעסקה | מוצרי אוורור ומערכות אוורור<br/>",
+        "discount": "חבר שלי | עד 1,000 ₪ לעסקה | מוצרי אוורור ומערכות אוורור",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,362264",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -30674,7 +30647,7 @@
     {
         "club": "חבר שלי",
         "business_name": "We Shoes",
-        "discount": "חבר שלי | לא כולל הנחות ומבצעים בלעדיים לחברי מועדון. לא ניתן להשתמש בכרטיס בחנות האינטרנטית.<br/>הלקוח זכאי להחלפה או לזיכוי נייר למימוש ברשת WeShoes בלבד | מותגי הנעלה בינלאומיים מובילים כגון: Crocs, Blundstone, Desigual ועוד.",
+        "discount": "חבר שלי | לא כולל הנחות ומבצעים בלעדיים לחברי מועדון. לא ניתן להשתמש בכרטיס בחנות האינטרנטית. הלקוח זכאי להחלפה או לזיכוי נייר למימוש ברשת WeShoes בלבד | מותגי הנעלה בינלאומיים מובילים כגון: Crocs, Blundstone, Desigual ועוד.",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=108",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -30683,7 +30656,7 @@
     {
         "club": "חבר שלי",
         "business_name": "White Space",
-        "discount": "חבר שלי | ניתן לשלם בכרטיס הנטען עד 1000 ₪ והיתרה ב-10% הנחה באשראי \"חבר\"<br/> | להפוך תמונה שלכם לאיור מרגש, מתנות ופריטים לעיצוב הבית במשלוח<br/>",
+        "discount": "חבר שלי | ניתן לשלם בכרטיס הנטען עד 1000 ₪ והיתרה ב-10% הנחה באשראי \"חבר\" | להפוך תמונה שלכם לאיור מרגש, מתנות ופריטים לעיצוב הבית במשלוח",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,331732",
         "discount_type": "rechargeable_card",
         "discount_value": 10.0,
@@ -30692,7 +30665,7 @@
     {
         "club": "חבר שלי",
         "business_name": "WORD",
-        "discount": "חבר שלי | רשת מותגי אופנה בינלאומיים <br/>",
+        "discount": "חבר שלי | רשת מותגי אופנה בינלאומיים",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,318787",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -30710,7 +30683,7 @@
     {
         "club": "חבר שלי",
         "business_name": "XRAY",
-        "discount": "חבר שלי | ניתן לשלם בכרטיס הנטען עד 1000 ₪ לא כולל כפל מבצעים בעסקאות אופטיות<br/> | משקפי שמש, משקפי ראייה, משקפי מסכים",
+        "discount": "חבר שלי | ניתן לשלם בכרטיס הנטען עד 1000 ₪ לא כולל כפל מבצעים בעסקאות אופטיות | משקפי שמש, משקפי ראייה, משקפי מסכים",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,320759",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -30719,7 +30692,7 @@
     {
         "club": "חבר שלי",
         "business_name": "YOLO",
-        "discount": "חבר שלי | לא כולל הנחות מועדון ומבצעים בלעדיים לחברי מועדון הרשת | רשת מתנות, ציוד לבית הספר, ערכות יצירה, גאדג'טים חכמים ועוד<br/>",
+        "discount": "חבר שלי | לא כולל הנחות מועדון ומבצעים בלעדיים לחברי מועדון הרשת | רשת מתנות, ציוד לבית הספר, ערכות יצירה, גאדג'טים חכמים ועוד",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,267655",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -30746,7 +30719,7 @@
     {
         "club": "חבר שלי",
         "business_name": "Ziegler&Brown",
-        "discount": "חבר שלי | ניתן לשלם עד 1000 ₪ לעסקה בכרטיס הנטען<br/> | מותג גרילי גז  למטבחי חוץ<br/>",
+        "discount": "חבר שלי | ניתן לשלם עד 1000 ₪ לעסקה בכרטיס הנטען | מותג גרילי גז למטבחי חוץ",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,324462",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -30755,7 +30728,7 @@
     {
         "club": "חבר שלי",
         "business_name": "א.א אורטופדיה",
-        "discount": "חבר שלי | רשת אביזרים אורטופדיים, נעליים בהתאמה אישית ומדרסים<br/>",
+        "discount": "חבר שלי | רשת אביזרים אורטופדיים, נעליים בהתאמה אישית ומדרסים",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,333204",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -30764,7 +30737,7 @@
     {
         "club": "חבר שלי",
         "business_name": "א.ל.מ",
-        "discount": "חבר שלי | לא כולל מוצרי: טכנולוגיה גאדג'טים מחשוב וסלולר, מסכים עד 43 אינץ' כולל ומזגנים עד 1.25 כח סוס כולל. לא כולל מוצרים מתצוגה. עד 1,000 ₪ לעסקה | רשת מוצרי חשמל <br/>",
+        "discount": "חבר שלי | לא כולל מוצרי: טכנולוגיה גאדג'טים מחשוב וסלולר, מסכים עד 43 אינץ' כולל ומזגנים עד 1.25 כח סוס כולל. לא כולל מוצרים מתצוגה. עד 1,000 ₪ לעסקה | רשת מוצרי חשמל",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=53",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -30773,7 +30746,7 @@
     {
         "club": "חבר שלי",
         "business_name": "אבא חטוב",
-        "discount": "חבר שלי | ניתן לשלם עד 1000 ₪ לעסקה עם הכרטיס הנטען או עם כרטיס אשראי \"חבר\" המעניק 10% הנחה במעמד החיוב<br/><br/> | אורח חיים בריא, אימונים ותזונה",
+        "discount": "חבר שלי | ניתן לשלם עד 1000 ₪ לעסקה עם הכרטיס הנטען או עם כרטיס אשראי \"חבר\" המעניק 10% הנחה במעמד החיוב | אורח חיים בריא, אימונים ותזונה",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,290334",
         "discount_type": "rechargeable_card",
         "discount_value": 10.0,
@@ -30818,7 +30791,7 @@
     {
         "club": "חבר שלי",
         "business_name": "אהבה קטנה",
-        "discount": "חבר שלי | אתר מתנות מקוריות במיתוג אישי<br/>",
+        "discount": "חבר שלי | אתר מתנות מקוריות במיתוג אישי",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,271691",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -30881,7 +30854,7 @@
     {
         "club": "חבר שלי",
         "business_name": "איטלסופה",
-        "discount": "חבר שלי | לא תקף לרכישה בחנויות עודפים<br/>ניתן לרכוש עד 1000 ₪ עם כרטיס הנטען | ריהוט איטלקי יוקרתי<br/>",
+        "discount": "חבר שלי | לא תקף לרכישה בחנויות עודפים ניתן לרכוש עד 1000 ₪ עם כרטיס הנטען | ריהוט איטלקי יוקרתי",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,329327",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -30908,7 +30881,7 @@
     {
         "club": "חבר שלי",
         "business_name": "איתי ברנדס",
-        "discount": "חבר שלי | מגבלות הרשת: לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת.<br/>אין כפל הטבות לעובדים/בני משפחה<br/>",
+        "discount": "חבר שלי | מגבלות הרשת: לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת. אין כפל הטבות לעובדים/בני משפחה",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=886",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -30926,7 +30899,7 @@
     {
         "club": "חבר שלי",
         "business_name": "אמפוריו ארמני",
-        "discount": "חבר שלי | לא תקף לעסקאות של חברי מועדון. לא כולל חנויות דיוטי פרי וחנויות אאוטלט. | מותג אופנה עדכנית של המותג איטלקי המוביל ג'ורגיו ארמני<br/>",
+        "discount": "חבר שלי | לא תקף לעסקאות של חברי מועדון. לא כולל חנויות דיוטי פרי וחנויות אאוטלט. | מותג אופנה עדכנית של המותג איטלקי המוביל ג'ורגיו ארמני",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=669",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -30953,7 +30926,7 @@
     {
         "club": "חבר שלי",
         "business_name": "אפרודיטה",
-        "discount": "חבר שלי | לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת | רשת הלבשה תחתונה לנשים <br/>",
+        "discount": "חבר שלי | לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת | רשת הלבשה תחתונה לנשים",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,267657",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -30971,7 +30944,7 @@
     {
         "club": "חבר שלי",
         "business_name": "ארמני אקסצ'יינג'",
-        "discount": "חבר שלי | לא תקף לעסקאות של חברי מועדון. לא כולל חנויות דיוטי פרי וחנויות אאוטלט. | מותג אופנה נגישה של המותג איטלקי המוביל ג'ורגיו ארמני<br/>",
+        "discount": "חבר שלי | לא תקף לעסקאות של חברי מועדון. לא כולל חנויות דיוטי פרי וחנויות אאוטלט. | מותג אופנה נגישה של המותג איטלקי המוביל ג'ורגיו ארמני",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=670",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -30998,7 +30971,7 @@
     {
         "club": "חבר שלי",
         "business_name": "באבלס",
-        "discount": "חבר שלי | עד 1000 ₪ לעסקה | הפעלות למסיבות ואירועים של בועות סבון ומוצרים לימי הולדת<br/>",
+        "discount": "חבר שלי | עד 1000 ₪ לעסקה | הפעלות למסיבות ואירועים של בועות סבון ומוצרים לימי הולדת",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,302823",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -31007,7 +30980,7 @@
     {
         "club": "חבר שלי",
         "business_name": "בבילון",
-        "discount": "חבר שלי | ניתן לשלם גם באמצעות אפליקציית \"בבילון\"<br/>המימוש באפליקצייה בלבד | לונה פארק מקורה כולל מתחם מכונות משחק",
+        "discount": "חבר שלי | ניתן לשלם גם באמצעות אפליקציית \"בבילון\" המימוש באפליקצייה בלבד | לונה פארק מקורה כולל מתחם מכונות משחק",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,273627",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -31016,7 +30989,7 @@
     {
         "club": "חבר שלי",
         "business_name": "בוניטה דה מאס",
-        "discount": "חבר שלי | לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת | רשת הלבשה תחתונה לנשים <br/>",
+        "discount": "חבר שלי | לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת | רשת הלבשה תחתונה לנשים",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=202",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -31025,7 +30998,7 @@
     {
         "club": "חבר שלי",
         "business_name": "ביג אלקטריק",
-        "discount": "חבר שלי | לא ניתן לשלם באתר הסחר של הרשת | עד 1,000 ₪  לעסקה, לא כולל מסכים עד 43 אינץ, מזגנים עד 1.25 כוח סוס (כולל), לא כולל סלולר וטכנולוגיה.לא ניתן לשלם באתר הסחר של הרשת<br/>",
+        "discount": "חבר שלי | לא ניתן לשלם באתר הסחר של הרשת | עד 1,000 ₪ לעסקה, לא כולל מסכים עד 43 אינץ, מזגנים עד 1.25 כוח סוס (כולל), לא כולל סלולר וטכנולוגיה.לא ניתן לשלם באתר הסחר של הרשת",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,354561",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -31034,7 +31007,7 @@
     {
         "club": "חבר שלי",
         "business_name": "ביג גרף",
-        "discount": "חבר שלי | ניתן לשלם עד 1000 ₪ לעסקה | הדפסות על מתנות, קנבס, פוסטרים ועוד <br/>",
+        "discount": "חבר שלי | ניתן לשלם עד 1000 ₪ לעסקה | הדפסות על מתנות, קנבס, פוסטרים ועוד",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,288344",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -31043,7 +31016,7 @@
     {
         "club": "חבר שלי",
         "business_name": "בייבי סטאר",
-        "discount": "חבר שלי | עד 1000 ש\"ח | רשת מוצרי תינוקות, חבילות לידה, עגלות, כסאות בטיחות ועוד<br/>",
+        "discount": "חבר שלי | עד 1000 ש\"ח | רשת מוצרי תינוקות, חבילות לידה, עגלות, כסאות בטיחות ועוד",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,306086",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -31052,7 +31025,7 @@
     {
         "club": "חבר שלי",
         "business_name": "בילבונג",
-        "discount": "חבר שלי | לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת.<br/>אין כפל הטבות לעובדים/בני משפחה<br/> | אופנת גלישה ובגדי ים לנשים, גברים וילדים<br/>",
+        "discount": "חבר שלי | לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת. אין כפל הטבות לעובדים/בני משפחה | אופנת גלישה ובגדי ים לנשים, גברים וילדים",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=45",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -31070,7 +31043,7 @@
     {
         "club": "חבר שלי",
         "business_name": "ביתילי",
-        "discount": "חבר שלי | ניתן לשלם בכרטיס הנטען עד 1000 ₪. לא תקף באתר האונליין ובחנויות העודפים: בית חרות ובחנויות הזכיין: ביתילי איילת. לא ניתן לשלם בכרטיס הנטען במחלקות תאורה שטיחים וחיפויים | רשת ריהוט ועיצוב הבית<br/>",
+        "discount": "חבר שלי | ניתן לשלם בכרטיס הנטען עד 1000 ₪. לא תקף באתר האונליין ובחנויות העודפים: בית חרות ובחנויות הזכיין: ביתילי איילת. לא ניתן לשלם בכרטיס הנטען במחלקות תאורה שטיחים וחיפויים | רשת ריהוט ועיצוב הבית",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,320100",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -31097,7 +31070,7 @@
     {
         "club": "חבר שלי",
         "business_name": "גולף",
-        "discount": "חבר שלי | אופנה ואביזרים לנשים ולגברים<br/>",
+        "discount": "חבר שלי | אופנה ואביזרים לנשים ולגברים",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=19",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -31115,7 +31088,7 @@
     {
         "club": "חבר שלי",
         "business_name": "גולף-קידס",
-        "discount": "חבר שלי | רשת אופנה ילדים ותינוקות<br/>",
+        "discount": "חבר שלי | רשת אופנה ילדים ותינוקות",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=20",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -31124,7 +31097,7 @@
     {
         "club": "חבר שלי",
         "business_name": "ג'וסי קוטור",
-        "discount": "חבר שלי | לא תקף לעסקאות של חברי מועדון. לא כולל חנויות דיוטי פרי וחנויות אאוטלט. | מותג פרימיום לנשים המציע בגדי אקטיב ולייף סטייל בהשראת לוס אנג'לס<br/>",
+        "discount": "חבר שלי | לא תקף לעסקאות של חברי מועדון. לא כולל חנויות דיוטי פרי וחנויות אאוטלט. | מותג פרימיום לנשים המציע בגדי אקטיב ולייף סטייל בהשראת לוס אנג'לס",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=133",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -31142,7 +31115,7 @@
     {
         "club": "חבר שלי",
         "business_name": "ג'מבו",
-        "discount": "חבר שלי | לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת.<br/>אין כפל הטבות לעובדים/בני משפחה<br/><br/> | עולם שלם של קניות",
+        "discount": "חבר שלי | לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת. אין כפל הטבות לעובדים/בני משפחה | עולם שלם של קניות",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,391807",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -31151,7 +31124,7 @@
     {
         "club": "חבר שלי",
         "business_name": "גן סטודיו",
-        "discount": "חבר שלי | ניתן לשלם עד 1000 שח לעסקה בכרטיס הנטען | מתנות, מוצרי נייר ואקססוריז בייצור ישראלי ובעיצוב ייחודי<br/>",
+        "discount": "חבר שלי | ניתן לשלם עד 1000 שח לעסקה בכרטיס הנטען | מתנות, מוצרי נייר ואקססוריז בייצור ישראלי ובעיצוב ייחודי",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,304699",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -31160,7 +31133,7 @@
     {
         "club": "חבר שלי",
         "business_name": "ד\"ר גב",
-        "discount": "חבר שלי | לא תקף לרכישה בחנויות עודפים <br/>ניתן לרכוש עד 1000 ₪ עם כרטיס הנטען והיתרה ב-5% הנחה בכרטיס אשראי \"חבר\" <br/>",
+        "discount": "חבר שלי | לא תקף לרכישה בחנויות עודפים ניתן לרכוש עד 1000 ₪ עם כרטיס הנטען והיתרה ב-5% הנחה בכרטיס אשראי \"חבר\"",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,328751",
         "discount_type": "rechargeable_card",
         "discount_value": 5.0,
@@ -31187,7 +31160,7 @@
     {
         "club": "חבר שלי",
         "business_name": "דיל תאורה",
-        "discount": "חבר שלי | עד 1000 ₪ בכרטיס הנטען | רשת פתרונות תאורה<br/>",
+        "discount": "חבר שלי | עד 1000 ₪ בכרטיס הנטען | רשת פתרונות תאורה",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,315806",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -31232,7 +31205,7 @@
     {
         "club": "חבר שלי",
         "business_name": "הוגה שטיחים",
-        "discount": "חבר שלי | עד 1000 ₪ | שטיחים לפי מידה, שטיחים לפי צבע, שטיחים לפי סגנון, שטיחונים<br/>",
+        "discount": "חבר שלי | עד 1000 ₪ | שטיחים לפי מידה, שטיחים לפי צבע, שטיחים לפי סגנון, שטיחונים",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=767",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -31241,7 +31214,7 @@
     {
         "club": "חבר שלי",
         "business_name": "הוגו",
-        "discount": "חבר שלי | לא תקף לעסקאות של חברי מועדון. לא כולל חנויות דיוטי פרי וחנויות אאוטלט. | ביגוד, הנעלה ואקססוריז של המעצב הוגו בוס<br/>",
+        "discount": "חבר שלי | לא תקף לעסקאות של חברי מועדון. לא כולל חנויות דיוטי פרי וחנויות אאוטלט. | ביגוד, הנעלה ואקססוריז של המעצב הוגו בוס",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=671",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -31259,7 +31232,7 @@
     {
         "club": "חבר שלי",
         "business_name": "הום סנטר",
-        "discount": "חבר שלי | לא כולל: קופונים, סוכות, מחסנים גבוהים, תאורה, פנצ'ריה, שטיחים, ריצופים וחיפויי קיר, פרקטים, מזגנים, מוצרי מוטימדיה ומקרנים, טלויזיה, מסכי מחשב, מחשבים, בידוריות, חשמל לבן/חום: מקרר, מקפיא, תנור בילד אין ואפיה, כיריים, מדיח כלים מכונות ומבייש כביסה, מיקרוגל, קולט אדים, טוחן אשפה, שואב אבק נטען, שואב רובוטי מוצרי: one blade, shark, ninja, dyson אופניים ומתגלגלים, מוצרי מזון, שתיה קלה ושתייה חריפה, חומרי ניקוי. עד 1,000 ש\"ח. | רשת שיפוץ ואחזקת הבית: ריהוט, חשמל, מטבח, גינה ועוד<br/>",
+        "discount": "חבר שלי | לא כולל: קופונים, סוכות, מחסנים גבוהים, תאורה, פנצ'ריה, שטיחים, ריצופים וחיפויי קיר, פרקטים, מזגנים, מוצרי מוטימדיה ומקרנים, טלויזיה, מסכי מחשב, מחשבים, בידוריות, חשמל לבן/חום: מקרר, מקפיא, תנור בילד אין ואפיה, כיריים, מדיח כלים מכונות ומבייש כביסה, מיקרוגל, קולט אדים, טוחן אשפה, שואב אבק נטען, שואב רובוטי מוצרי: one blade, shark, ninja, dyson אופניים ומתגלגלים, מוצרי מזון, שתיה קלה ושתייה חריפה, חומרי ניקוי. עד 1,000 ש\"ח. | רשת שיפוץ ואחזקת הבית: ריהוט, חשמל, מטבח, גינה ועוד",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=13",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -31295,7 +31268,7 @@
     {
         "club": "חבר שלי",
         "business_name": "ואהבת",
-        "discount": "חבר שלי | לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת | רשת מוצרי יודאיקה <br/>",
+        "discount": "חבר שלי | לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת | רשת מוצרי יודאיקה",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=159",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -31331,7 +31304,7 @@
     {
         "club": "חבר שלי",
         "business_name": "חוף חנניה",
-        "discount": "חבר שלי | לא כולל שימוש בקופונים ו או שוברים נוספים ולא כולל כפל הנחות תושב אילת לא כולל מצנחי ים | אטרקציות ימיות, ספורט ימי והפלגות בים האדום<br/>",
+        "discount": "חבר שלי | לא כולל שימוש בקופונים ו או שוברים נוספים ולא כולל כפל הנחות תושב אילת לא כולל מצנחי ים | אטרקציות ימיות, ספורט ימי והפלגות בים האדום",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,272384",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -31349,7 +31322,7 @@
     {
         "club": "חבר שלי",
         "business_name": "טאצ'",
-        "discount": "חבר שלי | עד 1000 ₪ לעסקה | אתר מוצרי ניקיון וטיפוח הבית<br/>",
+        "discount": "חבר שלי | עד 1000 ₪ לעסקה | אתר מוצרי ניקיון וטיפוח הבית",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=444",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -31358,7 +31331,7 @@
     {
         "club": "חבר שלי",
         "business_name": "טומי הילפיגר",
-        "discount": "חבר שלי | לא תקף לעסקאות של חברי מועדון. לא כולל חנויות דיוטי פרי וחנויות אאוטלט. | מותג אופנה אמריקאי לנשים, גברים וילדים<br/>",
+        "discount": "חבר שלי | לא תקף לעסקאות של חברי מועדון. לא כולל חנויות דיוטי פרי וחנויות אאוטלט. | מותג אופנה אמריקאי לנשים, גברים וילדים",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=135",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -31385,7 +31358,7 @@
     {
         "club": "חבר שלי",
         "business_name": "טכנו גן",
-        "discount": "חבר שלי | עד 1000 שח לעסקה | כלי עבודה וציוד גינון<br/>",
+        "discount": "חבר שלי | עד 1000 שח לעסקה | כלי עבודה וציוד גינון",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,306594",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -31403,7 +31376,7 @@
     {
         "club": "חבר שלי",
         "business_name": "טכנוקט",
-        "discount": "חבר שלי | ניתן לשלם בכרטיס הנטען עד 1000 ₪ | ערכות מדע וטכנולוגיה לילדים<br/>",
+        "discount": "חבר שלי | ניתן לשלם בכרטיס הנטען עד 1000 ₪ | ערכות מדע וטכנולוגיה לילדים",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=636",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -31412,7 +31385,7 @@
     {
         "club": "חבר שלי",
         "business_name": "יאנגה",
-        "discount": "חבר שלי | למעט הנחות והטבות מועדון לקוחות בית העסק ולמעט צבירת נקודות מועדון בית העסק<br/>אין כפל הטבות לעובדים/בני משפחה<br/> | מותג אופנה ישראלי לנשים המציע ביגוד, תיקים ואביזרים<br/>אין כפל הטבות לעובדים/בני משפחה<br/><br/>",
+        "discount": "חבר שלי | למעט הנחות והטבות מועדון לקוחות בית העסק ולמעט צבירת נקודות מועדון בית העסק אין כפל הטבות לעובדים/בני משפחה | מותג אופנה ישראלי לנשים המציע ביגוד, תיקים ואביזרים אין כפל הטבות לעובדים/בני משפחה",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=178",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -31421,7 +31394,7 @@
     {
         "club": "חבר שלי",
         "business_name": "יונידרס",
-        "discount": "חבר שלי | לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת סניף מודיעין - חנות הדגל של המותג 511 בלבד | בגדי עבודה, נעלי בטיחות, בגדים ייצוגיים ומקצועיים בהתאמה אישית <br/>",
+        "discount": "חבר שלי | לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת סניף מודיעין - חנות הדגל של המותג 511 בלבד | בגדי עבודה, נעלי בטיחות, בגדים ייצוגיים ומקצועיים בהתאמה אישית",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=231",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -31439,7 +31412,7 @@
     {
         "club": "חבר שלי",
         "business_name": "ישראלי עיצוב הבית",
-        "discount": "חבר שלי | עד 1000 ₪ לעסקה | אתר לעיצוב הבית: פחי EKO, אביזרי אמבטיה,פתרונות חימום ועוד<br/>",
+        "discount": "חבר שלי | עד 1000 ₪ לעסקה | אתר לעיצוב הבית: פחי EKO, אביזרי אמבטיה,פתרונות חימום ועוד",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,272248",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -31484,7 +31457,7 @@
     {
         "club": "חבר שלי",
         "business_name": "לבנדר",
-        "discount": "חבר שלי | עד 1000 שח לעסקה | רשת ואתר מוצרי קוסמטיקה טבעיים וארומתרפיים<br/>",
+        "discount": "חבר שלי | עד 1000 שח לעסקה | רשת ואתר מוצרי קוסמטיקה טבעיים וארומתרפיים",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,306204",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -31502,7 +31475,7 @@
     {
         "club": "חבר שלי",
         "business_name": "לדיקו BOCSH",
-        "discount": "חבר שלי | יבואנית  BOSCH. עד 1,000 ש\"ח לעסקה | כלי עבודה מקצועיים<br/>",
+        "discount": "חבר שלי | יבואנית BOSCH. עד 1,000 ש\"ח לעסקה | כלי עבודה מקצועיים",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,310148",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -31520,7 +31493,7 @@
     {
         "club": "חבר שלי",
         "business_name": "לי קופר",
-        "discount": "חבר שלי | לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת. | אופנה והנעלה טרנדיים לגברים, נשים וילדים<br/>",
+        "discount": "חבר שלי | לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת. | אופנה והנעלה טרנדיים לגברים, נשים וילדים",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,347883",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -31538,7 +31511,7 @@
     {
         "club": "חבר שלי",
         "business_name": "ליוויס",
-        "discount": "חבר שלי | לא תקף לעסקאות של חברי מועדון. לא כולל חנויות דיוטי פרי וחנויות אאוטלט. | מותג אופנה אמריקאי נשים, גברים וילדים <br/>",
+        "discount": "חבר שלי | לא תקף לעסקאות של חברי מועדון. לא כולל חנויות דיוטי פרי וחנויות אאוטלט. | מותג אופנה אמריקאי נשים, גברים וילדים",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=136",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -31574,7 +31547,7 @@
     {
         "club": "חבר שלי",
         "business_name": "ללין",
-        "discount": "חבר שלי | לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת.<br/>אין כפל הטבות לעובדים/בני משפחה<br/> | רשת מוצרי טיפוח הגוף, הפנים ולייפסטייל<br/><br/>",
+        "discount": "חבר שלי | לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת. אין כפל הטבות לעובדים/בני משפחה | רשת מוצרי טיפוח הגוף, הפנים ולייפסטייל",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,269962",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -31601,7 +31574,7 @@
     {
         "club": "חבר שלי",
         "business_name": "מדען נולד",
-        "discount": "חבר שלי | ניתן לשלם עד 1000 ₪ לעסקה באמצעות הכרטיס הנטען | מוצרים מדעיים המשלבים משחק ולמידה <br/>",
+        "discount": "חבר שלי | ניתן לשלם עד 1000 ₪ לעסקה באמצעות הכרטיס הנטען | מוצרים מדעיים המשלבים משחק ולמידה",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,303315",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -31610,7 +31583,7 @@
     {
         "club": "חבר שלי",
         "business_name": "מועדון הכותנה",
-        "discount": "חבר שלי | רכישה בכרטיס הנטען עד 1000 ₪<br/>מדיניות החזרות על פי תקנון החברה",
+        "discount": "חבר שלי | רכישה בכרטיס הנטען עד 1000 ₪ מדיניות החזרות על פי תקנון החברה",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,298978",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -31619,7 +31592,7 @@
     {
         "club": "חבר שלי",
         "business_name": "מוצצים",
-        "discount": "חבר שלי | הכרטיס מכובד כולל כפל מועדון חברי הרשת <br/>הכרטיס מכובד עד לסכום של 3,000 ₪ <br/>בעסקאות הגדולות מ-3000 ₪, יתרת התשלום תתבצע באמצעות כרטיס אשראי \"חבר\" <br/> | מוצרים אביזרים ביגוד ועוד לתינוקות ופעוטות",
+        "discount": "חבר שלי | הכרטיס מכובד כולל כפל מועדון חברי הרשת הכרטיס מכובד עד לסכום של 3,000 ₪ בעסקאות הגדולות מ-3000 ₪, יתרת התשלום תתבצע באמצעות כרטיס אשראי \"חבר\" | מוצרים אביזרים ביגוד ועוד לתינוקות ופעוטות",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,404998",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -31637,7 +31610,7 @@
     {
         "club": "חבר שלי",
         "business_name": "מייקל קורס",
-        "discount": "חבר שלי | לא תקף לעסקאות של חברי מועדון. לא כולל חנויות דיוטי פרי וחנויות אאוטלט. | אופנה, תיקים, נעליים, שעונים ואקססוריז של המעצב הידוע <br/>",
+        "discount": "חבר שלי | לא תקף לעסקאות של חברי מועדון. לא כולל חנויות דיוטי פרי וחנויות אאוטלט. | אופנה, תיקים, נעליים, שעונים ואקססוריז של המעצב הידוע",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=130",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -31646,7 +31619,7 @@
     {
         "club": "חבר שלי",
         "business_name": "מיננה",
-        "discount": "חבר שלי | לא ניתן לרכוש גיפט קארד לא כולל חנויות עודפים לא כולל הטבות חברי מועדון<br/>אין כפל הטבות לעובדים/בני משפחה<br/> | רשת מוצרי בוטיק לתינוקות<br/>לא ניתן לרכוש גיפט קארד",
+        "discount": "חבר שלי | לא ניתן לרכוש גיפט קארד לא כולל חנויות עודפים לא כולל הטבות חברי מועדון אין כפל הטבות לעובדים/בני משפחה | רשת מוצרי בוטיק לתינוקות לא ניתן לרכוש גיפט קארד",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item,360660",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -31664,7 +31637,7 @@
     {
         "club": "חבר שלי",
         "business_name": "מכלול",
-        "discount": "חבר שלי | עד 1000 ₪ לעסקה אחת לא כולל מיכון מיחשוב נייח או נייד מוצרי אלקטרוניקה ספרי לימוד וסלולר | רשת כלי כתיבה וציוד משרדי והיקפי, מכשירי חשמל וצעצועים<br/>",
+        "discount": "חבר שלי | עד 1000 ₪ לעסקה אחת לא כולל מיכון מיחשוב נייח או נייד מוצרי אלקטרוניקה ספרי לימוד וסלולר | רשת כלי כתיבה וציוד משרדי והיקפי, מכשירי חשמל וצעצועים",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,280363",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -31700,7 +31673,7 @@
     {
         "club": "חבר שלי",
         "business_name": "נאטורפיל",
-        "discount": "חבר שלי | עד 1000 ₪  לעסקה | רשת אסתטיקה והסרת שיער בלייזר",
+        "discount": "חבר שלי | עד 1000 ₪ לעסקה | רשת אסתטיקה והסרת שיער בלייזר",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=451",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -31709,7 +31682,7 @@
     {
         "club": "חבר שלי",
         "business_name": "נטוצ'י",
-        "discount": "חבר שלי | לא תקף לרכישה בחנויות עודפים<br/>ניתן לרכוש עד 1000 ₪ עם כרטיס הנטען והיתרה ב-5% הנחה בכרטיס אשראי \"חבר\" | אתר המציע פתרונות לעיצוב חללי הבית <br/>",
+        "discount": "חבר שלי | לא תקף לרכישה בחנויות עודפים ניתן לרכוש עד 1000 ₪ עם כרטיס הנטען והיתרה ב-5% הנחה בכרטיס אשראי \"חבר\" | אתר המציע פתרונות לעיצוב חללי הבית",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,329329",
         "discount_type": "rechargeable_card",
         "discount_value": 5.0,
@@ -31736,7 +31709,7 @@
     {
         "club": "חבר שלי",
         "business_name": "נעלי נמרוד",
-        "discount": "חבר שלי | כולל כפל מבצעי מועדון<br/>לא כולל מותגי אדידס, שורש ובלנדסטון<br/>לא כולל צבירה, ומימוש של נקודות<br/>לא כולל מימוש הטבות ימי הולדת והצטרפות | רשת הנעלה לילדים",
+        "discount": "חבר שלי | כולל כפל מבצעי מועדון לא כולל מותגי אדידס, שורש ובלנדסטון לא כולל צבירה, ומימוש של נקודות לא כולל מימוש הטבות ימי הולדת והצטרפות | רשת הנעלה לילדים",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,370744",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -31754,7 +31727,7 @@
     {
         "club": "חבר שלי",
         "business_name": "סאטו",
-        "discount": "חבר שלי | עד 1000 שח לעסקה | ניקוי גרילי גז ומטבחי חוץ<br/>",
+        "discount": "חבר שלי | עד 1000 שח לעסקה | ניקוי גרילי גז ומטבחי חוץ",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,307437",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -31781,7 +31754,7 @@
     {
         "club": "חבר שלי",
         "business_name": "סוהו",
-        "discount": "חבר שלי | לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת. ניתן לשלם בכרטיס הנטען עד 1000 ₪ | רשת מוצרים לעיצוב לבית ולמטבח, תיקים, גאדג'טים ועוד<br/>",
+        "discount": "חבר שלי | לא כולל הנחת מועדון ומבצעים בלעדיים לחברי מועדון של הרשת. ניתן לשלם בכרטיס הנטען עד 1000 ₪ | רשת מוצרים לעיצוב לבית ולמטבח, תיקים, גאדג'טים ועוד",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=127",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -31799,7 +31772,7 @@
     {
         "club": "חבר שלי",
         "business_name": "סטודיו AYO",
-        "discount": "חבר שלי | ניתן לשלם בכרטיס הנטען עד 1000 ₪ | אתר המציע אקססוריז מעוצבים לבית<br/>",
+        "discount": "חבר שלי | ניתן לשלם בכרטיס הנטען עד 1000 ₪ | אתר המציע אקססוריז מעוצבים לבית",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=634",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -31808,7 +31781,7 @@
     {
         "club": "חבר שלי",
         "business_name": "סטודיו נורמן",
-        "discount": "חבר שלי | עד 1000 שח לעסקה | הדפסה בהתאמה אישית על חומרים שונים ומתנות <br/>",
+        "discount": "חבר שלי | עד 1000 שח לעסקה | הדפסה בהתאמה אישית על חומרים שונים ומתנות",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,311420",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -31817,7 +31790,7 @@
     {
         "club": "חבר שלי",
         "business_name": "סטימצקי",
-        "discount": "חבר שלי | הכרטיס תקף לרכישת ספרים ומוצרים בחנויות סטימצקי לרבות מוצרים במבצעים והנחות למעט: ספרי לימוד מוצרים אלקטרוניים ודיגיטליים עיתונים ומגזינים ורכישת כרטיסי מתנה.<br/>לא תקף בחנויות נתב\"ג | רמון| ירידים ואתר האינטרנט.  <br/> | רשת ספרים, משחקים, צעצועים ופנאי, מוזיקה ועוד",
+        "discount": "חבר שלי | הכרטיס תקף לרכישת ספרים ומוצרים בחנויות סטימצקי לרבות מוצרים במבצעים והנחות למעט: ספרי לימוד מוצרים אלקטרוניים ודיגיטליים עיתונים ומגזינים ורכישת כרטיסי מתנה. לא תקף בחנויות נתב\"ג | רמון| ירידים ואתר האינטרנט. | רשת ספרים, משחקים, צעצועים ופנאי, מוזיקה ועוד",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=26",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -31826,7 +31799,7 @@
     {
         "club": "חבר שלי",
         "business_name": "סנו",
-        "discount": "חבר שלי | עד 1000 ₪ לעסקה בכרטיס הנטען | אתר מוצרי ניקוי וטיפוח הבית ופארם לכל המשפחה<br/>",
+        "discount": "חבר שלי | עד 1000 ₪ לעסקה בכרטיס הנטען | אתר מוצרי ניקוי וטיפוח הבית ופארם לכל המשפחה",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,299304",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -31844,7 +31817,7 @@
     {
         "club": "חבר שלי",
         "business_name": "סקאב ישראל",
-        "discount": "חבר שלי | למימוש עד 1000 ש\"ח לעסקה<br/>לא כולל: עודפים,תצוגות, פגומים וסוגי ב' | אתר ריהוט גן וגרילי גז<br/>",
+        "discount": "חבר שלי | למימוש עד 1000 ש\"ח לעסקה לא כולל: עודפים,תצוגות, פגומים וסוגי ב' | אתר ריהוט גן וגרילי גז",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,266621",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -31853,7 +31826,7 @@
     {
         "club": "חבר שלי",
         "business_name": "עגליס",
-        "discount": "חבר שלי | ניתן לרכוש בנטען עד 3000 ₪ לעסקה | רשת מוצרי תינוקות, עגלות, חבילות לידה, מושבי בטיחות ועוד<br/>",
+        "discount": "חבר שלי | ניתן לרכוש בנטען עד 3000 ₪ לעסקה | רשת מוצרי תינוקות, עגלות, חבילות לידה, מושבי בטיחות ועוד",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,329657",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -31862,7 +31835,7 @@
     {
         "club": "חבר שלי",
         "business_name": "עדה לזורגן",
-        "discount": "חבר שלי | תקף לרכישת מוצרים בלבד<br/>אין כפל הטבות לעובדים/בני משפחה | אתר מוצרי טיפוח ואיפור מקצועי של המאפרת הישראלית",
+        "discount": "חבר שלי | תקף לרכישת מוצרים בלבד אין כפל הטבות לעובדים/בני משפחה | אתר מוצרי טיפוח ואיפור מקצועי של המאפרת הישראלית",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=242",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -31871,7 +31844,7 @@
     {
         "club": "חבר שלי",
         "business_name": "עוז קרמיקה",
-        "discount": "חבר שלי | עד 1000 ₪  לעסקה | רשת קרמיקה המציעה מוצרי ריצוף, חיפוי וכלים סניטריים טרנדיים <br/>",
+        "discount": "חבר שלי | עד 1000 ₪ לעסקה | רשת קרמיקה המציעה מוצרי ריצוף, חיפוי וכלים סניטריים טרנדיים",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,275394",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -31898,7 +31871,7 @@
     {
         "club": "חבר שלי",
         "business_name": "פול אנד שארק",
-        "discount": "חבר שלי | לא תקף לעסקאות של חברי מועדון. לא כולל חנויות דיוטי פרי וחנויות אאוטלט. | מותג איטלקי לגברים המתמחה בבגדי ספורט ופנאי ושואב השראה מעולם הים והיאכטות<br/>",
+        "discount": "חבר שלי | לא תקף לעסקאות של חברי מועדון. לא כולל חנויות דיוטי פרי וחנויות אאוטלט. | מותג איטלקי לגברים המתמחה בבגדי ספורט ופנאי ושואב השראה מעולם הים והיאכטות",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=129",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -31907,7 +31880,7 @@
     {
         "club": "חבר שלי",
         "business_name": "פולגת",
-        "discount": "חבר שלי | אופנת גברים מחוייטת לצד פריטי קזו'אל מוקפדים<br/>",
+        "discount": "חבר שלי | אופנת גברים מחוייטת לצד פריטי קזו'אל מוקפדים",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=22",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -31916,7 +31889,7 @@
     {
         "club": "חבר שלי",
         "business_name": "פולו ראלף לורן",
-        "discount": "חבר שלי | לא תקף לעסקאות של חברי מועדון. לא כולל חנויות דיוטי פרי וחנויות אאוטלט. | מותג אופנה ולייף-סטייל המציע פריטי לבוש ואקססוריז של המעצב ראלף לורן<br/>",
+        "discount": "חבר שלי | לא תקף לעסקאות של חברי מועדון. לא כולל חנויות דיוטי פרי וחנויות אאוטלט. | מותג אופנה ולייף-סטייל המציע פריטי לבוש ואקססוריז של המעצב ראלף לורן",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=674",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -31934,7 +31907,7 @@
     {
         "club": "חבר שלי",
         "business_name": "פיטנגו אקדמי",
-        "discount": "חבר שלי | ניתן לרכוש עד 1000 ₪ עם כרטיס הנטען והיתרה ב-7% הנחה בכרטיס אשראי \"חבר\"<br/> | בית ספר ללימודי תעודה והכשרה לעולמות ההייטק<br/>",
+        "discount": "חבר שלי | ניתן לרכוש עד 1000 ₪ עם כרטיס הנטען והיתרה ב-7% הנחה בכרטיס אשראי \"חבר\" | בית ספר ללימודי תעודה והכשרה לעולמות ההייטק",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,331786",
         "discount_type": "rechargeable_card",
         "discount_value": 7.0,
@@ -31943,7 +31916,7 @@
     {
         "club": "חבר שלי",
         "business_name": "פלורה בלום",
-        "discount": "חבר שלי | ניתן לשלם עד 1000 ₪ לעסקה עם הכרטיס הנטען | פרחים, יין ושוקולד במשלוח<br/>",
+        "discount": "חבר שלי | ניתן לשלם עד 1000 ₪ לעסקה עם הכרטיס הנטען | פרחים, יין ושוקולד במשלוח",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,294256",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -31952,7 +31925,7 @@
     {
         "club": "חבר שלי",
         "business_name": "פמינה",
-        "discount": "חבר שלי | אין מגבלות בשימוש בכרטיס | רשת הלבשה תחתונה לנשים <br/>",
+        "discount": "חבר שלי | אין מגבלות בשימוש בכרטיס | רשת הלבשה תחתונה לנשים",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,335776",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -31970,7 +31943,7 @@
     {
         "club": "חבר שלי",
         "business_name": "פקטורי 54",
-        "discount": "חבר שלי | לא תקף לעסקאות של חברי מועדון. לא כולל חנויות אאוטלט. לא כולל המותג לולולמון<br/>לא כולל מבצעים והטבות, קרי ללא כפל הנחות, לא כולל המותג סקימס בנוסף ל לולולמון | רשת מותגי על לאופנה, הנעלה ואקססוריז לנשים, גברים וילדים",
+        "discount": "חבר שלי | לא תקף לעסקאות של חברי מועדון. לא כולל חנויות אאוטלט. לא כולל המותג לולולמון לא כולל מבצעים והטבות, קרי ללא כפל הנחות, לא כולל המותג סקימס בנוסף ל לולולמון | רשת מותגי על לאופנה, הנעלה ואקססוריז לנשים, גברים וילדים",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,304984",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -31979,7 +31952,7 @@
     {
         "club": "חבר שלי",
         "business_name": "פרד פרי",
-        "discount": "חבר שלי | לא תקף לעסקאות של חברי מועדון. לא כולל חנויות דיוטי פרי וחנויות אאוטלט. | ביגוד, הנעלה ואקססוריז לגברים במראה נקי מעולם הטניס <br/>",
+        "discount": "חבר שלי | לא תקף לעסקאות של חברי מועדון. לא כולל חנויות דיוטי פרי וחנויות אאוטלט. | ביגוד, הנעלה ואקססוריז לגברים במראה נקי מעולם הטניס",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=131",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -31988,7 +31961,7 @@
     {
         "club": "חבר שלי",
         "business_name": "פריחת הסחלב",
-        "discount": "חבר שלי | פרחים ושוקולד במשלוח <br/>",
+        "discount": "חבר שלי | פרחים ושוקולד במשלוח",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,277574",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -32006,7 +31979,7 @@
     {
         "club": "חבר שלי",
         "business_name": "פריקרס",
-        "discount": "חבר שלי | עד 1000 ₪ לעסקה | נעלי סניקרס מעוצבות של מוצגים מובילים<br/>",
+        "discount": "חבר שלי | עד 1000 ₪ לעסקה | נעלי סניקרס מעוצבות של מוצגים מובילים",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=585",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -32024,7 +31997,7 @@
     {
         "club": "חבר שלי",
         "business_name": "צ׳ילדרנס פלייס",
-        "discount": "חבר שלי | אין כפל הטבות לעובדים/בני משפחה<br/> | רשת המציעה פרטי אופנה, אביזרים ונעליים לתינוקות וילדים עד גיל 14<br/>אין כפל הטבות לעובדים/בני משפחה<br/>",
+        "discount": "חבר שלי | אין כפל הטבות לעובדים/בני משפחה | רשת המציעה פרטי אופנה, אביזרים ונעליים לתינוקות וילדים עד גיל 14 אין כפל הטבות לעובדים/בני משפחה",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=73",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -32033,7 +32006,7 @@
     {
         "club": "חבר שלי",
         "business_name": "צומת ספרים",
-        "discount": "חבר שלי | תקף על ספרים בעברית ובלועזית בלבד. לא ניתן לרכוש באמצעות הכרטיס ספרי לימוד|עיתונים|אנציקלופדיות|תוי שי|DVD. לא כולל מבצעי מועדון | רשת ספרים, משחקים ופנאי, פאזלים, הגדות לפסח ועוד<br/>",
+        "discount": "חבר שלי | תקף על ספרים בעברית ובלועזית בלבד. לא ניתן לרכוש באמצעות הכרטיס ספרי לימוד|עיתונים|אנציקלופדיות|תוי שי|DVD. לא כולל מבצעי מועדון | רשת ספרים, משחקים ופנאי, פאזלים, הגדות לפסח ועוד",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,272203",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -32051,7 +32024,7 @@
     {
         "club": "חבר שלי",
         "business_name": "צמר שטיחים יפים",
-        "discount": "חבר שלי | עד 1000 ₪ לעסקה | שטיחים לכל חדרי הבית<br/>",
+        "discount": "חבר שלי | עד 1000 ₪ לעסקה | שטיחים לכל חדרי הבית",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,331771",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -32078,7 +32051,7 @@
     {
         "club": "חבר שלי",
         "business_name": "קוביס",
-        "discount": "חבר שלי | עד 1,000 ₪  לעסקה, לא כולל מסכים עד 43 אינץ, מזגנים עד 1.25 כוח סוס (כולל), לא כולל סלולר וטכנולוגיה<br/> | רשת חנויות למוצרי חשמל",
+        "discount": "חבר שלי | עד 1,000 ₪ לעסקה, לא כולל מסכים עד 43 אינץ, מזגנים עד 1.25 כוח סוס (כולל), לא כולל סלולר וטכנולוגיה | רשת חנויות למוצרי חשמל",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,354737",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -32087,7 +32060,7 @@
     {
         "club": "חבר שלי",
         "business_name": "קולומביה",
-        "discount": "חבר שלי | לא ניתן להשתמש בחנויות עודפים. | רשת ביגוד, הנעלה ואקססוריז לספורט, שטח, טיולים ופנאי<br/>",
+        "discount": "חבר שלי | לא ניתן להשתמש בחנויות עודפים. | רשת ביגוד, הנעלה ואקססוריז לספורט, שטח, טיולים ופנאי",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,405591",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -32105,7 +32078,7 @@
     {
         "club": "חבר שלי",
         "business_name": "קלווין קליין",
-        "discount": "חבר שלי | לא תקף לעסקאות של חברי מועדון. לא כולל חנויות דיוטי פרי וחנויות אאוטלט. | אופנת נשים וגברים, בגדי ים, תיקים והנעלה<br/>",
+        "discount": "חבר שלי | לא תקף לעסקאות של חברי מועדון. לא כולל חנויות דיוטי פרי וחנויות אאוטלט. | אופנת נשים וגברים, בגדי ים, תיקים והנעלה",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=132",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -32114,7 +32087,7 @@
     {
         "club": "חבר שלי",
         "business_name": "קרביץ",
-        "discount": "חבר שלי | עד 1,000 ש\"ח לעסקה בתשלום עם כרטיס הנטען<br/>כולל כפל מבצעים והנחות<br/>לא ניתן לשלם בעסקה אחת עם עוד שובר ממועדוני לקוחות.<br/>לא כולל מבצעי מתנה<br/>לא כולל מוצרים שעובר דרכם זרם חשמלי, ראשי דיו, דיסק און קי ומוצרי טכנולוגיה | הרשת המובילה בישראל לציוד לימודי, הובי, פנאי, משחקים ויצירה",
+        "discount": "חבר שלי | עד 1,000 ש\"ח לעסקה בתשלום עם כרטיס הנטען כולל כפל מבצעים והנחות לא ניתן לשלם בעסקה אחת עם עוד שובר ממועדוני לקוחות. לא כולל מבצעי מתנה לא כולל מוצרים שעובר דרכם זרם חשמלי, ראשי דיו, דיסק און קי ומוצרי טכנולוגיה | הרשת המובילה בישראל לציוד לימודי, הובי, פנאי, משחקים ויצירה",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,385963",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -32132,7 +32105,7 @@
     {
         "club": "חבר שלי",
         "business_name": "רהיטי קיסר",
-        "discount": "חבר שלי | למימוש עד 1000 ₪ לעסקה | ריהוט בעיצוב ארגונומי ואורטופדי למשרד ולבית<br/>",
+        "discount": "חבר שלי | למימוש עד 1000 ₪ לעסקה | ריהוט בעיצוב ארגונומי ואורטופדי למשרד ולבית",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,270866",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -32186,7 +32159,7 @@
     {
         "club": "חבר שלי",
         "business_name": "ריקושט",
-        "discount": "חבר שלי | לא ניתן להשתמש בחנויות עודפים. לא כולל כפל חברי מועדון הרשת, לא כולל סניפי זכיינים<br/>לא כולל תשלום עבור תיקונים מכל סוג | רשת ציוד תרמילאות, נסיעות ומוצרים לחיילים",
+        "discount": "חבר שלי | לא ניתן להשתמש בחנויות עודפים. לא כולל כפל חברי מועדון הרשת, לא כולל סניפי זכיינים לא כולל תשלום עבור תיקונים מכל סוג | רשת ציוד תרמילאות, נסיעות ומוצרים לחיילים",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,267653",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -32213,7 +32186,7 @@
     {
         "club": "חבר שלי",
         "business_name": "שילב",
-        "discount": "חבר שלי | לא כולל מבצעים והטבות לחברי מועדון. לא ניתן להשתמש לרכישת כרטיס מתנה (גיפט קארד שילב).<br/>אין כפל הטבות לעובדים/בני משפחה | רשת מוצרים, ביגוד ואביזרים לתינוקות<br/>",
+        "discount": "חבר שלי | לא כולל מבצעים והטבות לחברי מועדון. לא ניתן להשתמש לרכישת כרטיס מתנה (גיפט קארד שילב). אין כפל הטבות לעובדים/בני משפחה | רשת מוצרים, ביגוד ואביזרים לתינוקות",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item,272214",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -32222,7 +32195,7 @@
     {
         "club": "חבר שלי",
         "business_name": "שקם אלקטריק",
-        "discount": "חבר שלי | לא כולל מוצרי: מחשוב סלולר מצלמות ואוזניות, כמו כן לא כולל מסכים עד 43 אינץ ומזגנים עד 1.25 כוח סוס כולל. לא כולל ממונעים, סלולר וטכנולוגיה | רשת מוצרי חשמל <br/>",
+        "discount": "חבר שלי | לא כולל מוצרי: מחשוב סלולר מצלמות ואוזניות, כמו כן לא כולל מסכים עד 43 אינץ ומזגנים עד 1.25 כוח סוס כולל. לא כולל ממונעים, סלולר וטכנולוגיה | רשת מוצרי חשמל",
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=42",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -32258,7 +32231,7 @@
     {
         "club": "חבר שלי",
         "business_name": "תמי4 ברי מים",
-        "discount": "חבר שלי | ניתן לשלם 1,000 ₪ בכרטיס נטען והיתרה ב-5% הנחה במעמד חיוב כרטיס האשראי \"חבר\". הזמנות טלפוניות בלבד הכרטיס מכובד בהזמנות ברי מים חדשים ושדרוגים. לא כולל הסכמי שירות <br/><br/> | ברי המים עם מערכות לטיהור וסינון מים<br/>",
+        "discount": "חבר שלי | ניתן לשלם 1,000 ₪ בכרטיס נטען והיתרה ב-5% הנחה במעמד חיוב כרטיס האשראי \"חבר\". הזמנות טלפוניות בלבד הכרטיס מכובד בהזמנות ברי מים חדשים ושדרוגים. לא כולל הסכמי שירות | ברי המים עם מערכות לטיהור וסינון מים",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,325304",
         "discount_type": "rechargeable_card",
         "discount_value": 5.0,
@@ -32267,7 +32240,7 @@
     {
         "club": "חבר שלי",
         "business_name": "תפילין חברון",
-        "discount": "חבר שלי | עד 1000 שח בכרטיס הנטען | אתר המציעל תפילין ובתי תפילין בגימור מוקפד ובמיטב ההידורים<br/>",
+        "discount": "חבר שלי | עד 1000 שח בכרטיס הנטען | אתר המציעל תפילין ובתי תפילין בגימור מוקפד ובמיטב ההידורים",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,305702",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -32654,7 +32627,7 @@
     {
         "club": "חבר טעמים",
         "business_name": "Siesata",
-        "discount": "חבר טעמים | בישיבה בלבד<br/>לא כולל Take?away<br/> | בית קפה",
+        "discount": "חבר טעמים | בישיבה בלבד לא כולל Take?away | בית קפה",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -32825,7 +32798,7 @@
     {
         "club": "חבר טעמים",
         "business_name": "שטרודל",
-        "discount": "חבר טעמים | מסעדה ים  תיכוני",
+        "discount": "חבר טעמים | מסעדה ים תיכוני",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -33203,7 +33176,7 @@
     {
         "club": "חבר טעמים",
         "business_name": "NORI",
-        "discount": "חבר טעמים | סושי בר  - לא כולל HAPPY HOUR",
+        "discount": "חבר טעמים | סושי בר - לא כולל HAPPY HOUR",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -33959,7 +33932,7 @@
     {
         "club": "חבר טעמים",
         "business_name": "קפה זליק",
-        "discount": "חבר טעמים | בית קפה  מסעדה",
+        "discount": "חבר טעמים | בית קפה מסעדה",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -34859,7 +34832,7 @@
     {
         "club": "חבר טעמים",
         "business_name": "ביגה",
-        "discount": "חבר טעמים | בית קפה  מסעדה חלבית - מכובד בישיבה במסעדה בלבד",
+        "discount": "חבר טעמים | בית קפה מסעדה חלבית - מכובד בישיבה במסעדה בלבד",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,325697",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -35480,7 +35453,7 @@
     {
         "club": "חבר טעמים",
         "business_name": "moon",
-        "discount": "חבר טעמים | מסעדה  סושי יפנית",
+        "discount": "חבר טעמים | מסעדה סושי יפנית",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,266444",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -35795,7 +35768,7 @@
     {
         "club": "חבר טעמים",
         "business_name": "ביגה",
-        "discount": "חבר טעמים | בית קפה  מסעדה חלבית",
+        "discount": "חבר טעמים | בית קפה מסעדה חלבית",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,325697",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -36092,7 +36065,7 @@
     {
         "club": "חבר טעמים",
         "business_name": "גריל 443",
-        "discount": "חבר טעמים | מכבדים את הכרטיס בישיבה בלבד<br/>לא כולל TA<br/>לא כולל אירועים | מסעדת בשרים",
+        "discount": "חבר טעמים | מכבדים את הכרטיס בישיבה בלבד לא כולל TA לא כולל אירועים | מסעדת בשרים",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -36265,15 +36238,6 @@
         "business_name": "CHI CHI",
         "discount": "חבר טעמים | מרפסת בר",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,383052",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-    },
-    {
-        "club": "חבר טעמים",
-        "business_name": "ביגה",
-        "discount": "חבר טעמים | בית קפה מסעדה חלבית",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,325697",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -36605,7 +36569,7 @@
     {
         "club": "חבר טעמים",
         "business_name": "פיטמאסטר",
-        "discount": "חבר טעמים | הזמנת שולחן מראש בלבד באתר<br/> | מסעדת בשרים",
+        "discount": "חבר טעמים | הזמנת שולחן מראש בלבד באתר | מסעדת בשרים",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,387121",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -36740,7 +36704,7 @@
     {
         "club": "חבר טעמים",
         "business_name": "פיצה פאי",
-        "discount": "חבר טעמים | המסעדה מכבדת את הכרטיס הנטען בישיבה בלבד<br/> | פיצה בעבודת יד",
+        "discount": "חבר טעמים | המסעדה מכבדת את הכרטיס הנטען בישיבה בלבד | פיצה בעבודת יד",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,390828",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -36776,7 +36740,7 @@
     {
         "club": "חבר טעמים",
         "business_name": "אהרוני'ס",
-        "discount": "חבר טעמים | בית העסק מכבד את הכרטיס הנטען בישיבה במסעדה.<br/> | סטריט פוד משובח",
+        "discount": "חבר טעמים | בית העסק מכבד את הכרטיס הנטען בישיבה במסעדה. | סטריט פוד משובח",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,392084",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -36802,26 +36766,8 @@
     },
     {
         "club": "חבר טעמים",
-        "business_name": "סלון יווני",
-        "discount": "חבר טעמים | בית העסק מכבד את הכרטיס הנטען בישיבה במסעדה<br/> | מסעדה יוונית טברנה",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,392587",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-    },
-    {
-        "club": "חבר טעמים",
         "business_name": "Stella",
         "discount": "חבר טעמים | הרשת מכבדת את הכרטיסים בסניפים בלבד | רשת בתי קפה",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,393966",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-    },
-    {
-        "club": "חבר טעמים",
-        "business_name": "Stella",
-        "discount": "חבר טעמים | הרשת מכבדת את הכרטיסים בסניפים בלבד<br/> | רשת בתי קפה",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,393966",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -36902,7 +36848,7 @@
     {
         "club": "חבר טעמים",
         "business_name": "סוזנה",
-        "discount": "חבר טעמים | ביסטרו  בר מסעדה בשרית",
+        "discount": "חבר טעמים | ביסטרו בר מסעדה בשרית",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -36938,7 +36884,7 @@
     {
         "club": "חבר טעמים",
         "business_name": "פאגו Fish&Grill",
-        "discount": "חבר טעמים | מסעדת שף דגים,  בשרים",
+        "discount": "חבר טעמים | מסעדת שף דגים, בשרים",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,398677",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -37406,7 +37352,7 @@
     {
         "club": "חבר טעמים",
         "business_name": "הוט סינמה - קריית ביאליק",
-        "discount": "חבר טעמים | הכרטיס יכובד בדוכנים בלבד ולא ברכישת כרטיסי קולנוע<br/> | דוכני מזון בהוט סינמה",
+        "discount": "חבר טעמים | הכרטיס יכובד בדוכנים בלבד ולא ברכישת כרטיסי קולנוע | דוכני מזון בהוט סינמה",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -37424,7 +37370,7 @@
     {
         "club": "חבר טעמים",
         "business_name": "הוט סינמה - קניון עופר רחובות",
-        "discount": "חבר טעמים | הכרטיס יכובד בדוכנים בלבד ולא ברכישת כרטיסי קולנוע<br/><br/> | דוכני מזון בהוט סינמה",
+        "discount": "חבר טעמים | הכרטיס יכובד בדוכנים בלבד ולא ברכישת כרטיסי קולנוע | דוכני מזון בהוט סינמה",
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -37487,7 +37433,7 @@
     {
         "club": "חבר טעמים",
         "business_name": "מסעדת NINNYO",
-        "discount": "חבר טעמים | מסעדת שף  איטלקית",
+        "discount": "חבר טעמים | מסעדת שף איטלקית",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,410769",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -37543,15 +37489,6 @@
         "business_name": "צ'יקן פיק",
         "discount": "חבר טעמים | מסעדת מזון מהיר",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,413526",
-        "discount_type": "rechargeable_card",
-        "discount_value": 30,
-        "has_physical_store": true
-    },
-    {
-        "club": "חבר טעמים",
-        "business_name": "טרנזיט",
-        "discount": "חבר טעמים | לא כולל Happy hour<br/> | מסעדה אסייתית, מוקפצים, סושי",
-        "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,380034",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
         "has_physical_store": true
@@ -37640,7 +37577,7 @@
     {
         "club": "חבר טעמים",
         "business_name": "חומוס אליהו",
-        "discount": "חבר טעמים | חומוס אליהו, מסעדה מזרחית, חומוס<br/> | חומוס, פלאפל, סלט ירקות",
+        "discount": "חבר טעמים | חומוס אליהו, מסעדה מזרחית, חומוס | חומוס, פלאפל, סלט ירקות",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,366362",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -37694,7 +37631,7 @@
     {
         "club": "חבר טעמים",
         "business_name": "מסעדת הצוק",
-        "discount": "חבר טעמים | המסעדה מכבדת את הכרטיס הנטען בישיבה במקום <br/>מומלץ להזמין מקום מראש | מסעדת שף בשרית",
+        "discount": "חבר טעמים | המסעדה מכבדת את הכרטיס הנטען בישיבה במקום מומלץ להזמין מקום מראש | מסעדת שף בשרית",
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,417517",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
@@ -39566,7 +39503,7 @@
     {
         "club": "Giftcard Food",
         "business_name": "וולט - Wolt",
-        "discount": "Giftcard Food |  gift_card",
+        "discount": "Giftcard Food | gift_card",
         "discount_url": "https://www.max.co.il/cards/magazine/mimush-gc-wolt",
         "discount_type": "gift_card",
         "discount_value": 0.0,
@@ -39575,7 +39512,7 @@
     {
         "club": "Giftcard Food",
         "business_name": "חצי חינם - hetzi hinam",
-        "discount": "Giftcard Food |  gift_card",
+        "discount": "Giftcard Food | gift_card",
         "discount_url": "https://www.max.co.il/gift-card-network",
         "discount_type": "gift_card",
         "discount_value": 0.0,
@@ -39584,7 +39521,7 @@
     {
         "club": "Giftcard Food",
         "business_name": "טיב טעם - Tiv Taam",
-        "discount": "Giftcard Food |  gift_card",
+        "discount": "Giftcard Food | gift_card",
         "discount_url": "https://www.max.co.il/gift-card-network",
         "discount_type": "gift_card",
         "discount_value": 0.0,
@@ -39593,7 +39530,7 @@
     {
         "club": "Giftcard Food",
         "business_name": "קשת טעמים - keshet teamim",
-        "discount": "Giftcard Food |  gift_card",
+        "discount": "Giftcard Food | gift_card",
         "discount_url": "https://www.max.co.il/gift-card-network",
         "discount_type": "gift_card",
         "discount_value": 0.0,
@@ -39602,7 +39539,7 @@
     {
         "club": "Giftcard Food",
         "business_name": "נוי השדה - Noy Hasadeh",
-        "discount": "Giftcard Food |  gift_card",
+        "discount": "Giftcard Food | gift_card",
         "discount_url": "https://www.max.co.il/gift-card-network",
         "discount_type": "gift_card",
         "discount_value": 0.0,
@@ -39611,7 +39548,7 @@
     {
         "club": "Giftcard Food",
         "business_name": "סופר יודה - Super Yuda",
-        "discount": "Giftcard Food |  gift_card",
+        "discount": "Giftcard Food | gift_card",
         "discount_url": "https://www.max.co.il/gift-card-network",
         "discount_type": "gift_card",
         "discount_value": 0.0,
@@ -39620,7 +39557,7 @@
     {
         "club": "Giftcard Food",
         "business_name": "שוק העיר - Shuk HaIr",
-        "discount": "Giftcard Food |  gift_card",
+        "discount": "Giftcard Food | gift_card",
         "discount_url": "https://www.max.co.il/gift-card-network",
         "discount_type": "gift_card",
         "discount_value": 0.0,
@@ -39629,7 +39566,7 @@
     {
         "club": "Giftcard Food",
         "business_name": "ברגר קינג - Burger King",
-        "discount": "Giftcard Food |  gift_card",
+        "discount": "Giftcard Food | gift_card",
         "discount_url": "https://www.max.co.il/gift-card-network",
         "discount_type": "gift_card",
         "discount_value": 0.0,
@@ -39638,7 +39575,7 @@
     {
         "club": "Giftcard Food",
         "business_name": "פרשמרקט - freshmarket",
-        "discount": "Giftcard Food |  gift_card",
+        "discount": "Giftcard Food | gift_card",
         "discount_url": "https://www.max.co.il/gift-card-network",
         "discount_type": "gift_card",
         "discount_value": 0.0,
@@ -39647,7 +39584,7 @@
     {
         "club": "Giftcard Food",
         "business_name": "סופר דוש - Super Dush",
-        "discount": "Giftcard Food |  gift_card",
+        "discount": "Giftcard Food | gift_card",
         "discount_url": "https://www.max.co.il/gift-card-network",
         "discount_type": "gift_card",
         "discount_value": 0.0,
@@ -39656,7 +39593,7 @@
     {
         "club": "Giftcard Food",
         "business_name": "מחסני להב - Lahav Warehouses",
-        "discount": "Giftcard Food |  gift_card",
+        "discount": "Giftcard Food | gift_card",
         "discount_url": "https://www.max.co.il/gift-card-network",
         "discount_type": "gift_card",
         "discount_value": 0.0,
@@ -39665,7 +39602,7 @@
     {
         "club": "Giftcard Food",
         "business_name": "מחסני מזון - Mahsanei Mazon",
-        "discount": "Giftcard Food |  gift_card",
+        "discount": "Giftcard Food | gift_card",
         "discount_url": "https://www.max.co.il/gift-card-network",
         "discount_type": "gift_card",
         "discount_value": 0.0,
@@ -39674,7 +39611,7 @@
     {
         "club": "Giftcard Food",
         "business_name": "היפר דודו - hiper dudu",
-        "discount": "Giftcard Food |  gift_card",
+        "discount": "Giftcard Food | gift_card",
         "discount_url": "https://www.max.co.il/gift-card-network",
         "discount_type": "gift_card",
         "discount_value": 0.0,
@@ -39683,7 +39620,7 @@
     {
         "club": "Giftcard Food",
         "business_name": "טיפ טוב - TIP TOV",
-        "discount": "Giftcard Food |  gift_card",
+        "discount": "Giftcard Food | gift_card",
         "discount_url": "https://www.max.co.il/gift-card-network",
         "discount_type": "gift_card",
         "discount_value": 0.0,
@@ -39692,7 +39629,7 @@
     {
         "club": "Giftcard Food",
         "business_name": "סלון יווני - Greek Salon",
-        "discount": "Giftcard Food |  gift_card",
+        "discount": "Giftcard Food | gift_card",
         "discount_url": "https://www.max.co.il/gift-card-network",
         "discount_type": "gift_card",
         "discount_value": 0.0,
@@ -40350,7 +40287,7 @@
     {
         "club": "BUYME",
         "business_name": "קולומביה, שבילים ואווטסיידרס",
-        "discount": "כדי ליהנות מה-BUYME בבית העסק יש להציג את הקוד למימוש בקופה.",
+        "discount": "ניתן ליהנות מה-BUYME גם ברכישה אונליין ב אתר קולומביה ו גם בחנויות קולומביה, שבילים ואאוטסיידרס.",
         "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=%D7%A7%D7%95%D7%9C%D7%95%D7%9E%D7%91%D7%99%D7%94%2C+%D7%A9%D7%91%D7%99%D7%9C%D7%99%D7%9D+%D7%95%D7%90%D7%95%D7%95%D7%98%D7%A1%D7%99%D7%99%D7%93%D7%A8%D7%A1#",
         "discount_type": "voucher",
         "discount_value": null,
@@ -52900,7 +52837,8 @@
             "BUYME ALL - מגוון אדיר במתנה אחת",
             "BUYME BABY- מגוון מתנות לידה",
             "BUYME FOODY -מתנות קולינריות שוות",
-            "BUYME LOCAL – מתנות מקומיות"
+            "BUYME LOCAL – מתנות מקומיות",
+            "BUYME CHEERS - חוויות אלכוהליות"
         ],
         "has_physical_store": true
     },
@@ -58919,7 +58857,7 @@
     {
         "club": "BUYME",
         "business_name": "360 - עולם של חדשנות",
-        "discount": "למימוש יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים: 035237212.",
+        "discount": "למימוש בסניף יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים: 035237212.",
         "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=360+-+%D7%A2%D7%95%D7%9C%D7%9D+%D7%A9%D7%9C+%D7%97%D7%93%D7%A9%D7%A0%D7%95%D7%AA#",
         "discount_type": "voucher",
         "discount_value": null,
