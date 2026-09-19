@@ -13,7 +13,9 @@
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=6129",
         "discount_type": "billing_discount",
         "discount_value": 10.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -32,7 +34,9 @@
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5729",
         "discount_type": "billing_discount",
         "discount_value": 10.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -41,7 +45,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/60405/ORANGE-CLUB---אורנג'-קלאב",
         "discount_type": "billing_discount",
         "discount_value": 3.5,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -50,7 +56,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/18425/BERLINER-BABY-CLUB",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "HTzone",
@@ -59,7 +67,9 @@
         "discount_url": "https://www.htzone.co.il/benefit/610/Cottonclub/?sale_id=62",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "htzone",
+        "parent_program_id": null
       },
       {
         "club": "חבר שלי",
@@ -68,7 +78,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=355",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-sheli",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -77,7 +89,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,272600",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -86,7 +100,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,405503",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "GiftCard max",
@@ -95,7 +111,9 @@
         "discount_url": "https://www.max.co.il/gift-card-network",
         "discount_type": "rechargeable_card",
         "discount_value": 16.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "max-giftcard",
+        "parent_program_id": "max"
       },
       {
         "club": "BUYME",
@@ -110,7 +128,9 @@
           "BUYME HOME DESIGN - בית ואווירה",
           "BUYME LOCAL – מתנות מקומיות"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       },
       {
         "club": "BUYME",
@@ -124,7 +144,9 @@
           "BUYME BABY- מגוון מתנות לידה",
           "BUYME MOMENTS - מגוון חוויות"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       },
       {
         "club": "BUYME",
@@ -139,7 +161,9 @@
           "BUYME YNG - מתנה מושלמת לבני נוער",
           "BUYME MOMENTS - מגוון חוויות"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       },
       {
         "club": "BUYME",
@@ -153,7 +177,9 @@
           "BUYME VACATION & SPA- מלונות וספא",
           "BUYME LOCAL – מתנות מקומיות"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       },
       {
         "club": "BUYME",
@@ -168,7 +194,9 @@
           "BUYME HOME DESIGN - בית ואווירה",
           "BUYME LOCAL – מתנות מקומיות"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       },
       {
         "club": "BUYME",
@@ -183,7 +211,9 @@
           "BUYME LOCAL – מתנות מקומיות",
           "BUYME MOMENTS - מגוון חוויות"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       },
       {
         "club": "BUYME",
@@ -198,7 +228,9 @@
           "BUYME LOCAL – מתנות מקומיות",
           "BUYME CHEERS - חוויות אלכוהליות"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -217,7 +249,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       }
     ],
     "source": "docs/data/businesses"
@@ -263,7 +297,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=19",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-sheli",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר שלי",
@@ -272,7 +308,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=21",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-sheli",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר שלי",
@@ -281,7 +319,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=20",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-sheli",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -290,7 +330,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "GiftCard max",
@@ -299,7 +341,9 @@
         "discount_url": "https://www.max.co.il/gift-card-network",
         "discount_type": "rechargeable_card",
         "discount_value": 16.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "max-giftcard",
+        "parent_program_id": "max"
       },
       {
         "club": "GiftCard max",
@@ -308,7 +352,9 @@
         "discount_url": "https://www.max.co.il/gift-card-network",
         "discount_type": "rechargeable_card",
         "discount_value": 16.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "max-giftcard",
+        "parent_program_id": "max"
       },
       {
         "club": "GiftCard max",
@@ -317,7 +363,23 @@
         "discount_url": "https://www.max.co.il/gift-card-network",
         "discount_type": "rechargeable_card",
         "discount_value": 16.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "max-giftcard",
+        "parent_program_id": "max"
+      },
+      {
+        "club": "MAX",
+        "business_name": "כסף בחזרה ב-Golf Kids - גולף קידס",
+        "discount": "3% החזר כספי לכרטיס האשראי",
+        "discount_url": "https://www.max.co.il/benefits/paybacksites/paybackGolfKids",
+        "discount_type": "voucher",
+        "discount_value": 3.0,
+        "has_physical_store": true,
+        "branches": [],
+        "limitations": "*ברישום לשירות PayBack הנכם נרשמים לשירות הניתן על-ידי חברת קאשבק אונליין בע\"מ. *השירות מנוהל על ידיה ובאחריותה הבלעדית. *השירות ניתן לכל כרטיסי האשראי החוץ בנקאיים של max למעט כרטיסי Free, Debit, Cash Card ורכש ובתנאי שנרשמת לשירות. *כרטיסי בנק לאומי ופפר יהיו זכאים לקבלת החזר כספי עד 31.6.19 *סכום ההחזר הכספי בעסקת תשלומים יחושב לפי סכום העסקה המלא ולא לפי כל תשלום. סכום ההחזר יחושב מסכום העסקה לא כולל מסים, מע\"מ, אגרות, משלוח, מתנה, הנחות או זיכויים, החזרים או ביטולים, עמלות מט\"ח ואחריות מורחבת *לא ייצבר החזר כספי בגין עסקה שביטלת. * שימוש בקופונים שלא ניתנו במסגרת שירות זה עלולים למנוע קבלת החזר כספי * תוספים לדפדפן כגון חוסם פרסומות עלולים למנוע החזר * מומלץ למחוק cookies (עוגיות) לפני המעבר לאתר הקניות *max אינו צד לעסקה באתרי האינטרנט, והמוצרים/השירותים (לרבות מחיריהם, טיבם, איכותם, מועדי אספקתם, הרישום לשירות, המשלוח, התשלומים וההחזרים הכספיים וכיו\"ב) הם באחריותם הבלעדית של בתי העסק וחברת קאשבק אונליין בע\"מ. התמונות להמחשה בלבד. לתנאי השימוש המלאים . *בכפוף למדיניות ביטול הטבות ולתקנון הפינוקים ואתר ההטבות .",
+        "category": "כסף בחזרה על קניות אונליין",
+        "program_id": "max",
+        "parent_program_id": null
       },
       {
         "club": "BUYME",
@@ -332,7 +394,9 @@
           "BUYME VACATION & SPA- מלונות וספא",
           "BUYME LOCAL – מתנות מקומיות"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       },
       {
         "club": "BUYME",
@@ -345,7 +409,9 @@
           "BUYME ALL - מגוון אדיר במתנה אחת",
           "BUYME MOMENTS - מגוון חוויות"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -373,7 +439,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/17673/חנות-למוצרי-דלתא-אופנה-לכל-המשפחה",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -392,7 +460,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/45564/כובעי-פוקס",
         "discount_type": "billing_discount",
         "discount_value": 3.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "חבר שלי",
@@ -401,7 +471,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=10",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": false
+        "has_physical_store": false,
+        "program_id": "mcc-sheli",
+        "parent_program_id": "mcc"
       },
       {
         "club": "GiftCard max",
@@ -410,7 +482,9 @@
         "discount_url": "https://www.max.co.il/gift-card-network",
         "discount_type": "rechargeable_card",
         "discount_value": 16.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "max-giftcard",
+        "parent_program_id": "max"
       },
       {
         "club": "GiftCard max",
@@ -419,7 +493,9 @@
         "discount_url": "https://www.max.co.il/gift-card-network",
         "discount_type": "rechargeable_card",
         "discount_value": 16.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "max-giftcard",
+        "parent_program_id": "max"
       }
     ],
     "source": "docs/data/businesses"
@@ -438,7 +514,9 @@
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=4641",
         "discount_type": "billing_discount",
         "discount_value": 10.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc",
+        "parent_program_id": null
       },
       {
         "club": "חבר",
@@ -447,7 +525,9 @@
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5497",
         "discount_type": "billing_discount",
         "discount_value": 15.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc",
+        "parent_program_id": null
       },
       {
         "club": "חבר",
@@ -456,7 +536,9 @@
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5496",
         "discount_type": "billing_discount",
         "discount_value": 9.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc",
+        "parent_program_id": null
       },
       {
         "club": "חבר",
@@ -465,7 +547,9 @@
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=3030",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc",
+        "parent_program_id": null
       },
       {
         "club": "חבר",
@@ -474,7 +558,9 @@
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5594",
         "discount_type": "billing_discount",
         "discount_value": 10.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc",
+        "parent_program_id": null
       },
       {
         "club": "חבר",
@@ -483,7 +569,9 @@
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=6156",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc",
+        "parent_program_id": null
       },
       {
         "club": "חבר",
@@ -492,7 +580,9 @@
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5119",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc",
+        "parent_program_id": null
       },
       {
         "club": "חבר",
@@ -501,7 +591,9 @@
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5543",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc",
+        "parent_program_id": null
       },
       {
         "club": "חבר",
@@ -510,7 +602,9 @@
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=310",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc",
+        "parent_program_id": null
       },
       {
         "club": "חבר",
@@ -519,7 +613,9 @@
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5747",
         "discount_type": "billing_discount",
         "discount_value": 10.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc",
+        "parent_program_id": null
       },
       {
         "club": "חבר",
@@ -528,7 +624,9 @@
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5859",
         "discount_type": "billing_discount",
         "discount_value": 10.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc",
+        "parent_program_id": null
       },
       {
         "club": "חבר",
@@ -537,7 +635,9 @@
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5998",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -546,7 +646,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/57645/וניליה-רשת-גלידות-בוטיק---VANIGLIA",
         "discount_type": "billing_discount",
         "discount_value": 10.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -555,7 +657,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/47063/עגליס",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -564,7 +668,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/46134/איזיל-מחסני-גלידה",
         "discount_type": "billing_discount",
         "discount_value": 2.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -573,7 +679,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/46020/מינימרקט-גליאנוס",
         "discount_type": "billing_discount",
         "discount_value": 2.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -582,7 +690,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/42634/רפאל-גליל-ציוד-טכני",
         "discount_type": "billing_discount",
         "discount_value": 2.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -591,7 +701,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/40278/גלילי-תכשיטים",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -600,7 +712,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/39379/מחסני-גלידות-דהן",
         "discount_type": "billing_discount",
         "discount_value": 2.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -609,7 +723,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/35815/מחסני-הגלידה",
         "discount_type": "billing_discount",
         "discount_value": 3.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -618,7 +734,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/33174/עולם-הגלידות",
         "discount_type": "billing_discount",
         "discount_value": 2.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -627,7 +745,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/58282/עולם-הגלידה",
         "discount_type": "billing_discount",
         "discount_value": 3.5,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -636,7 +756,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/58041/ארזים-חוויה-דו-גלגלית",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -645,7 +767,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/57110/פרולי-גלידות-ומתוקים",
         "discount_type": "billing_discount",
         "discount_value": 3.5,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -654,7 +778,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/57058/צ'ופאפי-הבית-של-הגלידות",
         "discount_type": "billing_discount",
         "discount_value": 3.5,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -663,7 +789,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/56640/גליצקי-שוקולד---GALITZKI-CHOCOLATE",
         "discount_type": "billing_discount",
         "discount_value": 10.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -672,7 +800,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/30355/דני-וגלית-אפייה-בריאה-מדגנים-מלאים",
         "discount_type": "billing_discount",
         "discount_value": 3.5,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -681,7 +811,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/24690/נעלי-גלית",
         "discount_type": "billing_discount",
         "discount_value": 3.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -690,7 +822,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/29659/סיגליות--קוסמטיקה",
         "discount_type": "billing_discount",
         "discount_value": 3.5,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "HTzone",
@@ -699,7 +833,9 @@
         "discount_url": "https://www.htzone.co.il/benefit/607/עגליס/?sale_id=62",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "htzone",
+        "parent_program_id": null
       },
       {
         "club": "חבר שלי",
@@ -708,7 +844,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,347881",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": false
+        "has_physical_store": false,
+        "program_id": "mcc-sheli",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר שלי",
@@ -717,7 +855,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,329657",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": false
+        "has_physical_store": false,
+        "program_id": "mcc-sheli",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -726,7 +866,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,272233",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -735,7 +877,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -744,7 +888,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,334838",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -753,7 +899,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,325696",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -762,7 +910,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/גולדה, גלידה, גלידרייה, קינוחים, מתוקים",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -771,7 +921,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,334838",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -780,7 +932,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,377440",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "GiftCard max",
@@ -789,7 +943,9 @@
         "discount_url": "https://www.max.co.il/gift-card-network",
         "discount_type": "rechargeable_card",
         "discount_value": 16.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "max-giftcard",
+        "parent_program_id": "max"
       },
       {
         "club": "GiftCard max",
@@ -798,7 +954,219 @@
         "discount_url": "https://www.max.co.il/gift-card-network",
         "discount_type": "rechargeable_card",
         "discount_value": 16.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "max-giftcard",
+        "parent_program_id": "max"
+      },
+      {
+        "club": "מפתח דיסקונט",
+        "business_name": "ברלינגטון אינגליש",
+        "discount": "5% הנחה",
+        "discount_url": "https://www.burlingtonenglish.co.il/",
+        "discount_type": "billing_discount",
+        "discount_value": 5.0,
+        "has_physical_store": true,
+        "branches": [],
+        "limitations": "רשת בתי ספר לאנגלית",
+        "category": "לימודים",
+        "program_id": "discount-key",
+        "parent_program_id": null
+      },
+      {
+        "club": "מפתח דיסקונט",
+        "business_name": "עגליס",
+        "discount": "5% הנחה",
+        "discount_url": "https://www.agalease-baby.co.il/",
+        "discount_type": "billing_discount",
+        "discount_value": 5.0,
+        "has_physical_store": true,
+        "branches": [],
+        "limitations": "רשת למוצרי תינוקות ל אתר >",
+        "category": "מוצרי תינוקות",
+        "program_id": "discount-key",
+        "parent_program_id": null
+      },
+      {
+        "club": "אמריקן אקספרס",
+        "business_name": "3GB גלישה בחו\"ל ללא עלות באתר נפטוקום תמורת הטבת בונוס",
+        "discount": "תמורת הטבת בונוס",
+        "discount_url": "https://rewards.americanexpress.co.il/link/8a4b380176ff4aeebc8c443f6984cc89.aspx",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "has_physical_store": true,
+        "branches": [],
+        "limitations": "תמורת הטבת בונוס | התשלום בכרטיס אמריקן אקספרס בלבד | ניתן להוריד עד 4 קודי הטבה לת.ז בשנה קלנדרית |ניתן לממש קוד הטבה אחד ברכישת חבילה| ניתן לנצל קוד זה בהתאם לתוקף בהודעה שתישלח ב-SMS | בהתאם ל תקנון תוכנית הבונוסים | הזכאות להטבת בונוס הינה ללקוחות שחויבו בסך של לפחות 3,000 ₪ בחשבון הבנק בגין עסקאות בבתי עסק בכרטיס האשראי שבאמצעותו התבקשה ההטבה במועד החיוב האחרון, כל 3,000 ₪, יזכו את המשתתף בתוכנית בהטבת בונוס אחת ועד למקסימום של 4 הטבות בונוס | תוקף המבצע בבית העסק הינו כמפורט במסרון שנשלח אליך לאחר הורדת קוד ההטבה, או עד גמר המלאי, המוקדם מביניהם | השירות ניתן במכשירים תומכי eSIM בלבד. למידע נוסף ורשימת מכשירים תומכים לחץ כאן | בכפוף למדינות נתמכות כפי שמופיע באתר Neptucom | פרימיום אקספרס שומרת לעצמה את הזכות לשינויים בכל עת | חברת פרימיום אקספרס בע''מ אינה אחראית לטיב המוצרים והשירותים, אחריות זו חלה על בית העסק בלבד | תוקף הורדת ההטבה 31.12.2026 ו/או עד גמר המלאי | טל''ח",
+        "category": "נופש וחו\"ל",
+        "program_id": "program-אמריקן-אקספרס",
+        "parent_program_id": null
+      },
+      {
+        "club": "אמריקן אקספרס",
+        "business_name": "יקב מרגלית",
+        "discount": "ביקור מקצועי ומעמיק במחיר מיוחד תמורת הטבת בונוס",
+        "discount_url": "https://rewards.americanexpress.co.il/link/2a622cb3e4b5461095edbfe9c10afefe.aspx",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "has_physical_store": true,
+        "branches": [],
+        "limitations": "תמורת הטבת בונוס | למשלמים בכרטיס אמריקן אקספרס בלבד | בכפוף להזמנה מראש ובתיאום לפחות כשבוע מראש | הביקור מתאים לזוגות ולקבוצות קטנות | היקב אינו כשר | אזהרה: צריכה מופרזת של אלכוהול מסכנת חיים ומזיקה לבריאות! | בכפוף לתקנון תוכנית הבונוסים | הזכאות להטבת בונוס הינה ללקוחות שחויבו בסך של לפחות 3,000 ₪ בחשבון הבנק בגין עסקאות בבתי עסק בכרטיס האשראי שבאמצעותו התבקשה ההטבה במועד החיוב האחרון, כל 3,000 ₪, יזכו את המשתתף בתוכנית בהטבת בונוס אחת ועד למקסימום של 4 הטבות בונוס בחודש | פרימיום אקספרס שומרת לעצמה את הזכות לשינויים בכל עת | חברת פרימיום אקספרס בע''מ אינה אחראית לטיב המוצרים והשירותים, אחריות זו חלה על בית העסק בלבד | בתוקף עד ה- 31.12.26 ו/או עד גמר המלאי | טל\"ח",
+        "category": "יקבי בוטיק ישראלים",
+        "program_id": "program-אמריקן-אקספרס",
+        "parent_program_id": null
+      },
+      {
+        "club": "MAX",
+        "business_name": "גליתא - צובה",
+        "discount": "ב-96 ₪",
+        "discount_url": "https://www.max.co.il/benefits/attractions/galitazuba",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "has_physical_store": true,
+        "branches": [],
+        "limitations": "*ההטבה עד גמר המלאי. *אם הזמנת מספר הטבות באותו בית עסק, בבואכם לנצלן תמומשנה כל ההטבות בבת אחת. *על מנת לממש את ההטבה שנרכשה יש להגיע לקופת בית העסק עם אחד מכרטיסי האשראי הפעילים של max שברשותכם ולציין כי ההטבה נרכשה באתר הטבות של max. *לא כולל כרטיסי בנק פועלים (למעט מועדונים נבחרים), FREE, רכש, DEBIT, בנק לאומי וכרטיסי PEPPER. *התמונה להמחשה בלבד. *המוצרים/שירותים באחריות בתי העסק בלבד. *max/בית העסק רשאים להפסיק/לשנות את המבצע בכל עת וללא הודעה מוקדמת. *אין כפל מבצעים והנחות. *בכפוף למדיניות ביטול הטבות ולתקנון הפינוקים ואתר ההטבות .",
+        "category": "אטרקציות והצגות ילדים",
+        "program_id": "max",
+        "parent_program_id": null
+      },
+      {
+        "club": "MAX",
+        "business_name": "גליתא - חוות השוקולד בדגניה",
+        "discount": "ב-96 ₪",
+        "discount_url": "https://www.max.co.il/benefits/attractions/galitadgania",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "has_physical_store": true,
+        "branches": [],
+        "limitations": "​*ההטבה עד גמר המלאי. *אם הזמנת מספר הטבות באותו בית עסק, בבואכם לנצלן תמומשנה כל ההטבות בבת אחת. *על מנת לממש את ההטבה שנרכשה יש לתאם הגעה באתר ולהגיע לקופת בית העסק עם אחד מכרט יסי האשראי הפעילים של max שברשותכם ולציין כי ההטבה נרכשה באתר הטבות של max. *לא כולל כרטיסי בנק פועלים (למעט מועדונים נבחרים), FREE, רכש, DEBIT, בנק לאומי וכרטיסי PEPPER. *התמונה להמחשה בלבד. *המוצרים/שירותים באחריות בתי העסק בלבד. *max/בית העסק רשאים להפסיק/לשנות את המבצע בכל עת וללא הודעה מוקדמת. *אין כפל מבצעים והנחות. *בכפוף למדיניות ביטול הטבות ולתקנון הפינוקים ואתר ההטבות .",
+        "category": "אטרקציות והצגות ילדים",
+        "program_id": "max",
+        "parent_program_id": null
+      },
+      {
+        "club": "MAX",
+        "business_name": "נוף פארק גליל - גן חי וגן בוטני",
+        "discount": "החל מ-16 ₪",
+        "discount_url": "https://www.max.co.il/benefits/attractions/noparkgalil",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "has_physical_store": true,
+        "branches": [],
+        "limitations": "*מלאי מינימלי: 50. *ההטבה עד גמר המלאי. *אם הזמנת מספר הטבות באותו בית עסק, בבואכם לנצלן תמומשנה כל ההטבות בבת אחת. *על מנת לממש את ההטבה שנרכשה יש להגיע לקופת בית העסק עם אחד מכרטיסי האשראי הפעילים של max שברשותכם ולציין כי ההטבה נרכשה באתר הטבות של max. *למשלמים בכרטיס אשראי max, לא כולל כרטיסי בנק פועלים (למעט מועדונים נבחרים), FREE, רכש, DEBIT, בנק לאומי וכרטיסי PEPPER. *התמונה להמחשה בלבד. *המוצרים/שירותים באחריות בתי העסק בלבד. *max/בית העסק רשאים להפסיק/לשנות את המבצע בכל עת וללא הודעה מוקדמת. *אין כפל מבצעים והנחות. *בכפוף למדיניות ביטול הטבות ולתקנון הפינוקים ואתר ההטבות .",
+        "category": "אטרקציות והצגות ילדים",
+        "program_id": "max",
+        "parent_program_id": null
+      },
+      {
+        "club": "MAX",
+        "business_name": "יקב הרי הגליל",
+        "discount": "החל מ-65 ₪",
+        "discount_url": "https://www.max.co.il/benefits/attractions/yekevhg",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "has_physical_store": true,
+        "branches": [],
+        "limitations": "*ההטבה עד גמר המלאי. *התשלום באמצעות כרטיסי האשראי של max בלבד (לא כולל כרטיסי בנק פועלים (למעט מועדונים נבחרים), FREE, DEBIT, רכש ובנק לאומי). *max/בית העסק רשאים לשנות/להפסיק את המבצע בכל עת וללא הודעה מוקדמת. *המבצע והשירותים/ מוצרים הינם באחריות בית העסק בלבד. *התמונה להמחשה בלבד. *בכפוף למדיניות ביטול הטבות ולתקנון הפינוקים ואתר ההטבות .",
+        "category": "אטרקציות והצגות ילדים",
+        "program_id": "max",
+        "parent_program_id": null
+      },
+      {
+        "club": "MAX",
+        "business_name": "פארק המים נוף גליל",
+        "discount": "החל מ-134 ₪",
+        "discount_url": "https://www.max.co.il/benefits/attractions/nofhagalil",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "has_physical_store": true,
+        "branches": [],
+        "limitations": "*ההטבה עד גמר המלאי. *אם הזמנת מספר הטבות באותו בית עסק, בבואכם לנצלן תמומשנה כל ההטבות בבת אחת. *על מנת לממש את ההטבה שנרכשה יש להגיע לקופת בית העסק עם אחד מכרטיסי האשראי הפעילים של max שברשותכם ולציין כי ההטבה נרכשה באתר הטבות של MAX * לא כולל כרטיסי בנק פועלים (למעט מועדונים נבחרים) , FREE, רכש , DEBIT, בנק לאומי וכרטיסי PEPPER. * התמונה להמחשה בלבד. *המוצרים/שירותים באחריות בתי העסק בלבד . *MAX/ בית העסק רשאים להפסיק/לשנות את המבצע בכל עת וללא הודעה מוקדמת. *אין כפל מבצעים והנחות. *בכפוף למדיניות ביטול הטבות ולתקנון הפינוקים ואתר ההטבות",
+        "category": "אטרקציות והצגות ילדים",
+        "program_id": "max",
+        "parent_program_id": null
+      },
+      {
+        "club": "MAX",
+        "business_name": "קורס אנגלית לילדים מבית TALKING",
+        "discount": "ב-1680 ₪",
+        "discount_url": "https://www.max.co.il/benefits/online/talkingkids",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "has_physical_store": true,
+        "branches": [],
+        "limitations": "* ההטבה עד גמר המלאי. *אם הזמנת מספר הטבות באותו בית עסק, בבואכם לנצלן תמומשנה כל ההטבות בבת אחת. *על מנת לממש את ההטבה שנרכשה יש להגיע לקופת בית העסק עם אחד מכרטיסי האשראי הפעילים של max שברשותכם ולציין כי ההטבה נרכשה באתר הטבות של .max * לא כולל כרטיסי בנק פועלים (למעט מועדונים נבחרים) , FREE, רכש , DEBIT, בנק לאומי וכרטיסי PEPPER. . *התמונה להמחשה בלבד. *המוצרים/שירותים באחריות בתי העסק בלבד . *max/ בית העסק רשאים להפסיק/לשנות את המבצע בכל עת וללא הודעה מוקדמת. *אין כפל מבצעים והנחות. *בכפוף למדיניות ביטול הטבות ולתקנון הפינוקים ואתר ההטבות .",
+        "category": "אונליין",
+        "program_id": "max",
+        "parent_program_id": null
+      },
+      {
+        "club": "MAX",
+        "business_name": "דריה ספא - מלון נבל דוד גליל ריזורט",
+        "discount": "החל מ-434 ₪",
+        "discount_url": "https://www.max.co.il/benefits/vacation/dariyaspagalil",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "has_physical_store": true,
+        "branches": [],
+        "limitations": "* ההטבה עד גמר המלאי. *אם הזמנת מספר הטבות באותו בית עסק, בבואכם לנצלן תמומשנה כל ההטבות בבת אחת. *על מנת לממש את ההטבה שנרכשה יש להגיע לקופת בית העסק עם ת.ז ולציין כי ההטבה נרכשה באתר הטבות של max * לא כולל כרטיסי בנק פועלים (למעט מועדונים נבחרים) , FREE, רכש , DEBIT, בנק לאומי וכרטיסי PEPPER. *התמונה להמחשה בלבד. *המוצרים/שירותים באחריות בתי העסק בלבד . *max/ בית העסק רשאים להפסיק/לשנות את המבצע בכל עת וללא הודעה מוקדמת. *אין כפל מבצעים והנחות. *בכפוף למדיניות ביטול הטבות ולתקנון הפינוקים ואתר ההטבות .",
+        "category": "נופש ופנאי",
+        "program_id": "max",
+        "parent_program_id": null
+      },
+      {
+        "club": "MAX",
+        "business_name": "הבקתה הגלילית - מושב ארבל",
+        "discount": "מחירים מיוחדים",
+        "discount_url": "https://www.max.co.il/benefits/vacation/biktaglilit",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "has_physical_store": true,
+        "branches": [],
+        "limitations": "*ההטבה היא עד גמר המלאי *על מנת לממש את ההטבה שרכשת, עליך להגיע לקופת בית העסק עם אחד מכרטיסי האשראי של max הפעילים שברשותך ולציין כי ההטבה נרכשה באתר ההטבות של max. *על הכרטיס להיות שייך ללקוח שביצע את ההזמנה באתר. *אם הזמנת מספר הטבות באותו בית עסק, בבואך לנצלן תמומשנה כל ההטבות בבת אחת. *המוצרים/שירותים באחריות בתי העסק בלבד. *התשלום באמצעות כרטיס אשראי max בלבד לא כולל כרטיסי בנק פועלים (למעט מועדונים נבחרים), בנק לאומי, PEPPER, FREE, DEBIT ורכש. *max /בית העסק רשאים להפסיק/לשנות את המבצע בכל עת וללא הודעה מוקדמת. *בכפוף למדיניות ביטול הטבות ולתקנון הפינוקים ואתר ההטבות .",
+        "category": "נופש ופנאי",
+        "program_id": "max",
+        "parent_program_id": null
+      },
+      {
+        "club": "MAX",
+        "business_name": "גלי וליאו - ירחון לראשית קריאה",
+        "discount": "ב-381 ₪",
+        "discount_url": "https://www.max.co.il/benefits/fashion/galiandleo",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "has_physical_store": true,
+        "branches": [],
+        "limitations": "* ההטבה עד גמר המלאי. *אם הזמנת מספר הטבות באותו בית עסק, בבואכם לנצלן תמומשנה כל ההטבות בבת אחת. *על מנת לממש את ההטבה שנרכשה יש להגיע לקופת בית העסק עם אחד מכרטיסי האשראי הפעילים של max שברשותכם ולציין כי ההטבה נרכשה באתר הטבות של .max * לא כולל כרטיסי בנק פועלים (למעט מועדונים נבחרים) , FREE, רכש , DEBIT, בנק לאומי וכרטיסי PEPPER. . *התמונה להמחשה בלבד. *המוצרים/שירותים באחריות בתי העסק בלבד . *max/ בית העסק רשאים להפסיק/לשנות את המבצע בכל עת וללא הודעה מוקדמת. *אין כפל מבצעים והנחות. *בכפוף למדיניות ביטול הטבות ולתקנון הפינוקים ואתר ההטבות .",
+        "category": "צרכנות ואופנה",
+        "program_id": "max",
+        "parent_program_id": null
+      },
+      {
+        "club": "MAX",
+        "business_name": "קורס אנגלית למבוגרים מבית TALKING",
+        "discount": "ב-1680 ₪",
+        "discount_url": "https://www.max.co.il/benefits/Mitham/talking",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "has_physical_store": true,
+        "branches": [],
+        "limitations": "* ההטבה עד גמר המלאי. *אם הזמנת מספר הטבות באותו בית עסק, בבואכם לנצלן תמומשנה כל ההטבות בבת אחת. *על מנת לממש את ההטבה שנרכשה יש להגיע לקופת בית העסק עם אחד מכרטיסי האשראי הפעילים של max שברשותכם ולציין כי ההטבה נרכשה באתר הטבות של .max * לא כולל כרטיסי בנק פועלים (למעט מועדונים נבחרים) , FREE, רכש , DEBIT, בנק לאומי וכרטיסי PEPPER. . *התמונה להמחשה בלבד. *המוצרים/שירותים באחריות בתי העסק בלבד . *max/ בית העסק רשאים להפסיק/לשנות את המבצע בכל עת וללא הודעה מוקדמת. *אין כפל מבצעים והנחות. *בכפוף למדיניות ביטול הטבות ולתקנון הפינוקים ואתר ההטבות .",
+        "category": "הטבות שלא תמורת פינוק",
+        "program_id": "max",
+        "parent_program_id": null
+      },
+      {
+        "club": "MAX",
+        "business_name": "קורס אנגלית עסקית מבית TALKING",
+        "discount": "ב-1680 ₪",
+        "discount_url": "https://www.max.co.il/benefits/Mitham/talkingbussines",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "has_physical_store": true,
+        "branches": [],
+        "limitations": "* ההטבה עד גמר המלאי. *אם הזמנת מספר הטבות באותו בית עסק, בבואכם לנצלן תמומשנה כל ההטבות בבת אחת. *על מנת לממש את ההטבה שנרכשה יש להגיע לקופת בית העסק עם אחד מכרטיסי האשראי הפעילים של max שברשותכם ולציין כי ההטבה נרכשה באתר הטבות של .max * לא כולל כרטיסי בנק פועלים (למעט מועדונים נבחרים) , FREE, רכש , DEBIT, בנק לאומי וכרטיסי PEPPER. . *התמונה להמחשה בלבד. *המוצרים/שירותים באחריות בתי העסק בלבד . *max/ בית העסק רשאים להפסיק/לשנות את המבצע בכל עת וללא הודעה מוקדמת. *אין כפל מבצעים והנחות. *בכפוף למדיניות ביטול הטבות ולתקנון הפינוקים ואתר ההטבות .",
+        "category": "הטבות שלא תמורת פינוק",
+        "program_id": "max",
+        "parent_program_id": null
       },
       {
         "club": "BUYME",
@@ -811,7 +1179,9 @@
           "BUYME ALL - מגוון אדיר במתנה אחת",
           "BUYME BABY- מגוון מתנות לידה"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       },
       {
         "club": "BUYME",
@@ -825,7 +1195,9 @@
           "BUYME BABY- מגוון מתנות לידה",
           "BUYME VACATION & SPA- מלונות וספא"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       },
       {
         "club": "BUYME",
@@ -841,7 +1213,9 @@
           "BUYME LOCAL – מתנות מקומיות",
           "BUYME YNG - מתנה מושלמת לבני נוער"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       },
       {
         "club": "BUYME",
@@ -856,7 +1230,9 @@
           "BUYME YNG - מתנה מושלמת לבני נוער",
           "BUYME MOMENTS - מגוון חוויות"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       },
       {
         "club": "BUYME",
@@ -869,7 +1245,9 @@
           "BUYME ALL - מגוון אדיר במתנה אחת",
           "BUYME LOCAL – מתנות מקומיות"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       },
       {
         "club": "BUYME",
@@ -882,7 +1260,9 @@
           "BUYME ALL - מגוון אדיר במתנה אחת",
           "BUYME LOCAL – מתנות מקומיות"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       },
       {
         "club": "BUYME",
@@ -896,7 +1276,9 @@
           "BUYME BABY- מגוון מתנות לידה",
           "BUYME VACATION & SPA- מלונות וספא"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       },
       {
         "club": "BUYME",
@@ -911,7 +1293,9 @@
           "BUYME FOODY -מתנות קולינריות שוות",
           "BUYME LOCAL – מתנות מקומיות"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       },
       {
         "club": "BUYME",
@@ -925,7 +1309,9 @@
           "BUYME BABY- מגוון מתנות לידה",
           "BUYME FOODY -מתנות קולינריות שוות"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -958,7 +1344,9 @@
           "BUYME FASHION & BEAUTY",
           "BUYME YNG - מתנה מושלמת לבני נוער"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -986,7 +1374,51 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,396185",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
+      },
+      {
+        "club": "אמריקן אקספרס",
+        "business_name": "מקדונלד'ס",
+        "discount": "ארוחת ילדים ב- 19 ₪",
+        "discount_url": "https://rewards.americanexpress.co.il/link/9103211079e947788b5720573db972f4.aspx",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "has_physical_store": true,
+        "branches": [],
+        "limitations": "לכלל הלקוחות בתוספת 100 נקודות | ללקוחות סנטוריון ופלטינה בתוספת 50 נקודות | למשלמים בכרטיס אמריקן אקספרס בלבד | ע\"פ המלאי הקיים בסניף | כל שינוי או החלפה או תוספת כרוכה בתשלום ע\"פ מחירון הרשת | אין כפל מבצעים והנחות | ההטבה אינה תקפה על תפריט פסח | מימוש ההטבה בהזמנה אינו מאפשר צבירת מק קויינס בתכנית הנאמנות של מקדונלד'ס | למימוש ההטבה יש להקליד את קוד ההטבה ולהוסיף את הארוחה למגש | לא תקף בתפריט לילה ונתב\"ג | לא תקף במשלוחים | פרימיום אקספרס שומרת לעצמה את הזכות לשינויים בכל עת | חברת פרימיום אקספרס בע''מ אינה אחראית לטיב המוצרים והשירותים, אחריות זו חלה על בית העסק בלבד | בכפוף לתקנון תוכנית ההטבות Membership Rewards | תוקף להורדת הטבה 31.12.2026 ו/או עד גמר המלאי | טל''ח",
+        "category": "מסעדות ובתי קפה",
+        "program_id": "program-אמריקן-אקספרס",
+        "parent_program_id": null
+      },
+      {
+        "club": "אמריקן אקספרס",
+        "business_name": "מקדונלד'ס",
+        "discount": "מגוון ארוחות רויאל ב- 22 ₪",
+        "discount_url": "https://rewards.americanexpress.co.il/link/5f1b9e2c858c4fabb7b22a470628f994.aspx",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "has_physical_store": true,
+        "branches": [],
+        "limitations": "לכלל הלקוחות בתוספת 200 נקודות | ללקוחות סנטוריון ופלטינה בתוספת 80 נקודות | למשלמים בכרטיס אמריקן אקספרס בלבד | כל שינוי או החלפה או תוספת כרוך בתשלום ע\"פ מחירון הרשת | לא תקף בתפריט לילה, משלוחים ונתב\"ג | ע\"פ המלאי הקיים בסניף | ההטבה אינה תקפה על תפריט פסח | ניתן למימוש בסניפים בעמדות המק טאצ', באתר או באפליקציית מקדונלד'ס | למימוש ההטבה יש להזין את הקוד ההטבה שקיבלתם ולהוסיף את הארוחה למגש | אין כפל מבצעים והנחות | מימוש ההטבה בהזמנה אינו מאפשר צבירת מק קויינס בתכנית הנאמנות של מקדונלד'ס | פרימיום אקספרס שומרת לעצמה את הזכות לשינויים בכל עת | חברת פרימיום אקספרס בע''מ אינה אחראית לטיב המוצרים והשירותים, אחריות זו חלה על בית העסק בלבד | בכפוף לתקנון תוכנית ההטבות Membership Rewards | תוקף להורדת הטבה 31.12.2026 ו/או עד גמר המלאי | טל''ח",
+        "category": "מסעדות ובתי קפה",
+        "program_id": "program-אמריקן-אקספרס",
+        "parent_program_id": null
+      },
+      {
+        "club": "MAX",
+        "business_name": "מקדונלד'ס - שובר 100 ₪ למימוש בסניף נתב\"ג בלבד",
+        "discount": "ב-80 ₪ (תמורת פינוק) - למימוש חד פעמי",
+        "discount_url": "https://www.max.co.il/benefits/tastytreat/macdonalds100",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "has_physical_store": true,
+        "branches": [],
+        "limitations": "*ניתן להזמין פריט אחד ללקוח בחודש *ההטבה עד גמר המלאי *תוקף מימוש - חודשיים מהרכישה *מספר המקומות מוגבל *הטבה שפג תוקפה איננה ניתנת למימוש על ידי הלקוח ולא יינתן זיכוי כספי בגינה. *על מנת לממש את ההטבה שרכשת עליך להגיע למשרדי בית העסק עם אחד מכרטיסי האשראי הפעילים של max שברשותך ולציין כי ההטבה נרכשה באתר ההטבות של max . *הכרטיסים ימתינו בקופות האירוע, מומלץ להביא אישור הזמנה שנשלח במייל. * max אינה אחראית במקרה של ביטולים/שינויים באירוע. * max /בית העסק רשאיות להפסיק/לשנות את המבצע בכל עת וללא הודעה מוקדמת. *התמונה להמחשה בלבד. *התשלום באמצעות כרטיס אשראי של max לא כולל כרטיסי בנק פועלים (למעט מועדונים נבחרים) , FREE, רכש , DEBIT, בנק לאומי וכרטיסי PEPPER . *את ההטבה יש לממש עד לתום התוקף המופיע בעמוד, לאחר מכן לא יינתן החזר כספי. *בכפוף למדיניות ביטול הטבות ולתקנון הפינוקים ואתר ההטבות .",
+        "category": "פינוק טעים",
+        "program_id": "max",
+        "parent_program_id": null
       },
       {
         "club": "BUYME",
@@ -1000,7 +1432,9 @@
           "BUYME FOODY -מתנות קולינריות שוות",
           "BUYME YNG - מתנה מושלמת לבני נוער"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -1028,7 +1462,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=19",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-sheli",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר שלי",
@@ -1037,7 +1473,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=21",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-sheli",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר שלי",
@@ -1046,7 +1484,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=20",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-sheli",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -1055,7 +1495,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "GiftCard max",
@@ -1064,7 +1506,9 @@
         "discount_url": "https://www.max.co.il/gift-card-network",
         "discount_type": "rechargeable_card",
         "discount_value": 16.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "max-giftcard",
+        "parent_program_id": "max"
       },
       {
         "club": "GiftCard max",
@@ -1073,7 +1517,9 @@
         "discount_url": "https://www.max.co.il/gift-card-network",
         "discount_type": "rechargeable_card",
         "discount_value": 16.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "max-giftcard",
+        "parent_program_id": "max"
       },
       {
         "club": "GiftCard max",
@@ -1082,7 +1528,23 @@
         "discount_url": "https://www.max.co.il/gift-card-network",
         "discount_type": "rechargeable_card",
         "discount_value": 16.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "max-giftcard",
+        "parent_program_id": "max"
+      },
+      {
+        "club": "MAX",
+        "business_name": "כסף בחזרה ב-Golf Kids - גולף קידס",
+        "discount": "3% החזר כספי לכרטיס האשראי",
+        "discount_url": "https://www.max.co.il/benefits/paybacksites/paybackGolfKids",
+        "discount_type": "voucher",
+        "discount_value": 3.0,
+        "has_physical_store": true,
+        "branches": [],
+        "limitations": "*ברישום לשירות PayBack הנכם נרשמים לשירות הניתן על-ידי חברת קאשבק אונליין בע\"מ. *השירות מנוהל על ידיה ובאחריותה הבלעדית. *השירות ניתן לכל כרטיסי האשראי החוץ בנקאיים של max למעט כרטיסי Free, Debit, Cash Card ורכש ובתנאי שנרשמת לשירות. *כרטיסי בנק לאומי ופפר יהיו זכאים לקבלת החזר כספי עד 31.6.19 *סכום ההחזר הכספי בעסקת תשלומים יחושב לפי סכום העסקה המלא ולא לפי כל תשלום. סכום ההחזר יחושב מסכום העסקה לא כולל מסים, מע\"מ, אגרות, משלוח, מתנה, הנחות או זיכויים, החזרים או ביטולים, עמלות מט\"ח ואחריות מורחבת *לא ייצבר החזר כספי בגין עסקה שביטלת. * שימוש בקופונים שלא ניתנו במסגרת שירות זה עלולים למנוע קבלת החזר כספי * תוספים לדפדפן כגון חוסם פרסומות עלולים למנוע החזר * מומלץ למחוק cookies (עוגיות) לפני המעבר לאתר הקניות *max אינו צד לעסקה באתרי האינטרנט, והמוצרים/השירותים (לרבות מחיריהם, טיבם, איכותם, מועדי אספקתם, הרישום לשירות, המשלוח, התשלומים וההחזרים הכספיים וכיו\"ב) הם באחריותם הבלעדית של בתי העסק וחברת קאשבק אונליין בע\"מ. התמונות להמחשה בלבד. לתנאי השימוש המלאים . *בכפוף למדיניות ביטול הטבות ולתקנון הפינוקים ואתר ההטבות .",
+        "category": "כסף בחזרה על קניות אונליין",
+        "program_id": "max",
+        "parent_program_id": null
       },
       {
         "club": "BUYME",
@@ -1097,7 +1559,9 @@
           "BUYME VACATION & SPA- מלונות וספא",
           "BUYME LOCAL – מתנות מקומיות"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       },
       {
         "club": "BUYME",
@@ -1110,7 +1574,9 @@
           "BUYME ALL - מגוון אדיר במתנה אחת",
           "BUYME MOMENTS - מגוון חוויות"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -1165,7 +1631,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,319433",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -1174,7 +1642,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/www.giraffe.co.il",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -1183,7 +1653,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       }
     ],
     "source": "docs/data/businesses"
@@ -1220,7 +1692,9 @@
         "discount_url": "https://www.htzone.co.il/benefit/677/נעלי-פאולה/?sale_id=62",
         "discount_type": "billing_discount",
         "discount_value": 10.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "htzone",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -1248,7 +1722,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       }
     ],
     "source": "docs/data/businesses"
@@ -1375,7 +1851,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=884",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-sheli",
+        "parent_program_id": "mcc"
       }
     ],
     "source": "docs/data/businesses"
@@ -1421,7 +1899,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,341980",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "BUYME",
@@ -1436,7 +1916,9 @@
           "BUYME FOODY -מתנות קולינריות שוות",
           "BUYME YNG - מתנה מושלמת לבני נוער"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -1464,7 +1946,9 @@
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=4045",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc",
+        "parent_program_id": null
       },
       {
         "club": "חבר טעמים",
@@ -1473,7 +1957,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -1482,7 +1968,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -1491,7 +1979,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -1500,7 +1990,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -1509,7 +2001,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -1518,7 +2012,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -1527,7 +2023,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -1536,7 +2034,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -1545,7 +2045,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -1554,7 +2056,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -1563,7 +2067,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -1572,7 +2078,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -1581,7 +2089,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "BUYME",
@@ -1597,7 +2107,9 @@
           "BUYME BRUNCH- מגוון ארוחות בוקר",
           "BUYME YNG - מתנה מושלמת לבני נוער"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -1616,7 +2128,9 @@
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=4045",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc",
+        "parent_program_id": null
       },
       {
         "club": "חבר טעמים",
@@ -1625,7 +2139,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -1634,7 +2150,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -1643,7 +2161,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -1652,7 +2172,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -1661,7 +2183,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -1670,7 +2194,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -1679,7 +2205,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -1688,7 +2216,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -1697,7 +2227,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -1706,7 +2238,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -1715,7 +2249,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -1724,7 +2260,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -1733,7 +2271,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "BUYME",
@@ -1749,7 +2289,9 @@
           "BUYME BRUNCH- מגוון ארוחות בוקר",
           "BUYME YNG - מתנה מושלמת לבני נוער"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -1795,7 +2337,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,416374",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       }
     ],
     "source": "docs/data/businesses"
@@ -1832,7 +2376,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/59230/מיכל-נגרין---Michal-Negrin",
         "discount_type": "billing_discount",
         "discount_value": 6.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -1869,7 +2415,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -1878,7 +2426,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "BUYME",
@@ -1893,7 +2443,9 @@
           "BUYME FOODY -מתנות קולינריות שוות",
           "BUYME YNG - מתנה מושלמת לבני נוער"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -1957,7 +2509,9 @@
         "discount_url": "https://www.max.co.il/gift-card-network",
         "discount_type": "rechargeable_card",
         "discount_value": 16.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "max-giftcard",
+        "parent_program_id": "max"
       }
     ],
     "source": "docs/data/businesses"
@@ -2012,7 +2566,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -2021,7 +2577,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "BUYME",
@@ -2036,7 +2594,9 @@
           "BUYME FOODY -מתנות קולינריות שוות",
           "BUYME YNG - מתנה מושלמת לבני נוער"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -2073,7 +2633,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=13",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-sheli",
+        "parent_program_id": "mcc"
       },
       {
         "club": "GiftCard max",
@@ -2082,7 +2644,9 @@
         "discount_url": "https://www.max.co.il/gift-card-network",
         "discount_type": "rechargeable_card",
         "discount_value": 16.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "max-giftcard",
+        "parent_program_id": "max"
       }
     ],
     "source": "docs/data/businesses"
@@ -2110,7 +2674,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/46566/e-y-fruits",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -2129,7 +2695,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,384191",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -2138,7 +2706,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,384195",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       }
     ],
     "source": "docs/data/businesses"
@@ -2166,7 +2736,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,384187",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -2175,7 +2747,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,384188",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -2184,7 +2758,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,384189",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       }
     ],
     "source": "docs/data/businesses"
@@ -2230,7 +2806,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,269404",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       }
     ],
     "source": "docs/data/businesses"
@@ -2258,7 +2836,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/61497/לורנס---LORENS",
         "discount_type": "billing_discount",
         "discount_value": 20.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -2267,7 +2847,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/59414/Lorens-paris---לורנס-פריז",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -2322,7 +2904,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/21836/retro-game-center",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "BUYME",
@@ -2337,7 +2921,9 @@
           "BUYME FASHION & BEAUTY",
           "BUYME YNG - מתנה מושלמת לבני נוער"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -2392,7 +2978,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       }
     ],
     "source": "docs/data/businesses"
@@ -2420,7 +3008,9 @@
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=6111",
         "discount_type": "billing_discount",
         "discount_value": 10.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -2475,7 +3065,9 @@
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=2267",
         "discount_type": "billing_discount",
         "discount_value": 10.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -2484,7 +3076,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/57795/שעוני-דניאל-קליין---DANIEL-KLEIN",
         "discount_type": "billing_discount",
         "discount_value": 10.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -2493,7 +3087,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/47498/קטיף-דניאל",
         "discount_type": "billing_discount",
         "discount_value": 3.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -2502,7 +3098,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/36109/תבליני-דניאל",
         "discount_type": "billing_discount",
         "discount_value": 3.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -2511,7 +3109,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/35327/מינימרקט-דניאל",
         "discount_type": "billing_discount",
         "discount_value": 2.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -2520,7 +3120,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/59299/מעדני-דניאל",
         "discount_type": "billing_discount",
         "discount_value": 3.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -2529,7 +3131,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/58179/רנה-ודניאל",
         "discount_type": "billing_discount",
         "discount_value": 6.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -2538,7 +3142,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/9010/אמביאנס---דניאל--עיצוב-שיער",
         "discount_type": "billing_discount",
         "discount_value": 4.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "חבר טעמים",
@@ -2547,7 +3153,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -2556,7 +3164,37 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
+      },
+      {
+        "club": "MAX",
+        "business_name": "דניאל סטיופין",
+        "discount": "55 ₪ הנחה לכרטיס תמורת פינוק",
+        "discount_url": "https://www.max.co.il/benefits/standupshows/danirlStiopin",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "has_physical_store": true,
+        "branches": [],
+        "limitations": "*ניתן להזמין עד 2 פריטים ללקוח בחודש *ההטבה עד גמר המלאי *תוקף המבצע - התאריך המצוין באתר *מספר המקומות מוגבל *הטבה שפג תוקפה איננה ניתנת למימוש על ידי הלקוח ולא יינתן זיכוי כספי בגינה. *על מנת לממש את ההטבה שרכשת עליך להגיע למשרדי בית העסק עם אחד מכרטיסי האשראי הפעילים של max שברשותך ולציין כי ההטבה נרכשה באתר ההטבות של max . *הכרטיסים ימתינו בקופות האירוע, מומלץ להביא אישור הזמנה שנשלח במייל. * max אינה אחראית במקרה של ביטולים/שינויים באירוע. * max /בית העסק רשאיות להפסיק/לשנות את המבצע בכל עת וללא הודעה מוקדמת. *התמונה להמחשה בלבד. *התשלום באמצעות כרטיס אשראי של max לא כולל כרטיסי בנק פועלים (למעט מועדונים נבחרים) , FREE, רכש , DEBIT, בנק לאומי וכרטיסי PEPPER . *את ההטבה יש לממש עד לתום התוקף המופיע בעמוד, לאחר מכן לא יינתן החזר כספי. *בכפוף למדיניות ביטול הטבות ולתקנון הפינוקים ואתר ההטבות .",
+        "category": "מופעי סטנדאפ",
+        "program_id": "max",
+        "parent_program_id": null
+      },
+      {
+        "club": "MAX",
+        "business_name": "ספא דניאל -מרכז בריאות וספא",
+        "discount": "החל מ-312 ₪",
+        "discount_url": "https://www.max.co.il/benefits/vacation/spadaniel",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "has_physical_store": true,
+        "branches": [],
+        "limitations": "או עד גמר המלאי, המוקדם מביניהם *מלאי מינימלי: 500 *לא כולל כפל מבצעים, הטבות, קופונים והנחות, ככל שרלוונטי *ניתן להזמין 2 קופונים ללקוח בחודש (ברמת ת\"ז) *לא כולל כפל מבצעים והנחות *הנחה אחת (קופון אחד) בעסקה *ההטבה אישית ואינה ניתנת להעברה *התמונה להמחשה בלבד *max ובית העסק רשאים להפסיק/לשנות את המבצע בכל עת וללא הודעה מוקדמת *המוצרים/שירותים באחריות בית העסק *תשלום בכרטיסי max בלבד, לא כולל כרטיסי בנק פועלים (למעט מועדונים נבחרים), בנק לאומי, FREE, PEPPER, DEBIT ורכש *בכפוף למדיניות ביטול הטבות ולתקנון הפינוקים ואתר ההטבות .",
+        "category": "נופש ופנאי",
+        "program_id": "max",
+        "parent_program_id": null
       },
       {
         "club": "BUYME",
@@ -2570,7 +3208,9 @@
           "BUYME BABY- מגוון מתנות לידה",
           "BUYME FOODY -מתנות קולינריות שוות"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       },
       {
         "club": "BUYME",
@@ -2585,7 +3225,9 @@
           "BUYME FASHION & BEAUTY",
           "BUYME YNG - מתנה מושלמת לבני נוער"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       },
       {
         "club": "BUYME",
@@ -2599,7 +3241,9 @@
           "BUYME VACATION & SPA- מלונות וספא",
           "BUYME LOCAL – מתנות מקומיות"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       },
       {
         "club": "BUYME",
@@ -2612,7 +3256,9 @@
           "BUYME ALL - מגוון אדיר במתנה אחת",
           "BUYME VACATION & SPA- מלונות וספא"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       },
       {
         "club": "BUYME",
@@ -2627,7 +3273,9 @@
           "BUYME VACATION & SPA- מלונות וספא",
           "BUYME LOCAL – מתנות מקומיות"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -2679,7 +3327,9 @@
           "BUYME FASHION & BEAUTY",
           "BUYME YNG - מתנה מושלמת לבני נוער"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -2779,7 +3429,9 @@
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=6111",
         "discount_type": "billing_discount",
         "discount_value": 10.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -2807,7 +3459,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=853",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": false
+        "has_physical_store": false,
+        "program_id": "mcc-sheli",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -2816,7 +3470,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       }
     ],
     "source": "docs/data/businesses"
@@ -2871,7 +3527,9 @@
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=6129",
         "discount_type": "billing_discount",
         "discount_value": 10.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -2890,7 +3548,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item,272214",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": false
+        "has_physical_store": false,
+        "program_id": "mcc-sheli",
+        "parent_program_id": "mcc"
       },
       {
         "club": "GiftCard max",
@@ -2899,7 +3559,9 @@
         "discount_url": "https://www.max.co.il/gift-card-network",
         "discount_type": "rechargeable_card",
         "discount_value": 16.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "max-giftcard",
+        "parent_program_id": "max"
       },
       {
         "club": "BUYME",
@@ -2913,7 +3575,9 @@
           "BUYME BABY- מגוון מתנות לידה",
           "BUYME FASHION & BEAUTY"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -2932,7 +3596,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=19",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-sheli",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר שלי",
@@ -2941,7 +3607,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=21",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-sheli",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר שלי",
@@ -2950,7 +3618,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=20",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-sheli",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -2959,7 +3629,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "GiftCard max",
@@ -2968,7 +3640,9 @@
         "discount_url": "https://www.max.co.il/gift-card-network",
         "discount_type": "rechargeable_card",
         "discount_value": 16.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "max-giftcard",
+        "parent_program_id": "max"
       },
       {
         "club": "GiftCard max",
@@ -2977,7 +3651,9 @@
         "discount_url": "https://www.max.co.il/gift-card-network",
         "discount_type": "rechargeable_card",
         "discount_value": 16.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "max-giftcard",
+        "parent_program_id": "max"
       },
       {
         "club": "GiftCard max",
@@ -2986,7 +3662,23 @@
         "discount_url": "https://www.max.co.il/gift-card-network",
         "discount_type": "rechargeable_card",
         "discount_value": 16.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "max-giftcard",
+        "parent_program_id": "max"
+      },
+      {
+        "club": "MAX",
+        "business_name": "כסף בחזרה ב-Golf Kids - גולף קידס",
+        "discount": "3% החזר כספי לכרטיס האשראי",
+        "discount_url": "https://www.max.co.il/benefits/paybacksites/paybackGolfKids",
+        "discount_type": "voucher",
+        "discount_value": 3.0,
+        "has_physical_store": true,
+        "branches": [],
+        "limitations": "*ברישום לשירות PayBack הנכם נרשמים לשירות הניתן על-ידי חברת קאשבק אונליין בע\"מ. *השירות מנוהל על ידיה ובאחריותה הבלעדית. *השירות ניתן לכל כרטיסי האשראי החוץ בנקאיים של max למעט כרטיסי Free, Debit, Cash Card ורכש ובתנאי שנרשמת לשירות. *כרטיסי בנק לאומי ופפר יהיו זכאים לקבלת החזר כספי עד 31.6.19 *סכום ההחזר הכספי בעסקת תשלומים יחושב לפי סכום העסקה המלא ולא לפי כל תשלום. סכום ההחזר יחושב מסכום העסקה לא כולל מסים, מע\"מ, אגרות, משלוח, מתנה, הנחות או זיכויים, החזרים או ביטולים, עמלות מט\"ח ואחריות מורחבת *לא ייצבר החזר כספי בגין עסקה שביטלת. * שימוש בקופונים שלא ניתנו במסגרת שירות זה עלולים למנוע קבלת החזר כספי * תוספים לדפדפן כגון חוסם פרסומות עלולים למנוע החזר * מומלץ למחוק cookies (עוגיות) לפני המעבר לאתר הקניות *max אינו צד לעסקה באתרי האינטרנט, והמוצרים/השירותים (לרבות מחיריהם, טיבם, איכותם, מועדי אספקתם, הרישום לשירות, המשלוח, התשלומים וההחזרים הכספיים וכיו\"ב) הם באחריותם הבלעדית של בתי העסק וחברת קאשבק אונליין בע\"מ. התמונות להמחשה בלבד. לתנאי השימוש המלאים . *בכפוף למדיניות ביטול הטבות ולתקנון הפינוקים ואתר ההטבות .",
+        "category": "כסף בחזרה על קניות אונליין",
+        "program_id": "max",
+        "parent_program_id": null
       },
       {
         "club": "BUYME",
@@ -3001,7 +3693,9 @@
           "BUYME VACATION & SPA- מלונות וספא",
           "BUYME LOCAL – מתנות מקומיות"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       },
       {
         "club": "BUYME",
@@ -3014,7 +3708,9 @@
           "BUYME ALL - מגוון אדיר במתנה אחת",
           "BUYME MOMENTS - מגוון חוויות"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -3038,7 +3734,9 @@
           "BUYME BABY- מגוון מתנות לידה",
           "BUYME YNG - מתנה מושלמת לבני נוער"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -3063,7 +3761,9 @@
           "BUYME FASHION & BEAUTY",
           "BUYME YNG - מתנה מושלמת לבני נוער"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -3118,7 +3818,9 @@
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=2267",
         "discount_type": "billing_discount",
         "discount_value": 10.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -3127,7 +3829,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/57795/שעוני-דניאל-קליין---DANIEL-KLEIN",
         "discount_type": "billing_discount",
         "discount_value": 10.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -3136,7 +3840,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/47498/קטיף-דניאל",
         "discount_type": "billing_discount",
         "discount_value": 3.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -3145,7 +3851,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/36109/תבליני-דניאל",
         "discount_type": "billing_discount",
         "discount_value": 3.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -3154,7 +3862,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/35327/מינימרקט-דניאל",
         "discount_type": "billing_discount",
         "discount_value": 2.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -3163,7 +3873,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/59299/מעדני-דניאל",
         "discount_type": "billing_discount",
         "discount_value": 3.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -3172,7 +3884,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/58179/רנה-ודניאל",
         "discount_type": "billing_discount",
         "discount_value": 6.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -3181,7 +3895,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/9010/אמביאנס---דניאל--עיצוב-שיער",
         "discount_type": "billing_discount",
         "discount_value": 4.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "חבר טעמים",
@@ -3190,7 +3906,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -3199,7 +3917,37 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
+      },
+      {
+        "club": "MAX",
+        "business_name": "דניאל סטיופין",
+        "discount": "55 ₪ הנחה לכרטיס תמורת פינוק",
+        "discount_url": "https://www.max.co.il/benefits/standupshows/danirlStiopin",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "has_physical_store": true,
+        "branches": [],
+        "limitations": "*ניתן להזמין עד 2 פריטים ללקוח בחודש *ההטבה עד גמר המלאי *תוקף המבצע - התאריך המצוין באתר *מספר המקומות מוגבל *הטבה שפג תוקפה איננה ניתנת למימוש על ידי הלקוח ולא יינתן זיכוי כספי בגינה. *על מנת לממש את ההטבה שרכשת עליך להגיע למשרדי בית העסק עם אחד מכרטיסי האשראי הפעילים של max שברשותך ולציין כי ההטבה נרכשה באתר ההטבות של max . *הכרטיסים ימתינו בקופות האירוע, מומלץ להביא אישור הזמנה שנשלח במייל. * max אינה אחראית במקרה של ביטולים/שינויים באירוע. * max /בית העסק רשאיות להפסיק/לשנות את המבצע בכל עת וללא הודעה מוקדמת. *התמונה להמחשה בלבד. *התשלום באמצעות כרטיס אשראי של max לא כולל כרטיסי בנק פועלים (למעט מועדונים נבחרים) , FREE, רכש , DEBIT, בנק לאומי וכרטיסי PEPPER . *את ההטבה יש לממש עד לתום התוקף המופיע בעמוד, לאחר מכן לא יינתן החזר כספי. *בכפוף למדיניות ביטול הטבות ולתקנון הפינוקים ואתר ההטבות .",
+        "category": "מופעי סטנדאפ",
+        "program_id": "max",
+        "parent_program_id": null
+      },
+      {
+        "club": "MAX",
+        "business_name": "ספא דניאל -מרכז בריאות וספא",
+        "discount": "החל מ-312 ₪",
+        "discount_url": "https://www.max.co.il/benefits/vacation/spadaniel",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "has_physical_store": true,
+        "branches": [],
+        "limitations": "או עד גמר המלאי, המוקדם מביניהם *מלאי מינימלי: 500 *לא כולל כפל מבצעים, הטבות, קופונים והנחות, ככל שרלוונטי *ניתן להזמין 2 קופונים ללקוח בחודש (ברמת ת\"ז) *לא כולל כפל מבצעים והנחות *הנחה אחת (קופון אחד) בעסקה *ההטבה אישית ואינה ניתנת להעברה *התמונה להמחשה בלבד *max ובית העסק רשאים להפסיק/לשנות את המבצע בכל עת וללא הודעה מוקדמת *המוצרים/שירותים באחריות בית העסק *תשלום בכרטיסי max בלבד, לא כולל כרטיסי בנק פועלים (למעט מועדונים נבחרים), בנק לאומי, FREE, PEPPER, DEBIT ורכש *בכפוף למדיניות ביטול הטבות ולתקנון הפינוקים ואתר ההטבות .",
+        "category": "נופש ופנאי",
+        "program_id": "max",
+        "parent_program_id": null
       },
       {
         "club": "BUYME",
@@ -3213,7 +3961,9 @@
           "BUYME BABY- מגוון מתנות לידה",
           "BUYME FOODY -מתנות קולינריות שוות"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       },
       {
         "club": "BUYME",
@@ -3228,7 +3978,9 @@
           "BUYME FASHION & BEAUTY",
           "BUYME YNG - מתנה מושלמת לבני נוער"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       },
       {
         "club": "BUYME",
@@ -3242,7 +3994,9 @@
           "BUYME VACATION & SPA- מלונות וספא",
           "BUYME LOCAL – מתנות מקומיות"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       },
       {
         "club": "BUYME",
@@ -3255,7 +4009,9 @@
           "BUYME ALL - מגוון אדיר במתנה אחת",
           "BUYME VACATION & SPA- מלונות וספא"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       },
       {
         "club": "BUYME",
@@ -3270,7 +4026,9 @@
           "BUYME VACATION & SPA- מלונות וספא",
           "BUYME LOCAL – מתנות מקומיות"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -3321,7 +4079,9 @@
           "BUYME FASHION & BEAUTY",
           "BUYME YNG - מתנה מושלמת לבני נוער"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -3394,7 +4154,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/28652/מחסני-השוק",
         "discount_type": "billing_discount",
         "discount_value": 3.25,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -3521,7 +4283,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       }
     ],
     "source": "docs/data/businesses"
@@ -3549,7 +4313,51 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,396185",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
+      },
+      {
+        "club": "אמריקן אקספרס",
+        "business_name": "מקדונלד'ס",
+        "discount": "ארוחת ילדים ב- 19 ₪",
+        "discount_url": "https://rewards.americanexpress.co.il/link/9103211079e947788b5720573db972f4.aspx",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "has_physical_store": true,
+        "branches": [],
+        "limitations": "לכלל הלקוחות בתוספת 100 נקודות | ללקוחות סנטוריון ופלטינה בתוספת 50 נקודות | למשלמים בכרטיס אמריקן אקספרס בלבד | ע\"פ המלאי הקיים בסניף | כל שינוי או החלפה או תוספת כרוכה בתשלום ע\"פ מחירון הרשת | אין כפל מבצעים והנחות | ההטבה אינה תקפה על תפריט פסח | מימוש ההטבה בהזמנה אינו מאפשר צבירת מק קויינס בתכנית הנאמנות של מקדונלד'ס | למימוש ההטבה יש להקליד את קוד ההטבה ולהוסיף את הארוחה למגש | לא תקף בתפריט לילה ונתב\"ג | לא תקף במשלוחים | פרימיום אקספרס שומרת לעצמה את הזכות לשינויים בכל עת | חברת פרימיום אקספרס בע''מ אינה אחראית לטיב המוצרים והשירותים, אחריות זו חלה על בית העסק בלבד | בכפוף לתקנון תוכנית ההטבות Membership Rewards | תוקף להורדת הטבה 31.12.2026 ו/או עד גמר המלאי | טל''ח",
+        "category": "מסעדות ובתי קפה",
+        "program_id": "program-אמריקן-אקספרס",
+        "parent_program_id": null
+      },
+      {
+        "club": "אמריקן אקספרס",
+        "business_name": "מקדונלד'ס",
+        "discount": "מגוון ארוחות רויאל ב- 22 ₪",
+        "discount_url": "https://rewards.americanexpress.co.il/link/5f1b9e2c858c4fabb7b22a470628f994.aspx",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "has_physical_store": true,
+        "branches": [],
+        "limitations": "לכלל הלקוחות בתוספת 200 נקודות | ללקוחות סנטוריון ופלטינה בתוספת 80 נקודות | למשלמים בכרטיס אמריקן אקספרס בלבד | כל שינוי או החלפה או תוספת כרוך בתשלום ע\"פ מחירון הרשת | לא תקף בתפריט לילה, משלוחים ונתב\"ג | ע\"פ המלאי הקיים בסניף | ההטבה אינה תקפה על תפריט פסח | ניתן למימוש בסניפים בעמדות המק טאצ', באתר או באפליקציית מקדונלד'ס | למימוש ההטבה יש להזין את הקוד ההטבה שקיבלתם ולהוסיף את הארוחה למגש | אין כפל מבצעים והנחות | מימוש ההטבה בהזמנה אינו מאפשר צבירת מק קויינס בתכנית הנאמנות של מקדונלד'ס | פרימיום אקספרס שומרת לעצמה את הזכות לשינויים בכל עת | חברת פרימיום אקספרס בע''מ אינה אחראית לטיב המוצרים והשירותים, אחריות זו חלה על בית העסק בלבד | בכפוף לתקנון תוכנית ההטבות Membership Rewards | תוקף להורדת הטבה 31.12.2026 ו/או עד גמר המלאי | טל''ח",
+        "category": "מסעדות ובתי קפה",
+        "program_id": "program-אמריקן-אקספרס",
+        "parent_program_id": null
+      },
+      {
+        "club": "MAX",
+        "business_name": "מקדונלד'ס - שובר 100 ₪ למימוש בסניף נתב\"ג בלבד",
+        "discount": "ב-80 ₪ (תמורת פינוק) - למימוש חד פעמי",
+        "discount_url": "https://www.max.co.il/benefits/tastytreat/macdonalds100",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "has_physical_store": true,
+        "branches": [],
+        "limitations": "*ניתן להזמין פריט אחד ללקוח בחודש *ההטבה עד גמר המלאי *תוקף מימוש - חודשיים מהרכישה *מספר המקומות מוגבל *הטבה שפג תוקפה איננה ניתנת למימוש על ידי הלקוח ולא יינתן זיכוי כספי בגינה. *על מנת לממש את ההטבה שרכשת עליך להגיע למשרדי בית העסק עם אחד מכרטיסי האשראי הפעילים של max שברשותך ולציין כי ההטבה נרכשה באתר ההטבות של max . *הכרטיסים ימתינו בקופות האירוע, מומלץ להביא אישור הזמנה שנשלח במייל. * max אינה אחראית במקרה של ביטולים/שינויים באירוע. * max /בית העסק רשאיות להפסיק/לשנות את המבצע בכל עת וללא הודעה מוקדמת. *התמונה להמחשה בלבד. *התשלום באמצעות כרטיס אשראי של max לא כולל כרטיסי בנק פועלים (למעט מועדונים נבחרים) , FREE, רכש , DEBIT, בנק לאומי וכרטיסי PEPPER . *את ההטבה יש לממש עד לתום התוקף המופיע בעמוד, לאחר מכן לא יינתן החזר כספי. *בכפוף למדיניות ביטול הטבות ולתקנון הפינוקים ואתר ההטבות .",
+        "category": "פינוק טעים",
+        "program_id": "max",
+        "parent_program_id": null
       },
       {
         "club": "BUYME",
@@ -3563,7 +4371,9 @@
           "BUYME FOODY -מתנות קולינריות שוות",
           "BUYME YNG - מתנה מושלמת לבני נוער"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -3582,7 +4392,9 @@
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=6129",
         "discount_type": "billing_discount",
         "discount_value": 10.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -3610,7 +4422,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       }
     ],
     "source": "docs/data/businesses"
@@ -3656,7 +4470,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       }
     ],
     "source": "docs/data/businesses"
@@ -3675,7 +4491,9 @@
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=4045",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc",
+        "parent_program_id": null
       },
       {
         "club": "חבר טעמים",
@@ -3684,7 +4502,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -3693,7 +4513,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -3702,7 +4524,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -3711,7 +4535,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -3720,7 +4546,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -3729,7 +4557,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -3738,7 +4568,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -3747,7 +4579,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -3756,7 +4590,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -3765,7 +4601,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -3774,7 +4612,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -3783,7 +4623,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -3792,7 +4634,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "BUYME",
@@ -3808,7 +4652,9 @@
           "BUYME BRUNCH- מגוון ארוחות בוקר",
           "BUYME YNG - מתנה מושלמת לבני נוער"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -3827,7 +4673,9 @@
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=4045",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc",
+        "parent_program_id": null
       },
       {
         "club": "חבר טעמים",
@@ -3836,7 +4684,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -3845,7 +4695,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -3854,7 +4706,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -3863,7 +4717,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -3872,7 +4728,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -3881,7 +4739,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -3890,7 +4750,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -3899,7 +4761,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -3908,7 +4772,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -3917,7 +4783,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -3926,7 +4794,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -3935,7 +4805,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -3944,7 +4816,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "BUYME",
@@ -3960,7 +4834,9 @@
           "BUYME BRUNCH- מגוון ארוחות בוקר",
           "BUYME YNG - מתנה מושלמת לבני נוער"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -3979,7 +4855,9 @@
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=4045",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc",
+        "parent_program_id": null
       },
       {
         "club": "חבר טעמים",
@@ -3988,7 +4866,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -3997,7 +4877,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -4006,7 +4888,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -4015,7 +4899,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -4024,7 +4910,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -4033,7 +4921,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -4042,7 +4932,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -4051,7 +4943,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -4060,7 +4954,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -4069,7 +4965,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -4078,7 +4976,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -4087,7 +4987,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -4096,7 +4998,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "BUYME",
@@ -4112,7 +5016,9 @@
           "BUYME BRUNCH- מגוון ארוחות בוקר",
           "BUYME YNG - מתנה מושלמת לבני נוער"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -4167,7 +5073,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/36933/בית-המשקאות",
         "discount_type": "billing_discount",
         "discount_value": 2.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -4213,7 +5121,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       }
     ],
     "source": "docs/data/businesses"
@@ -4286,7 +5196,9 @@
         "discount_url": "https://www.htzone.co.il/benefit/708/נייקי-|-NIKE/?sale_id=62",
         "discount_type": "billing_discount",
         "discount_value": 9.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "htzone",
+        "parent_program_id": null
       },
       {
         "club": "חבר שלי",
@@ -4295,7 +5207,23 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,376294",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-sheli",
+        "parent_program_id": "mcc"
+      },
+      {
+        "club": "MAX",
+        "business_name": "כסף בחזרה ב-Nike",
+        "discount": "עד 3% החזר כספי לכרטיס האשראי",
+        "discount_url": "https://www.max.co.il/benefits/paybacksites/paybacknike",
+        "discount_type": "voucher",
+        "discount_value": 3.0,
+        "has_physical_store": true,
+        "branches": [],
+        "limitations": "*ברישום לשירות PayBack הנכם נרשמים לשירות הניתן על-ידי חברת קאשבק אונליין בע\"מ. *השירות מנוהל על ידיה ובאחריותה הבלעדית. *השירות ניתן לכל כרטיסי האשראי החוץ בנקאיים של max למעט כרטיסי Free, Debit, Cash Card ורכש ובתנאי שנרשמת לשירות. *כרטיסי בנק לאומי ופפר יהיו זכאים לקבלת החזר כספי עד 31.6.19 *סכום ההחזר הכספי בעסקת תשלומים יחושב לפי סכום העסקה המלא ולא לפי כל תשלום. סכום ההחזר יחושב מסכום העסקה לא כולל מסים, מע\"מ, אגרות, משלוח, מתנה, הנחות או זיכויים, החזרים או ביטולים, עמלות מט\"ח ואחריות מורחבת *לא ייצבר החזר כספי בגין עסקה שביטלת. * שימוש בקופונים שלא ניתנו במסגרת שירות זה עלולים למנוע קבלת החזר כספי * תוספים לדפדפן כגון חוסם פרסומות עלולים למנוע החזר * מומלץ למחוק cookies (עוגיות) לפני המעבר לאתר הקניות *max אינו צד לעסקה באתרי האינטרנט, והמוצרים/השירותים (לרבות מחיריהם, טיבם, איכותם, מועדי אספקתם, הרישום לשירות, המשלוח, התשלומים וההחזרים הכספיים וכיו\"ב) הם באחריותם הבלעדית של בתי העסק וחברת קאשבק אונליין בע\"מ. התמונות להמחשה בלבד. לתנאי השימוש המלאים . *בכפוף למדיניות ביטול הטבות ולתקנון הפינוקים ואתר ההטבות .",
+        "category": "כסף בחזרה על קניות אונליין",
+        "program_id": "max",
+        "parent_program_id": null
       },
       {
         "club": "BUYME",
@@ -4309,7 +5237,9 @@
           "BUYME FASHION & BEAUTY",
           "BUYME YNG - מתנה מושלמת לבני נוער"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -4328,7 +5258,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=10",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": false
+        "has_physical_store": false,
+        "program_id": "mcc-sheli",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר שלי",
@@ -4337,7 +5269,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,270507",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": false
+        "has_physical_store": false,
+        "program_id": "mcc-sheli",
+        "parent_program_id": "mcc"
       },
       {
         "club": "GiftCard max",
@@ -4346,7 +5280,9 @@
         "discount_url": "https://www.max.co.il/gift-card-network",
         "discount_type": "rechargeable_card",
         "discount_value": 16.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "max-giftcard",
+        "parent_program_id": "max"
       },
       {
         "club": "GiftCard max",
@@ -4355,7 +5291,23 @@
         "discount_url": "https://www.max.co.il/gift-card-network",
         "discount_type": "rechargeable_card",
         "discount_value": 16.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "max-giftcard",
+        "parent_program_id": "max"
+      },
+      {
+        "club": "MAX",
+        "business_name": "כסף בחזרה ב-FOX HOME",
+        "discount": "2% החזר כספי לכרטיס האשראי",
+        "discount_url": "https://www.max.co.il/benefits/paybacksites/paybackFOXHOME",
+        "discount_type": "voucher",
+        "discount_value": 2.0,
+        "has_physical_store": true,
+        "branches": [],
+        "limitations": "*ברישום לשירות PayBack הנכם נרשמים לשירות הניתן על-ידי חברת קאשבק אונליין בע\"מ. *השירות מנוהל על ידיה ובאחריותה הבלעדית. *השירות ניתן לכל כרטיסי האשראי החוץ בנקאיים של max למעט כרטיסי Free, Debit, Cash Card ורכש ובתנאי שנרשמת לשירות. *כרטיסי בנק לאומי ופפר יהיו זכאים לקבלת החזר כספי עד 31.6.19 *סכום ההחזר הכספי בעסקת תשלומים יחושב לפי סכום העסקה המלא ולא לפי כל תשלום. סכום ההחזר יחושב מסכום העסקה לא כולל מסים, מע\"מ, אגרות, משלוח, מתנה, הנחות או זיכויים, החזרים או ביטולים, עמלות מט\"ח ואחריות מורחבת *לא ייצבר החזר כספי בגין עסקה שביטלת. * שימוש בקופונים שלא ניתנו במסגרת שירות זה עלולים למנוע קבלת החזר כספי * תוספים לדפדפן כגון חוסם פרסומות עלולים למנוע החזר * מומלץ למחוק cookies (עוגיות) לפני המעבר לאתר הקניות *max אינו צד לעסקה באתרי האינטרנט, והמוצרים/השירותים (לרבות מחיריהם, טיבם, איכותם, מועדי אספקתם, הרישום לשירות, המשלוח, התשלומים וההחזרים הכספיים וכיו\"ב) הם באחריותם הבלעדית של בתי העסק וחברת קאשבק אונליין בע\"מ. התמונות להמחשה בלבד. לתנאי השימוש המלאים . *בכפוף למדיניות ביטול הטבות ולתקנון הפינוקים ואתר ההטבות .",
+        "category": "כסף בחזרה על קניות אונליין",
+        "program_id": "max",
+        "parent_program_id": null
       },
       {
         "club": "BUYME",
@@ -4368,7 +5320,9 @@
           "BUYME ALL - מגוון אדיר במתנה אחת",
           "BUYME YNG - מתנה מושלמת לבני נוער"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       },
       {
         "club": "BUYME",
@@ -4382,7 +5336,9 @@
           "BUYME FASHION & BEAUTY",
           "BUYME YNG - מתנה מושלמת לבני נוער"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       },
       {
         "club": "BUYME",
@@ -4396,7 +5352,9 @@
           "BUYME FASHION & BEAUTY",
           "BUYME YNG - מתנה מושלמת לבני נוער"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -4415,7 +5373,9 @@
         "discount_url": "https://www.max.co.il/gift-card-network",
         "discount_type": "rechargeable_card",
         "discount_value": 16.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "max-giftcard",
+        "parent_program_id": "max"
       },
       {
         "club": "BUYME",
@@ -4429,7 +5389,9 @@
           "BUYME FASHION & BEAUTY",
           "BUYME YNG - מתנה מושלמת לבני נוער"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -4453,7 +5415,9 @@
           "BUYME FASHION & BEAUTY",
           "BUYME YNG - מתנה מושלמת לבני נוער"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -4472,7 +5436,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=872",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-sheli",
+        "parent_program_id": "mcc"
       },
       {
         "club": "GiftCard max",
@@ -4481,7 +5447,9 @@
         "discount_url": "https://www.max.co.il/gift-card-network",
         "discount_type": "rechargeable_card",
         "discount_value": 16.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "max-giftcard",
+        "parent_program_id": "max"
       },
       {
         "club": "BUYME",
@@ -4495,7 +5463,9 @@
           "BUYME FASHION & BEAUTY",
           "BUYME YNG - מתנה מושלמת לבני נוער"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -4514,7 +5484,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=146",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": false
+        "has_physical_store": false,
+        "program_id": "mcc-sheli",
+        "parent_program_id": "mcc"
       },
       {
         "club": "GiftCard max",
@@ -4523,7 +5495,9 @@
         "discount_url": "https://www.max.co.il/gift-card-network",
         "discount_type": "rechargeable_card",
         "discount_value": 16.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "max-giftcard",
+        "parent_program_id": "max"
       },
       {
         "club": "BUYME",
@@ -4537,7 +5511,9 @@
           "BUYME FASHION & BEAUTY",
           "BUYME YNG - מתנה מושלמת לבני נוער"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -4565,7 +5541,9 @@
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5434",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc",
+        "parent_program_id": null
       },
       {
         "club": "חבר",
@@ -4574,7 +5552,9 @@
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5569",
         "discount_type": "billing_discount",
         "discount_value": 8.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -4583,7 +5563,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/24368/B-SECURED--מחשוב,-סלולר,-מיגון-ואבטחה",
         "discount_type": "billing_discount",
         "discount_value": 2.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "GiftCard max",
@@ -4592,7 +5574,9 @@
         "discount_url": "https://www.max.co.il/gift-card-network",
         "discount_type": "rechargeable_card",
         "discount_value": 16.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "max-giftcard",
+        "parent_program_id": "max"
       },
       {
         "club": "BUYME",
@@ -4606,7 +5590,9 @@
           "BUYME BABY- מגוון מתנות לידה",
           "BUYME FASHION & BEAUTY"
         ],
-        "has_physical_store": false
+        "has_physical_store": false,
+        "program_id": "buyme",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -4625,7 +5611,9 @@
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=6144",
         "discount_type": "billing_discount",
         "discount_value": 7.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc",
+        "parent_program_id": null
       },
       {
         "club": "חבר",
@@ -4634,7 +5622,9 @@
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=1639",
         "discount_type": "billing_discount",
         "discount_value": 3.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc",
+        "parent_program_id": null
       },
       {
         "club": "BUYME",
@@ -4647,7 +5637,9 @@
           "BUYME ALL - מגוון אדיר במתנה אחת",
           "BUYME BABY- מגוון מתנות לידה"
         ],
-        "has_physical_store": false
+        "has_physical_store": false,
+        "program_id": "buyme",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -4684,7 +5676,9 @@
         "discount_url": "https://www.max.co.il/gift-card-network",
         "discount_type": "rechargeable_card",
         "discount_value": 16.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "max-super-giftcard",
+        "parent_program_id": "max"
       },
       {
         "club": "Super GiftCard max",
@@ -4693,7 +5687,9 @@
         "discount_url": "https://www.max.co.il/gift-card-network",
         "discount_type": "rechargeable_card",
         "discount_value": 16.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "max-super-giftcard",
+        "parent_program_id": "max"
       },
       {
         "club": "BUYME",
@@ -4709,7 +5705,9 @@
           "BUYME HOME DESIGN - בית ואווירה",
           "BUYME YNG - מתנה מושלמת לבני נוער"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       },
       {
         "club": "BUYME",
@@ -4722,7 +5720,9 @@
           "BUYME ALL - מגוון אדיר במתנה אחת",
           "BUYME HOME DESIGN - בית ואווירה"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -4741,7 +5741,9 @@
         "discount_url": "https://www.max.co.il/gift-card-network",
         "discount_type": "rechargeable_card",
         "discount_value": 16.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "max-giftcard",
+        "parent_program_id": "max"
       }
     ],
     "source": "docs/data/businesses"
@@ -4769,7 +5771,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=81",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-sheli",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -4778,7 +5782,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "GiftCard max",
@@ -4787,7 +5793,9 @@
         "discount_url": "https://www.max.co.il/gift-card-network",
         "discount_type": "rechargeable_card",
         "discount_value": 16.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "max-giftcard",
+        "parent_program_id": "max"
       },
       {
         "club": "BUYME",
@@ -4801,7 +5809,9 @@
           "BUYME FASHION & BEAUTY",
           "BUYME YNG - מתנה מושלמת לבני נוער"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -4813,6 +5823,20 @@
     "lat": 29.553848,
     "lon": 34.965418,
     "discounts": [
+      {
+        "club": "MAX",
+        "business_name": "כסף בחזרה בHoodies - הודיס",
+        "discount": "4% החזר כספי לכרטיס האשראי",
+        "discount_url": "https://www.max.co.il/benefits/paybacksites/paybackHoodies",
+        "discount_type": "voucher",
+        "discount_value": 4.0,
+        "has_physical_store": true,
+        "branches": [],
+        "limitations": "*ברישום לשירות PayBack הנכם נרשמים לשירות הניתן על-ידי חברת קאשבק אונליין בע\"מ. *השירות מנוהל על ידיה ובאחריותה הבלעדית. *השירות ניתן לכל כרטיסי האשראי החוץ בנקאיים של max למעט כרטיסי Free, Debit, Cash Card ורכש ובתנאי שנרשמת לשירות. *כרטיסי בנק לאומי ופפר יהיו זכאים לקבלת החזר כספי עד 31.6.19 *סכום ההחזר הכספי בעסקת תשלומים יחושב לפי סכום העסקה המלא ולא לפי כל תשלום. סכום ההחזר יחושב מסכום העסקה לא כולל מסים, מע\"מ, אגרות, משלוח, מתנה, הנחות או זיכויים, החזרים או ביטולים, עמלות מט\"ח ואחריות מורחבת *לא ייצבר החזר כספי בגין עסקה שביטלת. * שימוש בקופונים שלא ניתנו במסגרת שירות זה עלולים למנוע קבלת החזר כספי * תוספים לדפדפן כגון חוסם פרסומות עלולים למנוע החזר * מומלץ למחוק cookies (עוגיות) לפני המעבר לאתר הקניות *max אינו צד לעסקה באתרי האינטרנט, והמוצרים/השירותים (לרבות מחיריהם, טיבם, איכותם, מועדי אספקתם, הרישום לשירות, המשלוח, התשלומים וההחזרים הכספיים וכיו\"ב) הם באחריותם הבלעדית של בתי העסק וחברת קאשבק אונליין בע\"מ. התמונות להמחשה בלבד. לתנאי השימוש המלאים . *בכפוף למדיניות ביטול הטבות ולתקנון הפינוקים ואתר ההטבות .",
+        "category": "כסף בחזרה על קניות אונליין",
+        "program_id": "max",
+        "parent_program_id": null
+      },
       {
         "club": "BUYME",
         "business_name": "HOODIES",
@@ -4826,7 +5850,9 @@
           "BUYME FASHION & BEAUTY",
           "BUYME YNG - מתנה מושלמת לבני נוער"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -4851,7 +5877,9 @@
           "BUYME FASHION & BEAUTY",
           "BUYME YNG - מתנה מושלמת לבני נוער"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -4870,7 +5898,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/gift_card_store?sn=645",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-sheli",
+        "parent_program_id": "mcc"
       },
       {
         "club": "GiftCard max",
@@ -4879,7 +5909,9 @@
         "discount_url": "https://www.max.co.il/gift-card-network",
         "discount_type": "rechargeable_card",
         "discount_value": 16.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "max-giftcard",
+        "parent_program_id": "max"
       },
       {
         "club": "BUYME",
@@ -4893,7 +5925,9 @@
           "BUYME VACATION & SPA- מלונות וספא",
           "BUYME LOCAL – מתנות מקומיות"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       },
       {
         "club": "BUYME",
@@ -4907,7 +5941,9 @@
           "BUYME FASHION & BEAUTY",
           "BUYME YNG - מתנה מושלמת לבני נוער"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -4918,7 +5954,22 @@
     "type": "clothes",
     "lat": 29.553983,
     "lon": 34.965355,
-    "discounts": [],
+    "discounts": [
+      {
+        "club": "MAX",
+        "business_name": "TwentyFourSeven",
+        "discount": "3% החזר כספי באתר ברכישה עם שירות PayBack",
+        "discount_url": "https://www.max.co.il/benefits/paybacksites/24-7",
+        "discount_type": "voucher",
+        "discount_value": 3.0,
+        "has_physical_store": false,
+        "branches": [],
+        "limitations": "​*שימוש בקודים וקופונים חיצוניים עשויים למנוע קבלת קאשבק. ​ *ברישום לשירות PayBack הנכם נרשמים לשירות הניתן על-ידי חברת קאשבק אונליין בע\"מ. *השירות מנוהל על ידיה ובאחריותה הבלעדית. *השירות ניתן לכל כרטיסי האשראי החוץ בנקאיים של max למעט כרטיסי Free, Debit, Cash Card ורכש ובתנאי שנרשמת לשירות. *כרטיסי בנק לאומי ופפר יהיו זכאים לקבלת החזר כספי עד 31.6.19 *סכום ההחזר הכספי בעסקת תשלומים יחושב לפי סכום העסקה המלא ולא לפי כל תשלום. סכום ההחזר יחושב מסכום העסקה לא כולל מסים, מע\"מ, אגרות, משלוח, מתנה, הנחות או זיכויים, החזרים או ביטולים, עמלות מט\"ח ואחריות מורחבת *לא ייצבר החזר כספי בגין עסקה שביטלת. * שימוש בקופונים שלא ניתנו במסגרת שירות זה עלולים למנוע קבלת החזר כספי * תוספים לדפדפן כגון חוסם פרסומות עלולים למנוע החזר * מומלץ למחוק cookies (עוגיות) לפני המעבר לאתר הקניות *max אינו צד לעסקה באתרי האינטרנט, והמוצרים/השירותים (לרבות מחיריהם, טיבם, איכותם, מועדי אספקתם, הרישום לשירות, המשלוח, התשלומים וההחזרים הכספיים וכיו\"ב) הם באחריותם הבלעדית של בתי העסק וחברת קאשבק אונליין בע\"מ. התמונות להמחשה בלבד. לתנאי השימוש המלאים . *בכפוף למדיניות ביטול הטבות ולתקנון הפינוקים ואתר ההטבות .",
+        "category": "כסף בחזרה על קניות אונליין",
+        "program_id": "max",
+        "parent_program_id": null
+      }
+    ],
     "source": "docs/data/businesses"
   },
   {
@@ -4941,7 +5992,9 @@
           "BUYME FASHION & BEAUTY",
           "BUYME YNG - מתנה מושלמת לבני נוער"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       },
       {
         "club": "BUYME",
@@ -4955,7 +6008,9 @@
           "BUYME BABY- מגוון מתנות לידה",
           "BUYME YNG - מתנה מושלמת לבני נוער"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       },
       {
         "club": "BUYME",
@@ -4970,7 +6025,9 @@
           "BUYME FASHION & BEAUTY",
           "BUYME YNG - מתנה מושלמת לבני נוער"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -4989,7 +6046,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,321374",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-sheli",
+        "parent_program_id": "mcc"
       },
       {
         "club": "GiftCard max",
@@ -4998,7 +6057,9 @@
         "discount_url": "https://www.max.co.il/gift-card-network",
         "discount_type": "rechargeable_card",
         "discount_value": 16.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "max-giftcard",
+        "parent_program_id": "max"
       },
       {
         "club": "BUYME",
@@ -5012,7 +6073,9 @@
           "BUYME FASHION & BEAUTY",
           "BUYME YNG - מתנה מושלמת לבני נוער"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -5031,7 +6094,9 @@
         "discount_url": "https://www.htzone.co.il/benefit/708/נייקי-|-NIKE/?sale_id=62",
         "discount_type": "billing_discount",
         "discount_value": 9.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "htzone",
+        "parent_program_id": null
       },
       {
         "club": "חבר שלי",
@@ -5040,7 +6105,23 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,376294",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-sheli",
+        "parent_program_id": "mcc"
+      },
+      {
+        "club": "MAX",
+        "business_name": "כסף בחזרה ב-Nike",
+        "discount": "עד 3% החזר כספי לכרטיס האשראי",
+        "discount_url": "https://www.max.co.il/benefits/paybacksites/paybacknike",
+        "discount_type": "voucher",
+        "discount_value": 3.0,
+        "has_physical_store": true,
+        "branches": [],
+        "limitations": "*ברישום לשירות PayBack הנכם נרשמים לשירות הניתן על-ידי חברת קאשבק אונליין בע\"מ. *השירות מנוהל על ידיה ובאחריותה הבלעדית. *השירות ניתן לכל כרטיסי האשראי החוץ בנקאיים של max למעט כרטיסי Free, Debit, Cash Card ורכש ובתנאי שנרשמת לשירות. *כרטיסי בנק לאומי ופפר יהיו זכאים לקבלת החזר כספי עד 31.6.19 *סכום ההחזר הכספי בעסקת תשלומים יחושב לפי סכום העסקה המלא ולא לפי כל תשלום. סכום ההחזר יחושב מסכום העסקה לא כולל מסים, מע\"מ, אגרות, משלוח, מתנה, הנחות או זיכויים, החזרים או ביטולים, עמלות מט\"ח ואחריות מורחבת *לא ייצבר החזר כספי בגין עסקה שביטלת. * שימוש בקופונים שלא ניתנו במסגרת שירות זה עלולים למנוע קבלת החזר כספי * תוספים לדפדפן כגון חוסם פרסומות עלולים למנוע החזר * מומלץ למחוק cookies (עוגיות) לפני המעבר לאתר הקניות *max אינו צד לעסקה באתרי האינטרנט, והמוצרים/השירותים (לרבות מחיריהם, טיבם, איכותם, מועדי אספקתם, הרישום לשירות, המשלוח, התשלומים וההחזרים הכספיים וכיו\"ב) הם באחריותם הבלעדית של בתי העסק וחברת קאשבק אונליין בע\"מ. התמונות להמחשה בלבד. לתנאי השימוש המלאים . *בכפוף למדיניות ביטול הטבות ולתקנון הפינוקים ואתר ההטבות .",
+        "category": "כסף בחזרה על קניות אונליין",
+        "program_id": "max",
+        "parent_program_id": null
       },
       {
         "club": "BUYME",
@@ -5054,7 +6135,9 @@
           "BUYME FASHION & BEAUTY",
           "BUYME YNG - מתנה מושלמת לבני נוער"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -5085,6 +6168,20 @@
     "lon": 34.965767,
     "discounts": [
       {
+        "club": "MAX",
+        "business_name": "כסף בחזרה בHoodies - הודיס",
+        "discount": "4% החזר כספי לכרטיס האשראי",
+        "discount_url": "https://www.max.co.il/benefits/paybacksites/paybackHoodies",
+        "discount_type": "voucher",
+        "discount_value": 4.0,
+        "has_physical_store": true,
+        "branches": [],
+        "limitations": "*ברישום לשירות PayBack הנכם נרשמים לשירות הניתן על-ידי חברת קאשבק אונליין בע\"מ. *השירות מנוהל על ידיה ובאחריותה הבלעדית. *השירות ניתן לכל כרטיסי האשראי החוץ בנקאיים של max למעט כרטיסי Free, Debit, Cash Card ורכש ובתנאי שנרשמת לשירות. *כרטיסי בנק לאומי ופפר יהיו זכאים לקבלת החזר כספי עד 31.6.19 *סכום ההחזר הכספי בעסקת תשלומים יחושב לפי סכום העסקה המלא ולא לפי כל תשלום. סכום ההחזר יחושב מסכום העסקה לא כולל מסים, מע\"מ, אגרות, משלוח, מתנה, הנחות או זיכויים, החזרים או ביטולים, עמלות מט\"ח ואחריות מורחבת *לא ייצבר החזר כספי בגין עסקה שביטלת. * שימוש בקופונים שלא ניתנו במסגרת שירות זה עלולים למנוע קבלת החזר כספי * תוספים לדפדפן כגון חוסם פרסומות עלולים למנוע החזר * מומלץ למחוק cookies (עוגיות) לפני המעבר לאתר הקניות *max אינו צד לעסקה באתרי האינטרנט, והמוצרים/השירותים (לרבות מחיריהם, טיבם, איכותם, מועדי אספקתם, הרישום לשירות, המשלוח, התשלומים וההחזרים הכספיים וכיו\"ב) הם באחריותם הבלעדית של בתי העסק וחברת קאשבק אונליין בע\"מ. התמונות להמחשה בלבד. לתנאי השימוש המלאים . *בכפוף למדיניות ביטול הטבות ולתקנון הפינוקים ואתר ההטבות .",
+        "category": "כסף בחזרה על קניות אונליין",
+        "program_id": "max",
+        "parent_program_id": null
+      },
+      {
         "club": "BUYME",
         "business_name": "HOODIES",
         "discount": "למימוש השובר יש להציגו באחד מסניפי רשת הודיס בקופה, באמצעות SMS/ מייל/ שובר מודפס. ניתן למימוש כולל כפל מבצעים. ללא הגבלות. לרשימת סניפי הרשת",
@@ -5097,7 +6194,9 @@
           "BUYME FASHION & BEAUTY",
           "BUYME YNG - מתנה מושלמת לבני נוער"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -5131,7 +6230,9 @@
           "BUYME FASHION & BEAUTY",
           "BUYME YNG - מתנה מושלמת לבני נוער"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -5160,7 +6261,22 @@
     "type": "convenience",
     "lat": 29.51025,
     "lon": 34.922201,
-    "discounts": [],
+    "discounts": [
+      {
+        "club": "אמריקן אקספרס",
+        "business_name": "סופר",
+        "discount": "פארם - 50 ש''ח הנחה בתוספת נקודות",
+        "discount_url": "https://rewards.americanexpress.co.il/link/320cf44179ad455c9ff102a7c832f501.aspx",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "has_physical_store": true,
+        "branches": [],
+        "limitations": "לכלל הלקוחות בתוספת 450 נקודות | ללקוחות סנטוריון ופלטינה בתוספת 200 נקודות | ההטבה למשלמים בכרטיס אמריקן אקספרס למעט כרטיס אמריקן אקספרס Blue, מקומי ו - Fly card | כולל כפל מבצעים | ההטבה אינה תקפה למימוש באתר סופר-פארם אונליין | לא כולל מבצעי \"קונים, מוסיפים, מקבלים\", תרומות, תרופות מרשם, משיכת מזומנים וטעינת גיפט קארד | בהורדת קוד ההטבה יגרעו מיידית מחשבונך נקודות Membership Rewards בהתאם לסוג הכרטיס שברשותך | פרימיום אקספרס שומרת לעצמה את הזכות לשינויים בכל עת | חברת פרימיום אקספרס בע''מ אינה אחראית לטיב המוצרים והשירותים, אחריות זו חלה על בית העסק בלבד | מותנה בקניה של 51 ₪ ומעלה | ניתן לממש קוד הטבה אחד בעסקה | בכפוף לתקנון תוכנית ההטבות Membership Rewards | תוקף המבצע 31.12.2026| ט.ל.ח",
+        "category": "סופרמרקטים ופארם",
+        "program_id": "program-אמריקן-אקספרס",
+        "parent_program_id": null
+      }
+    ],
     "source": "docs/data/businesses"
   },
   {
@@ -5178,7 +6294,22 @@
     "type": "computer",
     "lat": 29.551508,
     "lon": 34.957813,
-    "discounts": [],
+    "discounts": [
+      {
+        "club": "אמריקן אקספרס",
+        "business_name": "KSP",
+        "discount": "משלמים בנקודות שצברתם בכרטיס",
+        "discount_url": "https://rewards.americanexpress.co.il/link/0845acf6072a4da29da6de8385377a45.aspx",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "has_physical_store": true,
+        "branches": [],
+        "limitations": "לכלל הלקוחות החל מ- 120 נקודות | ללקוחות סנטוריון ופלטינה החל מ- 40 נקודות | למשלמים בכרטיס אמריקן אקספרס בלבד | ההטבה תקפה לאתר ולסניפים | כולל כפל מבצעים, לא כולל כפל הנחות וקופונים מגורמים אחרים | ניתן לנצל את כמות הנקודות ברכישה עד 80% מסכום העסקה | למגוון המוצרים המוצעים באתר אונליין של KSP ובחנויות | המינימום לקבלת ההנחה לכלל הלקוחות הינו 120 נקודות, ללקוחות מועדון עסקים קטנים 100 נקודות וללקוחות סנטוריון ופלטינה הינו 40 נקודות ובהתאם ליחס הצבירה של כל כרטיס | פרימיום אקספרס שומרת לעצמה את הזכות לשינויים בכל עת | חברת פרימיום אקספרס בע''מ אינה אחראית לטיב המוצרים והשירותים, אחריות זו חלה על בית העסק בלבד | מימוש הנקודות בכפוף לתקנון תוכנית ההטבות Membership Rewards | תוקף ההטבה עד 31.12.2026 | התמונה להמחשה בלבד | טל'ח",
+        "category": "חשמל, גאדג'טים וסלולר",
+        "program_id": "program-אמריקן-אקספרס",
+        "parent_program_id": null
+      }
+    ],
     "source": "docs/data/businesses"
   },
   {
@@ -5196,7 +6327,22 @@
     "type": "mall",
     "lat": 29.554007,
     "lon": 34.965754,
-    "discounts": [],
+    "discounts": [
+      {
+        "club": "MAX",
+        "business_name": "אייס מול אילת החלקה על הקרח",
+        "discount": "החל מ-40 ₪ (תמורת פינוק) והנחת יחיד",
+        "discount_url": "https://www.max.co.il/benefits/attractions/attractionicemall",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "has_physical_store": true,
+        "branches": [],
+        "limitations": "*ניתן להזמין עד 2 פריטים ללקוח בחודש *ההטבה עד גמר המלאי *תוקף המבצע - התאריך המצוין באתר *מספר המקומות מוגבל *הטבה שפג תוקפה איננה ניתנת למימוש על ידי הלקוח ולא יינתן זיכוי כספי בגינה. *על מנת לממש את ההטבה שרכשת עליך להגיע למשרדי בית העסק עם אחד מכרטיסי האשראי הפעילים של max שברשותך ולציין כי ההטבה נרכשה באתר ההטבות של max . *הכרטיסים ימתינו בקופות האירוע, מומלץ להביא אישור הזמנה שנשלח במייל. * max אינה אחראית במקרה של ביטולים/שינויים באירוע. * max /בית העסק רשאיות להפסיק/לשנות את המבצע בכל עת וללא הודעה מוקדמת. *התמונה להמחשה בלבד. *התשלום באמצעות כרטיס אשראי של max לא כולל כרטיסי בנק פועלים (למעט מועדונים נבחרים) , FREE, רכש , DEBIT, בנק לאומי וכרטיסי PEPPER . *את ההטבה יש לממש עד לתום התוקף המופיע בעמוד, לאחר מכן לא יינתן החזר כספי. *בכפוף למדיניות ביטול הטבות ולתקנון הפינוקים ואתר ההטבות .",
+        "category": "אטרקציות והצגות ילדים",
+        "program_id": "max",
+        "parent_program_id": null
+      }
+    ],
     "source": "docs/data/businesses"
   },
   {
@@ -5267,7 +6413,9 @@
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5904",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -5276,7 +6424,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/48080/ביג-זול-ללא-גלוטן",
         "discount_type": "billing_discount",
         "discount_value": 2.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -5285,7 +6435,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/45323/גרעיני-עפולה-ביגדן",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -5294,7 +6446,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/37477/ביג-גרף--בית-דפוס",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -5303,7 +6457,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/37062/Adama-Queen-Store--ביגוד-לכל-המשפחה",
         "discount_type": "billing_discount",
         "discount_value": 3.5,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -5312,7 +6468,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/35696/הכי-זול-בעיר--ביגוד-למשפחה",
         "discount_type": "billing_discount",
         "discount_value": 3.5,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -5321,7 +6479,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/34682/באבלס--ביגוד-לכל-המשפחה",
         "discount_type": "billing_discount",
         "discount_value": 3.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -5330,7 +6490,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/61359/עולם-הביגוד-והקמפינג",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -5339,7 +6501,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/25620/נאיה-פישן--הנעלה-וביגוד-למשפחה",
         "discount_type": "billing_discount",
         "discount_value": 3.5,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -5348,7 +6512,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/24185/ש-ב-א--ביגוד-והנעלה-לגברים-ולילדים",
         "discount_type": "billing_discount",
         "discount_value": 4.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -5357,7 +6523,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/20802/אנג'לו--ביגוד-עבודה",
         "discount_type": "billing_discount",
         "discount_value": 4.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -5366,7 +6534,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/7999/יונידרס---לובשים-אופנה-ביגוד-מקצועי",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "חבר שלי",
@@ -5375,7 +6545,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,354561",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-sheli",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר שלי",
@@ -5384,7 +6556,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,288344",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": false
+        "has_physical_store": false,
+        "program_id": "mcc-sheli",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -5393,7 +6567,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,325697",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -5402,7 +6578,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,325697",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -5411,7 +6589,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,392103",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "BUYME",
@@ -5424,7 +6604,9 @@
           "BUYME ALL - מגוון אדיר במתנה אחת",
           "BUYME HOME DESIGN - בית ואווירה"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       },
       {
         "club": "BUYME",
@@ -5439,7 +6621,9 @@
           "BUYME LOCAL – מתנות מקומיות",
           "BUYME YNG - מתנה מושלמת לבני נוער"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -5458,7 +6642,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/44204/BIG-Electric",
         "discount_type": "billing_discount",
         "discount_value": 4.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -5467,7 +6653,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/36116/Big-emporio--מותגי-אופנה",
         "discount_type": "billing_discount",
         "discount_value": 3.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -5476,7 +6664,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/27870/Big-Side--מחשבים-וסלולר",
         "discount_type": "billing_discount",
         "discount_value": 3.5,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -5495,7 +6685,9 @@
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5904",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -5504,7 +6696,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/48080/ביג-זול-ללא-גלוטן",
         "discount_type": "billing_discount",
         "discount_value": 2.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -5513,7 +6707,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/45323/גרעיני-עפולה-ביגדן",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -5522,7 +6718,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/37477/ביג-גרף--בית-דפוס",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -5531,7 +6729,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/37062/Adama-Queen-Store--ביגוד-לכל-המשפחה",
         "discount_type": "billing_discount",
         "discount_value": 3.5,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -5540,7 +6740,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/35696/הכי-זול-בעיר--ביגוד-למשפחה",
         "discount_type": "billing_discount",
         "discount_value": 3.5,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -5549,7 +6751,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/34682/באבלס--ביגוד-לכל-המשפחה",
         "discount_type": "billing_discount",
         "discount_value": 3.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -5558,7 +6762,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/61359/עולם-הביגוד-והקמפינג",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -5567,7 +6773,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/25620/נאיה-פישן--הנעלה-וביגוד-למשפחה",
         "discount_type": "billing_discount",
         "discount_value": 3.5,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -5576,7 +6784,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/24185/ש-ב-א--ביגוד-והנעלה-לגברים-ולילדים",
         "discount_type": "billing_discount",
         "discount_value": 4.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -5585,7 +6795,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/20802/אנג'לו--ביגוד-עבודה",
         "discount_type": "billing_discount",
         "discount_value": 4.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -5594,7 +6806,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/7999/יונידרס---לובשים-אופנה-ביגוד-מקצועי",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "חבר שלי",
@@ -5603,7 +6817,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,354561",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-sheli",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר שלי",
@@ -5612,7 +6828,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,288344",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": false
+        "has_physical_store": false,
+        "program_id": "mcc-sheli",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -5621,7 +6839,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,325697",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -5630,7 +6850,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,325697",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -5639,7 +6861,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,392103",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "BUYME",
@@ -5652,7 +6876,9 @@
           "BUYME ALL - מגוון אדיר במתנה אחת",
           "BUYME HOME DESIGN - בית ואווירה"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       },
       {
         "club": "BUYME",
@@ -5667,7 +6893,9 @@
           "BUYME LOCAL – מתנות מקומיות",
           "BUYME YNG - מתנה מושלמת לבני נוער"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -5695,7 +6923,23 @@
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=4440",
         "discount_type": "billing_discount",
         "discount_value": 10.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc",
+        "parent_program_id": null
+      },
+      {
+        "club": "MAX",
+        "business_name": "הגן הבוטני של אילת",
+        "discount": "1+1 החל מ-22 ₪ (תמורת פינוק) והנחות ליחיד",
+        "discount_url": "https://www.max.co.il/benefits/attractions/ganabotamieilat",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "has_physical_store": true,
+        "branches": [],
+        "limitations": "​*מלאי מינימלי חודשי: 50. *ההטבה עד גמר המלאי. *הטבות 1+1: ניתן להזמין עד 2 הטבות 1+1 עבור הטבה זו באותו חודש. *תוקף למימוש הטבת 1+1 (הן המוצר/שירות ששולם עבורו מחיר מלא והן המוצר/שירות שניתן ללא תשלום) עד חודשיים מיום הזמנת ההטבה אלא אם מצוין אחרת. לאחר מכן יפוג תוקפה של הטבת 1+1 ולא יינתן זיכוי או החזר כספי בגינה. *יש לממש את שני מוצרי/שירותי ההטבה (1+1) באותו מועד. *אם הזמנתם מספר הטבות באותו בית עסק, בבואכם לנצלן תמומשנה כל ההטבות בבת אחת. *על מנת לממש את ההטבה שנרכשה יש להגיע לקופת בית העסק עם כרטיס max שבאמצעותו בוצעה ההזמנה ולציין כי ההטבה נרכשה באתר הטבות של max. *למשלמים בכרטיס אשראי max, לא כולל כרטיסי בנק פועלים (למעט מועדונים נבחרים), FREE, רכש, DEBIT, בנק לאומי וכרטיסי PEPPER. *התמונה להמחשה בלבד. *המוצרים/שירותים באחריות בתי העסק בלבד. *max/בית העסק רשאים להפסיק/לשנות את המבצע בכל עת וללא הודעה מוקדמת. *אין כפל מבצעים והנחות. *בכפוף למדיניות ביטול הטבות ולתקנון הפינוקים ואתר ההטבות .",
+        "category": "אטרקציות והצגות ילדים",
+        "program_id": "max",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -5714,7 +6958,9 @@
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5154",
         "discount_type": "billing_discount",
         "discount_value": 8.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -5733,7 +6979,9 @@
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=2550",
         "discount_type": "billing_discount",
         "discount_value": 7.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -5752,7 +7000,9 @@
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=2605",
         "discount_type": "billing_discount",
         "discount_value": 12.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -5771,7 +7021,9 @@
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5554",
         "discount_type": "billing_discount",
         "discount_value": 3.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -5790,7 +7042,9 @@
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=6018",
         "discount_type": "billing_discount",
         "discount_value": 3.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -5809,7 +7063,9 @@
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=6139",
         "discount_type": "billing_discount",
         "discount_value": 10.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc",
+        "parent_program_id": null
       },
       {
         "club": "חבר טעמים",
@@ -5818,7 +7074,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,324410",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "BUYME",
@@ -5835,7 +7093,9 @@
           "BUYME MOMENTS - מגוון חוויות",
           "BUYME LIVE – מתנות מעולם התרבות"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -5854,7 +7114,9 @@
         "discount_url": "https://www.mcc.co.il/site/pg/st_reshet_out&p1=5859",
         "discount_type": "billing_discount",
         "discount_value": 10.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc",
+        "parent_program_id": null
       },
       {
         "club": "חבר שלי",
@@ -5863,7 +7125,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,347881",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": false
+        "has_physical_store": false,
+        "program_id": "mcc-sheli",
+        "parent_program_id": "mcc"
       }
     ],
     "source": "docs/data/businesses"
@@ -5882,7 +7146,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/44424/זעפרן",
         "discount_type": "billing_discount",
         "discount_value": 3.5,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -5901,7 +7167,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/42381/שרון-הסרת-שיער-בלייזר",
         "discount_type": "billing_discount",
         "discount_value": 3.5,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "HOT",
@@ -5910,7 +7178,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/55726/בלייזר",
         "discount_type": "billing_discount",
         "discount_value": 3.5,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -5929,7 +7199,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/37850/ידי-זהב--תכשיטים",
         "discount_type": "billing_discount",
         "discount_value": 3.5,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -5948,7 +7220,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/35696/הכי-זול-בעיר--ביגוד-למשפחה",
         "discount_type": "billing_discount",
         "discount_value": 3.5,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -5967,7 +7241,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/60913/ספורט-קלאב",
         "discount_type": "billing_discount",
         "discount_value": 3.5,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -5986,7 +7262,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/59274/Tienda-eilat---טיינדה-אילת",
         "discount_type": "billing_discount",
         "discount_value": 5.0,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -6005,7 +7283,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/59016/כלבו-שחמון",
         "discount_type": "billing_discount",
         "discount_value": 8.5,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -6024,7 +7304,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/57696/שווארמה-איציק",
         "discount_type": "billing_discount",
         "discount_value": 3.5,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -6052,7 +7334,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/57110/פרולי-גלידות-ומתוקים",
         "discount_type": "billing_discount",
         "discount_value": 3.5,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "חבר שלי",
@@ -6061,7 +7345,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,347881",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": false
+        "has_physical_store": false,
+        "program_id": "mcc-sheli",
+        "parent_program_id": "mcc"
       }
     ],
     "source": "docs/data/businesses"
@@ -6080,7 +7366,9 @@
         "discount_url": "https://www.hot.co.il/הטבה/57058/צ'ופאפי-הבית-של-הגלידות",
         "discount_type": "billing_discount",
         "discount_value": 3.5,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "hot",
+        "parent_program_id": null
       },
       {
         "club": "חבר שלי",
@@ -6089,7 +7377,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,347881",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": false
+        "has_physical_store": false,
+        "program_id": "mcc-sheli",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -6098,7 +7388,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,398677",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       }
     ],
     "source": "docs/data/businesses"
@@ -6117,7 +7409,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       }
     ],
     "source": "docs/data/businesses"
@@ -6136,7 +7430,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,384187",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -6145,7 +7441,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,384188",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -6154,7 +7452,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,384189",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       }
     ],
     "source": "docs/data/businesses"
@@ -6173,7 +7473,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,384191",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -6182,7 +7484,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,384195",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       }
     ],
     "source": "docs/data/businesses"
@@ -6201,7 +7505,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "BUYME",
@@ -6217,7 +7523,9 @@
           "BUYME BRUNCH- מגוון ארוחות בוקר",
           "BUYME LOCAL – מתנות מקומיות"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -6236,7 +7544,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       }
     ],
     "source": "docs/data/businesses"
@@ -6255,7 +7565,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,384193",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       }
     ],
     "source": "docs/data/businesses"
@@ -6274,7 +7586,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,289326",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       },
       {
         "club": "חבר טעמים",
@@ -6283,7 +7597,23 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,289326",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
+      },
+      {
+        "club": "מפתח דיסקונט",
+        "business_name": "פיצה עגבניה",
+        "discount": "4% הנחה",
+        "discount_url": "https://agvania.co.il/",
+        "discount_type": "billing_discount",
+        "discount_value": 4.0,
+        "has_physical_store": true,
+        "branches": [],
+        "limitations": "בפיצה עגבניה איכות וטריות הם מילות המפתח. בצק פריך ודק כמובן עשוי מתערובת קמחים הייחודית לרשת, גבינת מוצרלה איכותית ביותר (100% חלב), רוטב עגבניות טעים במיוחד ושמן זית כתית מעולה. כל אלה מתאחדים לכדי פיצה ייחודית איכותית טעימה ומעולה הנאפית בתנורי אבן לעיני הלקוח.",
+        "category": "בתי קפה ומסעדות",
+        "program_id": "discount-key",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -6302,7 +7632,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       }
     ],
     "source": "docs/data/businesses"
@@ -6321,7 +7653,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       }
     ],
     "source": "docs/data/businesses"
@@ -6340,7 +7674,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,333723",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       }
     ],
     "source": "docs/data/businesses"
@@ -6359,7 +7695,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,359786",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       }
     ],
     "source": "docs/data/businesses"
@@ -6378,7 +7716,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       }
     ],
     "source": "docs/data/businesses"
@@ -6397,7 +7737,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,364691",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       }
     ],
     "source": "docs/data/businesses"
@@ -6416,7 +7758,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,384186",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       }
     ],
     "source": "docs/data/businesses"
@@ -6435,7 +7779,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/mcc_item_new,398677",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       }
     ],
     "source": "docs/data/businesses"
@@ -6454,7 +7800,9 @@
         "discount_url": "https://www.hvr.co.il/site/pg/teamim_card_store",
         "discount_type": "rechargeable_card",
         "discount_value": 30,
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "mcc-teamim",
+        "parent_program_id": "mcc"
       }
     ],
     "source": "docs/data/businesses"
@@ -6478,7 +7826,9 @@
           "BUYME BABY- מגוון מתנות לידה",
           "BUYME VACATION & SPA- מלונות וספא"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -6502,7 +7852,9 @@
           "BUYME BABY- מגוון מתנות לידה",
           "BUYME VACATION & SPA- מלונות וספא"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -6526,7 +7878,9 @@
           "BUYME BABY- מגוון מתנות לידה",
           "BUYME VACATION & SPA- מלונות וספא"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -6550,7 +7904,9 @@
           "BUYME LOCAL – מתנות מקומיות",
           "BUYME MOMENTS - מגוון חוויות"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -6574,7 +7930,9 @@
           "BUYME BABY- מגוון מתנות לידה",
           "BUYME VACATION & SPA- מלונות וספא"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
@@ -6599,7 +7957,9 @@
           "BUYME VACATION & SPA- מלונות וספא",
           "BUYME LOCAL – מתנות מקומיות"
         ],
-        "has_physical_store": true
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
       }
     ],
     "source": "docs/data/businesses"
