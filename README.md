@@ -47,6 +47,9 @@ Discount Finder collects discount offers from Israeli credit-card clubs and loya
 | לייף סטייל | Benefits in the Lifestyle club |
 | מועדון המתנדבים | Benefits in the volunteers club |
 | צעיר (Tzair card) | Benefits for Tzair card holders |
+| מצר | HTzone white-label club site (metzer.htzone.co.il), merchant benefits and vouchers |
+| גולד צפון | HTzone white-label club site (goldnorth.htzone.co.il) |
+| תעשייה אווירית (ICARD) | style platform club site (icard.style.co.il) |
 Every source is public data - no login required. New sources are added over time; each one is documented below.
 
 ## Quickstart
@@ -290,4 +293,28 @@ Contributions are welcome - new sources, better normalization, UI improvements.
 
 ```bash
 .venv/bin/python save_raw_scrapers.py --scrapers tzair
+```
+
+### מצר
+
+`metzer_scraper.py` reads the public benefit catalog at https://metzer.htzone.co.il/ (no login; login is only for buying). The site runs on the HTzone white-label platform: the crawl is `htzone_platform.crawl`, which opens every category page and loads its item blocks through the public `/ajax` call (`act=category_items`) with the page token. Shop products sold on the site (furniture, appliances) are skipped; only merchant benefits and attraction vouchers are kept. A failed or empty refresh keeps the last successful `data/discounts/metzer_discounts.json`. Save the home page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers metzer
+```
+
+### גולד צפון
+
+`goldnorth_scraper.py` reads the public benefit catalog at https://goldnorth.htzone.co.il/ (no login; login is only for buying). The site runs on the HTzone white-label platform, so the crawl is `htzone_platform.crawl` (see מצר above). A failed or empty refresh keeps the last successful `data/discounts/goldnorth_discounts.json`. Save the home page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers goldnorth
+```
+
+### תעשייה אווירית (ICARD)
+
+`icard_scraper.py` reads the public benefit catalog at https://icard.style.co.il/ (no login; login is only for buying). The site runs on the shared "style" benefits platform, so the crawl is `style_platform.crawl` (see כח לעובדים above). A failed or empty refresh keeps the last successful `data/discounts/icard_discounts.json`. Save the home page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers icard
 ```
