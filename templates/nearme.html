@@ -439,7 +439,7 @@
           const distanceMeters = Math.round(b.distance * 1000);
           const matchingDiscounts = getSelectedClubDiscounts(b);
           const businessClub = matchingDiscounts[0]?.club || 'MCC';
-          const marker = L.marker([b.lat, b.lon], { icon: createClubPinIcon(businessClub) });
+          const marker = L.marker([b.lat, b.lon], { icon: createClubPinIcon(normalizeClub(businessClub)) });
 
           const gmapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${b.lat},${b.lon}`;
 
