@@ -2,7 +2,7 @@
 
 טבלת מעקב: כל המועדונים וכרטיסי ההטבות שקיימים באפליקציית Fid (נשלף מה-API הציבורי `cardslistv2.php`, 18.9.26), מול מצב הסקרייפרים בריפו.
 
-**סיכום: 171 מועדונים | ✅ יש סקרייפר: 67 | ⬜ טרם נכתב: 30 | ⛔ חסום טכנית: 74 | ⚖️ חסום משפטית: 0**
+**סיכום: 171 מועדונים | ✅ יש סקרייפר: 69 | ⬜ טרם נכתב: 22 | ⛔ חסום טכנית: 80 | ⚖️ חסום משפטית: 0**
 
 מקרא:
 - ✅ יש סקרייפר - קיים `*_scraper.py` בריפו (הקישור בעמודת "קישור להטבות" הוא מקור הנתונים שהסקרייפר קורא).
@@ -74,13 +74,13 @@
 |---|---|---|---|
 | הייטקזון | ✅ יש סקרייפר | [הטבות](https://www.htzone.co.il) | htzone_scraper.py |
 | מצר | ✅ יש סקרייפר | [הטבות](https://metzer.htzone.co.il/) | metzer_scraper.py - פלטפורמת HTzone (htzone_platform.py), הטבות ושוברים בלבד (בלי מוצרי חנות) |
-| ביחד בשבילך | ⬜ טרם נכתב | - |  |
+| ביחד בשבילך | ⛔ חסום טכנית | - | רק לחברי ההסתדרות; ה-API של hist.org.il מחזיר 401 בלי התחברות (23.9.26) |
 | סילבר קארד וועד דרום | ⛔ חסום טכנית | - | silvercard.co.il - האתר סגור, אפליקציה בלבד (נבדק 23.9.26) |
 | גולד צפון | ✅ יש סקרייפר | [הטבות](https://goldnorth.htzone.co.il/) | goldnorth_scraper.py - פלטפורמת HTzone |
 | יחד ההסתדרות הרפואית לישראל | ✅ יש סקרייפר | [הטבות](https://www.ima.org.il/yahadclub/Categories.aspx) | ima_yahad_scraper.py - קטלוג ציבורי, קטגוריות -> ספקים -> פרטי ספק (אתר איטי, ~800 עמודים) |
 | שווה | ⛔ חסום טכנית | - | אפליקציה בלבד (נבדק 23.9.26) |
 | שלך | ⛔ חסום טכנית | - | yours.co.il מאחורי אתגר bot (Reblaze, 571) (23.9.26) |
-| שלך לגמלאי | ⬜ טרם נכתב | - |  |
+| שלך לגמלאי | ⛔ חסום טכנית | - | yours.co.il מאחורי אתגר bot (Reblaze, 571) (23.9.26) |
 | טוב פלוס | ✅ יש סקרייפר | [הטבות](https://tovplus.org.il/) | tovplus_scraper.py - דפי קטגוריה ציבוריים (dolcemaster_platform.py) |
 | הוט מועדון צרכנות | ✅ יש סקרייפר | [הטבות](https://www.hot.co.il) | hot_scraper.py - ה-API החוזר 403 לעיתים קרובות; נשען על last-good-data |
 | קורפורייט \ CORPORATE | ✅ יש סקרייפר | [הטבות](https://www.mycorporate.co.il/) | corporate_scraper.py - פלטפורמת style (שמות עסקים בלבד, בלי נוסח הטבה) |
@@ -102,7 +102,7 @@
 | אינטל פלוס | ⛔ חסום טכנית | - | intel.megalean.co.il - מגה לאן, לוגין (נבדק 23.9.26) |
 | ארגון המהנדסים והאדריכלים העצמאיים | ⬜ טרם נכתב | - |  |
 | אמדוקס | ✅ יש סקרייפר | [הטבות](https://amdocs.style.co.il/) | amdocs_scraper.py - פלטפורמת style |
-| קוקה קולה | ⬜ טרם נכתב | - |  |
+| קוקה קולה | ⛔ חסום טכנית | - | מועדון עובדי CBC ב-HTzone הראשי, מאחורי הרשמה/התחברות (23.9.26) |
 | כח לעובדים | ✅ יש סקרייפר | [הטבות](https://workers.style.co.il/) | workers_style_scraper.py - פלטפורמת style (style_platform.py), דפי קטגוריה ציבוריים |
 
 ### מורים
@@ -170,7 +170,7 @@
 | תן ביס | ⬜ טרם נכתב | - |  |
 | רמי לוי המועדון | ✅ יש סקרייפר | [הטבות](https://rmrm.style.co.il/) | rami_levy_club_scraper.py - פלטפורמת style |
 | ויקטורי | ⬜ טרם נכתב | - |  |
-| bitcard קרפור קלאב | ⬜ טרם נכתב | - |  |
+| bitcard קרפור קלאב | ⛔ חסום טכנית | - | מבצעי סופר לחברים באפליקציה; אין רשימת הטבות ציבורית (23.9.26) |
 | שטראוס+ | ⛔ חסום טכנית | - | אתר עובדים מאחורי אתגר bot (Reblaze, 247) (23.9.26) |
 | סיבוס | ⛔ חסום טכנית | - | קהילת HR, לא רשימת הטבות ציבורית (23.9.26) |
 
@@ -208,18 +208,18 @@
 | Gift Card מקס | ✅ יש סקרייפר | [הטבות](https://www.max.co.il/gift-card-network) | max_giftcard_scraper.py - רשת הגיפטקארד של MAX |
 | Gift Card Executive מקס | ✅ יש סקרייפר | [הטבות](https://www.max.co.il/gift-card-network) | max_giftcard_scraper.py - רשת הגיפטקארד של MAX |
 | Super Gift Card מקס | ✅ יש סקרייפר | [הטבות](https://www.max.co.il/gift-card-network) | max_giftcard_scraper.py - רשת הגיפטקארד של MAX |
-| DREAMCARD gift card / דרים קארד גיפט | ⬜ טרם נכתב | - |  |
+| DREAMCARD gift card / דרים קארד גיפט | ✅ יש סקרייפר | [הטבות](https://www.dcgift.co.il/brands) | dreamcard_giftcard_scraper.py - דף המותגים המכבדים (ציבורי) |
 | LOVE gift card | ⬜ טרם נכתב | - |  |
 | תו הזהב | ⬜ טרם נכתב | - |  |
 | התו המלא - רמי לוי | ⬜ טרם נכתב | - |  |
 | תו פלוס | ⛔ חסום טכנית | - | נבדק 23.9.26: רשימת הרשתות מופיעה רק כתמונות (בדפי הקטגוריה ובעלון PDF), אין טקסט או API |
-| תו ביתן | ⬜ טרם נכתב | - |  |
+| תו ביתן | ⛔ חסום טכנית | - | היום תו פלוס של קרפור; ברשימת הרשתות באתר יש רק לוגואים בלי שמות (23.9.26) |
 | נופשונית\Swish Perfect | ✅ יש סקרייפר | [הטבות](https://swish.co.il/business/all-gifts-giftcard/product-103980) | swish_scraper.py - רשימת בתי העסק מעמוד המוצר (Next.js RSC) |
 | נופשונית\Swish plus | ✅ יש סקרייפר | [הטבות](https://swish.co.il/home/fashion-and-style-giftcard/product-105380) | swish_scraper.py - רשימת בתי העסק מתוך עמוד המוצר (Next.js RSC) |
 | נופשונית\Swish baby | ✅ יש סקרייפר | [הטבות](https://swish.co.il/home/birth-giftcard/product-95963) | swish_scraper.py - רשימת בתי העסק מעמוד המוצר (Next.js RSC) |
 | נופשונית\Swish Premium | ✅ יש סקרייפר | [הטבות](https://swish.co.il/business/all-gifts-giftcard/product-104068) | swish_scraper.py - רשימת בתי העסק מעמוד המוצר (Next.js RSC) |
 | נופשונית\Swish Unique | ✅ יש סקרייפר | [הטבות](https://swish.co.il/business/all-gifts-giftcard/product-72261) | swish_scraper.py - רשימת בתי העסק מעמוד המוצר (Next.js RSC) |
-| ויקטורי 100% | ⬜ טרם נכתב | - |  |
+| ויקטורי 100% | ⛔ חסום טכנית | - | אתר רשימת הרשתות (victory1.co.il) לא עולה; בתקנון רק חריגות, לא רשימה מלאה (23.9.26) |
 | גלובל קארד - רעיונית | ✅ יש סקרייפר | [הטבות](https://www.raayonit.co.il/club/?ClubNum=18&ClubVoucherTypeNum=47) | raayonit_scraper.py - עמוד גלובל תו (branch feat/scrapers-round-2) |
 | עזריאלי גיפטקארד | ✅ יש סקרייפר | [הטבות](https://buyme.co.il/brands/398383) | azrieli_giftcard_scraper.py - רשימת בתי העסק ב-BUYME (מותג 398383) |
 | GiftCard Isracard (ישראכרט) | ⛔ חסום טכנית | - | חסום טכנית: WAF של ישראכרט (הוחלט לדלג, 17.9.26) |
@@ -237,7 +237,7 @@
 | XTRA SHOPPING גיפטקארד | ⛔ חסום טכנית | - | נבדק 23.9.26: Cloudflare Turnstile (CAPTCHA) |
 | XTRA FASHION גיפטקארד | ⛔ חסום טכנית | - | נבדק 23.9.26: Cloudflare Turnstile (CAPTCHA) |
 | XTRA MARKET גיפטקארד | ⛔ חסום טכנית | - | נבדק 23.9.26: Cloudflare Turnstile (CAPTCHA) |
-| מחסני השוק גיפטקארד Wincard | ⬜ טרם נכתב | - |  |
+| מחסני השוק גיפטקארד Wincard | ✅ יש סקרייפר | [הטבות](https://m-shuk.net/giftcardbrands/) | wincard_giftcard_scraper.py - WP REST ציבורי (giftcardbrands), רשימת המותגים המכבדים |
 | גיפתא | ✅ יש סקרייפר | [הטבות](https://gifta.co.il/) | gifta_scraper.py - WordPress API ציבורי (branch feat/scrapers-round-2) |
 | גולד קארד | ✅ יש סקרייפר | [הטבות](https://goldcard-gift.com/) | goldcard_scraper.py - WordPress API ציבורי (branch feat/scrapers-round-2) |
 | New Card Just4u | ⬜ טרם נכתב | - |  |
