@@ -70,3 +70,20 @@ def dedupe(records: list[dict[str, Any]]) -> list[dict[str, Any]]:
         seen.add(key)
         result.append(record)
     return result
+
+
+PRICE_WORTH_RE = re.compile(r"ב-?\s*₪?\s*([\d,.]+)\s*₪?.*?(?:בשווי|במקום)\s*₪?\s*([\d,.]+)", re.S)
+
+
+def saving_percent(text: str) -> float | None:
+    """Percent saved from "ב-X בשווי/במקום Y" price lines, else from an "X%" text."""
+    match = PRICE_WORTH_RE.search(text or "")
+    if not match:
+        return percent_value(text)
+    try:
+        price, worth = (float(v.replace(",", "")) for v in match.groups())
+    except ValueError:
+        return None
+    if worth <= 0 or price >= worth:
+        return None
+    return round((worth - price) / worth * 100, 1)

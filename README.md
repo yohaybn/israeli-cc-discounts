@@ -32,9 +32,21 @@ Discount Finder collects discount offers from Israeli credit-card clubs and loya
 | Raayonit Global Tav (גלובל תו) | Chains and businesses that accept the Global Tav voucher |
 | Yedioth Ahronoth subscribers (ידיעות אחרונות) | Subscriber benefits |
 | Azrieli gift card (עזריאלי גיפטקארד) | Stores in Azrieli malls that accept the Azrieli gift card |
-| Swish Plus gift card | Businesses that accept the Swish Plus gift card |
+| Swish gift cards (נופשונית) | Businesses that accept Swish Plus, Perfect, Premium, Unique and Baby |
 | IMA Yahad club (מועדון יחד - ההסתדרות הרפואית) | Suppliers in the Israel Medical Association Yahad club |
 | Shufersal 4U (שופרסל 4U) | Vouchers and benefits in the Shufersal 4U credit-card club |
+| MY OFER (קניוני עופר) | Club deals in the Ofer malls, merged across malls |
+| DREAM CARD VIP (דרים קארד) | Fox group brands with 15% cashback on the DREAM CARD VIP card |
+| כח לעובדים (workers.style.co.il) | Benefits in the כח לעובדים club |
+| עדיף (adif.style.co.il) | Benefits in the עדיף consumer club |
+| Hi-Benefit (לשכת רואי החשבון) | Benefits for Hi-Benefit card holders (Institute of CPAs) |
+| אגד דרייבר (Egged club) | Benefits in the Egged Driver club |
+| לשכת סוכני הביטוח | Benefits for Israel Insurance Agents Association members |
+| קרנות השוטרים / הסוהרים | Consumer club of the police and prison-service funds |
+| להב (לשכת העצמאים) | Benefits for Lahav (self-employed association) members |
+| לייף סטייל | Benefits in the Lifestyle club |
+| מועדון המתנדבים | Benefits in the volunteers club |
+| צעיר (Tzair card) | Benefits for Tzair card holders |
 Every source is public data - no login required. New sources are added over time; each one is documented below.
 
 ## Quickstart
@@ -160,9 +172,9 @@ Contributions are welcome - new sources, better normalization, UI improvements.
 .venv/bin/python save_raw_scrapers.py --scrapers azrieli_giftcard
 ```
 
-### Swish Plus
+### Swish gift cards
 
-`swish_scraper.py` lists the businesses that accept the Swish Plus gift card. The public product page (no login) embeds the full "איפה נהנים מהמתנה" list in its Next.js server-components payload (`tagsChains` -> `chainsByWallet`). The scraper decodes that payload; chains in the "רכישה אונליין" category are marked online-only. A failed or empty refresh keeps the last successful `data/discounts/swish_discounts.json`. Save the raw page with:
+`swish_scraper.py` lists the businesses that accept the multi-brand Swish gift cards that Fid lists as clubs: Swish Plus, Perfect, Premium, Unique and Baby. Each card's `club` field is the card name. Each public product page (no login) embeds the full "איפה נהנים מהמתנה" list in its Next.js server-components payload (`tagsChains` -> `chainsByWallet`). The scraper decodes that payload for each card; one failing card does not drop the others. Chains in the "רכישה אונליין" category are marked online-only. A failed or empty refresh keeps the last successful `data/discounts/swish_discounts.json`. Save the raw pages with:
 
 ```bash
 .venv/bin/python save_raw_scrapers.py --scrapers swish
@@ -182,4 +194,100 @@ Contributions are welcome - new sources, better normalization, UI improvements.
 
 ```bash
 .venv/bin/python save_raw_scrapers.py --scrapers shufersal4u
+```
+
+### MY OFER
+
+`myofer_scraper.py` reads MY OFER, the Ofer malls customer club. The mall list comes from the home page and each mall's public deals page (`https://myofer.co.il/malls/<mall>/deals?page=N`, no login) holds 10 deals per page in its Next.js `__NEXT_DATA__`. Deals that repeat across malls are merged and list every mall in `branches`. `discount_value` comes from "ב-X בשווי/במקום Y" price lines or a percent. A full run is about 240 page loads. A failed or empty refresh keeps the last successful `data/discounts/myofer_discounts.json`. Save the home page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers myofer
+```
+
+### DREAM CARD VIP
+
+`dreamcard_scraper.py` covers the DREAM CARD VIP club (Fox group brands), whose credit card gives 15% cashback in every club brand (https://www.dreamcard.co.il/dreamcard-vip/). The club web app has two public API calls that need no login: `Brands/GetBrands` and `Branches/GetBranchesData`. The scraper emits one record per active brand with its store branches (a store listed as "FOX / FOX HOME" counts for both). A failed or empty refresh keeps the last successful `data/discounts/dreamcard_discounts.json`. Save the raw API payloads with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers dreamcard
+```
+
+### כח לעובדים
+
+`workers_style_scraper.py` reads the public benefit catalog at https://workers.style.co.il/. The site runs on the same "style" benefits platform as Shufersal 4U, so the crawl lives in the shared `style_platform.py`: it walks the category pages and their sub-categories, keeps one record per benefit uuid and computes `discount_value` from the price line. Browsing needs no login (login is only for buying). A failed or empty refresh keeps the last successful `data/discounts/koach_laovdim_discounts.json`. Save the home page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers koach_laovdim
+```
+
+### עדיף
+
+`adif_scraper.py` reads the public benefit catalog at https://adif.style.co.il/. The site runs on the same "style" benefits platform as Shufersal 4U, so the crawl lives in the shared `style_platform.py`: it walks the category pages and their sub-categories, keeps one record per benefit uuid and computes `discount_value` from the price line. Browsing needs no login (login is only for buying). A failed or empty refresh keeps the last successful `data/discounts/adif_discounts.json`. Save the home page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers adif
+```
+
+### Hi-Benefit
+
+`hibenefit_scraper.py` reads the public benefit catalog at https://www.benefit-icpas.co.il/. The site runs on the same "style" benefits platform as Shufersal 4U, so the crawl lives in the shared `style_platform.py`: it walks the category pages and their sub-categories, keeps one record per benefit uuid and computes `discount_value` from the price line. Browsing needs no login (login is only for buying). A failed or empty refresh keeps the last successful `data/discounts/hibenefit_discounts.json`. Save the home page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers hibenefit
+```
+
+### אגד דרייבר
+
+`egged_driver_scraper.py` reads the public benefit catalog at https://www.eggedclub.co.il/ (no login; login is only for buying). The site runs on the shared "style" benefits platform, so the crawl is `style_platform.crawl` (see כח לעובדים above). A failed or empty refresh keeps the last successful `data/discounts/egged_driver_discounts.json`. Save the home page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers egged_driver
+```
+
+### לשכת סוכני הביטוח
+
+`insurance_agents_scraper.py` reads the public benefit catalog at https://insurance.style.co.il/ (no login; login is only for buying). The site runs on the shared "style" benefits platform, so the crawl is `style_platform.crawl` (see כח לעובדים above). A failed or empty refresh keeps the last successful `data/discounts/insurance_agents_discounts.json`. Save the home page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers insurance_agents
+```
+
+### קרנות השוטרים / קרנות הסוהרים
+
+`police_funds_scraper.py` reads the public benefit catalog at https://ks.style.co.il/ (no login; login is only for buying). The site runs on the shared "style" benefits platform, so the crawl is `style_platform.crawl` (see כח לעובדים above). A failed or empty refresh keeps the last successful `data/discounts/police_funds_discounts.json`. Save the home page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers police_funds
+```
+
+### להב - לשכת העצמאים
+
+`lahav_scraper.py` reads the public benefit catalog at https://lahav.style.co.il/ (no login; login is only for buying). The site runs on the shared "style" benefits platform, so the crawl is `style_platform.crawl` (see כח לעובדים above). A failed or empty refresh keeps the last successful `data/discounts/lahav_discounts.json`. Save the home page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers lahav
+```
+
+### לייף סטייל
+
+`lifestyle_club_scraper.py` reads the public benefit catalog at https://lifestyle.style.co.il/ (no login; login is only for buying). The site runs on the shared "style" benefits platform, so the crawl is `style_platform.crawl` (see כח לעובדים above). A failed or empty refresh keeps the last successful `data/discounts/lifestyle_club_discounts.json`. Save the home page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers lifestyle_club
+```
+
+### מועדון המתנדבים
+
+`volunteers_club_scraper.py` reads the public benefit catalog at https://mitnadvim4u.style.co.il/ (no login; login is only for buying). The site runs on the shared "style" benefits platform, so the crawl is `style_platform.crawl` (see כח לעובדים above). A failed or empty refresh keeps the last successful `data/discounts/volunteers_club_discounts.json`. Save the home page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers volunteers_club
+```
+
+### צעיר
+
+`tzair_scraper.py` reads the public benefit catalog at https://young.style.co.il/ (no login; login is only for buying). The site runs on the shared "style" benefits platform, so the crawl is `style_platform.crawl` (see כח לעובדים above). A failed or empty refresh keeps the last successful `data/discounts/tzair_discounts.json`. Save the home page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers tzair
 ```

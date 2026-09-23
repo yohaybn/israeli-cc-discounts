@@ -1,0 +1,77 @@
+{
+ "isError": false,
+ "messageCode": 0,
+ "messageDesc": "",
+ "data": {
+  "lstBrands": [
+   {
+    "id": 1,
+    "brandNameHeb": "פוקס",
+    "brandName": "FOX",
+    "brandCodeVerifone": 1,
+    "brandCodeDwh": 1,
+    "isFashionCategory": true,
+    "isChildrenCategory": true,
+    "isSportCategory": false,
+    "isLifestileCategory": false,
+    "isVip": false,
+    "siteUrl": "https://fox.co.il/",
+    "brandImg": "fox.svg",
+    "order": 1,
+    "isScannable": true,
+    "isActive": null
+   },
+   {
+    "id": 2,
+    "brandNameHeb": "פוקס הום",
+    "brandName": "FOX HOME",
+    "brandCodeVerifone": 5,
+    "brandCodeDwh": 51,
+    "isFashionCategory": false,
+    "isChildrenCategory": false,
+    "isSportCategory": false,
+    "isLifestileCategory": true,
+    "isVip": false,
+    "siteUrl": "https://www.foxhome.co.il/",
+    "brandImg": "foxHome.svg",
+    "order": 2,
+    "isScannable": true,
+    "isActive": null
+   },
+   {
+    "id": 7,
+    "brandNameHeb": "דה צ'ילדרנס פלייס",
+    "brandName": "THE CHILDREN'S PLACE",
+    "brandCodeVerifone": 7,
+    "brandCodeDwh": 7,
+    "isFashionCategory": false,
+    "isChildrenCategory": true,
+    "isSportCategory": false,
+    "isLifestileCategory": false,
+    "isVip": false,
+    "siteUrl": "https://www.terminalx.com/brands/the-children-place\r\n",
+    "brandImg": "place.svg",
+    "order": 8,
+    "isScannable": false,
+    "isActive": null
+   },
+   {
+    "id": 10,
+    "brandNameHeb": "קוויקסילבר",
+    "brandName": "QUICKSILVER",
+    "brandCodeVerifone": 30,
+    "brandCodeDwh": 68,
+    "isFashionCategory": true,
+    "isChildrenCategory": false,
+    "isSportCategory": true,
+    "isLifestileCategory": false,
+    "isVip": false,
+    "siteUrl": "https://www.terminalx.com/brands/quiksilver",
+    "brandImg": "quickSilver.svg",
+    "order": 16,
+    "isScannable": false,
+    "isActive": null
+   }
+  ]
+ }
+}
