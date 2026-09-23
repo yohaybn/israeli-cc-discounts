@@ -77,6 +77,7 @@ Discount Finder collects discount offers from Israeli credit-card clubs and loya
 | Just4u / NEW CARD | Gift vouchers and partner businesses (public app API) |
 | WinCard+ מחסני השוק | Credit-card benefits (public page) |
 | עולם ההטבות למילואימניקים | IDF reservists benefits (public app API) |
+| FLY CARD אל על | Card benefits (public Isracard page) |
 Every source is public data - no login required. New sources are added over time; each one is documented below.
 
 ## Quickstart
@@ -560,4 +561,12 @@ Public JSON API the React site itself calls (`api.miluim.idf.il/api/v1/Benefits`
 
 ```bash
 .venv/bin/python save_raw_scrapers.py --scrapers miluim_benefits
+```
+
+### FLY CARD אל על
+
+Public Isracard FLY CARD page (Wix repeater of card benefits). El Al own pages load via an API behind a Reblaze challenge, so they are not used.
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers flycard
 ```
