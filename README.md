@@ -33,6 +33,7 @@ Discount Finder collects discount offers from Israeli credit-card clubs and loya
 | Yedioth Ahronoth subscribers (ידיעות אחרונות) | Subscriber benefits |
 | Azrieli gift card (עזריאלי גיפטקארד) | Stores in Azrieli malls that accept the Azrieli gift card |
 | Swish Plus gift card | Businesses that accept the Swish Plus gift card |
+| IMA Yahad club (מועדון יחד - ההסתדרות הרפואית) | Suppliers in the Israel Medical Association Yahad club |
 Every source is public data - no login required. New sources are added over time; each one is documented below.
 
 ## Quickstart
@@ -164,4 +165,12 @@ Contributions are welcome - new sources, better normalization, UI improvements.
 
 ```bash
 .venv/bin/python save_raw_scrapers.py --scrapers swish
+```
+
+### IMA Yahad club
+
+`ima_yahad_scraper.py` reads the public catalog of the Israel Medical Association "Yahad" club (https://www.ima.org.il/yahadclub/Categories.aspx, no login). It walks every category page, collects the supplier IDs, then reads each SupplierDetails page for the discount, description and branch table (address, city, phone). The site is slow: about 160 category pages and 800 supplier pages, fetched one at a time, so a full run takes a while. Pages that time out are skipped with a warning. A failed or empty refresh keeps the last successful `data/discounts/ima_yahad_discounts.json`. Save the category page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers ima_yahad
 ```
