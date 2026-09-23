@@ -64,6 +64,8 @@ Discount Finder collects discount offers from Israeli credit-card clubs and loya
 | קניוני עזריאלי | Mall coupons page (azrielimalls.co.il/coupons) |
 | uniq | uniq-club platform GraphQL (shop 1) |
 | אוניברסיטת תל אביב TAU | uniq-club platform GraphQL (shop 2) |
+| סטודנט גרופ | Student coupon club (studentgroup.co.il WP REST) |
+| חתול פיננסי | Community benefits (moneyplan.co.il WP REST) |
 Every source is public data - no login required. New sources are added over time; each one is documented below.
 
 ## Quickstart
@@ -443,4 +445,20 @@ Contributions are welcome - new sources, better normalization, UI improvements.
 
 ```bash
 .venv/bin/python save_raw_scrapers.py --scrapers tau_club
+```
+
+### סטודנט גרופ
+
+`studentgroup_scraper.py` reads the coupons of סטודנט גרופ from the public WordPress REST API (`https://studentgroup.co.il/wp-json/wp/v2/product`, no login). The benefit line comes from each coupon's SEO title. A failed or empty refresh keeps the last successful `data/discounts/studentgroup_discounts.json`. Save the first page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers studentgroup
+```
+
+### חתול פיננסי
+
+`moneyplan_scraper.py` reads the benefits of חתול פיננסי from the public WordPress REST API (`https://moneyplan.co.il/wp-json/wp/v2/benefits`, no login). The benefit line is each post's SEO description. A failed or empty refresh keeps the last successful `data/discounts/moneyplan_discounts.json`. Save the payload with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers moneyplan
 ```
