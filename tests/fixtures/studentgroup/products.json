@@ -1,0 +1,84 @@
+[
+ {
+  "id": 8251,
+  "link": "https://studentgroup.co.il/portfolio_page/every",
+  "title": {
+   "rendered": "every"
+  },
+  "product_cat": [
+   30
+  ],
+  "yoast_head_json": {
+   "title": "קופון every תוספי תזונה מעניק 40% הנחה כולל כפל מבצעים | מעודכן 2026",
+   "og_description": "קוד קופון every מעניק 30% הנחה על כל האתר למעט אבקות חלבון - קוד קופון stu30. קוד קופון every נוסף מעניק 40% הנחה על אבקות חלבון - קוד קופון pro40."
+  }
+ },
+ {
+  "id": 8242,
+  "link": "https://studentgroup.co.il/portfolio_page/zer4u",
+  "title": {
+   "rendered": "ZER4U"
+  },
+  "product_cat": [
+   62,
+   101,
+   84
+  ],
+  "yoast_head_json": {
+   "title": "קופון ZER4U זר פור יו מעניק 15% הנחה כולל כפל מבצעים | מעודכן 2026",
+   "og_description": "קוד קופון לאתר זר פור יו ZER4U מעניק 15% הנחה על כל המוצרים באתר כולל כפל מבצעים, בהזנת קוד קופון student15. מעודכן לשנת 2026 ופתוח לכלל הגולשים."
+  }
+ },
+ {
+  "id": 8218,
+  "link": "https://studentgroup.co.il/portfolio_page/s-wear",
+  "title": {
+   "rendered": "S.wear"
+  },
+  "product_cat": [
+   78,
+   62,
+   101,
+   56,
+   77
+  ],
+  "yoast_head_json": {
+   "title": "מבצעים וקופונים ל Swear מעניקים 7% הנחה ברכישה אונליין | מעודכן 2026",
+   "og_description": "קהילת גולשי וגולשות אתר סטודנט גרופ נהנים ממבצע המעניק 7% הנחה על כל אתר Swear בהזנת קוד הקופון sgsw7. הקופון אינו כולל כפל מבצעים ומעודכן לשנת 2026."
+  }
+ },
+ {
+  "id": 8140,
+  "link": "https://studentgroup.co.il/portfolio_page/%d7%93%d7%99%d7%a0%d7%9e%d7%99%d7%a7%d7%94-dynamica",
+  "title": {
+   "rendered": "דינמיקה"
+  },
+  "product_cat": [
+   62,
+   101,
+   80,
+   84
+  ],
+  "yoast_head_json": {
+   "title": "קוד קופון דינמיקה dynamica מעניק 170 ש״ח הנחה כולל כפל מבצעים",
+   "og_description": "קוד קופון דינמיקה dynamica מעניק 2 מבצעים: הנחה בסך 140 ש״ח בקנייה מעל 2500 ש״ח - קופון sgd140. הנחה בסך 170 ש״ח בקנייה מעל 3500 ש״ח - קופון sgd170."
+  }
+ },
+ {
+  "id": 7989,
+  "link": "https://studentgroup.co.il/portfolio_page/%d7%a7%d7%a0%d7%93%d7%9c-%d7%a7%d7%9c%d7%90%d7%91-%d7%a7%d7%95%d7%a4%d7%95%d7%9f",
+  "title": {
+   "rendered": "CANDLE CLUB"
+  },
+  "product_cat": [
+   75,
+   101,
+   26,
+   84
+  ],
+  "yoast_head_json": {
+   "title": "קנדל קלאב candle club קופון מעניק 10% הנחה | מעודכן 2026",
+   "og_description": "קנדל קלאב candle club קופון מעניק 10% הנחה על כל המוצרים באתר שאינם במבצע בהזנת הקופון sgroup10. הקופון sgroup5 מעניק 5% הנחה נוספים על מוצרים שכן במבצע."
+  }
+ }
+]

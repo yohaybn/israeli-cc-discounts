@@ -59,6 +59,17 @@ Discount Finder collects discount offers from Israeli credit-card clubs and loya
 | Living | style platform club site (https://www.livingclub.co.il/) |
 | רמי לוי המועדון | style platform club site (https://rmrm.style.co.il/) |
 | אותי - עמותה ישראלית לאוטיזם | style platform club site (https://oti.style.co.il/) |
+| Cashdo | Cashback club store list (cashdo.co.il paging.json) |
+| Mami - מאמי | Coupon club brand list and campaigns (hi-mami.com) |
+| קניוני עזריאלי | Mall coupons page (azrielimalls.co.il/coupons) |
+| uniq | uniq-club platform GraphQL (shop 1) |
+| אוניברסיטת תל אביב TAU | uniq-club platform GraphQL (shop 2) |
+| סטודנט גרופ | Student coupon club (studentgroup.co.il WP REST) |
+| חתול פיננסי | Community benefits (moneyplan.co.il WP REST) |
+| Samsung Members | Samsung Israel Members / Galaxy VIP benefits page |
+| קופונופש | Leisure/tickets club (cpnclub.co.il public API) |
+| איחוד הצלה | Volunteer benefits club (4u.1221.org.il WooCommerce Store API) |
+| טוב פלוס | State employees' club טוב+ (tovplus.org.il category pages) |
 Every source is public data - no login required. New sources are added over time; each one is documented below.
 
 ## Quickstart
@@ -398,4 +409,92 @@ Contributions are welcome - new sources, better normalization, UI improvements.
 
 ```bash
 .venv/bin/python save_raw_scrapers.py --scrapers oti
+```
+
+### Cashdo
+
+`cashdo_scraper.py` reads the public store list of Cashdo, a cashback club for online stores, from `https://cashdo.co.il/paging.json` (the endpoint behind https://cashdo.co.il/all-stores; no login). Each tile gives the store name, its page and the cashback line. Cashback is credited after the purchase, so records use `billing_discount` and are online-only. A failed or empty refresh keeps the last successful `data/discounts/cashdo_discounts.json`. Save the payload with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers cashdo
+```
+
+### Mami - מאמי
+
+`mami_scraper.py` reads the public, server-rendered pages of Mami - מאמי at https://www.hi-mami.com/ (no login): the brand list at `/brands` (standing benefit per brand) and the current campaign tiles on each `/categories/<slug>` page linked from the home page (time-limited deals). A failed or empty refresh keeps the last successful `data/discounts/mami_discounts.json`. Save the home and brand pages with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers mami
+```
+
+### קניוני עזריאלי
+
+`azrieli_malls_scraper.py` reads the public coupons page of קניוני עזריאלי at https://www.azrielimalls.co.il/coupons (server-rendered, no login). Each coupon card gives the store, the deal, the participating mall and the validity date. The same deal repeats per mall, so cards are grouped by store and deal and the malls are listed in `limitations`. The page is large (~30MB). A failed or empty refresh keeps the last successful `data/discounts/azrieli_malls_discounts.json`. Save the page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers azrieli_malls
+```
+
+### uniq
+
+`uniq_scraper.py` reads the benefits of uniq (https://www.uniq-club.co.il/) from the public GraphQL endpoint of the uniq-club platform (`https://admin.uniq-club.co.il/api/graphql`, query `getBenefits` with `shopId` 1; no login). The shared client is `uniq_platform.py`. A failed or empty refresh keeps the last successful `data/discounts/uniq_discounts.json`. Save the payload with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers uniq
+```
+
+### אוניברסיטת תל אביב TAU
+
+`tau_club_scraper.py` reads the benefits of the Tel Aviv University club (https://www.tauclub.co.il/) from the same public GraphQL endpoint as uniq (`shopId` 2; see uniq above). A failed or empty refresh keeps the last successful `data/discounts/tau_club_discounts.json`. Save the payload with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers tau_club
+```
+
+### סטודנט גרופ
+
+`studentgroup_scraper.py` reads the coupons of סטודנט גרופ from the public WordPress REST API (`https://studentgroup.co.il/wp-json/wp/v2/product`, no login). The benefit line comes from each coupon's SEO title. A failed or empty refresh keeps the last successful `data/discounts/studentgroup_discounts.json`. Save the first page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers studentgroup
+```
+
+### חתול פיננסי
+
+`moneyplan_scraper.py` reads the benefits of חתול פיננסי from the public WordPress REST API (`https://moneyplan.co.il/wp-json/wp/v2/benefits`, no login). The benefit line is each post's SEO description. A failed or empty refresh keeps the last successful `data/discounts/moneyplan_discounts.json`. Save the payload with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers moneyplan
+```
+
+### Samsung Members
+
+`samsung_members_scraper.py` reads the public Samsung Members / Galaxy VIP benefits page (`https://www.samsung.com/il/mobile/samsung-members/benefits/`, no login). Each carousel card is one benefit. A failed or empty refresh keeps the last successful `data/discounts/samsung_members_discounts.json`. Save the page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers samsung_members
+```
+
+### קופונופש
+
+`cpnclub_scraper.py` reads the leisure suppliers of קופונופש from the site's public back-end search (`https://be.cpnclub.co.il/api/v2/search/club`, paged, no login). `info.discount` gives the headline percent when published. A failed or empty refresh keeps the last successful `data/discounts/cpnclub_discounts.json`. Save the first page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers cpnclub
+```
+
+### איחוד הצלה
+
+`ihud_hatzala_scraper.py` reads the volunteer benefits of איחוד הצלה from the public WooCommerce Store API of the club site (`https://4u.1221.org.il/wp-json/wc/store/v1/products`, no login). The benefit line is the first line of the short description that names a discount, price or gift. A failed or empty refresh keeps the last successful `data/discounts/ihud_hatzala_discounts.json`. Save the first page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers ihud_hatzala
+```
+
+### טוב פלוס
+
+`tovplus_scraper.py` reads טוב+ (the state employees' club) through the shared `dolcemaster_platform.py`. Public category pages (`https://tovplus.org.il/category/<id>`, no login) embed their products with club and market prices in `window.__PRELOADED_STATE__`; the crawl walks the category tree and dedupes by product ID. The home page sits behind a bot check, so the crawl starts from a category page. A failed or empty refresh keeps the last successful `data/discounts/tovplus_discounts.json`. Save one category page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers tovplus
 ```
