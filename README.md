@@ -32,7 +32,7 @@ Discount Finder collects discount offers from Israeli credit-card clubs and loya
 | Raayonit Global Tav (גלובל תו) | Chains and businesses that accept the Global Tav voucher |
 | Yedioth Ahronoth subscribers (ידיעות אחרונות) | Subscriber benefits |
 | Azrieli gift card (עזריאלי גיפטקארד) | Stores in Azrieli malls that accept the Azrieli gift card |
-| Swish Plus gift card | Businesses that accept the Swish Plus gift card |
+| Swish gift cards (נופשונית) | Businesses that accept Swish Plus, Perfect, Premium, Unique and Baby |
 | IMA Yahad club (מועדון יחד - ההסתדרות הרפואית) | Suppliers in the Israel Medical Association Yahad club |
 | Shufersal 4U (שופרסל 4U) | Vouchers and benefits in the Shufersal 4U credit-card club |
 Every source is public data - no login required. New sources are added over time; each one is documented below.
@@ -160,9 +160,9 @@ Contributions are welcome - new sources, better normalization, UI improvements.
 .venv/bin/python save_raw_scrapers.py --scrapers azrieli_giftcard
 ```
 
-### Swish Plus
+### Swish gift cards
 
-`swish_scraper.py` lists the businesses that accept the Swish Plus gift card. The public product page (no login) embeds the full "איפה נהנים מהמתנה" list in its Next.js server-components payload (`tagsChains` -> `chainsByWallet`). The scraper decodes that payload; chains in the "רכישה אונליין" category are marked online-only. A failed or empty refresh keeps the last successful `data/discounts/swish_discounts.json`. Save the raw page with:
+`swish_scraper.py` lists the businesses that accept the multi-brand Swish gift cards that Fid lists as clubs: Swish Plus, Perfect, Premium, Unique and Baby. Each card's `club` field is the card name. Each public product page (no login) embeds the full "איפה נהנים מהמתנה" list in its Next.js server-components payload (`tagsChains` -> `chainsByWallet`). The scraper decodes that payload for each card; one failing card does not drop the others. Chains in the "רכישה אונליין" category are marked online-only. A failed or empty refresh keeps the last successful `data/discounts/swish_discounts.json`. Save the raw pages with:
 
 ```bash
 .venv/bin/python save_raw_scrapers.py --scrapers swish
