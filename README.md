@@ -50,6 +50,7 @@ Discount Finder collects discount offers from Israeli credit-card clubs and loya
 | מצר | HTzone white-label club site (metzer.htzone.co.il), merchant benefits and vouchers |
 | גולד צפון | HTzone white-label club site (goldnorth.htzone.co.il) |
 | תעשייה אווירית (ICARD) | style platform club site (icard.style.co.il) |
+| יותר | Soldiers' club business list (yoter.co.il), billing discounts |
 Every source is public data - no login required. New sources are added over time; each one is documented below.
 
 ## Quickstart
@@ -317,4 +318,12 @@ Contributions are welcome - new sources, better normalization, UI improvements.
 
 ```bash
 .venv/bin/python save_raw_scrapers.py --scrapers icard
+```
+
+### יותר
+
+`yoter_scraper.py` reads the public business list of מועדון יותר (the soldiers' club of האגודה למען החייל) at https://yoter.co.il/רשימת-בתי-עסק/ (no login). Each `a.logo-item` tile gives the business name, the benefit line, the discount badge and its category. A failed or empty refresh keeps the last successful `data/discounts/yoter_discounts.json`. Save the page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers yoter
 ```
