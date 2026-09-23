@@ -74,3 +74,65 @@ def test_thin_modules_use_their_base_url():
 
         assert module.scrape(fetch=fake_fetch) == []
         assert seen == [module.BASE_URL]
+
+
+CORPORATE_CAT = (FIX / "style_platform" / "corporate_category_16.html").read_text(encoding="utf-8")
+CORPORATE_BASE = "https://www.mycorporate.co.il/"
+
+
+def test_corporate_card_tiles_are_card_discounts_not_vouchers():
+    # Regression: קורפורייט benefits were all labeled "voucher" (שובר). Corporate is an Isracard
+    # credit card; a "5% הנחה" tile is an automatic discount when paying with the club card.
+    records = style_platform.parse_category(
+        CORPORATE_CAT, CORPORATE_BASE, "קורפורייט", "לבית", default_type=corporate_scraper.DISCOUNT_TYPE
+    )
+    by_name = {r["business_name"]: r for r in records}
+    assert len(records) == 59  # every tile of the card template is parsed, not only ones with img alt
+    home_sale = by_name["הום סייל"]
+    assert home_sale["discount_type"] == "billing_discount"
+    card_tiles = [r for r in records if r["discount"].startswith(("5% הנחה", "10% הנחה"))]
+    assert card_tiles
+    assert all(r["discount_type"] == "billing_discount" for r in card_tiles)
+    assert all(r["discount_value"] in (5.0, 10.0) for r in card_tiles)
+    assert not any(r["discount"] == r["business_name"] for r in card_tiles)
+
+
+def test_corporate_purchase_tiles_stay_vouchers():
+    records = style_platform.parse_category(
+        CORPORATE_CAT, CORPORATE_BASE, "קורפורייט", default_type=corporate_scraper.DISCOUNT_TYPE
+    )
+    vouchers = [r for r in records if r["discount_type"] == "voucher"]
+    assert vouchers
+    textile = next(r for r in records if r["business_name"] == "שובר לרשת ערד טקסטיל")
+    assert textile["discount_type"] == "voucher"
+    assert textile["discount_value"] == 15.0  # ב-₪85 בשווי ₪100
+
+
+def test_corporate_scraper_crawls_as_billing_discount():
+    def fake_fetch(url):
+        if url == corporate_scraper.BASE_URL:
+            return '<a href="?page=category&id=16">לבית</a>'
+        return CORPORATE_CAT
+
+    records = corporate_scraper.scrape(fetch=fake_fetch)
+    types = {r["discount_type"] for r in records}
+    assert types == {"billing_discount", "voucher"}
+
+
+def test_other_style_clubs_keep_voucher_default():
+    records = style_platform.parse_category(CAT7, BASE, "כח לעובדים", "מזון")
+    assert records and all(r["discount_type"] == "voucher" for r in records)
+    assert style_platform.tile_type("5% הנחה") == "voucher"
+    assert style_platform.tile_type("5% הנחה", "billing_discount") == "billing_discount"
+    assert style_platform.tile_type("לרכישה", "billing_discount") == "voucher"
+
+
+def test_card_discount_percent_in_title_is_kept():
+    html = (
+        '<a class="card product" href="/?page=Benefit&uuid=ABC-1"><span class="product-title-bold">15% הנחה ב- AVIS</span>'
+        '<span class="product-title-regular">חברת השכרת רכב</span><button class="add-button">לפרטים</button></a>'
+    )
+    [record] = style_platform.parse_category(html, CORPORATE_BASE, "קורפורייט", default_type="billing_discount")
+    assert record["discount_type"] == "billing_discount"
+    assert record["discount"] == "15% הנחה ב- AVIS - חברת השכרת רכב"
+    assert record["discount_value"] == 15.0
