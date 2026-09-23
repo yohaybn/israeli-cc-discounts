@@ -55,6 +55,8 @@ Discount Finder collects discount offers from Israeli credit-card clubs and loya
 | קמפוסכרט | style platform club site (https://campus.style.co.il/) |
 | PowerCard | style platform club site (https://powercard.style.co.il/) |
 | קורפורייט (CORPORATE) | style platform club site (https://www.mycorporate.co.il/) |
+| שחר | Engineers' union club public benefits page (m-shachar.org.il) |
+| Living | style platform club site (https://www.livingclub.co.il/) |
 Every source is public data - no login required. New sources are added over time; each one is documented below.
 
 ## Quickstart
@@ -362,4 +364,20 @@ Contributions are welcome - new sources, better normalization, UI improvements.
 
 ```bash
 .venv/bin/python save_raw_scrapers.py --scrapers corporate
+```
+
+### שחר
+
+`shachar_scraper.py` reads the public benefits page of שחר (the club of הסתדרות המהנדסים) at https://www.m-shachar.org.il/benefit/ (no login). Each `a.stand_item` tile gives the title and a summary line. The club's larger catalog is on a Megalean site that needs login, so only the public page is covered. A failed or empty refresh keeps the last successful `data/discounts/shachar_discounts.json`. Save the page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers shachar
+```
+
+### Living
+
+`living_scraper.py` reads the public benefit catalog at https://www.livingclub.co.il/ (no login; login is only for buying). The site runs on the shared "style" benefits platform, so the crawl is `style_platform.crawl` (see כח לעובדים above). A failed or empty refresh keeps the last successful `data/discounts/living_discounts.json`. Save the home page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers living
 ```
