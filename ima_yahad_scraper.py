@@ -3,10 +3,13 @@
 The club catalog at https://www.ima.org.il/yahadclub/Categories.aspx is public (no login).
 Categories link to Suppliers.aspx?CategoryId=..., which lists suppliers linking to
 SupplierDetails.aspx?supId=..., where the discount text and branch table live. The site is
-an old ASP.NET app, so requests run one at a time.
+an old ASP.NET app: pages are fetched by a small bounded thread pool (MAX_WORKERS, default 6,
+override with IMA_YAHAD_WORKERS) instead of one at a time, which took ~35 minutes.
 """
 
+import os
 import re
+from concurrent.futures import ThreadPoolExecutor
 from typing import Any, Callable
 from urllib.parse import urljoin
 
@@ -20,6 +23,22 @@ BASE_URL = "https://www.ima.org.il/yahadclub/"
 CATEGORIES_URL = urljoin(BASE_URL, "Categories.aspx")
 CATEGORY_RE = re.compile(r"CategoryId=(\d+)")
 SUPPLIER_RE = re.compile(r"supId=(\d+)")
+MAX_WORKERS = max(1, int(os.environ.get("IMA_YAHAD_WORKERS", "6") or 6))
+
+
+def _fetch_all(fetch: Callable[[str], str], urls: list[str], workers: int) -> list[str | None]:
+    """Fetch URLs concurrently, keeping input order; a failed page becomes None."""
+    def one(url: str) -> str | None:
+        try:
+            return fetch(url)
+        except Exception as exc:  # one slow page should not sink the run
+            print(f"WARNING: {url} failed: {exc}")
+            return None
+
+    if workers <= 1 or len(urls) <= 1:
+        return [one(url) for url in urls]
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        return list(pool.map(one, urls))
 
 
 def parse_categories(html: str) -> dict[str, str]:
@@ -83,23 +102,22 @@ def parse_supplier(html: str, sup_id: str, category: str = "") -> dict[str, Any]
     return record
 
 
-def scrape(fetch: Callable[[str], str] = fetch_text) -> list[dict[str, Any]]:
+def scrape(fetch: Callable[[str], str] = fetch_text, workers: int | None = None) -> list[dict[str, Any]]:
+    workers = MAX_WORKERS if workers is None else workers
     categories = parse_categories(fetch(CATEGORIES_URL))
+    cat_items = list(categories.items())
+    pages = _fetch_all(fetch, [urljoin(BASE_URL, f"Suppliers.aspx?CategoryId={cid}") for cid, _ in cat_items], workers)
     supplier_category: dict[str, str] = {}
-    for cat_id, cat_name in categories.items():
-        try:
-            html = fetch(urljoin(BASE_URL, f"Suppliers.aspx?CategoryId={cat_id}"))
-        except Exception as exc:  # one slow category should not sink the run
-            print(f"WARNING: category {cat_id} failed: {exc}")
+    for (_, cat_name), html in zip(cat_items, pages):
+        if html is None:
             continue
         for sup_id in parse_supplier_list(html):
             supplier_category.setdefault(sup_id, cat_name)
+    sup_items = list(supplier_category.items())
+    details = _fetch_all(fetch, [urljoin(BASE_URL, f"SupplierDetails.aspx?supId={sid}") for sid, _ in sup_items], workers)
     records = []
-    for sup_id, cat_name in supplier_category.items():
-        try:
-            html = fetch(urljoin(BASE_URL, f"SupplierDetails.aspx?supId={sup_id}"))
-        except Exception as exc:
-            print(f"WARNING: supplier {sup_id} failed: {exc}")
+    for (sup_id, cat_name), html in zip(sup_items, details):
+        if html is None:
             continue
         record = parse_supplier(html, sup_id, cat_name)
         if record:
