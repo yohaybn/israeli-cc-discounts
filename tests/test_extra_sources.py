@@ -47,7 +47,9 @@ def test_run_extra_source_keeps_last_good_data_on_failure(tmp_path, monkeypatch)
     metadata = {}
     result = main.run_extra_source(_fake_module(error=RuntimeError("403")), metadata, "now")
     assert result == previous
-    assert "fake_source" not in metadata
+    # The failure is recorded, but no success date is invented for last-good data.
+    assert metadata["fake_source"]["status"] == "failed"
+    assert "last_successful_scrape" not in metadata["fake_source"]
     result = main.run_extra_source(_fake_module([]), metadata, "now")
     assert result == previous
 

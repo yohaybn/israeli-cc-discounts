@@ -41,7 +41,7 @@ Every scraper returns a list of dicts with these fields:
 Conventions every source follows (see `amex_scraper.py` or `max_benefits_scraper.py` for a recent example):
 
 1. One `scrape_<name>()` entry point returning normalized records; keep fetch, extract and normalize as separate functions so each is testable.
-2. Wire it into `main.py`: run it, write `data/discounts/<name>_discounts.json` only on a non-empty result, record `metadata["<name>"]`, and on failure fall back to the previous file (last-good-data behavior). Never delete or empty an existing data file because one run failed.
+2. Wire it into `main.py`: run it, write `data/discounts/<name>_discounts.json` only on a non-empty result, record the outcome with `mark_source(...)`, and on failure fall back to the previous file (last-good-data behavior). `mark_source` keeps the real `last_successful_scrape` on failure and marks the source `stale`, so the site shows true per-club dates. Never delete or empty an existing data file because one run failed.
 3. Add a `save_<name>_raw()` function to `save_raw_scrapers.py` and register it in the `--all` list, the `--scrapers` help text and the dispatch block.
 4. Add real (trimmed) fixtures under `tests/fixtures/` and pytest tests that run fully offline: normalization, dedupe, edge cases (expired/out-of-stock/malformed), and a mocked network walk. Live-network checks are manual, not part of the test suite.
 5. Document the source in `README.md` (one section per source, including the raw-capture command).
