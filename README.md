@@ -27,6 +27,7 @@ Discount Finder collects discount offers from Israeli credit-card clubs and loya
 | American Express Israel | The Amex rewards catalog |
 
 | Mizrahi-Tefahot (הכרטיס) | Mizrahi-Tefahot customer club benefits |
+| Gifta (גיפטא) | Stores that accept the Gifta gift card |
 Every source is public data - no login required. New sources are added over time; each one is documented below.
 
 ## Quickstart
@@ -110,4 +111,12 @@ Contributions are welcome - new sources, better normalization, UI improvements.
 
 ```bash
 .venv/bin/python save_raw_scrapers.py --scrapers mizrahi
+```
+
+### Gifta
+
+`gifta_scraper.py` reads the store list of the Gifta (גיפטא) gift card from the site's public WordPress REST API (`https://gifta.co.il/wp-json/wp/v2/posts`) - each post is one participating store, its excerpt holds the branch addresses (kept in `limitations`). No login. A failed or empty refresh keeps the last successful `data/discounts/gifta_discounts.json`. Save the raw API payloads with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers gifta
 ```
