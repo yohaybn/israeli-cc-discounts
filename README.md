@@ -72,6 +72,7 @@ Discount Finder collects discount offers from Israeli credit-card clubs and loya
 | טוב פלוס | State employees' club טוב+ (tovplus.org.il category pages) |
 | מחסני השוק גיפטקארד Wincard | Brands accepting the WINcard gift card (m-shuk.net WP REST) |
 | DREAM CARD גיפט | Chains accepting the DREAM CARD gift card (dcgift.co.il) |
+| מועדון W | W (דאבל יו) card benefits page (w-card.co.il) |
 Every source is public data - no login required. New sources are added over time; each one is documented below.
 
 ## Quickstart
@@ -515,4 +516,12 @@ Contributions are welcome - new sources, better normalization, UI improvements.
 
 ```bash
 .venv/bin/python save_raw_scrapers.py --scrapers dreamcard_giftcard
+```
+
+### מועדון W
+
+`w_card_scraper.py` reads the card benefits of מועדון W (the "דאבל יו" card of GOLF and Steimatzky) from the public page `https://w-card.co.il/` (no login). A failed or empty refresh keeps the last successful `data/discounts/w_card_discounts.json`. Save the page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers w_card
 ```
