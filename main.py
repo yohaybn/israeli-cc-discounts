@@ -12,6 +12,7 @@ from max_benefits_scraper import scrape_max_benefits
 from buyme_scraper import scrape_buyme_suppliers, stores_to_discounts
 from discount_key_scraper import scrape_discount_key
 from amex_scraper import scrape_amex
+from extra_sources import load_extra_sources
 
 BASE_DIR = os.path.dirname(__file__)
 DATA_DIR = os.path.join(BASE_DIR, "data")
@@ -70,6 +71,25 @@ def load_existing_json(filepath):
         except Exception as e:
             print(f"[Warning] Could not load fallback JSON from {filepath}: {e}")
     return None
+
+
+def run_extra_source(module, metadata, now_iso):
+    """Run one registered extra source with last-good-data fallback."""
+    key = module.SOURCE_KEY
+    path = os.path.join(DISCOUNTS_DIR, f"{key}_discounts.json")
+    try:
+        data = module.scrape()
+    except Exception as exc:
+        print(f"[WARNING] {module.CLUB_NAME} scraper failed: {exc}")
+        data = []
+    if data:
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(data, f, ensure_ascii=False, indent=4)
+        metadata[key] = {"last_successful_scrape": now_iso, "count": len(data)}
+        print(f"--> Saved {len(data)} {module.CLUB_NAME} items to {path}.")
+        return data
+    print(f"[WARNING] {module.CLUB_NAME} scraper returned 0 items; keeping prior normalized file.")
+    return load_existing_json(path) or []
 
 
 def main():
@@ -268,6 +288,10 @@ def main():
     combined_list = (
         mcc_data + hot_data + htzone_data + hvr_data + max_data + discount_key_data + amex_data + max_benefits_data
     )
+
+    # 5.9 Registered extra sources (extra_sources.py)
+    for module in load_extra_sources():
+        combined_list = combined_list + run_extra_source(module, metadata, now_iso)
 
     # Append Buyme discounts (normalized) to combined list
     if buyme_discounts:

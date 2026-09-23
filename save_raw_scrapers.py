@@ -231,16 +231,39 @@ def save_max_benefits_raw() -> None:
         print(f"[MAX Benefits] Request failed: {e}")
 
 
+def save_extra_raw(to_run) -> None:
+    """Save raw payloads for sources registered in extra_sources.py."""
+    from extra_sources import load_extra_sources
+
+    for module in load_extra_sources():
+        if module.SOURCE_KEY not in to_run:
+            continue
+        out_dir = os.path.join(RAW_DIR, module.SOURCE_KEY)
+        os.makedirs(out_dir, exist_ok=True)
+        try:
+            for filename, text in module.fetch_raw().items():
+                _write(os.path.join(out_dir, filename), text, mode="w")
+            print(f"[{module.CLUB_NAME}] Saved raw payloads to {out_dir}")
+        except Exception as e:
+            print(f"[{module.CLUB_NAME}] Request failed: {e}")
+
+
+def _extra_source_keys() -> list:
+    from extra_sources import load_extra_sources
+
+    return [module.SOURCE_KEY for module in load_extra_sources()]
+
+
 def main():
     p = argparse.ArgumentParser()
     p.add_argument("--all", action="store_true", help="Fetch raw for all supported scrapers")
-    p.add_argument("--scrapers", help="Comma-separated list of scrapers to run (htzone,hot,mcc,hvr,buyme,discount_key,amex,max_benefits)")
+    p.add_argument("--scrapers", help="Comma-separated list of scrapers to run (htzone,hot,mcc,hvr,buyme,discount_key,amex,max_benefits, plus any key registered in extra_sources.py)")
     p.add_argument("--buyme", type=int, help="Single buyme supplier id to fetch")
     args = p.parse_args()
 
     to_run = []
     if args.all:
-        to_run = ["htzone", "hot", "mcc", "hvr", "buyme", "discount_key", "amex", "max_benefits"]
+        to_run = ["htzone", "hot", "mcc", "hvr", "buyme", "discount_key", "amex", "max_benefits"] + _extra_source_keys()
     elif args.scrapers:
         to_run = [s.strip() for s in args.scrapers.split(",") if s.strip()]
 
@@ -248,6 +271,7 @@ def main():
         print("Nothing to do. Use --all or --scrapers. Example: --scrapers htzone,hot")
         return
 
+    save_extra_raw(to_run)
     if "discount_key" in to_run:
         save_discount_key_raw()
     if "amex" in to_run:

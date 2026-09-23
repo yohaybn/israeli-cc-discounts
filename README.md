@@ -26,6 +26,15 @@ Discount Finder collects discount offers from Israeli credit-card clubs and loya
 | Discount Key (מפתח דיסקונט) | Discount Bank participating businesses |
 | American Express Israel | The Amex rewards catalog |
 
+| Mizrahi-Tefahot (הכרטיס) | Mizrahi-Tefahot customer club benefits |
+| Gifta (גיפטא) | Stores that accept the Gifta gift card |
+| Gold Card (גולד קארד) | Stores that accept the Gold Card gift card |
+| Raayonit Global Tav (גלובל תו) | Chains and businesses that accept the Global Tav voucher |
+| Yedioth Ahronoth subscribers (ידיעות אחרונות) | Subscriber benefits |
+| Azrieli gift card (עזריאלי גיפטקארד) | Stores in Azrieli malls that accept the Azrieli gift card |
+| Swish Plus gift card | Businesses that accept the Swish Plus gift card |
+| IMA Yahad club (מועדון יחד - ההסתדרות הרפואית) | Suppliers in the Israel Medical Association Yahad club |
+| Shufersal 4U (שופרסל 4U) | Vouchers and benefits in the Shufersal 4U credit-card club |
 Every source is public data - no login required. New sources are added over time; each one is documented below.
 
 ## Quickstart
@@ -101,4 +110,76 @@ Contributions are welcome - new sources, better normalization, UI improvements.
 
 ```bash
 .venv/bin/python save_raw_scrapers.py --scrapers amex
+```
+
+### Mizrahi-Tefahot
+
+`mizrahi_scraper.py` reads the public catalog of Mizrahi-Tefahot's customer club "הכרטיס" (https://www.mizrahi-tefahot.co.il/hacartis/all/). The page is server-rendered HTML, one card per benefit, no login. Hot deals (coupon codes) and fixed discounts are both kept; the category comes from the benefit URL. A failed or empty refresh keeps the last successful `data/discounts/mizrahi_discounts.json`. Save the source page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers mizrahi
+```
+
+### Gifta
+
+`gifta_scraper.py` reads the store list of the Gifta (גיפטא) gift card from the site's public WordPress REST API (`https://gifta.co.il/wp-json/wp/v2/posts`) - each post is one participating store, its excerpt holds the branch addresses (kept in `limitations`). No login. A failed or empty refresh keeps the last successful `data/discounts/gifta_discounts.json`. Save the raw API payloads with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers gifta
+```
+
+### Gold Card
+
+`goldcard_scraper.py` reads the store list of the Gold Card (גולד קארד) gift card from the site's public WordPress REST API (`https://goldcard-gift.com/wp-json/wp/v2/brands`, plus the `brand-categories` and `cities-category` taxonomies). Cities where the store operates are kept in `limitations`. No login. A failed or empty refresh keeps the last successful `data/discounts/goldcard_discounts.json`. Save the raw API payloads with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers goldcard
+```
+
+### Raayonit Global Tav
+
+`raayonit_scraper.py` reads the public page of Raayonit's "Global Tav" (גלובל תו) voucher (https://www.raayonit.co.il/club/?ClubNum=18&ClubVoucherTypeNum=47). It keeps both the chain tiles (one record per network, linked to the network page) and the individual businesses from the supplier grid, merging the branches of one business into a single record with addresses and phones in `limitations`. No login. A failed or empty refresh keeps the last successful `data/discounts/raayonit_global_discounts.json`. Save the source page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers raayonit_global
+```
+
+### Yedioth Ahronoth
+
+`yedioth_scraper.py` reads the benefit tiles on the public Yedioth Ahronoth subscribers site (https://www.yedioth.co.il/) - mostly discounted tickets and products for subscribers. Server-rendered HTML, no login. A failed or empty refresh keeps the last successful `data/discounts/yedioth_discounts.json`. Save the source page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers yedioth
+```
+
+### Azrieli gift card
+
+`azrieli_giftcard_scraper.py` lists the stores that accept the Azrieli malls gift card. The card is run by BUYME and https://www.azrielimalls.co.il/giftcard links its "בתי עסק מכבדים" list to BUYME brand 398383, so the module reuses the BUYME options fetcher (public, no login) and relabels the records as their own club. The card works only in branches inside Azrieli malls. A failed or empty refresh keeps the last successful `data/discounts/azrieli_giftcard_discounts.json`. Save the raw payload with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers azrieli_giftcard
+```
+
+### Swish Plus
+
+`swish_scraper.py` lists the businesses that accept the Swish Plus gift card. The public product page (no login) embeds the full "איפה נהנים מהמתנה" list in its Next.js server-components payload (`tagsChains` -> `chainsByWallet`). The scraper decodes that payload; chains in the "רכישה אונליין" category are marked online-only. A failed or empty refresh keeps the last successful `data/discounts/swish_discounts.json`. Save the raw page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers swish
+```
+
+### IMA Yahad club
+
+`ima_yahad_scraper.py` reads the public catalog of the Israel Medical Association "Yahad" club (https://www.ima.org.il/yahadclub/Categories.aspx, no login). It walks every category page, collects the supplier IDs, then reads each SupplierDetails page for the discount, description and branch table (address, city, phone). The site is slow: about 160 category pages and 800 supplier pages, fetched one at a time, so a full run takes a while. Pages that time out are skipped with a warning. A failed or empty refresh keeps the last successful `data/discounts/ima_yahad_discounts.json`. Save the category page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers ima_yahad
+```
+
+### Shufersal 4U
+
+`shufersal4u_scraper.py` reads the public benefit catalog of the Shufersal 4U credit-card club (https://www.shufersal4u.co.il/). Browsing needs no login (login is only for buying). It walks the category pages linked from the home page and their sub-categories, keeps one record per benefit uuid, and computes `discount_value` from the "לרכישה ב-X בשווי/במקום Y" price line or an "X% הנחה" text. A failed or empty refresh keeps the last successful `data/discounts/shufersal4u_discounts.json`. Save the home page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers shufersal4u
 ```
