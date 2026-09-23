@@ -335,6 +335,12 @@
 
         updateFilterChipsUI();
         applyFiltersAndSort();
+
+        // First visit: let the visitor pick the clubs they belong to.
+        ProgramRegistry.maybeShowFirstVisitPicker(programRegistry, state.clubCounts, state.selectedClubs, () => {
+            updateFilterChipsUI();
+            applyFiltersAndSort();
+        });
     }
 
     // Re-render hierarchy-aware filters.
@@ -348,7 +354,7 @@
     // Filter and sort businesses based on current state
     function applyFiltersAndSort() {
         const query = normalizeHebrew(state.searchQuery);
-        const isAllSelected = programRegistry.selectableIds.every((id) => state.selectedClubs.has(id));
+        const isAllSelected = ProgramRegistry.isUnfiltered(programRegistry, state.selectedClubs);
 
         let results = state.allBusinesses.filter((biz) => {
             // Club multi-filter: business must belong to at least one selected club
@@ -390,7 +396,7 @@
             elements.loadMoreContainer.classList.add('hidden');
             elements.emptyState.classList.remove('hidden');
 
-            const isAllSelected = programRegistry.selectableIds.every((id) => state.selectedClubs.has(id));
+            const isAllSelected = ProgramRegistry.isUnfiltered(programRegistry, state.selectedClubs);
             let filterNames = '';
             if (!isAllSelected) {
                 filterNames = Array.from(state.selectedClubs).map(getClubShortName).join(', ');
@@ -425,7 +431,7 @@
         const card = document.createElement('div');
         card.className = 'business-card';
 
-        const isAllSelected = programRegistry.selectableIds.every((id) => state.selectedClubs.has(id));
+        const isAllSelected = ProgramRegistry.isUnfiltered(programRegistry, state.selectedClubs);
         // Filter discounts list based on active club selection
         let discountsToShow = (biz.discounts || []).filter((d) => {
             if (isAllSelected) return true;
@@ -557,7 +563,7 @@
     function updateResultsMeta() {
         const total = state.filteredBusinesses.length;
         let countDiscounts = 0;
-        const isAllSelected = programRegistry.selectableIds.every((id) => state.selectedClubs.has(id));
+        const isAllSelected = ProgramRegistry.isUnfiltered(programRegistry, state.selectedClubs);
 
         state.filteredBusinesses.forEach((b) => {
             if (isAllSelected) {
@@ -575,7 +581,26 @@
             elements.resultsCountText.innerHTML = `מציג <strong>${total.toLocaleString()}</strong> עסקים ורשתות (סה״כ ${countDiscounts.toLocaleString()} הטבות)`;
         }
 
-        if (!isAllSelected) {
+        const scopeIds = programRegistry.scopeIds || programRegistry.selectableIds;
+        const isWholeScope = programRegistry.scoped && scopeIds.every((id) => state.selectedClubs.has(id));
+        if (isWholeScope) {
+            const parentCount = ProgramRegistry.visibleParents(programRegistry).filter((p) => scopeIds.includes(p.id) || programRegistry.descendants(p.id).some((id) => scopeIds.includes(id))).length;
+            elements.activeFilterBadge.innerHTML = `
+                <span>מציג הטבות מ-<strong>${parentCount.toLocaleString()}</strong> המועדונים שלי</span>
+                <button id="editMyClubsBtn" class="clear-club-filter-btn" title="עריכת המועדונים שלי" aria-label="עריכת המועדונים שלי">✎</button>
+            `;
+            elements.activeFilterBadge.classList.remove('hidden');
+            const editBtn = document.getElementById('editMyClubsBtn');
+            if (editBtn) {
+                editBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    ProgramRegistry.openClubPicker(programRegistry, state.clubCounts, state.selectedClubs, () => {
+                        updateFilterChipsUI();
+                        applyFiltersAndSort();
+                    }, { firstVisit: false });
+                });
+            }
+        } else if (!isAllSelected) {
             const clubNames = Array.from(state.selectedClubs).map(getClubShortName).join(', ');
             elements.activeFilterBadge.innerHTML = `
                 <span>מסונן לפי: <strong>${escapeHtml(clubNames)}</strong></span>
@@ -587,7 +612,7 @@
             if (clearFilterBtn) {
                 clearFilterBtn.addEventListener('click', (e) => {
                     e.stopPropagation();
-                    state.selectedClubs = new Set(programRegistry.selectableIds);
+                    state.selectedClubs = new Set(programRegistry.scopeIds || programRegistry.selectableIds);
                     ProgramRegistry.clearSavedSelection();
                     updateFilterChipsUI();
                     applyFiltersAndSort();
@@ -694,7 +719,7 @@
             elements.searchInput.value = '';
             elements.clearSearchBtn.classList.add('hidden');
             state.searchQuery = '';
-            state.selectedClubs = new Set(programRegistry.selectableIds);
+            state.selectedClubs = new Set(programRegistry.scopeIds || programRegistry.selectableIds);
             ProgramRegistry.clearSavedSelection();
             updateFilterChipsUI();
             applyFiltersAndSort();

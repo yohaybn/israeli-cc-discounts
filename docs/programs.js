@@ -122,39 +122,265 @@
   }
 
   // The initial selection for a page: the saved subset when one exists and is
-  // still valid for the clubs observed in the current data, otherwise all clubs.
+  // still valid for the clubs in scope (the visitor's "my clubs" when chosen,
+  // otherwise every observed club), otherwise every club in scope.
   function initialSelection(registry) {
-    const selectable = registry.selectableIds || [];
+    applyScope(registry);
+    const scope = registry.scopeIds || registry.selectableIds || [];
     const saved = readSavedSelection();
     if (saved) {
-      const valid = saved.filter((id) => selectable.includes(id));
-      if (valid.length && valid.length < selectable.length) return new Set(valid);
+      const valid = saved.filter((id) => scope.includes(id));
+      if (valid.length && valid.length < scope.length) return new Set(valid);
       // A saved selection that no longer matches anything (or that matches
       // everything) is stale: drop it so new clubs are selected by default.
       clearSavedSelection();
     }
-    return new Set(selectable);
+    return new Set(scope);
   }
 
-  // Persist after a user change. Selecting every club is the default state, so
-  // it clears the cookie instead of freezing today's club list (which would
-  // hide clubs added to the data later).
+  // Persist after a user change. Selecting every club in scope is the default
+  // state, so it clears the cookie instead of freezing today's club list (which
+  // would hide clubs added to the data later).
   function persistSelection(registry, selected) {
-    const selectable = registry.selectableIds || [];
-    if (!selectable.length) return;
-    const allSelected = selectable.every((id) => selected.has(id));
+    const scope = registry.scopeIds || registry.selectableIds || [];
+    if (!scope.length) return;
+    const allSelected = scope.every((id) => selected.has(id));
     if (allSelected || selected.size === 0) {
       clearSavedSelection();
       return;
     }
-    saveSelection(Array.from(selected).filter((id) => selectable.includes(id)));
+    saveSelection(Array.from(selected).filter((id) => scope.includes(id)));
+  }
+
+  // --- "My clubs" (first-visit picker) ------------------------------------
+  // A separate cookie holds the top-level club ids the visitor said they have,
+  // or the string "all" when they chose to see every club. Only ids, one year.
+  // When it holds ids, only those clubs are shown in the filter row and used
+  // for results; the per-session filter chips then work inside that scope.
+  const MY_CLUBS_COOKIE = 'icc_my_clubs';
+
+  function readCookie(name) {
+    if (!cookiesAvailable()) return null;
+    try {
+      const prefix = `${name}=`;
+      const entry = document.cookie.split(';').map((c) => c.trim()).find((row) => row.startsWith(prefix));
+      return entry ? decodeURIComponent(entry.slice(prefix.length)) : null;
+    } catch (e) {
+      return null;
+    }
+  }
+
+  function writeCookie(name, value, maxAge) {
+    if (!cookiesAvailable()) return;
+    try {
+      document.cookie = `${name}=${encodeURIComponent(value)}; path=/; max-age=${maxAge}; samesite=lax`;
+    } catch (e) {
+      // Cookies blocked: the picker simply shows again next visit.
+    }
+  }
+
+  // null = never chosen, 'all' = every club, array = chosen top-level ids.
+  function readMyClubs() {
+    const raw = readCookie(MY_CLUBS_COOKIE);
+    if (raw == null || raw === '') return null;
+    if (raw === 'all') return 'all';
+    try {
+      const parsed = JSON.parse(raw);
+      if (!Array.isArray(parsed)) return null;
+      const ids = parsed.filter((id) => typeof id === 'string' && id);
+      return ids.length ? ids : null;
+    } catch (e) {
+      return null;
+    }
+  }
+
+  function saveMyClubs(value) {
+    writeCookie(MY_CLUBS_COOKIE, value === 'all' ? 'all' : JSON.stringify(value), SELECTION_COOKIE_MAX_AGE);
+  }
+
+  // Leaf ids (observed in the data) covered by a top-level program.
+  function idsForParent(registry, parentId) {
+    return [parentId, ...registry.descendants(parentId)].filter((id) => registry.observedIds.has(id));
+  }
+
+  // Top-level programs that actually have data, in display order.
+  function visibleParents(registry) {
+    return registry.parents.filter((p) => idsForParent(registry, p.id).length);
+  }
+
+  // Compute registry.scopeIds / registry.scoped from the "my clubs" cookie.
+  function applyScope(registry) {
+    const mine = readMyClubs();
+    registry.myClubs = mine;
+    registry.scoped = false;
+    registry.scopeIds = registry.selectableIds.slice();
+    if (Array.isArray(mine)) {
+      const ids = mine.flatMap((pid) => (registry.byId.has(pid) ? idsForParent(registry, pid) : []));
+      const unique = Array.from(new Set(ids));
+      if (unique.length && unique.length < registry.selectableIds.length) {
+        registry.scoped = true;
+        registry.scopeIds = unique;
+      }
+    }
+    return registry;
+  }
+
+  // True when results should not be filtered by club at all.
+  function isUnfiltered(registry, selected) {
+    if (registry.scoped) return false;
+    return registry.selectableIds.every((id) => selected.has(id));
+  }
+
+  // First visit: no "my clubs" choice yet and no filter saved by an earlier
+  // version of the site (those visitors already chose; don't interrupt them).
+  function needsFirstVisitPicker() {
+    if (!cookiesAvailable()) return false;
+    return readMyClubs() === null && readSavedSelection() === null;
+  }
+
+  function escapeText(value) {
+    return String(value == null ? '' : value).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  }
+
+  // Open the club picker. Applies the choice to `selected` in place, saves it,
+  // then calls onChange(). Closing without choosing on a first visit means
+  // "show all" so the picker doesn't keep coming back.
+  function openClubPicker(registry, directCounts, selected, onChange, opts) {
+    if (typeof document === 'undefined' || !document.body) return;
+    const options = opts || {};
+    const existing = document.getElementById('clubPickerOverlay');
+    if (existing) existing.remove();
+    const counts = aggregateCounts(registry, directCounts || {});
+    const parents = visibleParents(registry);
+    const hasCounts = parents.some((p) => counts[p.id]);
+    const chosen = new Set(Array.isArray(registry.myClubs) && registry.scoped ? registry.myClubs.filter((id) => registry.byId.has(id)) : []);
+
+    const overlay = document.createElement('div');
+    overlay.id = 'clubPickerOverlay';
+    overlay.className = 'club-picker-overlay';
+    overlay.innerHTML = `
+      <div class="club-picker" role="dialog" aria-modal="true" aria-labelledby="clubPickerTitle" dir="rtl">
+        <div class="club-picker-head">
+          <div>
+            <h2 id="clubPickerTitle">${options.firstVisit ? 'באילו מועדונים אתם חברים?' : 'המועדונים שלי'}</h2>
+            <p class="club-picker-sub">נציג הטבות רק מהמועדונים שתבחרו. הבחירה נשמרת בדפדפן הזה ואפשר לשנות אותה בכל רגע.</p>
+          </div>
+          <button type="button" class="club-picker-close" aria-label="סגירה">✕</button>
+        </div>
+        <div class="club-picker-search-wrap">
+          <input type="search" class="club-picker-search" placeholder="חיפוש מועדון…" aria-label="חיפוש מועדון" autocomplete="off">
+          <button type="button" class="club-picker-link club-picker-clear">ניקוי בחירה</button>
+        </div>
+        <div class="club-picker-list" role="group" aria-label="רשימת מועדונים"></div>
+        <p class="club-picker-empty" hidden>לא נמצאו מועדונים</p>
+        <div class="club-picker-foot">
+          <button type="button" class="club-picker-secondary club-picker-all">הצג את כל המועדונים</button>
+          <button type="button" class="club-picker-primary club-picker-save"></button>
+        </div>
+      </div>`;
+
+    const list = overlay.querySelector('.club-picker-list');
+    const saveBtn = overlay.querySelector('.club-picker-save');
+    const search = overlay.querySelector('.club-picker-search');
+    const empty = overlay.querySelector('.club-picker-empty');
+
+    function refreshSave() {
+      saveBtn.disabled = chosen.size === 0;
+      saveBtn.textContent = chosen.size ? `שמירה (${chosen.size})` : 'בחרו מועדון אחד לפחות';
+    }
+
+    parents.forEach((program) => {
+      const item = document.createElement('button');
+      item.type = 'button';
+      item.className = 'club-picker-item';
+      item.dataset.programId = program.id;
+      item.dataset.search = `${program.display_name} ${program.short_name} ${(program.aliases || []).join(' ')}`.toLowerCase();
+      item.style.setProperty('--program-color', program.color || fallbackColor(program.id));
+      const count = counts[program.id] || 0;
+      item.innerHTML = `<span class="club-picker-check" aria-hidden="true"></span><span class="club-picker-name">${escapeText(program.display_name)}</span>${hasCounts ? `<span class="club-picker-count">${count.toLocaleString()} הטבות</span>` : ''}`;
+      const sync = () => {
+        const on = chosen.has(program.id);
+        item.classList.toggle('selected', on);
+        item.setAttribute('aria-pressed', on ? 'true' : 'false');
+      };
+      sync();
+      item.addEventListener('click', () => {
+        if (chosen.has(program.id)) chosen.delete(program.id); else chosen.add(program.id);
+        sync();
+        refreshSave();
+      });
+      list.appendChild(item);
+    });
+    refreshSave();
+
+    search.addEventListener('input', () => {
+      const q = search.value.trim().toLowerCase();
+      let shown = 0;
+      list.querySelectorAll('.club-picker-item').forEach((item) => {
+        const match = !q || item.dataset.search.includes(q);
+        item.hidden = !match;
+        if (match) shown += 1;
+      });
+      empty.hidden = shown > 0;
+    });
+
+    overlay.querySelector('.club-picker-clear').addEventListener('click', () => {
+      chosen.clear();
+      list.querySelectorAll('.club-picker-item').forEach((item) => { item.classList.remove('selected'); item.setAttribute('aria-pressed', 'false'); });
+      refreshSave();
+    });
+
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+
+    function close() {
+      document.body.style.overflow = previousOverflow;
+      document.removeEventListener('keydown', onKey);
+      overlay.remove();
+    }
+
+    function apply(value) {
+      saveMyClubs(value);
+      applyScope(registry);
+      clearSavedSelection();
+      selected.clear();
+      registry.scopeIds.forEach((id) => selected.add(id));
+      close();
+      if (onChange) onChange();
+    }
+
+    function dismiss() {
+      if (options.firstVisit || registry.myClubs === null) apply('all');
+      else close();
+    }
+
+    function onKey(e) { if (e.key === 'Escape') dismiss(); }
+    document.addEventListener('keydown', onKey);
+
+    overlay.querySelector('.club-picker-close').addEventListener('click', dismiss);
+    overlay.addEventListener('click', (e) => { if (e.target === overlay) dismiss(); });
+    overlay.querySelector('.club-picker-all').addEventListener('click', () => apply('all'));
+    saveBtn.addEventListener('click', () => { if (chosen.size) apply(Array.from(chosen)); });
+
+    document.body.appendChild(overlay);
+    try { search.focus({ preventScroll: true }); } catch (e) { /* ignore */ }
+  }
+
+  function maybeShowFirstVisitPicker(registry, directCounts, selected, onChange) {
+    if (!needsFirstVisitPicker()) return false;
+    openClubPicker(registry, directCounts, selected, onChange, { firstVisit: true });
+    return true;
   }
   // -------------------------------------------------------------------------
 
-  function renderFilters(container, registry, directCounts, selected, onChange, showCounts) {
+  function renderFilters(container, registry, directCounts, selected, onChange, showCounts, opts) {
     if (!container) return;
+    const options = opts || {};
+    if (!registry.scopeIds) registry.scopeIds = registry.selectableIds.slice();
+    const scope = registry.scopeIds;
+    const inScope = new Set(scope);
     const counts = aggregateCounts(registry, directCounts);
-    const allSelected = registry.selectableIds.every((id) => selected.has(id));
+    const allSelected = scope.every((id) => selected.has(id));
     container.innerHTML = '';
     const makeButton = (program, ids, child) => {
       const chosen = ids.filter((id) => selected.has(id)).length;
@@ -170,27 +396,39 @@
       button.addEventListener('click', () => {
         const shouldSelect = !ids.every((id) => selected.has(id));
         ids.forEach((id) => shouldSelect ? selected.add(id) : selected.delete(id));
-        if (selected.size === 0) registry.selectableIds.forEach((id) => selected.add(id));
+        if (selected.size === 0) scope.forEach((id) => selected.add(id));
         persistSelection(registry, selected);
         onChange();
       });
       return button;
     };
+    const allCount = registry.scoped
+      ? scope.reduce((sum, id) => sum + (directCounts[id] || 0), 0)
+      : (directCounts.ALL != null ? directCounts.ALL : Object.entries(directCounts).filter(([id]) => id !== 'ALL').reduce((sum, [,count]) => sum + count, 0));
     const all = document.createElement('button');
     all.type = 'button'; all.className = `filter-chip${allSelected ? ' active' : ''}`; all.dataset.programId = 'ALL';
-    all.innerHTML = `<span class="chip-checkbox">${allSelected ? '✓' : ''}</span><span class="chip-name">כל המועדונים</span>${showCounts ? `<span class="chip-count">${(directCounts.ALL != null ? directCounts.ALL : Object.entries(directCounts).filter(([id]) => id !== 'ALL').reduce((sum, [,count]) => sum + count, 0)).toLocaleString()}</span>` : ''}`;
-    all.addEventListener('click', () => { selected.clear(); registry.selectableIds.forEach((id) => selected.add(id)); persistSelection(registry, selected); onChange(); });
+    all.innerHTML = `<span class="chip-checkbox">${allSelected ? '✓' : ''}</span><span class="chip-name">${registry.scoped ? 'כל המועדונים שלי' : 'כל המועדונים'}</span>${showCounts ? `<span class="chip-count">${allCount.toLocaleString()}</span>` : ''}`;
+    all.addEventListener('click', () => { selected.clear(); scope.forEach((id) => selected.add(id)); persistSelection(registry, selected); onChange(); });
     container.appendChild(all);
     registry.parents.forEach((parent) => {
       const descendants = registry.descendants(parent.id);
-      const ids = [parent.id, ...descendants].filter((id) => registry.observedIds.has(id));
+      const ids = [parent.id, ...descendants].filter((id) => registry.observedIds.has(id) && inScope.has(id));
       if (!ids.length) return;
       const group = document.createElement('div'); group.className = 'program-filter-group';
       group.appendChild(makeButton(parent, ids, false));
       // Child programs remain distinct in records/cards, but filters are parent-only.
       container.appendChild(group);
     });
+    if (options.editable !== false && registry.selectableIds.length && typeof document !== 'undefined') {
+      const edit = document.createElement('button');
+      edit.type = 'button';
+      edit.className = 'filter-chip club-picker-open';
+      edit.dataset.programId = 'EDIT';
+      edit.innerHTML = `<span class="chip-name">${registry.scoped ? '✎ עריכת המועדונים שלי' : '✎ בחירת המועדונים שלי'}</span>`;
+      edit.addEventListener('click', () => openClubPicker(registry, directCounts, selected, onChange, { firstVisit: false }));
+      container.appendChild(edit);
+    }
   }
 
-  global.ProgramRegistry = { CURATED, build, aggregateCounts, renderFilters, fallbackColor, initialSelection, persistSelection, clearSavedSelection, readSavedSelection, SELECTION_COOKIE };
+  global.ProgramRegistry = { CURATED, build, aggregateCounts, renderFilters, fallbackColor, initialSelection, persistSelection, clearSavedSelection, readSavedSelection, SELECTION_COOKIE, MY_CLUBS_COOKIE, applyScope, isUnfiltered, readMyClubs, saveMyClubs, needsFirstVisitPicker, openClubPicker, maybeShowFirstVisitPicker, visibleParents };
 })(window);
