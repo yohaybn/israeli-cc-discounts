@@ -33,6 +33,7 @@ Discount Finder collects discount offers from Israeli credit-card clubs and loya
 | Yedioth Ahronoth subscribers (ידיעות אחרונות) | Subscriber benefits |
 | Azrieli gift card (עזריאלי גיפטקארד) | Stores in Azrieli malls that accept the Azrieli gift card |
 | Swish gift cards (נופשונית) | Businesses that accept Swish Plus, Perfect, Premium, Unique and Baby |
+| HappyGift (קשרים פלוס) | Businesses that accept the +HappyGift and HappyGift Multi gift cards |
 | IMA Yahad club (מועדון יחד - ההסתדרות הרפואית) | Suppliers in the Israel Medical Association Yahad club |
 | Shufersal 4U (שופרסל 4U) | Vouchers and benefits in the Shufersal 4U credit-card club |
 | MY OFER (קניוני עופר) | Club deals in the Ofer malls, merged across malls |
@@ -201,6 +202,14 @@ Contributions are welcome - new sources, better normalization, UI improvements.
 
 ```bash
 .venv/bin/python save_raw_scrapers.py --scrapers azrieli_giftcard
+```
+
+### HappyGift gift cards
+
+`happygift_scraper.py` lists the businesses that accept the +HappyGift and HappyGift Multi gift cards. The storefront is an Angular app, but the public catalog (`https://catalog.happygift.co.il/coupon-suppliers/<id>`, no login) is a Next.js page whose server-components payload already holds the full supplier list (`suppliers`) with branches, so no browser is needed. +HappyGift is coupon 5041; HappyGift Multi merges the physical (3198) and digital (4313) coupons per business. Each card's `club` field is the card name. One failing coupon page does not drop the others. A failed or empty refresh keeps the last successful `data/discounts/happygift_discounts.json`. Save the raw pages with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers happygift
 ```
 
 ### Swish gift cards
