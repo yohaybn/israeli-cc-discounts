@@ -1,6 +1,7 @@
 """Small helpers shared by the scrapers registered in extra_sources.py."""
 
 import re
+import time
 from typing import Any
 
 from bs4 import BeautifulSoup
@@ -44,10 +45,19 @@ def is_online_only(*texts: str) -> bool:
     return bool(ONLINE_ONLY_PATTERN.search(joined)) and not PHYSICAL_PATTERN.search(joined)
 
 
-def fetch_text(url: str, timeout: int = 30, **kwargs) -> str:
-    response = requests.get(url, headers=HEADERS, timeout=timeout, **REQUESTS_KWARGS, **kwargs)
-    response.raise_for_status()
-    return response.text
+def fetch_text(url: str, timeout: int = 30, retries: int = 2, **kwargs) -> str:
+    """GET a page, retrying transient connection errors (not HTTP errors) with a short backoff."""
+    for attempt in range(retries + 1):
+        try:
+            response = requests.get(url, headers=HEADERS, timeout=timeout, **REQUESTS_KWARGS, **kwargs)
+        except Exception:
+            if attempt == retries:
+                raise
+            time.sleep(2 * (attempt + 1))
+            continue
+        response.raise_for_status()
+        return response.text
+    raise RuntimeError("unreachable")
 
 
 def dedupe(records: list[dict[str, Any]]) -> list[dict[str, Any]]:

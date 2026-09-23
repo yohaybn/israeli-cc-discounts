@@ -50,3 +50,26 @@ def test_run_extra_source_keeps_last_good_data_on_failure(tmp_path, monkeypatch)
     assert "fake_source" not in metadata
     result = main.run_extra_source(_fake_module([]), metadata, "now")
     assert result == previous
+
+
+def test_fetch_text_retries_connection_errors(monkeypatch):
+    import scraper_utils
+
+    calls = []
+
+    class Response:
+        text = "ok"
+
+        def raise_for_status(self):
+            pass
+
+    def flaky_get(url, **kwargs):
+        calls.append(url)
+        if len(calls) < 2:
+            raise ConnectionError("closed")
+        return Response()
+
+    monkeypatch.setattr(scraper_utils.requests, "get", flaky_get)
+    monkeypatch.setattr(scraper_utils.time, "sleep", lambda s: None)
+    assert scraper_utils.fetch_text("https://example.test/") == "ok"
+    assert len(calls) == 2
