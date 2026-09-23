@@ -13,7 +13,21 @@
         }).format(timestamp);
     }
 
-    function renderFreshness(value) {
+    function staleSummary(data) {
+        const status = data && data.source_status;
+        if (!status) return '';
+        const stale = Object.values(status).filter((s) => s && s.status && s.status !== 'ok');
+        if (!stale.length) return '';
+        const items = stale.map((s) => {
+            const when = s.last_successful_scrape ? formatTimestamp(s.last_successful_scrape) : null;
+            return `${s.club}: ${when ? `נתונים מ-${when}` : 'אין נתונים עדכניים'}`;
+        });
+        const shown = items.slice(0, 5).join('; ');
+        const more = items.length > 5 ? `; ועוד ${items.length - 5}` : '';
+        return ` · ${stale.length} מקורות לא התעדכנו בריצה האחרונה (${shown}${more})`;
+    }
+
+    function renderFreshness(value, data) {
         const timestamp = new Date(value);
         const formatted = formatTimestamp(value);
         if (!formatted) throw new Error('Invalid freshness timestamp');
@@ -29,6 +43,11 @@
         } else {
             element.textContent = `עדכון נתונים אחרון: ${formatted}`;
         }
+        const suffix = staleSummary(data);
+        if (suffix) {
+            element.textContent += suffix;
+            element.classList.add('has-stale-sources');
+        }
     }
 
     async function loadFreshness() {
@@ -40,7 +59,7 @@
                 const data = await response.json();
                 const value = data.published_at || data.metadata?.all_combined?.last_updated;
                 if (value) {
-                    renderFreshness(value);
+                    renderFreshness(value, data);
                     return;
                 }
             } catch (error) {
