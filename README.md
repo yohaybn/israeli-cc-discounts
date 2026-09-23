@@ -66,6 +66,7 @@ Discount Finder collects discount offers from Israeli credit-card clubs and loya
 | אוניברסיטת תל אביב TAU | uniq-club platform GraphQL (shop 2) |
 | סטודנט גרופ | Student coupon club (studentgroup.co.il WP REST) |
 | חתול פיננסי | Community benefits (moneyplan.co.il WP REST) |
+| Samsung Members | Samsung Israel Members / Galaxy VIP benefits page |
 Every source is public data - no login required. New sources are added over time; each one is documented below.
 
 ## Quickstart
@@ -461,4 +462,12 @@ Contributions are welcome - new sources, better normalization, UI improvements.
 
 ```bash
 .venv/bin/python save_raw_scrapers.py --scrapers moneyplan
+```
+
+### Samsung Members
+
+`samsung_members_scraper.py` reads the public Samsung Members / Galaxy VIP benefits page (`https://www.samsung.com/il/mobile/samsung-members/benefits/`, no login). Each carousel card is one benefit. A failed or empty refresh keeps the last successful `data/discounts/samsung_members_discounts.json`. Save the page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers samsung_members
 ```
