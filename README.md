@@ -37,6 +37,9 @@ Discount Finder collects discount offers from Israeli credit-card clubs and loya
 | Shufersal 4U (שופרסל 4U) | Vouchers and benefits in the Shufersal 4U credit-card club |
 | MY OFER (קניוני עופר) | Club deals in the Ofer malls, merged across malls |
 | DREAM CARD VIP (דרים קארד) | Fox group brands with 15% cashback on the DREAM CARD VIP card |
+| כח לעובדים (workers.style.co.il) | Benefits in the כח לעובדים club |
+| עדיף (adif.style.co.il) | Benefits in the עדיף consumer club |
+| Hi-Benefit (לשכת רואי החשבון) | Benefits for Hi-Benefit card holders (Institute of CPAs) |
 Every source is public data - no login required. New sources are added over time; each one is documented below.
 
 ## Quickstart
@@ -200,4 +203,28 @@ Contributions are welcome - new sources, better normalization, UI improvements.
 
 ```bash
 .venv/bin/python save_raw_scrapers.py --scrapers dreamcard
+```
+
+### כח לעובדים
+
+`workers_style_scraper.py` reads the public benefit catalog at https://workers.style.co.il/. The site runs on the same "style" benefits platform as Shufersal 4U, so the crawl lives in the shared `style_platform.py`: it walks the category pages and their sub-categories, keeps one record per benefit uuid and computes `discount_value` from the price line. Browsing needs no login (login is only for buying). A failed or empty refresh keeps the last successful `data/discounts/koach_laovdim_discounts.json`. Save the home page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers koach_laovdim
+```
+
+### עדיף
+
+`adif_scraper.py` reads the public benefit catalog at https://adif.style.co.il/. The site runs on the same "style" benefits platform as Shufersal 4U, so the crawl lives in the shared `style_platform.py`: it walks the category pages and their sub-categories, keeps one record per benefit uuid and computes `discount_value` from the price line. Browsing needs no login (login is only for buying). A failed or empty refresh keeps the last successful `data/discounts/adif_discounts.json`. Save the home page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers adif
+```
+
+### Hi-Benefit
+
+`hibenefit_scraper.py` reads the public benefit catalog at https://www.benefit-icpas.co.il/. The site runs on the same "style" benefits platform as Shufersal 4U, so the crawl lives in the shared `style_platform.py`: it walks the category pages and their sub-categories, keeps one record per benefit uuid and computes `discount_value` from the price line. Browsing needs no login (login is only for buying). A failed or empty refresh keeps the last successful `data/discounts/hibenefit_discounts.json`. Save the home page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers hibenefit
 ```
