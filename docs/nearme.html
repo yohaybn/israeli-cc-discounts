@@ -155,6 +155,7 @@
   let radiusCircle = null;
   let businessLayerGroup = L.layerGroup();
   let programRegistry = ProgramRegistry.build([]);
+  let clubCounts = {};
   let selectedClubs = new Set();
   let _filtersInitialized = false;
 
@@ -267,9 +268,21 @@
       (Array.isArray(b.discounts) ? b.discounts : []).map((d) => d.club || d.club_name)
     );
     programRegistry = ProgramRegistry.build(labels);
+    clubCounts = {};
+    labels.forEach((label) => {
+      const id = programRegistry.resolve(label);
+      clubCounts[id] = (clubCounts[id] || 0) + 1;
+    });
     selectedClubs = ProgramRegistry.initialSelection(programRegistry);
     _filtersInitialized = true;
     updateClubFiltersUI();
+    // First visit: let the visitor pick the clubs they belong to.
+    ProgramRegistry.maybeShowFirstVisitPicker(programRegistry, clubCounts, selectedClubs, onClubSelectionChange);
+  }
+
+  function onClubSelectionChange() {
+    updateClubFiltersUI();
+    if (radiusCircle) updateUserLocation(currentUserLat, currentUserLon);
   }
 
   function normalizeClub(club) { return programRegistry.resolve(club); }
@@ -280,10 +293,7 @@
   }
 
   function updateClubFiltersUI() {
-    ProgramRegistry.renderFilters(document.getElementById('programFilters'), programRegistry, {}, selectedClubs, () => {
-      updateClubFiltersUI();
-      if (radiusCircle) updateUserLocation(currentUserLat, currentUserLon);
-    }, false);
+    ProgramRegistry.renderFilters(document.getElementById('programFilters'), programRegistry, clubCounts, selectedClubs, onClubSelectionChange, false);
   }
 
   // Update Radius from Slider
