@@ -30,6 +30,7 @@ Discount Finder collects discount offers from Israeli credit-card clubs and loya
 | Gifta (גיפטא) | Stores that accept the Gifta gift card |
 | Gold Card (גולד קארד) | Stores that accept the Gold Card gift card |
 | Raayonit Global Tav (גלובל תו) | Chains and businesses that accept the Global Tav voucher |
+| Yedioth Ahronoth subscribers (ידיעות אחרונות) | Subscriber benefits |
 Every source is public data - no login required. New sources are added over time; each one is documented below.
 
 ## Quickstart
@@ -137,4 +138,12 @@ Contributions are welcome - new sources, better normalization, UI improvements.
 
 ```bash
 .venv/bin/python save_raw_scrapers.py --scrapers raayonit_global
+```
+
+### Yedioth Ahronoth
+
+`yedioth_scraper.py` reads the benefit tiles on the public Yedioth Ahronoth subscribers site (https://www.yedioth.co.il/) - mostly discounted tickets and products for subscribers. Server-rendered HTML, no login. A failed or empty refresh keeps the last successful `data/discounts/yedioth_discounts.json`. Save the source page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers yedioth
 ```
