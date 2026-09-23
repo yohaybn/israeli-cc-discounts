@@ -2,14 +2,15 @@
 """Save one-page / raw responses for each scraper to `data/raw/` for debugging.
 
 Usage:
-  python save_raw_scrapers.py --all
-  python save_raw_scrapers.py --scrapers htzone,hot
-  python save_raw_scrapers.py --buyme 13438757
+  python scripts/save_raw_scrapers.py --all
+  python scripts/save_raw_scrapers.py --scrapers htzone,hot
+  python scripts/save_raw_scrapers.py --buyme 13438757
 """
 import argparse
 import json
 import os
 import re
+import sys
 import time
 from typing import Optional
 
@@ -19,7 +20,9 @@ except ImportError:
     import requests
 
 
-BASE_DIR = os.path.dirname(__file__)
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# Scraper modules live under scrapers/ and are imported below by bare name.
+sys.path.insert(0, os.path.join(BASE_DIR, "scrapers"))
 RAW_DIR = os.path.join(BASE_DIR, "data", "raw")
 os.makedirs(RAW_DIR, exist_ok=True)
 

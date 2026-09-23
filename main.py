@@ -3,6 +3,12 @@ import html
 import json
 import os
 import re
+import sys
+
+# Scraper modules live under scrapers/ and import each other by bare module
+# name, so that directory must be importable before the imports below.
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "scrapers"))
+
 from hot_scraper import scrape_hot
 from htzone_scraper import scrape_htzone
 from mcc_scraper import scrape_mcc
