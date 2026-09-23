@@ -35,6 +35,7 @@ Discount Finder collects discount offers from Israeli credit-card clubs and loya
 | Swish gift cards (נופשונית) | Businesses that accept Swish Plus, Perfect, Premium, Unique and Baby |
 | IMA Yahad club (מועדון יחד - ההסתדרות הרפואית) | Suppliers in the Israel Medical Association Yahad club |
 | Shufersal 4U (שופרסל 4U) | Vouchers and benefits in the Shufersal 4U credit-card club |
+| MY OFER (קניוני עופר) | Club deals in the Ofer malls, merged across malls |
 Every source is public data - no login required. New sources are added over time; each one is documented below.
 
 ## Quickstart
@@ -182,4 +183,12 @@ Contributions are welcome - new sources, better normalization, UI improvements.
 
 ```bash
 .venv/bin/python save_raw_scrapers.py --scrapers shufersal4u
+```
+
+### MY OFER
+
+`myofer_scraper.py` reads MY OFER, the Ofer malls customer club. The mall list comes from the home page and each mall's public deals page (`https://myofer.co.il/malls/<mall>/deals?page=N`, no login) holds 10 deals per page in its Next.js `__NEXT_DATA__`. Deals that repeat across malls are merged and list every mall in `branches`. `discount_value` comes from "ב-X בשווי/במקום Y" price lines or a percent. A full run is about 240 page loads. A failed or empty refresh keeps the last successful `data/discounts/myofer_discounts.json`. Save the home page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers myofer
 ```
