@@ -73,6 +73,7 @@ Discount Finder collects discount offers from Israeli credit-card clubs and loya
 | מחסני השוק גיפטקארד Wincard | Brands accepting the WINcard gift card (m-shuk.net WP REST) |
 | DREAM CARD גיפט | Chains accepting the DREAM CARD gift card (dcgift.co.il) |
 | מועדון W | W (דאבל יו) card benefits page (w-card.co.il) |
+| LOVE gift card | Brands accepting the LOVE CARD (Castro-Hoodies terms page) |
 Every source is public data - no login required. New sources are added over time; each one is documented below.
 
 ## Quickstart
@@ -524,4 +525,12 @@ Contributions are welcome - new sources, better normalization, UI improvements.
 
 ```bash
 .venv/bin/python save_raw_scrapers.py --scrapers w_card
+```
+
+### LOVE gift card
+
+`love_card_scraper.py` lists the Castro-Hoodies group brands that accept the LOVE CARD gift card, taken from the brand clause in the card's public terms page (`https://www.hoodies.co.il/tqnvn-love-card`, no login). A failed or empty refresh keeps the last successful `data/discounts/love_card_discounts.json`. Save the page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers love_card
 ```
