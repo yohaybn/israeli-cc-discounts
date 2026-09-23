@@ -1,0 +1,239 @@
+{
+ "meta": {
+  "page": 1,
+  "count": 512,
+  "perPage": 5,
+  "pages": 1
+ },
+ "data": [
+  {
+   "reference": 6456,
+   "reference_type": "SUPPLIER",
+   "name": "אנחנו כבר גדולים",
+   "price": 0,
+   "listPrice": 0,
+   "images": [
+    {
+     "image": "https://cpnclub.co.il/uploads/118290-235x180-resize.jpeg",
+     "alt": "אנחנו כבר גדולים הצגה בהתיאטרון שלנו"
+    }
+   ],
+   "info": {
+    "discount": 0,
+    "workingHours": "מגוון תאריכים לבחירה",
+    "ageDevision": "לגילי 3-8 \n",
+    "city": "כל הארץ",
+    "region": "צפון",
+    "phone": "072-3971487"
+   },
+   "categories": [
+    195,
+    196
+   ],
+   "identOrSlug": "6456",
+   "supplierType": "REGULAR",
+   "icon": {
+    "src": "",
+    "alt": ""
+   },
+   "sale": null,
+   "mainCategory": 196,
+   "newOnSite": true,
+   "bestSeller": false,
+   "forAgent": false
+  },
+  {
+   "reference": 6455,
+   "reference_type": "SUPPLIER",
+   "name": "שטח אש | ראשון לציון",
+   "price": 0,
+   "listPrice": 0,
+   "images": [
+    {
+     "image": "https://cpnclub.co.il/uploads/118245-235x180-resize.jpeg",
+     "alt": "שטח אש לייזר טאג"
+    }
+   ],
+   "info": {
+    "discount": 0,
+    "workingHours": "ראשון - חמישי\n16:00-20:00",
+    "ageDevision": "מתאים מגיל 6+",
+    "city": "ראשון לציון",
+    "region": "מרכז",
+    "phone": "1-700-700-400"
+   },
+   "categories": [
+    55,
+    101,
+    370
+   ],
+   "identOrSlug": "6455",
+   "supplierType": "REGULAR",
+   "icon": {
+    "src": "",
+    "alt": ""
+   },
+   "sale": null,
+   "mainCategory": 55,
+   "newOnSite": true,
+   "bestSeller": false,
+   "forAgent": false
+  },
+  {
+   "reference": 6454,
+   "reference_type": "SUPPLIER",
+   "name": "קומדי בר תל אביב | חוגגים ראש שנה 26",
+   "price": 0,
+   "listPrice": 0,
+   "images": [
+    {
+     "image": "https://cpnclub.co.il/uploads/118177-235x180-resize.jpeg",
+     "alt": "ראש השנה  2026 בקומדי בר תל אביב"
+    }
+   ],
+   "info": {
+    "discount": 0,
+    "workingHours": "מגוון תאריכים",
+    "ageDevision": "כל גיל חייב כרטיס\n",
+    "city": "תל אביב",
+    "region": "מרכז",
+    "phone": "072-3237004"
+   },
+   "categories": [
+    195,
+    199,
+    389
+   ],
+   "identOrSlug": "6454",
+   "supplierType": "INFORMATIVE",
+   "icon": {
+    "src": "",
+    "alt": ""
+   },
+   "sale": null,
+   "mainCategory": 389,
+   "newOnSite": false,
+   "bestSeller": false,
+   "forAgent": false
+  },
+  {
+   "reference": 6453,
+   "reference_type": "SUPPLIER",
+   "name": "קומדי בר תל אביב | חוגגים סוכות 26",
+   "price": 0,
+   "listPrice": 0,
+   "images": [
+    {
+     "image": "https://cpnclub.co.il/uploads/118185-235x180-resize.jpeg",
+     "alt": "ערב סוכות בקומדי בר"
+    }
+   ],
+   "info": {
+    "discount": 0,
+    "workingHours": "מגוון תאריכים",
+    "ageDevision": "כל גיל חייב כרטיס\n",
+    "city": "תל אביב",
+    "region": "מרכז",
+    "phone": "072-3237004"
+   },
+   "categories": [
+    195,
+    199,
+    389
+   ],
+   "identOrSlug": "6453",
+   "supplierType": "INFORMATIVE",
+   "icon": {
+    "src": "",
+    "alt": ""
+   },
+   "sale": null,
+   "mainCategory": 389,
+   "newOnSite": false,
+   "bestSeller": false,
+   "forAgent": false
+  },
+  {
+   "reference": 6451,
+   "reference_type": "SUPPLIER",
+   "name": "שונאים, סיפור אהבה - בית ליסין",
+   "price": 0,
+   "listPrice": 0,
+   "images": [
+    {
+     "image": "https://cpnclub.co.il/uploads/118136-235x180-resize.jpg",
+     "alt": "בית ליסין"
+    }
+   ],
+   "info": {
+    "discount": 0,
+    "workingHours": "מגוון תאריכים לבחירה",
+    "ageDevision": "למבוגרים",
+    "city": "תל אביב",
+    "region": "מרכז",
+    "phone": "072-3925425"
+   },
+   "categories": [
+    195,
+    197,
+    327
+   ],
+   "identOrSlug": "6451",
+   "supplierType": "INFORMATIVE",
+   "icon": {
+    "src": "",
+    "alt": ""
+   },
+   "sale": null,
+   "mainCategory": 327,
+   "newOnSite": false,
+   "bestSeller": false,
+   "forAgent": false
+  },
+  {
+   "reference": 42,
+   "reference_type": "SUPPLIER",
+   "name": "חמת גדר ",
+   "price": 0,
+   "listPrice": 0,
+   "images": [
+    {
+     "image": "https://cpnclub.co.il/uploads/108191-235x180-resize.png",
+     "alt": "חמת גדר ראשי"
+    }
+   ],
+   "info": {
+    "discount": 17,
+    "workingHours": "שני, שלישי, רביעי ושבת : 9:00-17:00\nחמישי ושישי : 09:00-22:00\nיום ראשון סגור\nיציאה מהמים חצי שעה לפני סגירה\nשעות הפעילות עשויות להשתנות מעת לעת יש להתעדכן באתר בית העסק",
+    "ageDevision": "לכל הגילאים\r\n אדם מגובה מטר מחויב בכרטיס",
+    "city": "חמת גדר",
+    "region": "צפון",
+    "phone": "072-3281300"
+   },
+   "categories": [
+    55,
+    63,
+    138,
+    123,
+    179,
+    98,
+    392,
+    374
+   ],
+   "identOrSlug": "חמת-גדר",
+   "supplierType": "REGULAR",
+   "icon": {
+    "src": "",
+    "alt": ""
+   },
+   "sale": null,
+   "mainCategory": 392,
+   "newOnSite": false,
+   "bestSeller": true,
+   "forAgent": false
+  }
+ ],
+ "cityCategories": [],
+ "cities": [],
+ "clubCategories": 0
+}

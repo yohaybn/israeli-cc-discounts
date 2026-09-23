@@ -67,6 +67,7 @@ Discount Finder collects discount offers from Israeli credit-card clubs and loya
 | סטודנט גרופ | Student coupon club (studentgroup.co.il WP REST) |
 | חתול פיננסי | Community benefits (moneyplan.co.il WP REST) |
 | Samsung Members | Samsung Israel Members / Galaxy VIP benefits page |
+| קופונופש | Leisure/tickets club (cpnclub.co.il public API) |
 Every source is public data - no login required. New sources are added over time; each one is documented below.
 
 ## Quickstart
@@ -470,4 +471,12 @@ Contributions are welcome - new sources, better normalization, UI improvements.
 
 ```bash
 .venv/bin/python save_raw_scrapers.py --scrapers samsung_members
+```
+
+### קופונופש
+
+`cpnclub_scraper.py` reads the leisure suppliers of קופונופש from the site's public back-end search (`https://be.cpnclub.co.il/api/v2/search/club`, paged, no login). `info.discount` gives the headline percent when published. A failed or empty refresh keeps the last successful `data/discounts/cpnclub_discounts.json`. Save the first page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers cpnclub
 ```
