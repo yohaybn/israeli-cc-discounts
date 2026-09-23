@@ -1,0 +1,81 @@
+{
+ "stores": [
+  {
+   "id": 1335655,
+   "title": "שילב",
+   "siteAddress": "https://www.shilav.co.il/storelocator",
+   "phone": "03-5775111",
+   "logo": "siteNewLogo1335655.jpg?v=1787573137",
+   "smallPrint": "<p>למימוש בחנויות יש להציג את קוד ה- Gift Card באמצעות SMS/ מייל/ שובר מודפס. לפרטים נוספים:&nbsp;03-5775111</p><p>למימוש באתר האונליין: במעמד התשלום \"לחצו על למימוש הטבות ומעבר לתשלום\", בחרו את BUYME והכניסו את קוד ה- Gift Card</p>",
+   "supplier_regions": [
+    "ת\"א והסביבה",
+    "השרון והסביבה",
+    "ירושלים והסביבה",
+    "חיפה והסביבה",
+    "אילת והערבה",
+    "מרכז",
+    "צפון",
+    "דרום",
+    "מימוש אונליין"
+   ]
+  },
+  {
+   "id": 2388927,
+   "title": "H&M",
+   "siteAddress": "https://bit.ly/3r1YdN2",
+   "phone": "052-5909957",
+   "logo": "siteNewLogo2388927.jpg?v=1786533223",
+   "smallPrint": "<p dir=\"rtl\" style=\"line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;\"><span style=\"font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; font-variant-emoji: normal; vertical-align: baseline;\">כדי ליהנות מה-BUYME בבית העסק יש להציג את הקוד למימוש בקופה.</span></p><p style=\"\"><span id=\"docs-internal-guid-8fd005df-7fff-db8a-21fa-89bd6c998316\" style=\"\"><span style=\"font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; font-variant-emoji: normal; vertical-align: baseline;\">לפרטים נוספים ניתן ליצור קשר עם בית העסק&nbsp;</span></span></p>",
+   "supplier_regions": [
+    "סניפים בפריסה ארצית"
+   ]
+  },
+  {
+   "id": 9030,
+   "title": "Laline",
+   "siteAddress": "",
+   "phone": "039051740  ",
+   "logo": "siteNewLogo9030.jpg?v=1786533484",
+   "smallPrint": "שובר פגום/מזוייף לא יכובד. שובר זה אינו כרטיס חיוב כהגדרתו בחוק כרטיסי החיוב התשמ\"ו - 1986. כל אדם המחזיק בשובר מצהיר בעצם ההחזקה כי הוא מסכים לאמור לעיל. ט.ל.ח.",
+   "supplier_regions": [
+    "ת\"א והסביבה",
+    "ירושלים והסביבה",
+    "חיפה והסביבה",
+    "מרכז",
+    "צפון",
+    "דרום",
+    "מימוש אונליין"
+   ]
+  },
+  {
+   "id": 17573998,
+   "title": "H&O Kids",
+   "siteAddress": null,
+   "phone": "03-3737117",
+   "logo": "siteNewLogo17573998.jpg?v=1788079735",
+   "smallPrint": "למימוש יש להציג את קוד ה- Gift Card בקופות הרשת באמצעות SMS/ מייל/ דף מודפס. לפרטים נוספים ניתן ליצור קשר דרך האתר:&nbsp;<a href=\"https://h-o.co.il/contact\" style=\"background-color: rgb(255, 255, 255);\"><font color=\"#ff9c00\"><b>https://h-o.co.il/contact</b></font></a>",
+   "supplier_regions": [
+    "מימוש אונליין"
+   ]
+  },
+  {
+   "id": 1335655,
+   "title": "שילב",
+   "siteAddress": "https://www.shilav.co.il/storelocator",
+   "phone": "03-5775111",
+   "logo": "siteNewLogo1335655.jpg?v=1787573137",
+   "smallPrint": "<p>למימוש בחנויות יש להציג את קוד ה- Gift Card באמצעות SMS/ מייל/ שובר מודפס. לפרטים נוספים:&nbsp;03-5775111</p><p>למימוש באתר האונליין: במעמד התשלום \"לחצו על למימוש הטבות ומעבר לתשלום\", בחרו את BUYME והכניסו את קוד ה- Gift Card</p>",
+   "supplier_regions": [
+    "ת\"א והסביבה",
+    "השרון והסביבה",
+    "ירושלים והסביבה",
+    "חיפה והסביבה",
+    "אילת והערבה",
+    "מרכז",
+    "צפון",
+    "דרום",
+    "מימוש אונליין"
+   ]
+  }
+ ]
+}

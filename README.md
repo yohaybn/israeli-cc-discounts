@@ -31,6 +31,7 @@ Discount Finder collects discount offers from Israeli credit-card clubs and loya
 | Gold Card (גולד קארד) | Stores that accept the Gold Card gift card |
 | Raayonit Global Tav (גלובל תו) | Chains and businesses that accept the Global Tav voucher |
 | Yedioth Ahronoth subscribers (ידיעות אחרונות) | Subscriber benefits |
+| Azrieli gift card (עזריאלי גיפטקארד) | Stores in Azrieli malls that accept the Azrieli gift card |
 Every source is public data - no login required. New sources are added over time; each one is documented below.
 
 ## Quickstart
@@ -146,4 +147,12 @@ Contributions are welcome - new sources, better normalization, UI improvements.
 
 ```bash
 .venv/bin/python save_raw_scrapers.py --scrapers yedioth
+```
+
+### Azrieli gift card
+
+`azrieli_giftcard_scraper.py` lists the stores that accept the Azrieli malls gift card. The card is run by BUYME and https://www.azrielimalls.co.il/giftcard links its "בתי עסק מכבדים" list to BUYME brand 398383, so the module reuses the BUYME options fetcher (public, no login) and relabels the records as their own club. The card works only in branches inside Azrieli malls. A failed or empty refresh keeps the last successful `data/discounts/azrieli_giftcard_discounts.json`. Save the raw payload with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers azrieli_giftcard
 ```
