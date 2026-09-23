@@ -2381,3 +2381,167 @@ body {
     .club-filters-group .filter-chip .chip-checkbox,
     .club-filters-group .filter-chip .chip-count { flex-shrink: 0; }
 }
+
+/* ===== Share link with the club selection ===== */
+.meta-extra {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.share-selection-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    border: 1px solid var(--border-highlight);
+    background: var(--bg-surface-subtle);
+    color: var(--text-primary);
+    font-family: var(--font-hebrew);
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.share-selection-btn:hover,
+.share-selection-btn:focus-visible {
+    background: rgba(56, 189, 248, 0.12);
+    border-color: var(--border-focus);
+    outline: none;
+}
+
+.share-feedback {
+    font-size: 0.8rem;
+    color: var(--text-accent);
+}
+
+.share-fallback-input {
+    width: min(360px, 80vw);
+    padding: 6px 10px;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-focus);
+    background: var(--bg-input);
+    color: var(--text-primary);
+    font-size: 0.8rem;
+    direction: ltr;
+}
+
+/* ===== New benefits in "my clubs" ===== */
+.new-benefits-panel {
+    margin-top: 14px;
+    padding: 14px 16px;
+    border-radius: var(--radius-sm);
+    border: 1px solid rgba(16, 185, 129, 0.4);
+    background: rgba(16, 185, 129, 0.08);
+}
+
+.new-benefits-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.new-benefits-title {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.new-benefits-title .new-badge {
+    display: inline-block;
+    margin-inline-end: 6px;
+    padding: 1px 8px;
+    border-radius: 999px;
+    background: #10b981;
+    color: #04130d;
+    font-size: 0.75rem;
+    font-weight: 800;
+}
+
+.new-benefits-since {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    font-weight: 400;
+}
+
+.new-benefits-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.new-benefits-actions button {
+    padding: 4px 12px;
+    border-radius: 999px;
+    border: 1px solid var(--border-highlight);
+    background: transparent;
+    color: var(--text-secondary);
+    font-family: var(--font-hebrew);
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.new-benefits-actions button:hover {
+    color: var(--text-primary);
+    border-color: var(--border-focus);
+}
+
+.new-benefits-list {
+    list-style: none;
+    margin: 10px 0 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 8px;
+}
+
+.new-benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 10px;
+    border-radius: var(--radius-sm);
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    min-width: 0;
+}
+
+.new-benefit-club {
+    flex: none;
+    padding: 1px 8px;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: #fff;
+    background: var(--program-color, #64748b);
+}
+
+.new-benefit-text {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 0.85rem;
+    color: var(--text-primary);
+}
+
+.new-benefit-text .new-benefit-discount {
+    color: var(--text-secondary);
+}
+
+.new-benefit-item a {
+    flex: none;
+    margin-inline-start: auto;
+    font-size: 0.78rem;
+    color: var(--text-accent);
+    text-decoration: none;
+}
+
+.new-benefit-item a:hover {
+    text-decoration: underline;
+}
