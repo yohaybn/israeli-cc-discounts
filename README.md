@@ -59,6 +59,7 @@ Discount Finder collects discount offers from Israeli credit-card clubs and loya
 | Living | style platform club site (https://www.livingclub.co.il/) |
 | רמי לוי המועדון | style platform club site (https://rmrm.style.co.il/) |
 | אותי - עמותה ישראלית לאוטיזם | style platform club site (https://oti.style.co.il/) |
+| Cashdo | Cashback club store list (cashdo.co.il paging.json) |
 Every source is public data - no login required. New sources are added over time; each one is documented below.
 
 ## Quickstart
@@ -398,4 +399,12 @@ Contributions are welcome - new sources, better normalization, UI improvements.
 
 ```bash
 .venv/bin/python save_raw_scrapers.py --scrapers oti
+```
+
+### Cashdo
+
+`cashdo_scraper.py` reads the public store list of Cashdo, a cashback club for online stores, from `https://cashdo.co.il/paging.json` (the endpoint behind https://cashdo.co.il/all-stores; no login). Each tile gives the store name, its page and the cashback line. Cashback is credited after the purchase, so records use `billing_discount` and are online-only. A failed or empty refresh keeps the last successful `data/discounts/cashdo_discounts.json`. Save the payload with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers cashdo
 ```

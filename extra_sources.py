@@ -13,6 +13,7 @@ Adding a source is one line here plus the module, fixtures and tests.
 import importlib
 
 EXTRA_SOURCE_MODULES: list[str] = [
+    "cashdo_scraper",
     "oti_scraper",
     "rami_levy_club_scraper",
     "living_scraper",
