@@ -34,6 +34,7 @@ Discount Finder collects discount offers from Israeli credit-card clubs and loya
 | Azrieli gift card (עזריאלי גיפטקארד) | Stores in Azrieli malls that accept the Azrieli gift card |
 | Swish Plus gift card | Businesses that accept the Swish Plus gift card |
 | IMA Yahad club (מועדון יחד - ההסתדרות הרפואית) | Suppliers in the Israel Medical Association Yahad club |
+| Shufersal 4U (שופרסל 4U) | Vouchers and benefits in the Shufersal 4U credit-card club |
 Every source is public data - no login required. New sources are added over time; each one is documented below.
 
 ## Quickstart
@@ -173,4 +174,12 @@ Contributions are welcome - new sources, better normalization, UI improvements.
 
 ```bash
 .venv/bin/python save_raw_scrapers.py --scrapers ima_yahad
+```
+
+### Shufersal 4U
+
+`shufersal4u_scraper.py` reads the public benefit catalog of the Shufersal 4U credit-card club (https://www.shufersal4u.co.il/). Browsing needs no login (login is only for buying). It walks the category pages linked from the home page and their sub-categories, keeps one record per benefit uuid, and computes `discount_value` from the "לרכישה ב-X בשווי/במקום Y" price line or an "X% הנחה" text. A failed or empty refresh keeps the last successful `data/discounts/shufersal4u_discounts.json`. Save the home page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers shufersal4u
 ```
