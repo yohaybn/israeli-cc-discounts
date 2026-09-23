@@ -62,6 +62,8 @@ Discount Finder collects discount offers from Israeli credit-card clubs and loya
 | Cashdo | Cashback club store list (cashdo.co.il paging.json) |
 | Mami - מאמי | Coupon club brand list and campaigns (hi-mami.com) |
 | קניוני עזריאלי | Mall coupons page (azrielimalls.co.il/coupons) |
+| uniq | uniq-club platform GraphQL (shop 1) |
+| אוניברסיטת תל אביב TAU | uniq-club platform GraphQL (shop 2) |
 Every source is public data - no login required. New sources are added over time; each one is documented below.
 
 ## Quickstart
@@ -425,4 +427,20 @@ Contributions are welcome - new sources, better normalization, UI improvements.
 
 ```bash
 .venv/bin/python save_raw_scrapers.py --scrapers azrieli_malls
+```
+
+### uniq
+
+`uniq_scraper.py` reads the benefits of uniq (https://www.uniq-club.co.il/) from the public GraphQL endpoint of the uniq-club platform (`https://admin.uniq-club.co.il/api/graphql`, query `getBenefits` with `shopId` 1; no login). The shared client is `uniq_platform.py`. A failed or empty refresh keeps the last successful `data/discounts/uniq_discounts.json`. Save the payload with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers uniq
+```
+
+### אוניברסיטת תל אביב TAU
+
+`tau_club_scraper.py` reads the benefits of the Tel Aviv University club (https://www.tauclub.co.il/) from the same public GraphQL endpoint as uniq (`shopId` 2; see uniq above). A failed or empty refresh keeps the last successful `data/discounts/tau_club_discounts.json`. Save the payload with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers tau_club
 ```
