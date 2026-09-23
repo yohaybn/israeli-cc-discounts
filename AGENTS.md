@@ -63,4 +63,4 @@ git diff --check                      # whitespace/errors
 
 Then run one live scrape of the changed source and confirm the normalized record count looks sane. Note the count in the PR description.
 
-Some tests depend on generated data existing (`tests/test_combined_discounts.py`, `tests/test_data_layout.py`) and fail on a clean checkout - that is expected and pre-existing; compare against the same failures on `main`.
+The whole suite should pass on a clean checkout. Tests that read generated data (`data/discounts/`) skip when it is missing; the dedupe check falls back to the committed `docs/data/all_combined_discounts.json`.

@@ -1,4 +1,4 @@
-from hvr_scraper import normalize_hvr_rechargeable_card_item
+from hvr_scraper import HEVER_DISCOUNT_VALUE, normalize_hvr_rechargeable_card_item
 
 
 def test_normalize_giftcard_item():
@@ -14,10 +14,11 @@ def test_normalize_giftcard_item():
 
     normalized = normalize_hvr_rechargeable_card_item(item, source_name="giftcard")
 
-    assert normalized["club"] == "חבר"
+    # Sub-club label; the UI groups it under the "חבר" program (docs/programs.js).
+    assert normalized["club"] == "חבר שלי"
     assert normalized["business_name"] == "SHASHA GIFTS"
     assert normalized["discount_type"] == "rechargeable_card"
-    assert normalized["discount_value"] is None
+    assert normalized["discount_value"] == HEVER_DISCOUNT_VALUE  # fixed Hever load discount
     assert "חבר שלי" in normalized["discount"]
     assert "1,000" in normalized["discount"] or "חבר שלי" in normalized["discount"]
 
@@ -35,9 +36,10 @@ def test_normalize_branch_item():
 
     normalized = normalize_hvr_rechargeable_card_item(item, source_name="teamimcard_branches")
 
-    assert normalized["club"] == "חבר"
+    # Sub-club label; the UI groups it under the "חבר" program (docs/programs.js).
+    assert normalized["club"] == "חבר טעמים"
     assert normalized["business_name"] == "אנג'לינה פיצה ופסטה"
     assert normalized["discount_type"] == "rechargeable_card"
-    assert normalized["discount_value"] is None
+    assert normalized["discount_value"] == HEVER_DISCOUNT_VALUE  # fixed Hever load discount
     assert "חבר טעמים" in normalized["discount"]
     assert "אילת" in normalized["discount"] or "חבר טעמים" in normalized["discount"]
