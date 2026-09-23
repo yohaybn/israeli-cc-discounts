@@ -75,6 +75,7 @@ Discount Finder collects discount offers from Israeli credit-card clubs and loya
 | מועדון W | W (דאבל יו) card benefits page (w-card.co.il) |
 | LOVE gift card | Brands accepting the LOVE CARD (Castro-Hoodies terms page) |
 | Just4u / NEW CARD | Gift vouchers and partner businesses (public app API) |
+| WinCard+ מחסני השוק | Credit-card benefits (public page) |
 Every source is public data - no login required. New sources are added over time; each one is documented below.
 
 ## Quickstart
@@ -542,4 +543,12 @@ Public JSON endpoint the Angular app itself calls (`/api/newapi/getHomepageItems
 
 ```bash
 .venv/bin/python save_raw_scrapers.py --scrapers just4u
+```
+
+### WinCard+ מחסני השוק
+
+Public card page, Elementor icon boxes with the WinCard+ card benefits.
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers wincard_plus
 ```
