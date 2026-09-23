@@ -15,7 +15,6 @@ import importlib
 EXTRA_SOURCE_MODULES: list[str] = [
     "reshef_scraper",
     "flycard_scraper",
-    "miluim_benefits_scraper",
     "wincard_plus_scraper",
     "just4u_scraper",
     "love_card_scraper",
