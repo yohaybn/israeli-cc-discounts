@@ -57,6 +57,8 @@ Discount Finder collects discount offers from Israeli credit-card clubs and loya
 | קורפורייט (CORPORATE) | style platform club site (https://www.mycorporate.co.il/) |
 | שחר | Engineers' union club public benefits page (m-shachar.org.il) |
 | Living | style platform club site (https://www.livingclub.co.il/) |
+| רמי לוי המועדון | style platform club site (https://rmrm.style.co.il/) |
+| אותי - עמותה ישראלית לאוטיזם | style platform club site (https://oti.style.co.il/) |
 Every source is public data - no login required. New sources are added over time; each one is documented below.
 
 ## Quickstart
@@ -380,4 +382,20 @@ Contributions are welcome - new sources, better normalization, UI improvements.
 
 ```bash
 .venv/bin/python save_raw_scrapers.py --scrapers living
+```
+
+### רמי לוי המועדון
+
+`rami_levy_club_scraper.py` reads the public benefit catalog at https://rmrm.style.co.il/ (no login; login is only for buying). The site runs on the shared "style" benefits platform, so the crawl is `style_platform.crawl` (see כח לעובדים above). A failed or empty refresh keeps the last successful `data/discounts/rami_levy_club_discounts.json`. Save the home page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers rami_levy_club
+```
+
+### אותי - עמותה ישראלית לאוטיזם
+
+`oti_scraper.py` reads the public benefit catalog at https://oti.style.co.il/ (no login; login is only for buying). The site runs on the shared "style" benefits platform, so the crawl is `style_platform.crawl` (see כח לעובדים above). A failed or empty refresh keeps the last successful `data/discounts/oti_discounts.json`. Save the home page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers oti
 ```

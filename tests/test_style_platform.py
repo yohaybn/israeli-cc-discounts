@@ -8,6 +8,8 @@ import lahav_scraper
 import lifestyle_club_scraper
 import volunteers_club_scraper
 import tzair_scraper
+import oti_scraper
+import rami_levy_club_scraper
 import living_scraper
 import corporate_scraper
 import powercard_scraper
@@ -63,7 +65,7 @@ def test_crawl_dedupes_and_skips_generic_category_label():
 
 
 def test_thin_modules_use_their_base_url():
-    for module in (workers_style_scraper, adif_scraper, hibenefit_scraper, egged_driver_scraper, insurance_agents_scraper, police_funds_scraper, lahav_scraper, lifestyle_club_scraper, volunteers_club_scraper, tzair_scraper, icard_scraper, living_scraper, corporate_scraper, powercard_scraper, campus_card_scraper, amdocs_scraper):
+    for module in (workers_style_scraper, adif_scraper, hibenefit_scraper, egged_driver_scraper, insurance_agents_scraper, police_funds_scraper, lahav_scraper, lifestyle_club_scraper, volunteers_club_scraper, tzair_scraper, icard_scraper, oti_scraper, rami_levy_club_scraper, living_scraper, corporate_scraper, powercard_scraper, campus_card_scraper, amdocs_scraper):
         seen = []
 
         def fake_fetch(url, seen=seen):
