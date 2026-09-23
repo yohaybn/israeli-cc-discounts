@@ -36,6 +36,7 @@ Discount Finder collects discount offers from Israeli credit-card clubs and loya
 | IMA Yahad club (מועדון יחד - ההסתדרות הרפואית) | Suppliers in the Israel Medical Association Yahad club |
 | Shufersal 4U (שופרסל 4U) | Vouchers and benefits in the Shufersal 4U credit-card club |
 | MY OFER (קניוני עופר) | Club deals in the Ofer malls, merged across malls |
+| DREAM CARD VIP (דרים קארד) | Fox group brands with 15% cashback on the DREAM CARD VIP card |
 Every source is public data - no login required. New sources are added over time; each one is documented below.
 
 ## Quickstart
@@ -191,4 +192,12 @@ Contributions are welcome - new sources, better normalization, UI improvements.
 
 ```bash
 .venv/bin/python save_raw_scrapers.py --scrapers myofer
+```
+
+### DREAM CARD VIP
+
+`dreamcard_scraper.py` covers the DREAM CARD VIP club (Fox group brands), whose credit card gives 15% cashback in every club brand (https://www.dreamcard.co.il/dreamcard-vip/). The club web app has two public API calls that need no login: `Brands/GetBrands` and `Branches/GetBranchesData`. The scraper emits one record per active brand with its store branches (a store listed as "FOX / FOX HOME" counts for both). A failed or empty refresh keeps the last successful `data/discounts/dreamcard_discounts.json`. Save the raw API payloads with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers dreamcard
 ```

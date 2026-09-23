@@ -1,0 +1,142 @@
+{
+ "isError": false,
+ "messageCode": 0,
+ "messageDesc": "",
+ "data": {
+  "cityList": [],
+  "complexesList": [
+   {
+    "shoppingComplexCode": 6,
+    "shoppingComplex": 6,
+    "canyonName": "מול החוף חדרה",
+    "latitudeCoordinates": 32.4415,
+    "longitudeCoordinates": 34.8968,
+    "city": "חדרה",
+    "street": "",
+    "houseNumber": 0,
+    "complexStreet": "שכטמן 10 חדרה",
+    "storeList": [
+     {
+      "storeCode": 43,
+      "storeName": "מול החוף חדרה",
+      "chainId": 55,
+      "chainName": "FOX / FOX HOME",
+      "outletStore": false,
+      "accessibleMeasuringChamber": true,
+      "openingHoursRegular": "09:30",
+      "closingHoursRegular": "22:00",
+      "openingHoursFriday": "09:00",
+      "closingHoursFriday": "15:30",
+      "openingHoursSaturday": "חצי שעה מצאת שבת",
+      "closingHoursSaturday": "23:00",
+      "phoneNumber": "04-8699437",
+      "storeClasses": "גברים,ילדים,בייבי,נשים,Flow",
+      "company": 55,
+      "streetShop": false,
+      "isActiveStore": true
+     }
+    ],
+    "isSingleStore": false
+   },
+   {
+    "shoppingComplexCode": 49,
+    "shoppingComplex": 49,
+    "canyonName": "דיזנגוף סנטר",
+    "latitudeCoordinates": 32.0753,
+    "longitudeCoordinates": 34.7755,
+    "city": "תל אביב יפו",
+    "street": "דיזינגוףסנטר",
+    "houseNumber": 0,
+    "complexStreet": "דיזנגוף 50 תל אביב",
+    "storeList": [
+     {
+      "storeCode": 100,
+      "storeName": "דיזנגוף סנטר",
+      "chainId": 2,
+      "chainName": "QUIKSILVER",
+      "outletStore": false,
+      "accessibleMeasuringChamber": true,
+      "openingHoursRegular": "09:30",
+      "closingHoursRegular": "22:00",
+      "openingHoursFriday": "09:00",
+      "closingHoursFriday": "15:30",
+      "openingHoursSaturday": "חצי שעה מצאת שבת",
+      "closingHoursSaturday": "23:00",
+      "phoneNumber": "074-7694600",
+      "storeClasses": "",
+      "company": 68,
+      "streetShop": false,
+      "isActiveStore": true
+     }
+    ],
+    "isSingleStore": false
+   },
+   {
+    "shoppingComplexCode": 3,
+    "shoppingComplex": 3,
+    "canyonName": "אייס מול אילת",
+    "latitudeCoordinates": 29.5544,
+    "longitudeCoordinates": 34.9658,
+    "city": "אילת",
+    "street": "",
+    "houseNumber": 0,
+    "complexStreet": "קאמפן 8 אילת",
+    "storeList": [
+     {
+      "storeCode": 881,
+      "storeName": "אייס מול אילת",
+      "chainId": 54,
+      "chainName": "THE CHILDRENS PLACE",
+      "outletStore": false,
+      "accessibleMeasuringChamber": true,
+      "openingHoursRegular": "09:30",
+      "closingHoursRegular": "22:00",
+      "openingHoursFriday": "09:30",
+      "closingHoursFriday": "15:00",
+      "openingHoursSaturday": "11:00",
+      "closingHoursSaturday": "23:30",
+      "phoneNumber": "",
+      "storeClasses": "",
+      "company": 7,
+      "streetShop": false,
+      "isActiveStore": true
+     }
+    ],
+    "isSingleStore": false
+   },
+   {
+    "shoppingComplexCode": 3,
+    "shoppingComplex": 3,
+    "canyonName": "אייס מול אילת",
+    "latitudeCoordinates": 29.5544,
+    "longitudeCoordinates": 34.9658,
+    "city": "אילת",
+    "street": "",
+    "houseNumber": 0,
+    "complexStreet": "קאמפן 8 אילת",
+    "storeList": [
+     {
+      "storeCode": 25,
+      "storeName": "אייס מול אילת",
+      "chainId": 12,
+      "chainName": "FOX",
+      "outletStore": false,
+      "accessibleMeasuringChamber": true,
+      "openingHoursRegular": "10:00",
+      "closingHoursRegular": "22:00",
+      "openingHoursFriday": "09:00",
+      "closingHoursFriday": "16:00",
+      "openingHoursSaturday": "10:00",
+      "closingHoursSaturday": "22:00",
+      "phoneNumber": "08-6522250",
+      "storeClasses": "גברים,ילדים,בייבי,נשים,Flow",
+      "company": 1,
+      "streetShop": false,
+      "isActiveStore": true
+     }
+    ],
+    "isSingleStore": false
+   }
+  ]
+ }
+}
