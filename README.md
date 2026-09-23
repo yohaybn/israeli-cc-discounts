@@ -61,6 +61,7 @@ Discount Finder collects discount offers from Israeli credit-card clubs and loya
 | אותי - עמותה ישראלית לאוטיזם | style platform club site (https://oti.style.co.il/) |
 | Cashdo | Cashback club store list (cashdo.co.il paging.json) |
 | Mami - מאמי | Coupon club brand list and campaigns (hi-mami.com) |
+| קניוני עזריאלי | Mall coupons page (azrielimalls.co.il/coupons) |
 Every source is public data - no login required. New sources are added over time; each one is documented below.
 
 ## Quickstart
@@ -416,4 +417,12 @@ Contributions are welcome - new sources, better normalization, UI improvements.
 
 ```bash
 .venv/bin/python save_raw_scrapers.py --scrapers mami
+```
+
+### קניוני עזריאלי
+
+`azrieli_malls_scraper.py` reads the public coupons page of קניוני עזריאלי at https://www.azrielimalls.co.il/coupons (server-rendered, no login). Each coupon card gives the store, the deal, the participating mall and the validity date. The same deal repeats per mall, so cards are grouped by store and deal and the malls are listed in `limitations`. The page is large (~30MB). A failed or empty refresh keeps the last successful `data/discounts/azrieli_malls_discounts.json`. Save the page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers azrieli_malls
 ```
