@@ -26,6 +26,7 @@ Discount Finder collects discount offers from Israeli credit-card clubs and loya
 | Discount Key (מפתח דיסקונט) | Discount Bank participating businesses |
 | American Express Israel | The Amex rewards catalog |
 
+| Mizrahi-Tefahot (הכרטיס) | Mizrahi-Tefahot customer club benefits |
 Every source is public data - no login required. New sources are added over time; each one is documented below.
 
 ## Quickstart
@@ -101,4 +102,12 @@ Contributions are welcome - new sources, better normalization, UI improvements.
 
 ```bash
 .venv/bin/python save_raw_scrapers.py --scrapers amex
+```
+
+### Mizrahi-Tefahot
+
+`mizrahi_scraper.py` reads the public catalog of Mizrahi-Tefahot's customer club "הכרטיס" (https://www.mizrahi-tefahot.co.il/hacartis/all/). The page is server-rendered HTML, one card per benefit, no login. Hot deals (coupon codes) and fixed discounts are both kept; the category comes from the benefit URL. A failed or empty refresh keeps the last successful `data/discounts/mizrahi_discounts.json`. Save the source page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers mizrahi
 ```

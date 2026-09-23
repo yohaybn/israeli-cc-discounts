@@ -20,7 +20,8 @@ HEADERS = {
 }
 
 PERCENT_PATTERN = re.compile(r"(\d+(?:\.\d+)?)\s*%")
-ONLINE_ONLY_PATTERN = re.compile(r"אונליין|באתר בלבד|רק באתר|באתר האינטרנט|online", re.IGNORECASE)
+ONLINE_ONLY_PATTERN = re.compile(r"אונליין|באתר|online", re.IGNORECASE)
+PHYSICAL_PATTERN = re.compile(r"בסניפ|בחנויות|בחנות|ברשת|בקופות")
 
 
 def clean(value: Any) -> str:
@@ -39,7 +40,8 @@ def percent_value(text: str) -> float | None:
 
 
 def is_online_only(*texts: str) -> bool:
-    return any(ONLINE_ONLY_PATTERN.search(t or "") for t in texts)
+    joined = " ".join(t or "" for t in texts)
+    return bool(ONLINE_ONLY_PATTERN.search(joined)) and not PHYSICAL_PATTERN.search(joined)
 
 
 def fetch_text(url: str, timeout: int = 30, **kwargs) -> str:
