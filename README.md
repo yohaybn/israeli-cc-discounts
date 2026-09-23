@@ -51,6 +51,10 @@ Discount Finder collects discount offers from Israeli credit-card clubs and loya
 | גולד צפון | HTzone white-label club site (goldnorth.htzone.co.il) |
 | תעשייה אווירית (ICARD) | style platform club site (icard.style.co.il) |
 | יותר | Soldiers' club business list (yoter.co.il), billing discounts |
+| אמדוקס | style platform club site (https://amdocs.style.co.il/) |
+| קמפוסכרט | style platform club site (https://campus.style.co.il/) |
+| PowerCard | style platform club site (https://powercard.style.co.il/) |
+| קורפורייט (CORPORATE) | style platform club site (https://www.mycorporate.co.il/) |
 Every source is public data - no login required. New sources are added over time; each one is documented below.
 
 ## Quickstart
@@ -326,4 +330,36 @@ Contributions are welcome - new sources, better normalization, UI improvements.
 
 ```bash
 .venv/bin/python save_raw_scrapers.py --scrapers yoter
+```
+
+### אמדוקס
+
+`amdocs_scraper.py` reads the public benefit catalog at https://amdocs.style.co.il/ (no login; login is only for buying). The site runs on the shared "style" benefits platform, so the crawl is `style_platform.crawl` (see כח לעובדים above). A failed or empty refresh keeps the last successful `data/discounts/amdocs_discounts.json`. Save the home page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers amdocs
+```
+
+### קמפוסכרט
+
+`campus_card_scraper.py` reads the public benefit catalog at https://campus.style.co.il/ (no login; login is only for buying). The site runs on the shared "style" benefits platform, so the crawl is `style_platform.crawl` (see כח לעובדים above). A failed or empty refresh keeps the last successful `data/discounts/campus_card_discounts.json`. Save the home page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers campus_card
+```
+
+### PowerCard
+
+`powercard_scraper.py` reads the public benefit catalog at https://powercard.style.co.il/ (no login; login is only for buying). The site runs on the shared "style" benefits platform, so the crawl is `style_platform.crawl` (see כח לעובדים above). A failed or empty refresh keeps the last successful `data/discounts/powercard_discounts.json`. Save the home page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers powercard
+```
+
+### קורפורייט (CORPORATE)
+
+`corporate_scraper.py` reads the public benefit catalog at https://www.mycorporate.co.il/ (no login; login is only for buying). The site runs on the shared "style" benefits platform, so the crawl is `style_platform.crawl` (see כח לעובדים above). Its tiles give business names only, without a benefit line, so `discount` repeats the name. A failed or empty refresh keeps the last successful `data/discounts/corporate_discounts.json`. Save the home page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers corporate
 ```
