@@ -28,6 +28,7 @@ Discount Finder collects discount offers from Israeli credit-card clubs and loya
 
 | Mizrahi-Tefahot (הכרטיס) | Mizrahi-Tefahot customer club benefits |
 | Gifta (גיפטא) | Stores that accept the Gifta gift card |
+| Gold Card (גולד קארד) | Stores that accept the Gold Card gift card |
 Every source is public data - no login required. New sources are added over time; each one is documented below.
 
 ## Quickstart
@@ -119,4 +120,12 @@ Contributions are welcome - new sources, better normalization, UI improvements.
 
 ```bash
 .venv/bin/python save_raw_scrapers.py --scrapers gifta
+```
+
+### Gold Card
+
+`goldcard_scraper.py` reads the store list of the Gold Card (גולד קארד) gift card from the site's public WordPress REST API (`https://goldcard-gift.com/wp-json/wp/v2/brands`, plus the `brand-categories` and `cities-category` taxonomies). Cities where the store operates are kept in `limitations`. No login. A failed or empty refresh keeps the last successful `data/discounts/goldcard_discounts.json`. Save the raw API payloads with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers goldcard
 ```
