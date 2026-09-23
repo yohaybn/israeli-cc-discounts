@@ -68,6 +68,7 @@ Discount Finder collects discount offers from Israeli credit-card clubs and loya
 | חתול פיננסי | Community benefits (moneyplan.co.il WP REST) |
 | Samsung Members | Samsung Israel Members / Galaxy VIP benefits page |
 | קופונופש | Leisure/tickets club (cpnclub.co.il public API) |
+| איחוד הצלה | Volunteer benefits club (4u.1221.org.il WooCommerce Store API) |
 Every source is public data - no login required. New sources are added over time; each one is documented below.
 
 ## Quickstart
@@ -479,4 +480,12 @@ Contributions are welcome - new sources, better normalization, UI improvements.
 
 ```bash
 .venv/bin/python save_raw_scrapers.py --scrapers cpnclub
+```
+
+### איחוד הצלה
+
+`ihud_hatzala_scraper.py` reads the volunteer benefits of איחוד הצלה from the public WooCommerce Store API of the club site (`https://4u.1221.org.il/wp-json/wc/store/v1/products`, no login). The benefit line is the first line of the short description that names a discount, price or gift. A failed or empty refresh keeps the last successful `data/discounts/ihud_hatzala_discounts.json`. Save the first page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers ihud_hatzala
 ```
