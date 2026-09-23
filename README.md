@@ -40,6 +40,13 @@ Discount Finder collects discount offers from Israeli credit-card clubs and loya
 | כח לעובדים (workers.style.co.il) | Benefits in the כח לעובדים club |
 | עדיף (adif.style.co.il) | Benefits in the עדיף consumer club |
 | Hi-Benefit (לשכת רואי החשבון) | Benefits for Hi-Benefit card holders (Institute of CPAs) |
+| אגד דרייבר (Egged club) | Benefits in the Egged Driver club |
+| לשכת סוכני הביטוח | Benefits for Israel Insurance Agents Association members |
+| קרנות השוטרים / הסוהרים | Consumer club of the police and prison-service funds |
+| להב (לשכת העצמאים) | Benefits for Lahav (self-employed association) members |
+| לייף סטייל | Benefits in the Lifestyle club |
+| מועדון המתנדבים | Benefits in the volunteers club |
+| צעיר (Tzair card) | Benefits for Tzair card holders |
 Every source is public data - no login required. New sources are added over time; each one is documented below.
 
 ## Quickstart
@@ -227,4 +234,60 @@ Contributions are welcome - new sources, better normalization, UI improvements.
 
 ```bash
 .venv/bin/python save_raw_scrapers.py --scrapers hibenefit
+```
+
+### אגד דרייבר
+
+`egged_driver_scraper.py` reads the public benefit catalog at https://www.eggedclub.co.il/ (no login; login is only for buying). The site runs on the shared "style" benefits platform, so the crawl is `style_platform.crawl` (see כח לעובדים above). A failed or empty refresh keeps the last successful `data/discounts/egged_driver_discounts.json`. Save the home page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers egged_driver
+```
+
+### לשכת סוכני הביטוח
+
+`insurance_agents_scraper.py` reads the public benefit catalog at https://insurance.style.co.il/ (no login; login is only for buying). The site runs on the shared "style" benefits platform, so the crawl is `style_platform.crawl` (see כח לעובדים above). A failed or empty refresh keeps the last successful `data/discounts/insurance_agents_discounts.json`. Save the home page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers insurance_agents
+```
+
+### קרנות השוטרים / קרנות הסוהרים
+
+`police_funds_scraper.py` reads the public benefit catalog at https://ks.style.co.il/ (no login; login is only for buying). The site runs on the shared "style" benefits platform, so the crawl is `style_platform.crawl` (see כח לעובדים above). A failed or empty refresh keeps the last successful `data/discounts/police_funds_discounts.json`. Save the home page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers police_funds
+```
+
+### להב - לשכת העצמאים
+
+`lahav_scraper.py` reads the public benefit catalog at https://lahav.style.co.il/ (no login; login is only for buying). The site runs on the shared "style" benefits platform, so the crawl is `style_platform.crawl` (see כח לעובדים above). A failed or empty refresh keeps the last successful `data/discounts/lahav_discounts.json`. Save the home page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers lahav
+```
+
+### לייף סטייל
+
+`lifestyle_club_scraper.py` reads the public benefit catalog at https://lifestyle.style.co.il/ (no login; login is only for buying). The site runs on the shared "style" benefits platform, so the crawl is `style_platform.crawl` (see כח לעובדים above). A failed or empty refresh keeps the last successful `data/discounts/lifestyle_club_discounts.json`. Save the home page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers lifestyle_club
+```
+
+### מועדון המתנדבים
+
+`volunteers_club_scraper.py` reads the public benefit catalog at https://mitnadvim4u.style.co.il/ (no login; login is only for buying). The site runs on the shared "style" benefits platform, so the crawl is `style_platform.crawl` (see כח לעובדים above). A failed or empty refresh keeps the last successful `data/discounts/volunteers_club_discounts.json`. Save the home page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers volunteers_club
+```
+
+### צעיר
+
+`tzair_scraper.py` reads the public benefit catalog at https://young.style.co.il/ (no login; login is only for buying). The site runs on the shared "style" benefits platform, so the crawl is `style_platform.crawl` (see כח לעובדים above). A failed or empty refresh keeps the last successful `data/discounts/tzair_discounts.json`. Save the home page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers tzair
 ```

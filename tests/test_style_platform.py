@@ -1,6 +1,13 @@
 from pathlib import Path
 
 import adif_scraper
+import egged_driver_scraper
+import insurance_agents_scraper
+import police_funds_scraper
+import lahav_scraper
+import lifestyle_club_scraper
+import volunteers_club_scraper
+import tzair_scraper
 import hibenefit_scraper
 import style_platform
 import workers_style_scraper
@@ -50,7 +57,7 @@ def test_crawl_dedupes_and_skips_generic_category_label():
 
 
 def test_thin_modules_use_their_base_url():
-    for module in (workers_style_scraper, adif_scraper, hibenefit_scraper):
+    for module in (workers_style_scraper, adif_scraper, hibenefit_scraper, egged_driver_scraper, insurance_agents_scraper, police_funds_scraper, lahav_scraper, lifestyle_club_scraper, volunteers_club_scraper, tzair_scraper):
         seen = []
 
         def fake_fetch(url, seen=seen):
