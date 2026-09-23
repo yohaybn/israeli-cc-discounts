@@ -60,6 +60,7 @@ Discount Finder collects discount offers from Israeli credit-card clubs and loya
 | רמי לוי המועדון | style platform club site (https://rmrm.style.co.il/) |
 | אותי - עמותה ישראלית לאוטיזם | style platform club site (https://oti.style.co.il/) |
 | Cashdo | Cashback club store list (cashdo.co.il paging.json) |
+| Mami - מאמי | Coupon club brand list and campaigns (hi-mami.com) |
 Every source is public data - no login required. New sources are added over time; each one is documented below.
 
 ## Quickstart
@@ -407,4 +408,12 @@ Contributions are welcome - new sources, better normalization, UI improvements.
 
 ```bash
 .venv/bin/python save_raw_scrapers.py --scrapers cashdo
+```
+
+### Mami - מאמי
+
+`mami_scraper.py` reads the public, server-rendered pages of Mami - מאמי at https://www.hi-mami.com/ (no login): the brand list at `/brands` (standing benefit per brand) and the current campaign tiles on each `/categories/<slug>` page linked from the home page (time-limited deals). A failed or empty refresh keeps the last successful `data/discounts/mami_discounts.json`. Save the home and brand pages with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers mami
 ```
