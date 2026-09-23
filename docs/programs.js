@@ -126,6 +126,15 @@
   // otherwise every observed club), otherwise every club in scope.
   function initialSelection(registry) {
     applyScope(registry);
+    const fromUrl = readUrlSelection(registry);
+    registry.fromUrl = !!fromUrl;
+    if (fromUrl) {
+      // A shared link shows exactly its clubs, even outside this visitor's
+      // own "my clubs" scope, so the whole club list stays available.
+      registry.scoped = false;
+      registry.scopeIds = registry.selectableIds.slice();
+      return new Set(fromUrl);
+    }
     const scope = registry.scopeIds || registry.selectableIds || [];
     const saved = readSavedSelection();
     if (saved) {
@@ -144,12 +153,113 @@
   function persistSelection(registry, selected) {
     const scope = registry.scopeIds || registry.selectableIds || [];
     if (!scope.length) return;
+    syncUrl(registry, selected);
     const allSelected = scope.every((id) => selected.has(id));
     if (allSelected || selected.size === 0) {
       clearSavedSelection();
       return;
     }
     saveSelection(Array.from(selected).filter((id) => scope.includes(id)));
+  }
+
+  // --- Selection in the URL (share links) -----------------------------------
+  // The club selection is mirrored in the page address as ?clubs=a,b so a link
+  // opens with the same clubs selected. Tokens are program ids without the
+  // "program-" prefix used for clubs not in the curated list (buyme, max,
+  // happygift). A top-level club stands for all of its sub-clubs. When a URL
+  // selection is present it wins for this page view; cookies keep working as
+  // before and are only written when the visitor changes the selection.
+  const URL_PARAM = 'clubs';
+
+  function currentSearch() {
+    try {
+      return (typeof location !== 'undefined' && location.search) || '';
+    } catch (e) {
+      return '';
+    }
+  }
+
+  function shortId(id) {
+    return String(id).startsWith('program-') ? String(id).slice('program-'.length) : String(id);
+  }
+
+  function resolveToken(registry, token) {
+    const t = String(token || '').trim().toLowerCase();
+    if (!t) return null;
+    if (registry.byId.has(t)) return t;
+    if (registry.byId.has(`program-${t}`)) return `program-${t}`;
+    return null;
+  }
+
+  // Leaf ids (observed in the data) selected by the ?clubs= parameter, or null
+  // when the parameter is missing or names nothing we know.
+  function readUrlSelection(registry, search) {
+    let raw = null;
+    try {
+      raw = new URLSearchParams(search != null ? search : currentSearch()).get(URL_PARAM);
+    } catch (e) {
+      return null;
+    }
+    if (!raw) return null;
+    const ids = new Set();
+    raw.split(',').forEach((token) => {
+      const id = resolveToken(registry, token);
+      if (!id) return;
+      [id, ...registry.descendants(id)].forEach((leaf) => {
+        if (registry.observedIds.has(leaf)) ids.add(leaf);
+      });
+    });
+    return ids.size ? Array.from(ids) : null;
+  }
+
+  function hasUrlSelection() {
+    try {
+      return !!new URLSearchParams(currentSearch()).get(URL_PARAM);
+    } catch (e) {
+      return false;
+    }
+  }
+
+  // The ?clubs= value for a selection: '' when nothing is filtered, otherwise
+  // top-level ids where every sub-club is selected, plus any loose sub-clubs.
+  function encodeSelection(registry, selected) {
+    if (!selected || !selected.size || isUnfiltered(registry, selected)) return '';
+    const tokens = [];
+    const covered = new Set();
+    registry.parents.forEach((parent) => {
+      const ids = [parent.id, ...registry.descendants(parent.id)].filter((id) => registry.observedIds.has(id));
+      if (ids.length && ids.every((id) => selected.has(id))) {
+        tokens.push(shortId(parent.id));
+        ids.forEach((id) => covered.add(id));
+      }
+    });
+    Array.from(selected).forEach((id) => {
+      if (!covered.has(id) && registry.observedIds.has(id)) tokens.push(shortId(id));
+    });
+    return tokens.join(',');
+  }
+
+  // Full link for the current page with the selection encoded. Other query
+  // parameters and the hash are kept.
+  function shareUrl(registry, selected, baseHref) {
+    const href = baseHref || (typeof location !== 'undefined' ? location.href : '');
+    const url = new URL(href);
+    const value = encodeSelection(registry, selected);
+    if (value) url.searchParams.set(URL_PARAM, value);
+    else url.searchParams.delete(URL_PARAM);
+    // Keep commas readable in the link (?clubs=buyme,happygift).
+    return url.toString().replace(/%2C/gi, ',');
+  }
+
+  // Mirror the selection into the address bar without adding history entries.
+  function syncUrl(registry, selected) {
+    try {
+      if (typeof history === 'undefined' || !history.replaceState || typeof location === 'undefined') return;
+      const next = shareUrl(registry, selected);
+      if (next !== location.href) history.replaceState(history.state, '', next);
+    } catch (e) {
+      // file:// or sandboxed frames: the share button still builds the link.
+    }
   }
 
   // --- "My clubs" (first-visit picker) ------------------------------------
@@ -235,6 +345,8 @@
   // version of the site (those visitors already chose; don't interrupt them).
   function needsFirstVisitPicker() {
     if (!cookiesAvailable()) return false;
+    // A shared link already says which clubs to show.
+    if (hasUrlSelection()) return false;
     return readMyClubs() === null && readSavedSelection() === null;
   }
 
@@ -345,6 +457,8 @@
       clearSavedSelection();
       selected.clear();
       registry.scopeIds.forEach((id) => selected.add(id));
+      registry.fromUrl = false;
+      syncUrl(registry, selected);
       close();
       if (onChange) onChange();
     }
@@ -430,5 +544,5 @@
     }
   }
 
-  global.ProgramRegistry = { CURATED, build, aggregateCounts, renderFilters, fallbackColor, initialSelection, persistSelection, clearSavedSelection, readSavedSelection, SELECTION_COOKIE, MY_CLUBS_COOKIE, applyScope, isUnfiltered, readMyClubs, saveMyClubs, needsFirstVisitPicker, openClubPicker, maybeShowFirstVisitPicker, visibleParents };
+  global.ProgramRegistry = { CURATED, build, aggregateCounts, renderFilters, fallbackColor, initialSelection, persistSelection, clearSavedSelection, readSavedSelection, SELECTION_COOKIE, MY_CLUBS_COOKIE, applyScope, isUnfiltered, readMyClubs, saveMyClubs, needsFirstVisitPicker, openClubPicker, maybeShowFirstVisitPicker, visibleParents, readUrlSelection, encodeSelection, shareUrl, syncUrl, URL_PARAM };
 })(window);

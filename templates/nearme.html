@@ -171,6 +171,7 @@
     selectedClubs = ProgramRegistry.initialSelection(programRegistry);
     _filtersInitialized = true;
     updateClubFiltersUI();
+    ProgramRegistry.syncUrl(programRegistry, selectedClubs);
     // First visit: let the visitor pick the clubs they belong to.
     ProgramRegistry.maybeShowFirstVisitPicker(programRegistry, clubCounts, selectedClubs, onClubSelectionChange);
   }

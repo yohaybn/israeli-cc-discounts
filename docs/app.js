@@ -49,6 +49,8 @@
         isLoading: true,
         clubCounts: {},
         totalDiscounts: 0,
+        newBenefits: { since: null, items: [] },
+        newBenefitsExpanded: false,
     };
 
     // Resolve exact source labels without flattening child programs.
@@ -81,6 +83,9 @@
         totalStoresCount: document.getElementById('totalStoresCount'),
         programFilters: document.getElementById('programFilters'),
         backToTopBtn: document.getElementById('backToTopBtn'),
+        shareSelectionBtn: document.getElementById('shareSelectionBtn'),
+        shareFeedback: document.getElementById('shareFeedback'),
+        newBenefitsPanel: document.getElementById('newBenefitsPanel'),
     };
 
     // Hebrew text normalization for fast & accurate instant search
@@ -284,6 +289,7 @@
                             biz.clubs = biz.clubs.map((c) => canonicalClub(c));
                         }
                     });
+                    initNewBenefits(state.allBusinesses.flatMap((b) => (b.discounts || []).map((d) => ({ ...d, business_name: b.business_name }))));
                     // Fetch clubs info if from API
                     try {
                         const clubsRes = await fetch('/clubs').then((r) => r.json());
@@ -302,6 +308,7 @@
                     }
                 } else if (Array.isArray(data)) {
                     // Raw discounts array from JSON file
+                    initNewBenefits(data);
                     const { businesses, clubCounts, total } = processRawDiscounts(data);
                     state.allBusinesses = businesses;
                     state.clubCounts = clubCounts;
@@ -335,6 +342,7 @@
 
         updateFilterChipsUI();
         applyFiltersAndSort();
+        ProgramRegistry.syncUrl(programRegistry, state.selectedClubs);
 
         // First visit: let the visitor pick the clubs they belong to.
         ProgramRegistry.maybeShowFirstVisitPicker(programRegistry, state.clubCounts, state.selectedClubs, () => {
@@ -385,7 +393,114 @@
         elements.cardsGrid.innerHTML = '';
 
         updateResultsMeta();
+        renderNewBenefits();
         renderNextBatch();
+    }
+
+    // --- New benefits since the previous visit ----------------------------
+    function initNewBenefits(records) {
+        if (typeof NewBenefits === 'undefined') return;
+        try {
+            const scope = programRegistry.scopeIds || programRegistry.selectableIds;
+            state.newBenefits = NewBenefits.init(records, canonicalClub, scope);
+        } catch (e) {
+            state.newBenefits = { since: null, items: [] };
+        }
+    }
+
+    function formatVisitDate(value) {
+        const d = new Date(value);
+        if (Number.isNaN(d.getTime())) return '';
+        return new Intl.DateTimeFormat('he-IL', { dateStyle: 'short', timeStyle: 'short' }).format(d);
+    }
+
+    function renderNewBenefits() {
+        const panel = elements.newBenefitsPanel;
+        if (!panel) return;
+        const items = (state.newBenefits.items || []).filter((d) => state.selectedClubs.has(d.club));
+        if (!items.length || (typeof NewBenefits !== 'undefined' && NewBenefits.isDismissed())) {
+            panel.classList.add('hidden');
+            panel.innerHTML = '';
+            return;
+        }
+        items.sort((a, b) => getClubShortName(a.club).localeCompare(getClubShortName(b.club), 'he')
+            || String(a.business_name).localeCompare(String(b.business_name), 'he'));
+        const LIMIT = 12;
+        const shown = state.newBenefitsExpanded ? items : items.slice(0, LIMIT);
+        const since = state.newBenefits.since ? formatVisitDate(state.newBenefits.since) : '';
+        const title = items.length === 1 ? 'הטבה חדשה אחת במועדונים שבחרת' : `${items.length.toLocaleString()} הטבות חדשות במועדונים שבחרת`;
+        const rows = shown.map((d) => {
+            const info = programInfo(d.club);
+            const discount = cleanDiscountText(d.discount);
+            const link = /^https?:\/\//i.test(d.discount_url || '')
+                ? `<a href="${escapeHtml(d.discount_url)}" target="_blank" rel="noopener noreferrer">לפרטים</a>`
+                : '';
+            return `<li class="new-benefit-item">
+                <span class="new-benefit-club" style="--program-color:${escapeHtml(info.color || '')}">${escapeHtml(info.short_name)}</span>
+                <span class="new-benefit-text" title="${escapeHtml(d.business_name)}${discount ? ' - ' + escapeHtml(discount) : ''}"><strong>${escapeHtml(d.business_name)}</strong>${discount ? ` <span class="new-benefit-discount">· ${escapeHtml(discount)}</span>` : ''}</span>
+                ${link}
+            </li>`;
+        }).join('');
+        const more = items.length > LIMIT
+            ? `<button type="button" class="new-benefits-toggle">${state.newBenefitsExpanded ? 'הצג פחות' : `הצג את כל ${items.length.toLocaleString()}`}</button>`
+            : '';
+        panel.innerHTML = `
+            <div class="new-benefits-head">
+                <h2 class="new-benefits-title"><span class="new-badge">חדש</span>${title}${since ? ` <span class="new-benefits-since">מאז הביקור הקודם (${escapeHtml(since)})</span>` : ''}</h2>
+                <div class="new-benefits-actions">${more}<button type="button" class="new-benefits-dismiss" aria-label="הסתרת ההטבות החדשות">הסתר</button></div>
+            </div>
+            <ul class="new-benefits-list">${rows}</ul>`;
+        panel.classList.remove('hidden');
+        const toggle = panel.querySelector('.new-benefits-toggle');
+        if (toggle) toggle.addEventListener('click', () => { state.newBenefitsExpanded = !state.newBenefitsExpanded; renderNewBenefits(); });
+        panel.querySelector('.new-benefits-dismiss').addEventListener('click', () => {
+            if (typeof NewBenefits !== 'undefined') NewBenefits.dismiss();
+            renderNewBenefits();
+        });
+    }
+
+    // --- Share link with the club selection --------------------------------
+    let shareFeedbackTimer = null;
+    function showShareFeedback(text) {
+        const el = elements.shareFeedback;
+        if (!el) return;
+        el.textContent = text;
+        el.classList.remove('hidden');
+        clearTimeout(shareFeedbackTimer);
+        shareFeedbackTimer = setTimeout(() => el.classList.add('hidden'), 3000);
+    }
+
+    function showShareFallback(url) {
+        const el = elements.shareFeedback;
+        if (!el) return;
+        clearTimeout(shareFeedbackTimer);
+        el.innerHTML = '';
+        const input = document.createElement('input');
+        input.type = 'text';
+        input.readOnly = true;
+        input.value = url;
+        input.className = 'share-fallback-input';
+        input.setAttribute('aria-label', 'קישור לשיתוף');
+        el.appendChild(input);
+        el.classList.remove('hidden');
+        input.focus();
+        input.select();
+    }
+
+    async function shareSelection() {
+        const url = ProgramRegistry.shareUrl(programRegistry, state.selectedClubs);
+        ProgramRegistry.syncUrl(programRegistry, state.selectedClubs);
+        try {
+            if (navigator.clipboard && window.isSecureContext) {
+                await navigator.clipboard.writeText(url);
+                const filtered = !ProgramRegistry.isUnfiltered(programRegistry, state.selectedClubs);
+                showShareFeedback(filtered ? 'הקישור הועתק - מי שיפתח אותו יראה את אותם מועדונים' : 'הקישור הועתק (כל המועדונים)');
+                return;
+            }
+        } catch (e) {
+            // fall through to the manual copy box
+        }
+        showShareFallback(url);
     }
 
     // Render cards batch
@@ -614,6 +729,7 @@
                     e.stopPropagation();
                     state.selectedClubs = new Set(programRegistry.scopeIds || programRegistry.selectableIds);
                     ProgramRegistry.clearSavedSelection();
+                    ProgramRegistry.syncUrl(programRegistry, state.selectedClubs);
                     updateFilterChipsUI();
                     applyFiltersAndSort();
                 });
@@ -721,10 +837,15 @@
             state.searchQuery = '';
             state.selectedClubs = new Set(programRegistry.scopeIds || programRegistry.selectableIds);
             ProgramRegistry.clearSavedSelection();
+            ProgramRegistry.syncUrl(programRegistry, state.selectedClubs);
             updateFilterChipsUI();
             applyFiltersAndSort();
             elements.searchInput.focus();
         });
+
+        if (elements.shareSelectionBtn) {
+            elements.shareSelectionBtn.addEventListener('click', shareSelection);
+        }
 
         // Floating Back to Top Button
         if (elements.backToTopBtn) {
