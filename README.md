@@ -70,6 +70,8 @@ Discount Finder collects discount offers from Israeli credit-card clubs and loya
 | קופונופש | Leisure/tickets club (cpnclub.co.il public API) |
 | איחוד הצלה | Volunteer benefits club (4u.1221.org.il WooCommerce Store API) |
 | טוב פלוס | State employees' club טוב+ (tovplus.org.il category pages) |
+| מחסני השוק גיפטקארד Wincard | Brands accepting the WINcard gift card (m-shuk.net WP REST) |
+| DREAM CARD גיפט | Chains accepting the DREAM CARD gift card (dcgift.co.il) |
 Every source is public data - no login required. New sources are added over time; each one is documented below.
 
 ## Quickstart
@@ -497,4 +499,20 @@ Contributions are welcome - new sources, better normalization, UI improvements.
 
 ```bash
 .venv/bin/python save_raw_scrapers.py --scrapers tovplus
+```
+
+### מחסני השוק גיפטקארד Wincard
+
+`wincard_giftcard_scraper.py` lists the brands that accept the מחסני השוק WINcard gift card, from the public WordPress REST collection `https://m-shuk.net/wp-json/wp/v2/giftcardbrands` (no login). A failed or empty refresh keeps the last successful `data/discounts/wincard_giftcard_discounts.json`. Save the payload with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers wincard_giftcard
+```
+
+### DREAM CARD גיפט
+
+`dreamcard_giftcard_scraper.py` lists the FOX-group chains that accept the DREAM CARD gift card (a separate product from the DREAM CARD VIP club in `dreamcard_scraper.py`), from the public page `https://www.dcgift.co.il/brands` (no login). A failed or empty refresh keeps the last successful `data/discounts/dreamcard_giftcard_discounts.json`. Save the page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers dreamcard_giftcard
 ```
