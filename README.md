@@ -69,6 +69,7 @@ Discount Finder collects discount offers from Israeli credit-card clubs and loya
 | Samsung Members | Samsung Israel Members / Galaxy VIP benefits page |
 | קופונופש | Leisure/tickets club (cpnclub.co.il public API) |
 | איחוד הצלה | Volunteer benefits club (4u.1221.org.il WooCommerce Store API) |
+| טוב פלוס | State employees' club טוב+ (tovplus.org.il category pages) |
 Every source is public data - no login required. New sources are added over time; each one is documented below.
 
 ## Quickstart
@@ -488,4 +489,12 @@ Contributions are welcome - new sources, better normalization, UI improvements.
 
 ```bash
 .venv/bin/python save_raw_scrapers.py --scrapers ihud_hatzala
+```
+
+### טוב פלוס
+
+`tovplus_scraper.py` reads טוב+ (the state employees' club) through the shared `dolcemaster_platform.py`. Public category pages (`https://tovplus.org.il/category/<id>`, no login) embed their products with club and market prices in `window.__PRELOADED_STATE__`; the crawl walks the category tree and dedupes by product ID. The home page sits behind a bot check, so the crawl starts from a category page. A failed or empty refresh keeps the last successful `data/discounts/tovplus_discounts.json`. Save one category page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers tovplus
 ```
