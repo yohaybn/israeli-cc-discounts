@@ -29,6 +29,7 @@ Discount Finder collects discount offers from Israeli credit-card clubs and loya
 | Mizrahi-Tefahot (הכרטיס) | Mizrahi-Tefahot customer club benefits |
 | Gifta (גיפטא) | Stores that accept the Gifta gift card |
 | Gold Card (גולד קארד) | Stores that accept the Gold Card gift card |
+| Raayonit Global Tav (גלובל תו) | Chains and businesses that accept the Global Tav voucher |
 Every source is public data - no login required. New sources are added over time; each one is documented below.
 
 ## Quickstart
@@ -128,4 +129,12 @@ Contributions are welcome - new sources, better normalization, UI improvements.
 
 ```bash
 .venv/bin/python save_raw_scrapers.py --scrapers goldcard
+```
+
+### Raayonit Global Tav
+
+`raayonit_scraper.py` reads the public page of Raayonit's "Global Tav" (גלובל תו) voucher (https://www.raayonit.co.il/club/?ClubNum=18&ClubVoucherTypeNum=47). It keeps both the chain tiles (one record per network, linked to the network page) and the individual businesses from the supplier grid, merging the branches of one business into a single record with addresses and phones in `limitations`. No login. A failed or empty refresh keeps the last successful `data/discounts/raayonit_global_discounts.json`. Save the source page with:
+
+```bash
+.venv/bin/python save_raw_scrapers.py --scrapers raayonit_global
 ```
