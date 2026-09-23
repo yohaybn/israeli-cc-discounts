@@ -65,6 +65,7 @@ EXTRA_SOURCE_MODULES: list[str] = [
     "goldcard_scraper",
     "gifta_scraper",
     "mizrahi_scraper",
+    "happygift_scraper",
 ]
 
 
