@@ -3540,20 +3540,6 @@
       },
       {
         "club": "אמריקן אקספרס",
-        "business_name": "3GB גלישה בחו\"ל ללא עלות באתר נפטוקום תמורת הטבת בונוס",
-        "discount": "תמורת הטבת בונוס",
-        "discount_url": "https://rewards.americanexpress.co.il/link/8a4b380176ff4aeebc8c443f6984cc89.aspx",
-        "discount_type": "voucher",
-        "discount_value": null,
-        "has_physical_store": true,
-        "branches": [],
-        "limitations": "תמורת הטבת בונוס | התשלום בכרטיס אמריקן אקספרס בלבד | ניתן להוריד עד 4 קודי הטבה לת.ז בשנה קלנדרית |ניתן לממש קוד הטבה אחד ברכישת חבילה| ניתן לנצל קוד זה בהתאם לתוקף בהודעה שתישלח ב-SMS | בהתאם ל תקנון תוכנית הבונוסים | הזכאות להטבת בונוס הינה ללקוחות שחויבו בסך של לפחות 3,000 ₪ בחשבון הבנק בגין עסקאות בבתי עסק בכרטיס האשראי שבאמצעותו התבקשה ההטבה במועד החיוב האחרון, כל 3,000 ₪, יזכו את המשתתף בתוכנית בהטבת בונוס אחת ועד למקסימום של 4 הטבות בונוס | תוקף המבצע בבית העסק הינו כמפורט במסרון שנשלח אליך לאחר הורדת קוד ההטבה, או עד גמר המלאי, המוקדם מביניהם | השירות ניתן במכשירים תומכי eSIM בלבד. למידע נוסף ורשימת מכשירים תומכים לחץ כאן | בכפוף למדינות נתמכות כפי שמופיע באתר Neptucom | פרימיום אקספרס שומרת לעצמה את הזכות לשינויים בכל עת | חברת פרימיום אקספרס בע''מ אינה אחראית לטיב המוצרים והשירותים, אחריות זו חלה על בית העסק בלבד | תוקף הורדת ההטבה 31.12.2026 ו/או עד גמר המלאי | טל''ח",
-        "category": "נופש וחו\"ל",
-        "program_id": "program-אמריקן-אקספרס",
-        "parent_program_id": null
-      },
-      {
-        "club": "אמריקן אקספרס",
         "business_name": "יקב מרגלית",
         "discount": "ביקור מקצועי ומעמיק במחיר מיוחד תמורת הטבת בונוס",
         "discount_url": "https://rewards.americanexpress.co.il/link/2a622cb3e4b5461095edbfe9c10afefe.aspx",
@@ -8362,9 +8348,9 @@
       },
       {
         "club": "MAX",
-        "business_name": "עולם החיות המופלא - אירוע סגור ללקוחות מקס",
-        "discount": "50 ₪ לכרטיס + מתנה תמורת פינוק והנחת יחיד",
-        "discount_url": "https://www.max.co.il/benefits/attractions/petsworldmax",
+        "business_name": "עולם החיות המופלא - המסע לנפלאות החי בכדור הארץ",
+        "discount": "כרטיס ב- 55 ₪ + מתנה תמורת פינוק והנחת יחיד",
+        "discount_url": "https://www.max.co.il/benefits/attractions/petsworld",
         "discount_type": "voucher",
         "discount_value": null,
         "has_physical_store": true,
@@ -8376,9 +8362,9 @@
       },
       {
         "club": "MAX",
-        "business_name": "עולם החיות המופלא - המסע לנפלאות החי בכדור הארץ",
-        "discount": "כרטיס ב- 55 ₪ + מתנה תמורת פינוק והנחת יחיד",
-        "discount_url": "https://www.max.co.il/benefits/attractions/petsworld",
+        "business_name": "עולם החיות המופלא - אירוע סגור ללקוחות מקס",
+        "discount": "50 ₪ לכרטיס + מתנה תמורת פינוק והנחת יחיד",
+        "discount_url": "https://www.max.co.il/benefits/attractions/petsworldmax",
         "discount_type": "voucher",
         "discount_value": null,
         "has_physical_store": true,
@@ -13092,17 +13078,6 @@
       },
       {
         "club": "HOT",
-        "business_name": "YANGO DELI יאנגו דלי",
-        "discount": "4% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/הטבה/58678/YANGO-DELI-יאנגו-דלי",
-        "discount_type": "billing_discount",
-        "discount_value": 4.0,
-        "has_physical_store": true,
-        "program_id": "hot",
-        "parent_program_id": null
-      },
-      {
-        "club": "HOT",
         "business_name": "Alma Delice עלמה דליס",
         "discount": "3.5% הנחה במעמד החיוב",
         "discount_url": "https://www.hot.co.il/הטבה/43855/Alma-Delice-עלמה-דליס",
@@ -14354,17 +14329,6 @@
         "discount_value": 4.0,
         "has_physical_store": true,
         "program_id": "mcc",
-        "parent_program_id": null
-      },
-      {
-        "club": "HOT",
-        "business_name": "YANGO DELI יאנגו דלי",
-        "discount": "4% הנחה במעמד החיוב",
-        "discount_url": "https://www.hot.co.il/הטבה/58678/YANGO-DELI-יאנגו-דלי",
-        "discount_type": "billing_discount",
-        "discount_value": 4.0,
-        "has_physical_store": true,
-        "program_id": "hot",
         "parent_program_id": null
       },
       {
@@ -25259,6 +25223,18 @@
       },
       {
         "club": "BUYME",
+        "business_name": "Oren sapak bdikotttt",
+        "discount": "למימוש יש להציג את קוד ה-Gift Card באמצעות SMS/מייל/דף מודפס. לפרטים נוספים: 0509558888.",
+        "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=Oren+sapak+bdikotttt#",
+        "discount_type": "voucher",
+        "discount_value": null,
+        "supplier_name": "BUYME ALL - מגוון אדיר במתנה אחת",
+        "has_physical_store": true,
+        "program_id": "buyme",
+        "parent_program_id": null
+      },
+      {
+        "club": "BUYME",
         "business_name": "POP & POPE",
         "discount": "למימוש יש להציג את קוד השובר. לפרטים נוספים: (03-6043239).",
         "discount_url": "https://buyme.co.il/brands/13438757?searchTerm=POP+%26+POPE#",
@@ -33135,9 +33111,9 @@
       },
       {
         "club": "MAX",
-        "business_name": "עולם החיות המופלא - אירוע סגור ללקוחות מקס",
-        "discount": "50 ₪ לכרטיס + מתנה תמורת פינוק והנחת יחיד",
-        "discount_url": "https://www.max.co.il/benefits/attractions/petsworldmax",
+        "business_name": "עולם החיות המופלא - המסע לנפלאות החי בכדור הארץ",
+        "discount": "כרטיס ב- 55 ₪ + מתנה תמורת פינוק והנחת יחיד",
+        "discount_url": "https://www.max.co.il/benefits/attractions/petsworld",
         "discount_type": "voucher",
         "discount_value": null,
         "has_physical_store": true,
@@ -33149,9 +33125,9 @@
       },
       {
         "club": "MAX",
-        "business_name": "עולם החיות המופלא - המסע לנפלאות החי בכדור הארץ",
-        "discount": "כרטיס ב- 55 ₪ + מתנה תמורת פינוק והנחת יחיד",
-        "discount_url": "https://www.max.co.il/benefits/attractions/petsworld",
+        "business_name": "עולם החיות המופלא - אירוע סגור ללקוחות מקס",
+        "discount": "50 ₪ לכרטיס + מתנה תמורת פינוק והנחת יחיד",
+        "discount_url": "https://www.max.co.il/benefits/attractions/petsworldmax",
         "discount_type": "voucher",
         "discount_value": null,
         "has_physical_store": true,
