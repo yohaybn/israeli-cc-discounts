@@ -97,17 +97,12 @@ def normalize_hvr_rechargeable_card_item(item, source_name="giftcard"):
     elif source_name == "teamimcard_branches":
         card_name = "חבר טעמים"
 
-    discount_bits = []
-    discount_bits.append(card_name)
-
+    terms_parts = []
     if limitations and str(limitations).strip():
-        discount_bits.append(str(limitations).strip())
+        terms_parts.append(str(limitations).strip())
     if description_parts:
-        discount_bits.append(" | ".join(description_parts).strip())
-
-    discount = " | ".join(part for part in discount_bits if part).strip()
-    if not discount:
-        discount = "הטבת כרטיס חבר"
+        terms_parts.append(" | ".join(description_parts).strip())
+    terms = " | ".join(part for part in terms_parts if part).strip()
 
     #website = item.get("website") or item.get("url") or item.get("site") or ""
     #if website and not website.startswith("http"):
@@ -122,8 +117,11 @@ def normalize_hvr_rechargeable_card_item(item, source_name="giftcard"):
  
             
 
-    match = re.search(r"(\d+(?:\.\d+)?)\s*%", discount)
-    discount_value = float(match.group(1)) if match else HEVER_DISCOUNT_VALUE
+    # The benefit is the fixed load discount on the club's prepaid card. Percents
+    # inside the terms describe other deals (e.g. "the rest at 10% off on the
+    # חבר credit card") and must not replace the card's rate.
+    discount_value = HEVER_DISCOUNT_VALUE
+    discount = f"{discount_value:g}% הנחה בטעינת כרטיס {card_name}"
 
     return {
         "club": card_name,
@@ -132,6 +130,7 @@ def normalize_hvr_rechargeable_card_item(item, source_name="giftcard"):
         "discount_url": website,
         "discount_type": "rechargeable_card",
         "discount_value": discount_value,
+        "limitations": terms,
         # HVR: determine physical-store presence. For `giftcard` items the payload
         # may include `is_online` == "N"/"Y" ("N" -> has physical store).
         # For `teamimcard_branches` assume physical stores exist. Otherwise default
