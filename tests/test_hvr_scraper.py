@@ -19,8 +19,12 @@ def test_normalize_giftcard_item():
     assert normalized["business_name"] == "SHASHA GIFTS"
     assert normalized["discount_type"] == "rechargeable_card"
     assert normalized["discount_value"] == HEVER_DISCOUNT_VALUE  # fixed Hever load discount
-    assert "חבר שלי" in normalized["discount"]
-    assert "1,000" in normalized["discount"] or "חבר שלי" in normalized["discount"]
+    # The discount text states the benefit, not the terms.
+    assert normalized["discount"] == f"{HEVER_DISCOUNT_VALUE:g}% הנחה בטעינת כרטיס חבר שלי"
+    assert "1,000" not in normalized["discount"]
+    # Terms and description move to limitations.
+    assert "1,000" in normalized["limitations"]
+    assert "מתנות אישיות" in normalized["limitations"]
 
 
 def test_normalize_branch_item():
@@ -41,5 +45,29 @@ def test_normalize_branch_item():
     assert normalized["business_name"] == "אנג'לינה פיצה ופסטה"
     assert normalized["discount_type"] == "rechargeable_card"
     assert normalized["discount_value"] == HEVER_DISCOUNT_VALUE  # fixed Hever load discount
-    assert "חבר טעמים" in normalized["discount"]
-    assert "אילת" in normalized["discount"] or "חבר טעמים" in normalized["discount"]
+    assert normalized["discount"] == f"{HEVER_DISCOUNT_VALUE:g}% הנחה בטעינת כרטיס חבר טעמים"
+    assert normalized["limitations"] == ""
+
+
+def test_percent_in_terms_does_not_replace_load_discount():
+    # Real HVR wording: the remainder is paid on the credit card at 10% off.
+    # That is a billing deal, not the prepaid card's load discount.
+    item = {
+        "company": "שגריר",
+        "limitations": "ניתן לשלם עד 1,000 ₪ עם הכרטיס הנטען, והיתרה ב-10% הנחה במעמד חיוב כרטיס אשראי \"חבר\".",
+    }
+
+    normalized = normalize_hvr_rechargeable_card_item(item, source_name="giftcard")
+
+    assert normalized["discount_value"] == HEVER_DISCOUNT_VALUE
+    assert normalized["discount"].startswith(f"{HEVER_DISCOUNT_VALUE:g}%")
+    assert "10%" in normalized["limitations"]
+
+
+def test_discount_text_has_no_card_name_prefix():
+    normalized = normalize_hvr_rechargeable_card_item(
+        {"company": "DESIGUAL", "limitations": "עד 1000 שח לעסקה"}, source_name="giftcard"
+    )
+
+    assert not normalized["discount"].startswith("חבר שלי |")
+    assert "|" not in normalized["discount"]
