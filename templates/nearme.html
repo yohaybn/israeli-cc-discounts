@@ -314,6 +314,7 @@
 
         const isVoucher = /שובר|voucher/i.test(text);
         const truncated = text.length > 55 ? text.slice(0, 55) + '…' : text;
+        const row = BenefitTypes.rowDisplay(d, text);
 
         const optionLink = document.createElement('a');
         optionLink.className = 'discount-option-item';
@@ -327,7 +328,11 @@
           <div class="option-left-content">
             <span class="option-club-badge" data-program-id="${escapeHtml(programId)}" style="--program-color:${escapeHtml(color)}">${escapeHtml(label)}</span>
             <div class="option-text-wrap">
-              <span class="option-discount-title">${escapeHtml(truncated)}</span>
+              <span class="option-main-line">
+                <span class="option-discount-title${row.isValue ? ' is-value' : ''}">${escapeHtml(row.isValue ? row.main : truncated)}</span>
+                ${row.type ? `<span class="option-type-chip ${row.type.cls}">${escapeHtml(row.type.label)}</span>` : ''}
+              </span>
+              ${row.terms ? `<span class="option-terms" title="${escapeHtml(row.terms)}">${escapeHtml(row.terms)}</span>` : ''}
             </div>
           </div>
           <span class="option-action-btn">

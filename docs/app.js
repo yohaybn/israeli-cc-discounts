@@ -198,6 +198,7 @@
                 discount_url: d.discount_url || '',
                 discount_type: d.discount_type || null,
                 discount_value: d.discount_value != null ? Number(d.discount_value) : null,
+                limitations: cleanDiscountText(d.limitations),
             });
             entry.clubs.add(club);
         });
@@ -642,13 +643,20 @@
 
             const isVoucher = ((disc.discount_type || '').toLowerCase() === 'voucher') || /שובר|voucher/i.test(disc.discount || '');
             const discountTitle = isVoucher ? (disc.discount || 'שובר') : (disc.discount || '');
+            const row = BenefitTypes.rowDisplay(disc, discountTitle);
+            const chip = row.type ? `<span class="option-type-chip ${row.type.cls}">${escapeHtml(row.type.label)}</span>` : '';
+            const terms = row.terms ? `<span class="option-terms" title="${escapeHtml(row.terms)}">${escapeHtml(row.terms)}</span>` : '';
 
             // Removed club name from description per UI change request
             optionLink.innerHTML = `
                 <div class="option-left-content">
                     <span class="option-club-badge" data-program-id="${escapeHtml(clubLower)}" style="--program-color:${escapeHtml(info.color)}">${escapeHtml(clubShort)}</span>
                     <div class="option-text-wrap">
-                        <span class="option-discount-title" title="${escapeHtml(discountTitle)}">${escapeHtml(discountTitle)}</span>
+                        <span class="option-main-line">
+                            <span class="option-discount-title${row.isValue ? ' is-value' : ''}" title="${escapeHtml(row.main)}">${escapeHtml(row.main)}</span>
+                            ${chip}
+                        </span>
+                        ${terms}
                     </div>
                 </div>
                 <span class="option-action-btn">
