@@ -416,6 +416,9 @@ def main():
 
     businesses_with_discounts = build_businesses_with_discounts(stores, discounts, geocoded)
     save_json(OUT_FILE, businesses_with_discounts)
+    # Publish spatial cells for the Pages map; no server required for nearby queries.
+    from build_static_shards import build_nearby
+    build_nearby()
 
     regions: Dict[str, List[Dict]] = {"north": [], "center": [], "south": [], "eilat_arava": []}
     for business in businesses_with_discounts:

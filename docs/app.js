@@ -245,8 +245,154 @@
         return { businesses, clubCounts, total: clubCounts.ALL };
     }
 
+    const shardCache = new Map();
+    let shardManifest = null;
+    let staticHashFile = null;
+    let renderGeneration = 0;
+    const MAX_SHARD_REQUESTS = 5;
+    const shardQueue = [];
+    let activeShards = 0;
+
+    function fetchShard(key) {
+        if (!shardManifest || !shardManifest[key]) return Promise.reject(new Error('Missing discount shard ' + key));
+        if (shardCache.has(key)) return shardCache.get(key);
+        const promise = new Promise((resolve, reject) => {
+            shardQueue.push({ key, resolve, reject });
+        });
+        shardCache.set(key, promise);
+        drainShards();
+        promise.catch(() => shardCache.delete(key));
+        return promise;
+    }
+
+    function drainShards() {
+        while (activeShards < MAX_SHARD_REQUESTS && shardQueue.length) {
+            const { key, resolve, reject } = shardQueue.shift();
+            activeShards += 1;
+            fetch('data/discount_shards/' + shardManifest[key]).then((res) => {
+                if (!res.ok) throw new Error('HTTP ' + res.status);
+                return res.json();
+            }).then(resolve, reject).finally(() => { activeShards -= 1; drainShards(); });
+        }
+    }
+
+    function detailBusiness(biz, rows) {
+        const discounts = rows.map((d) => ({
+            club: canonicalClub(d.club), discount: cleanDiscountText(d.discount),
+            discount_url: d.discount_url || '', discount_type: d.discount_type || null,
+            discount_value: d.discount_value != null ? Number(d.discount_value) : null,
+            limitations: cleanDiscountText(d.limitations),
+        }));
+        return { ...biz, discounts };
+    }
+
+    async function showCardDetails(card, biz, generation) {
+        try {
+            const shard = await fetchShard(biz.shard);
+            if (generation !== renderGeneration || !card.isConnected) return;
+            const records = shard[biz.business_name];
+            if (!records) throw new Error('Missing details for ' + biz.business_name);
+            card.replaceWith(createBusinessCard(detailBusiness(biz, records)));
+        } catch (err) {
+            if (generation !== renderGeneration || !card.isConnected) return;
+            card.classList.add('details-error');
+            card.querySelector('.discounts-list').textContent = 'פרטי ההטבות לא נטענו. נסו לרענן את הדף.';
+        }
+    }
+
+    async function loadNewBenefitsInBackground() {
+        if (typeof NewBenefits === 'undefined') return;
+        try {
+            const response = await fetch('data/' + staticHashFile);
+            if (!response.ok) throw new Error('HTTP ' + response.status);
+            const data = await response.json();
+            if (data.catalog_version !== state.catalogVersion) throw new Error('Benefit hashes changed during load');
+            const scope = programRegistry.scopeIds || programRegistry.selectableIds;
+            const snapshot = NewBenefits.initHashes(data.clubs, canonicalClub, scope);
+            const keysByClub = new Map();
+            snapshot.items.forEach(({ club, _hash }) => {
+                if (!keysByClub.has(club)) keysByClub.set(club, new Set());
+                keysByClub.get(club).add(_hash);
+            });
+            const matched = [];
+            state.allBusinesses.forEach((biz) => {
+                (biz.benefit_keys || []).forEach(([label, hash]) => {
+                    if (keysByClub.get(canonicalClub(label))?.has(hash)) matched.push({ biz, label, hash });
+                });
+            });
+            state.newBenefits = { since: snapshot.since, items: [] };
+            const keySet = [...new Set(matched.map((item) => item.biz.shard))];
+            for (let i = 0; i < keySet.length; i += MAX_SHARD_REQUESTS) {
+                const batches = await Promise.allSettled(keySet.slice(i, i + MAX_SHARD_REQUESTS).map(async (key) =>
+                    ({ key, shard: await fetchShard(key) })));
+                batches.forEach((result) => {
+                    if (result.status !== 'fulfilled') return;
+                    const { key, shard } = result.value;
+                    matched.filter((item) => item.biz.shard === key).forEach(({ biz, label, hash }) => {
+                        const club = canonicalClub(label);
+                        const row = (shard[biz.business_name] || []).find((d) =>
+                            canonicalClub(d.club) === club && NewBenefits.benefitKey(d, club) === hash);
+                        if (row) state.newBenefits.items.push({ ...row, club, _hash: hash });
+                    });
+                });
+                renderNewBenefits();
+            }
+        } catch (err) {
+            console.warn('New benefits could not be loaded', err);
+        }
+    }
+
+    // Static index is the source of truth for search, sorting, clubs and counts.
+    // Card bodies are fetched only for the currently visible page.
+    async function loadStaticIndex() {
+        const response = await fetch('data/business_index.json');
+        if (!response.ok) throw new Error('HTTP ' + response.status);
+        const index = await response.json();
+        if (index.version !== 1 || !index.catalog_version || !index.benefit_hashes || !Array.isArray(index.businesses) || !index.shards) throw new Error('Invalid business index');
+        shardManifest = index.shards;
+        state.catalogVersion = index.catalog_version;
+        staticHashFile = index.benefit_hashes;
+        programRegistry = ProgramRegistry.build(index.labels);
+        state.selectedClubs = ProgramRegistry.initialSelection(programRegistry);
+        state.clubCounts = { ALL: index.total };
+        Object.entries(index.club_counts).forEach(([label, count]) => {
+            const id = canonicalClub(label);
+            state.clubCounts[id] = (state.clubCounts[id] || 0) + count;
+        });
+        state.totalDiscounts = index.total;
+        state.allBusinesses = index.businesses.map((b) => ({ ...b,
+            clubs: b.clubs.map(canonicalClub), _normalizedName: normalizeHebrew(b.business_name),
+        }));
+        finishLoading();
+        // Decouple the visit comparison from first meaningful paint.
+        setTimeout(loadNewBenefitsInBackground, 0);
+    }
+
+    function finishLoading() {
+        elements.totalDealsCount.textContent = state.totalDiscounts.toLocaleString();
+        elements.totalStoresCount.textContent = state.allBusinesses.length.toLocaleString();
+        ProgramRegistry.renderFilters(elements.programFilters, programRegistry, state.clubCounts, state.selectedClubs, () => {
+            updateFilterChipsUI(); applyFiltersAndSort();
+        }, true);
+        state.isLoading = false;
+        elements.loadingSkeleton.classList.add('hidden');
+        elements.cardsGrid.classList.remove('hidden');
+        updateFilterChipsUI();
+        applyFiltersAndSort();
+        ProgramRegistry.syncUrl(programRegistry, state.selectedClubs);
+        ProgramRegistry.maybeShowFirstVisitPicker(programRegistry, state.clubCounts, state.selectedClubs, () => {
+            updateFilterChipsUI(); applyFiltersAndSort();
+        });
+    }
+
     // Fetch initial dataset from local API or raw GitHub JSON (GitHub Pages mode)
     async function loadData() {
+        try {
+            await loadStaticIndex();
+            return;
+        } catch (err) {
+            console.warn('Static index unavailable, using legacy data', err);
+        }
         const DATA_SOURCES = [
             // 1. Published site static data (GitHub Pages or server /data mount)
             'data/all_combined_discounts.json',
@@ -374,7 +520,8 @@
             // Search query filter
             // Discount type filter at business-level: require at least one discount matching type
             if (state.selectedDiscountType) {
-                const hasType = (biz.discounts || []).some((d) => (d.discount_type || '') === state.selectedDiscountType);
+                const hasType = shardManifest ? biz.discount_types.includes(state.selectedDiscountType)
+                    : (biz.discounts || []).some((d) => (d.discount_type || '') === state.selectedDiscountType);
                 if (!hasType) return false;
             }
             return matchesQuery(biz, query);
@@ -386,10 +533,12 @@
         } else if (state.sortBy === 'name_asc') {
             results.sort((a, b) => a.business_name.localeCompare(b.business_name, 'he'));
         } else if (state.sortBy === 'deals_desc') {
-            results.sort((a, b) => (b.discounts ? b.discounts.length : 0) - (a.discounts ? a.discounts.length : 0));
+            results.sort((a, b) => (shardManifest ? b.discount_count - a.discount_count
+                : (b.discounts ? b.discounts.length : 0) - (a.discounts ? a.discounts.length : 0)));
         }
 
         state.filteredBusinesses = results;
+        renderGeneration += 1;
         state.renderedCount = 0;
         elements.cardsGrid.innerHTML = '';
 
@@ -529,7 +678,23 @@
 
         const fragment = document.createDocumentFragment();
         batch.forEach((biz) => {
-            fragment.appendChild(createBusinessCard(biz));
+            if (shardManifest) {
+                const card = document.createElement('div');
+                card.className = 'business-card';
+                const title = document.createElement('h3');
+                title.className = 'business-name';
+                title.textContent = biz.business_name;
+                const list = document.createElement('div');
+                list.className = 'discounts-list';
+                list.textContent = 'טוען הטבות…';
+                card.append(title, list);
+                fragment.appendChild(card);
+                // Start after insertion so isConnected is true even for cached shards.
+                const generation = renderGeneration;
+                setTimeout(() => showCardDetails(card, biz, generation), 0);
+            } else {
+                fragment.appendChild(createBusinessCard(biz));
+            }
         });
 
         elements.cardsGrid.appendChild(fragment);
@@ -690,11 +855,18 @@
 
         state.filteredBusinesses.forEach((b) => {
             if (isAllSelected) {
-                countDiscounts += b.discounts ? b.discounts.length : 0;
+                countDiscounts += shardManifest ? b.discount_count : (b.discounts ? b.discounts.length : 0);
             } else {
-                (b.discounts || []).forEach((d) => {
-                    if (state.selectedClubs.has(d.club)) countDiscounts += 1;
-                });
+                if (shardManifest) {
+                    // Per-business club counts come from the lightweight index.
+                    Object.entries(b.club_counts || {}).forEach(([club, n]) => {
+                        if (state.selectedClubs.has(canonicalClub(club))) countDiscounts += n;
+                    });
+                } else {
+                    (b.discounts || []).forEach((d) => {
+                        if (state.selectedClubs.has(d.club)) countDiscounts += 1;
+                    });
+                }
             }
         });
 

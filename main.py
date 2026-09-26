@@ -412,6 +412,10 @@ def main():
             f" {len(combined_list)} total records."
         )
 
+        # Publish static search index and immutable detail shards for GitHub Pages.
+        from scripts.build_static_shards import build_discounts
+        build_discounts()
+
         # Add counts by discount_type to metadata
         type_counts = {}
         for item in combined_list:
