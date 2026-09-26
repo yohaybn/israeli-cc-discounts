@@ -165,24 +165,68 @@
   let currentUserLon = 34.7818;
   let currentSearchRadiusKm = 1.0;
 
-  // Cache for businesses data
-  let _businessesCache = null;
+  // Each geographic cell is a static JSON file, loaded only when its box is
+  // near the user's radius. Cache promises so repeated map moves reuse data.
+  let nearbyIndexPromise = null;
+  const nearbyCellCache = new Map();
+  let nearbyRequestGeneration = 0;
 
-  async function loadBusinessesForBounds(minLat, maxLat) {
-    if (_businessesCache) return _businessesCache;
-    try {
-      const res = await fetch('data/businesses_with_discounts.json');
-      if (res.ok) {
-        const data = await res.json();
-        if (Array.isArray(data)) {
-          _businessesCache = data;
-          return data;
-        }
-      }
-    } catch (err) {
-      console.warn('Failed to load businesses_with_discounts.json', err);
+  function loadNearbyIndex() {
+    if (!nearbyIndexPromise) {
+      nearbyIndexPromise = fetch('data/nearby_index.json').then((res) => {
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        return res.json();
+      }).then((index) => {
+        if (index.version !== 1 || !index.cells || !index.scale) throw new Error('Invalid nearby index');
+        // The complete club registry is independent of the current radius.
+        programRegistry = ProgramRegistry.build(index.labels);
+        clubCounts = {};
+        Object.entries(index.club_counts || {}).forEach(([label, count]) => {
+          const id = programRegistry.resolve(label);
+          clubCounts[id] = (clubCounts[id] || 0) + count;
+        });
+        selectedClubs = ProgramRegistry.initialSelection(programRegistry);
+        _filtersInitialized = true;
+        updateClubFiltersUI();
+        ProgramRegistry.syncUrl(programRegistry, selectedClubs);
+        ProgramRegistry.maybeShowFirstVisitPicker(programRegistry, clubCounts, selectedClubs, onClubSelectionChange);
+        return index;
+      });
+      nearbyIndexPromise.catch(() => { nearbyIndexPromise = null; });
     }
-    return [];
+    return nearbyIndexPromise;
+  }
+
+  function loadNearbyCell(index, key) {
+    if (nearbyCellCache.has(key)) return nearbyCellCache.get(key);
+    const promise = fetch('data/nearby_shards/' + index.cells[key]).then((res) => {
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      return res.json();
+    });
+    nearbyCellCache.set(key, promise);
+    promise.catch(() => nearbyCellCache.delete(key));
+    return promise;
+  }
+
+  async function loadBusinessesForBounds(minLat, maxLat, minLon, maxLon) {
+    const index = await loadNearbyIndex();
+    const scale = index.scale;
+    const keys = [];
+    for (let x = Math.floor(minLat * scale); x <= Math.floor(maxLat * scale); x++) {
+      for (let y = Math.floor(minLon * scale); y <= Math.floor(maxLon * scale); y++) {
+        const key = `${x}_${y}`;
+        if (index.cells[key]) keys.push(key);
+      }
+    }
+    // Bounded concurrency, including dense-city views with many cells.
+    const results = [];
+    const batches = [];
+    for (let i = 0; i < keys.length; i += 6) batches.push(keys.slice(i, i + 6));
+    for (const batch of batches) {
+      const rows = await Promise.all(batch.map((key) => loadNearbyCell(index, key)));
+      rows.forEach((cell) => results.push(...cell));
+    }
+    return results;
   }
 
   function haversineDistance(lat1, lon1, lat2, lon2) {
@@ -259,27 +303,6 @@
       btn.innerText = '📍 בחר מיקום על המפה';
       document.getElementById('map').style.cursor = '';
     }
-  }
-
-  // Build the club registry from the loaded businesses, select every club by
-  // default (same behavior the static chips had) and render the filter chips.
-  function initProgramFilters(allBusinesses) {
-    if (_filtersInitialized) return;
-    const labels = allBusinesses.flatMap((b) =>
-      (Array.isArray(b.discounts) ? b.discounts : []).map((d) => d.club || d.club_name)
-    );
-    programRegistry = ProgramRegistry.build(labels);
-    clubCounts = {};
-    labels.forEach((label) => {
-      const id = programRegistry.resolve(label);
-      clubCounts[id] = (clubCounts[id] || 0) + 1;
-    });
-    selectedClubs = ProgramRegistry.initialSelection(programRegistry);
-    _filtersInitialized = true;
-    updateClubFiltersUI();
-    ProgramRegistry.syncUrl(programRegistry, selectedClubs);
-    // First visit: let the visitor pick the clubs they belong to.
-    ProgramRegistry.maybeShowFirstVisitPicker(programRegistry, clubCounts, selectedClubs, onClubSelectionChange);
   }
 
   function onClubSelectionChange() {
@@ -522,9 +545,10 @@
     statusDiv.innerText = `טוען רשימת עסקים עם מבצעים (client-side)...`;
     listContainer.innerHTML = ''; // Clear previous list
 
+    const requestGeneration = ++nearbyRequestGeneration;
     try {
-      const allBusinesses = await loadBusinessesForBounds(minLat, maxLat);
-      initProgramFilters(allBusinesses);
+      const allBusinesses = await loadBusinessesForBounds(minLat, maxLat, minLon, maxLon);
+      if (requestGeneration !== nearbyRequestGeneration) return;
 
       let nearby = [];
       for (const b of allBusinesses) {
@@ -590,6 +614,7 @@
       }
 
     } catch (err) {
+      if (requestGeneration !== nearbyRequestGeneration) return;
       statusDiv.innerText = 'שגיאה בטעינת נתונים: ' + err.message;
       listContainer.innerHTML = `<li class="business-item"><p style="color: red;">שגיאה: ${err.message}</p></li>`;
     }

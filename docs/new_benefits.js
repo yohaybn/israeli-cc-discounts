@@ -146,6 +146,35 @@
     return { since, items };
   }
 
+  // Static-shard mode: compare precomputed hashes after the first cards are visible.
+  // The full offer bodies are loaded only for the new rows, never for the whole catalog.
+  function initHashes(clubHashes, resolveClub, scopeIds, now) {
+    const local = storage('localStorage');
+    const session = storage('sessionStorage');
+    const byClub = new Map();
+    Object.entries(clubHashes || {}).forEach(([label, packed]) => {
+      const club = resolveClub(label);
+      const bucket = new Map();
+      splitHashes(packed).forEach((hash) => bucket.set(hash, { club, _hash: hash }));
+      byClub.set(club, bucket);
+    });
+    const cached = readJson(session, SESSION_KEY);
+    if (cached && Array.isArray(cached.keys)) {
+      const all = new Set();
+      byClub.forEach((bucket) => bucket.forEach((_, hash) => all.add(hash)));
+      return { since: cached.since || null, items: cached.keys.filter((h) => all.has(h)).map((h) => ({ _hash: h })) };
+    }
+    const previous = readJson(local, STORAGE_KEY);
+    const items = previous ? diff(byClub, previous, scopeIds) : [];
+    const nowIso = (now || new Date()).toISOString();
+    if (!writeJson(local, STORAGE_KEY, nextSnapshot(byClub, previous, scopeIds, nowIso))) {
+      writeJson(local, STORAGE_KEY, nextSnapshot(byClub, null, scopeIds, nowIso));
+    }
+    const since = previous && previous.visited_at ? previous.visited_at : null;
+    writeJson(session, SESSION_KEY, { since, keys: items.map((r) => r._hash) });
+    return { since, items };
+  }
+
   function isDismissed() {
     const session = storage('sessionStorage');
     try { return !!(session && session.getItem(DISMISS_KEY)); } catch (e) { return false; }
@@ -156,5 +185,5 @@
     try { if (session) session.setItem(DISMISS_KEY, '1'); } catch (e) { /* ignore */ }
   }
 
-  global.NewBenefits = { init, diff, nextSnapshot, indexRecords, benefitKey, splitHashes, isDismissed, dismiss, STORAGE_KEY, SESSION_KEY, DISMISS_KEY };
+  global.NewBenefits = { init, initHashes, diff, nextSnapshot, indexRecords, benefitKey, splitHashes, isDismissed, dismiss, STORAGE_KEY, SESSION_KEY, DISMISS_KEY };
 })(window);
