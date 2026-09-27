@@ -71,7 +71,7 @@ Discount Finder collects discount offers from Israeli credit-card clubs and loya
 | איחוד הצלה | Volunteer benefits club (4u.1221.org.il WooCommerce Store API) |
 | טוב פלוס | State employees' club טוב+ (tovplus.org.il category pages) |
 | פיס פלוס | Public Dolcemaster coupon catalog (paisplus.co.il; server-region access) |
-| שלך | Public Dolcemaster coupon catalog (yours.co.il; server-region access) |
+| שלך | Public Dolcemaster category pages, but scraper disabled pending complete pagination (yours.co.il) |
 | מחסני השוק גיפטקארד Wincard | Brands accepting the WINcard gift card (m-shuk.net WP REST) |
 | DREAM CARD גיפט | Chains accepting the DREAM CARD gift card (dcgift.co.il) |
 | מועדון W | W (דאבל יו) card benefits page (w-card.co.il) |
@@ -463,7 +463,10 @@ category count. Coupon codes, managed-value vouchers and event tickets with a lo
 club price than list price are kept; physical merchandise, out-of-stock products,
 member-only categories and products with no published saving are excluded. These sites
 may block the agent workspace (HTTP 571), but Yohay's Israel-region server returned
-full public category payloads. Last-good source files remain in place if a crawl fails.
+full public category payloads. Pais Plus was verified across 103 public category pages without truncated leaves. Yours has
+three public leaf pages capped at 200 records each (`has_more=Y`); its scraper deliberately
+raises and is not registered for daily refresh until full public pagination is confirmed.
+Last-good source files remain in place if a crawl fails.
 To save seed category captures for debugging:
 
 ```bash

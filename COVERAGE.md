@@ -79,7 +79,7 @@
 | גולד צפון | ✅ יש סקרייפר | [הטבות](https://goldnorth.htzone.co.il/) | goldnorth_scraper.py - פלטפורמת HTzone |
 | יחד ההסתדרות הרפואית לישראל | ✅ יש סקרייפר | [הטבות](https://www.ima.org.il/yahadclub/Categories.aspx) | ima_yahad_scraper.py - קטלוג ציבורי, קטגוריות -> ספקים -> פרטי ספק (אתר איטי, ~800 עמודים) |
 | שווה | ⛔ חסום טכנית | - | אפליקציה בלבד (נבדק 23.9.26) |
-| שלך | ✅ יש סקרייפר | [הטבות](https://yours.co.il/category/1164) | yours_scraper.py - קטלוג ציבורי בפלטפורמת Dolcemaster; נגיש משרת בישראל (27.9.26) |
+| שלך | ⛔ קטלוג ציבורי חלקי | [הטבות](https://yours.co.il/category/1164) | yours_scraper.py מוכן אך לא מופעל: שלוש קטגוריות ללא בנים נעצרות ב-200 רשומות עם has_more=Y, ולכן סריקה מלאה נכשלת בבטחה. נגיש משרת בישראל (27.9.26) |
 | שלך לגמלאי | ⛔ חסום טכנית | - | yours.co.il מאחורי אתגר bot (Reblaze, 571) (23.9.26) |
 | טוב פלוס | ✅ יש סקרייפר | [הטבות](https://tovplus.org.il/) | tovplus_scraper.py - דפי קטגוריה ציבוריים (dolcemaster_platform.py) |
 | הוט מועדון צרכנות | ✅ יש סקרייפר | [הטבות](https://www.hot.co.il) | hot_scraper.py - ה-API החוזר 403 לעיתים קרובות; נשען על last-good-data |
