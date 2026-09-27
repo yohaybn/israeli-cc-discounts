@@ -70,6 +70,8 @@ Discount Finder collects discount offers from Israeli credit-card clubs and loya
 | קופונופש | Leisure/tickets club (cpnclub.co.il public API) |
 | איחוד הצלה | Volunteer benefits club (4u.1221.org.il WooCommerce Store API) |
 | טוב פלוס | State employees' club טוב+ (tovplus.org.il category pages) |
+| פיס פלוס | Public Dolcemaster coupon catalog (paisplus.co.il; server-region access) |
+| שלך | Public Dolcemaster coupon catalog (yours.co.il; server-region access) |
 | מחסני השוק גיפטקארד Wincard | Brands accepting the WINcard gift card (m-shuk.net WP REST) |
 | DREAM CARD גיפט | Chains accepting the DREAM CARD gift card (dcgift.co.il) |
 | מועדון W | W (דאבל יו) card benefits page (w-card.co.il) |
@@ -449,6 +451,23 @@ Contributions are welcome - new sources, better normalization, UI improvements.
 
 ```bash
 .venv/bin/python scripts/save_raw_scrapers.py --scrapers azrieli_malls
+```
+
+### פיס פלוס ושלך
+
+`scrapers/paisplus_scraper.py` and `scrapers/yours_scraper.py` walk the public, unauthenticated
+Dolcemaster category pages (`https://paisplus.co.il/category/302` and
+`https://yours.co.il/category/1164`). The homepage/category tree is read from
+`window.__PRELOADED_STATE__`; only public categories are crawled, with a bound on
+category count. Coupon codes, managed-value vouchers and event tickets with a lower
+club price than list price are kept; physical merchandise, out-of-stock products,
+member-only categories and products with no published saving are excluded. These sites
+may block the agent workspace (HTTP 571), but Yohay's Israel-region server returned
+full public category payloads. Last-good source files remain in place if a crawl fails.
+To save seed category captures for debugging:
+
+```bash
+.venv/bin/python scripts/save_raw_scrapers.py --scrapers paisplus,yours
 ```
 
 ### Coupon catalog pass
