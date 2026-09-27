@@ -50,3 +50,9 @@ def test_parse_excludes_merchandise_expired_stock_and_non_savings():
         assert row['price'] == 160 and row['original_price'] == 200
         assert row['discount_url'] == f'{mod.BASE_URL}/product/55'
         assert row['voucher_type'] == 'תו כספי מנוהל'
+
+
+def test_yours_is_not_registered_until_truncated_leaves_can_be_paginated():
+    from extra_sources import EXTRA_SOURCE_MODULES
+    assert "yours_scraper" not in EXTRA_SOURCE_MODULES
+    assert "paisplus_scraper" in EXTRA_SOURCE_MODULES
