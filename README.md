@@ -470,7 +470,7 @@ Last-good source files remain in place if a crawl fails.
 To save seed category captures for debugging:
 
 ```bash
-.venv/bin/python scripts/save_raw_scrapers.py --scrapers paisplus,yours
+.venv/bin/python scripts/save_raw_scrapers.py --scrapers paisplus
 ```
 
 ### Coupon catalog pass
