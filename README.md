@@ -71,6 +71,9 @@ Discount Finder collects discount offers from Israeli credit-card clubs and loya
 | איחוד הצלה | Volunteer benefits club (4u.1221.org.il WooCommerce Store API) |
 | טוב פלוס | State employees' club טוב+ (tovplus.org.il category pages) |
 | פיס פלוס | Public Dolcemaster coupon catalog (paisplus.co.il; server-region access) |
+| עובדי נמל אשדוד | Public Style coupon catalog (ap.mycorporate.co.il) |
+| מועדון האנרגיה | Public Style coupon catalog (energy.style.co.il) |
+| עמותת מגדלור | Public Style coupon catalog (migdalor.style.co.il) |
 | שלך | Public Dolcemaster category pages, but scraper disabled pending complete pagination (yours.co.il) |
 | מחסני השוק גיפטקארד Wincard | Brands accepting the WINcard gift card (m-shuk.net WP REST) |
 | DREAM CARD גיפט | Chains accepting the DREAM CARD gift card (dcgift.co.il) |
@@ -472,6 +475,17 @@ To save seed category captures for debugging:
 ```bash
 .venv/bin/python scripts/save_raw_scrapers.py --scrapers paisplus
 ```
+
+### Worker and association club coupons
+
+`scrapers/style_coupon_clubs.py` reads only public category HTML on three Style sites:
+`ap.mycorporate.co.il` (Ashdod Port workers), `energy.style.co.il` (Energy Club), and
+`migdalor.style.co.il` (Migdalor association). Its conservative coupon filter requires a
+"לרכישה" tile, a voucher or service/experience, and a published saving (face value
+and lower price, or an explicit voucher percentage). Ordinary merchandise, card-on-billing
+benefits and tiles without a stated saving are excluded. Each record links to the club's
+individual benefit page; buying still requires membership. A missing category fails the
+run rather than silently replacing prior source data with a partial catalog.
 
 ### Coupon catalog pass
 

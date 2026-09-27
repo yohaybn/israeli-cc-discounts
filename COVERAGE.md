@@ -243,3 +243,11 @@
 | New Card Just4u | ✅ יש סקרייפר | [הטבות](https://www.just4u.co.il/) | just4u_scraper.py - API ציבורי שהאפליקציה קוראת (api/newapi/getHomepageItems), ללא לוגין; 178 שוברים/בתי עסק (23.9.26) |
 | +HappyGift | ✅ יש סקרייפר | [הטבות](https://catalog.happygift.co.il/coupon-suppliers/5041) | happygift_scraper.py - רשימת בתי העסק מתוך ה-payload של Next.js בקטלוג הציבורי (catalog.happygift.co.il), בלי דפדפן (23.9.26) |
 | HappyGift Multi | ✅ יש סקרייפר | [הטבות](https://catalog.happygift.co.il/coupon-suppliers/3198) | happygift_scraper.py - כרטיס פיזי (3198) ודיגיטלי (4313) מאוחדים (23.9.26) |
+
+### מועדונים נוספים מעבר לרשימת Fid המקורית (27.9.26)
+
+| מועדון | סטטוס | קטלוג ציבורי | היקף בקירוב |
+|---|---|---|---|
+| עובדי נמל אשדוד | ✅ סקרייפר | https://ap.mycorporate.co.il/ | פלטפורמת Style, כ-813 קישורי הטבה ב-9 קטגוריות ראשיות; סינון קופונים בלבד |
+| מועדון האנרגיה | ✅ סקרייפר | https://energy.style.co.il/ | פלטפורמת Style, כ-531 קישורי הטבה ב-9 קטגוריות ראשיות; סינון קופונים בלבד |
+| עמותת מגדלור | ✅ סקרייפר | https://migdalor.style.co.il/ | פלטפורמת Style, כ-675 קישורי הטבה ב-9 קטגוריות ראשיות; סינון קופונים בלבד |

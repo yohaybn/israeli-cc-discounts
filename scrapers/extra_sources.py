@@ -23,6 +23,9 @@ EXTRA_SOURCE_MODULES: list[str] = [
     "wincard_giftcard_scraper",
     "tovplus_scraper",
     "paisplus_scraper",
+    "ashdod_port_scraper",
+    "energy_club_scraper",
+    "migdalor_club_scraper",
     # Yours has public pages but three leaf categories truncate at 200; defer activation.
     "ihud_hatzala_scraper",
     "cpnclub_scraper",
