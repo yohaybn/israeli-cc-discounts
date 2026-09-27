@@ -70,6 +70,11 @@ Discount Finder collects discount offers from Israeli credit-card clubs and loya
 | קופונופש | Leisure/tickets club (cpnclub.co.il public API) |
 | איחוד הצלה | Volunteer benefits club (4u.1221.org.il WooCommerce Store API) |
 | טוב פלוס | State employees' club טוב+ (tovplus.org.il category pages) |
+| פיס פלוס | Public Dolcemaster coupon catalog (paisplus.co.il; server-region access) |
+| עובדי נמל אשדוד | Public Style coupon catalog (ap.mycorporate.co.il) |
+| מועדון האנרגיה | Public Style coupon catalog (energy.style.co.il) |
+| עמותת מגדלור | Public Style coupon catalog (migdalor.style.co.il) |
+| שלך | Public Dolcemaster category pages, but scraper disabled pending complete pagination (yours.co.il) |
 | מחסני השוק גיפטקארד Wincard | Brands accepting the WINcard gift card (m-shuk.net WP REST) |
 | DREAM CARD גיפט | Chains accepting the DREAM CARD gift card (dcgift.co.il) |
 | מועדון W | W (דאבל יו) card benefits page (w-card.co.il) |
@@ -451,9 +456,51 @@ Contributions are welcome - new sources, better normalization, UI improvements.
 .venv/bin/python scripts/save_raw_scrapers.py --scrapers azrieli_malls
 ```
 
+### פיס פלוס ושלך
+
+`scrapers/paisplus_scraper.py` and `scrapers/yours_scraper.py` walk the public, unauthenticated
+Dolcemaster category pages (`https://paisplus.co.il/category/302` and
+`https://yours.co.il/category/1164`). The homepage/category tree is read from
+`window.__PRELOADED_STATE__`; only public categories are crawled, with a bound on
+category count. Coupon codes, managed-value vouchers and event tickets with a lower
+club price than list price are kept; physical merchandise, out-of-stock products,
+member-only categories and products with no published saving are excluded. These sites
+may block the agent workspace (HTTP 571), but Yohay's Israel-region server returned
+full public category payloads. Pais Plus was verified across 103 public category pages without truncated leaves. Yours has
+three public leaf pages capped at 200 records each (`has_more=Y`); its scraper deliberately
+raises and is not registered for daily refresh until full public pagination is confirmed.
+Last-good source files remain in place if a crawl fails.
+To save seed category captures for debugging:
+
+```bash
+.venv/bin/python scripts/save_raw_scrapers.py --scrapers paisplus
+```
+
+### Worker and association club coupons
+
+`scrapers/style_coupon_clubs.py` reads only public category HTML on three Style sites:
+`ap.mycorporate.co.il` (Ashdod Port workers), `energy.style.co.il` (Energy Club), and
+`migdalor.style.co.il` (Migdalor association). Its conservative coupon filter requires a
+"לרכישה" tile, a voucher or service/experience, and a published saving (face value
+and lower price, or an explicit voucher percentage). Ordinary merchandise, card-on-billing
+benefits and tiles without a stated saving are excluded. Each record links to the club's
+individual benefit page; buying still requires membership. A missing category fails the
+run rather than silently replacing prior source data with a partial catalog.
+
+### Coupon catalog pass
+
+The `coupon` discount type is separate from vouchers and standing card discounts. The public
+uniq/TAU product catalogs add individually linked coupon offers with price, former price,
+validity and voucher type; only active `type=coupon` products are included. Existing coupon
+sources are classified without re-fetching: Studentgroup WooCommerce products, Azrieli malls
+coupon cards, Mami's campaign tiles (not brand rewards), and Mizrahi cards with coupon codes
+(not normal card discounts). Just4u's existing voucher items also retain their face price and
+digital/physical voucher type. Merchant acceptance listings and ordinary shop merchandise stay
+outside the coupon category.
+
 ### uniq
 
-`scrapers/uniq_scraper.py` reads the benefits of uniq (https://www.uniq-club.co.il/) from the public GraphQL endpoint of the uniq-club platform (`https://admin.uniq-club.co.il/api/graphql`, query `getBenefits` with `shopId` 1; no login). The shared client is `scrapers/uniq_platform.py`. A failed or empty refresh keeps the last successful `data/discounts/uniq_discounts.json`. Save the payload with:
+`scrapers/uniq_scraper.py` reads the benefits of uniq (https://www.uniq-club.co.il/) from the public GraphQL endpoint of the uniq-club platform (`https://admin.uniq-club.co.il/api/graphql`, queries `getBenefits` and the paginated `products` catalog with `shopId` 1; only `type=coupon` products are retained, with individual links, price and validity; skips expired/out-of-stock products and leaves ordinary shop merchandise out; no login). The shared client is `scrapers/uniq_platform.py`. A failed or empty refresh keeps the last successful `data/discounts/uniq_discounts.json`. Save the payload with:
 
 ```bash
 .venv/bin/python scripts/save_raw_scrapers.py --scrapers uniq
@@ -461,7 +508,7 @@ Contributions are welcome - new sources, better normalization, UI improvements.
 
 ### אוניברסיטת תל אביב TAU
 
-`scrapers/tau_club_scraper.py` reads the benefits of the Tel Aviv University club (https://www.tauclub.co.il/) from the same public GraphQL endpoint as uniq (`shopId` 2; see uniq above). A failed or empty refresh keeps the last successful `data/discounts/tau_club_discounts.json`. Save the payload with:
+`scrapers/tau_club_scraper.py` reads the benefits of the Tel Aviv University club (https://www.tauclub.co.il/) from the same public GraphQL benefits and coupon-product catalog as uniq (`shopId` 2; see uniq above). A failed or empty refresh keeps the last successful `data/discounts/tau_club_discounts.json`. Save the payload with:
 
 ```bash
 .venv/bin/python scripts/save_raw_scrapers.py --scrapers tau_club

@@ -15,6 +15,7 @@ def test_studentgroup_parse():
     assert records[0]["business_name"] == "every"
     assert records[0]["discount"] == "קופון every תוספי תזונה מעניק 40% הנחה כולל כפל מבצעים"
     assert records[0]["discount_value"] == 40.0
+    assert records[0]["discount_type"] == "coupon"
     assert "מעודכן" not in records[1]["discount"]
 
 

@@ -10,6 +10,7 @@ const B = context.window.BenefitTypes;
 assert.strictEqual(B.typeInfo('billing_discount').label, 'הנחה בחיוב');
 assert.strictEqual(B.typeInfo('rechargeable_card').label, 'בטעינת כרטיס נטען');
 assert.strictEqual(B.typeInfo('voucher').label, 'שובר');
+assert.strictEqual(B.typeInfo('coupon').label, 'קופון');
 assert.strictEqual(B.typeInfo('gift_card').label, 'גיפטקארד');
 assert.strictEqual(B.typeInfo('club_card').label, 'כרטיס מועדון');
 assert.strictEqual(B.typeInfo('card_benefit'), null);
@@ -42,6 +43,13 @@ assert.strictEqual(r.isValue, false);
 r = B.rowDisplay({ discount_type: 'voucher', discount_value: null }, 'שובר 100 ב-85');
 assert.strictEqual(r.main, 'שובר 100 ב-85');
 assert.strictEqual(r.type.id, 'voucher');
+
+// Coupon validity stays visible on its row.
+r = B.rowDisplay({ discount_type: 'coupon', valid_until: '2026-10-03T16:00:00Z' }, 'קופון ב-55 ₪ במקום 129 ₪');
+assert.strictEqual(r.type.id, 'coupon');
+assert.strictEqual(r.terms, 'בתוקף עד 2026-10-03');
+r = B.rowDisplay({ discount_type: 'coupon', validity_text: 'בתוקף עד 31.10' }, 'קופון');
+assert.strictEqual(r.terms, 'בתוקף עד 31.10');
 
 // Prepaid row without a value falls back to its text.
 r = B.rowDisplay({ discount_type: 'rechargeable_card', discount_value: null }, 'הטבה בכרטיס');

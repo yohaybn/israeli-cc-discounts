@@ -32,11 +32,13 @@ def parse(payload: str | dict[str, Any]) -> list[dict[str, Any]]:
                 text = f"בית עסק שמכבד שוברי Just4u ({group_name})"
                 url = f"{BASE_URL}/supplier/{item.get('id')}"
                 dtype = "gift_card"
-            else:
+            elif kind == "item":
                 price = item.get("price10") or 0
                 text = f"שובר {name}" + (f" - {price:g} ₪" if price else "") + (f" ({group_name})" if group_name else "")
                 url = f"{BASE_URL}/gifts/{item.get('id')}"
                 dtype = "voucher"
+            else:
+                continue
             if url in seen:
                 continue
             seen.add(url)
@@ -50,6 +52,7 @@ def parse(payload: str | dict[str, Any]) -> list[dict[str, Any]]:
                 "has_physical_store": item.get("coupon_type") != "digital" or kind == "supplier",
                 "branches": [],
                 "limitations": LIMITATIONS,
+                **({"price": price, "voucher_type": clean(item.get("coupon_type")) or "gift_voucher"} if kind == "item" else {}),
             })
     return dedupe(records)
 

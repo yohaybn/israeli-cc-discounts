@@ -10,15 +10,19 @@ def test_discount_shards_roundtrip(tmp_path, monkeypatch):
         {'club': 'MCC', 'business_name': 'חנות א', 'discount': '10%', 'discount_value': 10},
         {'club': 'HOT', 'business_name': 'חנות א', 'discount': '15%', 'discount_value': 15},
         {'club': 'MCC', 'business_name': 'חנות ב', 'discount': 'שובר', 'discount_type': 'voucher'},
+        {'club': 'MCC', 'business_name': 'חנות ג', 'discount': 'קופון 50%', 'discount_value': 50, 'discount_type': 'coupon'},
     ]
     (tmp_path / 'all_combined_discounts.json').write_text(json.dumps(rows, ensure_ascii=False))
     build_discounts()
     index = json.loads((tmp_path / 'business_index.json').read_text())
-    assert index['total'] == 3
-    assert len(index['businesses']) == 2
+    assert index['total'] == 4
+    assert len(index['businesses']) == 3
     a = next(b for b in index['businesses'] if b['business_name'] == 'חנות א')
     assert a['best_discount_value'] == 15
     assert a['club_counts'] == {'MCC': 1, 'HOT': 1}
+    coupon = next(b for b in index['businesses'] if b['business_name'] == 'חנות ג')
+    assert coupon['best_discount_value'] == 0
+    assert coupon['discount_types'] == ['coupon']
     data = json.loads((tmp_path / 'discount_shards' / index['shards'][a['shard']]).read_text())
     assert data['חנות א'] == rows[:2]
     assert sum(len(json.loads((tmp_path / 'discount_shards' / path).read_text())[name])

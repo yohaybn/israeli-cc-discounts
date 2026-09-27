@@ -23,13 +23,14 @@ LIMITATIONS = "לחברי מועדון Mami (אפליקציה/אתר); רוב ה
 CATEGORY_RE = re.compile(r'href="(/categories/[a-z0-9-]+)"')
 
 
-def _record(name: str, text: str, href: str, category: str = "") -> dict[str, Any]:
+def _record(name: str, text: str, href: str, category: str = "", coupon: bool = False) -> dict[str, Any]:
     record = {
         "club": CLUB_NAME,
         "business_name": name,
         "discount": text or name,
         "discount_url": urljoin(BASE_URL, href),
-        "discount_type": "billing_discount",
+        "discount_type": "coupon" if coupon else "billing_discount",
+        **({"voucher_type": "campaign"} if coupon else {}),
         "discount_value": percent_value(text),
         "has_physical_store": False,
         "branches": [],
@@ -62,7 +63,7 @@ def parse_campaigns(html: str, category: str = "") -> list[dict[str, Any]]:
         name = clean(brand.get_text(" ", strip=True)) if brand else ""
         text = clean(deal.get_text(" ", strip=True)) if deal else ""
         if name:
-            records.append(_record(name, text, tile["href"], category))
+            records.append(_record(name, text, tile["href"], category, coupon=True))
     return records
 
 
