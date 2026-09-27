@@ -53,12 +53,15 @@ Every scraper returns a list of dicts with these fields:
 | `business_name` | string | Business or offer title |
 | `discount` | string | Human-readable discount text (plain text, no HTML) |
 | `discount_url` | string | Canonical link to the offer |
-| `discount_type` | enum | `billing_discount`, `rechargeable_card`, `voucher`, `gift_card`, `club_card` |
+| `discount_type` | enum | `billing_discount`, `rechargeable_card`, `voucher`, `coupon`, `gift_card`, `club_card` |
 | `discount_value` | number \| null | Percent value when the discount is a parseable percent |
 | `has_physical_store` | bool | `false` for online-only offers |
 | `branches` | list | Branch objects when known, otherwise `[]` |
 | `limitations` | string | Terms and conditions, plain text |
 | `category` | string | Optional source category |
+| `price`, `original_price` | number | Optional coupon price and former price in ILS |
+| `valid_until` | string | Optional ISO expiry from source |
+| `voucher_type` | string | Optional underlying voucher mechanism |
 
 ## Adding or changing a scraper
 

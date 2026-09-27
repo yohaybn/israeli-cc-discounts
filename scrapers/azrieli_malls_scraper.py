@@ -45,7 +45,8 @@ def parse(html: str) -> list[dict[str, Any]]:
                 "business_name": store,
                 "discount": deal,
                 "discount_url": urljoin(BASE_URL, card.get("href") or ""),
-                "discount_type": "voucher",
+                "discount_type": "coupon",
+                "voucher_type": "mall_coupon",
                 "discount_value": saving_percent(deal),
                 "has_physical_store": True,
                 "branches": [],
@@ -64,6 +65,8 @@ def parse(html: str) -> list[dict[str, Any]]:
         if validity:
             parts.append(validity)
         record["limitations"] = "; ".join(parts)
+        if validity:
+            record["validity_text"] = validity
         records.append(record)
     return records
 

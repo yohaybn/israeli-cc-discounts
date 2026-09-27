@@ -12,5 +12,7 @@ def test_records():
     assert first["business_name"] == "ריגושים עד הבית"
     assert "185" in first["discount"]
     assert first["discount_type"] == "voucher"
+    assert first["price"] == 185.0
+    assert first["voucher_type"] == "digital"
     assert any(r["discount_type"] == "gift_card" for r in records)
     assert s.parse('{"groups": null}') == []

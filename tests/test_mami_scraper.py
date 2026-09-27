@@ -14,6 +14,7 @@ def test_parse_brands():
     assert records[0]["discount"] == "10% צבירת Mami Money"
     assert records[0]["discount_value"] == 10.0
     assert records[0]["discount_url"] == "https://www.hi-mami.com/brands/seacret"
+    assert records[0]["discount_type"] == "billing_discount"
 
 
 def test_parse_campaigns():
@@ -23,6 +24,7 @@ def test_parse_campaigns():
     assert records[0]["discount"] == "אקסטרה 10% הנחה"
     assert records[0]["category"] == "fashion"
     assert "campaignId=" in records[0]["discount_url"]
+    assert records[0]["discount_type"] == "coupon"
 
 
 def test_scrape_with_fake_fetch():

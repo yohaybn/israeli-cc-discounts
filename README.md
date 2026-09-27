@@ -451,9 +451,20 @@ Contributions are welcome - new sources, better normalization, UI improvements.
 .venv/bin/python scripts/save_raw_scrapers.py --scrapers azrieli_malls
 ```
 
+### Coupon catalog pass
+
+The `coupon` discount type is separate from vouchers and standing card discounts. The public
+uniq/TAU product catalogs add individually linked coupon offers with price, former price,
+validity and voucher type; only active `type=coupon` products are included. Existing coupon
+sources are classified without re-fetching: Studentgroup WooCommerce products, Azrieli malls
+coupon cards, Mami's campaign tiles (not brand rewards), and Mizrahi cards with coupon codes
+(not normal card discounts). Just4u's existing voucher items also retain their face price and
+digital/physical voucher type. Merchant acceptance listings and ordinary shop merchandise stay
+outside the coupon category.
+
 ### uniq
 
-`scrapers/uniq_scraper.py` reads the benefits of uniq (https://www.uniq-club.co.il/) from the public GraphQL endpoint of the uniq-club platform (`https://admin.uniq-club.co.il/api/graphql`, query `getBenefits` with `shopId` 1; no login). The shared client is `scrapers/uniq_platform.py`. A failed or empty refresh keeps the last successful `data/discounts/uniq_discounts.json`. Save the payload with:
+`scrapers/uniq_scraper.py` reads the benefits of uniq (https://www.uniq-club.co.il/) from the public GraphQL endpoint of the uniq-club platform (`https://admin.uniq-club.co.il/api/graphql`, queries `getBenefits` and the paginated `products` catalog with `shopId` 1; only `type=coupon` products are retained, with individual links, price and validity; skips expired/out-of-stock products and leaves ordinary shop merchandise out; no login). The shared client is `scrapers/uniq_platform.py`. A failed or empty refresh keeps the last successful `data/discounts/uniq_discounts.json`. Save the payload with:
 
 ```bash
 .venv/bin/python scripts/save_raw_scrapers.py --scrapers uniq
@@ -461,7 +472,7 @@ Contributions are welcome - new sources, better normalization, UI improvements.
 
 ### אוניברסיטת תל אביב TAU
 
-`scrapers/tau_club_scraper.py` reads the benefits of the Tel Aviv University club (https://www.tauclub.co.il/) from the same public GraphQL endpoint as uniq (`shopId` 2; see uniq above). A failed or empty refresh keeps the last successful `data/discounts/tau_club_discounts.json`. Save the payload with:
+`scrapers/tau_club_scraper.py` reads the benefits of the Tel Aviv University club (https://www.tauclub.co.il/) from the same public GraphQL benefits and coupon-product catalog as uniq (`shopId` 2; see uniq above). A failed or empty refresh keeps the last successful `data/discounts/tau_club_discounts.json`. Save the payload with:
 
 ```bash
 .venv/bin/python scripts/save_raw_scrapers.py --scrapers tau_club

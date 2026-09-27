@@ -11,6 +11,8 @@ def test_parse_groups_malls():
     first = records[0]
     assert first["business_name"] == "ארנקי אולגה"
     assert first["discount_value"] == 50.3
+    assert first["discount_type"] == "coupon"
+    assert first["voucher_type"] == "mall_coupon"
     assert first["discount_url"] == "https://www.azrielimalls.co.il/malls/haifa/coupons/54918"
     assert "חיפה" in first["limitations"]
     papaya = next(r for r in records if r["business_name"] == "papaya")

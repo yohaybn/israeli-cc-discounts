@@ -45,6 +45,7 @@ def parse(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
             "has_physical_store": bool(branches),
             "branches": branches,
             "limitations": LIMITATIONS,
+            "voucher_type": "attraction_voucher",
         })
     return dedupe(records)
 

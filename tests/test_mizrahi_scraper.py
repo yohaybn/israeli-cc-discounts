@@ -23,6 +23,7 @@ def test_parse_fixture_dedupes_and_normalizes():
     assert first["discount_url"] == "https://www.mizrahi-tefahot.co.il/hacartis/tourism/airalo-hot-0926/"
     assert first["category"] == "תיירות"
     assert first["limitations"] == "קוד הטבה"
+    assert first["discount_type"] == "coupon"
     assert first["branches"] == []
 
 
@@ -32,6 +33,7 @@ def test_regular_card_uses_percent_badge_and_full_description():
     assert museum["discount"].startswith("10% הנחה - ")
     assert not museum["discount"].endswith("...")
     assert museum["discount_value"] == 10.0
+    assert museum["discount_type"] == "billing_discount"
 
 
 def test_online_offer_is_not_physical():

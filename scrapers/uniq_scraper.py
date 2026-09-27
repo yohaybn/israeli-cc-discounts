@@ -17,11 +17,17 @@ LIMITATIONS = "למחזיקי כרטיס uniq"
 
 
 def scrape(post=None) -> list[dict[str, Any]]:
-    return uniq_platform.parse(uniq_platform.fetch_benefits(SHOP_ID, post), CLUB_NAME, SITE_URL, LIMITATIONS)
+    benefits = uniq_platform.parse(uniq_platform.fetch_benefits(SHOP_ID, post), CLUB_NAME, SITE_URL, LIMITATIONS)
+    products = uniq_platform.fetch_products(SHOP_ID, post)
+    coupons = uniq_platform.parse_coupons(products, CLUB_NAME, SITE_URL, LIMITATIONS)
+    return benefits + coupons
 
 
 def fetch_raw(post=None) -> dict[str, str]:
-    return {"benefits.json": json.dumps(uniq_platform.fetch_benefits(SHOP_ID, post), ensure_ascii=False)}
+    return {
+        "benefits.json": json.dumps(uniq_platform.fetch_benefits(SHOP_ID, post), ensure_ascii=False),
+        "products.json": json.dumps(uniq_platform.fetch_products(SHOP_ID, post), ensure_ascii=False),
+    }
 
 
 if __name__ == "__main__":

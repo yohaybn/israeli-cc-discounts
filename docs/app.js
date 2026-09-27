@@ -199,6 +199,8 @@
                 discount_type: d.discount_type || null,
                 discount_value: d.discount_value != null ? Number(d.discount_value) : null,
                 limitations: cleanDiscountText(d.limitations),
+                valid_until: d.valid_until || null,
+                validity_text: d.validity_text || null,
             });
             entry.clubs.add(club);
         });
@@ -209,7 +211,7 @@
             entry.discounts.forEach((disc) => {
                 const text = disc.discount || '';
                 // Treat as voucher when explicit type or voucher-like text appears
-                const isVoucher = ((disc.discount_type || '').toLowerCase() === 'voucher') || /שובר|voucher|gift\s*card|גיפט|כרטיס\s*מתנה|שובר\s*מתנה/i.test(text);
+                const isVoucher = ['voucher', 'coupon'].includes((disc.discount_type || '').toLowerCase()) || /שובר|voucher|gift\s*card|גיפט|כרטיס\s*מתנה|שובר\s*מתנה/i.test(text);
                 if (isVoucher) return;
 
                 if (disc.discount_value != null) {
@@ -282,6 +284,8 @@
             discount_url: d.discount_url || '', discount_type: d.discount_type || null,
             discount_value: d.discount_value != null ? Number(d.discount_value) : null,
             limitations: cleanDiscountText(d.limitations),
+            valid_until: d.valid_until || null,
+            validity_text: d.validity_text || null,
         }));
         return { ...biz, discounts };
     }
@@ -751,7 +755,7 @@
         const filteredPercents = [];
         discountsToShow.forEach((disc) => {
             const text = disc.discount || '';
-            const isVoucher = ((disc.discount_type || '').toLowerCase() === 'voucher') || /שובר|voucher/i.test(text);
+            const isVoucher = ['voucher', 'coupon'].includes((disc.discount_type || '').toLowerCase()) || /שובר|voucher/i.test(text);
             if (isVoucher) return;
             if (disc.discount_value != null) {
                 filteredPercents.push(Number(disc.discount_value));
@@ -765,7 +769,7 @@
         const bestFilteredValue = filteredPercents.length > 0 ? Math.max(...filteredPercents) : 0;
         const bestFilteredText = bestFilteredValue > 0 ? `${bestFilteredValue}%` : null;
         const hasPercentBest = bestFilteredValue > 0;
-        const voucherCount = discountsToShow.filter((d) => ((d.discount_type || '').toLowerCase() === 'voucher' || /שובר|voucher/i.test(d.discount || ''))).length;
+        const voucherCount = discountsToShow.filter((d) => ['voucher', 'coupon'].includes((d.discount_type || '').toLowerCase()) || /שובר|voucher/i.test(d.discount || '')).length;
         const hasVoucher = voucherCount > 0;
 
         if (hasPercentBest) {
@@ -781,7 +785,7 @@
             voucherPill.className = 'voucher-pill';
             voucherPill.innerHTML = `
                 <span class="voucher-icon">🎁</span>
-                <span class="voucher-label">שובר</span>
+                <span class="voucher-label">${discountsToShow.some((d) => d.discount_type === 'coupon') ? 'קופון' : 'שובר'}</span>
                 <span class="voucher-count">${voucherCount > 1 ? `(${voucherCount})` : ''}</span>
             `;
             header.appendChild(voucherPill);
@@ -806,8 +810,8 @@
             const clubShort = getClubShortName(disc.club);
             optionLink.title = `מעבר להטבה`;
 
-            const isVoucher = ((disc.discount_type || '').toLowerCase() === 'voucher') || /שובר|voucher/i.test(disc.discount || '');
-            const discountTitle = isVoucher ? (disc.discount || 'שובר') : (disc.discount || '');
+            const isVoucher = ['voucher', 'coupon'].includes((disc.discount_type || '').toLowerCase()) || /שובר|voucher/i.test(disc.discount || '');
+            const discountTitle = isVoucher ? (disc.discount || (disc.discount_type === 'coupon' ? 'קופון' : 'שובר')) : (disc.discount || '');
             const row = BenefitTypes.rowDisplay(disc, discountTitle);
             const chip = row.type ? `<span class="option-type-chip ${row.type.cls}">${escapeHtml(row.type.label)}</span>` : '';
             const terms = row.terms ? `<span class="option-terms" title="${escapeHtml(row.terms)}">${escapeHtml(row.terms)}</span>` : '';

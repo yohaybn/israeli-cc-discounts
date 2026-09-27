@@ -70,7 +70,7 @@ def best_value(discounts):
     values = []
     for d in discounts:
         text = str(d.get('discount') or '')
-        if str(d.get('discount_type') or '').lower() == 'voucher' or re.search(r'שובר|voucher|gift\s*card|גיפט|כרטיס\s*מתנה|שובר\s*מתנה', text, re.I):
+        if str(d.get('discount_type') or '').lower() in ('voucher', 'coupon') or re.search(r'שובר|voucher|gift\s*card|גיפט|כרטיס\s*מתנה|שובר\s*מתנה', text, re.I):
             continue
         val = d.get('discount_value')
         if val is not None:
