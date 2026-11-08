@@ -28,7 +28,7 @@ if [ $EXIT_CODE -ne 0 ]; then
 fi
 
 # Commit and push only if data files changed
-git add data/*.json data/**/*.json docs/data/*.json docs/data/businesses/*.json
+git add data/*.json data/**/*.json docs/data/*.json docs/data/businesses/*.json docs/data/discount_shards/*.json docs/data/nearby_shards/*.json
 if git diff --cached --quiet; then
     echo "[CRON] No data changes to commit." >> "$LOG_FILE"
 else
