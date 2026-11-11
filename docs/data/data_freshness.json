@@ -1,468 +1,468 @@
 {
-  "published_at": "2026-11-10T06:00:04Z",
+  "published_at": "2026-11-11T06:00:03Z",
   "sources": {
-    "mcc": "2026-11-10T06:00:04Z",
-    "htzone": "2026-11-10T06:00:04Z",
-    "hvr_rechargeable_cards": "2026-11-10T06:00:04Z",
-    "max": "2026-11-10T06:00:04Z",
-    "max_benefits": "2026-11-10T06:00:04Z",
-    "buyme": "2026-11-10T06:00:04Z",
-    "discount_key": "2026-11-10T06:00:04Z",
-    "amex": "2026-11-10T06:00:04Z",
-    "reshef": "2026-11-10T06:00:04Z",
-    "flycard": "2026-11-10T06:00:04Z",
-    "wincard_plus": "2026-11-10T06:00:04Z",
-    "just4u": "2026-11-10T06:00:04Z",
-    "love_card": "2026-11-10T06:00:04Z",
+    "mcc": "2026-11-11T06:00:03Z",
+    "htzone": "2026-11-11T06:00:03Z",
+    "hvr_rechargeable_cards": "2026-11-11T06:00:03Z",
+    "max": "2026-11-11T06:00:03Z",
+    "max_benefits": "2026-11-11T06:00:03Z",
+    "buyme": "2026-11-11T06:00:03Z",
+    "discount_key": "2026-11-11T06:00:03Z",
+    "amex": "2026-11-11T06:00:03Z",
+    "reshef": "2026-11-11T06:00:03Z",
+    "flycard": "2026-11-11T06:00:03Z",
+    "wincard_plus": "2026-11-11T06:00:03Z",
+    "just4u": "2026-11-11T06:00:03Z",
+    "love_card": "2026-11-11T06:00:03Z",
     "w_card": "2026-09-27T06:00:02Z",
-    "dreamcard_giftcard": "2026-11-10T06:00:04Z",
-    "wincard_giftcard": "2026-11-10T06:00:04Z",
-    "tovplus": "2026-11-10T06:00:04Z",
-    "ihud_hatzala": "2026-11-10T06:00:04Z",
-    "cpnclub": "2026-11-10T06:00:04Z",
-    "moneyplan": "2026-11-10T06:00:04Z",
-    "studentgroup": "2026-11-10T06:00:04Z",
-    "tau_club": "2026-11-10T06:00:04Z",
-    "uniq": "2026-11-10T06:00:04Z",
-    "azrieli_malls": "2026-11-10T06:00:04Z",
-    "mami": "2026-11-10T06:00:04Z",
-    "cashdo": "2026-11-10T06:00:04Z",
-    "oti": "2026-11-10T06:00:04Z",
-    "rami_levy_club": "2026-11-10T06:00:04Z",
-    "living": "2026-11-10T06:00:04Z",
-    "shachar": "2026-11-10T06:00:04Z",
-    "corporate": "2026-11-10T06:00:04Z",
-    "powercard": "2026-11-10T06:00:04Z",
-    "campus_card": "2026-11-10T06:00:04Z",
-    "amdocs": "2026-11-10T06:00:04Z",
-    "yoter": "2026-11-10T06:00:04Z",
-    "icard": "2026-11-10T06:00:04Z",
-    "goldnorth": "2026-11-10T06:00:04Z",
-    "metzer": "2026-11-10T06:00:04Z",
-    "tzair": "2026-11-10T06:00:04Z",
-    "volunteers_club": "2026-11-10T06:00:04Z",
-    "lifestyle_club": "2026-11-10T06:00:04Z",
-    "lahav": "2026-11-10T06:00:04Z",
-    "police_funds": "2026-11-10T06:00:04Z",
-    "insurance_agents": "2026-11-10T06:00:04Z",
-    "egged_driver": "2026-11-10T06:00:04Z",
-    "hibenefit": "2026-11-10T06:00:04Z",
-    "adif": "2026-11-10T06:00:04Z",
-    "koach_laovdim": "2026-11-10T06:00:04Z",
-    "dreamcard": "2026-11-10T06:00:04Z",
-    "myofer": "2026-11-10T06:00:04Z",
-    "shufersal4u": "2026-11-10T06:00:04Z",
-    "ima_yahad": "2026-11-10T06:00:04Z",
-    "swish": "2026-11-10T06:00:04Z",
-    "azrieli_giftcard": "2026-11-10T06:00:04Z",
-    "yedioth": "2026-11-10T06:00:04Z",
-    "raayonit_global": "2026-11-10T06:00:04Z",
-    "goldcard": "2026-11-10T06:00:04Z",
-    "gifta": "2026-11-10T06:00:04Z",
-    "mizrahi": "2026-11-10T06:00:04Z",
-    "hot": "2026-11-10T06:00:04Z",
-    "samsung_members": "2026-11-10T06:00:04Z",
-    "happygift": "2026-11-10T06:00:04Z",
-    "paisplus": "2026-11-10T06:00:04Z",
-    "ashdod_port": "2026-11-10T06:00:04Z",
-    "energy_club": "2026-11-10T06:00:04Z",
-    "migdalor_club": "2026-11-10T06:00:04Z"
+    "dreamcard_giftcard": "2026-11-11T06:00:03Z",
+    "wincard_giftcard": "2026-11-11T06:00:03Z",
+    "tovplus": "2026-11-11T06:00:03Z",
+    "ihud_hatzala": "2026-11-11T06:00:03Z",
+    "cpnclub": "2026-11-11T06:00:03Z",
+    "moneyplan": "2026-11-11T06:00:03Z",
+    "studentgroup": "2026-11-11T06:00:03Z",
+    "tau_club": "2026-11-11T06:00:03Z",
+    "uniq": "2026-11-11T06:00:03Z",
+    "azrieli_malls": "2026-11-11T06:00:03Z",
+    "mami": "2026-11-11T06:00:03Z",
+    "cashdo": "2026-11-11T06:00:03Z",
+    "oti": "2026-11-11T06:00:03Z",
+    "rami_levy_club": "2026-11-11T06:00:03Z",
+    "living": "2026-11-11T06:00:03Z",
+    "shachar": "2026-11-11T06:00:03Z",
+    "corporate": "2026-11-11T06:00:03Z",
+    "powercard": "2026-11-11T06:00:03Z",
+    "campus_card": "2026-11-11T06:00:03Z",
+    "amdocs": "2026-11-11T06:00:03Z",
+    "yoter": "2026-11-11T06:00:03Z",
+    "icard": "2026-11-11T06:00:03Z",
+    "goldnorth": "2026-11-11T06:00:03Z",
+    "metzer": "2026-11-11T06:00:03Z",
+    "tzair": "2026-11-11T06:00:03Z",
+    "volunteers_club": "2026-11-11T06:00:03Z",
+    "lifestyle_club": "2026-11-11T06:00:03Z",
+    "lahav": "2026-11-11T06:00:03Z",
+    "police_funds": "2026-11-11T06:00:03Z",
+    "insurance_agents": "2026-11-11T06:00:03Z",
+    "egged_driver": "2026-11-11T06:00:03Z",
+    "hibenefit": "2026-11-11T06:00:03Z",
+    "adif": "2026-11-11T06:00:03Z",
+    "koach_laovdim": "2026-11-11T06:00:03Z",
+    "dreamcard": "2026-11-11T06:00:03Z",
+    "myofer": "2026-11-11T06:00:03Z",
+    "shufersal4u": "2026-11-11T06:00:03Z",
+    "ima_yahad": "2026-11-11T06:00:03Z",
+    "swish": "2026-11-11T06:00:03Z",
+    "azrieli_giftcard": "2026-11-11T06:00:03Z",
+    "yedioth": "2026-11-11T06:00:03Z",
+    "raayonit_global": "2026-11-11T06:00:03Z",
+    "goldcard": "2026-11-11T06:00:03Z",
+    "gifta": "2026-11-11T06:00:03Z",
+    "mizrahi": "2026-11-11T06:00:03Z",
+    "hot": "2026-11-11T06:00:03Z",
+    "samsung_members": "2026-11-11T06:00:03Z",
+    "happygift": "2026-11-11T06:00:03Z",
+    "paisplus": "2026-11-11T06:00:03Z",
+    "ashdod_port": "2026-11-11T06:00:03Z",
+    "energy_club": "2026-11-11T06:00:03Z",
+    "migdalor_club": "2026-11-11T06:00:03Z"
   },
   "source_status": {
     "mcc": {
       "club": "חבר",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "htzone": {
       "club": "HTzone",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "hvr_rechargeable_cards": {
       "club": "חבר (כרטיסים נטענים)",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "max": {
       "club": "GiftCard max",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "max_benefits": {
       "club": "MAX",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "buyme": {
       "club": "BUYME",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "discount_key": {
       "club": "מפתח דיסקונט",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "amex": {
       "club": "American Express",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "reshef": {
       "club": "רשף - גמלאי כבאות והצלה",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "flycard": {
       "club": "FLY CARD אל על",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "wincard_plus": {
       "club": "WinCard+ מחסני השוק",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "just4u": {
       "club": "Just4u / NEW CARD",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "love_card": {
       "club": "LOVE gift card",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "w_card": {
       "club": "מועדון W",
       "last_successful_scrape": "2026-09-27T06:00:02Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "stale"
     },
     "dreamcard_giftcard": {
       "club": "DREAMCARD gift card / דרים קארד גיפט",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "wincard_giftcard": {
       "club": "מחסני השוק גיפטקארד Wincard",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "tovplus": {
       "club": "טוב פלוס",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "ihud_hatzala": {
       "club": "איחוד הצלה",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "cpnclub": {
       "club": "קופונופש",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "moneyplan": {
       "club": "חתול פיננסי",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "studentgroup": {
       "club": "סטודנט גרופ",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "tau_club": {
       "club": "אוניברסיטת תל אביב TAU",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "uniq": {
       "club": "uniq",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "azrieli_malls": {
       "club": "קניוני עזריאלי",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "mami": {
       "club": "Mami - מאמי",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "cashdo": {
       "club": "Cashdo",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "oti": {
       "club": "אותי",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "rami_levy_club": {
       "club": "רמי לוי המועדון",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "living": {
       "club": "Living",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "shachar": {
       "club": "שחר",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "corporate": {
       "club": "קורפורייט",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "powercard": {
       "club": "PowerCard",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "campus_card": {
       "club": "קמפוסכרט",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "amdocs": {
       "club": "אמדוקס",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "yoter": {
       "club": "יותר",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "icard": {
       "club": "תעשייה אווירית",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "goldnorth": {
       "club": "גולד צפון",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "metzer": {
       "club": "מצר",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "tzair": {
       "club": "צעיר",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "volunteers_club": {
       "club": "מועדון המתנדבים",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "lifestyle_club": {
       "club": "לייף סטייל",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "lahav": {
       "club": "להב - לשכת העצמאים",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "police_funds": {
       "club": "קרנות השוטרים / קרנות הסוהרים",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "insurance_agents": {
       "club": "לשכת סוכני הביטוח",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "egged_driver": {
       "club": "אגד דרייבר",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "hibenefit": {
       "club": "Hi-Benefit - לשכת רואי החשבון",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "adif": {
       "club": "עדיף",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "koach_laovdim": {
       "club": "כח לעובדים",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "dreamcard": {
       "club": "DREAM CARD VIP",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "myofer": {
       "club": "MY OFER - קניוני עופר",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "shufersal4u": {
       "club": "שופרסל 4U",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "ima_yahad": {
       "club": "מועדון יחד - ההסתדרות הרפואית",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "swish": {
       "club": "Swish",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "azrieli_giftcard": {
       "club": "עזריאלי גיפטקארד",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "yedioth": {
       "club": "ידיעות אחרונות",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "raayonit_global": {
       "club": "גלובל קארד - רעיונית",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "goldcard": {
       "club": "גולד קארד",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "gifta": {
       "club": "גיפטא",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "mizrahi": {
       "club": "מזרחי טפחות",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "hot": {
       "club": "HOT",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "samsung_members": {
       "club": "Samsung Members",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "happygift": {
       "club": "HappyGift",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "paisplus": {
       "club": "פיס פלוס",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "ashdod_port": {
       "club": "עובדי נמל אשדוד",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "energy_club": {
       "club": "מועדון האנרגיה",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     },
     "migdalor_club": {
       "club": "עמותת מגדלור",
-      "last_successful_scrape": "2026-11-10T06:00:04Z",
-      "last_attempt": "2026-11-10T06:00:04Z",
+      "last_successful_scrape": "2026-11-11T06:00:03Z",
+      "last_attempt": "2026-11-11T06:00:03Z",
       "status": "ok"
     }
   },
